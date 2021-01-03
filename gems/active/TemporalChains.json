@@ -1,1 +1,1387 @@
-{"target_types": ["ground", "enemy"], "acquisition": {"vendor": {"vendor_name": "Clarissa", "classes": ["Duelist", "Ranger", "Shadow", "Scion"]}}, "vaal": false, "tags": ["base_deal_no_damage [1]"], "type": ["spell", "area", "duration", "skillcantrap", "skillcantotem", "skillcanmine", "spellcanrepeat", "triggerable", "spellcancascade", "appliescurse", "canrapidfire", "areaspell", "type91", "type92", "hex"], "enchants": {"eternal": ["30% increased Temporal Chains Curse Effect", "45% increased Temporal Chains Duration"], "merciless": ["20% increased Temporal Chains Curse Effect", "30% increased Temporal Chains Duration"]}, "mtx": [], "support": [{"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Spell Echo Support", "types": ["spellcanrepeat"]}, {"name": "Hextouch Support", "types": ["attack", "hit", "appliescurse", "hex", "and"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Blasphemy Support", "types": ["appliescurse", "hex", "and"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Spell Cascade Support", "types": ["spellcancascade"]}, {"name": "Intensify Support", "types": ["areaspell"]}, {"name": "Unleash Support", "types": ["canrapidfire"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Blasphemy Support", "types": ["appliescurse", "hex", "and"]}, {"name": "Awakened Hextouch Support", "types": ["attack", "hit", "appliescurse", "hex", "and"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Spell Cascade Support", "types": ["spellcancascade"]}, {"name": "Awakened Spell Echo Support", "types": ["spellcanrepeat"]}, {"name": "Awakened Unleash Support", "types": ["canrapidfire"]}, {"name": "Impending Doom Support", "types": ["hex", "appliescurse", "and"]}], "description": "Curses all enemies in an area, lowering their action speed and making other effects on them expire more slowly.", "mods": ["+(5\u20135.95) seconds to Base duration", "+(0\u201310) to radius", "Cursed Normal and Magic Enemies have (20\u201329)% less Action Speed", "Other effects on Cursed enemies expire 40% slower", "50% less Effect of Curse against Players", "Cursed Rare and Unique Enemies have (10\u201314)% less Action Speed", "Curse gains 10 Doom per second if you Cast this Spell yourself"], "quality": {"anomalous": {"mods": [{"text": "Curse has % increased Doom gain rate", "minimum": 0.0, "maximum": 40.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Effect of Curse", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% increased Curse Duration", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}}, "drop_level": 24, "name": "Temporal Chains", "levels": [{"mana_cost": 16, "level": 1, "requirements": {"dexterity": 37, "requires_level": 24, "intelligence": 25}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5"}, {"name": "to_radius", "value": "0"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "20"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "10"}]}, {"mana_cost": 17, "level": 2, "requirements": {"dexterity": 41, "requires_level": 27, "intelligence": 28}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.05"}, {"name": "to_radius", "value": "1"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "20"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "10"}]}, {"mana_cost": 18, "level": 3, "requirements": {"dexterity": 45, "requires_level": 30, "intelligence": 31}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.1"}, {"name": "to_radius", "value": "1"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "21"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "10"}]}, {"mana_cost": 19, "level": 4, "requirements": {"dexterity": 49, "requires_level": 33, "intelligence": 34}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.15"}, {"name": "to_radius", "value": "2"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "21"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "10"}]}, {"mana_cost": 21, "level": 5, "requirements": {"dexterity": 53, "requires_level": 36, "intelligence": 36}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.2"}, {"name": "to_radius", "value": "2"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "22"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "11"}]}, {"mana_cost": 22, "level": 6, "requirements": {"dexterity": 56, "requires_level": 39, "intelligence": 39}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.25"}, {"name": "to_radius", "value": "3"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "22"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "11"}]}, {"mana_cost": 23, "level": 7, "requirements": {"dexterity": 60, "requires_level": 42, "intelligence": 42}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.3"}, {"name": "to_radius", "value": "3"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "23"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "11"}]}, {"mana_cost": 24, "level": 8, "requirements": {"dexterity": 64, "requires_level": 45, "intelligence": 45}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.35"}, {"name": "to_radius", "value": "4"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "23"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "11"}]}, {"mana_cost": 25, "level": 9, "requirements": {"dexterity": 68, "requires_level": 48, "intelligence": 48}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.4"}, {"name": "to_radius", "value": "4"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "24"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "12"}]}, {"mana_cost": 26, "level": 10, "requirements": {"dexterity": 71, "requires_level": 50, "intelligence": 49}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.45"}, {"name": "to_radius", "value": "5"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "24"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "12"}]}, {"mana_cost": 26, "level": 11, "requirements": {"dexterity": 74, "requires_level": 52, "intelligence": 51}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.5"}, {"name": "to_radius", "value": "5"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "25"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "12"}]}, {"mana_cost": 27, "level": 12, "requirements": {"dexterity": 76, "requires_level": 54, "intelligence": 53}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.55"}, {"name": "to_radius", "value": "6"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "25"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "12"}]}, {"mana_cost": 28, "level": 13, "requirements": {"dexterity": 79, "requires_level": 56, "intelligence": 55}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.6"}, {"name": "to_radius", "value": "6"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "26"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "13"}]}, {"mana_cost": 29, "level": 14, "requirements": {"dexterity": 82, "requires_level": 58, "intelligence": 57}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.65"}, {"name": "to_radius", "value": "7"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "26"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "13"}]}, {"mana_cost": 29, "level": 15, "requirements": {"dexterity": 84, "requires_level": 60, "intelligence": 59}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.7"}, {"name": "to_radius", "value": "7"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "27"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "13"}]}, {"mana_cost": 30, "level": 16, "requirements": {"dexterity": 87, "requires_level": 62, "intelligence": 60}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.75"}, {"name": "to_radius", "value": "8"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "27"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "13"}]}, {"mana_cost": 31, "level": 17, "requirements": {"dexterity": 90, "requires_level": 64, "intelligence": 62}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.8"}, {"name": "to_radius", "value": "8"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "28"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "14"}]}, {"mana_cost": 31, "level": 18, "requirements": {"dexterity": 92, "requires_level": 66, "intelligence": 64}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.85"}, {"name": "to_radius", "value": "9"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "28"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "14"}]}, {"mana_cost": 32, "level": 19, "requirements": {"dexterity": 95, "requires_level": 68, "intelligence": 66}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.9"}, {"name": "to_radius", "value": "9"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "29"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "14"}]}, {"mana_cost": 33, "level": 20, "requirements": {"dexterity": 98, "requires_level": 70, "intelligence": 68}, "fields": [{"name": "+_seconds_to_base_duration", "value": "5.95"}, {"name": "to_radius", "value": "10"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "29"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "14"}]}, {"mana_cost": 34, "level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6"}, {"name": "to_radius", "value": "10"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "30"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "15"}]}, {"mana_cost": 34, "level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.05"}, {"name": "to_radius", "value": "11"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "30"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "15"}]}, {"mana_cost": 35, "level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.1"}, {"name": "to_radius", "value": "11"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "31"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "15"}]}, {"mana_cost": 36, "level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.15"}, {"name": "to_radius", "value": "12"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "31"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "15"}]}, {"mana_cost": 36, "level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.2"}, {"name": "to_radius", "value": "12"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "32"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "16"}]}, {"mana_cost": 37, "level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.25"}, {"name": "to_radius", "value": "13"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "32"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "16"}]}, {"mana_cost": 38, "level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.3"}, {"name": "to_radius", "value": "13"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "33"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "16"}]}, {"mana_cost": 39, "level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.35"}, {"name": "to_radius", "value": "14"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "33"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "16"}]}, {"mana_cost": 39, "level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.4"}, {"name": "to_radius", "value": "14"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "34"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "17"}]}, {"mana_cost": 40, "level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.45"}, {"name": "to_radius", "value": "15"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "34"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "17"}]}, {"mana_cost": 40, "level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.45"}, {"name": "to_radius", "value": "15"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "34"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "17"}]}, {"mana_cost": 41, "level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.5"}, {"name": "to_radius", "value": "15"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "35"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "17"}]}, {"mana_cost": 41, "level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.5"}, {"name": "to_radius", "value": "15"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "35"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "17"}]}, {"mana_cost": 42, "level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.55"}, {"name": "to_radius", "value": "16"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "35"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "17"}]}, {"mana_cost": 42, "level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.55"}, {"name": "to_radius", "value": "16"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "35"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "17"}]}, {"mana_cost": 42, "level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.6"}, {"name": "to_radius", "value": "16"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "36"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "18"}]}, {"mana_cost": 43, "level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.6"}, {"name": "to_radius", "value": "16"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "36"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "18"}]}, {"mana_cost": 43, "level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.65"}, {"name": "to_radius", "value": "17"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "36"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "18"}]}, {"mana_cost": 43, "level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.65"}, {"name": "to_radius", "value": "17"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "36"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "18"}]}, {"mana_cost": 44, "level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [{"name": "+_seconds_to_base_duration", "value": "6.7"}, {"name": "to_radius", "value": "17"}, {"name": "cursed_normal_and_magic_enemies_have_%_less_action_speed", "value": "37"}, {"name": "cursed_rare_and_unique_enemies_have_%_less_action_speed", "value": "18"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Temporal Chains",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "mods": [
+    "+(5\u20135.95) seconds to Base duration",
+    "+(0\u201310) to radius",
+    "Cursed Normal and Magic Enemies have (20\u201329)% less Action Speed",
+    "Other effects on Cursed enemies expire 40% slower",
+    "50% less Effect of Curse against Players",
+    "Cursed Rare and Unique Enemies have (10\u201314)% less Action Speed",
+    "Curse gains 10 Doom per second if you Cast this Spell yourself"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 37,
+        "intelligence": 25,
+        "requires_level": 24
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "20"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 41,
+        "intelligence": 28,
+        "requires_level": 27
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.05"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "20"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 45,
+        "intelligence": 31,
+        "requires_level": 30
+      },
+      "mana_cost": 18,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.1"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "21"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 49,
+        "intelligence": 34,
+        "requires_level": 33
+      },
+      "mana_cost": 19,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.15"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "21"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 53,
+        "intelligence": 36,
+        "requires_level": 36
+      },
+      "mana_cost": 21,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.2"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "22"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 56,
+        "intelligence": 39,
+        "requires_level": 39
+      },
+      "mana_cost": 22,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.25"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "22"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 60,
+        "intelligence": 42,
+        "requires_level": 42
+      },
+      "mana_cost": 23,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.3"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "23"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 64,
+        "intelligence": 45,
+        "requires_level": 45
+      },
+      "mana_cost": 24,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.35"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "23"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 68,
+        "intelligence": 48,
+        "requires_level": 48
+      },
+      "mana_cost": 25,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.4"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "24"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 71,
+        "intelligence": 49,
+        "requires_level": 50
+      },
+      "mana_cost": 26,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.45"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "24"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 74,
+        "intelligence": 51,
+        "requires_level": 52
+      },
+      "mana_cost": 26,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.5"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "25"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 76,
+        "intelligence": 53,
+        "requires_level": 54
+      },
+      "mana_cost": 27,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.55"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "25"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 79,
+        "intelligence": 55,
+        "requires_level": 56
+      },
+      "mana_cost": 28,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.6"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "26"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 82,
+        "intelligence": 57,
+        "requires_level": 58
+      },
+      "mana_cost": 29,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.65"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "26"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 84,
+        "intelligence": 59,
+        "requires_level": 60
+      },
+      "mana_cost": 29,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.7"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "27"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 87,
+        "intelligence": 60,
+        "requires_level": 62
+      },
+      "mana_cost": 30,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.75"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "27"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 90,
+        "intelligence": 62,
+        "requires_level": 64
+      },
+      "mana_cost": 31,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.8"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "28"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 92,
+        "intelligence": 64,
+        "requires_level": 66
+      },
+      "mana_cost": 31,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.85"
+        },
+        {
+          "name": "to_radius",
+          "value": "9"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "28"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 95,
+        "intelligence": 66,
+        "requires_level": 68
+      },
+      "mana_cost": 32,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.9"
+        },
+        {
+          "name": "to_radius",
+          "value": "9"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "29"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 98,
+        "intelligence": 68,
+        "requires_level": 70
+      },
+      "mana_cost": 33,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.95"
+        },
+        {
+          "name": "to_radius",
+          "value": "10"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "29"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 34,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6"
+        },
+        {
+          "name": "to_radius",
+          "value": "10"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "30"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 34,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.05"
+        },
+        {
+          "name": "to_radius",
+          "value": "11"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "30"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 35,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.1"
+        },
+        {
+          "name": "to_radius",
+          "value": "11"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "31"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 36,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.15"
+        },
+        {
+          "name": "to_radius",
+          "value": "12"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "31"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 36,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.2"
+        },
+        {
+          "name": "to_radius",
+          "value": "12"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "32"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 37,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.25"
+        },
+        {
+          "name": "to_radius",
+          "value": "13"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "32"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 38,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.3"
+        },
+        {
+          "name": "to_radius",
+          "value": "13"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "33"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 39,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.35"
+        },
+        {
+          "name": "to_radius",
+          "value": "14"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "33"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 39,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.4"
+        },
+        {
+          "name": "to_radius",
+          "value": "14"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "34"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 40,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.45"
+        },
+        {
+          "name": "to_radius",
+          "value": "15"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "34"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 40,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.45"
+        },
+        {
+          "name": "to_radius",
+          "value": "15"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "34"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 41,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.5"
+        },
+        {
+          "name": "to_radius",
+          "value": "15"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "35"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 41,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.5"
+        },
+        {
+          "name": "to_radius",
+          "value": "15"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "35"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 42,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.55"
+        },
+        {
+          "name": "to_radius",
+          "value": "16"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "35"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 42,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.55"
+        },
+        {
+          "name": "to_radius",
+          "value": "16"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "35"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 42,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.6"
+        },
+        {
+          "name": "to_radius",
+          "value": "16"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "36"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 43,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.6"
+        },
+        {
+          "name": "to_radius",
+          "value": "16"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "36"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 43,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.65"
+        },
+        {
+          "name": "to_radius",
+          "value": "17"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "36"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 43,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.65"
+        },
+        {
+          "name": "to_radius",
+          "value": "17"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "36"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 44,
+      "fields": [
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6.7"
+        },
+        {
+          "name": "to_radius",
+          "value": "17"
+        },
+        {
+          "name": "cursed_normal_and_magic_enemies_have_%_less_action_speed",
+          "value": "37"
+        },
+        {
+          "name": "cursed_rare_and_unique_enemies_have_%_less_action_speed",
+          "value": "18"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "20% increased Temporal Chains Curse Effect",
+      "30% increased Temporal Chains Duration"
+    ],
+    "eternal": [
+      "30% increased Temporal Chains Curse Effect",
+      "45% increased Temporal Chains Duration"
+    ]
+  },
+  "drop_level": 24,
+  "type": [
+    "spell",
+    "area",
+    "duration",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "spellcanrepeat",
+    "triggerable",
+    "spellcancascade",
+    "appliescurse",
+    "canrapidfire",
+    "areaspell",
+    "type91",
+    "type92",
+    "hex"
+  ],
+  "mtx": [],
+  "description": "Curses all enemies in an area, lowering their action speed and making other effects on them expire more slowly.",
+  "support": [
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Spell Echo Support",
+      "types": [
+        "spellcanrepeat"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit",
+        "appliescurse",
+        "hex",
+        "and"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Blasphemy Support",
+      "types": [
+        "appliescurse",
+        "hex",
+        "and"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Spell Cascade Support",
+      "types": [
+        "spellcancascade"
+      ]
+    },
+    {
+      "name": "Intensify Support",
+      "types": [
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Unleash Support",
+      "types": [
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Blasphemy Support",
+      "types": [
+        "appliescurse",
+        "hex",
+        "and"
+      ]
+    },
+    {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit",
+        "appliescurse",
+        "hex",
+        "and"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Spell Cascade Support",
+      "types": [
+        "spellcancascade"
+      ]
+    },
+    {
+      "name": "Awakened Spell Echo Support",
+      "types": [
+        "spellcanrepeat"
+      ]
+    },
+    {
+      "name": "Awakened Unleash Support",
+      "types": [
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Impending Doom Support",
+      "types": [
+        "hex",
+        "appliescurse",
+        "and"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Curse Duration",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Effect of Curse",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Curse has % increased Doom gain rate",
+          "minimum": 0.0,
+          "maximum": 40.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

@@ -1,1 +1,857 @@
-{"target_types": ["ground", "unknown_11"], "acquisition": {"quest": {"act": 1, "quest_name": "Enemy at the Gate", "classes": ["Witch", "Shadow"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Witch", "Templar", "Shadow", "Scion"]}}, "vaal": true, "tags": [], "type": [], "enchants": {"eternal": ["40% increased Blight Damage", "24% increased Blight Area of Effect", "Blight has 30% increased Hinder Duration"], "merciless": ["25% increased Blight Damage", "16% increased Blight Area of Effect", "Blight has 20% increased Hinder Duration"]}, "mtx": [{"name": "Celestial Blight Effect", "description": "Your Blight becomes a Celestial Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialBlight.png?w=2&h=2&scale=1"}], "support": [{"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Cast while Channelling Support", "types": ["channelled"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Arcane Surge Support", "types": ["spell"]}, {"name": "Infused Channelling Support", "types": ["channelled"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Cast While Channelling Support", "types": ["channelled"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}], "description": "Apply a debuff to enemies in front of you which deals chaos damage over time. Enemies who aren't already debuffed by Blight are also hindered for a shorter secondary duration, slowing their movement. Continued channelling adds layers of damage to the debuff, each with their own duration.", "mods": ["Deals (3.1\u2013257.4) Base Chaos Damage per second", "+2.5 seconds to Base duration", "Base secondary duration is 0.8 seconds", "80% reduced Movement Speed", "Debuff can have up to 20 layers of Damage", "+(0\u20136) to radius", "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"], "quality": {"anomalous": {"mods": [{"text": "% increased Chaos Damage", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% increased Secondary Duration", "minimum": 0.0, "maximum": 60.0}], "weight": 100.0}}, "drop_level": null, "name": "Blight", "levels": [{"mana_cost": 2, "level": 1, "requirements": {"requires_level": 1, "intelligence": 10}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 3.1}, {"mana_cost": 2, "level": 2, "requirements": {"requires_level": 2, "intelligence": 12}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 3.6}, {"mana_cost": 2, "level": 3, "requirements": {"requires_level": 4, "intelligence": 16}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 4.5}, {"mana_cost": 2, "level": 4, "requirements": {"requires_level": 7, "intelligence": 22}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 6.0}, {"mana_cost": 2, "level": 5, "requirements": {"requires_level": 11, "intelligence": 31}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 8.6}, {"mana_cost": 2, "level": 6, "requirements": {"requires_level": 16, "intelligence": 41}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 12.7}, {"mana_cost": 2, "level": 7, "requirements": {"requires_level": 20, "intelligence": 50}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 16.8}, {"mana_cost": 2, "level": 8, "requirements": {"requires_level": 24, "intelligence": 58}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 21.9}, {"mana_cost": 3, "level": 9, "requirements": {"requires_level": 28, "intelligence": 67}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 28.2}, {"mana_cost": 3, "level": 10, "requirements": {"requires_level": 32, "intelligence": 75}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 35.8}, {"mana_cost": 3, "level": 11, "requirements": {"requires_level": 36, "intelligence": 83}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 45.1}, {"mana_cost": 3, "level": 12, "requirements": {"requires_level": 40, "intelligence": 92}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 56.4}, {"mana_cost": 4, "level": 13, "requirements": {"requires_level": 44, "intelligence": 100}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 70.1}, {"mana_cost": 4, "level": 14, "requirements": {"requires_level": 48, "intelligence": 109}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 86.5}, {"mana_cost": 4, "level": 15, "requirements": {"requires_level": 52, "intelligence": 117}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 106.4}, {"mana_cost": 4, "level": 16, "requirements": {"requires_level": 56, "intelligence": 125}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 130.2}, {"mana_cost": 4, "level": 17, "requirements": {"requires_level": 60, "intelligence": 134}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 158.8}, {"mana_cost": 5, "level": 18, "requirements": {"requires_level": 64, "intelligence": 142}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 193.1}, {"mana_cost": 5, "level": 19, "requirements": {"requires_level": 67, "intelligence": 148}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 223.1}, {"mana_cost": 5, "level": 20, "requirements": {"requires_level": 70, "intelligence": 155}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 257.4}, {"mana_cost": 5, "level": 21, "requirements": {"requires_level": 72, "intelligence": null}, "fields": [{"name": "to_radius", "value": "7"}], "minimum_damage": 282.9}, {"mana_cost": 5, "level": 22, "requirements": {"requires_level": 74, "intelligence": null}, "fields": [{"name": "to_radius", "value": "7"}], "minimum_damage": 310.8}, {"mana_cost": 5, "level": 23, "requirements": {"requires_level": 76, "intelligence": null}, "fields": [{"name": "to_radius", "value": "7"}], "minimum_damage": 341.2}, {"mana_cost": 5, "level": 24, "requirements": {"requires_level": 78, "intelligence": null}, "fields": [{"name": "to_radius", "value": "8"}], "minimum_damage": 374.4}, {"mana_cost": 5, "level": 25, "requirements": {"requires_level": 80, "intelligence": null}, "fields": [{"name": "to_radius", "value": "8"}], "minimum_damage": 410.6}, {"mana_cost": 6, "level": 26, "requirements": {"requires_level": 82, "intelligence": null}, "fields": [{"name": "to_radius", "value": "8"}], "minimum_damage": 450.0}, {"mana_cost": 6, "level": 27, "requirements": {"requires_level": 84, "intelligence": null}, "fields": [{"name": "to_radius", "value": "9"}], "minimum_damage": 493.1}, {"mana_cost": 6, "level": 28, "requirements": {"requires_level": 86, "intelligence": null}, "fields": [{"name": "to_radius", "value": "9"}], "minimum_damage": 540.0}, {"mana_cost": 6, "level": 29, "requirements": {"requires_level": 88, "intelligence": null}, "fields": [{"name": "to_radius", "value": "9"}], "minimum_damage": 591.1}, {"mana_cost": 6, "level": 30, "requirements": {"requires_level": 90, "intelligence": null}, "fields": [{"name": "to_radius", "value": "10"}], "minimum_damage": 646.8}, {"mana_cost": 6, "level": 31, "requirements": {"requires_level": 91, "intelligence": null}, "fields": [{"name": "to_radius", "value": "10"}], "minimum_damage": 676.4}, {"mana_cost": 6, "level": 32, "requirements": {"requires_level": 92, "intelligence": null}, "fields": [{"name": "to_radius", "value": "10"}], "minimum_damage": 707.4}, {"mana_cost": 6, "level": 33, "requirements": {"requires_level": 93, "intelligence": null}, "fields": [{"name": "to_radius", "value": "10"}], "minimum_damage": 739.7}, {"mana_cost": 6, "level": 34, "requirements": {"requires_level": 94, "intelligence": null}, "fields": [{"name": "to_radius", "value": "10"}], "minimum_damage": 773.4}, {"mana_cost": 6, "level": 35, "requirements": {"requires_level": 95, "intelligence": null}, "fields": [{"name": "to_radius", "value": "10"}], "minimum_damage": 808.6}, {"mana_cost": 6, "level": 36, "requirements": {"requires_level": 96, "intelligence": null}, "fields": [{"name": "to_radius", "value": "11"}], "minimum_damage": 845.3}, {"mana_cost": 6, "level": 37, "requirements": {"requires_level": 97, "intelligence": null}, "fields": [{"name": "to_radius", "value": "11"}], "minimum_damage": 883.6}, {"mana_cost": 6, "level": 38, "requirements": {"requires_level": 98, "intelligence": null}, "fields": [{"name": "to_radius", "value": "11"}], "minimum_damage": 923.5}, {"mana_cost": 7, "level": 39, "requirements": {"requires_level": 99, "intelligence": null}, "fields": [{"name": "to_radius", "value": "11"}], "minimum_damage": 965.1}, {"mana_cost": 7, "level": 40, "requirements": {"requires_level": 100, "intelligence": null}, "fields": [{"name": "to_radius", "value": "11"}], "minimum_damage": 1008.6}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Blight",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Witch",
+        "Shadow"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Deals (3.1\u2013257.4) Base Chaos Damage per second",
+    "+2.5 seconds to Base duration",
+    "Base secondary duration is 0.8 seconds",
+    "80% reduced Movement Speed",
+    "Debuff can have up to 20 layers of Damage",
+    "+(0\u20136) to radius",
+    "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
+  ],
+  "vaal": true,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 3.1,
+      "requirements": {
+        "intelligence": 10,
+        "requires_level": 1
+      },
+      "mana_cost": 2,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 3.6,
+      "requirements": {
+        "intelligence": 12,
+        "requires_level": 2
+      },
+      "mana_cost": 2,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 4.5,
+      "requirements": {
+        "intelligence": 16,
+        "requires_level": 4
+      },
+      "mana_cost": 2,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 6.0,
+      "requirements": {
+        "intelligence": 22,
+        "requires_level": 7
+      },
+      "mana_cost": 2,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 8.6,
+      "requirements": {
+        "intelligence": 31,
+        "requires_level": 11
+      },
+      "mana_cost": 2,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 12.7,
+      "requirements": {
+        "intelligence": 41,
+        "requires_level": 16
+      },
+      "mana_cost": 2,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 16.8,
+      "requirements": {
+        "intelligence": 50,
+        "requires_level": 20
+      },
+      "mana_cost": 2,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 21.9,
+      "requirements": {
+        "intelligence": 58,
+        "requires_level": 24
+      },
+      "mana_cost": 2,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 28.2,
+      "requirements": {
+        "intelligence": 67,
+        "requires_level": 28
+      },
+      "mana_cost": 3,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 35.8,
+      "requirements": {
+        "intelligence": 75,
+        "requires_level": 32
+      },
+      "mana_cost": 3,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 45.1,
+      "requirements": {
+        "intelligence": 83,
+        "requires_level": 36
+      },
+      "mana_cost": 3,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 56.4,
+      "requirements": {
+        "intelligence": 92,
+        "requires_level": 40
+      },
+      "mana_cost": 3,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 70.1,
+      "requirements": {
+        "intelligence": 100,
+        "requires_level": 44
+      },
+      "mana_cost": 4,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 86.5,
+      "requirements": {
+        "intelligence": 109,
+        "requires_level": 48
+      },
+      "mana_cost": 4,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 106.4,
+      "requirements": {
+        "intelligence": 117,
+        "requires_level": 52
+      },
+      "mana_cost": 4,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 130.2,
+      "requirements": {
+        "intelligence": 125,
+        "requires_level": 56
+      },
+      "mana_cost": 4,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 158.8,
+      "requirements": {
+        "intelligence": 134,
+        "requires_level": 60
+      },
+      "mana_cost": 4,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 193.1,
+      "requirements": {
+        "intelligence": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 223.1,
+      "requirements": {
+        "intelligence": 148,
+        "requires_level": 67
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 257.4,
+      "requirements": {
+        "intelligence": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 282.9,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 310.8,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 341.2,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 374.4,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 410.6,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 450.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 493.1,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 540.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 591.1,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 646.8,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 676.4,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 707.4,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 739.7,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 773.4,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 808.6,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 845.3,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 883.6,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 923.5,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 965.1,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 1008.6,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    }
+  ],
+  "tags": [],
+  "enchants": {
+    "merciless": [
+      "25% increased Blight Damage",
+      "16% increased Blight Area of Effect",
+      "Blight has 20% increased Hinder Duration"
+    ],
+    "eternal": [
+      "40% increased Blight Damage",
+      "24% increased Blight Area of Effect",
+      "Blight has 30% increased Hinder Duration"
+    ]
+  },
+  "drop_level": null,
+  "type": [],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialBlight.png?w=2&h=2&scale=1",
+      "name": "Celestial Blight Effect",
+      "description": "Your Blight becomes a Celestial Effect."
+    }
+  ],
+  "description": "Apply a debuff to enemies in front of you which deals chaos damage over time. Enemies who aren't already debuffed by Blight are also hindered for a shorter secondary duration, slowing their movement. Continued channelling adds layers of damage to the debuff, each with their own duration.",
+  "support": [
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cast while Channelling Support",
+      "types": [
+        "channelled"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Arcane Surge Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Infused Channelling Support",
+      "types": [
+        "channelled"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Cast While Channelling Support",
+      "types": [
+        "channelled"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "unknown_11"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Secondary Duration",
+          "minimum": 0.0,
+          "maximum": 60.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Chaos Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

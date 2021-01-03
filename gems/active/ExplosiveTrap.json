@@ -1,1 +1,1453 @@
-{"target_types": ["enemy", "ground"], "acquisition": {"quest": {"act": 1, "quest_name": "Enemy at the Gate", "classes": ["Shadow"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Witch", "Ranger", "Shadow", "Scion"]}}, "vaal": false, "tags": ["is_area_damage [1]", "base_skill_is_trapped [1]", "base_skill_show_average_damage_instead_of_dps [1]"], "type": ["1"], "enchants": {"eternal": ["Explosive Trap deals 40% increased Damage", "Explosive Trap has 24% increased Area of Effect", "Explosive Trap causes 2 additional smaller explosions"], "merciless": ["Explosive Trap deals 25% increased Damage", "Explosive Trap has 16% increased Area of Effect", "Explosive Trap causes an additional smaller explosion"]}, "mtx": [], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Multiple Traps Support", "types": ["trap"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Trap and Mine Damage Support", "types": ["trap", "mine"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Cluster Traps Support", "types": ["trap"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Advanced Traps Support", "types": ["trap"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Charged Traps Support", "types": ["trap"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Swift Assembly Support", "types": ["trap", "mine"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}], "description": "Throws a trap that creates a large explosion when triggered, dealing spell damage in an area. A number of smaller explosions occur around this area in quick succession after the first.", "mods": ["Trap lasts 4 seconds", "Deals (4\u2013309) to (6\u2013464) Physical Damage", "50% of Physical Damage Converted to Fire Damage", "Causes (4\u20137) smaller explosions", "+(0\u20136) to radius"], "quality": {"anomalous": {"mods": [{"text": "% increased Burning Damage", "minimum": 0.0, "maximum": 60.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% of Physical Damage Converted to Cold Damage", "minimum": 0.0, "maximum": 40.0}], "weight": 20.0}}, "drop_level": null, "name": "Explosive Trap", "levels": [{"mana_cost": 6, "maximum_damage": 6.0, "level": 1, "requirements": {"dexterity": 6, "requires_level": 1, "intelligence": 4}, "fields": [{"name": "causes__smaller_explosions", "value": "4"}, {"name": "to_radius", "value": "0"}], "minimum_damage": 4.0}, {"mana_cost": 6, "maximum_damage": 7.0, "level": 2, "requirements": {"dexterity": 7, "requires_level": 2, "intelligence": 5}, "fields": [{"name": "causes__smaller_explosions", "value": "4"}, {"name": "to_radius", "value": "0"}], "minimum_damage": 5.0}, {"mana_cost": 7, "maximum_damage": 10.0, "level": 3, "requirements": {"dexterity": 10, "requires_level": 4, "intelligence": 7}, "fields": [{"name": "causes__smaller_explosions", "value": "4"}, {"name": "to_radius", "value": "1"}], "minimum_damage": 7.0}, {"mana_cost": 8, "maximum_damage": 15.0, "level": 4, "requirements": {"dexterity": 14, "requires_level": 7, "intelligence": 10}, "fields": [{"name": "causes__smaller_explosions", "value": "4"}, {"name": "to_radius", "value": "1"}], "minimum_damage": 10.0}, {"mana_cost": 9, "maximum_damage": 21.0, "level": 5, "requirements": {"dexterity": 19, "requires_level": 11, "intelligence": 13}, "fields": [{"name": "causes__smaller_explosions", "value": "4"}, {"name": "to_radius", "value": "1"}], "minimum_damage": 14.0}, {"mana_cost": 10, "maximum_damage": 31.0, "level": 6, "requirements": {"dexterity": 26, "requires_level": 16, "intelligence": 18}, "fields": [{"name": "causes__smaller_explosions", "value": "5"}, {"name": "to_radius", "value": "2"}], "minimum_damage": 20.0}, {"mana_cost": 11, "maximum_damage": 40.0, "level": 7, "requirements": {"dexterity": 31, "requires_level": 20, "intelligence": 22}, "fields": [{"name": "causes__smaller_explosions", "value": "5"}, {"name": "to_radius", "value": "2"}], "minimum_damage": 26.0}, {"mana_cost": 12, "maximum_damage": 51.0, "level": 8, "requirements": {"dexterity": 37, "requires_level": 24, "intelligence": 25}, "fields": [{"name": "causes__smaller_explosions", "value": "5"}, {"name": "to_radius", "value": "2"}], "minimum_damage": 34.0}, {"mana_cost": 13, "maximum_damage": 64.0, "level": 9, "requirements": {"dexterity": 42, "requires_level": 28, "intelligence": 29}, "fields": [{"name": "causes__smaller_explosions", "value": "5"}, {"name": "to_radius", "value": "3"}], "minimum_damage": 43.0}, {"mana_cost": 14, "maximum_damage": 79.0, "level": 10, "requirements": {"dexterity": 47, "requires_level": 32, "intelligence": 33}, "fields": [{"name": "causes__smaller_explosions", "value": "5"}, {"name": "to_radius", "value": "3"}], "minimum_damage": 53.0}, {"mana_cost": 14, "maximum_damage": 98.0, "level": 11, "requirements": {"dexterity": 53, "requires_level": 36, "intelligence": 36}, "fields": [{"name": "causes__smaller_explosions", "value": "6"}, {"name": "to_radius", "value": "3"}], "minimum_damage": 65.0}, {"mana_cost": 15, "maximum_damage": 120.0, "level": 12, "requirements": {"dexterity": 58, "requires_level": 40, "intelligence": 40}, "fields": [{"name": "causes__smaller_explosions", "value": "6"}, {"name": "to_radius", "value": "4"}], "minimum_damage": 80.0}, {"mana_cost": 16, "maximum_damage": 145.0, "level": 13, "requirements": {"dexterity": 63, "requires_level": 44, "intelligence": 44}, "fields": [{"name": "causes__smaller_explosions", "value": "6"}, {"name": "to_radius", "value": "4"}], "minimum_damage": 97.0}, {"mana_cost": 16, "maximum_damage": 176.0, "level": 14, "requirements": {"dexterity": 68, "requires_level": 48, "intelligence": 48}, "fields": [{"name": "causes__smaller_explosions", "value": "6"}, {"name": "to_radius", "value": "4"}], "minimum_damage": 117.0}, {"mana_cost": 17, "maximum_damage": 211.0, "level": 15, "requirements": {"dexterity": 74, "requires_level": 52, "intelligence": 51}, "fields": [{"name": "causes__smaller_explosions", "value": "6"}, {"name": "to_radius", "value": "5"}], "minimum_damage": 141.0}, {"mana_cost": 18, "maximum_damage": 253.0, "level": 16, "requirements": {"dexterity": 79, "requires_level": 56, "intelligence": 55}, "fields": [{"name": "causes__smaller_explosions", "value": "7"}, {"name": "to_radius", "value": "5"}], "minimum_damage": 169.0}, {"mana_cost": 18, "maximum_damage": 302.0, "level": 17, "requirements": {"dexterity": 84, "requires_level": 60, "intelligence": 59}, "fields": [{"name": "causes__smaller_explosions", "value": "7"}, {"name": "to_radius", "value": "5"}], "minimum_damage": 202.0}, {"mana_cost": 19, "maximum_damage": 360.0, "level": 18, "requirements": {"dexterity": 90, "requires_level": 64, "intelligence": 62}, "fields": [{"name": "causes__smaller_explosions", "value": "7"}, {"name": "to_radius", "value": "6"}], "minimum_damage": 240.0}, {"mana_cost": 19, "maximum_damage": 409.0, "level": 19, "requirements": {"dexterity": 94, "requires_level": 67, "intelligence": 65}, "fields": [{"name": "causes__smaller_explosions", "value": "7"}, {"name": "to_radius", "value": "6"}], "minimum_damage": 273.0}, {"mana_cost": 20, "maximum_damage": 464.0, "level": 20, "requirements": {"dexterity": 98, "requires_level": 70, "intelligence": 68}, "fields": [{"name": "causes__smaller_explosions", "value": "7"}, {"name": "to_radius", "value": "6"}], "minimum_damage": 309.0}, {"mana_cost": 20, "maximum_damage": 505.0, "level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "8"}, {"name": "to_radius", "value": "7"}], "minimum_damage": 336.0}, {"mana_cost": 21, "maximum_damage": 548.0, "level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "8"}, {"name": "to_radius", "value": "7"}], "minimum_damage": 366.0}, {"mana_cost": 21, "maximum_damage": 595.0, "level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "8"}, {"name": "to_radius", "value": "7"}], "minimum_damage": 397.0}, {"mana_cost": 21, "maximum_damage": 646.0, "level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "8"}, {"name": "to_radius", "value": "8"}], "minimum_damage": 431.0}, {"mana_cost": 22, "maximum_damage": 701.0, "level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "8"}, {"name": "to_radius", "value": "8"}], "minimum_damage": 467.0}, {"mana_cost": 23, "maximum_damage": 760.0, "level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "9"}, {"name": "to_radius", "value": "8"}], "minimum_damage": 507.0}, {"mana_cost": 23, "maximum_damage": 824.0, "level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "9"}, {"name": "to_radius", "value": "9"}], "minimum_damage": 549.0}, {"mana_cost": 23, "maximum_damage": 893.0, "level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "9"}, {"name": "to_radius", "value": "9"}], "minimum_damage": 595.0}, {"mana_cost": 24, "maximum_damage": 967.0, "level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "9"}, {"name": "to_radius", "value": "9"}], "minimum_damage": 644.0}, {"mana_cost": 24, "maximum_damage": 1046.0, "level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "9"}, {"name": "to_radius", "value": "10"}], "minimum_damage": 698.0}, {"mana_cost": 25, "maximum_damage": 1088.0, "level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "9"}, {"name": "to_radius", "value": "10"}], "minimum_damage": 726.0}, {"mana_cost": 25, "maximum_damage": 1132.0, "level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "10"}], "minimum_damage": 755.0}, {"mana_cost": 25, "maximum_damage": 1177.0, "level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "10"}], "minimum_damage": 785.0}, {"mana_cost": 26, "maximum_damage": 1224.0, "level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "10"}], "minimum_damage": 816.0}, {"mana_cost": 27, "maximum_damage": 1273.0, "level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "11"}], "minimum_damage": 849.0}, {"mana_cost": 27, "maximum_damage": 1324.0, "level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "11"}], "minimum_damage": 882.0}, {"mana_cost": 27, "maximum_damage": 1376.0, "level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "11"}], "minimum_damage": 917.0}, {"mana_cost": 28, "maximum_damage": 1431.0, "level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "11"}], "minimum_damage": 954.0}, {"mana_cost": 28, "maximum_damage": 1487.0, "level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "11"}], "minimum_damage": 991.0}, {"mana_cost": 29, "maximum_damage": 1546.0, "level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [{"name": "causes__smaller_explosions", "value": "10"}, {"name": "to_radius", "value": "11"}], "minimum_damage": 1030.0}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Explosive Trap",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Trap lasts 4 seconds",
+    "Deals (4\u2013309) to (6\u2013464) Physical Damage",
+    "50% of Physical Damage Converted to Fire Damage",
+    "Causes (4\u20137) smaller explosions",
+    "+(0\u20136) to radius"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 4.0,
+      "requirements": {
+        "dexterity": 6,
+        "intelligence": 4,
+        "requires_level": 1
+      },
+      "mana_cost": 6,
+      "maximum_damage": 6.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "4"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 5.0,
+      "requirements": {
+        "dexterity": 7,
+        "intelligence": 5,
+        "requires_level": 2
+      },
+      "mana_cost": 6,
+      "maximum_damage": 7.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "4"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "dexterity": 10,
+        "intelligence": 7,
+        "requires_level": 4
+      },
+      "mana_cost": 7,
+      "maximum_damage": 10.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "4"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "dexterity": 14,
+        "intelligence": 10,
+        "requires_level": 7
+      },
+      "mana_cost": 8,
+      "maximum_damage": 15.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "4"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 14.0,
+      "requirements": {
+        "dexterity": 19,
+        "intelligence": 13,
+        "requires_level": 11
+      },
+      "mana_cost": 9,
+      "maximum_damage": 21.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "4"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 20.0,
+      "requirements": {
+        "dexterity": 26,
+        "intelligence": 18,
+        "requires_level": 16
+      },
+      "mana_cost": 10,
+      "maximum_damage": 31.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "5"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 26.0,
+      "requirements": {
+        "dexterity": 31,
+        "intelligence": 22,
+        "requires_level": 20
+      },
+      "mana_cost": 11,
+      "maximum_damage": 40.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "5"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 34.0,
+      "requirements": {
+        "dexterity": 37,
+        "intelligence": 25,
+        "requires_level": 24
+      },
+      "mana_cost": 12,
+      "maximum_damage": 51.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "5"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 43.0,
+      "requirements": {
+        "dexterity": 42,
+        "intelligence": 29,
+        "requires_level": 28
+      },
+      "mana_cost": 13,
+      "maximum_damage": 64.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "5"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 53.0,
+      "requirements": {
+        "dexterity": 47,
+        "intelligence": 33,
+        "requires_level": 32
+      },
+      "mana_cost": 14,
+      "maximum_damage": 79.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "5"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 65.0,
+      "requirements": {
+        "dexterity": 53,
+        "intelligence": 36,
+        "requires_level": 36
+      },
+      "mana_cost": 14,
+      "maximum_damage": 98.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "6"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 80.0,
+      "requirements": {
+        "dexterity": 58,
+        "intelligence": 40,
+        "requires_level": 40
+      },
+      "mana_cost": 15,
+      "maximum_damage": 120.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "6"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 97.0,
+      "requirements": {
+        "dexterity": 63,
+        "intelligence": 44,
+        "requires_level": 44
+      },
+      "mana_cost": 16,
+      "maximum_damage": 145.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "6"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 117.0,
+      "requirements": {
+        "dexterity": 68,
+        "intelligence": 48,
+        "requires_level": 48
+      },
+      "mana_cost": 16,
+      "maximum_damage": 176.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "6"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 141.0,
+      "requirements": {
+        "dexterity": 74,
+        "intelligence": 51,
+        "requires_level": 52
+      },
+      "mana_cost": 17,
+      "maximum_damage": 211.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "6"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 169.0,
+      "requirements": {
+        "dexterity": 79,
+        "intelligence": 55,
+        "requires_level": 56
+      },
+      "mana_cost": 18,
+      "maximum_damage": 253.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "7"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 202.0,
+      "requirements": {
+        "dexterity": 84,
+        "intelligence": 59,
+        "requires_level": 60
+      },
+      "mana_cost": 18,
+      "maximum_damage": 302.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "7"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 240.0,
+      "requirements": {
+        "dexterity": 90,
+        "intelligence": 62,
+        "requires_level": 64
+      },
+      "mana_cost": 19,
+      "maximum_damage": 360.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "7"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 273.0,
+      "requirements": {
+        "dexterity": 94,
+        "intelligence": 65,
+        "requires_level": 67
+      },
+      "mana_cost": 19,
+      "maximum_damage": 409.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "7"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 309.0,
+      "requirements": {
+        "dexterity": 98,
+        "intelligence": 68,
+        "requires_level": 70
+      },
+      "mana_cost": 20,
+      "maximum_damage": 464.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "7"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 336.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 20,
+      "maximum_damage": 505.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "8"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 366.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 21,
+      "maximum_damage": 548.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "8"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 397.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 21,
+      "maximum_damage": 595.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "8"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 431.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 21,
+      "maximum_damage": 646.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "8"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 467.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 22,
+      "maximum_damage": 701.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "8"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 507.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 23,
+      "maximum_damage": 760.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "9"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 549.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 23,
+      "maximum_damage": 824.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "9"
+        },
+        {
+          "name": "to_radius",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 595.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 23,
+      "maximum_damage": 893.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "9"
+        },
+        {
+          "name": "to_radius",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 644.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 24,
+      "maximum_damage": 967.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "9"
+        },
+        {
+          "name": "to_radius",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 698.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 24,
+      "maximum_damage": 1046.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "9"
+        },
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 726.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 25,
+      "maximum_damage": 1088.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "9"
+        },
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 755.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 25,
+      "maximum_damage": 1132.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 785.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 25,
+      "maximum_damage": 1177.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 816.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 26,
+      "maximum_damage": 1224.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 849.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 27,
+      "maximum_damage": 1273.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 882.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 27,
+      "maximum_damage": 1324.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 917.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 27,
+      "maximum_damage": 1376.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 954.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 28,
+      "maximum_damage": 1431.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 991.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 28,
+      "maximum_damage": 1487.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 1030.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 29,
+      "maximum_damage": 1546.0,
+      "fields": [
+        {
+          "name": "causes__smaller_explosions",
+          "value": "10"
+        },
+        {
+          "name": "to_radius",
+          "value": "11"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "is_area_damage [1]",
+    "base_skill_is_trapped [1]",
+    "base_skill_show_average_damage_instead_of_dps [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "Explosive Trap deals 25% increased Damage",
+      "Explosive Trap has 16% increased Area of Effect",
+      "Explosive Trap causes an additional smaller explosion"
+    ],
+    "eternal": [
+      "Explosive Trap deals 40% increased Damage",
+      "Explosive Trap has 24% increased Area of Effect",
+      "Explosive Trap causes 2 additional smaller explosions"
+    ]
+  },
+  "drop_level": null,
+  "type": [
+    "1"
+  ],
+  "mtx": [],
+  "description": "Throws a trap that creates a large explosion when triggered, dealing spell damage in an area. A number of smaller explosions occur around this area in quick succession after the first.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Multiple Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Trap and Mine Damage Support",
+      "types": [
+        "trap",
+        "mine"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cluster Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Advanced Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Charged Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Swift Assembly Support",
+      "types": [
+        "trap",
+        "mine"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    }
+  ],
+  "target_types": [
+    "enemy",
+    "ground"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% of Physical Damage Converted to Cold Damage",
+          "minimum": 0.0,
+          "maximum": 40.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Burning Damage",
+          "minimum": 0.0,
+          "maximum": 60.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

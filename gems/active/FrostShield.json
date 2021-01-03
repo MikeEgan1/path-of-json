@@ -1,1 +1,1220 @@
-{"target_types": ["any"], "acquisition": {"quest": {"act": 4, "quest_name": "Breaking the Seal", "classes": ["Witch", "Templar", "Shadow", "Scion"]}, "vendor": {"vendor_name": "Petarus and Vanja", "classes": ["Witch", "Templar", "Shadow", "Scion"]}}, "vaal": false, "tags": [], "type": ["spell", "area", "duration", "skillcantrap", "skillcanmine", "triggerable", "areaspell", "secondwindsupport", "coldskill", "skillcantotem", "chillingarea", "nonhitchill", "causeelementalstatus", "type27"], "enchants": {"eternal": ["Frost Shield has +1 Cooldown Use", "Frost Shield has +180 to maximum Life per Stage"], "merciless": ["Frost Shield has +125 to maximum Life per Stage"]}, "mtx": [], "support": [{"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Intensify Support", "types": ["areaspell"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "Place a Frost Shield that drains your energy shield for one second or until you run out, gaining stages while this drain occurs. The Frost Shield takes some damage from hits in place of you and allies while in its area. Enemies in the area are Chilled. You can only have one Frost Shield active at once.", "mods": ["+10 seconds to Base duration", "20% of Damage dealt to you or Allies in Area with Hits by Enemies in Area is taken from Frost Shield's Life before your Life or Energy Shield", "Maximum 4 Stages", "Frost Shield has (190\u2013910) maximum Life per Stage", "60% of Damage dealt to you or Allies in Area with Hits by Enemies outside Area is taken from Frost Shield's Life before your Life or Energy Shield", "You lose (150\u2013730) Energy Shield per second", "Gains 1 Stage every 0.3 seconds while you are losing Energy Shield", "You gain +(0.1\u20130.38)% to Spell Critical Strike Chance per Stage while in Area"], "quality": {"phantasmal": {"mods": [{"text": "Frost Shield Regenerates % of its Life per second", "minimum": 0.0, "maximum": 2.0}], "weight": 20.0}, "anomalous": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Effect of Cold Ailments", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% of Damage dealt to you or Allies in Area with Hits by Enemies in Area is taken from Frost Shield's Life before your Life or Energy Shield", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}}, "drop_level": 34, "name": "Frost Shield", "levels": [{"mana_cost": 30, "level": 1, "requirements": {"dexterity": 35, "requires_level": 34, "intelligence": 50}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "190"}, {"name": "you_lose__energy_shield_per_second", "value": "150"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.1"}]}, {"mana_cost": 32, "level": 2, "requirements": {"dexterity": 36, "requires_level": 36, "intelligence": 53}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "200"}, {"name": "you_lose__energy_shield_per_second", "value": "160"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.11"}]}, {"mana_cost": 34, "level": 3, "requirements": {"dexterity": 38, "requires_level": 38, "intelligence": 55}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "210"}, {"name": "you_lose__energy_shield_per_second", "value": "170"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.13"}]}, {"mana_cost": 36, "level": 4, "requirements": {"dexterity": 40, "requires_level": 40, "intelligence": 58}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "230"}, {"name": "you_lose__energy_shield_per_second", "value": "190"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.14"}]}, {"mana_cost": 38, "level": 5, "requirements": {"dexterity": 42, "requires_level": 42, "intelligence": 60}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "250"}, {"name": "you_lose__energy_shield_per_second", "value": "200"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.16"}]}, {"mana_cost": 40, "level": 6, "requirements": {"dexterity": 44, "requires_level": 44, "intelligence": 63}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "280"}, {"name": "you_lose__energy_shield_per_second", "value": "220"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.17"}]}, {"mana_cost": 42, "level": 7, "requirements": {"dexterity": 46, "requires_level": 46, "intelligence": 66}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "300"}, {"name": "you_lose__energy_shield_per_second", "value": "240"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.19"}]}, {"mana_cost": 44, "level": 8, "requirements": {"dexterity": 48, "requires_level": 48, "intelligence": 68}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "330"}, {"name": "you_lose__energy_shield_per_second", "value": "260"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.2"}]}, {"mana_cost": 44, "level": 9, "requirements": {"dexterity": 49, "requires_level": 50, "intelligence": 71}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "360"}, {"name": "you_lose__energy_shield_per_second", "value": "290"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.22"}]}, {"mana_cost": 46, "level": 10, "requirements": {"dexterity": 51, "requires_level": 52, "intelligence": 74}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "390"}, {"name": "you_lose__energy_shield_per_second", "value": "310"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.23"}]}, {"mana_cost": 48, "level": 11, "requirements": {"dexterity": 53, "requires_level": 54, "intelligence": 76}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "430"}, {"name": "you_lose__energy_shield_per_second", "value": "340"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.25"}]}, {"mana_cost": 48, "level": 12, "requirements": {"dexterity": 55, "requires_level": 56, "intelligence": 79}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "470"}, {"name": "you_lose__energy_shield_per_second", "value": "380"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.26"}]}, {"mana_cost": 50, "level": 13, "requirements": {"dexterity": 57, "requires_level": 58, "intelligence": 82}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "520"}, {"name": "you_lose__energy_shield_per_second", "value": "410"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.28"}]}, {"mana_cost": 50, "level": 14, "requirements": {"dexterity": 59, "requires_level": 60, "intelligence": 84}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "570"}, {"name": "you_lose__energy_shield_per_second", "value": "460"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.29"}]}, {"mana_cost": 52, "level": 15, "requirements": {"dexterity": 60, "requires_level": 62, "intelligence": 87}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "630"}, {"name": "you_lose__energy_shield_per_second", "value": "500"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.31"}]}, {"mana_cost": 52, "level": 16, "requirements": {"dexterity": 62, "requires_level": 64, "intelligence": 90}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "690"}, {"name": "you_lose__energy_shield_per_second", "value": "550"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.32"}]}, {"mana_cost": 52, "level": 17, "requirements": {"dexterity": 64, "requires_level": 66, "intelligence": 92}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "750"}, {"name": "you_lose__energy_shield_per_second", "value": "600"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.34"}]}, {"mana_cost": 52, "level": 18, "requirements": {"dexterity": 66, "requires_level": 68, "intelligence": 95}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "830"}, {"name": "you_lose__energy_shield_per_second", "value": "660"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.35"}]}, {"mana_cost": 54, "level": 19, "requirements": {"dexterity": 67, "requires_level": 69, "intelligence": 96}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "870"}, {"name": "you_lose__energy_shield_per_second", "value": "690"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.37"}]}, {"mana_cost": 54, "level": 20, "requirements": {"dexterity": 68, "requires_level": 70, "intelligence": 98}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "910"}, {"name": "you_lose__energy_shield_per_second", "value": "730"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.38"}]}, {"mana_cost": 56, "level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1000"}, {"name": "you_lose__energy_shield_per_second", "value": "800"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.4"}]}, {"mana_cost": 56, "level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1090"}, {"name": "you_lose__energy_shield_per_second", "value": "870"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.41"}]}, {"mana_cost": 58, "level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1190"}, {"name": "you_lose__energy_shield_per_second", "value": "950"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.43"}]}, {"mana_cost": 58, "level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1290"}, {"name": "you_lose__energy_shield_per_second", "value": "1030"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.44"}]}, {"mana_cost": 60, "level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1400"}, {"name": "you_lose__energy_shield_per_second", "value": "1120"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.46"}]}, {"mana_cost": 60, "level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1530"}, {"name": "you_lose__energy_shield_per_second", "value": "1220"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.47"}]}, {"mana_cost": 60, "level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1660"}, {"name": "you_lose__energy_shield_per_second", "value": "1330"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.49"}]}, {"mana_cost": 60, "level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1800"}, {"name": "you_lose__energy_shield_per_second", "value": "1440"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.5"}]}, {"mana_cost": 62, "level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "1940"}, {"name": "you_lose__energy_shield_per_second", "value": "1550"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.52"}]}, {"mana_cost": 62, "level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2100"}, {"name": "you_lose__energy_shield_per_second", "value": "1680"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.53"}]}, {"mana_cost": 62, "level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2180"}, {"name": "you_lose__energy_shield_per_second", "value": "1740"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.54"}]}, {"mana_cost": 63, "level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2260"}, {"name": "you_lose__energy_shield_per_second", "value": "1810"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.55"}]}, {"mana_cost": 63, "level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2350"}, {"name": "you_lose__energy_shield_per_second", "value": "1880"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.55"}]}, {"mana_cost": 63, "level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2440"}, {"name": "you_lose__energy_shield_per_second", "value": "1950"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.56"}]}, {"mana_cost": 63, "level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2530"}, {"name": "you_lose__energy_shield_per_second", "value": "2020"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.57"}]}, {"mana_cost": 64, "level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2620"}, {"name": "you_lose__energy_shield_per_second", "value": "2090"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.58"}]}, {"mana_cost": 64, "level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2720"}, {"name": "you_lose__energy_shield_per_second", "value": "2170"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.58"}]}, {"mana_cost": 64, "level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2820"}, {"name": "you_lose__energy_shield_per_second", "value": "2250"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.59"}]}, {"mana_cost": 64, "level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "2920"}, {"name": "you_lose__energy_shield_per_second", "value": "2330"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.6"}]}, {"mana_cost": 64, "level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [{"name": "frost_shield_has__maximum_life_per_stage", "value": "3020"}, {"name": "you_lose__energy_shield_per_second", "value": "2410"}, {"name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area", "value": "0.61"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Frost Shield",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Petarus and Vanja"
+    },
+    "quest": {
+      "quest_name": "Breaking the Seal",
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "act": 4
+    }
+  },
+  "mods": [
+    "+10 seconds to Base duration",
+    "20% of Damage dealt to you or Allies in Area with Hits by Enemies in Area is taken from Frost Shield's Life before your Life or Energy Shield",
+    "Maximum 4 Stages",
+    "Frost Shield has (190\u2013910) maximum Life per Stage",
+    "60% of Damage dealt to you or Allies in Area with Hits by Enemies outside Area is taken from Frost Shield's Life before your Life or Energy Shield",
+    "You lose (150\u2013730) Energy Shield per second",
+    "Gains 1 Stage every 0.3 seconds while you are losing Energy Shield",
+    "You gain +(0.1\u20130.38)% to Spell Critical Strike Chance per Stage while in Area"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 35,
+        "intelligence": 50,
+        "requires_level": 34
+      },
+      "mana_cost": 30,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "190"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "150"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.1"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 36,
+        "intelligence": 53,
+        "requires_level": 36
+      },
+      "mana_cost": 32,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "200"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "160"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.11"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 38,
+        "intelligence": 55,
+        "requires_level": 38
+      },
+      "mana_cost": 34,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "210"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "170"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.13"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 40,
+        "intelligence": 58,
+        "requires_level": 40
+      },
+      "mana_cost": 36,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "230"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "190"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.14"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 42,
+        "intelligence": 60,
+        "requires_level": 42
+      },
+      "mana_cost": 38,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "250"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "200"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.16"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 44,
+        "intelligence": 63,
+        "requires_level": 44
+      },
+      "mana_cost": 40,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "280"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "220"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.17"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 46,
+        "intelligence": 66,
+        "requires_level": 46
+      },
+      "mana_cost": 42,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "300"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "240"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.19"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 48,
+        "intelligence": 68,
+        "requires_level": 48
+      },
+      "mana_cost": 44,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "330"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "260"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.2"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 49,
+        "intelligence": 71,
+        "requires_level": 50
+      },
+      "mana_cost": 44,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "360"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "290"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.22"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 51,
+        "intelligence": 74,
+        "requires_level": 52
+      },
+      "mana_cost": 46,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "390"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "310"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.23"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 53,
+        "intelligence": 76,
+        "requires_level": 54
+      },
+      "mana_cost": 48,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "430"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "340"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.25"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 55,
+        "intelligence": 79,
+        "requires_level": 56
+      },
+      "mana_cost": 48,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "470"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "380"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.26"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 57,
+        "intelligence": 82,
+        "requires_level": 58
+      },
+      "mana_cost": 50,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "520"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "410"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.28"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 59,
+        "intelligence": 84,
+        "requires_level": 60
+      },
+      "mana_cost": 50,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "570"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "460"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.29"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 60,
+        "intelligence": 87,
+        "requires_level": 62
+      },
+      "mana_cost": 52,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "630"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "500"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.31"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 62,
+        "intelligence": 90,
+        "requires_level": 64
+      },
+      "mana_cost": 52,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "690"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "550"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.32"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 64,
+        "intelligence": 92,
+        "requires_level": 66
+      },
+      "mana_cost": 52,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "750"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "600"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.34"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 66,
+        "intelligence": 95,
+        "requires_level": 68
+      },
+      "mana_cost": 52,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "830"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "660"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.35"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 67,
+        "intelligence": 96,
+        "requires_level": 69
+      },
+      "mana_cost": 54,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "870"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "690"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.37"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 68,
+        "intelligence": 98,
+        "requires_level": 70
+      },
+      "mana_cost": 54,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "910"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "730"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.38"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 56,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1000"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "800"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.4"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 56,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1090"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "870"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.41"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 58,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1190"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "950"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.43"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 58,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1290"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1030"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.44"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 60,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1400"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1120"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.46"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 60,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1530"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1220"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.47"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 60,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1660"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1330"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.49"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 60,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1800"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1440"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.5"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 62,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "1940"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1550"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.52"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 62,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2100"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1680"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.53"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 62,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2180"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1740"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.54"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 63,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2260"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1810"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.55"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 63,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2350"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1880"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.55"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 63,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2440"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "1950"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.56"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 63,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2530"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "2020"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.57"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 64,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2620"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "2090"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.58"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 64,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2720"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "2170"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.58"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 64,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2820"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "2250"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.59"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 64,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "2920"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "2330"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.6"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 64,
+      "fields": [
+        {
+          "name": "frost_shield_has__maximum_life_per_stage",
+          "value": "3020"
+        },
+        {
+          "name": "you_lose__energy_shield_per_second",
+          "value": "2410"
+        },
+        {
+          "name": "you_gain_+.%_to_spell_critical_strike_chance_per_stage_while_in_area",
+          "value": "0.61"
+        }
+      ]
+    }
+  ],
+  "tags": [],
+  "enchants": {
+    "merciless": [
+      "Frost Shield has +125 to maximum Life per Stage"
+    ],
+    "eternal": [
+      "Frost Shield has +1 Cooldown Use",
+      "Frost Shield has +180 to maximum Life per Stage"
+    ]
+  },
+  "drop_level": 34,
+  "type": [
+    "spell",
+    "area",
+    "duration",
+    "skillcantrap",
+    "skillcanmine",
+    "triggerable",
+    "areaspell",
+    "secondwindsupport",
+    "coldskill",
+    "skillcantotem",
+    "chillingarea",
+    "nonhitchill",
+    "causeelementalstatus",
+    "type27"
+  ],
+  "mtx": [],
+  "description": "Place a Frost Shield that drains your energy shield for one second or until you run out, gaining stages while this drain occurs. The Frost Shield takes some damage from hits in place of you and allies while in its area. Enemies in the area are Chilled. You can only have one Frost Shield active at once.",
+  "support": [
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Intensify Support",
+      "types": [
+        "areaspell"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "any"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% of Damage dealt to you or Allies in Area with Hits by Enemies in Area is taken from Frost Shield's Life before your Life or Energy Shield",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "Frost Shield Regenerates % of its Life per second",
+          "minimum": 0.0,
+          "maximum": 2.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Effect of Cold Ailments",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

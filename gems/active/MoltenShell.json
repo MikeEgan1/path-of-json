@@ -1,1 +1,940 @@
-{"target_types": ["any"], "acquisition": {"quest": {"act": 1, "quest_name": "Breaking Some Eggs", "classes": ["Marauder"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Marauder", "Templar", "Duelist", "Scion"]}}, "vaal": true, "tags": ["base_skill_show_average_damage_instead_of_dps [1]", "is_area_damage [1]", "damage_originates_from_initiator_location [1]"], "type": ["spell", "area", "duration", "skillcantotem", "type31", "fireskill", "instant", "areaspell", "physicalskill", "triggerable", "guardskill", "secondwindsupport"], "enchants": {"eternal": ["Molten Shell has 40% increased Skill Effect Duration", "150% increased Molten Shell Buff Effect"], "merciless": ["Molten Shell has 25% increased Skill Effect Duration", "100% increased Molten Shell Buff Effect"]}, "mtx": [{"name": "Invisible Buff Effect", "description": "Removes the visual effects on the player from arctic armour, tempest shield, blood rage, molten shell, phase run, any aura, any blasphemied curse, or any herald gem.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/AuraVanishingDye.png?w=1&h=1&scale=1"}, {"name": "Stygian Molten Shell Effect", "description": "Your Molten Shell becomes a Stygian Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianMoltenShellEffect.png?w=2&h=2&scale=1"}, {"name": "Viper Molten Shell Effect", "description": "Your Molten Shell becomes a Viper Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ViperMoltenShellEffect.png?w=2&h=2&scale=1"}], "support": [{"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "Applies a buff that adds to your armour, and can take some of the damage from hits for you before being depleted. When the buff expires or is depleted, the skill deals reflected damage to enemies around you based on the total damage that was taken from the buff. Shares a cooldown with other Guard skills.", "mods": ["+3 seconds to Base duration", "Buff grants +(50\u2013858) to Armour", "75% of Damage from Hits is taken from the Buff before your Life or Energy ShieldBuff can take Damage equal to 20% of your Armour, up to a maximum of 10000Reflects (100\u20133000)% of Damage taken from Buff as Fire Damage when Buff expires or is depletedThis Skill's Cooldown does not recover during its effect"], "quality": {"anomalous": {"mods": [{"text": "Buff can take additional Damage equal to % of your Armour", "minimum": 0.0, "maximum": 5.0}], "weight": 50.0}, "superior": {"mods": [{"text": "% increased Skill Effect Duration", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "Reflected Damage Penetrates % of Enemy Fire Resistance", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}}, "drop_level": 4, "name": "Molten Shell", "levels": [{"mana_cost": 8, "level": 1, "requirements": {"requires_level": 4, "strength": 16}, "fields": [{"name": "buff_grants_+_to_armour", "value": "50"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "100"}]}, {"mana_cost": 8, "level": 2, "requirements": {"requires_level": 6, "strength": 20}, "fields": [{"name": "buff_grants_+_to_armour", "value": "60"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "130"}]}, {"mana_cost": 8, "level": 3, "requirements": {"requires_level": 9, "strength": 27}, "fields": [{"name": "buff_grants_+_to_armour", "value": "74"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "180"}]}, {"mana_cost": 8, "level": 4, "requirements": {"requires_level": 12, "strength": 33}, "fields": [{"name": "buff_grants_+_to_armour", "value": "91"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "250"}]}, {"mana_cost": 9, "level": 5, "requirements": {"requires_level": 16, "strength": 41}, "fields": [{"name": "buff_grants_+_to_armour", "value": "115"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "330"}]}, {"mana_cost": 9, "level": 6, "requirements": {"requires_level": 20, "strength": 50}, "fields": [{"name": "buff_grants_+_to_armour", "value": "141"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "420"}]}, {"mana_cost": 9, "level": 7, "requirements": {"requires_level": 24, "strength": 58}, "fields": [{"name": "buff_grants_+_to_armour", "value": "171"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "530"}]}, {"mana_cost": 9, "level": 8, "requirements": {"requires_level": 28, "strength": 67}, "fields": [{"name": "buff_grants_+_to_armour", "value": "204"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "650"}]}, {"mana_cost": 10, "level": 9, "requirements": {"requires_level": 32, "strength": 75}, "fields": [{"name": "buff_grants_+_to_armour", "value": "241"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "780"}]}, {"mana_cost": 10, "level": 10, "requirements": {"requires_level": 36, "strength": 83}, "fields": [{"name": "buff_grants_+_to_armour", "value": "282"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "920"}]}, {"mana_cost": 10, "level": 11, "requirements": {"requires_level": 40, "strength": 92}, "fields": [{"name": "buff_grants_+_to_armour", "value": "328"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "1080"}]}, {"mana_cost": 10, "level": 12, "requirements": {"requires_level": 44, "strength": 100}, "fields": [{"name": "buff_grants_+_to_armour", "value": "378"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "1250"}]}, {"mana_cost": 11, "level": 13, "requirements": {"requires_level": 48, "strength": 109}, "fields": [{"name": "buff_grants_+_to_armour", "value": "433"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "1430"}]}, {"mana_cost": 11, "level": 14, "requirements": {"requires_level": 52, "strength": 117}, "fields": [{"name": "buff_grants_+_to_armour", "value": "495"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "1620"}]}, {"mana_cost": 11, "level": 15, "requirements": {"requires_level": 55, "strength": 123}, "fields": [{"name": "buff_grants_+_to_armour", "value": "545"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "1820"}]}, {"mana_cost": 11, "level": 16, "requirements": {"requires_level": 58, "strength": 130}, "fields": [{"name": "buff_grants_+_to_armour", "value": "599"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "2040"}]}, {"mana_cost": 12, "level": 17, "requirements": {"requires_level": 61, "strength": 136}, "fields": [{"name": "buff_grants_+_to_armour", "value": "657"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "2260"}]}, {"mana_cost": 12, "level": 18, "requirements": {"requires_level": 64, "strength": 142}, "fields": [{"name": "buff_grants_+_to_armour", "value": "719"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "2500"}]}, {"mana_cost": 12, "level": 19, "requirements": {"requires_level": 67, "strength": 148}, "fields": [{"name": "buff_grants_+_to_armour", "value": "786"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "2740"}]}, {"mana_cost": 12, "level": 20, "requirements": {"requires_level": 70, "strength": 155}, "fields": [{"name": "buff_grants_+_to_armour", "value": "858"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "3000"}]}, {"mana_cost": 13, "level": 21, "requirements": {"requires_level": 72, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "909"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "3270"}]}, {"mana_cost": 13, "level": 22, "requirements": {"requires_level": 74, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "962"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "3550"}]}, {"mana_cost": 13, "level": 23, "requirements": {"requires_level": 76, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1018"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "3830"}]}, {"mana_cost": 13, "level": 24, "requirements": {"requires_level": 78, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1076"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "4130"}]}, {"mana_cost": 14, "level": 25, "requirements": {"requires_level": 80, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1137"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "4440"}]}, {"mana_cost": 14, "level": 26, "requirements": {"requires_level": 82, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1201"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "4760"}]}, {"mana_cost": 14, "level": 27, "requirements": {"requires_level": 84, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1268"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "5090"}]}, {"mana_cost": 14, "level": 28, "requirements": {"requires_level": 86, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1338"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "5430"}]}, {"mana_cost": 15, "level": 29, "requirements": {"requires_level": 88, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1412"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "5770"}]}, {"mana_cost": 15, "level": 30, "requirements": {"requires_level": 90, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1488"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "6130"}]}, {"mana_cost": 15, "level": 31, "requirements": {"requires_level": 91, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1528"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "6500"}]}, {"mana_cost": 15, "level": 32, "requirements": {"requires_level": 92, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1569"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "6880"}]}, {"mana_cost": 16, "level": 33, "requirements": {"requires_level": 93, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1610"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "7260"}]}, {"mana_cost": 16, "level": 34, "requirements": {"requires_level": 94, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1653"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "7660"}]}, {"mana_cost": 16, "level": 35, "requirements": {"requires_level": 95, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1696"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "8060"}]}, {"mana_cost": 16, "level": 36, "requirements": {"requires_level": 96, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1741"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "8480"}]}, {"mana_cost": 17, "level": 37, "requirements": {"requires_level": 97, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1786"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "8900"}]}, {"mana_cost": 17, "level": 38, "requirements": {"requires_level": 98, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1833"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "9340"}]}, {"mana_cost": 17, "level": 39, "requirements": {"requires_level": 99, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1880"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "9780"}]}, {"mana_cost": 17, "level": 40, "requirements": {"requires_level": 100, "strength": null}, "fields": [{"name": "buff_grants_+_to_armour", "value": "1929"}, {"name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted", "value": "10230"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Molten Shell",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Marauder"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "+3 seconds to Base duration",
+    "Buff grants +(50\u2013858) to Armour",
+    "75% of Damage from Hits is taken from the Buff before your Life or Energy ShieldBuff can take Damage equal to 20% of your Armour, up to a maximum of 10000Reflects (100\u20133000)% of Damage taken from Buff as Fire Damage when Buff expires or is depletedThis Skill's Cooldown does not recover during its effect"
+  ],
+  "vaal": true,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "strength": 16,
+        "requires_level": 4
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "50"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "strength": 20,
+        "requires_level": 6
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "60"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "130"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "strength": 27,
+        "requires_level": 9
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "74"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "180"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "strength": 33,
+        "requires_level": 12
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "91"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "250"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "strength": 41,
+        "requires_level": 16
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "115"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "330"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "strength": 50,
+        "requires_level": 20
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "141"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "420"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "strength": 58,
+        "requires_level": 24
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "171"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "530"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "strength": 67,
+        "requires_level": 28
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "204"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "650"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "strength": 75,
+        "requires_level": 32
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "241"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "780"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "strength": 83,
+        "requires_level": 36
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "282"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "920"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "strength": 92,
+        "requires_level": 40
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "328"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "1080"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "strength": 100,
+        "requires_level": 44
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "378"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "1250"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "strength": 109,
+        "requires_level": 48
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "433"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "1430"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "strength": 117,
+        "requires_level": 52
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "495"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "1620"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "strength": 123,
+        "requires_level": 55
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "545"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "1820"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "strength": 130,
+        "requires_level": 58
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "599"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "2040"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "strength": 136,
+        "requires_level": 61
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "657"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "2260"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "strength": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "719"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "2500"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "strength": 148,
+        "requires_level": 67
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "786"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "2740"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "strength": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "858"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "3000"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "strength": null,
+        "requires_level": 72
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "909"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "3270"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "strength": null,
+        "requires_level": 74
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "962"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "3550"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "strength": null,
+        "requires_level": 76
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1018"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "3830"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "strength": null,
+        "requires_level": 78
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1076"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "4130"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "strength": null,
+        "requires_level": 80
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1137"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "4440"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "strength": null,
+        "requires_level": 82
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1201"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "4760"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "strength": null,
+        "requires_level": 84
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1268"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "5090"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "strength": null,
+        "requires_level": 86
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1338"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "5430"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "strength": null,
+        "requires_level": 88
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1412"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "5770"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "strength": null,
+        "requires_level": 90
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1488"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "6130"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "strength": null,
+        "requires_level": 91
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1528"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "6500"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "strength": null,
+        "requires_level": 92
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1569"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "6880"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "strength": null,
+        "requires_level": 93
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1610"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "7260"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "strength": null,
+        "requires_level": 94
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1653"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "7660"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "strength": null,
+        "requires_level": 95
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1696"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "8060"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "strength": null,
+        "requires_level": 96
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1741"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "8480"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "strength": null,
+        "requires_level": 97
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1786"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "8900"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "strength": null,
+        "requires_level": 98
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1833"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "9340"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "strength": null,
+        "requires_level": 99
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1880"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "9780"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "strength": null,
+        "requires_level": 100
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "buff_grants_+_to_armour",
+          "value": "1929"
+        },
+        {
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
+          "value": "10230"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_skill_show_average_damage_instead_of_dps [1]",
+    "is_area_damage [1]",
+    "damage_originates_from_initiator_location [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "Molten Shell has 25% increased Skill Effect Duration",
+      "100% increased Molten Shell Buff Effect"
+    ],
+    "eternal": [
+      "Molten Shell has 40% increased Skill Effect Duration",
+      "150% increased Molten Shell Buff Effect"
+    ]
+  },
+  "drop_level": 4,
+  "type": [
+    "spell",
+    "area",
+    "duration",
+    "skillcantotem",
+    "type31",
+    "fireskill",
+    "instant",
+    "areaspell",
+    "physicalskill",
+    "triggerable",
+    "guardskill",
+    "secondwindsupport"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/AuraVanishingDye.png?w=1&h=1&scale=1",
+      "name": "Invisible Buff Effect",
+      "description": "Removes the visual effects on the player from arctic armour, tempest shield, blood rage, molten shell, phase run, any aura, any blasphemied curse, or any herald gem."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianMoltenShellEffect.png?w=2&h=2&scale=1",
+      "name": "Stygian Molten Shell Effect",
+      "description": "Your Molten Shell becomes a Stygian Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ViperMoltenShellEffect.png?w=2&h=2&scale=1",
+      "name": "Viper Molten Shell Effect",
+      "description": "Your Molten Shell becomes a Viper Effect."
+    }
+  ],
+  "description": "Applies a buff that adds to your armour, and can take some of the damage from hits for you before being depleted. When the buff expires or is depleted, the skill deals reflected damage to enemies around you based on the total damage that was taken from the buff. Shares a cooldown with other Guard skills.",
+  "support": [
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "any"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Reflected Damage Penetrates % of Enemy Fire Resistance",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Buff can take additional Damage equal to % of your Armour",
+          "minimum": 0.0,
+          "maximum": 5.0
+        }
+      ],
+      "weight": 50.0
+    }
+  }
+}

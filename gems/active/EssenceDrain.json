@@ -1,1 +1,1300 @@
-{"target_types": ["ground", "enemy"], "acquisition": {"quest": {"act": 1, "quest_name": "The Siren's Cadence", "classes": ["Witch", "Shadow"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Witch", "Templar", "Shadow", "Scion"]}}, "vaal": false, "tags": ["base_is_projectile [1]"], "type": ["spell", "projectile", "skillcanvolley", "duration", "skillcantotem", "spellcanrepeat", "damageovertime", "chaosskill", "hit", "triggerable", "canrapidfire", "area", "areaspell", "skillcantrap", "skillcanmine"], "enchants": {"eternal": ["40% increased Essence Drain Damage", "30% increased Essence Drain Duration"], "merciless": ["25% increased Essence Drain Damage", "20% increased Essence Drain Duration"]}, "mtx": [{"name": "Arcane Essence Drain Effect", "description": "Your Essence Drain becomes a blue arcane effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ArcaneEssenceDrain.png?w=1&h=1&scale=1"}, {"name": "Celestial Essence Drain Effect", "description": "Your Essence Drain becomes a Celestial Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialEssenceDrain.png?w=2&h=2&scale=1"}, {"name": "Project Essence Drain Effect", "description": "Your Essence Drain becomes a Project Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ProjectEssenceDrainEffect.png?w=2&h=2&scale=1"}, {"name": "Scientist Essence Drain Effect", "description": "Your Essence Drain becomes a Scientist Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ScientistEssenceDrain.png?w=2&h=2&scale=1"}], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Lesser Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Greater Volley Support", "types": ["skillcanvolley"]}, {"name": "Faster Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Pierce Support", "types": ["projectile", "type54", "type56"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Spell Echo Support", "types": ["spellcanrepeat"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Slower Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Volley Support", "types": ["skillcanvolley"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "Intensify Support", "types": ["areaspell"]}, {"name": "Unleash Support", "types": ["canrapidfire"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Awakened Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Spell Echo Support", "types": ["spellcanrepeat"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Awakened Unleash Support", "types": ["canrapidfire"]}, {"name": "Archmage Support", "types": ["hit", "spell", "and"]}, {"name": "Pinpoint Support", "types": ["projectile", "spell", "and"]}], "description": "Fires a projectile that applies a damage over time debuff when it hits. You are healed for a portion of the debuff damage. The debuff is spread by Contagion.", "mods": ["Deals (31.3\u20131503.2) Base Chaos Damage per second", "Regenerate 0.5% of Debuff Damage as Life", "+3.8 seconds to Base duration", "Deals (9\u2013433) to (14\u2013649) Chaos Damage", "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"], "quality": {"anomalous": {"mods": [{"text": "Regenerate % of Debuff Damage as Life", "minimum": 0.0, "maximum": 1.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Chaos Damage", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% increased Damage with Hits", "minimum": 0.0, "maximum": 100.0}], "weight": 20.0}}, "drop_level": 12, "name": "Essence Drain", "levels": [{"mana_cost": 8, "maximum_damage": 14.0, "level": 1, "requirements": {"dexterity": 14, "requires_level": 12, "intelligence": 21}, "fields": [], "minimum_damage": 9.0}, {"mana_cost": 9, "maximum_damage": 18.0, "level": 2, "requirements": {"dexterity": 17, "requires_level": 15, "intelligence": 25}, "fields": [], "minimum_damage": 12.0}, {"mana_cost": 10, "maximum_damage": 24.0, "level": 3, "requirements": {"dexterity": 21, "requires_level": 19, "intelligence": 30}, "fields": [], "minimum_damage": 16.0}, {"mana_cost": 11, "maximum_damage": 33.0, "level": 4, "requirements": {"dexterity": 24, "requires_level": 23, "intelligence": 35}, "fields": [], "minimum_damage": 22.0}, {"mana_cost": 12, "maximum_damage": 44.0, "level": 5, "requirements": {"dexterity": 28, "requires_level": 27, "intelligence": 41}, "fields": [], "minimum_damage": 30.0}, {"mana_cost": 13, "maximum_damage": 59.0, "level": 6, "requirements": {"dexterity": 32, "requires_level": 31, "intelligence": 46}, "fields": [], "minimum_damage": 39.0}, {"mana_cost": 14, "maximum_damage": 77.0, "level": 7, "requirements": {"dexterity": 36, "requires_level": 35, "intelligence": 51}, "fields": [], "minimum_damage": 51.0}, {"mana_cost": 15, "maximum_damage": 94.0, "level": 8, "requirements": {"dexterity": 38, "requires_level": 38, "intelligence": 55}, "fields": [], "minimum_damage": 63.0}, {"mana_cost": 16, "maximum_damage": 114.0, "level": 9, "requirements": {"dexterity": 41, "requires_level": 41, "intelligence": 59}, "fields": [], "minimum_damage": 76.0}, {"mana_cost": 16, "maximum_damage": 138.0, "level": 10, "requirements": {"dexterity": 44, "requires_level": 44, "intelligence": 63}, "fields": [], "minimum_damage": 92.0}, {"mana_cost": 17, "maximum_damage": 166.0, "level": 11, "requirements": {"dexterity": 47, "requires_level": 47, "intelligence": 67}, "fields": [], "minimum_damage": 111.0}, {"mana_cost": 18, "maximum_damage": 200.0, "level": 12, "requirements": {"dexterity": 49, "requires_level": 50, "intelligence": 71}, "fields": [], "minimum_damage": 133.0}, {"mana_cost": 19, "maximum_damage": 240.0, "level": 13, "requirements": {"dexterity": 52, "requires_level": 53, "intelligence": 75}, "fields": [], "minimum_damage": 160.0}, {"mana_cost": 19, "maximum_damage": 288.0, "level": 14, "requirements": {"dexterity": 55, "requires_level": 56, "intelligence": 79}, "fields": [], "minimum_damage": 192.0}, {"mana_cost": 20, "maximum_damage": 344.0, "level": 15, "requirements": {"dexterity": 58, "requires_level": 59, "intelligence": 83}, "fields": [], "minimum_damage": 229.0}, {"mana_cost": 21, "maximum_damage": 410.0, "level": 16, "requirements": {"dexterity": 60, "requires_level": 62, "intelligence": 87}, "fields": [], "minimum_damage": 273.0}, {"mana_cost": 21, "maximum_damage": 460.0, "level": 17, "requirements": {"dexterity": 62, "requires_level": 64, "intelligence": 90}, "fields": [], "minimum_damage": 307.0}, {"mana_cost": 22, "maximum_damage": 516.0, "level": 18, "requirements": {"dexterity": 64, "requires_level": 66, "intelligence": 92}, "fields": [], "minimum_damage": 344.0}, {"mana_cost": 22, "maximum_damage": 579.0, "level": 19, "requirements": {"dexterity": 66, "requires_level": 68, "intelligence": 95}, "fields": [], "minimum_damage": 386.0}, {"mana_cost": 23, "maximum_damage": 649.0, "level": 20, "requirements": {"dexterity": 68, "requires_level": 70, "intelligence": 98}, "fields": [], "minimum_damage": 433.0}, {"mana_cost": 24, "maximum_damage": 727.0, "level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [], "minimum_damage": 485.0}, {"mana_cost": 24, "maximum_damage": 814.0, "level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [], "minimum_damage": 543.0}, {"mana_cost": 25, "maximum_damage": 911.0, "level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [], "minimum_damage": 608.0}, {"mana_cost": 25, "maximum_damage": 1019.0, "level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [], "minimum_damage": 679.0}, {"mana_cost": 26, "maximum_damage": 1139.0, "level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [], "minimum_damage": 759.0}, {"mana_cost": 26, "maximum_damage": 1273.0, "level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [], "minimum_damage": 848.0}, {"mana_cost": 27, "maximum_damage": 1421.0, "level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [], "minimum_damage": 947.0}, {"mana_cost": 27, "maximum_damage": 1586.0, "level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [], "minimum_damage": 1058.0}, {"mana_cost": 28, "maximum_damage": 1770.0, "level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [], "minimum_damage": 1180.0}, {"mana_cost": 28, "maximum_damage": 1974.0, "level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [], "minimum_damage": 1316.0}, {"mana_cost": 28, "maximum_damage": 2084.0, "level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [], "minimum_damage": 1389.0}, {"mana_cost": 29, "maximum_damage": 2200.0, "level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [], "minimum_damage": 1467.0}, {"mana_cost": 29, "maximum_damage": 2323.0, "level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [], "minimum_damage": 1548.0}, {"mana_cost": 29, "maximum_damage": 2452.0, "level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [], "minimum_damage": 1635.0}, {"mana_cost": 29, "maximum_damage": 2588.0, "level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [], "minimum_damage": 1725.0}, {"mana_cost": 30, "maximum_damage": 2731.0, "level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [], "minimum_damage": 1821.0}, {"mana_cost": 30, "maximum_damage": 2882.0, "level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [], "minimum_damage": 1921.0}, {"mana_cost": 30, "maximum_damage": 3041.0, "level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [], "minimum_damage": 2027.0}, {"mana_cost": 30, "maximum_damage": 3209.0, "level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [], "minimum_damage": 2139.0}, {"mana_cost": 31, "maximum_damage": 3385.0, "level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [], "minimum_damage": 2257.0}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Essence Drain",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Witch",
+        "Shadow"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Deals (31.3\u20131503.2) Base Chaos Damage per second",
+    "Regenerate 0.5% of Debuff Damage as Life",
+    "+3.8 seconds to Base duration",
+    "Deals (9\u2013433) to (14\u2013649) Chaos Damage",
+    "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "dexterity": 14,
+        "intelligence": 21,
+        "requires_level": 12
+      },
+      "mana_cost": 8,
+      "maximum_damage": 14.0,
+      "fields": []
+    },
+    {
+      "level": 2,
+      "minimum_damage": 12.0,
+      "requirements": {
+        "dexterity": 17,
+        "intelligence": 25,
+        "requires_level": 15
+      },
+      "mana_cost": 9,
+      "maximum_damage": 18.0,
+      "fields": []
+    },
+    {
+      "level": 3,
+      "minimum_damage": 16.0,
+      "requirements": {
+        "dexterity": 21,
+        "intelligence": 30,
+        "requires_level": 19
+      },
+      "mana_cost": 10,
+      "maximum_damage": 24.0,
+      "fields": []
+    },
+    {
+      "level": 4,
+      "minimum_damage": 22.0,
+      "requirements": {
+        "dexterity": 24,
+        "intelligence": 35,
+        "requires_level": 23
+      },
+      "mana_cost": 11,
+      "maximum_damage": 33.0,
+      "fields": []
+    },
+    {
+      "level": 5,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "dexterity": 28,
+        "intelligence": 41,
+        "requires_level": 27
+      },
+      "mana_cost": 12,
+      "maximum_damage": 44.0,
+      "fields": []
+    },
+    {
+      "level": 6,
+      "minimum_damage": 39.0,
+      "requirements": {
+        "dexterity": 32,
+        "intelligence": 46,
+        "requires_level": 31
+      },
+      "mana_cost": 13,
+      "maximum_damage": 59.0,
+      "fields": []
+    },
+    {
+      "level": 7,
+      "minimum_damage": 51.0,
+      "requirements": {
+        "dexterity": 36,
+        "intelligence": 51,
+        "requires_level": 35
+      },
+      "mana_cost": 14,
+      "maximum_damage": 77.0,
+      "fields": []
+    },
+    {
+      "level": 8,
+      "minimum_damage": 63.0,
+      "requirements": {
+        "dexterity": 38,
+        "intelligence": 55,
+        "requires_level": 38
+      },
+      "mana_cost": 15,
+      "maximum_damage": 94.0,
+      "fields": []
+    },
+    {
+      "level": 9,
+      "minimum_damage": 76.0,
+      "requirements": {
+        "dexterity": 41,
+        "intelligence": 59,
+        "requires_level": 41
+      },
+      "mana_cost": 16,
+      "maximum_damage": 114.0,
+      "fields": []
+    },
+    {
+      "level": 10,
+      "minimum_damage": 92.0,
+      "requirements": {
+        "dexterity": 44,
+        "intelligence": 63,
+        "requires_level": 44
+      },
+      "mana_cost": 16,
+      "maximum_damage": 138.0,
+      "fields": []
+    },
+    {
+      "level": 11,
+      "minimum_damage": 111.0,
+      "requirements": {
+        "dexterity": 47,
+        "intelligence": 67,
+        "requires_level": 47
+      },
+      "mana_cost": 17,
+      "maximum_damage": 166.0,
+      "fields": []
+    },
+    {
+      "level": 12,
+      "minimum_damage": 133.0,
+      "requirements": {
+        "dexterity": 49,
+        "intelligence": 71,
+        "requires_level": 50
+      },
+      "mana_cost": 18,
+      "maximum_damage": 200.0,
+      "fields": []
+    },
+    {
+      "level": 13,
+      "minimum_damage": 160.0,
+      "requirements": {
+        "dexterity": 52,
+        "intelligence": 75,
+        "requires_level": 53
+      },
+      "mana_cost": 19,
+      "maximum_damage": 240.0,
+      "fields": []
+    },
+    {
+      "level": 14,
+      "minimum_damage": 192.0,
+      "requirements": {
+        "dexterity": 55,
+        "intelligence": 79,
+        "requires_level": 56
+      },
+      "mana_cost": 19,
+      "maximum_damage": 288.0,
+      "fields": []
+    },
+    {
+      "level": 15,
+      "minimum_damage": 229.0,
+      "requirements": {
+        "dexterity": 58,
+        "intelligence": 83,
+        "requires_level": 59
+      },
+      "mana_cost": 20,
+      "maximum_damage": 344.0,
+      "fields": []
+    },
+    {
+      "level": 16,
+      "minimum_damage": 273.0,
+      "requirements": {
+        "dexterity": 60,
+        "intelligence": 87,
+        "requires_level": 62
+      },
+      "mana_cost": 21,
+      "maximum_damage": 410.0,
+      "fields": []
+    },
+    {
+      "level": 17,
+      "minimum_damage": 307.0,
+      "requirements": {
+        "dexterity": 62,
+        "intelligence": 90,
+        "requires_level": 64
+      },
+      "mana_cost": 21,
+      "maximum_damage": 460.0,
+      "fields": []
+    },
+    {
+      "level": 18,
+      "minimum_damage": 344.0,
+      "requirements": {
+        "dexterity": 64,
+        "intelligence": 92,
+        "requires_level": 66
+      },
+      "mana_cost": 22,
+      "maximum_damage": 516.0,
+      "fields": []
+    },
+    {
+      "level": 19,
+      "minimum_damage": 386.0,
+      "requirements": {
+        "dexterity": 66,
+        "intelligence": 95,
+        "requires_level": 68
+      },
+      "mana_cost": 22,
+      "maximum_damage": 579.0,
+      "fields": []
+    },
+    {
+      "level": 20,
+      "minimum_damage": 433.0,
+      "requirements": {
+        "dexterity": 68,
+        "intelligence": 98,
+        "requires_level": 70
+      },
+      "mana_cost": 23,
+      "maximum_damage": 649.0,
+      "fields": []
+    },
+    {
+      "level": 21,
+      "minimum_damage": 485.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 24,
+      "maximum_damage": 727.0,
+      "fields": []
+    },
+    {
+      "level": 22,
+      "minimum_damage": 543.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 24,
+      "maximum_damage": 814.0,
+      "fields": []
+    },
+    {
+      "level": 23,
+      "minimum_damage": 608.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 25,
+      "maximum_damage": 911.0,
+      "fields": []
+    },
+    {
+      "level": 24,
+      "minimum_damage": 679.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 25,
+      "maximum_damage": 1019.0,
+      "fields": []
+    },
+    {
+      "level": 25,
+      "minimum_damage": 759.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 26,
+      "maximum_damage": 1139.0,
+      "fields": []
+    },
+    {
+      "level": 26,
+      "minimum_damage": 848.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 26,
+      "maximum_damage": 1273.0,
+      "fields": []
+    },
+    {
+      "level": 27,
+      "minimum_damage": 947.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 27,
+      "maximum_damage": 1421.0,
+      "fields": []
+    },
+    {
+      "level": 28,
+      "minimum_damage": 1058.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 27,
+      "maximum_damage": 1586.0,
+      "fields": []
+    },
+    {
+      "level": 29,
+      "minimum_damage": 1180.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 28,
+      "maximum_damage": 1770.0,
+      "fields": []
+    },
+    {
+      "level": 30,
+      "minimum_damage": 1316.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 28,
+      "maximum_damage": 1974.0,
+      "fields": []
+    },
+    {
+      "level": 31,
+      "minimum_damage": 1389.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 28,
+      "maximum_damage": 2084.0,
+      "fields": []
+    },
+    {
+      "level": 32,
+      "minimum_damage": 1467.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 29,
+      "maximum_damage": 2200.0,
+      "fields": []
+    },
+    {
+      "level": 33,
+      "minimum_damage": 1548.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 29,
+      "maximum_damage": 2323.0,
+      "fields": []
+    },
+    {
+      "level": 34,
+      "minimum_damage": 1635.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 29,
+      "maximum_damage": 2452.0,
+      "fields": []
+    },
+    {
+      "level": 35,
+      "minimum_damage": 1725.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 29,
+      "maximum_damage": 2588.0,
+      "fields": []
+    },
+    {
+      "level": 36,
+      "minimum_damage": 1821.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 30,
+      "maximum_damage": 2731.0,
+      "fields": []
+    },
+    {
+      "level": 37,
+      "minimum_damage": 1921.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 30,
+      "maximum_damage": 2882.0,
+      "fields": []
+    },
+    {
+      "level": 38,
+      "minimum_damage": 2027.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 30,
+      "maximum_damage": 3041.0,
+      "fields": []
+    },
+    {
+      "level": 39,
+      "minimum_damage": 2139.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 30,
+      "maximum_damage": 3209.0,
+      "fields": []
+    },
+    {
+      "level": 40,
+      "minimum_damage": 2257.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 31,
+      "maximum_damage": 3385.0,
+      "fields": []
+    }
+  ],
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "25% increased Essence Drain Damage",
+      "20% increased Essence Drain Duration"
+    ],
+    "eternal": [
+      "40% increased Essence Drain Damage",
+      "30% increased Essence Drain Duration"
+    ]
+  },
+  "drop_level": 12,
+  "type": [
+    "spell",
+    "projectile",
+    "skillcanvolley",
+    "duration",
+    "skillcantotem",
+    "spellcanrepeat",
+    "damageovertime",
+    "chaosskill",
+    "hit",
+    "triggerable",
+    "canrapidfire",
+    "area",
+    "areaspell",
+    "skillcantrap",
+    "skillcanmine"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ArcaneEssenceDrain.png?w=1&h=1&scale=1",
+      "name": "Arcane Essence Drain Effect",
+      "description": "Your Essence Drain becomes a blue arcane effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialEssenceDrain.png?w=2&h=2&scale=1",
+      "name": "Celestial Essence Drain Effect",
+      "description": "Your Essence Drain becomes a Celestial Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ProjectEssenceDrainEffect.png?w=2&h=2&scale=1",
+      "name": "Project Essence Drain Effect",
+      "description": "Your Essence Drain becomes a Project Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ScientistEssenceDrain.png?w=2&h=2&scale=1",
+      "name": "Scientist Essence Drain Effect",
+      "description": "Your Essence Drain becomes a Scientist Effect."
+    }
+  ],
+  "description": "Fires a projectile that applies a damage over time debuff when it hits. You are healed for a portion of the debuff damage. The debuff is spread by Contagion.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Lesser Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Greater Volley Support",
+      "types": [
+        "skillcanvolley"
+      ]
+    },
+    {
+      "name": "Faster Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Pierce Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Spell Echo Support",
+      "types": [
+        "spellcanrepeat"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Slower Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Volley Support",
+      "types": [
+        "skillcanvolley"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Intensify Support",
+      "types": [
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Unleash Support",
+      "types": [
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Spell Echo Support",
+      "types": [
+        "spellcanrepeat"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Awakened Unleash Support",
+      "types": [
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Archmage Support",
+      "types": [
+        "hit",
+        "spell",
+        "and"
+      ]
+    },
+    {
+      "name": "Pinpoint Support",
+      "types": [
+        "projectile",
+        "spell",
+        "and"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Damage with Hits",
+          "minimum": 0.0,
+          "maximum": 100.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Chaos Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Regenerate % of Debuff Damage as Life",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

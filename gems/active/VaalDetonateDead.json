@@ -1,1 +1,1214 @@
-{"target_types": ["spell", "hit", "area", "skillcantrap", "skillcantotem", "skillcanmine", "vaal", "fireskill", "areaspell", "cantusefistofwar"], "acquisition": {}, "vaal": true, "tags": ["cannot_cancel_skill_before_contact_point [1]"], "type": ["6971"], "enchants": {"eternal": [], "merciless": []}, "mtx": [{"name": "Void Detonate Dead Effect", "description": "Your Detonate Dead becomes a Void Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/VoidDetonateDeadEffect.png?w=2&h=2&scale=1"}], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Arcane Surge Support", "types": ["spell"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}], "description": "Targets a corpse, and deals spell damage to enemies around the corpse, as well as causing the corpse to explode, dealing fire damage. The explosion is not affected by modifiers to spell damage and cannot be reflected. This will continue to target other corpses in the area, with an increasing delay between each one, until it runs out of corpses or has destroyed 22 corpses.", "mods": ["Explosion deals base Fire Damage equal to 9% of the corpse's Maximum Life", "Deals (23\u20131395) to (33\u20132092) Fire Damage", "+(0\u20134) to radius"], "quality": {"superior": {"mods": [{"text": "% increased Area Damage", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}}, "drop_level": 4, "name": "Vaal Detonate Dead", "levels": [{"maximum_damage": 33.0, "level": 1, "requirements": {"dexterity": 10, "requires_level": 4, "intelligence": 7}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 23.0}, {"maximum_damage": 49.0, "level": 2, "requirements": {"dexterity": 13, "requires_level": 6, "intelligence": 9}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 32.0}, {"maximum_damage": 64.0, "level": 3, "requirements": {"dexterity": 17, "requires_level": 9, "intelligence": 12}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 48.0}, {"maximum_damage": 82.0, "level": 4, "requirements": {"dexterity": 21, "requires_level": 12, "intelligence": 14}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 55.0}, {"maximum_damage": 111.0, "level": 5, "requirements": {"dexterity": 26, "requires_level": 16, "intelligence": 18}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 74.0}, {"maximum_damage": 147.0, "level": 6, "requirements": {"dexterity": 31, "requires_level": 20, "intelligence": 22}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 98.0}, {"maximum_damage": 190.0, "level": 7, "requirements": {"dexterity": 37, "requires_level": 24, "intelligence": 25}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 127.0}, {"maximum_damage": 243.0, "level": 8, "requirements": {"dexterity": 42, "requires_level": 28, "intelligence": 29}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 162.0}, {"maximum_damage": 308.0, "level": 9, "requirements": {"dexterity": 47, "requires_level": 32, "intelligence": 33}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 205.0}, {"maximum_damage": 385.0, "level": 10, "requirements": {"dexterity": 53, "requires_level": 36, "intelligence": 36}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 257.0}, {"maximum_damage": 479.0, "level": 11, "requirements": {"dexterity": 58, "requires_level": 40, "intelligence": 40}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 319.0}, {"maximum_damage": 591.0, "level": 12, "requirements": {"dexterity": 63, "requires_level": 44, "intelligence": 44}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 394.0}, {"maximum_damage": 726.0, "level": 13, "requirements": {"dexterity": 68, "requires_level": 48, "intelligence": 48}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 484.0}, {"maximum_damage": 888.0, "level": 14, "requirements": {"dexterity": 74, "requires_level": 52, "intelligence": 51}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 592.0}, {"maximum_damage": 1029.0, "level": 15, "requirements": {"dexterity": 78, "requires_level": 55, "intelligence": 54}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 686.0}, {"maximum_damage": 1190.0, "level": 16, "requirements": {"dexterity": 82, "requires_level": 58, "intelligence": 57}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 793.0}, {"maximum_damage": 1374.0, "level": 17, "requirements": {"dexterity": 86, "requires_level": 61, "intelligence": 60}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 916.0}, {"maximum_damage": 1583.0, "level": 18, "requirements": {"dexterity": 90, "requires_level": 64, "intelligence": 62}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 1056.0}, {"maximum_damage": 1822.0, "level": 19, "requirements": {"dexterity": 94, "requires_level": 67, "intelligence": 65}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 1214.0}, {"maximum_damage": 2092.0, "level": 20, "requirements": {"dexterity": 98, "requires_level": 70, "intelligence": 68}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 1395.0}, {"maximum_damage": 2293.0, "level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 1529.0}, {"maximum_damage": 2512.0, "level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 1675.0}, {"maximum_damage": 2750.0, "level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 1833.0}, {"maximum_damage": 3008.0, "level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 2006.0}, {"maximum_damage": 3290.0, "level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 2193.0}, {"maximum_damage": 3595.0, "level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 2397.0}, {"maximum_damage": 3928.0, "level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 2619.0}, {"maximum_damage": 4289.0, "level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 2859.0}, {"maximum_damage": 4681.0, "level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 3121.0}, {"maximum_damage": 5108.0, "level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 3405.0}, {"maximum_damage": 5334.0, "level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 3556.0}, {"maximum_damage": 5570.0, "level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 3713.0}, {"maximum_damage": 5816.0, "level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 3877.0}, {"maximum_damage": 6072.0, "level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 4048.0}, {"maximum_damage": 6339.0, "level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 4226.0}, {"maximum_damage": 6617.0, "level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 4412.0}, {"maximum_damage": 6907.0, "level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 4605.0}, {"maximum_damage": 7209.0, "level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 4806.0}, {"maximum_damage": 7523.0, "level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 5015.0}, {"maximum_damage": 7850.0, "level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [{"name": "to_radius", "value": "7"}], "minimum_damage": 5234.0}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Vaal Detonate Dead",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {},
+  "mods": [
+    "Explosion deals base Fire Damage equal to 9% of the corpse's Maximum Life",
+    "Deals (23\u20131395) to (33\u20132092) Fire Damage",
+    "+(0\u20134) to radius"
+  ],
+  "vaal": true,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 23.0,
+      "requirements": {
+        "dexterity": 10,
+        "intelligence": 7,
+        "requires_level": 4
+      },
+      "maximum_damage": 33.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 32.0,
+      "requirements": {
+        "dexterity": 13,
+        "intelligence": 9,
+        "requires_level": 6
+      },
+      "maximum_damage": 49.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 48.0,
+      "requirements": {
+        "dexterity": 17,
+        "intelligence": 12,
+        "requires_level": 9
+      },
+      "maximum_damage": 64.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 55.0,
+      "requirements": {
+        "dexterity": 21,
+        "intelligence": 14,
+        "requires_level": 12
+      },
+      "maximum_damage": 82.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 74.0,
+      "requirements": {
+        "dexterity": 26,
+        "intelligence": 18,
+        "requires_level": 16
+      },
+      "maximum_damage": 111.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 98.0,
+      "requirements": {
+        "dexterity": 31,
+        "intelligence": 22,
+        "requires_level": 20
+      },
+      "maximum_damage": 147.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 127.0,
+      "requirements": {
+        "dexterity": 37,
+        "intelligence": 25,
+        "requires_level": 24
+      },
+      "maximum_damage": 190.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 162.0,
+      "requirements": {
+        "dexterity": 42,
+        "intelligence": 29,
+        "requires_level": 28
+      },
+      "maximum_damage": 243.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 205.0,
+      "requirements": {
+        "dexterity": 47,
+        "intelligence": 33,
+        "requires_level": 32
+      },
+      "maximum_damage": 308.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 257.0,
+      "requirements": {
+        "dexterity": 53,
+        "intelligence": 36,
+        "requires_level": 36
+      },
+      "maximum_damage": 385.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 319.0,
+      "requirements": {
+        "dexterity": 58,
+        "intelligence": 40,
+        "requires_level": 40
+      },
+      "maximum_damage": 479.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 394.0,
+      "requirements": {
+        "dexterity": 63,
+        "intelligence": 44,
+        "requires_level": 44
+      },
+      "maximum_damage": 591.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 484.0,
+      "requirements": {
+        "dexterity": 68,
+        "intelligence": 48,
+        "requires_level": 48
+      },
+      "maximum_damage": 726.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 592.0,
+      "requirements": {
+        "dexterity": 74,
+        "intelligence": 51,
+        "requires_level": 52
+      },
+      "maximum_damage": 888.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 686.0,
+      "requirements": {
+        "dexterity": 78,
+        "intelligence": 54,
+        "requires_level": 55
+      },
+      "maximum_damage": 1029.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 793.0,
+      "requirements": {
+        "dexterity": 82,
+        "intelligence": 57,
+        "requires_level": 58
+      },
+      "maximum_damage": 1190.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 916.0,
+      "requirements": {
+        "dexterity": 86,
+        "intelligence": 60,
+        "requires_level": 61
+      },
+      "maximum_damage": 1374.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 1056.0,
+      "requirements": {
+        "dexterity": 90,
+        "intelligence": 62,
+        "requires_level": 64
+      },
+      "maximum_damage": 1583.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 1214.0,
+      "requirements": {
+        "dexterity": 94,
+        "intelligence": 65,
+        "requires_level": 67
+      },
+      "maximum_damage": 1822.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 1395.0,
+      "requirements": {
+        "dexterity": 98,
+        "intelligence": 68,
+        "requires_level": 70
+      },
+      "maximum_damage": 2092.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 1529.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "maximum_damage": 2293.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 1675.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "maximum_damage": 2512.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 1833.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "maximum_damage": 2750.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 2006.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "maximum_damage": 3008.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 2193.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "maximum_damage": 3290.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 2397.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "maximum_damage": 3595.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 2619.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "maximum_damage": 3928.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 2859.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "maximum_damage": 4289.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 3121.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "maximum_damage": 4681.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 3405.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "maximum_damage": 5108.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 3556.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "maximum_damage": 5334.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 3713.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "maximum_damage": 5570.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 3877.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "maximum_damage": 5816.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 4048.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "maximum_damage": 6072.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 4226.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "maximum_damage": 6339.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 4412.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "maximum_damage": 6617.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 4605.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "maximum_damage": 6907.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 4806.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "maximum_damage": 7209.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 5015.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "maximum_damage": 7523.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 5234.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "maximum_damage": 7850.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "cannot_cancel_skill_before_contact_point [1]"
+  ],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
+  "drop_level": 4,
+  "type": [
+    "6971"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/VoidDetonateDeadEffect.png?w=2&h=2&scale=1",
+      "name": "Void Detonate Dead Effect",
+      "description": "Your Detonate Dead becomes a Void Effect."
+    }
+  ],
+  "description": "Targets a corpse, and deals spell damage to enemies around the corpse, as well as causing the corpse to explode, dealing fire damage. The explosion is not affected by modifiers to spell damage and cannot be reflected. This will continue to target other corpses in the area, with an increasing delay between each one, until it runs out of corpses or has destroyed 22 corpses.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Arcane Surge Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    }
+  ],
+  "target_types": [
+    "spell",
+    "hit",
+    "area",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "vaal",
+    "fireskill",
+    "areaspell",
+    "cantusefistofwar"
+  ],
+  "quality": {
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    }
+  }
+}

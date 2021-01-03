@@ -1,1 +1,1256 @@
-{"target_types": ["spell", "projectile", "skillcanvolley", "type70", "hit", "duration", "skillcantrap", "skillcantotem", "skillcanmine", "vaal", "lightningskill", "cantusefistofwar"], "acquisition": {}, "vaal": true, "tags": ["base_is_projectile [1]", "cannot_cancel_skill_before_contact_point [1]"], "type": [], "enchants": {"eternal": [], "merciless": []}, "mtx": [{"name": "Spark Spiders Effect", "description": "Your Sparks become skittering spiders of raw electrical energy", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/SparkSpider.png?w=1&h=1&scale=1"}], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Lesser Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Faster Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Pierce Support", "types": ["projectile", "type54", "type56"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Slower Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Arcane Surge Support", "types": ["spell"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Awakened Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}], "description": "Continuously launches unpredictable sparks in all directions that move randomly until they hit an enemy or expire.", "mods": ["Deals (1\u201324) to (11\u2013454) Lightning Damage", "+2 seconds to Base duration", "Fires Projectiles in random directions", "(0\u201319)% increased Projectile Speed", "Modifiers to Skill Effect Duration also apply to this Skill's Soul Gain Prevention"], "quality": {"superior": {"mods": [{"text": "% increased Projectile Speed", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}}, "drop_level": null, "name": "Vaal Spark", "levels": [{"maximum_damage": 11.0, "level": 1, "requirements": {"requires_level": 1, "intelligence": 10}, "fields": [{"name": "%_increased_projectile_speed", "value": ""}], "minimum_damage": 1.0}, {"maximum_damage": 12.0, "level": 2, "requirements": {"requires_level": 2, "intelligence": 12}, "fields": [{"name": "%_increased_projectile_speed", "value": "1"}], "minimum_damage": 1.0}, {"maximum_damage": 15.0, "level": 3, "requirements": {"requires_level": 4, "intelligence": 16}, "fields": [{"name": "%_increased_projectile_speed", "value": "2"}], "minimum_damage": 1.0}, {"maximum_damage": 19.0, "level": 4, "requirements": {"requires_level": 7, "intelligence": 22}, "fields": [{"name": "%_increased_projectile_speed", "value": "3"}], "minimum_damage": 1.0}, {"maximum_damage": 27.0, "level": 5, "requirements": {"requires_level": 11, "intelligence": 31}, "fields": [{"name": "%_increased_projectile_speed", "value": "4"}], "minimum_damage": 1.0}, {"maximum_damage": 37.0, "level": 6, "requirements": {"requires_level": 16, "intelligence": 41}, "fields": [{"name": "%_increased_projectile_speed", "value": "5"}], "minimum_damage": 2.0}, {"maximum_damage": 48.0, "level": 7, "requirements": {"requires_level": 20, "intelligence": 50}, "fields": [{"name": "%_increased_projectile_speed", "value": "6"}], "minimum_damage": 3.0}, {"maximum_damage": 60.0, "level": 8, "requirements": {"requires_level": 24, "intelligence": 58}, "fields": [{"name": "%_increased_projectile_speed", "value": "7"}], "minimum_damage": 3.0}, {"maximum_damage": 74.0, "level": 9, "requirements": {"requires_level": 28, "intelligence": 67}, "fields": [{"name": "%_increased_projectile_speed", "value": "8"}], "minimum_damage": 4.0}, {"maximum_damage": 91.0, "level": 10, "requirements": {"requires_level": 32, "intelligence": 75}, "fields": [{"name": "%_increased_projectile_speed", "value": "9"}], "minimum_damage": 5.0}, {"maximum_damage": 110.0, "level": 11, "requirements": {"requires_level": 36, "intelligence": 83}, "fields": [{"name": "%_increased_projectile_speed", "value": "10"}], "minimum_damage": 6.0}, {"maximum_damage": 133.0, "level": 12, "requirements": {"requires_level": 40, "intelligence": 92}, "fields": [{"name": "%_increased_projectile_speed", "value": "11"}], "minimum_damage": 7.0}, {"maximum_damage": 159.0, "level": 13, "requirements": {"requires_level": 44, "intelligence": 100}, "fields": [{"name": "%_increased_projectile_speed", "value": "12"}], "minimum_damage": 8.0}, {"maximum_damage": 188.0, "level": 14, "requirements": {"requires_level": 48, "intelligence": 109}, "fields": [{"name": "%_increased_projectile_speed", "value": "13"}], "minimum_damage": 10.0}, {"maximum_damage": 223.0, "level": 15, "requirements": {"requires_level": 52, "intelligence": 117}, "fields": [{"name": "%_increased_projectile_speed", "value": "14"}], "minimum_damage": 12.0}, {"maximum_damage": 263.0, "level": 16, "requirements": {"requires_level": 56, "intelligence": 125}, "fields": [{"name": "%_increased_projectile_speed", "value": "15"}], "minimum_damage": 14.0}, {"maximum_damage": 308.0, "level": 17, "requirements": {"requires_level": 60, "intelligence": 134}, "fields": [{"name": "%_increased_projectile_speed", "value": "16"}], "minimum_damage": 16.0}, {"maximum_damage": 361.0, "level": 18, "requirements": {"requires_level": 64, "intelligence": 142}, "fields": [{"name": "%_increased_projectile_speed", "value": "17"}], "minimum_damage": 19.0}, {"maximum_damage": 405.0, "level": 19, "requirements": {"requires_level": 67, "intelligence": 148}, "fields": [{"name": "%_increased_projectile_speed", "value": "18"}], "minimum_damage": 21.0}, {"maximum_damage": 454.0, "level": 20, "requirements": {"requires_level": 70, "intelligence": 155}, "fields": [{"name": "%_increased_projectile_speed", "value": "19"}], "minimum_damage": 24.0}, {"maximum_damage": 489.0, "level": 21, "requirements": {"requires_level": 72, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "20"}], "minimum_damage": 26.0}, {"maximum_damage": 527.0, "level": 22, "requirements": {"requires_level": 74, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "21"}], "minimum_damage": 28.0}, {"maximum_damage": 568.0, "level": 23, "requirements": {"requires_level": 76, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "22"}], "minimum_damage": 30.0}, {"maximum_damage": 611.0, "level": 24, "requirements": {"requires_level": 78, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "23"}], "minimum_damage": 32.0}, {"maximum_damage": 658.0, "level": 25, "requirements": {"requires_level": 80, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "24"}], "minimum_damage": 35.0}, {"maximum_damage": 707.0, "level": 26, "requirements": {"requires_level": 82, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "25"}], "minimum_damage": 37.0}, {"maximum_damage": 760.0, "level": 27, "requirements": {"requires_level": 84, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "26"}], "minimum_damage": 40.0}, {"maximum_damage": 816.0, "level": 28, "requirements": {"requires_level": 86, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "27"}], "minimum_damage": 43.0}, {"maximum_damage": 877.0, "level": 29, "requirements": {"requires_level": 88, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "28"}], "minimum_damage": 46.0}, {"maximum_damage": 941.0, "level": 30, "requirements": {"requires_level": 90, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "29"}], "minimum_damage": 50.0}, {"maximum_damage": 975.0, "level": 31, "requirements": {"requires_level": 91, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "29"}], "minimum_damage": 51.0}, {"maximum_damage": 1010.0, "level": 32, "requirements": {"requires_level": 92, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "30"}], "minimum_damage": 53.0}, {"maximum_damage": 1046.0, "level": 33, "requirements": {"requires_level": 93, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "30"}], "minimum_damage": 55.0}, {"maximum_damage": 1083.0, "level": 34, "requirements": {"requires_level": 94, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "31"}], "minimum_damage": 57.0}, {"maximum_damage": 1121.0, "level": 35, "requirements": {"requires_level": 95, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "31"}], "minimum_damage": 59.0}, {"maximum_damage": 1161.0, "level": 36, "requirements": {"requires_level": 96, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "32"}], "minimum_damage": 61.0}, {"maximum_damage": 1202.0, "level": 37, "requirements": {"requires_level": 97, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "32"}], "minimum_damage": 63.0}, {"maximum_damage": 1244.0, "level": 38, "requirements": {"requires_level": 98, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "33"}], "minimum_damage": 65.0}, {"maximum_damage": 1288.0, "level": 39, "requirements": {"requires_level": 99, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "33"}], "minimum_damage": 68.0}, {"maximum_damage": 1333.0, "level": 40, "requirements": {"requires_level": 100, "intelligence": null}, "fields": [{"name": "%_increased_projectile_speed", "value": "34"}], "minimum_damage": 70.0}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Vaal Spark",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {},
+  "mods": [
+    "Deals (1\u201324) to (11\u2013454) Lightning Damage",
+    "+2 seconds to Base duration",
+    "Fires Projectiles in random directions",
+    "(0\u201319)% increased Projectile Speed",
+    "Modifiers to Skill Effect Duration also apply to this Skill's Soul Gain Prevention"
+  ],
+  "vaal": true,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "intelligence": 10,
+        "requires_level": 1
+      },
+      "maximum_damage": 11.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "intelligence": 12,
+        "requires_level": 2
+      },
+      "maximum_damage": 12.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "intelligence": 16,
+        "requires_level": 4
+      },
+      "maximum_damage": 15.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "intelligence": 22,
+        "requires_level": 7
+      },
+      "maximum_damage": 19.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "intelligence": 31,
+        "requires_level": 11
+      },
+      "maximum_damage": 27.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 2.0,
+      "requirements": {
+        "intelligence": 41,
+        "requires_level": 16
+      },
+      "maximum_damage": 37.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "intelligence": 50,
+        "requires_level": 20
+      },
+      "maximum_damage": 48.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "intelligence": 58,
+        "requires_level": 24
+      },
+      "maximum_damage": 60.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 4.0,
+      "requirements": {
+        "intelligence": 67,
+        "requires_level": 28
+      },
+      "maximum_damage": 74.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 5.0,
+      "requirements": {
+        "intelligence": 75,
+        "requires_level": 32
+      },
+      "maximum_damage": 91.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 6.0,
+      "requirements": {
+        "intelligence": 83,
+        "requires_level": 36
+      },
+      "maximum_damage": 110.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "intelligence": 92,
+        "requires_level": 40
+      },
+      "maximum_damage": 133.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 8.0,
+      "requirements": {
+        "intelligence": 100,
+        "requires_level": 44
+      },
+      "maximum_damage": 159.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "intelligence": 109,
+        "requires_level": 48
+      },
+      "maximum_damage": 188.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 12.0,
+      "requirements": {
+        "intelligence": 117,
+        "requires_level": 52
+      },
+      "maximum_damage": 223.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 14.0,
+      "requirements": {
+        "intelligence": 125,
+        "requires_level": 56
+      },
+      "maximum_damage": 263.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 16.0,
+      "requirements": {
+        "intelligence": 134,
+        "requires_level": 60
+      },
+      "maximum_damage": 308.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 19.0,
+      "requirements": {
+        "intelligence": 142,
+        "requires_level": 64
+      },
+      "maximum_damage": 361.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 21.0,
+      "requirements": {
+        "intelligence": 148,
+        "requires_level": 67
+      },
+      "maximum_damage": 405.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 24.0,
+      "requirements": {
+        "intelligence": 155,
+        "requires_level": 70
+      },
+      "maximum_damage": 454.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 26.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "maximum_damage": 489.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 28.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "maximum_damage": 527.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "maximum_damage": 568.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 32.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "maximum_damage": 611.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 35.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "maximum_damage": 658.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 37.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "maximum_damage": 707.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 40.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "maximum_damage": 760.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 43.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "maximum_damage": 816.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 46.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "maximum_damage": 877.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 50.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "maximum_damage": 941.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 51.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "maximum_damage": 975.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 53.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "maximum_damage": 1010.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 55.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "maximum_damage": 1046.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 57.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "maximum_damage": 1083.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 59.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "maximum_damage": 1121.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 61.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "maximum_damage": 1161.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 63.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "maximum_damage": 1202.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 65.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "maximum_damage": 1244.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 68.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "maximum_damage": 1288.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 70.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "maximum_damage": 1333.0,
+      "fields": [
+        {
+          "name": "%_increased_projectile_speed",
+          "value": "34"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_is_projectile [1]",
+    "cannot_cancel_skill_before_contact_point [1]"
+  ],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
+  "drop_level": null,
+  "type": [],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/SparkSpider.png?w=1&h=1&scale=1",
+      "name": "Spark Spiders Effect",
+      "description": "Your Sparks become skittering spiders of raw electrical energy"
+    }
+  ],
+  "description": "Continuously launches unpredictable sparks in all directions that move randomly until they hit an enemy or expire.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Lesser Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Faster Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Pierce Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Slower Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Arcane Surge Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    }
+  ],
+  "target_types": [
+    "spell",
+    "projectile",
+    "skillcanvolley",
+    "type70",
+    "hit",
+    "duration",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "vaal",
+    "lightningskill",
+    "cantusefistofwar"
+  ],
+  "quality": {
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    }
+  }
+}

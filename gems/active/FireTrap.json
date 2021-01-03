@@ -1,1 +1,1485 @@
-{"target_types": ["enemy", "ground"], "acquisition": {"quest": {"act": 1, "quest_name": "The Siren's Cadence", "classes": ["Shadow"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Witch", "Ranger", "Shadow", "Scion"]}}, "vaal": false, "tags": ["is_area_damage [1]", "base_skill_is_trapped [1]", "base_skill_show_average_damage_instead_of_dps [1]"], "type": ["spell", "duration", "hit", "skillcanmine", "area", "causesburning", "trap", "damageovertime", "fireskill", "areaspell"], "enchants": {"eternal": ["40% increased Fire Trap Damage", "60% increased Fire Trap Burning Damage", "30% increased Fire Trap Damage", "45% increased Fire Trap Burning Ground Duration"], "merciless": ["25% increased Fire Trap Damage", "40% increased Fire Trap Burning Damage", "20% increased Fire Trap Damage", "30% increased Fire Trap Burning Ground Duration"]}, "mtx": [], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Multiple Traps Support", "types": ["trap"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Trap and Mine Damage Support", "types": ["trap", "mine"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Cluster Traps Support", "types": ["trap"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Advanced Traps Support", "types": ["trap"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Charged Traps Support", "types": ["trap"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Swift Assembly Support", "types": ["trap", "mine"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}], "description": "Throws a trap that explodes when triggered, dealing fire damage to surrounding enemies and leaving an area of burning ground that damages enemies who walk through it.", "mods": ["Trap lasts 4 seconds", "+1.75 seconds to Base duration", "Deals (11\u2013644) to (17\u2013966) Fire Damage", "Deals (32.5\u20131832.9) Base Fire Damage per second", "+(0\u20138) to radius", "(4\u2013201) to (5\u2013302) added Fire Damage against Burning Enemies", "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"], "quality": {"anomalous": {"mods": [{"text": "% increased Skill Effect Duration", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Fire Damage", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% chance to Ignite enemies", "minimum": 0.0, "maximum": 60.0}, {"text": "% less Area of Effect", "minimum": 0.0, "maximum": 20.0}], "weight": 20.0}}, "drop_level": 12, "name": "Fire Trap", "levels": [{"mana_cost": 8, "maximum_damage": 17.0, "level": 1, "requirements": {"dexterity": 21, "requires_level": 12, "intelligence": 14}, "fields": [{"name": "to_radius", "value": "0"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "4, 5"}], "minimum_damage": 32.5}, {"mana_cost": 8, "maximum_damage": 22.0, "level": 2, "requirements": {"dexterity": 25, "requires_level": 15, "intelligence": 17}, "fields": [{"name": "to_radius", "value": "0"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "5, 7"}], "minimum_damage": 42.5}, {"mana_cost": 9, "maximum_damage": 31.0, "level": 3, "requirements": {"dexterity": 30, "requires_level": 19, "intelligence": 21}, "fields": [{"name": "to_radius", "value": "1"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "7, 10"}], "minimum_damage": 59.7}, {"mana_cost": 10, "maximum_damage": 43.0, "level": 4, "requirements": {"dexterity": 35, "requires_level": 23, "intelligence": 24}, "fields": [{"name": "to_radius", "value": "1"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "9, 14"}], "minimum_damage": 82.1}, {"mana_cost": 10, "maximum_damage": 59.0, "level": 5, "requirements": {"dexterity": 41, "requires_level": 27, "intelligence": 28}, "fields": [{"name": "to_radius", "value": "2"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "12, 18"}], "minimum_damage": 111.2}, {"mana_cost": 11, "maximum_damage": 78.0, "level": 6, "requirements": {"dexterity": 46, "requires_level": 31, "intelligence": 32}, "fields": [{"name": "to_radius", "value": "2"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "16, 25"}], "minimum_damage": 148.9}, {"mana_cost": 11, "maximum_damage": 104.0, "level": 7, "requirements": {"dexterity": 51, "requires_level": 35, "intelligence": 36}, "fields": [{"name": "to_radius", "value": "3"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "22, 33"}], "minimum_damage": 197.4}, {"mana_cost": 12, "maximum_damage": 128.0, "level": 8, "requirements": {"dexterity": 55, "requires_level": 38, "intelligence": 38}, "fields": [{"name": "to_radius", "value": "3"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "27, 40"}], "minimum_damage": 242.6}, {"mana_cost": 13, "maximum_damage": 157.0, "level": 9, "requirements": {"dexterity": 59, "requires_level": 41, "intelligence": 41}, "fields": [{"name": "to_radius", "value": "4"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "33, 49"}], "minimum_damage": 297.1}, {"mana_cost": 14, "maximum_damage": 191.0, "level": 10, "requirements": {"dexterity": 63, "requires_level": 44, "intelligence": 44}, "fields": [{"name": "to_radius", "value": "4"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "40, 60"}], "minimum_damage": 362.5}, {"mana_cost": 14, "maximum_damage": 232.0, "level": 11, "requirements": {"dexterity": 67, "requires_level": 47, "intelligence": 47}, "fields": [{"name": "to_radius", "value": "4"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "48, 73"}], "minimum_damage": 440.8}, {"mana_cost": 15, "maximum_damage": 282.0, "level": 12, "requirements": {"dexterity": 71, "requires_level": 50, "intelligence": 49}, "fields": [{"name": "to_radius", "value": "5"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "59, 88"}], "minimum_damage": 534.7}, {"mana_cost": 16, "maximum_damage": 341.0, "level": 13, "requirements": {"dexterity": 75, "requires_level": 53, "intelligence": 52}, "fields": [{"name": "to_radius", "value": "5"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "71, 107"}], "minimum_damage": 646.9}, {"mana_cost": 16, "maximum_damage": 412.0, "level": 14, "requirements": {"dexterity": 79, "requires_level": 56, "intelligence": 55}, "fields": [{"name": "to_radius", "value": "6"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "86, 129"}], "minimum_damage": 780.8}, {"mana_cost": 17, "maximum_damage": 496.0, "level": 15, "requirements": {"dexterity": 83, "requires_level": 59, "intelligence": 58}, "fields": [{"name": "to_radius", "value": "6"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "103, 155"}], "minimum_damage": 940.5}, {"mana_cost": 18, "maximum_damage": 596.0, "level": 16, "requirements": {"dexterity": 87, "requires_level": 62, "intelligence": 60}, "fields": [{"name": "to_radius", "value": "7"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "124, 186"}], "minimum_damage": 1130.7}, {"mana_cost": 18, "maximum_damage": 673.0, "level": 17, "requirements": {"dexterity": 90, "requires_level": 64, "intelligence": 62}, "fields": [{"name": "to_radius", "value": "7"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "140, 210"}], "minimum_damage": 1277.2}, {"mana_cost": 19, "maximum_damage": 760.0, "level": 18, "requirements": {"dexterity": 92, "requires_level": 66, "intelligence": 64}, "fields": [{"name": "to_radius", "value": "8"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "158, 237"}], "minimum_damage": 1441.6}, {"mana_cost": 19, "maximum_damage": 857.0, "level": 19, "requirements": {"dexterity": 95, "requires_level": 68, "intelligence": 66}, "fields": [{"name": "to_radius", "value": "8"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "179, 268"}], "minimum_damage": 1626.1}, {"mana_cost": 20, "maximum_damage": 966.0, "level": 20, "requirements": {"dexterity": 98, "requires_level": 70, "intelligence": 68}, "fields": [{"name": "to_radius", "value": "8"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "201, 302"}], "minimum_damage": 1832.9}, {"mana_cost": 20, "maximum_damage": 1088.0, "level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [{"name": "to_radius", "value": "9"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "227, 340"}], "minimum_damage": 2064.7}, {"mana_cost": 21, "maximum_damage": 1225.0, "level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [{"name": "to_radius", "value": "9"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "255, 383"}], "minimum_damage": 2324.4}, {"mana_cost": 21, "maximum_damage": 1378.0, "level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [{"name": "to_radius", "value": "10"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "287, 431"}], "minimum_damage": 2615.4}, {"mana_cost": 21, "maximum_damage": 1550.0, "level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [{"name": "to_radius", "value": "10"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "323, 484"}], "minimum_damage": 2941.1}, {"mana_cost": 22, "maximum_damage": 1742.0, "level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [{"name": "to_radius", "value": "11"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "363, 544"}], "minimum_damage": 3305.7}, {"mana_cost": 23, "maximum_damage": 1957.0, "level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [{"name": "to_radius", "value": "11"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "408, 612"}], "minimum_damage": 3713.7}, {"mana_cost": 23, "maximum_damage": 2198.0, "level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [{"name": "to_radius", "value": "11"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "458, 687"}], "minimum_damage": 4170.0}, {"mana_cost": 23, "maximum_damage": 2467.0, "level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [{"name": "to_radius", "value": "12"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "514, 771"}], "minimum_damage": 4680.3}, {"mana_cost": 24, "maximum_damage": 2767.0, "level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [{"name": "to_radius", "value": "12"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "577, 865"}], "minimum_damage": 5250.7}, {"mana_cost": 24, "maximum_damage": 3103.0, "level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [{"name": "to_radius", "value": "13"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "647, 970"}], "minimum_damage": 5888.2}, {"mana_cost": 26, "maximum_damage": 3286.0, "level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [{"name": "to_radius", "value": "13"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "685, 1027"}], "minimum_damage": 6234.5}, {"mana_cost": 26, "maximum_damage": 3479.0, "level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [{"name": "to_radius", "value": "13"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "725, 1087"}], "minimum_damage": 6600.5}, {"mana_cost": 27, "maximum_damage": 3683.0, "level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [{"name": "to_radius", "value": "13"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "767, 1151"}], "minimum_damage": 6987.2}, {"mana_cost": 27, "maximum_damage": 3898.0, "level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [{"name": "to_radius", "value": "14"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "812, 1218"}], "minimum_damage": 7396.0}, {"mana_cost": 28, "maximum_damage": 4126.0, "level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [{"name": "to_radius", "value": "14"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "860, 1289"}], "minimum_damage": 7827.9}, {"mana_cost": 29, "maximum_damage": 4366.0, "level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [{"name": "to_radius", "value": "14"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "910, 1364"}], "minimum_damage": 8284.3}, {"mana_cost": 29, "maximum_damage": 4620.0, "level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [{"name": "to_radius", "value": "14"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "963, 1444"}], "minimum_damage": 8766.6}, {"mana_cost": 30, "maximum_damage": 4889.0, "level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [{"name": "to_radius", "value": "15"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "1019, 1528"}], "minimum_damage": 9276.0}, {"mana_cost": 30, "maximum_damage": 5173.0, "level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [{"name": "to_radius", "value": "15"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "1078, 1616"}], "minimum_damage": 9814.3}, {"mana_cost": 31, "maximum_damage": 5472.0, "level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [{"name": "to_radius", "value": "15"}, {"name": "_to__added_fire_damage_against_burning_enemies", "value": "1140, 1710"}], "minimum_damage": 10382.9}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Fire Trap",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Trap lasts 4 seconds",
+    "+1.75 seconds to Base duration",
+    "Deals (11\u2013644) to (17\u2013966) Fire Damage",
+    "Deals (32.5\u20131832.9) Base Fire Damage per second",
+    "+(0\u20138) to radius",
+    "(4\u2013201) to (5\u2013302) added Fire Damage against Burning Enemies",
+    "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 32.5,
+      "requirements": {
+        "dexterity": 21,
+        "intelligence": 14,
+        "requires_level": 12
+      },
+      "mana_cost": 8,
+      "maximum_damage": 17.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "4, 5"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 42.5,
+      "requirements": {
+        "dexterity": 25,
+        "intelligence": 17,
+        "requires_level": 15
+      },
+      "mana_cost": 8,
+      "maximum_damage": 22.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "5, 7"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 59.7,
+      "requirements": {
+        "dexterity": 30,
+        "intelligence": 21,
+        "requires_level": 19
+      },
+      "mana_cost": 9,
+      "maximum_damage": 31.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "7, 10"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 82.1,
+      "requirements": {
+        "dexterity": 35,
+        "intelligence": 24,
+        "requires_level": 23
+      },
+      "mana_cost": 10,
+      "maximum_damage": 43.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "9, 14"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 111.2,
+      "requirements": {
+        "dexterity": 41,
+        "intelligence": 28,
+        "requires_level": 27
+      },
+      "mana_cost": 10,
+      "maximum_damage": 59.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "12, 18"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 148.9,
+      "requirements": {
+        "dexterity": 46,
+        "intelligence": 32,
+        "requires_level": 31
+      },
+      "mana_cost": 11,
+      "maximum_damage": 78.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "16, 25"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 197.4,
+      "requirements": {
+        "dexterity": 51,
+        "intelligence": 36,
+        "requires_level": 35
+      },
+      "mana_cost": 11,
+      "maximum_damage": 104.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "22, 33"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 242.6,
+      "requirements": {
+        "dexterity": 55,
+        "intelligence": 38,
+        "requires_level": 38
+      },
+      "mana_cost": 12,
+      "maximum_damage": 128.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "27, 40"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 297.1,
+      "requirements": {
+        "dexterity": 59,
+        "intelligence": 41,
+        "requires_level": 41
+      },
+      "mana_cost": 13,
+      "maximum_damage": 157.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "33, 49"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 362.5,
+      "requirements": {
+        "dexterity": 63,
+        "intelligence": 44,
+        "requires_level": 44
+      },
+      "mana_cost": 14,
+      "maximum_damage": 191.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "40, 60"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 440.8,
+      "requirements": {
+        "dexterity": 67,
+        "intelligence": 47,
+        "requires_level": 47
+      },
+      "mana_cost": 14,
+      "maximum_damage": 232.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "48, 73"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 534.7,
+      "requirements": {
+        "dexterity": 71,
+        "intelligence": 49,
+        "requires_level": 50
+      },
+      "mana_cost": 15,
+      "maximum_damage": 282.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "59, 88"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 646.9,
+      "requirements": {
+        "dexterity": 75,
+        "intelligence": 52,
+        "requires_level": 53
+      },
+      "mana_cost": 16,
+      "maximum_damage": 341.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "71, 107"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 780.8,
+      "requirements": {
+        "dexterity": 79,
+        "intelligence": 55,
+        "requires_level": 56
+      },
+      "mana_cost": 16,
+      "maximum_damage": 412.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "86, 129"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 940.5,
+      "requirements": {
+        "dexterity": 83,
+        "intelligence": 58,
+        "requires_level": 59
+      },
+      "mana_cost": 17,
+      "maximum_damage": 496.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "103, 155"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 1130.7,
+      "requirements": {
+        "dexterity": 87,
+        "intelligence": 60,
+        "requires_level": 62
+      },
+      "mana_cost": 18,
+      "maximum_damage": 596.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "7"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "124, 186"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 1277.2,
+      "requirements": {
+        "dexterity": 90,
+        "intelligence": 62,
+        "requires_level": 64
+      },
+      "mana_cost": 18,
+      "maximum_damage": 673.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "7"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "140, 210"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 1441.6,
+      "requirements": {
+        "dexterity": 92,
+        "intelligence": 64,
+        "requires_level": 66
+      },
+      "mana_cost": 19,
+      "maximum_damage": 760.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "8"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "158, 237"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 1626.1,
+      "requirements": {
+        "dexterity": 95,
+        "intelligence": 66,
+        "requires_level": 68
+      },
+      "mana_cost": 19,
+      "maximum_damage": 857.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "8"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "179, 268"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 1832.9,
+      "requirements": {
+        "dexterity": 98,
+        "intelligence": 68,
+        "requires_level": 70
+      },
+      "mana_cost": 20,
+      "maximum_damage": 966.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "8"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "201, 302"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 2064.7,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 20,
+      "maximum_damage": 1088.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "9"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "227, 340"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 2324.4,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 21,
+      "maximum_damage": 1225.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "9"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "255, 383"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 2615.4,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 21,
+      "maximum_damage": 1378.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "287, 431"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 2941.1,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 21,
+      "maximum_damage": 1550.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "323, 484"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 3305.7,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 22,
+      "maximum_damage": 1742.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "11"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "363, 544"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 3713.7,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 23,
+      "maximum_damage": 1957.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "11"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "408, 612"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 4170.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 23,
+      "maximum_damage": 2198.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "11"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "458, 687"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 4680.3,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 23,
+      "maximum_damage": 2467.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "12"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "514, 771"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 5250.7,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 24,
+      "maximum_damage": 2767.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "12"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "577, 865"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 5888.2,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 24,
+      "maximum_damage": 3103.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "13"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "647, 970"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 6234.5,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 26,
+      "maximum_damage": 3286.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "13"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "685, 1027"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 6600.5,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 26,
+      "maximum_damage": 3479.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "13"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "725, 1087"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 6987.2,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 27,
+      "maximum_damage": 3683.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "13"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "767, 1151"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 7396.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 27,
+      "maximum_damage": 3898.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "14"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "812, 1218"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 7827.9,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 28,
+      "maximum_damage": 4126.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "14"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "860, 1289"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 8284.3,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 29,
+      "maximum_damage": 4366.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "14"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "910, 1364"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 8766.6,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 29,
+      "maximum_damage": 4620.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "14"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "963, 1444"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 9276.0,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 30,
+      "maximum_damage": 4889.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "15"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "1019, 1528"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 9814.3,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 30,
+      "maximum_damage": 5173.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "15"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "1078, 1616"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 10382.9,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 31,
+      "maximum_damage": 5472.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "15"
+        },
+        {
+          "name": "_to__added_fire_damage_against_burning_enemies",
+          "value": "1140, 1710"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "is_area_damage [1]",
+    "base_skill_is_trapped [1]",
+    "base_skill_show_average_damage_instead_of_dps [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "25% increased Fire Trap Damage",
+      "40% increased Fire Trap Burning Damage",
+      "20% increased Fire Trap Damage",
+      "30% increased Fire Trap Burning Ground Duration"
+    ],
+    "eternal": [
+      "40% increased Fire Trap Damage",
+      "60% increased Fire Trap Burning Damage",
+      "30% increased Fire Trap Damage",
+      "45% increased Fire Trap Burning Ground Duration"
+    ]
+  },
+  "drop_level": 12,
+  "type": [
+    "spell",
+    "duration",
+    "hit",
+    "skillcanmine",
+    "area",
+    "causesburning",
+    "trap",
+    "damageovertime",
+    "fireskill",
+    "areaspell"
+  ],
+  "mtx": [],
+  "description": "Throws a trap that explodes when triggered, dealing fire damage to surrounding enemies and leaving an area of burning ground that damages enemies who walk through it.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Multiple Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Trap and Mine Damage Support",
+      "types": [
+        "trap",
+        "mine"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cluster Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Advanced Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Charged Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Swift Assembly Support",
+      "types": [
+        "trap",
+        "mine"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    }
+  ],
+  "target_types": [
+    "enemy",
+    "ground"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% chance to Ignite enemies",
+          "minimum": 0.0,
+          "maximum": 60.0
+        },
+        {
+          "text": "% less Area of Effect",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Fire Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

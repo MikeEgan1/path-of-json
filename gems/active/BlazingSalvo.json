@@ -1,1 +1,1421 @@
-{"target_types": ["ground", "enemy"], "acquisition": {"quest": {"act": 1, "quest_name": "The Siren's Cadence", "classes": ["Witch", "Templar"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Witch", "Templar", "Shadow", "Scion"]}}, "vaal": false, "tags": ["base_is_projectile [1]"], "type": ["spell", "hit", "area", "skillcantrap", "skillcanmine", "skillcantotem", "triggerable", "fireskill", "projectile", "skillcanvolley", "spellcanrepeat", "canrapidfire", "areaspell"], "enchants": {"eternal": ["Blazing Salvo deals 40% increased Damage", "Blazing Salvo fires an additional Projectile", "Blazing Salvo Projectiles land in a 30% increased Area"], "merciless": ["Blazing Salvo deals 25% increased Damage", "Blazing Salvo Projectiles land in a 20% increased Area"]}, "mtx": [], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Lesser Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Greater Volley Support", "types": ["skillcanvolley"]}, {"name": "Faster Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Pierce Support", "types": ["projectile", "type54", "type56"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Spell Echo Support", "types": ["spellcanrepeat"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Slower Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Volley Support", "types": ["skillcanvolley"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "Intensify Support", "types": ["areaspell"]}, {"name": "Unleash Support", "types": ["canrapidfire"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Awakened Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Spell Echo Support", "types": ["spellcanrepeat"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Awakened Unleash Support", "types": ["canrapidfire"]}, {"name": "Archmage Support", "types": ["hit", "spell", "and"]}, {"name": "Pinpoint Support", "types": ["projectile", "spell", "and"]}], "description": "Fires projectiles which fly in an arc, exploding on impact with either enemies or the ground near where you target. Targeting farther away causes the projectiles to spread out and land over a wider area.", "mods": ["Deals (6\u2013162) to (9\u2013243) Fire Damage", "Fires (4\u20136) additional Projectiles"], "quality": {"anomalous": {"mods": [{"text": "% increased Projectile Speed", "minimum": 0.0, "maximum": 40.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "Gain % of Fire Damage as Extra Chaos Damage", "minimum": 0.0, "maximum": 5.0}], "weight": 20.0}}, "drop_level": 12, "name": "Blazing Salvo", "levels": [{"mana_cost": 8, "maximum_damage": 9.0, "level": 1, "requirements": {"requires_level": 12, "intelligence": 33}, "fields": [{"name": "fires__additional_projectiles", "value": "4"}], "minimum_damage": 6.0}, {"mana_cost": 9, "maximum_damage": 12.0, "level": 2, "requirements": {"requires_level": 15, "intelligence": 39}, "fields": [{"name": "fires__additional_projectiles", "value": "4"}], "minimum_damage": 8.0}, {"mana_cost": 10, "maximum_damage": 15.0, "level": 3, "requirements": {"requires_level": 19, "intelligence": 48}, "fields": [{"name": "fires__additional_projectiles", "value": "4"}], "minimum_damage": 10.0}, {"mana_cost": 11, "maximum_damage": 20.0, "level": 4, "requirements": {"requires_level": 23, "intelligence": 56}, "fields": [{"name": "fires__additional_projectiles", "value": "4"}], "minimum_damage": 13.0}, {"mana_cost": 12, "maximum_damage": 26.0, "level": 5, "requirements": {"requires_level": 27, "intelligence": 64}, "fields": [{"name": "fires__additional_projectiles", "value": "4"}], "minimum_damage": 17.0}, {"mana_cost": 13, "maximum_damage": 33.0, "level": 6, "requirements": {"requires_level": 31, "intelligence": 73}, "fields": [{"name": "fires__additional_projectiles", "value": "4"}], "minimum_damage": 22.0}, {"mana_cost": 14, "maximum_damage": 42.0, "level": 7, "requirements": {"requires_level": 35, "intelligence": 81}, "fields": [{"name": "fires__additional_projectiles", "value": "5"}], "minimum_damage": 28.0}, {"mana_cost": 15, "maximum_damage": 49.0, "level": 8, "requirements": {"requires_level": 38, "intelligence": 88}, "fields": [{"name": "fires__additional_projectiles", "value": "5"}], "minimum_damage": 33.0}, {"mana_cost": 16, "maximum_damage": 58.0, "level": 9, "requirements": {"requires_level": 41, "intelligence": 94}, "fields": [{"name": "fires__additional_projectiles", "value": "5"}], "minimum_damage": 38.0}, {"mana_cost": 16, "maximum_damage": 68.0, "level": 10, "requirements": {"requires_level": 44, "intelligence": 100}, "fields": [{"name": "fires__additional_projectiles", "value": "5"}], "minimum_damage": 45.0}, {"mana_cost": 17, "maximum_damage": 79.0, "level": 11, "requirements": {"requires_level": 47, "intelligence": 106}, "fields": [{"name": "fires__additional_projectiles", "value": "5"}], "minimum_damage": 53.0}, {"mana_cost": 18, "maximum_damage": 92.0, "level": 12, "requirements": {"requires_level": 50, "intelligence": 113}, "fields": [{"name": "fires__additional_projectiles", "value": "5"}], "minimum_damage": 62.0}, {"mana_cost": 19, "maximum_damage": 107.0, "level": 13, "requirements": {"requires_level": 53, "intelligence": 119}, "fields": [{"name": "fires__additional_projectiles", "value": "5"}], "minimum_damage": 72.0}, {"mana_cost": 19, "maximum_damage": 125.0, "level": 14, "requirements": {"requires_level": 56, "intelligence": 125}, "fields": [{"name": "fires__additional_projectiles", "value": "6"}], "minimum_damage": 83.0}, {"mana_cost": 20, "maximum_damage": 144.0, "level": 15, "requirements": {"requires_level": 59, "intelligence": 132}, "fields": [{"name": "fires__additional_projectiles", "value": "6"}], "minimum_damage": 96.0}, {"mana_cost": 21, "maximum_damage": 167.0, "level": 16, "requirements": {"requires_level": 62, "intelligence": 138}, "fields": [{"name": "fires__additional_projectiles", "value": "6"}], "minimum_damage": 111.0}, {"mana_cost": 21, "maximum_damage": 183.0, "level": 17, "requirements": {"requires_level": 64, "intelligence": 142}, "fields": [{"name": "fires__additional_projectiles", "value": "6"}], "minimum_damage": 122.0}, {"mana_cost": 22, "maximum_damage": 202.0, "level": 18, "requirements": {"requires_level": 66, "intelligence": 146}, "fields": [{"name": "fires__additional_projectiles", "value": "6"}], "minimum_damage": 134.0}, {"mana_cost": 22, "maximum_damage": 222.0, "level": 19, "requirements": {"requires_level": 68, "intelligence": 151}, "fields": [{"name": "fires__additional_projectiles", "value": "6"}], "minimum_damage": 148.0}, {"mana_cost": 23, "maximum_damage": 243.0, "level": 20, "requirements": {"requires_level": 70, "intelligence": 155}, "fields": [{"name": "fires__additional_projectiles", "value": "6"}], "minimum_damage": 162.0}, {"mana_cost": 24, "maximum_damage": 267.0, "level": 21, "requirements": {"requires_level": 72, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "7"}], "minimum_damage": 178.0}, {"mana_cost": 24, "maximum_damage": 293.0, "level": 22, "requirements": {"requires_level": 74, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "7"}], "minimum_damage": 195.0}, {"mana_cost": 25, "maximum_damage": 321.0, "level": 23, "requirements": {"requires_level": 76, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "7"}], "minimum_damage": 214.0}, {"mana_cost": 25, "maximum_damage": 351.0, "level": 24, "requirements": {"requires_level": 78, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "7"}], "minimum_damage": 234.0}, {"mana_cost": 26, "maximum_damage": 385.0, "level": 25, "requirements": {"requires_level": 80, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "7"}], "minimum_damage": 256.0}, {"mana_cost": 26, "maximum_damage": 421.0, "level": 26, "requirements": {"requires_level": 82, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "7"}], "minimum_damage": 281.0}, {"mana_cost": 27, "maximum_damage": 460.0, "level": 27, "requirements": {"requires_level": 84, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "7"}], "minimum_damage": 307.0}, {"mana_cost": 27, "maximum_damage": 503.0, "level": 28, "requirements": {"requires_level": 86, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 335.0}, {"mana_cost": 28, "maximum_damage": 550.0, "level": 29, "requirements": {"requires_level": 88, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 367.0}, {"mana_cost": 28, "maximum_damage": 601.0, "level": 30, "requirements": {"requires_level": 90, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 400.0}, {"mana_cost": 28, "maximum_damage": 628.0, "level": 31, "requirements": {"requires_level": 91, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 418.0}, {"mana_cost": 29, "maximum_damage": 656.0, "level": 32, "requirements": {"requires_level": 92, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 437.0}, {"mana_cost": 29, "maximum_damage": 685.0, "level": 33, "requirements": {"requires_level": 93, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 457.0}, {"mana_cost": 29, "maximum_damage": 716.0, "level": 34, "requirements": {"requires_level": 94, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 477.0}, {"mana_cost": 29, "maximum_damage": 748.0, "level": 35, "requirements": {"requires_level": 95, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 498.0}, {"mana_cost": 30, "maximum_damage": 781.0, "level": 36, "requirements": {"requires_level": 96, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 521.0}, {"mana_cost": 30, "maximum_damage": 816.0, "level": 37, "requirements": {"requires_level": 97, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 544.0}, {"mana_cost": 30, "maximum_damage": 852.0, "level": 38, "requirements": {"requires_level": 98, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 568.0}, {"mana_cost": 30, "maximum_damage": 889.0, "level": 39, "requirements": {"requires_level": 99, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "8"}], "minimum_damage": 593.0}, {"mana_cost": 31, "maximum_damage": 928.0, "level": 40, "requirements": {"requires_level": 100, "intelligence": null}, "fields": [{"name": "fires__additional_projectiles", "value": "9"}], "minimum_damage": 619.0}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Blazing Salvo",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Witch",
+        "Templar"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Deals (6\u2013162) to (9\u2013243) Fire Damage",
+    "Fires (4\u20136) additional Projectiles"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 6.0,
+      "requirements": {
+        "intelligence": 33,
+        "requires_level": 12
+      },
+      "mana_cost": 8,
+      "maximum_damage": 9.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 8.0,
+      "requirements": {
+        "intelligence": 39,
+        "requires_level": 15
+      },
+      "mana_cost": 9,
+      "maximum_damage": 12.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "intelligence": 48,
+        "requires_level": 19
+      },
+      "mana_cost": 10,
+      "maximum_damage": 15.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 13.0,
+      "requirements": {
+        "intelligence": 56,
+        "requires_level": 23
+      },
+      "mana_cost": 11,
+      "maximum_damage": 20.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 17.0,
+      "requirements": {
+        "intelligence": 64,
+        "requires_level": 27
+      },
+      "mana_cost": 12,
+      "maximum_damage": 26.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 22.0,
+      "requirements": {
+        "intelligence": 73,
+        "requires_level": 31
+      },
+      "mana_cost": 13,
+      "maximum_damage": 33.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 28.0,
+      "requirements": {
+        "intelligence": 81,
+        "requires_level": 35
+      },
+      "mana_cost": 14,
+      "maximum_damage": 42.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 33.0,
+      "requirements": {
+        "intelligence": 88,
+        "requires_level": 38
+      },
+      "mana_cost": 15,
+      "maximum_damage": 49.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 38.0,
+      "requirements": {
+        "intelligence": 94,
+        "requires_level": 41
+      },
+      "mana_cost": 16,
+      "maximum_damage": 58.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 45.0,
+      "requirements": {
+        "intelligence": 100,
+        "requires_level": 44
+      },
+      "mana_cost": 16,
+      "maximum_damage": 68.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 53.0,
+      "requirements": {
+        "intelligence": 106,
+        "requires_level": 47
+      },
+      "mana_cost": 17,
+      "maximum_damage": 79.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 62.0,
+      "requirements": {
+        "intelligence": 113,
+        "requires_level": 50
+      },
+      "mana_cost": 18,
+      "maximum_damage": 92.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 72.0,
+      "requirements": {
+        "intelligence": 119,
+        "requires_level": 53
+      },
+      "mana_cost": 19,
+      "maximum_damage": 107.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 83.0,
+      "requirements": {
+        "intelligence": 125,
+        "requires_level": 56
+      },
+      "mana_cost": 19,
+      "maximum_damage": 125.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 96.0,
+      "requirements": {
+        "intelligence": 132,
+        "requires_level": 59
+      },
+      "mana_cost": 20,
+      "maximum_damage": 144.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 111.0,
+      "requirements": {
+        "intelligence": 138,
+        "requires_level": 62
+      },
+      "mana_cost": 21,
+      "maximum_damage": 167.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 122.0,
+      "requirements": {
+        "intelligence": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 21,
+      "maximum_damage": 183.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 134.0,
+      "requirements": {
+        "intelligence": 146,
+        "requires_level": 66
+      },
+      "mana_cost": 22,
+      "maximum_damage": 202.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 148.0,
+      "requirements": {
+        "intelligence": 151,
+        "requires_level": 68
+      },
+      "mana_cost": 22,
+      "maximum_damage": 222.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 162.0,
+      "requirements": {
+        "intelligence": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 23,
+      "maximum_damage": 243.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 178.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 24,
+      "maximum_damage": 267.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 195.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 24,
+      "maximum_damage": 293.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 214.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 25,
+      "maximum_damage": 321.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 234.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 25,
+      "maximum_damage": 351.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 256.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 26,
+      "maximum_damage": 385.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 281.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 26,
+      "maximum_damage": 421.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 307.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 27,
+      "maximum_damage": 460.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 335.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 27,
+      "maximum_damage": 503.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 367.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 28,
+      "maximum_damage": 550.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 400.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 28,
+      "maximum_damage": 601.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 418.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 28,
+      "maximum_damage": 628.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 437.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 29,
+      "maximum_damage": 656.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 457.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 29,
+      "maximum_damage": 685.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 477.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 29,
+      "maximum_damage": 716.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 498.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 29,
+      "maximum_damage": 748.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 521.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 30,
+      "maximum_damage": 781.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 544.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 30,
+      "maximum_damage": 816.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 568.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 30,
+      "maximum_damage": 852.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 593.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 30,
+      "maximum_damage": 889.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 619.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 31,
+      "maximum_damage": 928.0,
+      "fields": [
+        {
+          "name": "fires__additional_projectiles",
+          "value": "9"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "Blazing Salvo deals 25% increased Damage",
+      "Blazing Salvo Projectiles land in a 20% increased Area"
+    ],
+    "eternal": [
+      "Blazing Salvo deals 40% increased Damage",
+      "Blazing Salvo fires an additional Projectile",
+      "Blazing Salvo Projectiles land in a 30% increased Area"
+    ]
+  },
+  "drop_level": 12,
+  "type": [
+    "spell",
+    "hit",
+    "area",
+    "skillcantrap",
+    "skillcanmine",
+    "skillcantotem",
+    "triggerable",
+    "fireskill",
+    "projectile",
+    "skillcanvolley",
+    "spellcanrepeat",
+    "canrapidfire",
+    "areaspell"
+  ],
+  "mtx": [],
+  "description": "Fires projectiles which fly in an arc, exploding on impact with either enemies or the ground near where you target. Targeting farther away causes the projectiles to spread out and land over a wider area.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Lesser Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Greater Volley Support",
+      "types": [
+        "skillcanvolley"
+      ]
+    },
+    {
+      "name": "Faster Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Pierce Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Spell Echo Support",
+      "types": [
+        "spellcanrepeat"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Slower Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Volley Support",
+      "types": [
+        "skillcanvolley"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Intensify Support",
+      "types": [
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Unleash Support",
+      "types": [
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Spell Echo Support",
+      "types": [
+        "spellcanrepeat"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Awakened Unleash Support",
+      "types": [
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Archmage Support",
+      "types": [
+        "hit",
+        "spell",
+        "and"
+      ]
+    },
+    {
+      "name": "Pinpoint Support",
+      "types": [
+        "projectile",
+        "spell",
+        "and"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Gain % of Fire Damage as Extra Chaos Damage",
+          "minimum": 0.0,
+          "maximum": 5.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0,
+          "maximum": 40.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

@@ -1,1 +1,1572 @@
-{"target_types": ["ground", "enemy", "self"], "acquisition": {"quest": {"act": 1, "quest_name": "The Caged Brute", "classes": ["Ranger", "Shadow"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Marauder", "Witch", "Duelist", "Ranger", "Shadow"]}}, "vaal": false, "tags": ["base_skill_is_mined [1]", "base_deal_no_damage [1]"], "type": ["spell", "area", "duration", "movementskill", "mine", "areaspell", "travelskill", "manacostreserved", "blinkskill", "secondwindsupport"], "enchants": {"eternal": ["30% increased Smoke Mine Duration", "Smoke Mine grants additional 30% increased Movement Speed"], "merciless": ["20% increased Smoke Mine Duration", "Smoke Mine grants additional 20% increased Movement Speed"]}, "mtx": [], "support": [{"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Trap and Mine Damage Support", "types": ["trap", "mine"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Minefield Support", "types": ["mine"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Charged Mines Support", "types": ["mine"]}, {"name": "Swift Assembly Support", "types": ["trap", "mine"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "Throws a mine that will teleport you to it when detonated. It covers both your escape and arrival with a cloud of smoke that blinds enemies, and gives you a temporary buff to movement speed. Shares a cooldown with other Blink skills.", "mods": ["Mine lasts 8 seconds", "+(4\u20135) seconds to Base duration", "Buff grants (10\u201329)% increased Movement Speed", "(0\u201376)% increased Area of Effect", "Base secondary duration is (4\u20135) seconds", "(0\u201357)% increased Cooldown Recovery Rate", "Only one Mine of this type can Detonate in each Detonation Sequence", "Mine Detonation is Instant", "Increases and Reductions to Mine Duration also apply to this Skill's Buff Duration", "Mines cannot be Re-armed"], "quality": {"anomalous": {"mods": [{"text": "% increased Skill Effect Duration", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 40.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "Buff grants % increased Attack and Cast Speed", "minimum": 0.0, "maximum": 10.0}], "weight": 20.0}}, "drop_level": 10, "name": "Smoke Mine", "levels": [{"level": 1, "requirements": {"dexterity": 18, "requires_level": 10, "intelligence": 12}, "fields": [{"name": "mana_reserved", "value": "6"}, {"name": "+_seconds_to_base_duration", "value": "4"}, {"name": "buff_grants_%_increased_movement_speed", "value": "10"}, {"name": "%_increased_area_of_effect", "value": ""}, {"name": "base_secondary_duration_is__seconds", "value": "4"}, {"name": "%_increased_cooldown_recovery_rate", "value": ""}]}, {"level": 2, "requirements": {"dexterity": 22, "requires_level": 13, "intelligence": 15}, "fields": [{"name": "mana_reserved", "value": "6"}, {"name": "+_seconds_to_base_duration", "value": "4.1"}, {"name": "buff_grants_%_increased_movement_speed", "value": "11"}, {"name": "%_increased_area_of_effect", "value": "4"}, {"name": "base_secondary_duration_is__seconds", "value": "4.1"}, {"name": "%_increased_cooldown_recovery_rate", "value": "3"}]}, {"level": 3, "requirements": {"dexterity": 27, "requires_level": 17, "intelligence": 19}, "fields": [{"name": "mana_reserved", "value": "7"}, {"name": "+_seconds_to_base_duration", "value": "4.1"}, {"name": "buff_grants_%_increased_movement_speed", "value": "12"}, {"name": "%_increased_area_of_effect", "value": "8"}, {"name": "base_secondary_duration_is__seconds", "value": "4.1"}, {"name": "%_increased_cooldown_recovery_rate", "value": "6"}]}, {"level": 4, "requirements": {"dexterity": 33, "requires_level": 21, "intelligence": 23}, "fields": [{"name": "mana_reserved", "value": "7"}, {"name": "+_seconds_to_base_duration", "value": "4.2"}, {"name": "buff_grants_%_increased_movement_speed", "value": "13"}, {"name": "%_increased_area_of_effect", "value": "12"}, {"name": "base_secondary_duration_is__seconds", "value": "4.2"}, {"name": "%_increased_cooldown_recovery_rate", "value": "9"}]}, {"level": 5, "requirements": {"dexterity": 38, "requires_level": 25, "intelligence": 26}, "fields": [{"name": "mana_reserved", "value": "8"}, {"name": "+_seconds_to_base_duration", "value": "4.2"}, {"name": "buff_grants_%_increased_movement_speed", "value": "14"}, {"name": "%_increased_area_of_effect", "value": "16"}, {"name": "base_secondary_duration_is__seconds", "value": "4.2"}, {"name": "%_increased_cooldown_recovery_rate", "value": "12"}]}, {"level": 6, "requirements": {"dexterity": 43, "requires_level": 29, "intelligence": 30}, "fields": [{"name": "mana_reserved", "value": "8"}, {"name": "+_seconds_to_base_duration", "value": "4.3"}, {"name": "buff_grants_%_increased_movement_speed", "value": "15"}, {"name": "%_increased_area_of_effect", "value": "20"}, {"name": "base_secondary_duration_is__seconds", "value": "4.3"}, {"name": "%_increased_cooldown_recovery_rate", "value": "15"}]}, {"level": 7, "requirements": {"dexterity": 49, "requires_level": 33, "intelligence": 34}, "fields": [{"name": "mana_reserved", "value": "9"}, {"name": "+_seconds_to_base_duration", "value": "4.3"}, {"name": "buff_grants_%_increased_movement_speed", "value": "16"}, {"name": "%_increased_area_of_effect", "value": "24"}, {"name": "base_secondary_duration_is__seconds", "value": "4.3"}, {"name": "%_increased_cooldown_recovery_rate", "value": "18"}]}, {"level": 8, "requirements": {"dexterity": 53, "requires_level": 36, "intelligence": 36}, "fields": [{"name": "mana_reserved", "value": "9"}, {"name": "+_seconds_to_base_duration", "value": "4.4"}, {"name": "buff_grants_%_increased_movement_speed", "value": "17"}, {"name": "%_increased_area_of_effect", "value": "28"}, {"name": "base_secondary_duration_is__seconds", "value": "4.4"}, {"name": "%_increased_cooldown_recovery_rate", "value": "21"}]}, {"level": 9, "requirements": {"dexterity": 56, "requires_level": 39, "intelligence": 39}, "fields": [{"name": "mana_reserved", "value": "9"}, {"name": "+_seconds_to_base_duration", "value": "4.4"}, {"name": "buff_grants_%_increased_movement_speed", "value": "18"}, {"name": "%_increased_area_of_effect", "value": "32"}, {"name": "base_secondary_duration_is__seconds", "value": "4.4"}, {"name": "%_increased_cooldown_recovery_rate", "value": "24"}]}, {"level": 10, "requirements": {"dexterity": 60, "requires_level": 42, "intelligence": 42}, "fields": [{"name": "mana_reserved", "value": "10"}, {"name": "+_seconds_to_base_duration", "value": "4.5"}, {"name": "buff_grants_%_increased_movement_speed", "value": "19"}, {"name": "%_increased_area_of_effect", "value": "36"}, {"name": "base_secondary_duration_is__seconds", "value": "4.5"}, {"name": "%_increased_cooldown_recovery_rate", "value": "27"}]}, {"level": 11, "requirements": {"dexterity": 64, "requires_level": 45, "intelligence": 45}, "fields": [{"name": "mana_reserved", "value": "10"}, {"name": "+_seconds_to_base_duration", "value": "4.5"}, {"name": "buff_grants_%_increased_movement_speed", "value": "20"}, {"name": "%_increased_area_of_effect", "value": "40"}, {"name": "base_secondary_duration_is__seconds", "value": "4.5"}, {"name": "%_increased_cooldown_recovery_rate", "value": "30"}]}, {"level": 12, "requirements": {"dexterity": 68, "requires_level": 48, "intelligence": 48}, "fields": [{"name": "mana_reserved", "value": "10"}, {"name": "+_seconds_to_base_duration", "value": "4.6"}, {"name": "buff_grants_%_increased_movement_speed", "value": "21"}, {"name": "%_increased_area_of_effect", "value": "44"}, {"name": "base_secondary_duration_is__seconds", "value": "4.6"}, {"name": "%_increased_cooldown_recovery_rate", "value": "33"}]}, {"level": 13, "requirements": {"dexterity": 72, "requires_level": 51, "intelligence": 50}, "fields": [{"name": "mana_reserved", "value": "10"}, {"name": "+_seconds_to_base_duration", "value": "4.6"}, {"name": "buff_grants_%_increased_movement_speed", "value": "22"}, {"name": "%_increased_area_of_effect", "value": "48"}, {"name": "base_secondary_duration_is__seconds", "value": "4.6"}, {"name": "%_increased_cooldown_recovery_rate", "value": "36"}]}, {"level": 14, "requirements": {"dexterity": 76, "requires_level": 54, "intelligence": 53}, "fields": [{"name": "mana_reserved", "value": "11"}, {"name": "+_seconds_to_base_duration", "value": "4.7"}, {"name": "buff_grants_%_increased_movement_speed", "value": "23"}, {"name": "%_increased_area_of_effect", "value": "52"}, {"name": "base_secondary_duration_is__seconds", "value": "4.7"}, {"name": "%_increased_cooldown_recovery_rate", "value": "39"}]}, {"level": 15, "requirements": {"dexterity": 80, "requires_level": 57, "intelligence": 56}, "fields": [{"name": "mana_reserved", "value": "11"}, {"name": "+_seconds_to_base_duration", "value": "4.7"}, {"name": "buff_grants_%_increased_movement_speed", "value": "24"}, {"name": "%_increased_area_of_effect", "value": "56"}, {"name": "base_secondary_duration_is__seconds", "value": "4.7"}, {"name": "%_increased_cooldown_recovery_rate", "value": "42"}]}, {"level": 16, "requirements": {"dexterity": 84, "requires_level": 60, "intelligence": 59}, "fields": [{"name": "mana_reserved", "value": "11"}, {"name": "+_seconds_to_base_duration", "value": "4.8"}, {"name": "buff_grants_%_increased_movement_speed", "value": "25"}, {"name": "%_increased_area_of_effect", "value": "60"}, {"name": "base_secondary_duration_is__seconds", "value": "4.8"}, {"name": "%_increased_cooldown_recovery_rate", "value": "45"}]}, {"level": 17, "requirements": {"dexterity": 88, "requires_level": 63, "intelligence": 61}, "fields": [{"name": "mana_reserved", "value": "12"}, {"name": "+_seconds_to_base_duration", "value": "4.8"}, {"name": "buff_grants_%_increased_movement_speed", "value": "26"}, {"name": "%_increased_area_of_effect", "value": "64"}, {"name": "base_secondary_duration_is__seconds", "value": "4.8"}, {"name": "%_increased_cooldown_recovery_rate", "value": "48"}]}, {"level": 18, "requirements": {"dexterity": 92, "requires_level": 66, "intelligence": 64}, "fields": [{"name": "mana_reserved", "value": "12"}, {"name": "+_seconds_to_base_duration", "value": "4.9"}, {"name": "buff_grants_%_increased_movement_speed", "value": "27"}, {"name": "%_increased_area_of_effect", "value": "68"}, {"name": "base_secondary_duration_is__seconds", "value": "4.9"}, {"name": "%_increased_cooldown_recovery_rate", "value": "51"}]}, {"level": 19, "requirements": {"dexterity": 95, "requires_level": 68, "intelligence": 66}, "fields": [{"name": "mana_reserved", "value": "12"}, {"name": "+_seconds_to_base_duration", "value": "4.9"}, {"name": "buff_grants_%_increased_movement_speed", "value": "28"}, {"name": "%_increased_area_of_effect", "value": "72"}, {"name": "base_secondary_duration_is__seconds", "value": "4.9"}, {"name": "%_increased_cooldown_recovery_rate", "value": "54"}]}, {"level": 20, "requirements": {"dexterity": 98, "requires_level": 70, "intelligence": 68}, "fields": [{"name": "mana_reserved", "value": "13"}, {"name": "+_seconds_to_base_duration", "value": "5"}, {"name": "buff_grants_%_increased_movement_speed", "value": "29"}, {"name": "%_increased_area_of_effect", "value": "76"}, {"name": "base_secondary_duration_is__seconds", "value": "5"}, {"name": "%_increased_cooldown_recovery_rate", "value": "57"}]}, {"level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "13"}, {"name": "+_seconds_to_base_duration", "value": "5"}, {"name": "buff_grants_%_increased_movement_speed", "value": "30"}, {"name": "%_increased_area_of_effect", "value": "80"}, {"name": "base_secondary_duration_is__seconds", "value": "5"}, {"name": "%_increased_cooldown_recovery_rate", "value": "60"}]}, {"level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "13"}, {"name": "+_seconds_to_base_duration", "value": "5.1"}, {"name": "buff_grants_%_increased_movement_speed", "value": "31"}, {"name": "%_increased_area_of_effect", "value": "84"}, {"name": "base_secondary_duration_is__seconds", "value": "5.1"}, {"name": "%_increased_cooldown_recovery_rate", "value": "63"}]}, {"level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "14"}, {"name": "+_seconds_to_base_duration", "value": "5.1"}, {"name": "buff_grants_%_increased_movement_speed", "value": "32"}, {"name": "%_increased_area_of_effect", "value": "88"}, {"name": "base_secondary_duration_is__seconds", "value": "5.1"}, {"name": "%_increased_cooldown_recovery_rate", "value": "66"}]}, {"level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "14"}, {"name": "+_seconds_to_base_duration", "value": "5.2"}, {"name": "buff_grants_%_increased_movement_speed", "value": "33"}, {"name": "%_increased_area_of_effect", "value": "92"}, {"name": "base_secondary_duration_is__seconds", "value": "5.2"}, {"name": "%_increased_cooldown_recovery_rate", "value": "69"}]}, {"level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "14"}, {"name": "+_seconds_to_base_duration", "value": "5.2"}, {"name": "buff_grants_%_increased_movement_speed", "value": "34"}, {"name": "%_increased_area_of_effect", "value": "96"}, {"name": "base_secondary_duration_is__seconds", "value": "5.2"}, {"name": "%_increased_cooldown_recovery_rate", "value": "72"}]}, {"level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "14"}, {"name": "+_seconds_to_base_duration", "value": "5.3"}, {"name": "buff_grants_%_increased_movement_speed", "value": "35"}, {"name": "%_increased_area_of_effect", "value": "100"}, {"name": "base_secondary_duration_is__seconds", "value": "5.3"}, {"name": "%_increased_cooldown_recovery_rate", "value": "75"}]}, {"level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "14"}, {"name": "+_seconds_to_base_duration", "value": "5.3"}, {"name": "buff_grants_%_increased_movement_speed", "value": "36"}, {"name": "%_increased_area_of_effect", "value": "104"}, {"name": "base_secondary_duration_is__seconds", "value": "5.3"}, {"name": "%_increased_cooldown_recovery_rate", "value": "78"}]}, {"level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "14"}, {"name": "+_seconds_to_base_duration", "value": "5.4"}, {"name": "buff_grants_%_increased_movement_speed", "value": "37"}, {"name": "%_increased_area_of_effect", "value": "108"}, {"name": "base_secondary_duration_is__seconds", "value": "5.4"}, {"name": "%_increased_cooldown_recovery_rate", "value": "81"}]}, {"level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "15"}, {"name": "+_seconds_to_base_duration", "value": "5.4"}, {"name": "buff_grants_%_increased_movement_speed", "value": "38"}, {"name": "%_increased_area_of_effect", "value": "112"}, {"name": "base_secondary_duration_is__seconds", "value": "5.4"}, {"name": "%_increased_cooldown_recovery_rate", "value": "84"}]}, {"level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "15"}, {"name": "+_seconds_to_base_duration", "value": "5.5"}, {"name": "buff_grants_%_increased_movement_speed", "value": "39"}, {"name": "%_increased_area_of_effect", "value": "116"}, {"name": "base_secondary_duration_is__seconds", "value": "5.5"}, {"name": "%_increased_cooldown_recovery_rate", "value": "87"}]}, {"level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "16"}, {"name": "+_seconds_to_base_duration", "value": "5.5"}, {"name": "buff_grants_%_increased_movement_speed", "value": "39"}, {"name": "%_increased_area_of_effect", "value": "120"}, {"name": "base_secondary_duration_is__seconds", "value": "5.5"}, {"name": "%_increased_cooldown_recovery_rate", "value": "90"}]}, {"level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "16"}, {"name": "+_seconds_to_base_duration", "value": "5.6"}, {"name": "buff_grants_%_increased_movement_speed", "value": "40"}, {"name": "%_increased_area_of_effect", "value": "124"}, {"name": "base_secondary_duration_is__seconds", "value": "5.6"}, {"name": "%_increased_cooldown_recovery_rate", "value": "93"}]}, {"level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "16"}, {"name": "+_seconds_to_base_duration", "value": "5.6"}, {"name": "buff_grants_%_increased_movement_speed", "value": "40"}, {"name": "%_increased_area_of_effect", "value": "128"}, {"name": "base_secondary_duration_is__seconds", "value": "5.6"}, {"name": "%_increased_cooldown_recovery_rate", "value": "96"}]}, {"level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "17"}, {"name": "+_seconds_to_base_duration", "value": "5.7"}, {"name": "buff_grants_%_increased_movement_speed", "value": "41"}, {"name": "%_increased_area_of_effect", "value": "132"}, {"name": "base_secondary_duration_is__seconds", "value": "5.7"}, {"name": "%_increased_cooldown_recovery_rate", "value": "99"}]}, {"level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "17"}, {"name": "+_seconds_to_base_duration", "value": "5.7"}, {"name": "buff_grants_%_increased_movement_speed", "value": "41"}, {"name": "%_increased_area_of_effect", "value": "136"}, {"name": "base_secondary_duration_is__seconds", "value": "5.7"}, {"name": "%_increased_cooldown_recovery_rate", "value": "102"}]}, {"level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "17"}, {"name": "+_seconds_to_base_duration", "value": "5.8"}, {"name": "buff_grants_%_increased_movement_speed", "value": "42"}, {"name": "%_increased_area_of_effect", "value": "140"}, {"name": "base_secondary_duration_is__seconds", "value": "5.8"}, {"name": "%_increased_cooldown_recovery_rate", "value": "105"}]}, {"level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "18"}, {"name": "+_seconds_to_base_duration", "value": "5.8"}, {"name": "buff_grants_%_increased_movement_speed", "value": "42"}, {"name": "%_increased_area_of_effect", "value": "144"}, {"name": "base_secondary_duration_is__seconds", "value": "5.8"}, {"name": "%_increased_cooldown_recovery_rate", "value": "108"}]}, {"level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "18"}, {"name": "+_seconds_to_base_duration", "value": "5.9"}, {"name": "buff_grants_%_increased_movement_speed", "value": "43"}, {"name": "%_increased_area_of_effect", "value": "148"}, {"name": "base_secondary_duration_is__seconds", "value": "5.9"}, {"name": "%_increased_cooldown_recovery_rate", "value": "111"}]}, {"level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "18"}, {"name": "+_seconds_to_base_duration", "value": "5.9"}, {"name": "buff_grants_%_increased_movement_speed", "value": "43"}, {"name": "%_increased_area_of_effect", "value": "152"}, {"name": "base_secondary_duration_is__seconds", "value": "5.9"}, {"name": "%_increased_cooldown_recovery_rate", "value": "114"}]}, {"level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [{"name": "mana_reserved", "value": "19"}, {"name": "+_seconds_to_base_duration", "value": "6"}, {"name": "buff_grants_%_increased_movement_speed", "value": "44"}, {"name": "%_increased_area_of_effect", "value": "156"}, {"name": "base_secondary_duration_is__seconds", "value": "6"}, {"name": "%_increased_cooldown_recovery_rate", "value": "117"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Smoke Mine",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Witch",
+        "Duelist",
+        "Ranger",
+        "Shadow"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Ranger",
+        "Shadow"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Mine lasts 8 seconds",
+    "+(4\u20135) seconds to Base duration",
+    "Buff grants (10\u201329)% increased Movement Speed",
+    "(0\u201376)% increased Area of Effect",
+    "Base secondary duration is (4\u20135) seconds",
+    "(0\u201357)% increased Cooldown Recovery Rate",
+    "Only one Mine of this type can Detonate in each Detonation Sequence",
+    "Mine Detonation is Instant",
+    "Increases and Reductions to Mine Duration also apply to this Skill's Buff Duration",
+    "Mines cannot be Re-armed"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 18,
+        "intelligence": 12,
+        "requires_level": 10
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "6"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "10"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": ""
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 22,
+        "intelligence": 15,
+        "requires_level": 13
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "6"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.1"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "11"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "4"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.1"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 27,
+        "intelligence": 19,
+        "requires_level": 17
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "7"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.1"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "12"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "8"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.1"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 33,
+        "intelligence": 23,
+        "requires_level": 21
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "7"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.2"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "13"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "12"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.2"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 38,
+        "intelligence": 26,
+        "requires_level": 25
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "8"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.2"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "14"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "16"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.2"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 43,
+        "intelligence": 30,
+        "requires_level": 29
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "8"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.3"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "15"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "20"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.3"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 49,
+        "intelligence": 34,
+        "requires_level": 33
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "9"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.3"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "16"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "24"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.3"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 53,
+        "intelligence": 36,
+        "requires_level": 36
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "9"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.4"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "17"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "28"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.4"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 56,
+        "intelligence": 39,
+        "requires_level": 39
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "9"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.4"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "18"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "32"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.4"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 60,
+        "intelligence": 42,
+        "requires_level": 42
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "10"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.5"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "19"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "36"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.5"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 64,
+        "intelligence": 45,
+        "requires_level": 45
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "10"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.5"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "20"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "40"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.5"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 68,
+        "intelligence": 48,
+        "requires_level": 48
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "10"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.6"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "21"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "44"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.6"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 72,
+        "intelligence": 50,
+        "requires_level": 51
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "10"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.6"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "22"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "48"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.6"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 76,
+        "intelligence": 53,
+        "requires_level": 54
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "11"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.7"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "23"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "52"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.7"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 80,
+        "intelligence": 56,
+        "requires_level": 57
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "11"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.7"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "24"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "56"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.7"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 84,
+        "intelligence": 59,
+        "requires_level": 60
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "11"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.8"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "25"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "60"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.8"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 88,
+        "intelligence": 61,
+        "requires_level": 63
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "12"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.8"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "26"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "64"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.8"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 92,
+        "intelligence": 64,
+        "requires_level": 66
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "12"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.9"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "27"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "68"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.9"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 95,
+        "intelligence": 66,
+        "requires_level": 68
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "12"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "4.9"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "28"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "72"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "4.9"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "54"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 98,
+        "intelligence": 68,
+        "requires_level": 70
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "13"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "29"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "76"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "57"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "13"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "30"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "80"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "13"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.1"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "31"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "84"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.1"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "63"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "14"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.1"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "32"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "88"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.1"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "66"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "14"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.2"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "33"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "92"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.2"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "69"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "14"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.2"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "34"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "96"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.2"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "72"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "14"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.3"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "35"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "100"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.3"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "75"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "14"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.3"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "36"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "104"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.3"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "78"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "14"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.4"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "37"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "108"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.4"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "81"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "15"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.4"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "38"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "112"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.4"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "84"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "15"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.5"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "39"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "116"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.5"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "87"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "16"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.5"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "39"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "120"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.5"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "16"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.6"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "40"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "124"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.6"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "93"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "16"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.6"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "40"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "128"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.6"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "17"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.7"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "41"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "132"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.7"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "99"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "17"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.7"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "41"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "136"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.7"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "102"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "17"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.8"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "42"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "140"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.8"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "105"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "18"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.8"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "42"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "144"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.8"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "108"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "18"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.9"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "43"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "148"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.9"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "111"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "18"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "5.9"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "43"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "152"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "5.9"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "114"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "fields": [
+        {
+          "name": "mana_reserved",
+          "value": "19"
+        },
+        {
+          "name": "+_seconds_to_base_duration",
+          "value": "6"
+        },
+        {
+          "name": "buff_grants_%_increased_movement_speed",
+          "value": "44"
+        },
+        {
+          "name": "%_increased_area_of_effect",
+          "value": "156"
+        },
+        {
+          "name": "base_secondary_duration_is__seconds",
+          "value": "6"
+        },
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "117"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_skill_is_mined [1]",
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "20% increased Smoke Mine Duration",
+      "Smoke Mine grants additional 20% increased Movement Speed"
+    ],
+    "eternal": [
+      "30% increased Smoke Mine Duration",
+      "Smoke Mine grants additional 30% increased Movement Speed"
+    ]
+  },
+  "drop_level": 10,
+  "type": [
+    "spell",
+    "area",
+    "duration",
+    "movementskill",
+    "mine",
+    "areaspell",
+    "travelskill",
+    "manacostreserved",
+    "blinkskill",
+    "secondwindsupport"
+  ],
+  "mtx": [],
+  "description": "Throws a mine that will teleport you to it when detonated. It covers both your escape and arrival with a cloud of smoke that blinds enemies, and gives you a temporary buff to movement speed. Shares a cooldown with other Blink skills.",
+  "support": [
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Trap and Mine Damage Support",
+      "types": [
+        "trap",
+        "mine"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Minefield Support",
+      "types": [
+        "mine"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Charged Mines Support",
+      "types": [
+        "mine"
+      ]
+    },
+    {
+      "name": "Swift Assembly Support",
+      "types": [
+        "trap",
+        "mine"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "enemy",
+    "self"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Buff grants % increased Attack and Cast Speed",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 40.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

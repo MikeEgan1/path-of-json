@@ -1,1 +1,208 @@
-{"target_types": ["ground"], "acquisition": {"vendor": {"vendor_name": "Lilly Roth (Level 1)", "classes": ["All", "Classes"]}}, "vaal": false, "tags": ["base_deal_no_damage [1]"], "type": ["spell", "skillcantrap", "skillcantotem", "triggerable", "instant", "secondwindsupport"], "enchants": {"eternal": [], "merciless": []}, "mtx": [], "support": [{"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "Detonates a Mine, starting a Detonation Sequence which will detonate other Mines around it.", "mods": ["First Mine Detonates InstantlyMines get 10% more Detonation Speed for each prior Mine in Detonation Sequence"], "quality": {"anomalous": {"mods": [{"text": "Recover % of Life for each Mine Detonated", "minimum": 0.0, "maximum": 2.0}], "weight": 1.0}, "superior": {"mods": [{"text": "Mines have % increased Detonation Speed", "minimum": 0.0, "maximum": 20.0}], "weight": 1000.0}}, "drop_level": 8, "name": "Detonate Mines", "levels": [{"level": 1, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 2, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 3, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 4, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 5, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 6, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 7, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 8, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 9, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}, {"level": 10, "requirements": {"dexterity": null, "requires_level": 8, "intelligence": null, "strength": null}, "fields": []}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Detonate Mines",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "vendor_name": "Lilly Roth (Level 1)"
+    }
+  },
+  "mods": [
+    "First Mine Detonates InstantlyMines get 10% more Detonation Speed for each prior Mine in Detonation Sequence"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 8
+      },
+      "fields": []
+    }
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
+  "drop_level": 8,
+  "type": [
+    "spell",
+    "skillcantrap",
+    "skillcantotem",
+    "triggerable",
+    "instant",
+    "secondwindsupport"
+  ],
+  "mtx": [],
+  "description": "Detonates a Mine, starting a Detonation Sequence which will detonate other Mines around it.",
+  "support": [
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground"
+  ],
+  "quality": {
+    "superior": {
+      "mods": [
+        {
+          "text": "Mines have % increased Detonation Speed",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 1000.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Recover % of Life for each Mine Detonated",
+          "minimum": 0.0,
+          "maximum": 2.0
+        }
+      ],
+      "weight": 1.0
+    }
+  }
+}

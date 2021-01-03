@@ -1,1 +1,720 @@
-{"target_types": ["any"], "acquisition": {"quest": {"act": 1, "quest_name": "The Siren's Cadence", "classes": ["Templar"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Marauder", "Witch", "Templar"]}}, "vaal": false, "tags": ["base_skill_is_totemified [1]"], "type": ["spell", "damageovertime", "skillcantrap", "skillcanmine", "type27", "causesburning", "totem", "triggerable", "fireskill", "type59"], "enchants": {"eternal": ["40% increased Searing Bond Damage", "60% increased Searing Bond Totem Placement Speed", "36% increased Searing Bond Totem Elemental Resistances"], "merciless": ["25% increased Searing Bond Damage", "40% increased Searing Bond Totem Placement Speed", "24% increased Searing Bond Totem Elemental Resistances"]}, "mtx": [{"name": "Tiki Totem Skin", "description": "Your Spell or Ballista totem becomes a coloured totem that has carved tiki designs.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/NEWtotem.png?w=1&h=1&scale=1"}, {"name": "Green Searing Bond Effect", "description": "Your Searing Bond beam becomes green.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/SearingBondGreen.png?w=1&h=1&scale=1"}, {"name": "Olmec Totem Skin", "description": "Your Spell or Ballista totem becomes a carved stone totem with two faces.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/olmec.png?w=1&h=1&scale=1"}, {"name": "Eagle Guardian Totem Skin", "description": "Your Spell or Ballista totem becomes an eagle guardian.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/EagleGuardianSpellTotem.png?w=1&h=1&scale=1"}, {"name": "Ziggurat Totem Skin", "description": "Your Spell or Ballista totem becomes an ancient ziggurat.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ZigguratTotem.png?w=1&h=1&scale=1"}, {"name": "Dragon Totem Skin", "description": "Your Spell or Ballista totem becomes a golden dragon.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DragonTotem.png?w=1&h=1&scale=1"}, {"name": "Arcane Tome Totem Skin", "description": "Your Spell or Ballista totem becomes an Arcane Tome.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ArcaneTomeTotem.png?w=1&h=1&scale=1"}, {"name": "Pylon of Pain Totem Skin", "description": "Your Spell or Ballista totem becomes a Pylon of Pain.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/PylonOfPain.png?w=2&h=2&scale=1"}], "support": [{"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Multiple Totems Support", "types": ["totem"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}], "description": "Summons a totem that casts a beam of fire at you and each other totem you control, dealing burning damage to enemies caught in the beam. Enemies near either end of a beam also suffer burning damage.", "mods": ["Totem lasts 8 seconds", "Deals (23.6\u20131755.6) Base Fire Damage per second", "+1 to maximum number of Summoned Totems", "Summons a Totem which uses this Skill", "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"], "quality": {"phantasmal": {"mods": [{"text": "+ to maximum number of Summoned Totems", "minimum": 0.0, "maximum": 2.0}], "weight": 50.0}, "anomalous": {"mods": [{"text": "% increased Totem Duration", "minimum": 0.0, "maximum": 40.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased totem life", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% increased Damage", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}}, "drop_level": 12, "name": "Searing Bond", "levels": [{"mana_cost": 18, "level": 1, "requirements": {"requires_level": 12, "intelligence": 14, "strength": 21}, "fields": [], "minimum_damage": 23.6}, {"mana_cost": 19, "level": 2, "requirements": {"requires_level": 15, "intelligence": 17, "strength": 25}, "fields": [], "minimum_damage": 31.4}, {"mana_cost": 20, "level": 3, "requirements": {"requires_level": 19, "intelligence": 21, "strength": 30}, "fields": [], "minimum_damage": 44.8}, {"mana_cost": 21, "level": 4, "requirements": {"requires_level": 23, "intelligence": 24, "strength": 35}, "fields": [], "minimum_damage": 62.8}, {"mana_cost": 23, "level": 5, "requirements": {"requires_level": 27, "intelligence": 28, "strength": 41}, "fields": [], "minimum_damage": 86.8}, {"mana_cost": 25, "level": 6, "requirements": {"requires_level": 31, "intelligence": 32, "strength": 46}, "fields": [], "minimum_damage": 118.4}, {"mana_cost": 27, "level": 7, "requirements": {"requires_level": 35, "intelligence": 36, "strength": 51}, "fields": [], "minimum_damage": 160.1}, {"mana_cost": 29, "level": 8, "requirements": {"requires_level": 38, "intelligence": 38, "strength": 55}, "fields": [], "minimum_damage": 199.6}, {"mana_cost": 31, "level": 9, "requirements": {"requires_level": 41, "intelligence": 41, "strength": 59}, "fields": [], "minimum_damage": 247.9}, {"mana_cost": 33, "level": 10, "requirements": {"requires_level": 44, "intelligence": 44, "strength": 63}, "fields": [], "minimum_damage": 306.8}, {"mana_cost": 35, "level": 11, "requirements": {"requires_level": 47, "intelligence": 47, "strength": 67}, "fields": [], "minimum_damage": 378.5}, {"mana_cost": 37, "level": 12, "requirements": {"requires_level": 50, "intelligence": 49, "strength": 71}, "fields": [], "minimum_damage": 465.7}, {"mana_cost": 39, "level": 13, "requirements": {"requires_level": 53, "intelligence": 52, "strength": 75}, "fields": [], "minimum_damage": 571.5}, {"mana_cost": 40, "level": 14, "requirements": {"requires_level": 56, "intelligence": 55, "strength": 79}, "fields": [], "minimum_damage": 699.7}, {"mana_cost": 42, "level": 15, "requirements": {"requires_level": 59, "intelligence": 58, "strength": 83}, "fields": [], "minimum_damage": 854.9}, {"mana_cost": 44, "level": 16, "requirements": {"requires_level": 62, "intelligence": 60, "strength": 87}, "fields": [], "minimum_damage": 1042.6}, {"mana_cost": 46, "level": 17, "requirements": {"requires_level": 64, "intelligence": 62, "strength": 90}, "fields": [], "minimum_damage": 1189.0}, {"mana_cost": 48, "level": 18, "requirements": {"requires_level": 66, "intelligence": 64, "strength": 92}, "fields": [], "minimum_damage": 1354.8}, {"mana_cost": 50, "level": 19, "requirements": {"requires_level": 68, "intelligence": 66, "strength": 95}, "fields": [], "minimum_damage": 1542.8}, {"mana_cost": 51, "level": 20, "requirements": {"requires_level": 70, "intelligence": 68, "strength": 98}, "fields": [], "minimum_damage": 1755.6}, {"mana_cost": 53, "level": 21, "requirements": {"requires_level": 72, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 1996.6}, {"mana_cost": 53, "level": 22, "requirements": {"requires_level": 74, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 2269.3}, {"mana_cost": 54, "level": 23, "requirements": {"requires_level": 76, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 2577.7}, {"mana_cost": 56, "level": 24, "requirements": {"requires_level": 78, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 2926.5}, {"mana_cost": 58, "level": 25, "requirements": {"requires_level": 80, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 3320.7}, {"mana_cost": 59, "level": 26, "requirements": {"requires_level": 82, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 3766.2}, {"mana_cost": 59, "level": 27, "requirements": {"requires_level": 84, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 4269.5}, {"mana_cost": 61, "level": 28, "requirements": {"requires_level": 86, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 4837.7}, {"mana_cost": 62, "level": 29, "requirements": {"requires_level": 88, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 5479.2}, {"mana_cost": 62, "level": 30, "requirements": {"requires_level": 90, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 6203.2}, {"mana_cost": 63, "level": 31, "requirements": {"requires_level": 91, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 6599.3}, {"mana_cost": 64, "level": 32, "requirements": {"requires_level": 92, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 7020.0}, {"mana_cost": 65, "level": 33, "requirements": {"requires_level": 93, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 7466.9}, {"mana_cost": 65, "level": 34, "requirements": {"requires_level": 94, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 7941.4}, {"mana_cost": 66, "level": 35, "requirements": {"requires_level": 95, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 8445.2}, {"mana_cost": 67, "level": 36, "requirements": {"requires_level": 96, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 8980.2}, {"mana_cost": 67, "level": 37, "requirements": {"requires_level": 97, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 9548.3}, {"mana_cost": 68, "level": 38, "requirements": {"requires_level": 98, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 10151.4}, {"mana_cost": 69, "level": 39, "requirements": {"requires_level": 99, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 10791.7}, {"mana_cost": 70, "level": 40, "requirements": {"requires_level": 100, "intelligence": null, "strength": null}, "fields": [], "minimum_damage": 11471.4}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Searing Bond",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Witch",
+        "Templar"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Templar"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Totem lasts 8 seconds",
+    "Deals (23.6\u20131755.6) Base Fire Damage per second",
+    "+1 to maximum number of Summoned Totems",
+    "Summons a Totem which uses this Skill",
+    "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 23.6,
+      "requirements": {
+        "strength": 21,
+        "intelligence": 14,
+        "requires_level": 12
+      },
+      "mana_cost": 18,
+      "fields": []
+    },
+    {
+      "level": 2,
+      "minimum_damage": 31.4,
+      "requirements": {
+        "strength": 25,
+        "intelligence": 17,
+        "requires_level": 15
+      },
+      "mana_cost": 19,
+      "fields": []
+    },
+    {
+      "level": 3,
+      "minimum_damage": 44.8,
+      "requirements": {
+        "strength": 30,
+        "intelligence": 21,
+        "requires_level": 19
+      },
+      "mana_cost": 20,
+      "fields": []
+    },
+    {
+      "level": 4,
+      "minimum_damage": 62.8,
+      "requirements": {
+        "strength": 35,
+        "intelligence": 24,
+        "requires_level": 23
+      },
+      "mana_cost": 21,
+      "fields": []
+    },
+    {
+      "level": 5,
+      "minimum_damage": 86.8,
+      "requirements": {
+        "strength": 41,
+        "intelligence": 28,
+        "requires_level": 27
+      },
+      "mana_cost": 23,
+      "fields": []
+    },
+    {
+      "level": 6,
+      "minimum_damage": 118.4,
+      "requirements": {
+        "strength": 46,
+        "intelligence": 32,
+        "requires_level": 31
+      },
+      "mana_cost": 25,
+      "fields": []
+    },
+    {
+      "level": 7,
+      "minimum_damage": 160.1,
+      "requirements": {
+        "strength": 51,
+        "intelligence": 36,
+        "requires_level": 35
+      },
+      "mana_cost": 27,
+      "fields": []
+    },
+    {
+      "level": 8,
+      "minimum_damage": 199.6,
+      "requirements": {
+        "strength": 55,
+        "intelligence": 38,
+        "requires_level": 38
+      },
+      "mana_cost": 29,
+      "fields": []
+    },
+    {
+      "level": 9,
+      "minimum_damage": 247.9,
+      "requirements": {
+        "strength": 59,
+        "intelligence": 41,
+        "requires_level": 41
+      },
+      "mana_cost": 31,
+      "fields": []
+    },
+    {
+      "level": 10,
+      "minimum_damage": 306.8,
+      "requirements": {
+        "strength": 63,
+        "intelligence": 44,
+        "requires_level": 44
+      },
+      "mana_cost": 33,
+      "fields": []
+    },
+    {
+      "level": 11,
+      "minimum_damage": 378.5,
+      "requirements": {
+        "strength": 67,
+        "intelligence": 47,
+        "requires_level": 47
+      },
+      "mana_cost": 35,
+      "fields": []
+    },
+    {
+      "level": 12,
+      "minimum_damage": 465.7,
+      "requirements": {
+        "strength": 71,
+        "intelligence": 49,
+        "requires_level": 50
+      },
+      "mana_cost": 37,
+      "fields": []
+    },
+    {
+      "level": 13,
+      "minimum_damage": 571.5,
+      "requirements": {
+        "strength": 75,
+        "intelligence": 52,
+        "requires_level": 53
+      },
+      "mana_cost": 39,
+      "fields": []
+    },
+    {
+      "level": 14,
+      "minimum_damage": 699.7,
+      "requirements": {
+        "strength": 79,
+        "intelligence": 55,
+        "requires_level": 56
+      },
+      "mana_cost": 40,
+      "fields": []
+    },
+    {
+      "level": 15,
+      "minimum_damage": 854.9,
+      "requirements": {
+        "strength": 83,
+        "intelligence": 58,
+        "requires_level": 59
+      },
+      "mana_cost": 42,
+      "fields": []
+    },
+    {
+      "level": 16,
+      "minimum_damage": 1042.6,
+      "requirements": {
+        "strength": 87,
+        "intelligence": 60,
+        "requires_level": 62
+      },
+      "mana_cost": 44,
+      "fields": []
+    },
+    {
+      "level": 17,
+      "minimum_damage": 1189.0,
+      "requirements": {
+        "strength": 90,
+        "intelligence": 62,
+        "requires_level": 64
+      },
+      "mana_cost": 46,
+      "fields": []
+    },
+    {
+      "level": 18,
+      "minimum_damage": 1354.8,
+      "requirements": {
+        "strength": 92,
+        "intelligence": 64,
+        "requires_level": 66
+      },
+      "mana_cost": 48,
+      "fields": []
+    },
+    {
+      "level": 19,
+      "minimum_damage": 1542.8,
+      "requirements": {
+        "strength": 95,
+        "intelligence": 66,
+        "requires_level": 68
+      },
+      "mana_cost": 50,
+      "fields": []
+    },
+    {
+      "level": 20,
+      "minimum_damage": 1755.6,
+      "requirements": {
+        "strength": 98,
+        "intelligence": 68,
+        "requires_level": 70
+      },
+      "mana_cost": 51,
+      "fields": []
+    },
+    {
+      "level": 21,
+      "minimum_damage": 1996.6,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 53,
+      "fields": []
+    },
+    {
+      "level": 22,
+      "minimum_damage": 2269.3,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 53,
+      "fields": []
+    },
+    {
+      "level": 23,
+      "minimum_damage": 2577.7,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 54,
+      "fields": []
+    },
+    {
+      "level": 24,
+      "minimum_damage": 2926.5,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 56,
+      "fields": []
+    },
+    {
+      "level": 25,
+      "minimum_damage": 3320.7,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 58,
+      "fields": []
+    },
+    {
+      "level": 26,
+      "minimum_damage": 3766.2,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 59,
+      "fields": []
+    },
+    {
+      "level": 27,
+      "minimum_damage": 4269.5,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 59,
+      "fields": []
+    },
+    {
+      "level": 28,
+      "minimum_damage": 4837.7,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 61,
+      "fields": []
+    },
+    {
+      "level": 29,
+      "minimum_damage": 5479.2,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 62,
+      "fields": []
+    },
+    {
+      "level": 30,
+      "minimum_damage": 6203.2,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 62,
+      "fields": []
+    },
+    {
+      "level": 31,
+      "minimum_damage": 6599.3,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 63,
+      "fields": []
+    },
+    {
+      "level": 32,
+      "minimum_damage": 7020.0,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 64,
+      "fields": []
+    },
+    {
+      "level": 33,
+      "minimum_damage": 7466.9,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 65,
+      "fields": []
+    },
+    {
+      "level": 34,
+      "minimum_damage": 7941.4,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 65,
+      "fields": []
+    },
+    {
+      "level": 35,
+      "minimum_damage": 8445.2,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 66,
+      "fields": []
+    },
+    {
+      "level": 36,
+      "minimum_damage": 8980.2,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 67,
+      "fields": []
+    },
+    {
+      "level": 37,
+      "minimum_damage": 9548.3,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 67,
+      "fields": []
+    },
+    {
+      "level": 38,
+      "minimum_damage": 10151.4,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 68,
+      "fields": []
+    },
+    {
+      "level": 39,
+      "minimum_damage": 10791.7,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 69,
+      "fields": []
+    },
+    {
+      "level": 40,
+      "minimum_damage": 11471.4,
+      "requirements": {
+        "strength": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 70,
+      "fields": []
+    }
+  ],
+  "tags": [
+    "base_skill_is_totemified [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "25% increased Searing Bond Damage",
+      "40% increased Searing Bond Totem Placement Speed",
+      "24% increased Searing Bond Totem Elemental Resistances"
+    ],
+    "eternal": [
+      "40% increased Searing Bond Damage",
+      "60% increased Searing Bond Totem Placement Speed",
+      "36% increased Searing Bond Totem Elemental Resistances"
+    ]
+  },
+  "drop_level": 12,
+  "type": [
+    "spell",
+    "damageovertime",
+    "skillcantrap",
+    "skillcanmine",
+    "type27",
+    "causesburning",
+    "totem",
+    "triggerable",
+    "fireskill",
+    "type59"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/NEWtotem.png?w=1&h=1&scale=1",
+      "name": "Tiki Totem Skin",
+      "description": "Your Spell or Ballista totem becomes a coloured totem that has carved tiki designs."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/SearingBondGreen.png?w=1&h=1&scale=1",
+      "name": "Green Searing Bond Effect",
+      "description": "Your Searing Bond beam becomes green."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/olmec.png?w=1&h=1&scale=1",
+      "name": "Olmec Totem Skin",
+      "description": "Your Spell or Ballista totem becomes a carved stone totem with two faces."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/EagleGuardianSpellTotem.png?w=1&h=1&scale=1",
+      "name": "Eagle Guardian Totem Skin",
+      "description": "Your Spell or Ballista totem becomes an eagle guardian."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ZigguratTotem.png?w=1&h=1&scale=1",
+      "name": "Ziggurat Totem Skin",
+      "description": "Your Spell or Ballista totem becomes an ancient ziggurat."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DragonTotem.png?w=1&h=1&scale=1",
+      "name": "Dragon Totem Skin",
+      "description": "Your Spell or Ballista totem becomes a golden dragon."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ArcaneTomeTotem.png?w=1&h=1&scale=1",
+      "name": "Arcane Tome Totem Skin",
+      "description": "Your Spell or Ballista totem becomes an Arcane Tome."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/PylonOfPain.png?w=2&h=2&scale=1",
+      "name": "Pylon of Pain Totem Skin",
+      "description": "Your Spell or Ballista totem becomes a Pylon of Pain."
+    }
+  ],
+  "description": "Summons a totem that casts a beam of fire at you and each other totem you control, dealing burning damage to enemies caught in the beam. Enemies near either end of a beam also suffer burning damage.",
+  "support": [
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Multiple Totems Support",
+      "types": [
+        "totem"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    }
+  ],
+  "target_types": [
+    "any"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "+ to maximum number of Summoned Totems",
+          "minimum": 0.0,
+          "maximum": 2.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased totem life",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Totem Duration",
+          "minimum": 0.0,
+          "maximum": 40.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

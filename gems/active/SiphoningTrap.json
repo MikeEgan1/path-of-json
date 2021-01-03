@@ -1,1 +1,1472 @@
-{"target_types": ["enemy", "ground"], "acquisition": {"quest": {"act": 1, "quest_name": "The Caged Brute", "classes": ["Shadow"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Witch", "Shadow", "Scion"]}}, "vaal": false, "tags": ["base_skill_is_trapped [1]"], "type": ["spell", "duration", "skillcanmine", "area", "trap", "coldskill", "damageovertime", "type59", "nonhitchill", "causeelementalstatus", "areaspell", "secondwindsupport"], "enchants": {"eternal": ["Siphoning Trap deals 40% increased Damage", "Siphoning Trap has 45% increased Skill Effect Duration", "Siphoning Trap's beam to you grants 1% reduced Damage taken for each other beam", "Siphoning Trap has 40% increased Chill Effect"], "merciless": ["Siphoning Trap deals 25% increased Damage", "Siphoning Trap has 30% increased Skill Effect Duration", "Siphoning Trap has 25% increased Chill Effect"]}, "mtx": [], "support": [{"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Multiple Traps Support", "types": ["trap"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Trap and Mine Damage Support", "types": ["trap", "mine"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Cluster Traps Support", "types": ["trap"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Advanced Traps Support", "types": ["trap"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Charged Traps Support", "types": ["trap"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Swift Assembly Support", "types": ["trap", "mine"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "Throws a trap that applies debuff beams to a number of nearby enemies for a duration. The beams chill enemies and deal cold damage over time. A beam is also applied to you, granting life and mana regeneration based on the number of debuff beams affecting enemies.", "mods": ["Trap lasts 4 seconds", "+3 seconds to Base duration", "Deals (15.5\u2013426.3) Base Cold Damage per second", "Regenerate (1.3\u201332.4) Life per second for each affected Enemy", "Regenerate (0.3\u20131.7) Mana per second for each affected Enemy", "Applies beams to the closest 10 Enemies", "Regenerate (12.7\u2013324.4) Life per second while any Enemy is affected", "Regenerate (2.9\u201317.2) Mana per second while any Enemy is affected", "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"], "quality": {"phantasmal": {"mods": [{"text": "Regenerate % of Energy Shield per second for each affected Enemy", "minimum": 0.0, "maximum": 4.0}], "weight": 10.0}, "anomalous": {"mods": [{"text": "% increased Skill Effect Duration", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Effect of Cold Ailments", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "Applies beams to the closest  Enemies", "minimum": 0.0, "maximum": 2.0}], "weight": 100.0}}, "drop_level": 10, "name": "Siphoning Trap", "levels": [{"mana_cost": 7, "level": 1, "requirements": {"dexterity": 12, "requires_level": 10, "intelligence": 18}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "1.3"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "0.3"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "12.7"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "2.9"}], "minimum_damage": 15.5}, {"mana_cost": 8, "level": 2, "requirements": {"dexterity": 15, "requires_level": 13, "intelligence": 22}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "1.7"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "0.4"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "17.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "4"}], "minimum_damage": 19.7}, {"mana_cost": 9, "level": 3, "requirements": {"dexterity": 19, "requires_level": 17, "intelligence": 27}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "2.5"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "0.5"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "24.7"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "5.1"}], "minimum_damage": 26.3}, {"mana_cost": 10, "level": 4, "requirements": {"dexterity": 23, "requires_level": 21, "intelligence": 33}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "3.2"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "0.6"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "32"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "6.1"}], "minimum_damage": 34.3}, {"mana_cost": 11, "level": 5, "requirements": {"dexterity": 26, "requires_level": 25, "intelligence": 38}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "4.2"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "0.7"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "42.1"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "7"}], "minimum_damage": 44.1}, {"mana_cost": 12, "level": 6, "requirements": {"dexterity": 30, "requires_level": 29, "intelligence": 43}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "5.3"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "0.8"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "52.6"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "7.9"}], "minimum_damage": 55.9}, {"mana_cost": 13, "level": 7, "requirements": {"dexterity": 34, "requires_level": 33, "intelligence": 49}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "6.5"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "0.9"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "64.5"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "8.8"}], "minimum_damage": 70.0}, {"mana_cost": 14, "level": 8, "requirements": {"dexterity": 36, "requires_level": 36, "intelligence": 53}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "7.9"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "78.7"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "9.6"}], "minimum_damage": 82.5}, {"mana_cost": 14, "level": 9, "requirements": {"dexterity": 39, "requires_level": 39, "intelligence": 56}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "9.2"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "92.2"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "10.3"}], "minimum_damage": 96.7}, {"mana_cost": 16, "level": 10, "requirements": {"dexterity": 42, "requires_level": 42, "intelligence": 60}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "10.7"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.1"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "107.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "11.1"}], "minimum_damage": 113.0}, {"mana_cost": 17, "level": 11, "requirements": {"dexterity": 45, "requires_level": 45, "intelligence": 64}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "12.4"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.2"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "123.6"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "11.7"}], "minimum_damage": 131.6}, {"mana_cost": 18, "level": 12, "requirements": {"dexterity": 48, "requires_level": 48, "intelligence": 68}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "14.6"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.2"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "145.6"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "12.4"}], "minimum_damage": 152.8}, {"mana_cost": 19, "level": 13, "requirements": {"dexterity": 50, "requires_level": 51, "intelligence": 72}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "16.5"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.3"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "165.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "13"}], "minimum_damage": 176.9}, {"mana_cost": 20, "level": 14, "requirements": {"dexterity": 53, "requires_level": 54, "intelligence": 76}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "18.5"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.4"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "185.3"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "13.7"}], "minimum_damage": 204.3}, {"mana_cost": 21, "level": 15, "requirements": {"dexterity": 56, "requires_level": 57, "intelligence": 80}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "20.6"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.4"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "205.7"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "14.3"}], "minimum_damage": 235.5}, {"mana_cost": 22, "level": 16, "requirements": {"dexterity": 59, "requires_level": 60, "intelligence": 84}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "22.8"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.5"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "228"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "14.9"}], "minimum_damage": 270.8}, {"mana_cost": 22, "level": 17, "requirements": {"dexterity": 61, "requires_level": 63, "intelligence": 88}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "24.6"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.5"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "245.9"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "15.4"}], "minimum_damage": 310.9}, {"mana_cost": 23, "level": 18, "requirements": {"dexterity": 64, "requires_level": 66, "intelligence": 92}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "27.1"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.6"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "271.2"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "16"}], "minimum_damage": 356.3}, {"mana_cost": 24, "level": 19, "requirements": {"dexterity": 66, "requires_level": 68, "intelligence": 95}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "29.8"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.7"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "298.1"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "16.6"}], "minimum_damage": 389.9}, {"mana_cost": 24, "level": 20, "requirements": {"dexterity": 68, "requires_level": 70, "intelligence": 98}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "32.4"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.7"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "324.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "17.2"}], "minimum_damage": 426.3}, {"mana_cost": 25, "level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "33.7"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.8"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "337.2"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "17.8"}], "minimum_damage": 465.9}, {"mana_cost": 26, "level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "35.4"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.8"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "354.1"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "18.4"}], "minimum_damage": 508.8}, {"mana_cost": 26, "level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "36.4"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "1.9"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "364.2"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "19"}], "minimum_damage": 555.4}, {"mana_cost": 27, "level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "38.2"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "382.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "19.6"}], "minimum_damage": 605.9}, {"mana_cost": 27, "level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "40.1"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "401.3"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "20.2"}], "minimum_damage": 660.6}, {"mana_cost": 28, "level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "41.2"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.1"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "412.1"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "20.8"}], "minimum_damage": 719.9}, {"mana_cost": 29, "level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "43.5"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.1"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "434.9"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "21.4"}], "minimum_damage": 784.2}, {"mana_cost": 30, "level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "45.6"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.2"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "455.9"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "22"}], "minimum_damage": 853.8}, {"mana_cost": 30, "level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "48.2"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.3"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "482.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "22.6"}], "minimum_damage": 929.3}, {"mana_cost": 30, "level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "48.7"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.3"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "487.3"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "23.2"}], "minimum_damage": 1010.9}, {"mana_cost": 31, "level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "49.3"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.3"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "492.7"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "23.5"}], "minimum_damage": 1054.2}, {"mana_cost": 32, "level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "49.8"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.4"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "498"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "23.8"}], "minimum_damage": 1099.3}, {"mana_cost": 32, "level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "50.9"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.4"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "509.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "24.1"}], "minimum_damage": 1146.1}, {"mana_cost": 33, "level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "52.1"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.4"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "520.8"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "24.4"}], "minimum_damage": 1194.9}, {"mana_cost": 34, "level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "53.1"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.5"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "531.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "24.8"}], "minimum_damage": 1245.6}, {"mana_cost": 34, "level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "54.2"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.5"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "541.9"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "25.1"}], "minimum_damage": 1298.4}, {"mana_cost": 35, "level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "55.5"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.5"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "555.1"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "25.4"}], "minimum_damage": 1353.3}, {"mana_cost": 36, "level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "56.8"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.6"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "568.4"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "25.7"}], "minimum_damage": 1410.3}, {"mana_cost": 36, "level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "57.1"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.6"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "570.8"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "26"}], "minimum_damage": 1469.7}, {"mana_cost": 37, "level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [{"name": "regenerate_._life_per_second_for_each_affected_enemy", "value": "57.3"}, {"name": "regenerate_._mana_per_second_for_each_affected_enemy", "value": "2.6"}, {"name": "regenerate_._life_per_second_while_any_enemy_is_affected", "value": "573.3"}, {"name": "regenerate_._mana_per_second_while_any_enemy_is_affected", "value": "26.3"}], "minimum_damage": 1531.4}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Siphoning Trap",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Trap lasts 4 seconds",
+    "+3 seconds to Base duration",
+    "Deals (15.5\u2013426.3) Base Cold Damage per second",
+    "Regenerate (1.3\u201332.4) Life per second for each affected Enemy",
+    "Regenerate (0.3\u20131.7) Mana per second for each affected Enemy",
+    "Applies beams to the closest 10 Enemies",
+    "Regenerate (12.7\u2013324.4) Life per second while any Enemy is affected",
+    "Regenerate (2.9\u201317.2) Mana per second while any Enemy is affected",
+    "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 15.5,
+      "requirements": {
+        "dexterity": 12,
+        "intelligence": 18,
+        "requires_level": 10
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "1.3"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "0.3"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "12.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "2.9"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 19.7,
+      "requirements": {
+        "dexterity": 15,
+        "intelligence": 22,
+        "requires_level": 13
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "1.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "0.4"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "17.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 26.3,
+      "requirements": {
+        "dexterity": 19,
+        "intelligence": 27,
+        "requires_level": 17
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "2.5"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "0.5"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "24.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "5.1"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 34.3,
+      "requirements": {
+        "dexterity": 23,
+        "intelligence": 33,
+        "requires_level": 21
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "3.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "0.6"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "32"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "6.1"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 44.1,
+      "requirements": {
+        "dexterity": 26,
+        "intelligence": 38,
+        "requires_level": 25
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "4.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "0.7"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "42.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 55.9,
+      "requirements": {
+        "dexterity": 30,
+        "intelligence": 43,
+        "requires_level": 29
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "5.3"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "0.8"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "52.6"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "7.9"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 70.0,
+      "requirements": {
+        "dexterity": 34,
+        "intelligence": 49,
+        "requires_level": 33
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "6.5"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "0.9"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "64.5"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "8.8"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 82.5,
+      "requirements": {
+        "dexterity": 36,
+        "intelligence": 53,
+        "requires_level": 36
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "7.9"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "78.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "9.6"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 96.7,
+      "requirements": {
+        "dexterity": 39,
+        "intelligence": 56,
+        "requires_level": 39
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "9.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "92.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "10.3"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 113.0,
+      "requirements": {
+        "dexterity": 42,
+        "intelligence": 60,
+        "requires_level": 42
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "10.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.1"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "107.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "11.1"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 131.6,
+      "requirements": {
+        "dexterity": 45,
+        "intelligence": 64,
+        "requires_level": 45
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "12.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.2"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "123.6"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "11.7"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 152.8,
+      "requirements": {
+        "dexterity": 48,
+        "intelligence": 68,
+        "requires_level": 48
+      },
+      "mana_cost": 18,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "14.6"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.2"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "145.6"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "12.4"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 176.9,
+      "requirements": {
+        "dexterity": 50,
+        "intelligence": 72,
+        "requires_level": 51
+      },
+      "mana_cost": 19,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "16.5"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.3"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "165.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 204.3,
+      "requirements": {
+        "dexterity": 53,
+        "intelligence": 76,
+        "requires_level": 54
+      },
+      "mana_cost": 20,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "18.5"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.4"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "185.3"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "13.7"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 235.5,
+      "requirements": {
+        "dexterity": 56,
+        "intelligence": 80,
+        "requires_level": 57
+      },
+      "mana_cost": 21,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "20.6"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.4"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "205.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "14.3"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 270.8,
+      "requirements": {
+        "dexterity": 59,
+        "intelligence": 84,
+        "requires_level": 60
+      },
+      "mana_cost": 22,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "22.8"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.5"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "228"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "14.9"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 310.9,
+      "requirements": {
+        "dexterity": 61,
+        "intelligence": 88,
+        "requires_level": 63
+      },
+      "mana_cost": 22,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "24.6"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.5"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "245.9"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "15.4"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 356.3,
+      "requirements": {
+        "dexterity": 64,
+        "intelligence": 92,
+        "requires_level": 66
+      },
+      "mana_cost": 23,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "27.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.6"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "271.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 389.9,
+      "requirements": {
+        "dexterity": 66,
+        "intelligence": 95,
+        "requires_level": 68
+      },
+      "mana_cost": 24,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "29.8"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.7"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "298.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "16.6"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 426.3,
+      "requirements": {
+        "dexterity": 68,
+        "intelligence": 98,
+        "requires_level": 70
+      },
+      "mana_cost": 24,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "32.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.7"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "324.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "17.2"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 465.9,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 25,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "33.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.8"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "337.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "17.8"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 508.8,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 26,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "35.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.8"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "354.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "18.4"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 555.4,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 26,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "36.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "1.9"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "364.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 605.9,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 27,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "38.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "382.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "19.6"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 660.6,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 27,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "40.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "401.3"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "20.2"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 719.9,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 28,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "41.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.1"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "412.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "20.8"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 784.2,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 29,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "43.5"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.1"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "434.9"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "21.4"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 853.8,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 30,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "45.6"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.2"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "455.9"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 929.3,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 30,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "48.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.3"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "482.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "22.6"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 1010.9,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 30,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "48.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.3"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "487.3"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "23.2"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 1054.2,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 31,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "49.3"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.3"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "492.7"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "23.5"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 1099.3,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 32,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "49.8"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.4"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "498"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "23.8"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 1146.1,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 32,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "50.9"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.4"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "509.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "24.1"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 1194.9,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 33,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "52.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.4"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "520.8"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "24.4"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 1245.6,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 34,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "53.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.5"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "531.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "24.8"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 1298.4,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 34,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "54.2"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.5"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "541.9"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "25.1"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 1353.3,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 35,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "55.5"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.5"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "555.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "25.4"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 1410.3,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 36,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "56.8"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.6"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "568.4"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "25.7"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 1469.7,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 36,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "57.1"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.6"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "570.8"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 1531.4,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 37,
+      "fields": [
+        {
+          "name": "regenerate_._life_per_second_for_each_affected_enemy",
+          "value": "57.3"
+        },
+        {
+          "name": "regenerate_._mana_per_second_for_each_affected_enemy",
+          "value": "2.6"
+        },
+        {
+          "name": "regenerate_._life_per_second_while_any_enemy_is_affected",
+          "value": "573.3"
+        },
+        {
+          "name": "regenerate_._mana_per_second_while_any_enemy_is_affected",
+          "value": "26.3"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_skill_is_trapped [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "Siphoning Trap deals 25% increased Damage",
+      "Siphoning Trap has 30% increased Skill Effect Duration",
+      "Siphoning Trap has 25% increased Chill Effect"
+    ],
+    "eternal": [
+      "Siphoning Trap deals 40% increased Damage",
+      "Siphoning Trap has 45% increased Skill Effect Duration",
+      "Siphoning Trap's beam to you grants 1% reduced Damage taken for each other beam",
+      "Siphoning Trap has 40% increased Chill Effect"
+    ]
+  },
+  "drop_level": 10,
+  "type": [
+    "spell",
+    "duration",
+    "skillcanmine",
+    "area",
+    "trap",
+    "coldskill",
+    "damageovertime",
+    "type59",
+    "nonhitchill",
+    "causeelementalstatus",
+    "areaspell",
+    "secondwindsupport"
+  ],
+  "mtx": [],
+  "description": "Throws a trap that applies debuff beams to a number of nearby enemies for a duration. The beams chill enemies and deal cold damage over time. A beam is also applied to you, granting life and mana regeneration based on the number of debuff beams affecting enemies.",
+  "support": [
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Multiple Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Trap and Mine Damage Support",
+      "types": [
+        "trap",
+        "mine"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cluster Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Advanced Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Charged Traps Support",
+      "types": [
+        "trap"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Swift Assembly Support",
+      "types": [
+        "trap",
+        "mine"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "enemy",
+    "ground"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Applies beams to the closest  Enemies",
+          "minimum": 0.0,
+          "maximum": 2.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "Regenerate % of Energy Shield per second for each affected Enemy",
+          "minimum": 0.0,
+          "maximum": 4.0
+        }
+      ],
+      "weight": 10.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Effect of Cold Ailments",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

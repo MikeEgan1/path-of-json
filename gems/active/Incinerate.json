@@ -1,1 +1,1278 @@
-{"target_types": ["ground"], "acquisition": {"vendor": {"vendor_name": "Nessa", "classes": ["Witch", "Templar", "Shadow", "Scion"]}}, "vaal": false, "tags": ["is_area_damage [1]", "skill_can_add_multiple_charges_per_action [1]"], "type": ["spell", "hit", "skillcantotem", "fireskill", "channelled", "area", "areaspell"], "enchants": {"eternal": ["40% increased Incinerate Damage", "24% increased Incinerate Damage", "30% increased Incinerate Damage", "Incinerate has 24% increased Area of Effect", "Incinerate has +2 to maximum stages", "10% increased Incinerate Damage for each stage"], "merciless": ["25% increased Incinerate Damage", "16% increased Incinerate Damage", "20% increased Incinerate Damage", "Incinerate has 16% increased Area of Effect", "Incinerate has +1 to maximum stages"]}, "mtx": [{"name": "Blue Flame Incinerate Effect", "description": "Your Incinerate becomes a ghostly blue flame.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/BlueIncinerate.png?w=1&h=1&scale=1"}], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Cast while Channelling Support", "types": ["channelled"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Arcane Surge Support", "types": ["spell"]}, {"name": "Infused Channelling Support", "types": ["channelled"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cast While Channelling Support", "types": ["channelled"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Archmage Support", "types": ["hit", "spell", "and"]}], "description": "Continuously launches a torrent of fire from your hand, repeatedly damaging enemies. As you channel this spell longer, the flames spread wider close to you and spread longer directly in front of you. When you stop channelling you release a wave of fire damage over a wide and long area that will apply a powerful Ignite.", "mods": ["Deals (3\u2013140) to (5\u2013210) Fire Damage", "8 maximum stages", "Final wave deals 500% more Damage with Ignite", "Final wave deals 500% more Damage with Hits", "25% more Damage with Hits and Ailments for each stage", "+(4\u20135) to radius per stage, up to +(15\u201319)", "100% increased angle per stage, up to 300%", "Final wave always Ignites"], "quality": {"anomalous": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Fire Damage", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% more Damage with Hits and Ailments for each stage", "minimum": 0.0, "maximum": 4.0}, {"text": "Final wave deals % more Damage with Hits", "minimum": 200.0, "maximum": 0.0}, {"text": "Final wave deals % more Damage with Ignite", "minimum": 200.0, "maximum": 0.0}], "weight": 20.0}}, "drop_level": 12, "name": "Incinerate", "levels": [{"mana_cost": 2, "maximum_damage": 5.0, "level": 1, "requirements": {"requires_level": 12, "intelligence": 33}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "4, 15"}], "minimum_damage": 3.0}, {"mana_cost": 2, "maximum_damage": 6.0, "level": 2, "requirements": {"requires_level": 15, "intelligence": 39}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "4, 15"}], "minimum_damage": 4.0}, {"mana_cost": 2, "maximum_damage": 8.0, "level": 3, "requirements": {"requires_level": 19, "intelligence": 48}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "4, 15"}], "minimum_damage": 6.0}, {"mana_cost": 2, "maximum_damage": 11.0, "level": 4, "requirements": {"requires_level": 23, "intelligence": 56}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "4, 15"}], "minimum_damage": 8.0}, {"mana_cost": 2, "maximum_damage": 15.0, "level": 5, "requirements": {"requires_level": 27, "intelligence": 64}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "4, 16"}], "minimum_damage": 10.0}, {"mana_cost": 2, "maximum_damage": 20.0, "level": 6, "requirements": {"requires_level": 31, "intelligence": 73}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "4, 16"}], "minimum_damage": 13.0}, {"mana_cost": 3, "maximum_damage": 26.0, "level": 7, "requirements": {"requires_level": 35, "intelligence": 81}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "4, 16"}], "minimum_damage": 17.0}, {"mana_cost": 3, "maximum_damage": 32.0, "level": 8, "requirements": {"requires_level": 38, "intelligence": 88}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "4, 16"}], "minimum_damage": 21.0}, {"mana_cost": 3, "maximum_damage": 38.0, "level": 9, "requirements": {"requires_level": 41, "intelligence": 94}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 17"}], "minimum_damage": 26.0}, {"mana_cost": 3, "maximum_damage": 46.0, "level": 10, "requirements": {"requires_level": 44, "intelligence": 100}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 17"}], "minimum_damage": 31.0}, {"mana_cost": 3, "maximum_damage": 55.0, "level": 11, "requirements": {"requires_level": 47, "intelligence": 106}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 17"}], "minimum_damage": 37.0}, {"mana_cost": 3, "maximum_damage": 66.0, "level": 12, "requirements": {"requires_level": 50, "intelligence": 113}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 17"}], "minimum_damage": 44.0}, {"mana_cost": 4, "maximum_damage": 79.0, "level": 13, "requirements": {"requires_level": 53, "intelligence": 119}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 18"}], "minimum_damage": 53.0}, {"mana_cost": 4, "maximum_damage": 95.0, "level": 14, "requirements": {"requires_level": 56, "intelligence": 125}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 18"}], "minimum_damage": 63.0}, {"mana_cost": 4, "maximum_damage": 113.0, "level": 15, "requirements": {"requires_level": 59, "intelligence": 132}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 18"}], "minimum_damage": 75.0}, {"mana_cost": 4, "maximum_damage": 134.0, "level": 16, "requirements": {"requires_level": 62, "intelligence": 138}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 18"}], "minimum_damage": 89.0}, {"mana_cost": 4, "maximum_damage": 150.0, "level": 17, "requirements": {"requires_level": 64, "intelligence": 142}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 19"}], "minimum_damage": 100.0}, {"mana_cost": 4, "maximum_damage": 168.0, "level": 18, "requirements": {"requires_level": 66, "intelligence": 146}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 19"}], "minimum_damage": 112.0}, {"mana_cost": 4, "maximum_damage": 188.0, "level": 19, "requirements": {"requires_level": 68, "intelligence": 151}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 19"}], "minimum_damage": 125.0}, {"mana_cost": 4, "maximum_damage": 210.0, "level": 20, "requirements": {"requires_level": 70, "intelligence": 155}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 19"}], "minimum_damage": 140.0}, {"mana_cost": 4, "maximum_damage": 235.0, "level": 21, "requirements": {"requires_level": 72, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 20"}], "minimum_damage": 157.0}, {"mana_cost": 5, "maximum_damage": 262.0, "level": 22, "requirements": {"requires_level": 74, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 20"}], "minimum_damage": 175.0}, {"mana_cost": 5, "maximum_damage": 293.0, "level": 23, "requirements": {"requires_level": 76, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 20"}], "minimum_damage": 195.0}, {"mana_cost": 5, "maximum_damage": 326.0, "level": 24, "requirements": {"requires_level": 78, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "5, 20"}], "minimum_damage": 218.0}, {"mana_cost": 5, "maximum_damage": 364.0, "level": 25, "requirements": {"requires_level": 80, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 21"}], "minimum_damage": 243.0}, {"mana_cost": 5, "maximum_damage": 406.0, "level": 26, "requirements": {"requires_level": 82, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 21"}], "minimum_damage": 270.0}, {"mana_cost": 5, "maximum_damage": 452.0, "level": 27, "requirements": {"requires_level": 84, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 21"}], "minimum_damage": 301.0}, {"mana_cost": 5, "maximum_damage": 503.0, "level": 28, "requirements": {"requires_level": 86, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 21"}], "minimum_damage": 335.0}, {"mana_cost": 5, "maximum_damage": 560.0, "level": 29, "requirements": {"requires_level": 88, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 22"}], "minimum_damage": 373.0}, {"mana_cost": 5, "maximum_damage": 623.0, "level": 30, "requirements": {"requires_level": 90, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 22"}], "minimum_damage": 415.0}, {"mana_cost": 5, "maximum_damage": 657.0, "level": 31, "requirements": {"requires_level": 91, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 22"}], "minimum_damage": 438.0}, {"mana_cost": 5, "maximum_damage": 693.0, "level": 32, "requirements": {"requires_level": 92, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 22"}], "minimum_damage": 462.0}, {"mana_cost": 5, "maximum_damage": 730.0, "level": 33, "requirements": {"requires_level": 93, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 23"}], "minimum_damage": 487.0}, {"mana_cost": 5, "maximum_damage": 770.0, "level": 34, "requirements": {"requires_level": 94, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 23"}], "minimum_damage": 513.0}, {"mana_cost": 6, "maximum_damage": 812.0, "level": 35, "requirements": {"requires_level": 95, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 23"}], "minimum_damage": 541.0}, {"mana_cost": 6, "maximum_damage": 855.0, "level": 36, "requirements": {"requires_level": 96, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 23"}], "minimum_damage": 570.0}, {"mana_cost": 6, "maximum_damage": 902.0, "level": 37, "requirements": {"requires_level": 97, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 24"}], "minimum_damage": 601.0}, {"mana_cost": 6, "maximum_damage": 950.0, "level": 38, "requirements": {"requires_level": 98, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 24"}], "minimum_damage": 633.0}, {"mana_cost": 6, "maximum_damage": 1001.0, "level": 39, "requirements": {"requires_level": 99, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 24"}], "minimum_damage": 668.0}, {"mana_cost": 6, "maximum_damage": 1055.0, "level": 40, "requirements": {"requires_level": 100, "intelligence": null}, "fields": [{"name": "+_to_radius_per_stage,_up_to_+", "value": "6, 24"}], "minimum_damage": 703.0}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Incinerate",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "mods": [
+    "Deals (3\u2013140) to (5\u2013210) Fire Damage",
+    "8 maximum stages",
+    "Final wave deals 500% more Damage with Ignite",
+    "Final wave deals 500% more Damage with Hits",
+    "25% more Damage with Hits and Ailments for each stage",
+    "+(4\u20135) to radius per stage, up to +(15\u201319)",
+    "100% increased angle per stage, up to 300%",
+    "Final wave always Ignites"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "intelligence": 33,
+        "requires_level": 12
+      },
+      "mana_cost": 2,
+      "maximum_damage": 5.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "4, 15"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 4.0,
+      "requirements": {
+        "intelligence": 39,
+        "requires_level": 15
+      },
+      "mana_cost": 2,
+      "maximum_damage": 6.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "4, 15"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 6.0,
+      "requirements": {
+        "intelligence": 48,
+        "requires_level": 19
+      },
+      "mana_cost": 2,
+      "maximum_damage": 8.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "4, 15"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 8.0,
+      "requirements": {
+        "intelligence": 56,
+        "requires_level": 23
+      },
+      "mana_cost": 2,
+      "maximum_damage": 11.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "4, 15"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "intelligence": 64,
+        "requires_level": 27
+      },
+      "mana_cost": 2,
+      "maximum_damage": 15.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "4, 16"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 13.0,
+      "requirements": {
+        "intelligence": 73,
+        "requires_level": 31
+      },
+      "mana_cost": 2,
+      "maximum_damage": 20.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "4, 16"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 17.0,
+      "requirements": {
+        "intelligence": 81,
+        "requires_level": 35
+      },
+      "mana_cost": 3,
+      "maximum_damage": 26.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "4, 16"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 21.0,
+      "requirements": {
+        "intelligence": 88,
+        "requires_level": 38
+      },
+      "mana_cost": 3,
+      "maximum_damage": 32.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "4, 16"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 26.0,
+      "requirements": {
+        "intelligence": 94,
+        "requires_level": 41
+      },
+      "mana_cost": 3,
+      "maximum_damage": 38.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 17"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 31.0,
+      "requirements": {
+        "intelligence": 100,
+        "requires_level": 44
+      },
+      "mana_cost": 3,
+      "maximum_damage": 46.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 17"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 37.0,
+      "requirements": {
+        "intelligence": 106,
+        "requires_level": 47
+      },
+      "mana_cost": 3,
+      "maximum_damage": 55.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 17"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 44.0,
+      "requirements": {
+        "intelligence": 113,
+        "requires_level": 50
+      },
+      "mana_cost": 3,
+      "maximum_damage": 66.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 17"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 53.0,
+      "requirements": {
+        "intelligence": 119,
+        "requires_level": 53
+      },
+      "mana_cost": 4,
+      "maximum_damage": 79.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 18"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 63.0,
+      "requirements": {
+        "intelligence": 125,
+        "requires_level": 56
+      },
+      "mana_cost": 4,
+      "maximum_damage": 95.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 18"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 75.0,
+      "requirements": {
+        "intelligence": 132,
+        "requires_level": 59
+      },
+      "mana_cost": 4,
+      "maximum_damage": 113.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 18"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 89.0,
+      "requirements": {
+        "intelligence": 138,
+        "requires_level": 62
+      },
+      "mana_cost": 4,
+      "maximum_damage": 134.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 18"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 100.0,
+      "requirements": {
+        "intelligence": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 4,
+      "maximum_damage": 150.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 19"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 112.0,
+      "requirements": {
+        "intelligence": 146,
+        "requires_level": 66
+      },
+      "mana_cost": 4,
+      "maximum_damage": 168.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 19"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 125.0,
+      "requirements": {
+        "intelligence": 151,
+        "requires_level": 68
+      },
+      "mana_cost": 4,
+      "maximum_damage": 188.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 19"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 140.0,
+      "requirements": {
+        "intelligence": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 4,
+      "maximum_damage": 210.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 19"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 157.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 4,
+      "maximum_damage": 235.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 20"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 175.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 5,
+      "maximum_damage": 262.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 20"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 195.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 5,
+      "maximum_damage": 293.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 20"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 218.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 5,
+      "maximum_damage": 326.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "5, 20"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 243.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 5,
+      "maximum_damage": 364.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 21"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 270.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 5,
+      "maximum_damage": 406.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 21"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 301.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 5,
+      "maximum_damage": 452.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 21"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 335.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 5,
+      "maximum_damage": 503.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 21"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 373.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 5,
+      "maximum_damage": 560.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 22"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 415.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 5,
+      "maximum_damage": 623.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 22"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 438.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 5,
+      "maximum_damage": 657.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 22"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 462.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 5,
+      "maximum_damage": 693.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 22"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 487.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 5,
+      "maximum_damage": 730.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 23"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 513.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 5,
+      "maximum_damage": 770.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 23"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 541.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 6,
+      "maximum_damage": 812.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 23"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 570.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 6,
+      "maximum_damage": 855.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 23"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 601.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 6,
+      "maximum_damage": 902.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 24"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 633.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 6,
+      "maximum_damage": 950.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 24"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 668.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 6,
+      "maximum_damage": 1001.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 24"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 703.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 6,
+      "maximum_damage": 1055.0,
+      "fields": [
+        {
+          "name": "+_to_radius_per_stage,_up_to_+",
+          "value": "6, 24"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "is_area_damage [1]",
+    "skill_can_add_multiple_charges_per_action [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "25% increased Incinerate Damage",
+      "16% increased Incinerate Damage",
+      "20% increased Incinerate Damage",
+      "Incinerate has 16% increased Area of Effect",
+      "Incinerate has +1 to maximum stages"
+    ],
+    "eternal": [
+      "40% increased Incinerate Damage",
+      "24% increased Incinerate Damage",
+      "30% increased Incinerate Damage",
+      "Incinerate has 24% increased Area of Effect",
+      "Incinerate has +2 to maximum stages",
+      "10% increased Incinerate Damage for each stage"
+    ]
+  },
+  "drop_level": 12,
+  "type": [
+    "spell",
+    "hit",
+    "skillcantotem",
+    "fireskill",
+    "channelled",
+    "area",
+    "areaspell"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/BlueIncinerate.png?w=1&h=1&scale=1",
+      "name": "Blue Flame Incinerate Effect",
+      "description": "Your Incinerate becomes a ghostly blue flame."
+    }
+  ],
+  "description": "Continuously launches a torrent of fire from your hand, repeatedly damaging enemies. As you channel this spell longer, the flames spread wider close to you and spread longer directly in front of you. When you stop channelling you release a wave of fire damage over a wide and long area that will apply a powerful Ignite.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Cast while Channelling Support",
+      "types": [
+        "channelled"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Arcane Surge Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Infused Channelling Support",
+      "types": [
+        "channelled"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cast While Channelling Support",
+      "types": [
+        "channelled"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Archmage Support",
+      "types": [
+        "hit",
+        "spell",
+        "and"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% more Damage with Hits and Ailments for each stage",
+          "minimum": 0.0,
+          "maximum": 4.0
+        },
+        {
+          "text": "Final wave deals % more Damage with Hits",
+          "minimum": 200.0,
+          "maximum": 0.0
+        },
+        {
+          "text": "Final wave deals % more Damage with Ignite",
+          "minimum": 200.0,
+          "maximum": 0.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Fire Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

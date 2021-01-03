@@ -1,1 +1,1348 @@
-{"target_types": ["any"], "acquisition": {"quest": {"act": 1, "quest_name": "The Siren's Cadence", "classes": ["Shadow", "Scion"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Witch", "Ranger", "Shadow", "Scion"]}}, "vaal": true, "tags": ["is_area_damage [1]", "skill_can_add_multiple_charges_per_action [1]", "action_ignores_crit_tracking [1]", "base_skill_show_average_damage_instead_of_dps [1]", "damage_originates_from_initiator_location [1]"], "type": ["spell", "hit", "area", "duration", "skillcantotem", "spellcanrepeat", "triggerable", "type27", "canrapidfire", "areaspell", "physicalskill"], "enchants": {"eternal": ["40% increased Blade Vortex Spell Damage", "30% increased Blade Vortex Duration", "24% increased Blade Vortex Area of Effect", "Blade Vortex has +3% to Critical Strike Multiplier for each blade"], "merciless": ["25% increased Blade Vortex Spell Damage", "20% increased Blade Vortex Duration", "16% increased Blade Vortex Area of Effect", "Blade Vortex has +2% to Critical Strike Multiplier for each blade"]}, "mtx": [{"name": "Demonic Blade Vortex", "description": "Your Blade Vortex becomes a black and red demonic vortex.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DemonBladeVortex.png?w=1&h=1&scale=1"}, {"name": "Sawblade Blade Vortex", "description": "Your Blade Vortex becomes a Sawblade Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/SawBladeVortex.png?w=2&h=2&scale=1"}, {"name": "Illusionist Blade Vortex Effect", "description": "Your Blade Vortex becomes an Illusionist Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/IllusionistBladeVortex.png?w=2&h=2&scale=1"}, {"name": "Transcendence Blade Vortex Effect", "description": "Your Blade Vortex becomes a Transcendence Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/TranscendenceBladeVortexEffect.png?w=2&h=2&scale=1"}], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Faster Casting Support", "types": ["spell"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Spell Echo Support", "types": ["spellcanrepeat"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "Intensify Support", "types": ["areaspell"]}, {"name": "Unleash Support", "types": ["canrapidfire"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Spell Echo Support", "types": ["spellcanrepeat"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Awakened Unleash Support", "types": ["canrapidfire"]}, {"name": "Archmage Support", "types": ["hit", "spell", "and"]}], "description": "This spell creates ethereal blades which orbit in an area around you, dealing damage every 0.6 seconds to all enemies in their radius. As more blades are added, the damage becomes greater and more frequent.", "mods": ["Deals (3\u2013101) to (5\u2013151) Physical Damage", "+5 seconds to Base duration", "Can have up to 10 active spinning blades", "10% increased Critical Strike Chance for each blade", "35% increased Hit Rate for each blade", "35% more Damage for each blade", "+(0\u20134) to radius"], "quality": {"phantasmal": {"mods": [{"text": "% increased Damage while you have 5 or fewer Blades", "minimum": 0.0, "maximum": 60.0}], "weight": 100.0}, "anomalous": {"mods": [{"text": "% of Damage Leeched as Life", "minimum": 0.0, "maximum": 4.0}], "weight": 10.0}, "superior": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% chance to create an additional Blade", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}}, "drop_level": 12, "name": "Blade Vortex", "levels": [{"mana_cost": 6, "maximum_damage": 5.0, "level": 1, "requirements": {"dexterity": 33, "requires_level": 12}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 3.0}, {"mana_cost": 6, "maximum_damage": 6.0, "level": 2, "requirements": {"dexterity": 39, "requires_level": 15}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 4.0}, {"mana_cost": 7, "maximum_damage": 8.0, "level": 3, "requirements": {"dexterity": 48, "requires_level": 19}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 5.0}, {"mana_cost": 8, "maximum_damage": 10.0, "level": 4, "requirements": {"dexterity": 56, "requires_level": 23}, "fields": [{"name": "to_radius", "value": "0"}], "minimum_damage": 7.0}, {"mana_cost": 9, "maximum_damage": 14.0, "level": 5, "requirements": {"dexterity": 64, "requires_level": 27}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 9.0}, {"mana_cost": 9, "maximum_damage": 18.0, "level": 6, "requirements": {"dexterity": 73, "requires_level": 31}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 12.0}, {"mana_cost": 10, "maximum_damage": 23.0, "level": 7, "requirements": {"dexterity": 81, "requires_level": 35}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 15.0}, {"mana_cost": 11, "maximum_damage": 27.0, "level": 8, "requirements": {"dexterity": 88, "requires_level": 38}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 18.0}, {"mana_cost": 11, "maximum_damage": 32.0, "level": 9, "requirements": {"dexterity": 94, "requires_level": 41}, "fields": [{"name": "to_radius", "value": "1"}], "minimum_damage": 21.0}, {"mana_cost": 12, "maximum_damage": 38.0, "level": 10, "requirements": {"dexterity": 100, "requires_level": 44}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 25.0}, {"mana_cost": 12, "maximum_damage": 45.0, "level": 11, "requirements": {"dexterity": 106, "requires_level": 47}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 30.0}, {"mana_cost": 13, "maximum_damage": 53.0, "level": 12, "requirements": {"dexterity": 113, "requires_level": 50}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 35.0}, {"mana_cost": 13, "maximum_damage": 63.0, "level": 13, "requirements": {"dexterity": 119, "requires_level": 53}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 42.0}, {"mana_cost": 14, "maximum_damage": 73.0, "level": 14, "requirements": {"dexterity": 125, "requires_level": 56}, "fields": [{"name": "to_radius", "value": "2"}], "minimum_damage": 49.0}, {"mana_cost": 14, "maximum_damage": 86.0, "level": 15, "requirements": {"dexterity": 132, "requires_level": 59}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 57.0}, {"mana_cost": 15, "maximum_damage": 101.0, "level": 16, "requirements": {"dexterity": 138, "requires_level": 62}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 67.0}, {"mana_cost": 15, "maximum_damage": 111.0, "level": 17, "requirements": {"dexterity": 142, "requires_level": 64}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 74.0}, {"mana_cost": 16, "maximum_damage": 124.0, "level": 18, "requirements": {"dexterity": 146, "requires_level": 66}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 82.0}, {"mana_cost": 16, "maximum_damage": 137.0, "level": 19, "requirements": {"dexterity": 151, "requires_level": 68}, "fields": [{"name": "to_radius", "value": "3"}], "minimum_damage": 91.0}, {"mana_cost": 16, "maximum_damage": 151.0, "level": 20, "requirements": {"dexterity": 155, "requires_level": 70}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 101.0}, {"mana_cost": 17, "maximum_damage": 167.0, "level": 21, "requirements": {"dexterity": null, "requires_level": 72}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 112.0}, {"mana_cost": 17, "maximum_damage": 185.0, "level": 22, "requirements": {"dexterity": null, "requires_level": 74}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 123.0}, {"mana_cost": 18, "maximum_damage": 204.0, "level": 23, "requirements": {"dexterity": null, "requires_level": 76}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 136.0}, {"mana_cost": 18, "maximum_damage": 225.0, "level": 24, "requirements": {"dexterity": null, "requires_level": 78}, "fields": [{"name": "to_radius", "value": "4"}], "minimum_damage": 150.0}, {"mana_cost": 18, "maximum_damage": 249.0, "level": 25, "requirements": {"dexterity": null, "requires_level": 80}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 166.0}, {"mana_cost": 19, "maximum_damage": 274.0, "level": 26, "requirements": {"dexterity": null, "requires_level": 82}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 183.0}, {"mana_cost": 19, "maximum_damage": 302.0, "level": 27, "requirements": {"dexterity": null, "requires_level": 84}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 201.0}, {"mana_cost": 19, "maximum_damage": 333.0, "level": 28, "requirements": {"dexterity": null, "requires_level": 86}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 222.0}, {"mana_cost": 20, "maximum_damage": 367.0, "level": 29, "requirements": {"dexterity": null, "requires_level": 88}, "fields": [{"name": "to_radius", "value": "5"}], "minimum_damage": 244.0}, {"mana_cost": 20, "maximum_damage": 404.0, "level": 30, "requirements": {"dexterity": null, "requires_level": 90}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 269.0}, {"mana_cost": 20, "maximum_damage": 423.0, "level": 31, "requirements": {"dexterity": null, "requires_level": 91}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 282.0}, {"mana_cost": 20, "maximum_damage": 444.0, "level": 32, "requirements": {"dexterity": null, "requires_level": 92}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 296.0}, {"mana_cost": 21, "maximum_damage": 466.0, "level": 33, "requirements": {"dexterity": null, "requires_level": 93}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 310.0}, {"mana_cost": 21, "maximum_damage": 488.0, "level": 34, "requirements": {"dexterity": null, "requires_level": 94}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 326.0}, {"mana_cost": 21, "maximum_damage": 512.0, "level": 35, "requirements": {"dexterity": null, "requires_level": 95}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 341.0}, {"mana_cost": 21, "maximum_damage": 537.0, "level": 36, "requirements": {"dexterity": null, "requires_level": 96}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 358.0}, {"mana_cost": 21, "maximum_damage": 563.0, "level": 37, "requirements": {"dexterity": null, "requires_level": 97}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 375.0}, {"mana_cost": 22, "maximum_damage": 590.0, "level": 38, "requirements": {"dexterity": null, "requires_level": 98}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 393.0}, {"mana_cost": 22, "maximum_damage": 619.0, "level": 39, "requirements": {"dexterity": null, "requires_level": 99}, "fields": [{"name": "to_radius", "value": "6"}], "minimum_damage": 412.0}, {"mana_cost": 22, "maximum_damage": 648.0, "level": 40, "requirements": {"dexterity": null, "requires_level": 100}, "fields": [{"name": "to_radius", "value": "7"}], "minimum_damage": 432.0}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Blade Vortex",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Shadow",
+        "Scion"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Deals (3\u2013101) to (5\u2013151) Physical Damage",
+    "+5 seconds to Base duration",
+    "Can have up to 10 active spinning blades",
+    "10% increased Critical Strike Chance for each blade",
+    "35% increased Hit Rate for each blade",
+    "35% more Damage for each blade",
+    "+(0\u20134) to radius"
+  ],
+  "vaal": true,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "dexterity": 33,
+        "requires_level": 12
+      },
+      "mana_cost": 6,
+      "maximum_damage": 5.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 4.0,
+      "requirements": {
+        "dexterity": 39,
+        "requires_level": 15
+      },
+      "mana_cost": 6,
+      "maximum_damage": 6.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 5.0,
+      "requirements": {
+        "dexterity": 48,
+        "requires_level": 19
+      },
+      "mana_cost": 7,
+      "maximum_damage": 8.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "dexterity": 56,
+        "requires_level": 23
+      },
+      "mana_cost": 8,
+      "maximum_damage": 10.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "dexterity": 64,
+        "requires_level": 27
+      },
+      "mana_cost": 9,
+      "maximum_damage": 14.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 12.0,
+      "requirements": {
+        "dexterity": 73,
+        "requires_level": 31
+      },
+      "mana_cost": 9,
+      "maximum_damage": 18.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 15.0,
+      "requirements": {
+        "dexterity": 81,
+        "requires_level": 35
+      },
+      "mana_cost": 10,
+      "maximum_damage": 23.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 18.0,
+      "requirements": {
+        "dexterity": 88,
+        "requires_level": 38
+      },
+      "mana_cost": 11,
+      "maximum_damage": 27.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 21.0,
+      "requirements": {
+        "dexterity": 94,
+        "requires_level": 41
+      },
+      "mana_cost": 11,
+      "maximum_damage": 32.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 25.0,
+      "requirements": {
+        "dexterity": 100,
+        "requires_level": 44
+      },
+      "mana_cost": 12,
+      "maximum_damage": 38.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "dexterity": 106,
+        "requires_level": 47
+      },
+      "mana_cost": 12,
+      "maximum_damage": 45.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 35.0,
+      "requirements": {
+        "dexterity": 113,
+        "requires_level": 50
+      },
+      "mana_cost": 13,
+      "maximum_damage": 53.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 42.0,
+      "requirements": {
+        "dexterity": 119,
+        "requires_level": 53
+      },
+      "mana_cost": 13,
+      "maximum_damage": 63.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 49.0,
+      "requirements": {
+        "dexterity": 125,
+        "requires_level": 56
+      },
+      "mana_cost": 14,
+      "maximum_damage": 73.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 57.0,
+      "requirements": {
+        "dexterity": 132,
+        "requires_level": 59
+      },
+      "mana_cost": 14,
+      "maximum_damage": 86.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 67.0,
+      "requirements": {
+        "dexterity": 138,
+        "requires_level": 62
+      },
+      "mana_cost": 15,
+      "maximum_damage": 101.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 74.0,
+      "requirements": {
+        "dexterity": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 15,
+      "maximum_damage": 111.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 82.0,
+      "requirements": {
+        "dexterity": 146,
+        "requires_level": 66
+      },
+      "mana_cost": 16,
+      "maximum_damage": 124.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 91.0,
+      "requirements": {
+        "dexterity": 151,
+        "requires_level": 68
+      },
+      "mana_cost": 16,
+      "maximum_damage": 137.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 101.0,
+      "requirements": {
+        "dexterity": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 16,
+      "maximum_damage": 151.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 112.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 72
+      },
+      "mana_cost": 17,
+      "maximum_damage": 167.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 123.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 74
+      },
+      "mana_cost": 17,
+      "maximum_damage": 185.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 136.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 76
+      },
+      "mana_cost": 18,
+      "maximum_damage": 204.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 150.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 78
+      },
+      "mana_cost": 18,
+      "maximum_damage": 225.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 166.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 80
+      },
+      "mana_cost": 18,
+      "maximum_damage": 249.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 183.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 82
+      },
+      "mana_cost": 19,
+      "maximum_damage": 274.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 201.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 84
+      },
+      "mana_cost": 19,
+      "maximum_damage": 302.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 222.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 86
+      },
+      "mana_cost": 19,
+      "maximum_damage": 333.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 244.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 88
+      },
+      "mana_cost": 20,
+      "maximum_damage": 367.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 269.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 90
+      },
+      "mana_cost": 20,
+      "maximum_damage": 404.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 282.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 91
+      },
+      "mana_cost": 20,
+      "maximum_damage": 423.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 296.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 92
+      },
+      "mana_cost": 20,
+      "maximum_damage": 444.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 310.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 93
+      },
+      "mana_cost": 21,
+      "maximum_damage": 466.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 326.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 94
+      },
+      "mana_cost": 21,
+      "maximum_damage": 488.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 341.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 95
+      },
+      "mana_cost": 21,
+      "maximum_damage": 512.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 358.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 96
+      },
+      "mana_cost": 21,
+      "maximum_damage": 537.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 375.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 97
+      },
+      "mana_cost": 21,
+      "maximum_damage": 563.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 393.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 98
+      },
+      "mana_cost": 22,
+      "maximum_damage": 590.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 412.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 99
+      },
+      "mana_cost": 22,
+      "maximum_damage": 619.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 432.0,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 100
+      },
+      "mana_cost": 22,
+      "maximum_damage": 648.0,
+      "fields": [
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "is_area_damage [1]",
+    "skill_can_add_multiple_charges_per_action [1]",
+    "action_ignores_crit_tracking [1]",
+    "base_skill_show_average_damage_instead_of_dps [1]",
+    "damage_originates_from_initiator_location [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "25% increased Blade Vortex Spell Damage",
+      "20% increased Blade Vortex Duration",
+      "16% increased Blade Vortex Area of Effect",
+      "Blade Vortex has +2% to Critical Strike Multiplier for each blade"
+    ],
+    "eternal": [
+      "40% increased Blade Vortex Spell Damage",
+      "30% increased Blade Vortex Duration",
+      "24% increased Blade Vortex Area of Effect",
+      "Blade Vortex has +3% to Critical Strike Multiplier for each blade"
+    ]
+  },
+  "drop_level": 12,
+  "type": [
+    "spell",
+    "hit",
+    "area",
+    "duration",
+    "skillcantotem",
+    "spellcanrepeat",
+    "triggerable",
+    "type27",
+    "canrapidfire",
+    "areaspell",
+    "physicalskill"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DemonBladeVortex.png?w=1&h=1&scale=1",
+      "name": "Demonic Blade Vortex",
+      "description": "Your Blade Vortex becomes a black and red demonic vortex."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/SawBladeVortex.png?w=2&h=2&scale=1",
+      "name": "Sawblade Blade Vortex",
+      "description": "Your Blade Vortex becomes a Sawblade Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/IllusionistBladeVortex.png?w=2&h=2&scale=1",
+      "name": "Illusionist Blade Vortex Effect",
+      "description": "Your Blade Vortex becomes an Illusionist Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/TranscendenceBladeVortexEffect.png?w=2&h=2&scale=1",
+      "name": "Transcendence Blade Vortex Effect",
+      "description": "Your Blade Vortex becomes a Transcendence Effect."
+    }
+  ],
+  "description": "This spell creates ethereal blades which orbit in an area around you, dealing damage every 0.6 seconds to all enemies in their radius. As more blades are added, the damage becomes greater and more frequent.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Faster Casting Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Spell Echo Support",
+      "types": [
+        "spellcanrepeat"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Intensify Support",
+      "types": [
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Unleash Support",
+      "types": [
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Spell Echo Support",
+      "types": [
+        "spellcanrepeat"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Awakened Unleash Support",
+      "types": [
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Archmage Support",
+      "types": [
+        "hit",
+        "spell",
+        "and"
+      ]
+    }
+  ],
+  "target_types": [
+    "any"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% chance to create an additional Blade",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% increased Damage while you have 5 or fewer Blades",
+          "minimum": 0.0,
+          "maximum": 60.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% of Damage Leeched as Life",
+          "minimum": 0.0,
+          "maximum": 4.0
+        }
+      ],
+      "weight": 10.0
+    }
+  }
+}

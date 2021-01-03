@@ -1,1 +1,1760 @@
-{"target_types": ["ground", "enemy"], "acquisition": {"quest": {"act": 1, "quest_name": "The Siren's Cadence", "classes": ["Ranger"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Templar", "Duelist", "Ranger", "Shadow", "Scion"]}}, "vaal": true, "tags": ["show_number_of_projectiles [1]"], "type": ["ground", "enemy"], "enchants": {"eternal": ["40% increased Lightning Strike Damage", "Lightning Strike fires 3 additional Projectiles", "lightning_strike_additional_pierce_per_10_old [30]", "Lightning Strike pierces 3 additional Targets"], "merciless": ["25% increased Lightning Strike Damage", "Lightning Strike fires 2 additional Projectiles", "lightning_strike_additional_pierce_per_10_old [20]", "Lightning Strike pierces 2 additional Targets"]}, "mtx": [], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Faster Attacks Support", "types": ["attack", "type56"]}, {"name": "Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Lesser Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Faster Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Additional Accuracy Support", "types": ["attack", "type56"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Mana Leech Support", "types": ["attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Pierce Support", "types": ["projectile", "type54", "type56"]}, {"name": "Melee Physical Damage Support", "types": ["melee"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Damage with Attacks Support", "types": ["attack", "type56"]}, {"name": "Bloodlust Support", "types": ["melee"]}, {"name": "Life Gain on Hit Support", "types": ["attack", "type56"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Point Blank Support", "types": ["projectileattack", "type56"]}, {"name": "Iron Grip Support", "types": ["projectileattack", "type56"]}, {"name": "Damage on Full Life Support", "types": ["attack"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Multistrike Support", "types": ["attackcanrepeat"]}, {"name": "Melee Splash Support", "types": ["meleesingletarget"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Cast On Critical Strike Support", "types": ["attack"]}, {"name": "Cast on Melee Kill Support", "types": ["melee"]}, {"name": "Endurance Charge on Melee Stun Support", "types": ["melee"]}, {"name": "Slower Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Vicious Projectiles Support", "types": ["projectileattack", "type56"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Fortify Support", "types": ["melee"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Chance to Bleed Support", "types": ["attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Maim Support", "types": ["attack", "maims"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Ruthless Support", "types": ["melee"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Ancestral Call Support", "types": ["meleesingletarget"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Withering Touch Support", "types": ["attack"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "Close Combat Support", "types": ["melee"]}, {"name": "Shockwave Support", "types": ["melee"]}, {"name": "Impale Support", "types": ["attack"]}, {"name": "Pulverise Support", "types": ["melee"]}, {"name": "Rage Support", "types": ["melee"]}, {"name": "Nightblade Support", "types": ["attack"]}, {"name": "Barrage Support", "types": ["projectile", "type54", "or", "type73", "or", "projectileattack", "type56", "or", "and"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Ancestral Call Support", "types": ["meleesingletarget"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Elemental Damage with Attacks Support", "types": ["attack", "type56"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Melee Physical Damage Support", "types": ["melee"]}, {"name": "Awakened Melee Splash Support", "types": ["meleesingletarget"]}, {"name": "Awakened Multistrike Support", "types": ["attackcanrepeat"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cast On Critical Strike Support", "types": ["attack"]}, {"name": "Awakened Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Awakened Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Vicious Projectiles Support", "types": ["projectileattack", "type56"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}], "description": "Infuses your melee weapon with electrical energies as you swing. In addition to converting some of your physical damage to lightning damage, the stored energy is released from the weapon as projectiles as you strike, flying out to hit farther-away enemies. The projectiles cannot miss if the melee attack hits a target.", "mods": ["Deals (135\u2013180)% of Base Attack Damage", "50% of Physical Damage Converted to Lightning Damage", "Fires (4\u20137) additional Projectiles", "Projectiles deal 25% less Damage", "Damage Over Time caused by Projectiles deals 25% less Damage", "(1\u20139) to (13\u2013179) Added Lightning Damage"], "quality": {"phantasmal": {"mods": [{"text": "% of Physical Damage Converted to Lightning Damage", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "anomalous": {"mods": [{"text": "Projectiles Pierce  additional Targets", "minimum": 0.0, "maximum": 2.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Damage", "minimum": 0.0, "maximum": 20.0}, {"text": "% increased Projectile Speed", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "Fires  additional Projectiles", "minimum": 0.0, "maximum": 2.0}], "weight": 20.0}}, "drop_level": 12, "name": "Lightning Strike", "levels": [{"level": 1, "requirements": {"dexterity": 21, "requires_level": 12, "intelligence": 14}, "fields": [{"name": "base_damage", "value": "135%"}, {"name": "fires__additional_projectiles", "value": "4"}, {"name": "_to__added_lightning_damage", "value": "1, 13"}]}, {"level": 2, "requirements": {"dexterity": 25, "requires_level": 15, "intelligence": 17}, "fields": [{"name": "base_damage", "value": "137.4%"}, {"name": "fires__additional_projectiles", "value": "4"}, {"name": "_to__added_lightning_damage", "value": "1, 16"}]}, {"level": 3, "requirements": {"dexterity": 30, "requires_level": 19, "intelligence": 21}, "fields": [{"name": "base_damage", "value": "139.7%"}, {"name": "fires__additional_projectiles", "value": "4"}, {"name": "_to__added_lightning_damage", "value": "1, 20"}]}, {"level": 4, "requirements": {"dexterity": 35, "requires_level": 23, "intelligence": 24}, "fields": [{"name": "base_damage", "value": "142.1%"}, {"name": "fires__additional_projectiles", "value": "4"}, {"name": "_to__added_lightning_damage", "value": "1, 25"}]}, {"level": 5, "requirements": {"dexterity": 41, "requires_level": 27, "intelligence": 28}, "fields": [{"name": "base_damage", "value": "144.5%"}, {"name": "fires__additional_projectiles", "value": "4"}, {"name": "_to__added_lightning_damage", "value": "2, 31"}]}, {"level": 6, "requirements": {"dexterity": 46, "requires_level": 31, "intelligence": 32}, "fields": [{"name": "base_damage", "value": "146.8%"}, {"name": "fires__additional_projectiles", "value": "5"}, {"name": "_to__added_lightning_damage", "value": "2, 37"}]}, {"level": 7, "requirements": {"dexterity": 51, "requires_level": 35, "intelligence": 36}, "fields": [{"name": "base_damage", "value": "149.2%"}, {"name": "fires__additional_projectiles", "value": "5"}, {"name": "_to__added_lightning_damage", "value": "2, 45"}]}, {"level": 8, "requirements": {"dexterity": 55, "requires_level": 38, "intelligence": 38}, "fields": [{"name": "base_damage", "value": "151.6%"}, {"name": "fires__additional_projectiles", "value": "5"}, {"name": "_to__added_lightning_damage", "value": "3, 51"}]}, {"level": 9, "requirements": {"dexterity": 59, "requires_level": 41, "intelligence": 41}, "fields": [{"name": "base_damage", "value": "153.9%"}, {"name": "fires__additional_projectiles", "value": "5"}, {"name": "_to__added_lightning_damage", "value": "3, 59"}]}, {"level": 10, "requirements": {"dexterity": 63, "requires_level": 44, "intelligence": 44}, "fields": [{"name": "base_damage", "value": "156.3%"}, {"name": "fires__additional_projectiles", "value": "5"}, {"name": "_to__added_lightning_damage", "value": "3, 66"}]}, {"level": 11, "requirements": {"dexterity": 67, "requires_level": 47, "intelligence": 47}, "fields": [{"name": "base_damage", "value": "158.7%"}, {"name": "fires__additional_projectiles", "value": "6"}, {"name": "_to__added_lightning_damage", "value": "4, 75"}]}, {"level": 12, "requirements": {"dexterity": 71, "requires_level": 50, "intelligence": 49}, "fields": [{"name": "base_damage", "value": "161.1%"}, {"name": "fires__additional_projectiles", "value": "6"}, {"name": "_to__added_lightning_damage", "value": "4, 85"}]}, {"level": 13, "requirements": {"dexterity": 75, "requires_level": 53, "intelligence": 52}, "fields": [{"name": "base_damage", "value": "163.4%"}, {"name": "fires__additional_projectiles", "value": "6"}, {"name": "_to__added_lightning_damage", "value": "5, 95"}]}, {"level": 14, "requirements": {"dexterity": 79, "requires_level": 56, "intelligence": 55}, "fields": [{"name": "base_damage", "value": "165.8%"}, {"name": "fires__additional_projectiles", "value": "6"}, {"name": "_to__added_lightning_damage", "value": "6, 107"}]}, {"level": 15, "requirements": {"dexterity": 83, "requires_level": 59, "intelligence": 58}, "fields": [{"name": "base_damage", "value": "168.2%"}, {"name": "fires__additional_projectiles", "value": "6"}, {"name": "_to__added_lightning_damage", "value": "6, 120"}]}, {"level": 16, "requirements": {"dexterity": 87, "requires_level": 62, "intelligence": 60}, "fields": [{"name": "base_damage", "value": "170.5%"}, {"name": "fires__additional_projectiles", "value": "7"}, {"name": "_to__added_lightning_damage", "value": "7, 134"}]}, {"level": 17, "requirements": {"dexterity": 90, "requires_level": 64, "intelligence": 62}, "fields": [{"name": "base_damage", "value": "172.9%"}, {"name": "fires__additional_projectiles", "value": "7"}, {"name": "_to__added_lightning_damage", "value": "8, 144"}]}, {"level": 18, "requirements": {"dexterity": 92, "requires_level": 66, "intelligence": 64}, "fields": [{"name": "base_damage", "value": "175.3%"}, {"name": "fires__additional_projectiles", "value": "7"}, {"name": "_to__added_lightning_damage", "value": "8, 155"}]}, {"level": 19, "requirements": {"dexterity": 95, "requires_level": 68, "intelligence": 66}, "fields": [{"name": "base_damage", "value": "177.6%"}, {"name": "fires__additional_projectiles", "value": "7"}, {"name": "_to__added_lightning_damage", "value": "9, 167"}]}, {"level": 20, "requirements": {"dexterity": 98, "requires_level": 70, "intelligence": 68}, "fields": [{"name": "base_damage", "value": "180%"}, {"name": "fires__additional_projectiles", "value": "7"}, {"name": "_to__added_lightning_damage", "value": "9, 179"}]}, {"level": 21, "requirements": {"dexterity": null, "requires_level": 72, "intelligence": null}, "fields": [{"name": "base_damage", "value": "182.4%"}, {"name": "fires__additional_projectiles", "value": "8"}, {"name": "_to__added_lightning_damage", "value": "10, 192"}]}, {"level": 22, "requirements": {"dexterity": null, "requires_level": 74, "intelligence": null}, "fields": [{"name": "base_damage", "value": "184.7%"}, {"name": "fires__additional_projectiles", "value": "8"}, {"name": "_to__added_lightning_damage", "value": "11, 206"}]}, {"level": 23, "requirements": {"dexterity": null, "requires_level": 76, "intelligence": null}, "fields": [{"name": "base_damage", "value": "187.1%"}, {"name": "fires__additional_projectiles", "value": "8"}, {"name": "_to__added_lightning_damage", "value": "12, 221"}]}, {"level": 24, "requirements": {"dexterity": null, "requires_level": 78, "intelligence": null}, "fields": [{"name": "base_damage", "value": "189.5%"}, {"name": "fires__additional_projectiles", "value": "8"}, {"name": "_to__added_lightning_damage", "value": "12, 237"}]}, {"level": 25, "requirements": {"dexterity": null, "requires_level": 80, "intelligence": null}, "fields": [{"name": "base_damage", "value": "191.8%"}, {"name": "fires__additional_projectiles", "value": "8"}, {"name": "_to__added_lightning_damage", "value": "13, 254"}]}, {"level": 26, "requirements": {"dexterity": null, "requires_level": 82, "intelligence": null}, "fields": [{"name": "base_damage", "value": "194.2%"}, {"name": "fires__additional_projectiles", "value": "9"}, {"name": "_to__added_lightning_damage", "value": "14, 272"}]}, {"level": 27, "requirements": {"dexterity": null, "requires_level": 84, "intelligence": null}, "fields": [{"name": "base_damage", "value": "196.6%"}, {"name": "fires__additional_projectiles", "value": "9"}, {"name": "_to__added_lightning_damage", "value": "15, 291"}]}, {"level": 28, "requirements": {"dexterity": null, "requires_level": 86, "intelligence": null}, "fields": [{"name": "base_damage", "value": "198.9%"}, {"name": "fires__additional_projectiles", "value": "9"}, {"name": "_to__added_lightning_damage", "value": "16, 311"}]}, {"level": 29, "requirements": {"dexterity": null, "requires_level": 88, "intelligence": null}, "fields": [{"name": "base_damage", "value": "201.3%"}, {"name": "fires__additional_projectiles", "value": "9"}, {"name": "_to__added_lightning_damage", "value": "18, 333"}]}, {"level": 30, "requirements": {"dexterity": null, "requires_level": 90, "intelligence": null}, "fields": [{"name": "base_damage", "value": "203.7%"}, {"name": "fires__additional_projectiles", "value": "9"}, {"name": "_to__added_lightning_damage", "value": "19, 355"}]}, {"level": 31, "requirements": {"dexterity": null, "requires_level": 91, "intelligence": null}, "fields": [{"name": "base_damage", "value": "204.9%"}, {"name": "fires__additional_projectiles", "value": "9"}, {"name": "_to__added_lightning_damage", "value": "19, 367"}]}, {"level": 32, "requirements": {"dexterity": null, "requires_level": 92, "intelligence": null}, "fields": [{"name": "base_damage", "value": "206.1%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "20, 380"}]}, {"level": 33, "requirements": {"dexterity": null, "requires_level": 93, "intelligence": null}, "fields": [{"name": "base_damage", "value": "207.2%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "21, 392"}]}, {"level": 34, "requirements": {"dexterity": null, "requires_level": 94, "intelligence": null}, "fields": [{"name": "base_damage", "value": "208.4%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "21, 405"}]}, {"level": 35, "requirements": {"dexterity": null, "requires_level": 95, "intelligence": null}, "fields": [{"name": "base_damage", "value": "209.6%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "22, 419"}]}, {"level": 36, "requirements": {"dexterity": null, "requires_level": 96, "intelligence": null}, "fields": [{"name": "base_damage", "value": "210.8%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "23, 433"}]}, {"level": 37, "requirements": {"dexterity": null, "requires_level": 97, "intelligence": null}, "fields": [{"name": "base_damage", "value": "212%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "24, 447"}]}, {"level": 38, "requirements": {"dexterity": null, "requires_level": 98, "intelligence": null}, "fields": [{"name": "base_damage", "value": "213.2%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "24, 462"}]}, {"level": 39, "requirements": {"dexterity": null, "requires_level": 99, "intelligence": null}, "fields": [{"name": "base_damage", "value": "214.3%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "25, 477"}]}, {"level": 40, "requirements": {"dexterity": null, "requires_level": 100, "intelligence": null}, "fields": [{"name": "base_damage", "value": "215.5%"}, {"name": "fires__additional_projectiles", "value": "10"}, {"name": "_to__added_lightning_damage", "value": "26, 492"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Lightning Strike",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Ranger"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Deals (135\u2013180)% of Base Attack Damage",
+    "50% of Physical Damage Converted to Lightning Damage",
+    "Fires (4\u20137) additional Projectiles",
+    "Projectiles deal 25% less Damage",
+    "Damage Over Time caused by Projectiles deals 25% less Damage",
+    "(1\u20139) to (13\u2013179) Added Lightning Damage"
+  ],
+  "vaal": true,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 21,
+        "intelligence": 14,
+        "requires_level": 12
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "135%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "1, 13"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 25,
+        "intelligence": 17,
+        "requires_level": 15
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "137.4%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "1, 16"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 30,
+        "intelligence": 21,
+        "requires_level": 19
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "139.7%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "1, 20"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 35,
+        "intelligence": 24,
+        "requires_level": 23
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "142.1%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "1, 25"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 41,
+        "intelligence": 28,
+        "requires_level": 27
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "144.5%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "2, 31"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 46,
+        "intelligence": 32,
+        "requires_level": 31
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "146.8%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "2, 37"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 51,
+        "intelligence": 36,
+        "requires_level": 35
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "149.2%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "2, 45"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 55,
+        "intelligence": 38,
+        "requires_level": 38
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "151.6%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "3, 51"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 59,
+        "intelligence": 41,
+        "requires_level": 41
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "153.9%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "3, 59"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 63,
+        "intelligence": 44,
+        "requires_level": 44
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "156.3%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "3, 66"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 67,
+        "intelligence": 47,
+        "requires_level": 47
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "158.7%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "4, 75"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 71,
+        "intelligence": 49,
+        "requires_level": 50
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "161.1%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "4, 85"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 75,
+        "intelligence": 52,
+        "requires_level": 53
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "163.4%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "5, 95"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 79,
+        "intelligence": 55,
+        "requires_level": 56
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "165.8%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "6, 107"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 83,
+        "intelligence": 58,
+        "requires_level": 59
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "168.2%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "6, 120"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 87,
+        "intelligence": 60,
+        "requires_level": 62
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "170.5%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "7, 134"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 90,
+        "intelligence": 62,
+        "requires_level": 64
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "172.9%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "8, 144"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 92,
+        "intelligence": 64,
+        "requires_level": 66
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "175.3%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "8, 155"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 95,
+        "intelligence": 66,
+        "requires_level": 68
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "177.6%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "9, 167"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 98,
+        "intelligence": 68,
+        "requires_level": 70
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "180%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "7"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "9, 179"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "182.4%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "10, 192"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "184.7%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "11, 206"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "187.1%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "12, 221"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "189.5%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "12, 237"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "191.8%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "8"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "13, 254"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "194.2%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "9"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "14, 272"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "196.6%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "9"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "15, 291"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "198.9%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "9"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "16, 311"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "201.3%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "9"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "18, 333"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "203.7%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "9"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "19, 355"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "204.9%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "9"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "19, 367"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "206.1%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "20, 380"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "207.2%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "21, 392"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "208.4%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "21, 405"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "209.6%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "22, 419"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "210.8%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "23, 433"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "212%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "24, 447"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "213.2%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "24, 462"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "214.3%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "25, 477"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "215.5%"
+        },
+        {
+          "name": "fires__additional_projectiles",
+          "value": "10"
+        },
+        {
+          "name": "_to__added_lightning_damage",
+          "value": "26, 492"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "show_number_of_projectiles [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "25% increased Lightning Strike Damage",
+      "Lightning Strike fires 2 additional Projectiles",
+      "lightning_strike_additional_pierce_per_10_old [20]",
+      "Lightning Strike pierces 2 additional Targets"
+    ],
+    "eternal": [
+      "40% increased Lightning Strike Damage",
+      "Lightning Strike fires 3 additional Projectiles",
+      "lightning_strike_additional_pierce_per_10_old [30]",
+      "Lightning Strike pierces 3 additional Targets"
+    ]
+  },
+  "drop_level": 12,
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "description": "Infuses your melee weapon with electrical energies as you swing. In addition to converting some of your physical damage to lightning damage, the stored energy is released from the weapon as projectiles as you strike, flying out to hit farther-away enemies. The projectiles cannot miss if the melee attack hits a target.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Faster Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Lesser Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Faster Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Additional Accuracy Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Mana Leech Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Pierce Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Melee Physical Damage Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Damage with Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Bloodlust Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Life Gain on Hit Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Point Blank Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Iron Grip Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Damage on Full Life Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Multistrike Support",
+      "types": [
+        "attackcanrepeat"
+      ]
+    },
+    {
+      "name": "Melee Splash Support",
+      "types": [
+        "meleesingletarget"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Cast On Critical Strike Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Cast on Melee Kill Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Endurance Charge on Melee Stun Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Slower Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Vicious Projectiles Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fortify Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Chance to Bleed Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Maim Support",
+      "types": [
+        "attack",
+        "maims"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ruthless Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ancestral Call Support",
+      "types": [
+        "meleesingletarget"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Withering Touch Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Close Combat Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Shockwave Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Impale Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Pulverise Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Rage Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Nightblade Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Barrage Support",
+      "types": [
+        "projectile",
+        "type54",
+        "or",
+        "type73",
+        "or",
+        "projectileattack",
+        "type56",
+        "or",
+        "and"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Ancestral Call Support",
+      "types": [
+        "meleesingletarget"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Damage with Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Melee Physical Damage Support",
+      "types": [
+        "melee"
+      ]
+    },
+    {
+      "name": "Awakened Melee Splash Support",
+      "types": [
+        "meleesingletarget"
+      ]
+    },
+    {
+      "name": "Awakened Multistrike Support",
+      "types": [
+        "attackcanrepeat"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cast On Critical Strike Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Vicious Projectiles Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Fires  additional Projectiles",
+          "minimum": 0.0,
+          "maximum": 2.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% of Physical Damage Converted to Lightning Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        },
+        {
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Projectiles Pierce  additional Targets",
+          "minimum": 0.0,
+          "maximum": 2.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

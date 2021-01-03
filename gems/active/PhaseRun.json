@@ -1,1 +1,731 @@
-{"target_types": ["any"], "acquisition": {"vendor": {"vendor_name": "Petarus and Vanja", "classes": ["Duelist", "Ranger", "Shadow", "Scion"]}}, "vaal": false, "tags": ["base_deal_no_damage [1]"], "type": ["spell", "buff", "duration", "triggerable", "movementskill", "instant", "physicalskill", "travelskill", "secondwindsupport"], "enchants": {"eternal": ["30% chance for Phase Run to increase Duration without removing Frenzy Charges", "36% increased Phase Run Duration"], "merciless": ["20% chance for Phase Run to increase Duration without removing Frenzy Charges", "24% increased Phase Run Duration"]}, "mtx": [{"name": "Invisible Buff Effect", "description": "Removes the visual effects on the player from arctic armour, tempest shield, blood rage, molten shell, phase run, any aura, any blasphemied curse, or any herald gem.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/AuraVanishingDye.png?w=1&h=1&scale=1"}, {"name": "Madcap Phase Run Effect", "description": "Your Phase Run becomes a Madcap Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/MadcapPhaseRun.png?w=2&h=2&scale=1"}], "support": [{"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "Gain a buff that makes you faster, harder to detect, and grants Phasing, letting you pass through enemies. Performing any skill replaces this buff with one that boosts melee physical damage of skills you use yourself (it will not apply to your melee skills used by totems). Consumes Frenzy Charges to increase duration.", "mods": ["(30\u201339)% increased Movement Speed", "100% increased Stealth", "Phasing"], "quality": {"anomalous": {"mods": [{"text": "% increased Skill Effect Duration", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Movement Speed", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "Phase Run has % chance not to replace the Buff when you use a Skill", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}}, "drop_level": 34, "name": "Phase Run", "levels": [{"mana_cost": 8, "level": 1, "requirements": {"dexterity": 79, "requires_level": 34}, "fields": [{"name": "%_increased_movement_speed", "value": "30"}]}, {"mana_cost": 8, "level": 2, "requirements": {"dexterity": 83, "requires_level": 36}, "fields": [{"name": "%_increased_movement_speed", "value": "30"}]}, {"mana_cost": 9, "level": 3, "requirements": {"dexterity": 88, "requires_level": 38}, "fields": [{"name": "%_increased_movement_speed", "value": "31"}]}, {"mana_cost": 9, "level": 4, "requirements": {"dexterity": 92, "requires_level": 40}, "fields": [{"name": "%_increased_movement_speed", "value": "31"}]}, {"mana_cost": 9, "level": 5, "requirements": {"dexterity": 96, "requires_level": 42}, "fields": [{"name": "%_increased_movement_speed", "value": "32"}]}, {"mana_cost": 9, "level": 6, "requirements": {"dexterity": 100, "requires_level": 44}, "fields": [{"name": "%_increased_movement_speed", "value": "32"}]}, {"mana_cost": 10, "level": 7, "requirements": {"dexterity": 104, "requires_level": 46}, "fields": [{"name": "%_increased_movement_speed", "value": "33"}]}, {"mana_cost": 10, "level": 8, "requirements": {"dexterity": 109, "requires_level": 48}, "fields": [{"name": "%_increased_movement_speed", "value": "33"}]}, {"mana_cost": 10, "level": 9, "requirements": {"dexterity": 113, "requires_level": 50}, "fields": [{"name": "%_increased_movement_speed", "value": "34"}]}, {"mana_cost": 11, "level": 10, "requirements": {"dexterity": 117, "requires_level": 52}, "fields": [{"name": "%_increased_movement_speed", "value": "34"}]}, {"mana_cost": 11, "level": 11, "requirements": {"dexterity": 121, "requires_level": 54}, "fields": [{"name": "%_increased_movement_speed", "value": "35"}]}, {"mana_cost": 11, "level": 12, "requirements": {"dexterity": 125, "requires_level": 56}, "fields": [{"name": "%_increased_movement_speed", "value": "35"}]}, {"mana_cost": 11, "level": 13, "requirements": {"dexterity": 130, "requires_level": 58}, "fields": [{"name": "%_increased_movement_speed", "value": "36"}]}, {"mana_cost": 12, "level": 14, "requirements": {"dexterity": 134, "requires_level": 60}, "fields": [{"name": "%_increased_movement_speed", "value": "36"}]}, {"mana_cost": 12, "level": 15, "requirements": {"dexterity": 138, "requires_level": 62}, "fields": [{"name": "%_increased_movement_speed", "value": "37"}]}, {"mana_cost": 12, "level": 16, "requirements": {"dexterity": 142, "requires_level": 64}, "fields": [{"name": "%_increased_movement_speed", "value": "37"}]}, {"mana_cost": 13, "level": 17, "requirements": {"dexterity": 146, "requires_level": 66}, "fields": [{"name": "%_increased_movement_speed", "value": "38"}]}, {"mana_cost": 13, "level": 18, "requirements": {"dexterity": 151, "requires_level": 68}, "fields": [{"name": "%_increased_movement_speed", "value": "38"}]}, {"mana_cost": 13, "level": 19, "requirements": {"dexterity": 153, "requires_level": 69}, "fields": [{"name": "%_increased_movement_speed", "value": "39"}]}, {"mana_cost": 13, "level": 20, "requirements": {"dexterity": 155, "requires_level": 70}, "fields": [{"name": "%_increased_movement_speed", "value": "39"}]}, {"mana_cost": 13, "level": 21, "requirements": {"dexterity": null, "requires_level": 72}, "fields": [{"name": "%_increased_movement_speed", "value": "40"}]}, {"mana_cost": 14, "level": 22, "requirements": {"dexterity": null, "requires_level": 74}, "fields": [{"name": "%_increased_movement_speed", "value": "40"}]}, {"mana_cost": 14, "level": 23, "requirements": {"dexterity": null, "requires_level": 76}, "fields": [{"name": "%_increased_movement_speed", "value": "41"}]}, {"mana_cost": 14, "level": 24, "requirements": {"dexterity": null, "requires_level": 78}, "fields": [{"name": "%_increased_movement_speed", "value": "41"}]}, {"mana_cost": 15, "level": 25, "requirements": {"dexterity": null, "requires_level": 80}, "fields": [{"name": "%_increased_movement_speed", "value": "42"}]}, {"mana_cost": 15, "level": 26, "requirements": {"dexterity": null, "requires_level": 82}, "fields": [{"name": "%_increased_movement_speed", "value": "42"}]}, {"mana_cost": 15, "level": 27, "requirements": {"dexterity": null, "requires_level": 84}, "fields": [{"name": "%_increased_movement_speed", "value": "43"}]}, {"mana_cost": 15, "level": 28, "requirements": {"dexterity": null, "requires_level": 86}, "fields": [{"name": "%_increased_movement_speed", "value": "43"}]}, {"mana_cost": 16, "level": 29, "requirements": {"dexterity": null, "requires_level": 88}, "fields": [{"name": "%_increased_movement_speed", "value": "44"}]}, {"mana_cost": 16, "level": 30, "requirements": {"dexterity": null, "requires_level": 90}, "fields": [{"name": "%_increased_movement_speed", "value": "44"}]}, {"mana_cost": 16, "level": 31, "requirements": {"dexterity": null, "requires_level": 91}, "fields": [{"name": "%_increased_movement_speed", "value": "44"}]}, {"mana_cost": 16, "level": 32, "requirements": {"dexterity": null, "requires_level": 92}, "fields": [{"name": "%_increased_movement_speed", "value": "45"}]}, {"mana_cost": 16, "level": 33, "requirements": {"dexterity": null, "requires_level": 93}, "fields": [{"name": "%_increased_movement_speed", "value": "45"}]}, {"mana_cost": 17, "level": 34, "requirements": {"dexterity": null, "requires_level": 94}, "fields": [{"name": "%_increased_movement_speed", "value": "45"}]}, {"mana_cost": 17, "level": 35, "requirements": {"dexterity": null, "requires_level": 95}, "fields": [{"name": "%_increased_movement_speed", "value": "45"}]}, {"mana_cost": 17, "level": 36, "requirements": {"dexterity": null, "requires_level": 96}, "fields": [{"name": "%_increased_movement_speed", "value": "46"}]}, {"mana_cost": 17, "level": 37, "requirements": {"dexterity": null, "requires_level": 97}, "fields": [{"name": "%_increased_movement_speed", "value": "46"}]}, {"mana_cost": 17, "level": 38, "requirements": {"dexterity": null, "requires_level": 98}, "fields": [{"name": "%_increased_movement_speed", "value": "46"}]}, {"mana_cost": 17, "level": 39, "requirements": {"dexterity": null, "requires_level": 99}, "fields": [{"name": "%_increased_movement_speed", "value": "46"}]}, {"mana_cost": 17, "level": 40, "requirements": {"dexterity": null, "requires_level": 100}, "fields": [{"name": "%_increased_movement_speed", "value": "47"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Phase Run",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Petarus and Vanja"
+    }
+  },
+  "mods": [
+    "(30\u201339)% increased Movement Speed",
+    "100% increased Stealth",
+    "Phasing"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 79,
+        "requires_level": 34
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 83,
+        "requires_level": 36
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 88,
+        "requires_level": 38
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 92,
+        "requires_level": 40
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 96,
+        "requires_level": 42
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 100,
+        "requires_level": 44
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 104,
+        "requires_level": 46
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 109,
+        "requires_level": 48
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 113,
+        "requires_level": 50
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 117,
+        "requires_level": 52
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 121,
+        "requires_level": 54
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 125,
+        "requires_level": 56
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 130,
+        "requires_level": 58
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 134,
+        "requires_level": 60
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 138,
+        "requires_level": 62
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "37"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "37"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 146,
+        "requires_level": 66
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "38"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 151,
+        "requires_level": 68
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "38"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 153,
+        "requires_level": 69
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 72
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 74
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 76
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 78
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 80
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 82
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 84
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 86
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 88
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 90
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 91
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 92
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 93
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 94
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 95
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 96
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 97
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 98
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 99
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 100
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "%_increased_movement_speed",
+          "value": "47"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "20% chance for Phase Run to increase Duration without removing Frenzy Charges",
+      "24% increased Phase Run Duration"
+    ],
+    "eternal": [
+      "30% chance for Phase Run to increase Duration without removing Frenzy Charges",
+      "36% increased Phase Run Duration"
+    ]
+  },
+  "drop_level": 34,
+  "type": [
+    "spell",
+    "buff",
+    "duration",
+    "triggerable",
+    "movementskill",
+    "instant",
+    "physicalskill",
+    "travelskill",
+    "secondwindsupport"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/AuraVanishingDye.png?w=1&h=1&scale=1",
+      "name": "Invisible Buff Effect",
+      "description": "Removes the visual effects on the player from arctic armour, tempest shield, blood rage, molten shell, phase run, any aura, any blasphemied curse, or any herald gem."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/MadcapPhaseRun.png?w=2&h=2&scale=1",
+      "name": "Madcap Phase Run Effect",
+      "description": "Your Phase Run becomes a Madcap Effect."
+    }
+  ],
+  "description": "Gain a buff that makes you faster, harder to detect, and grants Phasing, letting you pass through enemies. Performing any skill replaces this buff with one that boosts melee physical damage of skills you use yourself (it will not apply to your melee skills used by totems). Consumes Frenzy Charges to increase duration.",
+  "support": [
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "any"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Phase Run has % chance not to replace the Buff when you use a Skill",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Movement Speed",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

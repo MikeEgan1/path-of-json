@@ -1,1 +1,1932 @@
-{"target_types": ["ground", "enemy"], "acquisition": {"quest": {"act": 1, "quest_name": "Enemy at the Gate", "classes": ["Duelist", "Scion"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Duelist", "Scion", "Ranger"]}}, "vaal": false, "tags": ["base_is_projectile [1]"], "type": ["attack", "projectileattack", "projectile", "skillcanvolley", "steelskill", "area", "physicalskill"], "enchants": {"eternal": ["Splitting Steel deals 40% increased Damage", "Splitting Steel has 24% increased Area of Effect", "Splitting Steel has 30% chance to not consume Steel Shards"], "merciless": ["Splitting Steel deals 25% increased Damage", "Splitting Steel has 16% increased Area of Effect", "Splitting Steel has 20% chance to not consume Steel Shards"]}, "mtx": [], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Faster Attacks Support", "types": ["attack", "type56"]}, {"name": "Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Lesser Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Greater Volley Support", "types": ["skillcanvolley"]}, {"name": "Faster Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Additional Accuracy Support", "types": ["attack", "type56"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Mana Leech Support", "types": ["attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Pierce Support", "types": ["projectile", "type54", "type56"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Damage with Attacks Support", "types": ["attack", "type56"]}, {"name": "Life Gain on Hit Support", "types": ["attack", "type56"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Point Blank Support", "types": ["projectileattack", "type56"]}, {"name": "Iron Grip Support", "types": ["projectileattack", "type56"]}, {"name": "Damage on Full Life Support", "types": ["attack"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Cast On Critical Strike Support", "types": ["attack"]}, {"name": "Slower Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Vicious Projectiles Support", "types": ["projectileattack", "type56"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Chance to Bleed Support", "types": ["attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Maim Support", "types": ["attack", "maims"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Volley Support", "types": ["skillcanvolley"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Withering Touch Support", "types": ["attack"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "Impale Support", "types": ["attack"]}, {"name": "Nightblade Support", "types": ["attack"]}, {"name": "Arrow Nova Support", "types": ["projectile", "type54", "or", "projectileattack", "type56", "or", "and", "skillcanvolley", "and"]}, {"name": "Barrage Support", "types": ["projectile", "type54", "or", "type73", "or", "projectileattack", "type56", "or", "and"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Elemental Damage with Attacks Support", "types": ["attack", "type56"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Arrow Nova Support", "types": ["projectile", "type54", "or", "projectileattack", "type56", "or", "and", "skillcanvolley", "and"]}, {"name": "Awakened Cast On Critical Strike Support", "types": ["attack"]}, {"name": "Awakened Chain Support", "types": ["chaining", "projectile", "type54", "type56", "type97"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Fork Support", "types": ["projectile", "type54", "type56"]}, {"name": "Awakened Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Vicious Projectiles Support", "types": ["projectileattack", "type56"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}], "description": "Consume a Steel Shard to fire a single projectile that splits on impact or at the targeted location, dealing area damage when it splits and again when the split projectiles explode at the end of their flight. Requires a Sword or Axe. Steel Shards are gained with the Call of Steel Skill.", "mods": ["Deals (100\u2013168.4)% of Base Attack Damage", "Projectiles Split towards (2\u20134) targets", "Consumes up to 1 Steel Shard", "60% chance to Impale Enemies on Hit", "(2\u201375) to (3\u2013113) Added Attack Physical Damage", "Projectiles which have Split deal 35% less Damage", "50% less Area of Effect after Splitting", "+(0\u20134) to radius", "Modifiers to number of Projectiles instead apply tothe number of targets Projectile Splits towardsIf you have no Steel Shards, Projectile counts as already having SplitProjectiles can Split without hitting a target"], "quality": {"phantasmal": {"mods": [{"text": "% chance to Impale Enemies on Hit", "minimum": 40.0, "maximum": 0.0}, {"text": "% increased Damage", "minimum": 0.0, "maximum": 40.0}], "weight": 50.0}, "anomalous": {"mods": [{"text": "% chance to inflict an additional Impale when this Skill inflicts Impale", "minimum": 0.0, "maximum": 10.0}], "weight": 20.0}, "superior": {"mods": [{"text": "% increased Impale Effect", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}, {"text": "% increased Projectile Speed", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}}, "drop_level": null, "name": "Splitting Steel", "levels": [{"mana_cost": 5, "level": 1, "requirements": {"dexterity": 4, "requires_level": 1, "strength": 6}, "fields": [{"name": "base_damage", "value": "100%"}, {"name": "projectiles_split_towards__targets", "value": "2"}, {"name": "_to__added_attack_physical_damage", "value": "2, 3"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 5, "level": 2, "requirements": {"dexterity": 5, "requires_level": 2, "strength": 7}, "fields": [{"name": "base_damage", "value": "103.6%"}, {"name": "projectiles_split_towards__targets", "value": "2"}, {"name": "_to__added_attack_physical_damage", "value": "2, 3"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 5, "level": 3, "requirements": {"dexterity": 7, "requires_level": 4, "strength": 10}, "fields": [{"name": "base_damage", "value": "107.2%"}, {"name": "projectiles_split_towards__targets", "value": "2"}, {"name": "_to__added_attack_physical_damage", "value": "3, 4"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 5, "level": 4, "requirements": {"dexterity": 10, "requires_level": 7, "strength": 14}, "fields": [{"name": "base_damage", "value": "110.8%"}, {"name": "projectiles_split_towards__targets", "value": "2"}, {"name": "_to__added_attack_physical_damage", "value": "4, 6"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 5, "level": 5, "requirements": {"dexterity": 13, "requires_level": 11, "strength": 19}, "fields": [{"name": "base_damage", "value": "114.4%"}, {"name": "projectiles_split_towards__targets", "value": "2"}, {"name": "_to__added_attack_physical_damage", "value": "5, 8"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 6, "level": 6, "requirements": {"dexterity": 18, "requires_level": 16, "strength": 26}, "fields": [{"name": "base_damage", "value": "118%"}, {"name": "projectiles_split_towards__targets", "value": "2"}, {"name": "_to__added_attack_physical_damage", "value": "7, 11"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 6, "level": 7, "requirements": {"dexterity": 22, "requires_level": 20, "strength": 31}, "fields": [{"name": "base_damage", "value": "121.6%"}, {"name": "projectiles_split_towards__targets", "value": "2"}, {"name": "_to__added_attack_physical_damage", "value": "9, 13"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 6, "level": 8, "requirements": {"dexterity": 25, "requires_level": 24, "strength": 37}, "fields": [{"name": "base_damage", "value": "125.2%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "11, 17"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 6, "level": 9, "requirements": {"dexterity": 29, "requires_level": 28, "strength": 42}, "fields": [{"name": "base_damage", "value": "128.8%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "14, 20"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 6, "level": 10, "requirements": {"dexterity": 33, "requires_level": 32, "strength": 47}, "fields": [{"name": "base_damage", "value": "132.4%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "16, 25"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 7, "level": 11, "requirements": {"dexterity": 36, "requires_level": 36, "strength": 53}, "fields": [{"name": "base_damage", "value": "136%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "20, 30"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 7, "level": 12, "requirements": {"dexterity": 40, "requires_level": 40, "strength": 58}, "fields": [{"name": "base_damage", "value": "139.6%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "24, 35"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 7, "level": 13, "requirements": {"dexterity": 44, "requires_level": 44, "strength": 63}, "fields": [{"name": "base_damage", "value": "143.2%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "28, 42"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 7, "level": 14, "requirements": {"dexterity": 48, "requires_level": 48, "strength": 68}, "fields": [{"name": "base_damage", "value": "146.8%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "33, 49"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 7, "level": 15, "requirements": {"dexterity": 51, "requires_level": 52, "strength": 74}, "fields": [{"name": "base_damage", "value": "150.4%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "39, 58"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 8, "level": 16, "requirements": {"dexterity": 55, "requires_level": 56, "strength": 79}, "fields": [{"name": "base_damage", "value": "154%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "45, 68"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 8, "level": 17, "requirements": {"dexterity": 59, "requires_level": 60, "strength": 84}, "fields": [{"name": "base_damage", "value": "157.6%"}, {"name": "projectiles_split_towards__targets", "value": "3"}, {"name": "_to__added_attack_physical_damage", "value": "52, 79"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 8, "level": 18, "requirements": {"dexterity": 62, "requires_level": 64, "strength": 90}, "fields": [{"name": "base_damage", "value": "161.2%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "61, 91"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 8, "level": 19, "requirements": {"dexterity": 65, "requires_level": 67, "strength": 94}, "fields": [{"name": "base_damage", "value": "164.8%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "68, 102"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 8, "level": 20, "requirements": {"dexterity": 68, "requires_level": 70, "strength": 98}, "fields": [{"name": "base_damage", "value": "168.4%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "75, 113"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 9, "level": 21, "requirements": {"dexterity": null, "requires_level": 72, "strength": null}, "fields": [{"name": "base_damage", "value": "172%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "81, 122"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 9, "level": 22, "requirements": {"dexterity": null, "requires_level": 74, "strength": null}, "fields": [{"name": "base_damage", "value": "175.6%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "87, 130"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 9, "level": 23, "requirements": {"dexterity": null, "requires_level": 76, "strength": null}, "fields": [{"name": "base_damage", "value": "179.2%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "93, 140"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 9, "level": 24, "requirements": {"dexterity": null, "requires_level": 78, "strength": null}, "fields": [{"name": "base_damage", "value": "182.8%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "100, 150"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 9, "level": 25, "requirements": {"dexterity": null, "requires_level": 80, "strength": null}, "fields": [{"name": "base_damage", "value": "186.4%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "107, 160"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 10, "level": 26, "requirements": {"dexterity": null, "requires_level": 82, "strength": null}, "fields": [{"name": "base_damage", "value": "190%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "114, 172"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 10, "level": 27, "requirements": {"dexterity": null, "requires_level": 84, "strength": null}, "fields": [{"name": "base_damage", "value": "193.6%"}, {"name": "projectiles_split_towards__targets", "value": "4"}, {"name": "_to__added_attack_physical_damage", "value": "123, 184"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 10, "level": 28, "requirements": {"dexterity": null, "requires_level": 86, "strength": null}, "fields": [{"name": "base_damage", "value": "197.2%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "131, 197"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 10, "level": 29, "requirements": {"dexterity": null, "requires_level": 88, "strength": null}, "fields": [{"name": "base_damage", "value": "200.8%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "140, 210"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 10, "level": 30, "requirements": {"dexterity": null, "requires_level": 90, "strength": null}, "fields": [{"name": "base_damage", "value": "204.4%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "150, 224"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 11, "level": 31, "requirements": {"dexterity": null, "requires_level": 91, "strength": null}, "fields": [{"name": "base_damage", "value": "204.4%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "155, 232"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 11, "level": 32, "requirements": {"dexterity": null, "requires_level": 92, "strength": null}, "fields": [{"name": "base_damage", "value": "208%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "160, 240"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 11, "level": 33, "requirements": {"dexterity": null, "requires_level": 93, "strength": null}, "fields": [{"name": "base_damage", "value": "211.6%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "165, 248"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 11, "level": 34, "requirements": {"dexterity": null, "requires_level": 94, "strength": null}, "fields": [{"name": "base_damage", "value": "215.2%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "171, 256"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 11, "level": 35, "requirements": {"dexterity": null, "requires_level": 95, "strength": null}, "fields": [{"name": "base_damage", "value": "218.8%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "176, 265"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 11, "level": 36, "requirements": {"dexterity": null, "requires_level": 96, "strength": null}, "fields": [{"name": "base_damage", "value": "222.4%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "182, 273"}, {"name": "to_radius", "value": "8"}]}, {"mana_cost": 12, "level": 37, "requirements": {"dexterity": null, "requires_level": 97, "strength": null}, "fields": [{"name": "base_damage", "value": "226%"}, {"name": "projectiles_split_towards__targets", "value": "5"}, {"name": "_to__added_attack_physical_damage", "value": "188, 282"}, {"name": "to_radius", "value": "8"}]}, {"mana_cost": 12, "level": 38, "requirements": {"dexterity": null, "requires_level": 98, "strength": null}, "fields": [{"name": "base_damage", "value": "229.6%"}, {"name": "projectiles_split_towards__targets", "value": "6"}, {"name": "_to__added_attack_physical_damage", "value": "194, 292"}, {"name": "to_radius", "value": "8"}]}, {"mana_cost": 12, "level": 39, "requirements": {"dexterity": null, "requires_level": 99, "strength": null}, "fields": [{"name": "base_damage", "value": "233.2%"}, {"name": "projectiles_split_towards__targets", "value": "6"}, {"name": "_to__added_attack_physical_damage", "value": "201, 301"}, {"name": "to_radius", "value": "8"}]}, {"mana_cost": 12, "level": 40, "requirements": {"dexterity": null, "requires_level": 100, "strength": null}, "fields": [{"name": "base_damage", "value": "236.8%"}, {"name": "projectiles_split_towards__targets", "value": "6"}, {"name": "_to__added_attack_physical_damage", "value": "207, 311"}, {"name": "to_radius", "value": "8"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Splitting Steel",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Scion",
+        "Ranger"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Duelist",
+        "Scion"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Deals (100\u2013168.4)% of Base Attack Damage",
+    "Projectiles Split towards (2\u20134) targets",
+    "Consumes up to 1 Steel Shard",
+    "60% chance to Impale Enemies on Hit",
+    "(2\u201375) to (3\u2013113) Added Attack Physical Damage",
+    "Projectiles which have Split deal 35% less Damage",
+    "50% less Area of Effect after Splitting",
+    "+(0\u20134) to radius",
+    "Modifiers to number of Projectiles instead apply tothe number of targets Projectile Splits towardsIf you have no Steel Shards, Projectile counts as already having SplitProjectiles can Split without hitting a target"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 4,
+        "strength": 6,
+        "requires_level": 1
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "100%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "2, 3"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 5,
+        "strength": 7,
+        "requires_level": 2
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "103.6%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "2, 3"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 7,
+        "strength": 10,
+        "requires_level": 4
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "107.2%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "3, 4"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 10,
+        "strength": 14,
+        "requires_level": 7
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "110.8%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "4, 6"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 13,
+        "strength": 19,
+        "requires_level": 11
+      },
+      "mana_cost": 5,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "114.4%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "5, 8"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 18,
+        "strength": 26,
+        "requires_level": 16
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "118%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "7, 11"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 22,
+        "strength": 31,
+        "requires_level": 20
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "121.6%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "2"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "9, 13"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 25,
+        "strength": 37,
+        "requires_level": 24
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "125.2%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "11, 17"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 29,
+        "strength": 42,
+        "requires_level": 28
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "128.8%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "14, 20"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 33,
+        "strength": 47,
+        "requires_level": 32
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "132.4%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "16, 25"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 36,
+        "strength": 53,
+        "requires_level": 36
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "136%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "20, 30"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 40,
+        "strength": 58,
+        "requires_level": 40
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "139.6%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "24, 35"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 44,
+        "strength": 63,
+        "requires_level": 44
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "143.2%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "28, 42"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 48,
+        "strength": 68,
+        "requires_level": 48
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "146.8%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "33, 49"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 51,
+        "strength": 74,
+        "requires_level": 52
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "150.4%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "39, 58"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 55,
+        "strength": 79,
+        "requires_level": 56
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "154%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "45, 68"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 59,
+        "strength": 84,
+        "requires_level": 60
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "157.6%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "3"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "52, 79"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 62,
+        "strength": 90,
+        "requires_level": 64
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "161.2%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "61, 91"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 65,
+        "strength": 94,
+        "requires_level": 67
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "164.8%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "68, 102"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 68,
+        "strength": 98,
+        "requires_level": 70
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "168.4%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "75, 113"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 72
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "172%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "81, 122"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 74
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "175.6%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "87, 130"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 76
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "179.2%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "93, 140"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 78
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "182.8%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "100, 150"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 80
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "186.4%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "107, 160"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 82
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "190%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "114, 172"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 84
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "193.6%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "4"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "123, 184"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 86
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "197.2%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "131, 197"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 88
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "200.8%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "140, 210"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 90
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "204.4%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "150, 224"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 91
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "204.4%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "155, 232"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 92
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "208%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "160, 240"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 93
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "211.6%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "165, 248"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 94
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "215.2%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "171, 256"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 95
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "218.8%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "176, 265"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 96
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "222.4%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "182, 273"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 97
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "226%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "5"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "188, 282"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 98
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "229.6%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "194, 292"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 99
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "233.2%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "201, 301"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "strength": null,
+        "requires_level": 100
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "236.8%"
+        },
+        {
+          "name": "projectiles_split_towards__targets",
+          "value": "6"
+        },
+        {
+          "name": "_to__added_attack_physical_damage",
+          "value": "207, 311"
+        },
+        {
+          "name": "to_radius",
+          "value": "8"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "Splitting Steel deals 25% increased Damage",
+      "Splitting Steel has 16% increased Area of Effect",
+      "Splitting Steel has 20% chance to not consume Steel Shards"
+    ],
+    "eternal": [
+      "Splitting Steel deals 40% increased Damage",
+      "Splitting Steel has 24% increased Area of Effect",
+      "Splitting Steel has 30% chance to not consume Steel Shards"
+    ]
+  },
+  "drop_level": null,
+  "type": [
+    "attack",
+    "projectileattack",
+    "projectile",
+    "skillcanvolley",
+    "steelskill",
+    "area",
+    "physicalskill"
+  ],
+  "mtx": [],
+  "description": "Consume a Steel Shard to fire a single projectile that splits on impact or at the targeted location, dealing area damage when it splits and again when the split projectiles explode at the end of their flight. Requires a Sword or Axe. Steel Shards are gained with the Call of Steel Skill.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Faster Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Lesser Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Greater Volley Support",
+      "types": [
+        "skillcanvolley"
+      ]
+    },
+    {
+      "name": "Faster Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Additional Accuracy Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Mana Leech Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Pierce Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Damage with Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Life Gain on Hit Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Point Blank Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Iron Grip Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Damage on Full Life Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Cast On Critical Strike Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Slower Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Vicious Projectiles Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Chance to Bleed Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Maim Support",
+      "types": [
+        "attack",
+        "maims"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Volley Support",
+      "types": [
+        "skillcanvolley"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Withering Touch Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Impale Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Nightblade Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Arrow Nova Support",
+      "types": [
+        "projectile",
+        "type54",
+        "or",
+        "projectileattack",
+        "type56",
+        "or",
+        "and",
+        "skillcanvolley",
+        "and"
+      ]
+    },
+    {
+      "name": "Barrage Support",
+      "types": [
+        "projectile",
+        "type54",
+        "or",
+        "type73",
+        "or",
+        "projectileattack",
+        "type56",
+        "or",
+        "and"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Damage with Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Arrow Nova Support",
+      "types": [
+        "projectile",
+        "type54",
+        "or",
+        "projectileattack",
+        "type56",
+        "or",
+        "and",
+        "skillcanvolley",
+        "and"
+      ]
+    },
+    {
+      "name": "Awakened Cast On Critical Strike Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Chain Support",
+      "types": [
+        "chaining",
+        "projectile",
+        "type54",
+        "type56",
+        "type97"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Fork Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Vicious Projectiles Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        },
+        {
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% chance to Impale Enemies on Hit",
+          "minimum": 40.0,
+          "maximum": 0.0
+        },
+        {
+          "text": "% increased Damage",
+          "minimum": 0.0,
+          "maximum": 40.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Impale Effect",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% chance to inflict an additional Impale when this Skill inflicts Impale",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 20.0
+    }
+  }
+}

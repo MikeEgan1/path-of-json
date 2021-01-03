@@ -1,1 +1,1516 @@
-{"target_types": ["ground", "enemy"], "acquisition": {"quest": {"act": 1, "quest_name": "The Siren's Cadence", "classes": ["Duelist", "Ranger", "Scion"]}, "vendor": {"vendor_name": "Nessa", "classes": ["Duelist", "Ranger", "Shadow", "Scion"]}}, "vaal": true, "tags": ["base_is_projectile [1]", "is_area_damage [1]", "skill_can_fire_arrows [1]", "cannot_pierce [1]"], "type": ["ground", "enemy"], "enchants": {"eternal": ["40% increased Rain of Arrows Damage", "15% increased Rain of Arrows Attack Speed", "24% increased Rain of Arrows Area of Effect", "Rain of Arrows has 15% chance to fire an additional sequence of arrows"], "merciless": ["25% increased Rain of Arrows Damage", "10% increased Rain of Arrows Attack Speed", "16% increased Rain of Arrows Area of Effect", "Rain of Arrows has 10% chance to fire an additional sequence of arrows"]}, "mtx": [{"name": "Emerald Rain of Arrows Effect", "description": "Your Rain of Arrows glow a ghostly green", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Green_arrowrain.png?w=1&h=1&scale=1"}, {"name": "Celestial Rain of Arrows Effect", "description": "Your Rain of Arrows becomes a Celestial Effect.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialRainOfArrows.png?w=2&h=2&scale=1"}], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Faster Attacks Support", "types": ["attack", "type56"]}, {"name": "Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Lesser Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Faster Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Additional Accuracy Support", "types": ["attack", "type56"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Mana Leech Support", "types": ["attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Damage with Attacks Support", "types": ["attack", "type56"]}, {"name": "Life Gain on Hit Support", "types": ["attack", "type56"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Point Blank Support", "types": ["projectileattack", "type56"]}, {"name": "Iron Grip Support", "types": ["projectileattack", "type56"]}, {"name": "Damage on Full Life Support", "types": ["attack"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Ballista Totem Support", "types": ["attack", "skillcantotem", "and"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Cast On Critical Strike Support", "types": ["attack"]}, {"name": "Slower Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Vicious Projectiles Support", "types": ["projectileattack", "type56"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Chance to Bleed Support", "types": ["attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Maim Support", "types": ["attack", "maims"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Mirage Archer Support", "types": ["skillcanmiragearcher"]}, {"name": "Withering Touch Support", "types": ["attack"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "Impale Support", "types": ["attack"]}, {"name": "Nightblade Support", "types": ["attack"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Barrage Support", "types": ["projectile", "type54", "or", "type73", "or", "projectileattack", "type56", "or", "and"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Elemental Damage with Attacks Support", "types": ["attack", "type56"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cast On Critical Strike Support", "types": ["attack"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Greater Multiple Projectiles Support", "types": ["projectile", "type54", "type56", "type73"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Vicious Projectiles Support", "types": ["projectileattack", "type56"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}], "description": "Fires multiple arrows into the air, to land in sequence after a delay, starting at the targeted location and spreading outwards in all directions. Each arrow deals damage in an area around it. Half of the arrows will land directly on targets if there are targets in their range.", "mods": ["Deals (48\u201360)% of Base Attack Damage", "Fires (17\u201321) additional Arrows"], "quality": {"phantasmal": {"mods": [{"text": "% chance to Maim on Hit", "minimum": 0.0, "maximum": 10.0}], "weight": 100.0}, "anomalous": {"mods": [{"text": "% chance to fire an additional sequence of arrows", "minimum": 0.0, "maximum": 5.0}], "weight": 50.0}, "superior": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "Fires  additional Arrows", "minimum": 0.0, "maximum": 4.0}], "weight": 20.0}}, "drop_level": 12, "name": "Rain of Arrows", "levels": [{"mana_cost": 7, "level": 1, "requirements": {"dexterity": 33, "requires_level": 12}, "fields": [{"name": "base_damage", "value": "48%"}, {"name": "fires__additional_arrows", "value": "17"}]}, {"mana_cost": 7, "level": 2, "requirements": {"dexterity": 39, "requires_level": 15}, "fields": [{"name": "base_damage", "value": "48.6%"}, {"name": "fires__additional_arrows", "value": "17"}]}, {"mana_cost": 7, "level": 3, "requirements": {"dexterity": 48, "requires_level": 19}, "fields": [{"name": "base_damage", "value": "49.3%"}, {"name": "fires__additional_arrows", "value": "17"}]}, {"mana_cost": 8, "level": 4, "requirements": {"dexterity": 56, "requires_level": 23}, "fields": [{"name": "base_damage", "value": "49.9%"}, {"name": "fires__additional_arrows", "value": "17"}]}, {"mana_cost": 8, "level": 5, "requirements": {"dexterity": 64, "requires_level": 27}, "fields": [{"name": "base_damage", "value": "50.5%"}, {"name": "fires__additional_arrows", "value": "18"}]}, {"mana_cost": 8, "level": 6, "requirements": {"dexterity": 73, "requires_level": 31}, "fields": [{"name": "base_damage", "value": "51.2%"}, {"name": "fires__additional_arrows", "value": "18"}]}, {"mana_cost": 8, "level": 7, "requirements": {"dexterity": 81, "requires_level": 35}, "fields": [{"name": "base_damage", "value": "51.8%"}, {"name": "fires__additional_arrows", "value": "18"}]}, {"mana_cost": 8, "level": 8, "requirements": {"dexterity": 88, "requires_level": 38}, "fields": [{"name": "base_damage", "value": "52.4%"}, {"name": "fires__additional_arrows", "value": "18"}]}, {"mana_cost": 9, "level": 9, "requirements": {"dexterity": 94, "requires_level": 41}, "fields": [{"name": "base_damage", "value": "53.1%"}, {"name": "fires__additional_arrows", "value": "19"}]}, {"mana_cost": 9, "level": 10, "requirements": {"dexterity": 100, "requires_level": 44}, "fields": [{"name": "base_damage", "value": "53.7%"}, {"name": "fires__additional_arrows", "value": "19"}]}, {"mana_cost": 9, "level": 11, "requirements": {"dexterity": 106, "requires_level": 47}, "fields": [{"name": "base_damage", "value": "54.3%"}, {"name": "fires__additional_arrows", "value": "19"}]}, {"mana_cost": 9, "level": 12, "requirements": {"dexterity": 113, "requires_level": 50}, "fields": [{"name": "base_damage", "value": "54.9%"}, {"name": "fires__additional_arrows", "value": "19"}]}, {"mana_cost": 9, "level": 13, "requirements": {"dexterity": 119, "requires_level": 53}, "fields": [{"name": "base_damage", "value": "55.6%"}, {"name": "fires__additional_arrows", "value": "20"}]}, {"mana_cost": 10, "level": 14, "requirements": {"dexterity": 125, "requires_level": 56}, "fields": [{"name": "base_damage", "value": "56.2%"}, {"name": "fires__additional_arrows", "value": "20"}]}, {"mana_cost": 10, "level": 15, "requirements": {"dexterity": 132, "requires_level": 59}, "fields": [{"name": "base_damage", "value": "56.8%"}, {"name": "fires__additional_arrows", "value": "20"}]}, {"mana_cost": 10, "level": 16, "requirements": {"dexterity": 138, "requires_level": 62}, "fields": [{"name": "base_damage", "value": "57.5%"}, {"name": "fires__additional_arrows", "value": "20"}]}, {"mana_cost": 10, "level": 17, "requirements": {"dexterity": 142, "requires_level": 64}, "fields": [{"name": "base_damage", "value": "58.1%"}, {"name": "fires__additional_arrows", "value": "21"}]}, {"mana_cost": 10, "level": 18, "requirements": {"dexterity": 146, "requires_level": 66}, "fields": [{"name": "base_damage", "value": "58.7%"}, {"name": "fires__additional_arrows", "value": "21"}]}, {"mana_cost": 11, "level": 19, "requirements": {"dexterity": 151, "requires_level": 68}, "fields": [{"name": "base_damage", "value": "59.4%"}, {"name": "fires__additional_arrows", "value": "21"}]}, {"mana_cost": 11, "level": 20, "requirements": {"dexterity": 155, "requires_level": 70}, "fields": [{"name": "base_damage", "value": "60%"}, {"name": "fires__additional_arrows", "value": "21"}]}, {"mana_cost": 11, "level": 21, "requirements": {"dexterity": null, "requires_level": 72}, "fields": [{"name": "base_damage", "value": "60.6%"}, {"name": "fires__additional_arrows", "value": "22"}]}, {"mana_cost": 11, "level": 22, "requirements": {"dexterity": null, "requires_level": 74}, "fields": [{"name": "base_damage", "value": "61.3%"}, {"name": "fires__additional_arrows", "value": "22"}]}, {"mana_cost": 11, "level": 23, "requirements": {"dexterity": null, "requires_level": 76}, "fields": [{"name": "base_damage", "value": "61.9%"}, {"name": "fires__additional_arrows", "value": "22"}]}, {"mana_cost": 11, "level": 24, "requirements": {"dexterity": null, "requires_level": 78}, "fields": [{"name": "base_damage", "value": "62.5%"}, {"name": "fires__additional_arrows", "value": "22"}]}, {"mana_cost": 11, "level": 25, "requirements": {"dexterity": null, "requires_level": 80}, "fields": [{"name": "base_damage", "value": "63.2%"}, {"name": "fires__additional_arrows", "value": "23"}]}, {"mana_cost": 12, "level": 26, "requirements": {"dexterity": null, "requires_level": 82}, "fields": [{"name": "base_damage", "value": "63.8%"}, {"name": "fires__additional_arrows", "value": "23"}]}, {"mana_cost": 12, "level": 27, "requirements": {"dexterity": null, "requires_level": 84}, "fields": [{"name": "base_damage", "value": "64.4%"}, {"name": "fires__additional_arrows", "value": "23"}]}, {"mana_cost": 12, "level": 28, "requirements": {"dexterity": null, "requires_level": 86}, "fields": [{"name": "base_damage", "value": "65.1%"}, {"name": "fires__additional_arrows", "value": "23"}]}, {"mana_cost": 12, "level": 29, "requirements": {"dexterity": null, "requires_level": 88}, "fields": [{"name": "base_damage", "value": "65.7%"}, {"name": "fires__additional_arrows", "value": "24"}]}, {"mana_cost": 12, "level": 30, "requirements": {"dexterity": null, "requires_level": 90}, "fields": [{"name": "base_damage", "value": "66.3%"}, {"name": "fires__additional_arrows", "value": "24"}]}, {"mana_cost": 13, "level": 31, "requirements": {"dexterity": null, "requires_level": 91}, "fields": [{"name": "base_damage", "value": "66.6%"}, {"name": "fires__additional_arrows", "value": "24"}]}, {"mana_cost": 13, "level": 32, "requirements": {"dexterity": null, "requires_level": 92}, "fields": [{"name": "base_damage", "value": "66.9%"}, {"name": "fires__additional_arrows", "value": "24"}]}, {"mana_cost": 13, "level": 33, "requirements": {"dexterity": null, "requires_level": 93}, "fields": [{"name": "base_damage", "value": "67.3%"}, {"name": "fires__additional_arrows", "value": "24"}]}, {"mana_cost": 13, "level": 34, "requirements": {"dexterity": null, "requires_level": 94}, "fields": [{"name": "base_damage", "value": "67.6%"}, {"name": "fires__additional_arrows", "value": "24"}]}, {"mana_cost": 13, "level": 35, "requirements": {"dexterity": null, "requires_level": 95}, "fields": [{"name": "base_damage", "value": "67.9%"}, {"name": "fires__additional_arrows", "value": "24"}]}, {"mana_cost": 14, "level": 36, "requirements": {"dexterity": null, "requires_level": 96}, "fields": [{"name": "base_damage", "value": "68.2%"}, {"name": "fires__additional_arrows", "value": "25"}]}, {"mana_cost": 14, "level": 37, "requirements": {"dexterity": null, "requires_level": 97}, "fields": [{"name": "base_damage", "value": "68.5%"}, {"name": "fires__additional_arrows", "value": "25"}]}, {"mana_cost": 14, "level": 38, "requirements": {"dexterity": null, "requires_level": 98}, "fields": [{"name": "base_damage", "value": "68.8%"}, {"name": "fires__additional_arrows", "value": "25"}]}, {"mana_cost": 14, "level": 39, "requirements": {"dexterity": null, "requires_level": 99}, "fields": [{"name": "base_damage", "value": "69.2%"}, {"name": "fires__additional_arrows", "value": "25"}]}, {"mana_cost": 14, "level": 40, "requirements": {"dexterity": null, "requires_level": 100}, "fields": [{"name": "base_damage", "value": "69.5%"}, {"name": "fires__additional_arrows", "value": "25"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Rain of Arrows",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    },
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "act": 1
+    }
+  },
+  "mods": [
+    "Deals (48\u201360)% of Base Attack Damage",
+    "Fires (17\u201321) additional Arrows"
+  ],
+  "vaal": true,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 33,
+        "requires_level": 12
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "48%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 39,
+        "requires_level": 15
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "48.6%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 48,
+        "requires_level": 19
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "49.3%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 56,
+        "requires_level": 23
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "49.9%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 64,
+        "requires_level": 27
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "50.5%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 73,
+        "requires_level": 31
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "51.2%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 81,
+        "requires_level": 35
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "51.8%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 88,
+        "requires_level": 38
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "52.4%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 94,
+        "requires_level": 41
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "53.1%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 100,
+        "requires_level": 44
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "53.7%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 106,
+        "requires_level": 47
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "54.3%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 113,
+        "requires_level": 50
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "54.9%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 119,
+        "requires_level": 53
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "55.6%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 125,
+        "requires_level": 56
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "56.2%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 132,
+        "requires_level": 59
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "56.8%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 138,
+        "requires_level": 62
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "57.5%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "58.1%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 146,
+        "requires_level": 66
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "58.7%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 151,
+        "requires_level": 68
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "59.4%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "60%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 72
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "60.6%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 74
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "61.3%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 76
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "61.9%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 78
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "62.5%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 80
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "63.2%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 82
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "63.8%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 84
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "64.4%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 86
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "65.1%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 88
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "65.7%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 90
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "66.3%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 91
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "66.6%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 92
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "66.9%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 93
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "67.3%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 94
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "67.6%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 95
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "67.9%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 96
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "68.2%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 97
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "68.5%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 98
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "68.8%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 99
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "69.2%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 100
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "base_damage",
+          "value": "69.5%"
+        },
+        {
+          "name": "fires__additional_arrows",
+          "value": "25"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_is_projectile [1]",
+    "is_area_damage [1]",
+    "skill_can_fire_arrows [1]",
+    "cannot_pierce [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "25% increased Rain of Arrows Damage",
+      "10% increased Rain of Arrows Attack Speed",
+      "16% increased Rain of Arrows Area of Effect",
+      "Rain of Arrows has 10% chance to fire an additional sequence of arrows"
+    ],
+    "eternal": [
+      "40% increased Rain of Arrows Damage",
+      "15% increased Rain of Arrows Attack Speed",
+      "24% increased Rain of Arrows Area of Effect",
+      "Rain of Arrows has 15% chance to fire an additional sequence of arrows"
+    ]
+  },
+  "drop_level": 12,
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Green_arrowrain.png?w=1&h=1&scale=1",
+      "name": "Emerald Rain of Arrows Effect",
+      "description": "Your Rain of Arrows glow a ghostly green"
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialRainOfArrows.png?w=2&h=2&scale=1",
+      "name": "Celestial Rain of Arrows Effect",
+      "description": "Your Rain of Arrows becomes a Celestial Effect."
+    }
+  ],
+  "description": "Fires multiple arrows into the air, to land in sequence after a delay, starting at the targeted location and spreading outwards in all directions. Each arrow deals damage in an area around it. Half of the arrows will land directly on targets if there are targets in their range.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Faster Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Lesser Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Faster Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Additional Accuracy Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Mana Leech Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Damage with Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Life Gain on Hit Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Point Blank Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Iron Grip Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Damage on Full Life Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ballista Totem Support",
+      "types": [
+        "attack",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Cast On Critical Strike Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Slower Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Vicious Projectiles Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Chance to Bleed Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Maim Support",
+      "types": [
+        "attack",
+        "maims"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Mirage Archer Support",
+      "types": [
+        "skillcanmiragearcher"
+      ]
+    },
+    {
+      "name": "Withering Touch Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Impale Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Nightblade Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Barrage Support",
+      "types": [
+        "projectile",
+        "type54",
+        "or",
+        "type73",
+        "or",
+        "projectileattack",
+        "type56",
+        "or",
+        "and"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Damage with Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cast On Critical Strike Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Greater Multiple Projectiles Support",
+      "types": [
+        "projectile",
+        "type54",
+        "type56",
+        "type73"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Vicious Projectiles Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Fires  additional Arrows",
+          "minimum": 0.0,
+          "maximum": 4.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% chance to Maim on Hit",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% chance to fire an additional sequence of arrows",
+          "minimum": 0.0,
+          "maximum": 5.0
+        }
+      ],
+      "weight": 50.0
+    }
+  }
+}

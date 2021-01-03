@@ -1,1 +1,848 @@
-{"target_types": ["any"], "acquisition": {"quest": {"act": 3, "quest_name": "Lost in Love", "classes": ["Shadow"]}, "vendor": {"vendor_name": "Yeena", "classes": ["Duelist", "Ranger", "Shadow", "Scion"]}}, "vaal": false, "tags": ["base_deal_no_damage [1]"], "type": ["spell", "buff", "chaosskill", "area", "instant", "type91", "type92", "secondwindsupport"], "enchants": {"eternal": ["Plague Bearer Buff grants +20% to Poison Damage over Time Multiplier while Infecting", "Plague Bearer deals Damage based on an additional 5% of Plague Value"], "merciless": ["Plague Bearer Buff grants +12% to Poison Damage over Time Multiplier while Infecting", "Plague Bearer deals Damage based on an additional 3% of Plague Value"]}, "mtx": [], "support": [{"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Arcane Surge Support", "types": ["spell"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "Gain an Incubating buff, adding to its Plague Value as you inflict poisons. Use the skill again to begin Infecting, dealing chaos damage over time to nearby enemies until the Plague Value is depleted. Your damage modifiers don't apply to this skill's damage. Using the skill again alternates between Incubating and Infecting.", "mods": ["Maximum Plague Value is (4000\u20131000000)", "When you inflict Poison while Incubating, adds 40% of the Expected PoisonDamage to Plague ValueWhile Infecting, deals Chaos Damage per second equal to 12% of the Plague Value when Infecting began, and loses Plague Value at the same rate+(0\u20133) to radius20% less Damage with Poison while Incubating and not at Maximum Plague Value"], "quality": {"anomalous": {"mods": [{"text": "You have % increased Movement Speed while Infecting", "minimum": 0.0, "maximum": 10.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% reduced Chaos Damage taken while Incubating", "minimum": 0.0, "maximum": 10.0}], "weight": 10.0}}, "drop_level": 24, "name": "Plague Bearer", "levels": [{"mana_cost": 6, "level": 1, "requirements": {"dexterity": 58, "requires_level": 24}, "fields": [{"name": "maximum_plague_value_is_", "value": "4000"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 7, "level": 2, "requirements": {"dexterity": 64, "requires_level": 27}, "fields": [{"name": "maximum_plague_value_is_", "value": "5903"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 7, "level": 3, "requirements": {"dexterity": 71, "requires_level": 30}, "fields": [{"name": "maximum_plague_value_is_", "value": "8655"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 8, "level": 4, "requirements": {"dexterity": 77, "requires_level": 33}, "fields": [{"name": "maximum_plague_value_is_", "value": "12616"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 8, "level": 5, "requirements": {"dexterity": 83, "requires_level": 36}, "fields": [{"name": "maximum_plague_value_is_", "value": "18299"}, {"name": "to_radius", "value": "0"}]}, {"mana_cost": 9, "level": 6, "requirements": {"dexterity": 90, "requires_level": 39}, "fields": [{"name": "maximum_plague_value_is_", "value": "26429"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 9, "level": 7, "requirements": {"dexterity": 96, "requires_level": 42}, "fields": [{"name": "maximum_plague_value_is_", "value": "38027"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 10, "level": 8, "requirements": {"dexterity": 102, "requires_level": 45}, "fields": [{"name": "maximum_plague_value_is_", "value": "54530"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 10, "level": 9, "requirements": {"dexterity": 109, "requires_level": 48}, "fields": [{"name": "maximum_plague_value_is_", "value": "77962"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 10, "level": 10, "requirements": {"dexterity": 113, "requires_level": 50}, "fields": [{"name": "maximum_plague_value_is_", "value": "98791"}, {"name": "to_radius", "value": "1"}]}, {"mana_cost": 11, "level": 11, "requirements": {"dexterity": 117, "requires_level": 52}, "fields": [{"name": "maximum_plague_value_is_", "value": "125046"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 11, "level": 12, "requirements": {"dexterity": 121, "requires_level": 54}, "fields": [{"name": "maximum_plague_value_is_", "value": "158112"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 11, "level": 13, "requirements": {"dexterity": 125, "requires_level": 56}, "fields": [{"name": "maximum_plague_value_is_", "value": "199725"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 11, "level": 14, "requirements": {"dexterity": 130, "requires_level": 58}, "fields": [{"name": "maximum_plague_value_is_", "value": "252058"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 12, "level": 15, "requirements": {"dexterity": 134, "requires_level": 60}, "fields": [{"name": "maximum_plague_value_is_", "value": "317825"}, {"name": "to_radius", "value": "2"}]}, {"mana_cost": 12, "level": 16, "requirements": {"dexterity": 138, "requires_level": 62}, "fields": [{"name": "maximum_plague_value_is_", "value": "400423"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 12, "level": 17, "requirements": {"dexterity": 142, "requires_level": 64}, "fields": [{"name": "maximum_plague_value_is_", "value": "504097"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 13, "level": 18, "requirements": {"dexterity": 146, "requires_level": 66}, "fields": [{"name": "maximum_plague_value_is_", "value": "634145"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 13, "level": 19, "requirements": {"dexterity": 151, "requires_level": 68}, "fields": [{"name": "maximum_plague_value_is_", "value": "797189"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 13, "level": 20, "requirements": {"dexterity": 155, "requires_level": 70}, "fields": [{"name": "maximum_plague_value_is_", "value": "1000000"}, {"name": "to_radius", "value": "3"}]}, {"mana_cost": 13, "level": 21, "requirements": {"dexterity": null, "requires_level": 72}, "fields": [{"name": "maximum_plague_value_is_", "value": "1100000"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 14, "level": 22, "requirements": {"dexterity": null, "requires_level": 74}, "fields": [{"name": "maximum_plague_value_is_", "value": "1180000"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 14, "level": 23, "requirements": {"dexterity": null, "requires_level": 76}, "fields": [{"name": "maximum_plague_value_is_", "value": "1245000"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 14, "level": 24, "requirements": {"dexterity": null, "requires_level": 78}, "fields": [{"name": "maximum_plague_value_is_", "value": "1300000"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 15, "level": 25, "requirements": {"dexterity": null, "requires_level": 80}, "fields": [{"name": "maximum_plague_value_is_", "value": "1350000"}, {"name": "to_radius", "value": "4"}]}, {"mana_cost": 15, "level": 26, "requirements": {"dexterity": null, "requires_level": 82}, "fields": [{"name": "maximum_plague_value_is_", "value": "1400000"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 15, "level": 27, "requirements": {"dexterity": null, "requires_level": 84}, "fields": [{"name": "maximum_plague_value_is_", "value": "1450000"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 15, "level": 28, "requirements": {"dexterity": null, "requires_level": 86}, "fields": [{"name": "maximum_plague_value_is_", "value": "1500000"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 16, "level": 29, "requirements": {"dexterity": null, "requires_level": 88}, "fields": [{"name": "maximum_plague_value_is_", "value": "1550000"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 16, "level": 30, "requirements": {"dexterity": null, "requires_level": 90}, "fields": [{"name": "maximum_plague_value_is_", "value": "1600000"}, {"name": "to_radius", "value": "5"}]}, {"mana_cost": 16, "level": 31, "requirements": {"dexterity": null, "requires_level": 91}, "fields": [{"name": "maximum_plague_value_is_", "value": "1650000"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 16, "level": 32, "requirements": {"dexterity": null, "requires_level": 92}, "fields": [{"name": "maximum_plague_value_is_", "value": "1700000"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 16, "level": 33, "requirements": {"dexterity": null, "requires_level": 93}, "fields": [{"name": "maximum_plague_value_is_", "value": "1750000"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 17, "level": 34, "requirements": {"dexterity": null, "requires_level": 94}, "fields": [{"name": "maximum_plague_value_is_", "value": "1800000"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 17, "level": 35, "requirements": {"dexterity": null, "requires_level": 95}, "fields": [{"name": "maximum_plague_value_is_", "value": "1850000"}, {"name": "to_radius", "value": "6"}]}, {"mana_cost": 17, "level": 36, "requirements": {"dexterity": null, "requires_level": 96}, "fields": [{"name": "maximum_plague_value_is_", "value": "1900000"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 17, "level": 37, "requirements": {"dexterity": null, "requires_level": 97}, "fields": [{"name": "maximum_plague_value_is_", "value": "1950000"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 17, "level": 38, "requirements": {"dexterity": null, "requires_level": 98}, "fields": [{"name": "maximum_plague_value_is_", "value": "2000000"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 17, "level": 39, "requirements": {"dexterity": null, "requires_level": 99}, "fields": [{"name": "maximum_plague_value_is_", "value": "2050000"}, {"name": "to_radius", "value": "7"}]}, {"mana_cost": 17, "level": 40, "requirements": {"dexterity": null, "requires_level": 100}, "fields": [{"name": "maximum_plague_value_is_", "value": "2000000"}, {"name": "to_radius", "value": "7"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Plague Bearer",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Yeena"
+    },
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 3
+    }
+  },
+  "mods": [
+    "Maximum Plague Value is (4000\u20131000000)",
+    "When you inflict Poison while Incubating, adds 40% of the Expected PoisonDamage to Plague ValueWhile Infecting, deals Chaos Damage per second equal to 12% of the Plague Value when Infecting began, and loses Plague Value at the same rate+(0\u20133) to radius20% less Damage with Poison while Incubating and not at Maximum Plague Value"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 58,
+        "requires_level": 24
+      },
+      "mana_cost": 6,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "4000"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 64,
+        "requires_level": 27
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "5903"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 71,
+        "requires_level": 30
+      },
+      "mana_cost": 7,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "8655"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 77,
+        "requires_level": 33
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "12616"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 83,
+        "requires_level": 36
+      },
+      "mana_cost": 8,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "18299"
+        },
+        {
+          "name": "to_radius",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 90,
+        "requires_level": 39
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "26429"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 96,
+        "requires_level": 42
+      },
+      "mana_cost": 9,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "38027"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 102,
+        "requires_level": 45
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "54530"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 109,
+        "requires_level": 48
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "77962"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 113,
+        "requires_level": 50
+      },
+      "mana_cost": 10,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "98791"
+        },
+        {
+          "name": "to_radius",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 117,
+        "requires_level": 52
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "125046"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 121,
+        "requires_level": 54
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "158112"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 125,
+        "requires_level": 56
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "199725"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 130,
+        "requires_level": 58
+      },
+      "mana_cost": 11,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "252058"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 134,
+        "requires_level": 60
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "317825"
+        },
+        {
+          "name": "to_radius",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 138,
+        "requires_level": 62
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "400423"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 12,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "504097"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 146,
+        "requires_level": 66
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "634145"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 151,
+        "requires_level": 68
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "797189"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1000000"
+        },
+        {
+          "name": "to_radius",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 72
+      },
+      "mana_cost": 13,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1100000"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 74
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1180000"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 76
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1245000"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 78
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1300000"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 80
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1350000"
+        },
+        {
+          "name": "to_radius",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 82
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1400000"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 84
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1450000"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 86
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1500000"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 88
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1550000"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 90
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1600000"
+        },
+        {
+          "name": "to_radius",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 91
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1650000"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 92
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1700000"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 93
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1750000"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 94
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1800000"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 95
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1850000"
+        },
+        {
+          "name": "to_radius",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 96
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1900000"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 97
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "1950000"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 98
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "2000000"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 99
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "2050000"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 100
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "maximum_plague_value_is_",
+          "value": "2000000"
+        },
+        {
+          "name": "to_radius",
+          "value": "7"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "Plague Bearer Buff grants +12% to Poison Damage over Time Multiplier while Infecting",
+      "Plague Bearer deals Damage based on an additional 3% of Plague Value"
+    ],
+    "eternal": [
+      "Plague Bearer Buff grants +20% to Poison Damage over Time Multiplier while Infecting",
+      "Plague Bearer deals Damage based on an additional 5% of Plague Value"
+    ]
+  },
+  "drop_level": 24,
+  "type": [
+    "spell",
+    "buff",
+    "chaosskill",
+    "area",
+    "instant",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "mtx": [],
+  "description": "Gain an Incubating buff, adding to its Plague Value as you inflict poisons. Use the skill again to begin Infecting, dealing chaos damage over time to nearby enemies until the Plague Value is depleted. Your damage modifiers don't apply to this skill's damage. Using the skill again alternates between Incubating and Infecting.",
+  "support": [
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Arcane Surge Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "any"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% reduced Chaos Damage taken while Incubating",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 10.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "You have % increased Movement Speed while Infecting",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

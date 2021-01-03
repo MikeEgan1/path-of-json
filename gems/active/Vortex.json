@@ -1,1 +1,1328 @@
-{"target_types": ["ground"], "acquisition": {"vendor": {"vendor_name": "Clarissa", "classes": ["Witch", "Templar", "Shadow", "Scion"]}}, "vaal": false, "tags": ["is_area_damage [1]"], "type": ["spell", "hit", "area", "skillcantrap", "skillcantotem", "skillcanmine", "spellcanrepeat", "coldskill", "triggerable", "duration", "chillingarea", "areaspell", "instant", "novaspell", "secondwindsupport"], "enchants": {"eternal": ["40% increased Blade Vortex Spell Damage", "40% increased Vortex Damage", "30% increased Blade Vortex Duration", "24% increased Blade Vortex Area of Effect", "Blade Vortex has +3% to Critical Strike Multiplier for each blade", "24% increased Vortex Area of Effect", "30% increased Vortex Duration", "Vortex has 45% increased Area of Effect when Cast on Frostbolt", "Vortex has 30% increased Cooldown Recovery Rate"], "merciless": ["25% increased Blade Vortex Spell Damage", "25% increased Vortex Damage", "20% increased Blade Vortex Duration", "16% increased Blade Vortex Area of Effect", "Blade Vortex has +2% to Critical Strike Multiplier for each blade", "16% increased Vortex Area of Effect", "20% increased Vortex Duration", "Vortex has 30% increased Area of Effect when Cast on Frostbolt", "Vortex has 20% increased Cooldown Recovery Rate"]}, "mtx": [{"name": "Black Hole Vortex Effect", "description": "Your Vortex becomes a stationary black hole.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/BlackholeVortex.png?w=1&h=1&scale=1"}], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Iron Will Support", "types": ["hit", "type59", "type66"]}, {"name": "Spell Totem Support", "types": ["spell", "skillcantotem", "and"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Cast on Death Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Damage Taken Support", "types": ["spell", "triggerable", "and"]}, {"name": "Cast when Stunned Support", "types": ["spell", "triggerable", "and"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Archmage Support", "types": ["hit", "spell", "and"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "An icy blast explodes around the caster, dealing cold damage to enemies, and leaving behind a whirling vortex which deals cold damage over time and chills enemies caught in it. If the caster targets near their Frostbolt projectiles, it will explode from a number of those projectiles instead, destroying them.", "mods": ["Deals (38\u2013524) to (57\u2013787) Cold Damage", "+3 seconds to Base duration", "Deals (106.5\u20131456.9) Base Cold Damage per second", "Can explode from up to 5 Frostbolt Projectiles", "(0\u201376)% increased Cooldown Recovery Rate", "20% less Area of Effect when Cast on Frostbolt", "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"], "quality": {"phantasmal": {"mods": [{"text": "% increased Damage when Cast on Frostbolt", "minimum": 0.0, "maximum": 40.0}], "weight": 100.0}, "anomalous": {"mods": [{"text": "% increased Cold Damage", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Area of Effect", "minimum": 0.0, "maximum": 10.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% increased Cooldown Recovery Rate", "minimum": 0.0, "maximum": 20.0}, {"text": "% less Skill Effect Duration", "minimum": 0.0, "maximum": 20.0}], "weight": 50.0}}, "drop_level": 28, "name": "Vortex", "levels": [{"mana_cost": 11, "maximum_damage": 57.0, "level": 1, "requirements": {"requires_level": 28, "intelligence": 67}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": ""}], "minimum_damage": 106.5}, {"mana_cost": 11, "maximum_damage": 71.0, "level": 2, "requirements": {"requires_level": 31, "intelligence": 73}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "4"}], "minimum_damage": 131.3}, {"mana_cost": 12, "maximum_damage": 87.0, "level": 3, "requirements": {"requires_level": 34, "intelligence": 79}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "8"}], "minimum_damage": 161.1}, {"mana_cost": 13, "maximum_damage": 106.0, "level": 4, "requirements": {"requires_level": 37, "intelligence": 85}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "12"}], "minimum_damage": 196.8}, {"mana_cost": 13, "maximum_damage": 129.0, "level": 5, "requirements": {"requires_level": 40, "intelligence": 92}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "16"}], "minimum_damage": 239.3}, {"mana_cost": 14, "maximum_damage": 147.0, "level": 6, "requirements": {"requires_level": 42, "intelligence": 96}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "20"}], "minimum_damage": 272.1}, {"mana_cost": 14, "maximum_damage": 167.0, "level": 7, "requirements": {"requires_level": 44, "intelligence": 100}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "24"}], "minimum_damage": 308.9}, {"mana_cost": 15, "maximum_damage": 189.0, "level": 8, "requirements": {"requires_level": 46, "intelligence": 104}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "28"}], "minimum_damage": 350.2}, {"mana_cost": 15, "maximum_damage": 214.0, "level": 9, "requirements": {"requires_level": 48, "intelligence": 109}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "32"}], "minimum_damage": 396.5}, {"mana_cost": 15, "maximum_damage": 242.0, "level": 10, "requirements": {"requires_level": 50, "intelligence": 113}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "36"}], "minimum_damage": 448.4}, {"mana_cost": 16, "maximum_damage": 274.0, "level": 11, "requirements": {"requires_level": 52, "intelligence": 117}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "40"}], "minimum_damage": 506.5}, {"mana_cost": 16, "maximum_damage": 309.0, "level": 12, "requirements": {"requires_level": 54, "intelligence": 121}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "44"}], "minimum_damage": 571.6}, {"mana_cost": 17, "maximum_damage": 348.0, "level": 13, "requirements": {"requires_level": 56, "intelligence": 125}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "48"}], "minimum_damage": 644.3}, {"mana_cost": 17, "maximum_damage": 392.0, "level": 14, "requirements": {"requires_level": 58, "intelligence": 130}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "52"}], "minimum_damage": 725.7}, {"mana_cost": 18, "maximum_damage": 441.0, "level": 15, "requirements": {"requires_level": 60, "intelligence": 134}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "56"}], "minimum_damage": 816.7}, {"mana_cost": 18, "maximum_damage": 496.0, "level": 16, "requirements": {"requires_level": 62, "intelligence": 138}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "60"}], "minimum_damage": 918.3}, {"mana_cost": 18, "maximum_damage": 557.0, "level": 17, "requirements": {"requires_level": 64, "intelligence": 142}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "64"}], "minimum_damage": 1031.7}, {"mana_cost": 19, "maximum_damage": 625.0, "level": 18, "requirements": {"requires_level": 66, "intelligence": 146}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "68"}], "minimum_damage": 1158.3}, {"mana_cost": 19, "maximum_damage": 702.0, "level": 19, "requirements": {"requires_level": 68, "intelligence": 151}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "72"}], "minimum_damage": 1299.5}, {"mana_cost": 20, "maximum_damage": 787.0, "level": 20, "requirements": {"requires_level": 70, "intelligence": 155}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "76"}], "minimum_damage": 1456.9}, {"mana_cost": 20, "maximum_damage": 882.0, "level": 21, "requirements": {"requires_level": 72, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "80"}], "minimum_damage": 1632.5}, {"mana_cost": 21, "maximum_damage": 987.0, "level": 22, "requirements": {"requires_level": 74, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "84"}], "minimum_damage": 1828.0}, {"mana_cost": 21, "maximum_damage": 1105.0, "level": 23, "requirements": {"requires_level": 76, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "88"}], "minimum_damage": 2045.9}, {"mana_cost": 21, "maximum_damage": 1236.0, "level": 24, "requirements": {"requires_level": 78, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "92"}], "minimum_damage": 2288.4}, {"mana_cost": 22, "maximum_damage": 1382.0, "level": 25, "requirements": {"requires_level": 80, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "96"}], "minimum_damage": 2558.4}, {"mana_cost": 22, "maximum_damage": 1544.0, "level": 26, "requirements": {"requires_level": 82, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "100"}], "minimum_damage": 2858.8}, {"mana_cost": 23, "maximum_damage": 1724.0, "level": 27, "requirements": {"requires_level": 84, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "104"}], "minimum_damage": 3192.9}, {"mana_cost": 23, "maximum_damage": 1925.0, "level": 28, "requirements": {"requires_level": 86, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "108"}], "minimum_damage": 3564.5}, {"mana_cost": 24, "maximum_damage": 2148.0, "level": 29, "requirements": {"requires_level": 88, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "112"}], "minimum_damage": 3977.6}, {"mana_cost": 24, "maximum_damage": 2396.0, "level": 30, "requirements": {"requires_level": 90, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "116"}], "minimum_damage": 4436.7}, {"mana_cost": 24, "maximum_damage": 2530.0, "level": 31, "requirements": {"requires_level": 91, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "120"}], "minimum_damage": 4685.1}, {"mana_cost": 25, "maximum_damage": 2671.0, "level": 32, "requirements": {"requires_level": 92, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "124"}], "minimum_damage": 4946.9}, {"mana_cost": 25, "maximum_damage": 2820.0, "level": 33, "requirements": {"requires_level": 93, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "128"}], "minimum_damage": 5222.8}, {"mana_cost": 25, "maximum_damage": 2977.0, "level": 34, "requirements": {"requires_level": 94, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "132"}], "minimum_damage": 5513.5}, {"mana_cost": 25, "maximum_damage": 3143.0, "level": 35, "requirements": {"requires_level": 95, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "136"}], "minimum_damage": 5819.9}, {"mana_cost": 25, "maximum_damage": 3317.0, "level": 36, "requirements": {"requires_level": 96, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "140"}], "minimum_damage": 6142.8}, {"mana_cost": 26, "maximum_damage": 3501.0, "level": 37, "requirements": {"requires_level": 97, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "144"}], "minimum_damage": 6483.0}, {"mana_cost": 26, "maximum_damage": 3694.0, "level": 38, "requirements": {"requires_level": 98, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "148"}], "minimum_damage": 6841.5}, {"mana_cost": 26, "maximum_damage": 3898.0, "level": 39, "requirements": {"requires_level": 99, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "152"}], "minimum_damage": 7219.1}, {"mana_cost": 26, "maximum_damage": 4113.0, "level": 40, "requirements": {"requires_level": 100, "intelligence": null}, "fields": [{"name": "%_increased_cooldown_recovery_rate", "value": "156"}], "minimum_damage": 7617.0}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Vortex",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "mods": [
+    "Deals (38\u2013524) to (57\u2013787) Cold Damage",
+    "+3 seconds to Base duration",
+    "Deals (106.5\u20131456.9) Base Cold Damage per second",
+    "Can explode from up to 5 Frostbolt Projectiles",
+    "(0\u201376)% increased Cooldown Recovery Rate",
+    "20% less Area of Effect when Cast on Frostbolt",
+    "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "minimum_damage": 106.5,
+      "requirements": {
+        "intelligence": 67,
+        "requires_level": 28
+      },
+      "mana_cost": 11,
+      "maximum_damage": 57.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "minimum_damage": 131.3,
+      "requirements": {
+        "intelligence": 73,
+        "requires_level": 31
+      },
+      "mana_cost": 11,
+      "maximum_damage": 71.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "minimum_damage": 161.1,
+      "requirements": {
+        "intelligence": 79,
+        "requires_level": 34
+      },
+      "mana_cost": 12,
+      "maximum_damage": 87.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "minimum_damage": 196.8,
+      "requirements": {
+        "intelligence": 85,
+        "requires_level": 37
+      },
+      "mana_cost": 13,
+      "maximum_damage": 106.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "minimum_damage": 239.3,
+      "requirements": {
+        "intelligence": 92,
+        "requires_level": 40
+      },
+      "mana_cost": 13,
+      "maximum_damage": 129.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "minimum_damage": 272.1,
+      "requirements": {
+        "intelligence": 96,
+        "requires_level": 42
+      },
+      "mana_cost": 14,
+      "maximum_damage": 147.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "minimum_damage": 308.9,
+      "requirements": {
+        "intelligence": 100,
+        "requires_level": 44
+      },
+      "mana_cost": 14,
+      "maximum_damage": 167.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "minimum_damage": 350.2,
+      "requirements": {
+        "intelligence": 104,
+        "requires_level": 46
+      },
+      "mana_cost": 15,
+      "maximum_damage": 189.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "minimum_damage": 396.5,
+      "requirements": {
+        "intelligence": 109,
+        "requires_level": 48
+      },
+      "mana_cost": 15,
+      "maximum_damage": 214.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "minimum_damage": 448.4,
+      "requirements": {
+        "intelligence": 113,
+        "requires_level": 50
+      },
+      "mana_cost": 15,
+      "maximum_damage": 242.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "minimum_damage": 506.5,
+      "requirements": {
+        "intelligence": 117,
+        "requires_level": 52
+      },
+      "mana_cost": 16,
+      "maximum_damage": 274.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "minimum_damage": 571.6,
+      "requirements": {
+        "intelligence": 121,
+        "requires_level": 54
+      },
+      "mana_cost": 16,
+      "maximum_damage": 309.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "minimum_damage": 644.3,
+      "requirements": {
+        "intelligence": 125,
+        "requires_level": 56
+      },
+      "mana_cost": 17,
+      "maximum_damage": 348.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "minimum_damage": 725.7,
+      "requirements": {
+        "intelligence": 130,
+        "requires_level": 58
+      },
+      "mana_cost": 17,
+      "maximum_damage": 392.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "52"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "minimum_damage": 816.7,
+      "requirements": {
+        "intelligence": 134,
+        "requires_level": 60
+      },
+      "mana_cost": 18,
+      "maximum_damage": 441.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "56"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "minimum_damage": 918.3,
+      "requirements": {
+        "intelligence": 138,
+        "requires_level": 62
+      },
+      "mana_cost": 18,
+      "maximum_damage": 496.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "minimum_damage": 1031.7,
+      "requirements": {
+        "intelligence": 142,
+        "requires_level": 64
+      },
+      "mana_cost": 18,
+      "maximum_damage": 557.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "minimum_damage": 1158.3,
+      "requirements": {
+        "intelligence": 146,
+        "requires_level": 66
+      },
+      "mana_cost": 19,
+      "maximum_damage": 625.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "68"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "minimum_damage": 1299.5,
+      "requirements": {
+        "intelligence": 151,
+        "requires_level": 68
+      },
+      "mana_cost": 19,
+      "maximum_damage": 702.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "72"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "minimum_damage": 1456.9,
+      "requirements": {
+        "intelligence": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 20,
+      "maximum_damage": 787.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "76"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "minimum_damage": 1632.5,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "mana_cost": 20,
+      "maximum_damage": 882.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "80"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "minimum_damage": 1828.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 74
+      },
+      "mana_cost": 21,
+      "maximum_damage": 987.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "84"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "minimum_damage": 2045.9,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "mana_cost": 21,
+      "maximum_damage": 1105.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "88"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "minimum_damage": 2288.4,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 78
+      },
+      "mana_cost": 21,
+      "maximum_damage": 1236.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "92"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "minimum_damage": 2558.4,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 80
+      },
+      "mana_cost": 22,
+      "maximum_damage": 1382.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "minimum_damage": 2858.8,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "mana_cost": 22,
+      "maximum_damage": 1544.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "minimum_damage": 3192.9,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 84
+      },
+      "mana_cost": 23,
+      "maximum_damage": 1724.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "104"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "minimum_damage": 3564.5,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "mana_cost": 23,
+      "maximum_damage": 1925.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "108"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "minimum_damage": 3977.6,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 88
+      },
+      "mana_cost": 24,
+      "maximum_damage": 2148.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "112"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "minimum_damage": 4436.7,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 90
+      },
+      "mana_cost": 24,
+      "maximum_damage": 2396.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "116"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "minimum_damage": 4685.1,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 91
+      },
+      "mana_cost": 24,
+      "maximum_damage": 2530.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "120"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "minimum_damage": 4946.9,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 92
+      },
+      "mana_cost": 25,
+      "maximum_damage": 2671.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "124"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "minimum_damage": 5222.8,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 93
+      },
+      "mana_cost": 25,
+      "maximum_damage": 2820.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "128"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "minimum_damage": 5513.5,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 94
+      },
+      "mana_cost": 25,
+      "maximum_damage": 2977.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "132"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "minimum_damage": 5819.9,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 95
+      },
+      "mana_cost": 25,
+      "maximum_damage": 3143.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "136"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "minimum_damage": 6142.8,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 96
+      },
+      "mana_cost": 25,
+      "maximum_damage": 3317.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "140"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "minimum_damage": 6483.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 97
+      },
+      "mana_cost": 26,
+      "maximum_damage": 3501.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "144"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "minimum_damage": 6841.5,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 98
+      },
+      "mana_cost": 26,
+      "maximum_damage": 3694.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "148"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "minimum_damage": 7219.1,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 99
+      },
+      "mana_cost": 26,
+      "maximum_damage": 3898.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "152"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "minimum_damage": 7617.0,
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 100
+      },
+      "mana_cost": 26,
+      "maximum_damage": 4113.0,
+      "fields": [
+        {
+          "name": "%_increased_cooldown_recovery_rate",
+          "value": "156"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "is_area_damage [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "25% increased Blade Vortex Spell Damage",
+      "25% increased Vortex Damage",
+      "20% increased Blade Vortex Duration",
+      "16% increased Blade Vortex Area of Effect",
+      "Blade Vortex has +2% to Critical Strike Multiplier for each blade",
+      "16% increased Vortex Area of Effect",
+      "20% increased Vortex Duration",
+      "Vortex has 30% increased Area of Effect when Cast on Frostbolt",
+      "Vortex has 20% increased Cooldown Recovery Rate"
+    ],
+    "eternal": [
+      "40% increased Blade Vortex Spell Damage",
+      "40% increased Vortex Damage",
+      "30% increased Blade Vortex Duration",
+      "24% increased Blade Vortex Area of Effect",
+      "Blade Vortex has +3% to Critical Strike Multiplier for each blade",
+      "24% increased Vortex Area of Effect",
+      "30% increased Vortex Duration",
+      "Vortex has 45% increased Area of Effect when Cast on Frostbolt",
+      "Vortex has 30% increased Cooldown Recovery Rate"
+    ]
+  },
+  "drop_level": 28,
+  "type": [
+    "spell",
+    "hit",
+    "area",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "spellcanrepeat",
+    "coldskill",
+    "triggerable",
+    "duration",
+    "chillingarea",
+    "areaspell",
+    "instant",
+    "novaspell",
+    "secondwindsupport"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/BlackholeVortex.png?w=1&h=1&scale=1",
+      "name": "Black Hole Vortex Effect",
+      "description": "Your Vortex becomes a stationary black hole."
+    }
+  ],
+  "description": "An icy blast explodes around the caster, dealing cold damage to enemies, and leaving behind a whirling vortex which deals cold damage over time and chills enemies caught in it. If the caster targets near their Frostbolt projectiles, it will explode from a number of those projectiles instead, destroying them.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Iron Will Support",
+      "types": [
+        "hit",
+        "type59",
+        "type66"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cast on Death Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Damage Taken Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Cast when Stunned Support",
+      "types": [
+        "spell",
+        "triggerable",
+        "and"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Archmage Support",
+      "types": [
+        "hit",
+        "spell",
+        "and"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0,
+          "maximum": 20.0
+        },
+        {
+          "text": "% less Skill Effect Duration",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% increased Damage when Cast on Frostbolt",
+          "minimum": 0.0,
+          "maximum": 40.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "minimum": 0.0,
+          "maximum": 10.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Cold Damage",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}

@@ -1,1 +1,1527 @@
-{"target_types": ["ground", "enemy"], "acquisition": {"vendor": {"vendor_name": "Lilly Roth (Level 1)", "classes": ["All", "Classes"]}}, "vaal": false, "tags": ["base_is_projectile [1]"], "type": ["ground", "enemy"], "enchants": {"eternal": ["Mirror Arrow and Mirror Arrow Clones deal 40% increased Damage", "Mirror Arrow and Mirror Arrow Clones have 15% increased Attack Speed", "Mirror Arrow has 30% increased Cooldown Recovery Rate"], "merciless": ["Mirror Arrow and Mirror Arrow Clones deal 25% increased Damage", "Mirror Arrow and Mirror Arrow Clones have 10% increased Attack Speed", "Mirror Arrow has 20% increased Cooldown Recovery Rate"]}, "mtx": [{"name": "Verdant Blink and Mirror Arrow Effect", "description": "Your Blink or Mirror Arrow becomes infused with rich grass and vegetation.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/VerdantBlinkMirror.png?w=1&h=1&scale=1"}, {"name": "Divine Blink and Mirror Arrow Effect", "description": "Your Blink or Mirror Arrow becomes infused with a divine glow.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/WhiteBlinkArrow.png?w=2&h=2&scale=1"}, {"name": "Spirit Blink and Mirror Arrow Effect", "description": "Your Blink or Mirror Arrow becomes infused with a spiritual glow.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/GhostBlinkArrow.png?w=2&h=2&scale=1"}, {"name": "Mystic Blink and Mirror Arrow Effect", "description": "Your Blink or Mirror Arrow becomes infused with a mystical glow.", "image": "https://web.poecdn.com/image/Art/2DItems/Effects/MysticBlinkMirrorArrow.png?w=2&h=2&scale=1"}], "support": [{"name": "Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Faster Attacks Support", "types": ["attack", "type56"]}, {"name": "Faster Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Additional Accuracy Support", "types": ["attack", "type56"]}, {"name": "Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Increased Critical Strikes Support", "types": ["hit", "attack"]}, {"name": "Increased Critical Damage Support", "types": ["hit", "attack"]}, {"name": "Knockback Support", "types": ["hit", "attack"]}, {"name": "Life Leech Support", "types": ["hit", "attack"]}, {"name": "Mana Leech Support", "types": ["attack"]}, {"name": "Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Stun Support", "types": ["hit", "attack"]}, {"name": "Trap Support", "types": ["skillcantrap"]}, {"name": "Item Rarity Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Concentrated Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Minion Damage Support", "types": ["createsminion"]}, {"name": "Increased Duration Support", "types": ["duration", "type55"]}, {"name": "Cold to Fire Support", "types": ["hit", "attack"]}, {"name": "Combustion Support", "types": ["hit", "attack"]}, {"name": "Minion Speed Support", "types": ["createsminion"]}, {"name": "Minion Life Support", "types": ["createsminion"]}, {"name": "Elemental Damage with Attacks Support", "types": ["attack", "type56"]}, {"name": "Life Gain on Hit Support", "types": ["attack", "type56"]}, {"name": "Elemental Proliferation Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Culling Strike Support", "types": ["hit", "attack"]}, {"name": "Point Blank Support", "types": ["projectileattack", "type56"]}, {"name": "Iron Grip Support", "types": ["projectileattack", "type56"]}, {"name": "Damage on Full Life Support", "types": ["attack"]}, {"name": "Blastchain Mine Support", "types": ["skillcanmine"]}, {"name": "Chance to Flee Support", "types": ["attack", "hit"]}, {"name": "Blind Support", "types": ["hit", "attack"]}, {"name": "Ballista Totem Support", "types": ["attack", "skillcantotem", "and"]}, {"name": "Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Elemental Penetration Support", "types": ["hit", "attack"]}, {"name": "Power Charge On Critical Support", "types": ["hit", "attack"]}, {"name": "Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Elemental Army Support", "types": ["createsminion"]}, {"name": "Cast On Critical Strike Support", "types": ["attack"]}, {"name": "Slower Projectiles Support", "types": ["projectile", "projectiledamage", "type54", "type56"]}, {"name": "Less Duration Support", "types": ["duration", "type55"]}, {"name": "Vicious Projectiles Support", "types": ["projectileattack", "type56"]}, {"name": "Block Chance Reduction Support", "types": ["hit", "attack"]}, {"name": "Physical to Lightning Support", "types": ["hit", "attack"]}, {"name": "Ice Bite Support", "types": ["hit", "attack"]}, {"name": "Hypothermia Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Innervate Support", "types": ["hit", "attack"]}, {"name": "Poison Support", "types": ["hit", "attack"]}, {"name": "Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Ignite Proliferation Support", "types": ["hit", "attack"]}, {"name": "Lesser Poison Support", "types": ["hit", "attack"]}, {"name": "Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Decay Support", "types": ["hit", "attack"]}, {"name": "Efficacy Support", "types": ["hit", "attack", "type59", "duration", "type55", "damageovertime"]}, {"name": "Vile Toxins Support", "types": ["hit", "attack"]}, {"name": "Maim Support", "types": ["attack", "maims"]}, {"name": "Immolate Support", "types": ["hit", "attack"]}, {"name": "Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Brutality Support", "types": ["hit", "attack"]}, {"name": "Onslaught Support", "types": ["hit", "attack"]}, {"name": "Summon Phantasm Support", "types": ["attack", "hit", "createsminion"]}, {"name": "Withering Touch Support", "types": ["attack"]}, {"name": "Bonechill Support", "types": ["attack", "hit", "nonhitchill", "chillingarea"]}, {"name": "Energy Leech Support", "types": ["hit", "attack"]}, {"name": "Impale Support", "types": ["attack"]}, {"name": "Feeding Frenzy Support", "types": ["createsminion"]}, {"name": "Predator Support", "types": ["createsminion"]}, {"name": "Meat Shield Support", "types": ["createsminion"]}, {"name": "High-Impact Mine Support", "types": ["skillcanmine"]}, {"name": "Awakened Added Fire Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Brutality Support", "types": ["hit", "attack"]}, {"name": "Awakened Burning Damage Support", "types": ["hit", "attack", "causesburning"]}, {"name": "Awakened Elemental Damage with Attacks Support", "types": ["attack", "type56"]}, {"name": "Awakened Fire Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Cold Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Cast On Critical Strike Support", "types": ["attack"]}, {"name": "Awakened Cold Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Deadly Ailments Support", "types": ["hit", "attack"]}, {"name": "Awakened Swift Affliction Support", "types": ["duration", "type55", "hit", "attack"]}, {"name": "Awakened Void Manipulation Support", "types": ["hit", "attack", "damageovertime"]}, {"name": "Awakened Vicious Projectiles Support", "types": ["projectileattack", "type56"]}, {"name": "Awakened Added Chaos Damage Support", "types": ["hit", "attack"]}, {"name": "Awakened Added Lightning Damage Support", "types": ["attack", "hit"]}, {"name": "Awakened Controlled Destruction Support", "types": ["hit", "attack", "type59"]}, {"name": "Awakened Elemental Focus Support", "types": ["hit", "attack", "causesburning", "nonhitchill"]}, {"name": "Awakened Increased Area of Effect Support", "types": ["area", "createminion", "type53"]}, {"name": "Awakened Lightning Penetration Support", "types": ["hit", "attack"]}, {"name": "Awakened Minion Damage Support", "types": ["createsminion"]}, {"name": "Awakened Unbound Ailments Support", "types": ["hit", "attack", "causeelementalstatus"]}, {"name": "Infernal Legion Support", "types": ["createsminion"]}, {"name": "Second Wind Support", "types": ["secondwindsupport"]}], "description": "Fires an arrow at the target destination. When the arrow lands, a clone is summoned. The clone is a minion that uses your bow and quiver.", "mods": ["+3 seconds to Base duration", "Minions deal (0\u2013114)% increased Damage", "(0\u201357)% increased Minion Maximum Life", "Minions deal 75% more Damage"], "quality": {"phantasmal": {"mods": [{"text": "+ Cooldown Uses", "minimum": 0.0, "maximum": 2.0}], "weight": 20.0}, "anomalous": {"mods": [{"text": "Minions have % increased Duration", "minimum": 0.0, "maximum": 20.0}], "weight": 100.0}, "superior": {"mods": [{"text": "% increased Arrow Speed", "minimum": 0.0, "maximum": 30.0}], "weight": 50.0}, "divergent": {"mods": [{"text": "% increased Minion Maximum Life", "minimum": 0.0, "maximum": 60.0}], "weight": 100.0}}, "drop_level": 10, "name": "Mirror Arrow", "levels": [{"mana_cost": 14, "level": 1, "requirements": {"dexterity": 29, "requires_level": 10}, "fields": [{"name": "minions_deal_%_increased_damage", "value": ""}, {"name": "%_increased_minion_maximum_life", "value": ""}]}, {"mana_cost": 14, "level": 2, "requirements": {"dexterity": 35, "requires_level": 13}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "6"}, {"name": "%_increased_minion_maximum_life", "value": "3"}]}, {"mana_cost": 15, "level": 3, "requirements": {"dexterity": 43, "requires_level": 17}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "12"}, {"name": "%_increased_minion_maximum_life", "value": "6"}]}, {"mana_cost": 15, "level": 4, "requirements": {"dexterity": 52, "requires_level": 21}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "18"}, {"name": "%_increased_minion_maximum_life", "value": "9"}]}, {"mana_cost": 15, "level": 5, "requirements": {"dexterity": 60, "requires_level": 25}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "24"}, {"name": "%_increased_minion_maximum_life", "value": "12"}]}, {"mana_cost": 16, "level": 6, "requirements": {"dexterity": 69, "requires_level": 29}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "30"}, {"name": "%_increased_minion_maximum_life", "value": "15"}]}, {"mana_cost": 16, "level": 7, "requirements": {"dexterity": 77, "requires_level": 33}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "36"}, {"name": "%_increased_minion_maximum_life", "value": "18"}]}, {"mana_cost": 16, "level": 8, "requirements": {"dexterity": 83, "requires_level": 36}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "42"}, {"name": "%_increased_minion_maximum_life", "value": "21"}]}, {"mana_cost": 16, "level": 9, "requirements": {"dexterity": 90, "requires_level": 39}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "48"}, {"name": "%_increased_minion_maximum_life", "value": "24"}]}, {"mana_cost": 17, "level": 10, "requirements": {"dexterity": 96, "requires_level": 42}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "54"}, {"name": "%_increased_minion_maximum_life", "value": "27"}]}, {"mana_cost": 17, "level": 11, "requirements": {"dexterity": 102, "requires_level": 45}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "60"}, {"name": "%_increased_minion_maximum_life", "value": "30"}]}, {"mana_cost": 17, "level": 12, "requirements": {"dexterity": 109, "requires_level": 48}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "66"}, {"name": "%_increased_minion_maximum_life", "value": "33"}]}, {"mana_cost": 17, "level": 13, "requirements": {"dexterity": 115, "requires_level": 51}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "72"}, {"name": "%_increased_minion_maximum_life", "value": "36"}]}, {"mana_cost": 18, "level": 14, "requirements": {"dexterity": 121, "requires_level": 54}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "78"}, {"name": "%_increased_minion_maximum_life", "value": "39"}]}, {"mana_cost": 18, "level": 15, "requirements": {"dexterity": 127, "requires_level": 57}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "84"}, {"name": "%_increased_minion_maximum_life", "value": "42"}]}, {"mana_cost": 18, "level": 16, "requirements": {"dexterity": 134, "requires_level": 60}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "90"}, {"name": "%_increased_minion_maximum_life", "value": "45"}]}, {"mana_cost": 19, "level": 17, "requirements": {"dexterity": 140, "requires_level": 63}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "96"}, {"name": "%_increased_minion_maximum_life", "value": "48"}]}, {"mana_cost": 19, "level": 18, "requirements": {"dexterity": 146, "requires_level": 66}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "102"}, {"name": "%_increased_minion_maximum_life", "value": "51"}]}, {"mana_cost": 20, "level": 19, "requirements": {"dexterity": 151, "requires_level": 68}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "108"}, {"name": "%_increased_minion_maximum_life", "value": "54"}]}, {"mana_cost": 20, "level": 20, "requirements": {"dexterity": 155, "requires_level": 70}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "114"}, {"name": "%_increased_minion_maximum_life", "value": "57"}]}, {"mana_cost": 21, "level": 21, "requirements": {"dexterity": null, "requires_level": 72}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "120"}, {"name": "%_increased_minion_maximum_life", "value": "60"}]}, {"mana_cost": 21, "level": 22, "requirements": {"dexterity": null, "requires_level": 74}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "126"}, {"name": "%_increased_minion_maximum_life", "value": "63"}]}, {"mana_cost": 22, "level": 23, "requirements": {"dexterity": null, "requires_level": 76}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "132"}, {"name": "%_increased_minion_maximum_life", "value": "66"}]}, {"mana_cost": 22, "level": 24, "requirements": {"dexterity": null, "requires_level": 78}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "138"}, {"name": "%_increased_minion_maximum_life", "value": "69"}]}, {"mana_cost": 22, "level": 25, "requirements": {"dexterity": null, "requires_level": 80}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "144"}, {"name": "%_increased_minion_maximum_life", "value": "72"}]}, {"mana_cost": 23, "level": 26, "requirements": {"dexterity": null, "requires_level": 82}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "150"}, {"name": "%_increased_minion_maximum_life", "value": "75"}]}, {"mana_cost": 23, "level": 27, "requirements": {"dexterity": null, "requires_level": 84}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "156"}, {"name": "%_increased_minion_maximum_life", "value": "78"}]}, {"mana_cost": 23, "level": 28, "requirements": {"dexterity": null, "requires_level": 86}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "162"}, {"name": "%_increased_minion_maximum_life", "value": "81"}]}, {"mana_cost": 23, "level": 29, "requirements": {"dexterity": null, "requires_level": 88}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "168"}, {"name": "%_increased_minion_maximum_life", "value": "84"}]}, {"mana_cost": 24, "level": 30, "requirements": {"dexterity": null, "requires_level": 90}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "174"}, {"name": "%_increased_minion_maximum_life", "value": "87"}]}, {"mana_cost": 24, "level": 31, "requirements": {"dexterity": null, "requires_level": 91}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "177"}, {"name": "%_increased_minion_maximum_life", "value": "89"}]}, {"mana_cost": 24, "level": 32, "requirements": {"dexterity": null, "requires_level": 92}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "180"}, {"name": "%_increased_minion_maximum_life", "value": "90"}]}, {"mana_cost": 25, "level": 33, "requirements": {"dexterity": null, "requires_level": 93}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "183"}, {"name": "%_increased_minion_maximum_life", "value": "92"}]}, {"mana_cost": 25, "level": 34, "requirements": {"dexterity": null, "requires_level": 94}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "186"}, {"name": "%_increased_minion_maximum_life", "value": "93"}]}, {"mana_cost": 25, "level": 35, "requirements": {"dexterity": null, "requires_level": 95}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "189"}, {"name": "%_increased_minion_maximum_life", "value": "95"}]}, {"mana_cost": 26, "level": 36, "requirements": {"dexterity": null, "requires_level": 96}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "192"}, {"name": "%_increased_minion_maximum_life", "value": "96"}]}, {"mana_cost": 26, "level": 37, "requirements": {"dexterity": null, "requires_level": 97}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "195"}, {"name": "%_increased_minion_maximum_life", "value": "98"}]}, {"mana_cost": 27, "level": 38, "requirements": {"dexterity": null, "requires_level": 98}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "198"}, {"name": "%_increased_minion_maximum_life", "value": "99"}]}, {"mana_cost": 27, "level": 39, "requirements": {"dexterity": null, "requires_level": 99}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "201"}, {"name": "%_increased_minion_maximum_life", "value": "101"}]}, {"mana_cost": 27, "level": 40, "requirements": {"dexterity": null, "requires_level": 100}, "fields": [{"name": "minions_deal_%_increased_damage", "value": "204"}, {"name": "%_increased_minion_maximum_life", "value": "102"}]}], "gem_class": "Active Skill Gems"}
+{
+  "name": "Mirror Arrow",
+  "gem_class": "Active Skill Gems",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "vendor_name": "Lilly Roth (Level 1)"
+    }
+  },
+  "mods": [
+    "+3 seconds to Base duration",
+    "Minions deal (0\u2013114)% increased Damage",
+    "(0\u201357)% increased Minion Maximum Life",
+    "Minions deal 75% more Damage"
+  ],
+  "vaal": false,
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "dexterity": 29,
+        "requires_level": 10
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": ""
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "dexterity": 35,
+        "requires_level": 13
+      },
+      "mana_cost": 14,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "6"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "dexterity": 43,
+        "requires_level": 17
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "12"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "dexterity": 52,
+        "requires_level": 21
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "18"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "dexterity": 60,
+        "requires_level": 25
+      },
+      "mana_cost": 15,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "24"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "dexterity": 69,
+        "requires_level": 29
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "30"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "dexterity": 77,
+        "requires_level": 33
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "36"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "dexterity": 83,
+        "requires_level": 36
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "42"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "dexterity": 90,
+        "requires_level": 39
+      },
+      "mana_cost": 16,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "48"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "dexterity": 96,
+        "requires_level": 42
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "54"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "dexterity": 102,
+        "requires_level": 45
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "60"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "dexterity": 109,
+        "requires_level": 48
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "66"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "dexterity": 115,
+        "requires_level": 51
+      },
+      "mana_cost": 17,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "72"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "dexterity": 121,
+        "requires_level": 54
+      },
+      "mana_cost": 18,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "78"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "dexterity": 127,
+        "requires_level": 57
+      },
+      "mana_cost": 18,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "84"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "dexterity": 134,
+        "requires_level": 60
+      },
+      "mana_cost": 18,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "90"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "dexterity": 140,
+        "requires_level": 63
+      },
+      "mana_cost": 19,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "96"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "dexterity": 146,
+        "requires_level": 66
+      },
+      "mana_cost": 19,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "102"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "dexterity": 151,
+        "requires_level": 68
+      },
+      "mana_cost": 20,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "108"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "54"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "dexterity": 155,
+        "requires_level": 70
+      },
+      "mana_cost": 20,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "114"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "57"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 72
+      },
+      "mana_cost": 21,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "120"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 74
+      },
+      "mana_cost": 21,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "126"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "63"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 76
+      },
+      "mana_cost": 22,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "132"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "66"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 78
+      },
+      "mana_cost": 22,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "138"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "69"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 80
+      },
+      "mana_cost": 22,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "144"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "72"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 82
+      },
+      "mana_cost": 23,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "150"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "75"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 84
+      },
+      "mana_cost": 23,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "156"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "78"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 86
+      },
+      "mana_cost": 23,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "162"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "81"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 88
+      },
+      "mana_cost": 23,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "168"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "84"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 90
+      },
+      "mana_cost": 24,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "174"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "87"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 91
+      },
+      "mana_cost": 24,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "177"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "89"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 92
+      },
+      "mana_cost": 24,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "180"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 93
+      },
+      "mana_cost": 25,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "183"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "92"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 94
+      },
+      "mana_cost": 25,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "186"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "93"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 95
+      },
+      "mana_cost": 25,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "189"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "95"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 96
+      },
+      "mana_cost": 26,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "192"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 97
+      },
+      "mana_cost": 26,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "195"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 98
+      },
+      "mana_cost": 27,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "198"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "99"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 99
+      },
+      "mana_cost": 27,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "201"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "101"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 100
+      },
+      "mana_cost": 27,
+      "fields": [
+        {
+          "name": "minions_deal_%_increased_damage",
+          "value": "204"
+        },
+        {
+          "name": "%_increased_minion_maximum_life",
+          "value": "102"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "merciless": [
+      "Mirror Arrow and Mirror Arrow Clones deal 25% increased Damage",
+      "Mirror Arrow and Mirror Arrow Clones have 10% increased Attack Speed",
+      "Mirror Arrow has 20% increased Cooldown Recovery Rate"
+    ],
+    "eternal": [
+      "Mirror Arrow and Mirror Arrow Clones deal 40% increased Damage",
+      "Mirror Arrow and Mirror Arrow Clones have 15% increased Attack Speed",
+      "Mirror Arrow has 30% increased Cooldown Recovery Rate"
+    ]
+  },
+  "drop_level": 10,
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/VerdantBlinkMirror.png?w=1&h=1&scale=1",
+      "name": "Verdant Blink and Mirror Arrow Effect",
+      "description": "Your Blink or Mirror Arrow becomes infused with rich grass and vegetation."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/WhiteBlinkArrow.png?w=2&h=2&scale=1",
+      "name": "Divine Blink and Mirror Arrow Effect",
+      "description": "Your Blink or Mirror Arrow becomes infused with a divine glow."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/GhostBlinkArrow.png?w=2&h=2&scale=1",
+      "name": "Spirit Blink and Mirror Arrow Effect",
+      "description": "Your Blink or Mirror Arrow becomes infused with a spiritual glow."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/MysticBlinkMirrorArrow.png?w=2&h=2&scale=1",
+      "name": "Mystic Blink and Mirror Arrow Effect",
+      "description": "Your Blink or Mirror Arrow becomes infused with a mystical glow."
+    }
+  ],
+  "description": "Fires an arrow at the target destination. When the arrow lands, a clone is summoned. The clone is a minion that uses your bow and quiver.",
+  "support": [
+    {
+      "name": "Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Faster Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Faster Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Additional Accuracy Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Increased Critical Strikes Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Increased Critical Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Knockback Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Life Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Mana Leech Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Stun Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Trap Support",
+      "types": [
+        "skillcantrap"
+      ]
+    },
+    {
+      "name": "Item Rarity Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Minion Damage Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Increased Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Cold to Fire Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Combustion Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Minion Speed Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Minion Life Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Elemental Damage with Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Life Gain on Hit Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Elemental Proliferation Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Culling Strike Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Point Blank Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Iron Grip Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Damage on Full Life Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Blastchain Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Chance to Flee Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Blind Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ballista Totem Support",
+      "types": [
+        "attack",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Power Charge On Critical Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Elemental Army Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Cast On Critical Strike Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Slower Projectiles Support",
+      "types": [
+        "projectile",
+        "projectiledamage",
+        "type54",
+        "type56"
+      ]
+    },
+    {
+      "name": "Less Duration Support",
+      "types": [
+        "duration",
+        "type55"
+      ]
+    },
+    {
+      "name": "Vicious Projectiles Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Block Chance Reduction Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Physical to Lightning Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Ice Bite Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Hypothermia Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Innervate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Ignite Proliferation Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Lesser Poison Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Decay Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Efficacy Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59",
+        "duration",
+        "type55",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Vile Toxins Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Maim Support",
+      "types": [
+        "attack",
+        "maims"
+      ]
+    },
+    {
+      "name": "Immolate Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Onslaught Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Summon Phantasm Support",
+      "types": [
+        "attack",
+        "hit",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Withering Touch Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Bonechill Support",
+      "types": [
+        "attack",
+        "hit",
+        "nonhitchill",
+        "chillingarea"
+      ]
+    },
+    {
+      "name": "Energy Leech Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Impale Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Feeding Frenzy Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Predator Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Meat Shield Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "High-Impact Mine Support",
+      "types": [
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Awakened Added Fire Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Brutality Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Burning Damage Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Damage with Attacks Support",
+      "types": [
+        "attack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Fire Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Cold Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Cast On Critical Strike Support",
+      "types": [
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Cold Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Deadly Ailments Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Swift Affliction Support",
+      "types": [
+        "duration",
+        "type55",
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Void Manipulation Support",
+      "types": [
+        "hit",
+        "attack",
+        "damageovertime"
+      ]
+    },
+    {
+      "name": "Awakened Vicious Projectiles Support",
+      "types": [
+        "projectileattack",
+        "type56"
+      ]
+    },
+    {
+      "name": "Awakened Added Chaos Damage Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Added Lightning Damage Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
+      "name": "Awakened Controlled Destruction Support",
+      "types": [
+        "hit",
+        "attack",
+        "type59"
+      ]
+    },
+    {
+      "name": "Awakened Elemental Focus Support",
+      "types": [
+        "hit",
+        "attack",
+        "causesburning",
+        "nonhitchill"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Awakened Lightning Penetration Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
+    },
+    {
+      "name": "Awakened Minion Damage Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Awakened Unbound Ailments Support",
+      "types": [
+        "hit",
+        "attack",
+        "causeelementalstatus"
+      ]
+    },
+    {
+      "name": "Infernal Legion Support",
+      "types": [
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Minion Maximum Life",
+          "minimum": 0.0,
+          "maximum": 60.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "+ Cooldown Uses",
+          "minimum": 0.0,
+          "maximum": 2.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Arrow Speed",
+          "minimum": 0.0,
+          "maximum": 30.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Minions have % increased Duration",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ],
+      "weight": 100.0
+    }
+  }
+}
