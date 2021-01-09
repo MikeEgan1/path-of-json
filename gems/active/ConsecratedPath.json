@@ -1,23 +1,611 @@
 {
-  "name": "Consecrated Path",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Attack Speed",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Templar"
-      ],
-      "act": 3
+    "phantasmal": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Consecrated Ground Area",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased teleport range",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "consecrated-path",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 42,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "150%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 31,
+        "strength": 46,
+        "intelligence": 32
+      },
+      "fields": [
+        {
+          "value": "151.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 34,
+        "strength": 50,
+        "intelligence": 35
+      },
+      "fields": [
+        {
+          "value": "153.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 37,
+        "strength": 54,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "155.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 58,
+        "intelligence": 40
+      },
+      "fields": [
+        {
+          "value": "157.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "strength": 60,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "159%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "160.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 46,
+        "strength": 66,
+        "intelligence": 46
+      },
+      "fields": [
+        {
+          "value": "162.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "164.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "strength": 71,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "value": "166.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "168%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "strength": 76,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "169.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 79,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "171.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 82,
+        "intelligence": 57
+      },
+      "fields": [
+        {
+          "value": "173.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "175.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "strength": 87,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "177%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "178.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 92,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "180.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 95,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "182.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "184.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "186%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "187.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "189.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "191.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "193.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "195%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "196.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "198.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "200.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "202.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "203.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "204.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "204.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "205.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "206.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "207.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "208.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "209.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "210.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "211.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (150\u2013184.3)% of Base Attack Damage",
     "50% of Physical Damage Converted to Fire Damage",
@@ -25,590 +613,46 @@
     "Deals up to 20% more Damage to closer targets"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150%"
-        }
-      ]
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Templar"
+      ],
+      "act": 3
     },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 46,
-        "intelligence": 32,
-        "requires_level": 31
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "151.8%"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 50,
-        "intelligence": 35,
-        "requires_level": 34
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "153.6%"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 54,
-        "intelligence": 37,
-        "requires_level": 37
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "155.4%"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "157.3%"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 42,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "159%"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "160.8%"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 46,
-        "requires_level": 46
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "162.6%"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "164.4%"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 71,
-        "intelligence": 49,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "166.3%"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "168%"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 76,
-        "intelligence": 53,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "169.8%"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "171.6%"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 82,
-        "intelligence": 57,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "173.4%"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "175.3%"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 87,
-        "intelligence": 60,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "177%"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.8%"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 92,
-        "intelligence": 64,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.6%"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 95,
-        "intelligence": 66,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.4%"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "184.3%"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186%"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "187.8%"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "189.6%"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "191.4%"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "193.3%"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "195%"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "196.8%"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "198.6%"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "200.4%"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "202.3%"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "203.1%"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "204.1%"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "204.9%"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "205.9%"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "206.8%"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "207.6%"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "208.6%"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "209.4%"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "210.4%"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "211.3%"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
     }
+  },
+  "type": [
+    "ground"
   ],
   "tags": [
     "is_area_damage [1]",
     "visual_hit_effect_elemental_is_holy [1]"
   ],
   "enchants": {
-    "merciless": [
-      "Consecrated Path deals 25% increased Damage",
-      "Consecrated Path has 10% increased teleport range",
-      "Consecrated Path has 16% increased Area of Effect"
-    ],
     "eternal": [
       "Consecrated Path deals 40% increased Damage",
       "Consecrated Path has 15% increased teleport range",
       "Consecrated Path has 24% increased Area of Effect"
+    ],
+    "merciless": [
+      "Consecrated Path deals 25% increased Damage",
+      "Consecrated Path has 10% increased teleport range",
+      "Consecrated Path has 16% increased Area of Effect"
     ]
   },
-  "drop_level": 28,
-  "type": [
-    "ground"
-  ],
-  "mtx": [],
-  "description": "Slams the ground at a targeted location. If an enemy is near where you target, you'll teleport to it from a short distance away, slam, and create an area of consecrated ground. Can't be supported by Multistrike, and requires a Sword, Axe, Mace, Sceptre, Staff or Unarmed.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1285,49 +1329,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased teleport range",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% increased Consecrated Ground Area",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Attack Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Consecrated Path",
+  "description": "Slams the ground at a targeted location. If an enemy is near where you target, you'll teleport to it from a short distance away, slam, and create an area of consecrated ground. Can't be supported by Multistrike, and requires a Sword, Axe, Mace, Sceptre, Staff or Unarmed."
 }

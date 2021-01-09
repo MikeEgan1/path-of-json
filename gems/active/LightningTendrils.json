@@ -1,16 +1,706 @@
 {
-  "name": "Lightning Tendrils",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
+    "phantasmal": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "Deals % of Damage",
+          "minimum": 60.0
+        },
+        {
+          "maximum": 200.0,
+          "text": "Stronger Pulses deal % more Damage with Hits and Ailments",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Lightning Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": null,
+  "slug": "lightning-tendrils",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 1,
+      "maximum_damage": 4.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 1,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 1,
+      "maximum_damage": 5.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 2,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 1,
+      "maximum_damage": 7.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 1,
+      "maximum_damage": 9.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 7,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 2,
+      "maximum_damage": 14.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 11,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 2,
+      "maximum_damage": 21.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 2,
+      "maximum_damage": 29.0,
+      "minimum_damage": 2.0,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 2,
+      "maximum_damage": 39.0,
+      "minimum_damage": 2.0,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 2,
+      "maximum_damage": 53.0,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 69.0,
+      "minimum_damage": 4.0,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 91.0,
+      "minimum_damage": 5.0,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 118.0,
+      "minimum_damage": 6.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 151.0,
+      "minimum_damage": 8.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 194.0,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 247.0,
+      "minimum_damage": 13.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 314.0,
+      "minimum_damage": 17.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 397.0,
+      "minimum_damage": 21.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 500.0,
+      "minimum_damage": 26.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 593.0,
+      "minimum_damage": 31.0,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 703.0,
+      "minimum_damage": 37.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 787.0,
+      "minimum_damage": 41.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 881.0,
+      "minimum_damage": 46.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 984.0,
+      "minimum_damage": 52.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1100.0,
+      "minimum_damage": 58.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1228.0,
+      "minimum_damage": 65.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1371.0,
+      "minimum_damage": 72.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1529.0,
+      "minimum_damage": 80.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1705.0,
+      "minimum_damage": 90.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1901.0,
+      "minimum_damage": 100.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2118.0,
+      "minimum_damage": 111.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2235.0,
+      "minimum_damage": 118.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2358.0,
+      "minimum_damage": 124.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2489.0,
+      "minimum_damage": 131.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2626.0,
+      "minimum_damage": 138.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2770.0,
+      "minimum_damage": 146.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2922.0,
+      "minimum_damage": 154.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 3082.0,
+      "minimum_damage": 162.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 3250.0,
+      "minimum_damage": 171.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 3428.0,
+      "minimum_damage": 180.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 3615.0,
+      "minimum_damage": 190.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (1\u201337) to (4\u2013703) Lightning Damage",
+    "+(0\u20137) to radius",
+    "Stronger Pulses deal 50% more Damage with Hits and Ailments",
+    "Releases a Stronger Pulse every 4 Pulses"
+  ],
+  "vaal": false,
+  "target_types": [],
+  "mtx": [],
+  "acquisition": {
     "quest": {
       "quest_name": "Enemy at the Gate",
       "classes": [
@@ -19,679 +709,36 @@
         "Scion"
       ],
       "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "Deals (1\u201337) to (4\u2013703) Lightning Damage",
-    "+(0\u20137) to radius",
-    "Stronger Pulses deal 50% more Damage with Hits and Ailments",
-    "Releases a Stronger Pulse every 4 Pulses"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 1,
-      "maximum_damage": 4.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 1,
-      "maximum_damage": 5.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 1,
-      "maximum_damage": 7.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 1,
-      "maximum_damage": 9.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 2,
-      "maximum_damage": 14.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 2,
-      "maximum_damage": 21.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 2.0,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 2,
-      "maximum_damage": 29.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 2.0,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 2,
-      "maximum_damage": 39.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 3.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 2,
-      "maximum_damage": 53.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 4.0,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 3,
-      "maximum_damage": 69.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 5.0,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 3,
-      "maximum_damage": 91.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 6.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 3,
-      "maximum_damage": 118.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 8.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 3,
-      "maximum_damage": 151.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 10.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 3,
-      "maximum_damage": 194.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 13.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 4,
-      "maximum_damage": 247.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 17.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 4,
-      "maximum_damage": 314.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 21.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 4,
-      "maximum_damage": 397.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 26.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 4,
-      "maximum_damage": 500.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 31.0,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 4,
-      "maximum_damage": 593.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 37.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 5,
-      "maximum_damage": 703.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 41.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 5,
-      "maximum_damage": 787.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 46.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 5,
-      "maximum_damage": 881.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 52.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 5,
-      "maximum_damage": 984.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 58.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1100.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 65.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1228.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 72.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1371.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 80.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1529.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 90.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1705.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 100.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1901.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 111.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2118.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 118.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2235.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 124.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2358.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 131.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2489.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 138.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2626.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 146.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2770.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 154.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2922.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 162.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 6,
-      "maximum_damage": 3082.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 171.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 6,
-      "maximum_damage": 3250.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 180.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 6,
-      "maximum_damage": 3428.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 190.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 6,
-      "maximum_damage": 3615.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    }
+  "type": [
+    "1"
   ],
   "tags": [
     "is_area_damage [1]",
     "skill_can_add_multiple_charges_per_action [1]"
   ],
   "enchants": {
-    "merciless": [
-      "25% increased Lightning Tendrils Damage",
-      "16% increased Lightning Tendrils Area of Effect",
-      "40% increased Lightning Tendrils Critical Strike Chance"
-    ],
     "eternal": [
       "40% increased Lightning Tendrils Damage",
       "24% increased Lightning Tendrils Area of Effect",
       "60% increased Lightning Tendrils Critical Strike Chance"
+    ],
+    "merciless": [
+      "25% increased Lightning Tendrils Damage",
+      "16% increased Lightning Tendrils Area of Effect",
+      "40% increased Lightning Tendrils Critical Strike Chance"
     ]
   },
-  "drop_level": null,
-  "type": [
-    "1"
-  ],
-  "mtx": [],
-  "description": "While you channel this skill, it releases pulses of electrical energy, dealing lightning damage in a semicircular area in front of you.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1218,52 +1265,6 @@
       ]
     }
   ],
-  "target_types": [],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Deals % of Damage",
-          "minimum": 60.0,
-          "maximum": 100.0
-        },
-        {
-          "text": "Stronger Pulses deal % more Damage with Hits and Ailments",
-          "minimum": 0.0,
-          "maximum": 200.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Lightning Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Lightning Tendrils",
+  "description": "While you channel this skill, it releases pulses of electrical energy, dealing lightning damage in a semicircular area in front of you."
 }

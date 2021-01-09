@@ -1,25 +1,521 @@
 {
-  "name": "Divine Ire",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased beam width",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Templar",
-        "Scion"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% of Physical Damage Converted to Cold Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "divine-ire",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 3,
+      "maximum_damage": 25.0,
+      "minimum_damage": 17.0,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 29,
+        "intelligence": 42
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 30.0,
+      "minimum_damage": 20.0,
+      "requirements": {
+        "requires_level": 31,
+        "strength": 32,
+        "intelligence": 46
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 35.0,
+      "minimum_damage": 24.0,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 35,
+        "intelligence": 50
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 42.0,
+      "minimum_damage": 28.0,
+      "requirements": {
+        "requires_level": 37,
+        "strength": 37,
+        "intelligence": 54
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 49.0,
+      "minimum_damage": 33.0,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 40,
+        "intelligence": 58
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 54.0,
+      "minimum_damage": 36.0,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 42,
+        "intelligence": 60
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 60.0,
+      "minimum_damage": 40.0,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 44,
+        "intelligence": 63
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 67.0,
+      "minimum_damage": 45.0,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 46,
+        "intelligence": 66
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 74.0,
+      "minimum_damage": 49.0,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 48,
+        "intelligence": 68
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 82.0,
+      "minimum_damage": 54.0,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 49,
+        "intelligence": 71
+      },
+      "fields": [],
+      "level": 10
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 90.0,
+      "minimum_damage": 60.0,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 51,
+        "intelligence": 74
+      },
+      "fields": [],
+      "level": 11
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 99.0,
+      "minimum_damage": 66.0,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 53,
+        "intelligence": 76
+      },
+      "fields": [],
+      "level": 12
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 109.0,
+      "minimum_damage": 73.0,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 55,
+        "intelligence": 79
+      },
+      "fields": [],
+      "level": 13
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 120.0,
+      "minimum_damage": 80.0,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 57,
+        "intelligence": 82
+      },
+      "fields": [],
+      "level": 14
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 132.0,
+      "minimum_damage": 88.0,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 59,
+        "intelligence": 84
+      },
+      "fields": [],
+      "level": 15
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 145.0,
+      "minimum_damage": 97.0,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 60,
+        "intelligence": 87
+      },
+      "fields": [],
+      "level": 16
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 160.0,
+      "minimum_damage": 106.0,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "intelligence": 90
+      },
+      "fields": [],
+      "level": 17
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 175.0,
+      "minimum_damage": 117.0,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 64,
+        "intelligence": 92
+      },
+      "fields": [],
+      "level": 18
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 192.0,
+      "minimum_damage": 128.0,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 66,
+        "intelligence": 95
+      },
+      "fields": [],
+      "level": 19
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 210.0,
+      "minimum_damage": 140.0,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "intelligence": 98
+      },
+      "fields": [],
+      "level": 20
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 230.0,
+      "minimum_damage": 153.0,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 21
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 252.0,
+      "minimum_damage": 168.0,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 22
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 275.0,
+      "minimum_damage": 184.0,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 23
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 301.0,
+      "minimum_damage": 201.0,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 24
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 329.0,
+      "minimum_damage": 219.0,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 25
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 359.0,
+      "minimum_damage": 239.0,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 26
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 391.0,
+      "minimum_damage": 261.0,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 27
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 427.0,
+      "minimum_damage": 285.0,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 28
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 465.0,
+      "minimum_damage": 310.0,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 29
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 507.0,
+      "minimum_damage": 338.0,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 30
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 529.0,
+      "minimum_damage": 353.0,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 31
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 553.0,
+      "minimum_damage": 368.0,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 32
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 577.0,
+      "minimum_damage": 384.0,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 33
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 602.0,
+      "minimum_damage": 401.0,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 34
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 628.0,
+      "minimum_damage": 418.0,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 35
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 655.0,
+      "minimum_damage": 437.0,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 36
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 683.0,
+      "minimum_damage": 455.0,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 37
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 713.0,
+      "minimum_damage": 475.0,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 38
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 743.0,
+      "minimum_damage": 495.0,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 39
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 775.0,
+      "minimum_damage": 517.0,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (17\u2013140) to (25\u2013210) Physical Damage",
     "50% of Physical Damage Converted to Lightning Damage",
@@ -31,505 +527,33 @@
     "Gains an additional Stage when Hitting a Rare or Unique Enemy"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [],
+  "mtx": [
     {
-      "level": 1,
-      "minimum_damage": 17.0,
-      "requirements": {
-        "strength": 29,
-        "intelligence": 42,
-        "requires_level": 28
-      },
-      "mana_cost": 3,
-      "maximum_damage": 25.0,
-      "fields": []
-    },
-    {
-      "level": 2,
-      "minimum_damage": 20.0,
-      "requirements": {
-        "strength": 32,
-        "intelligence": 46,
-        "requires_level": 31
-      },
-      "mana_cost": 3,
-      "maximum_damage": 30.0,
-      "fields": []
-    },
-    {
-      "level": 3,
-      "minimum_damage": 24.0,
-      "requirements": {
-        "strength": 35,
-        "intelligence": 50,
-        "requires_level": 34
-      },
-      "mana_cost": 3,
-      "maximum_damage": 35.0,
-      "fields": []
-    },
-    {
-      "level": 4,
-      "minimum_damage": 28.0,
-      "requirements": {
-        "strength": 37,
-        "intelligence": 54,
-        "requires_level": 37
-      },
-      "mana_cost": 3,
-      "maximum_damage": 42.0,
-      "fields": []
-    },
-    {
-      "level": 5,
-      "minimum_damage": 33.0,
-      "requirements": {
-        "strength": 40,
-        "intelligence": 58,
-        "requires_level": 40
-      },
-      "mana_cost": 3,
-      "maximum_damage": 49.0,
-      "fields": []
-    },
-    {
-      "level": 6,
-      "minimum_damage": 36.0,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 60,
-        "requires_level": 42
-      },
-      "mana_cost": 3,
-      "maximum_damage": 54.0,
-      "fields": []
-    },
-    {
-      "level": 7,
-      "minimum_damage": 40.0,
-      "requirements": {
-        "strength": 44,
-        "intelligence": 63,
-        "requires_level": 44
-      },
-      "mana_cost": 3,
-      "maximum_damage": 60.0,
-      "fields": []
-    },
-    {
-      "level": 8,
-      "minimum_damage": 45.0,
-      "requirements": {
-        "strength": 46,
-        "intelligence": 66,
-        "requires_level": 46
-      },
-      "mana_cost": 3,
-      "maximum_damage": 67.0,
-      "fields": []
-    },
-    {
-      "level": 9,
-      "minimum_damage": 49.0,
-      "requirements": {
-        "strength": 48,
-        "intelligence": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 4,
-      "maximum_damage": 74.0,
-      "fields": []
-    },
-    {
-      "level": 10,
-      "minimum_damage": 54.0,
-      "requirements": {
-        "strength": 49,
-        "intelligence": 71,
-        "requires_level": 50
-      },
-      "mana_cost": 4,
-      "maximum_damage": 82.0,
-      "fields": []
-    },
-    {
-      "level": 11,
-      "minimum_damage": 60.0,
-      "requirements": {
-        "strength": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 4,
-      "maximum_damage": 90.0,
-      "fields": []
-    },
-    {
-      "level": 12,
-      "minimum_damage": 66.0,
-      "requirements": {
-        "strength": 53,
-        "intelligence": 76,
-        "requires_level": 54
-      },
-      "mana_cost": 4,
-      "maximum_damage": 99.0,
-      "fields": []
-    },
-    {
-      "level": 13,
-      "minimum_damage": 73.0,
-      "requirements": {
-        "strength": 55,
-        "intelligence": 79,
-        "requires_level": 56
-      },
-      "mana_cost": 4,
-      "maximum_damage": 109.0,
-      "fields": []
-    },
-    {
-      "level": 14,
-      "minimum_damage": 80.0,
-      "requirements": {
-        "strength": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "mana_cost": 4,
-      "maximum_damage": 120.0,
-      "fields": []
-    },
-    {
-      "level": 15,
-      "minimum_damage": 88.0,
-      "requirements": {
-        "strength": 59,
-        "intelligence": 84,
-        "requires_level": 60
-      },
-      "mana_cost": 4,
-      "maximum_damage": 132.0,
-      "fields": []
-    },
-    {
-      "level": 16,
-      "minimum_damage": 97.0,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 87,
-        "requires_level": 62
-      },
-      "mana_cost": 4,
-      "maximum_damage": 145.0,
-      "fields": []
-    },
-    {
-      "level": 17,
-      "minimum_damage": 106.0,
-      "requirements": {
-        "strength": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 4,
-      "maximum_damage": 160.0,
-      "fields": []
-    },
-    {
-      "level": 18,
-      "minimum_damage": 117.0,
-      "requirements": {
-        "strength": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "mana_cost": 4,
-      "maximum_damage": 175.0,
-      "fields": []
-    },
-    {
-      "level": 19,
-      "minimum_damage": 128.0,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "mana_cost": 5,
-      "maximum_damage": 192.0,
-      "fields": []
-    },
-    {
-      "level": 20,
-      "minimum_damage": 140.0,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 5,
-      "maximum_damage": 210.0,
-      "fields": []
-    },
-    {
-      "level": 21,
-      "minimum_damage": 153.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 5,
-      "maximum_damage": 230.0,
-      "fields": []
-    },
-    {
-      "level": 22,
-      "minimum_damage": 168.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 5,
-      "maximum_damage": 252.0,
-      "fields": []
-    },
-    {
-      "level": 23,
-      "minimum_damage": 184.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 5,
-      "maximum_damage": 275.0,
-      "fields": []
-    },
-    {
-      "level": 24,
-      "minimum_damage": 201.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 5,
-      "maximum_damage": 301.0,
-      "fields": []
-    },
-    {
-      "level": 25,
-      "minimum_damage": 219.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 5,
-      "maximum_damage": 329.0,
-      "fields": []
-    },
-    {
-      "level": 26,
-      "minimum_damage": 239.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 5,
-      "maximum_damage": 359.0,
-      "fields": []
-    },
-    {
-      "level": 27,
-      "minimum_damage": 261.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 5,
-      "maximum_damage": 391.0,
-      "fields": []
-    },
-    {
-      "level": 28,
-      "minimum_damage": 285.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 6,
-      "maximum_damage": 427.0,
-      "fields": []
-    },
-    {
-      "level": 29,
-      "minimum_damage": 310.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 6,
-      "maximum_damage": 465.0,
-      "fields": []
-    },
-    {
-      "level": 30,
-      "minimum_damage": 338.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 6,
-      "maximum_damage": 507.0,
-      "fields": []
-    },
-    {
-      "level": 31,
-      "minimum_damage": 353.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 6,
-      "maximum_damage": 529.0,
-      "fields": []
-    },
-    {
-      "level": 32,
-      "minimum_damage": 368.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 6,
-      "maximum_damage": 553.0,
-      "fields": []
-    },
-    {
-      "level": 33,
-      "minimum_damage": 384.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 6,
-      "maximum_damage": 577.0,
-      "fields": []
-    },
-    {
-      "level": 34,
-      "minimum_damage": 401.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 6,
-      "maximum_damage": 602.0,
-      "fields": []
-    },
-    {
-      "level": 35,
-      "minimum_damage": 418.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 6,
-      "maximum_damage": 628.0,
-      "fields": []
-    },
-    {
-      "level": 36,
-      "minimum_damage": 437.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 6,
-      "maximum_damage": 655.0,
-      "fields": []
-    },
-    {
-      "level": 37,
-      "minimum_damage": 455.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 6,
-      "maximum_damage": 683.0,
-      "fields": []
-    },
-    {
-      "level": 38,
-      "minimum_damage": 475.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 6,
-      "maximum_damage": 713.0,
-      "fields": []
-    },
-    {
-      "level": 39,
-      "minimum_damage": 495.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 6,
-      "maximum_damage": 743.0,
-      "fields": []
-    },
-    {
-      "level": 40,
-      "minimum_damage": 517.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 6,
-      "maximum_damage": 775.0,
-      "fields": []
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/AutomatonDivineIre.png?w=2&h=2&scale=1",
+      "name": "Automaton Divine Ire Effect",
+      "description": "Your Divine Ire becomes an Automaton Effect."
     }
   ],
-  "tags": [
-    "visual_hit_effect_elemental_is_holy [1]",
-    "skill_can_add_multiple_charges_per_action [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Divine Ire deals 25% increased Damage",
-      "Divine Ire's beam has 10% increased width",
-      "Divine Ire Damages an additional nearby Enemy when gaining Stages"
-    ],
-    "eternal": [
-      "Divine Ire deals 40% increased Damage",
-      "Divine Ire's beam has 15% increased width",
-      "Divine Ire Damages 2 additional nearby Enemies when gaining Stages"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Templar",
+        "Scion"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
   },
-  "drop_level": 28,
   "type": [
     "spell",
     "area",
@@ -540,14 +564,22 @@
     "areaspell",
     "physicalskill"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/AutomatonDivineIre.png?w=2&h=2&scale=1",
-      "name": "Automaton Divine Ire Effect",
-      "description": "Your Divine Ire becomes an Automaton Effect."
-    }
+  "tags": [
+    "visual_hit_effect_elemental_is_holy [1]",
+    "skill_can_add_multiple_charges_per_action [1]"
   ],
-  "description": "Channelling draws in energy around you to repeatedly build up stages, damaging a number of nearby enemies when you do so. Release to unleash a powerful burst of energy in a beam in front of you.",
+  "enchants": {
+    "eternal": [
+      "Divine Ire deals 40% increased Damage",
+      "Divine Ire's beam has 15% increased width",
+      "Divine Ire Damages 2 additional nearby Enemies when gaining Stages"
+    ],
+    "merciless": [
+      "Divine Ire deals 25% increased Damage",
+      "Divine Ire's beam has 10% increased width",
+      "Divine Ire Damages an additional nearby Enemy when gaining Stages"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1074,37 +1106,6 @@
       ]
     }
   ],
-  "target_types": [],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% of Physical Damage Converted to Cold Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased beam width",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Divine Ire",
+  "description": "Channelling draws in energy around you to repeatedly build up stages, damaging a number of nearby enemies when you do so. Release to unleash a powerful burst of energy in a beam in front of you."
 }

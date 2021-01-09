@@ -1,6 +1,933 @@
 {
-  "name": "Spirit Offering",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Minions gain +% to all Elemental Resistances",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 12,
+  "slug": "spirit-offering",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "20",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "20",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 15,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "20",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "21",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 19,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "21",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "21",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 23,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "21",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "22",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "22",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "22",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "22",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "23",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 35,
+        "intelligence": 81
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "23",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "23",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "23",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "24",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 41,
+        "intelligence": 94
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "24",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "24",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "24",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "25",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 47,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "25",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "25",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "25",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "26",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 53,
+        "intelligence": 119
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "26",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "26",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "26",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "27",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 59,
+        "intelligence": 132
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "27",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "27",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "27",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "28",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "28",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "28",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "28",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "29",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "29",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "29",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "29",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "30",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "30",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "30",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "30",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "31",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "31",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "31",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "31",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "32",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "32",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "32",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "32",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "33",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "33",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "33",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "33",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "34",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "34",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "34",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "34",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "35",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "34",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "35",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "35",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "35",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "35",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "35",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "35",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "36",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "35",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "36",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "36",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "36",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "36",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "36",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "36",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "37",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "36",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "37",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "grants_minions_+%_to_chaos_resistance"
+        },
+        {
+          "value": "37",
+          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage"
+        },
+        {
+          "value": "37",
+          "name": "minions_gain_+%_to_all_elemental_resistances"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "+5 seconds to Base duration",
+    "Additional 1 seconds Base Duration per extra corpse Consumed",
+    "Grants Minions +(20\u201330)% to Chaos Resistance",
+    "Minions gain (20\u201329)% of their Physical Damage as Extra Chaos Damage",
+    "Minions gain +(20\u201330)% to all Elemental Resistances"
+  ],
+  "vaal": false,
+  "target_types": [
+    "corpse"
+  ],
+  "mtx": [],
   "acquisition": {
     "vendor": {
       "classes": [
@@ -11,910 +938,6 @@
       "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "+5 seconds to Base duration",
-    "Additional 1 seconds Base Duration per extra corpse Consumed",
-    "Grants Minions +(20\u201330)% to Chaos Resistance",
-    "Minions gain (20\u201329)% of their Physical Damage as Extra Chaos Damage",
-    "Minions gain +(20\u201330)% to all Elemental Resistances"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "20"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "20"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "21"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "20"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "21"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "21"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "22"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "21"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "22"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "22"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "23"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "22"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "23"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "23"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "24"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "23"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "24"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "24"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "25"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "24"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "25"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "25"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "26"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "25"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "26"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "26"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "27"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "26"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "27"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "27"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "28"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "27"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "28"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "28"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "29"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "28"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "29"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "29"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "30"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "29"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "30"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "30"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "31"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "30"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "31"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "31"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "32"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "31"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "32"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "32"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "33"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "32"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "33"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "33"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "34"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "33"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "34"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "34"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "35"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "34"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "35"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "34"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "35"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "35"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "35"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "35"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "36"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "35"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "36"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "35"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "36"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "36"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "36"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "36"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "37"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "36"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "37"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "36"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "grants_minions_+%_to_chaos_resistance",
-          "value": "37"
-        },
-        {
-          "name": "minions_gain_%_of_their_physical_damage_as_extra_chaos_damage",
-          "value": "37"
-        },
-        {
-          "name": "minions_gain_+%_to_all_elemental_resistances",
-          "value": "37"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "30% increased Spirit Offering Duration",
-      "Spirit Offering grants +8% of Physical Damage as Extra Chaos Damage"
-    ],
-    "eternal": [
-      "45% increased Spirit Offering Duration",
-      "Spirit Offering grants +12% of Physical Damage as Extra Chaos Damage"
-    ]
-  },
-  "drop_level": 12,
   "type": [
     "spell",
     "buff",
@@ -927,8 +950,19 @@
     "spellcancascade",
     "chaosskill"
   ],
-  "mtx": [],
-  "description": "Consumes a corpse, granting extra chaos damage, elemental resistances and chaos resistance to your minions. The skill consumes other nearby corpses, increasing the duration for each corpse consumed.",
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "45% increased Spirit Offering Duration",
+      "Spirit Offering grants +12% of Physical Damage as Extra Chaos Damage"
+    ],
+    "merciless": [
+      "30% increased Spirit Offering Duration",
+      "Spirit Offering grants +8% of Physical Damage as Extra Chaos Damage"
+    ]
+  },
   "support": [
     {
       "name": "Trap Support",
@@ -1022,39 +1056,6 @@
       ]
     }
   ],
-  "target_types": [
-    "corpse"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Minions gain +% to all Elemental Resistances",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Spirit Offering",
+  "description": "Consumes a corpse, granting extra chaos damage, elemental resistances and chaos resistance to your minions. The skill consumes other nearby corpses, increasing the duration for each corpse consumed."
 }

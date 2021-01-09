@@ -1,24 +1,881 @@
 {
-  "name": "Explosive Trap",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Burning Damage",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Shadow"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% of Physical Damage Converted to Cold Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "explosive-trap",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "maximum_damage": 6.0,
+      "minimum_damage": 4.0,
+      "requirements": {
+        "requires_level": 1,
+        "dexterity": 6,
+        "intelligence": 4
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 7.0,
+      "minimum_damage": 5.0,
+      "requirements": {
+        "requires_level": 2,
+        "dexterity": 7,
+        "intelligence": 5
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 10.0,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 10,
+        "intelligence": 7
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 15.0,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "requires_level": 7,
+        "dexterity": 14,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 21.0,
+      "minimum_damage": 14.0,
+      "requirements": {
+        "requires_level": 11,
+        "dexterity": 19,
+        "intelligence": 13
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 31.0,
+      "minimum_damage": 20.0,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 26,
+        "intelligence": 18
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 40.0,
+      "minimum_damage": 26.0,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 31,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 51.0,
+      "minimum_damage": 34.0,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 37,
+        "intelligence": 25
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 64.0,
+      "minimum_damage": 43.0,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 42,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 79.0,
+      "minimum_damage": 53.0,
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 47,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 98.0,
+      "minimum_damage": 65.0,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 53,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 120.0,
+      "minimum_damage": 80.0,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 58,
+        "intelligence": 40
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 145.0,
+      "minimum_damage": 97.0,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 176.0,
+      "minimum_damage": 117.0,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 211.0,
+      "minimum_damage": 141.0,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 253.0,
+      "minimum_damage": 169.0,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 79,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 302.0,
+      "minimum_damage": 202.0,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 360.0,
+      "minimum_damage": 240.0,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 409.0,
+      "minimum_damage": 273.0,
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 94,
+        "intelligence": 65
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 464.0,
+      "minimum_damage": 309.0,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 505.0,
+      "minimum_damage": 336.0,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 548.0,
+      "minimum_damage": 366.0,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 595.0,
+      "minimum_damage": 397.0,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 646.0,
+      "minimum_damage": 431.0,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 701.0,
+      "minimum_damage": 467.0,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 760.0,
+      "minimum_damage": 507.0,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 824.0,
+      "minimum_damage": 549.0,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 893.0,
+      "minimum_damage": 595.0,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 967.0,
+      "minimum_damage": 644.0,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1046.0,
+      "minimum_damage": 698.0,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1088.0,
+      "minimum_damage": 726.0,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1132.0,
+      "minimum_damage": 755.0,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1177.0,
+      "minimum_damage": 785.0,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 1224.0,
+      "minimum_damage": 816.0,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 1273.0,
+      "minimum_damage": 849.0,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 1324.0,
+      "minimum_damage": 882.0,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 1376.0,
+      "minimum_damage": 917.0,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 1431.0,
+      "minimum_damage": 954.0,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 1487.0,
+      "minimum_damage": 991.0,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 1546.0,
+      "minimum_damage": 1030.0,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "causes__smaller_explosions"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Trap lasts 4 seconds",
     "Deals (4\u2013309) to (6\u2013464) Physical Damage",
@@ -27,847 +884,31 @@
     "+(0\u20136) to radius"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 4.0,
-      "requirements": {
-        "dexterity": 6,
-        "intelligence": 4,
-        "requires_level": 1
-      },
-      "mana_cost": 6,
-      "maximum_damage": 6.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
+  "target_types": [
+    "enemy",
+    "ground"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "minimum_damage": 5.0,
-      "requirements": {
-        "dexterity": 7,
-        "intelligence": 5,
-        "requires_level": 2
-      },
-      "mana_cost": 6,
-      "maximum_damage": 7.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 7.0,
-      "requirements": {
-        "dexterity": 10,
-        "intelligence": 7,
-        "requires_level": 4
-      },
-      "mana_cost": 7,
-      "maximum_damage": 10.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 10.0,
-      "requirements": {
-        "dexterity": 14,
-        "intelligence": 10,
-        "requires_level": 7
-      },
-      "mana_cost": 8,
-      "maximum_damage": 15.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 14.0,
-      "requirements": {
-        "dexterity": 19,
-        "intelligence": 13,
-        "requires_level": 11
-      },
-      "mana_cost": 9,
-      "maximum_damage": 21.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 20.0,
-      "requirements": {
-        "dexterity": 26,
-        "intelligence": 18,
-        "requires_level": 16
-      },
-      "mana_cost": 10,
-      "maximum_damage": 31.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "5"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 26.0,
-      "requirements": {
-        "dexterity": 31,
-        "intelligence": 22,
-        "requires_level": 20
-      },
-      "mana_cost": 11,
-      "maximum_damage": 40.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "5"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 34.0,
-      "requirements": {
-        "dexterity": 37,
-        "intelligence": 25,
-        "requires_level": 24
-      },
-      "mana_cost": 12,
-      "maximum_damage": 51.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "5"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 43.0,
-      "requirements": {
-        "dexterity": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "mana_cost": 13,
-      "maximum_damage": 64.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "5"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 53.0,
-      "requirements": {
-        "dexterity": 47,
-        "intelligence": 33,
-        "requires_level": 32
-      },
-      "mana_cost": 14,
-      "maximum_damage": 79.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "5"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 65.0,
-      "requirements": {
-        "dexterity": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "mana_cost": 14,
-      "maximum_damage": 98.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "6"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 80.0,
-      "requirements": {
-        "dexterity": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "mana_cost": 15,
-      "maximum_damage": 120.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "6"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 97.0,
-      "requirements": {
-        "dexterity": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "mana_cost": 16,
-      "maximum_damage": 145.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "6"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 117.0,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "mana_cost": 16,
-      "maximum_damage": 176.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "6"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 141.0,
-      "requirements": {
-        "dexterity": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "mana_cost": 17,
-      "maximum_damage": 211.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "6"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 169.0,
-      "requirements": {
-        "dexterity": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "mana_cost": 18,
-      "maximum_damage": 253.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "7"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 202.0,
-      "requirements": {
-        "dexterity": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "maximum_damage": 302.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "7"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 240.0,
-      "requirements": {
-        "dexterity": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "mana_cost": 19,
-      "maximum_damage": 360.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "7"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 273.0,
-      "requirements": {
-        "dexterity": 94,
-        "intelligence": 65,
-        "requires_level": 67
-      },
-      "mana_cost": 19,
-      "maximum_damage": 409.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "7"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 309.0,
-      "requirements": {
-        "dexterity": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 20,
-      "maximum_damage": 464.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "7"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 336.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "maximum_damage": 505.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "8"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 366.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 21,
-      "maximum_damage": 548.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "8"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 397.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 21,
-      "maximum_damage": 595.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "8"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 431.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 21,
-      "maximum_damage": 646.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "8"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 467.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 22,
-      "maximum_damage": 701.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "8"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 507.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 23,
-      "maximum_damage": 760.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "9"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 549.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 23,
-      "maximum_damage": 824.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "9"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 595.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 23,
-      "maximum_damage": 893.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "9"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 644.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 24,
-      "maximum_damage": 967.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "9"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 698.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1046.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "9"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 726.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1088.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "9"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 755.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1132.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 785.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1177.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 816.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 26,
-      "maximum_damage": 1224.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 849.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 27,
-      "maximum_damage": 1273.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 882.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 27,
-      "maximum_damage": 1324.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 917.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 27,
-      "maximum_damage": 1376.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 954.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 28,
-      "maximum_damage": 1431.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 991.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 28,
-      "maximum_damage": 1487.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 1030.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 29,
-      "maximum_damage": 1546.0,
-      "fields": [
-        {
-          "name": "causes__smaller_explosions",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
     }
+  },
+  "type": [
+    "1"
   ],
   "tags": [
     "is_area_damage [1]",
@@ -875,23 +916,17 @@
     "base_skill_show_average_damage_instead_of_dps [1]"
   ],
   "enchants": {
-    "merciless": [
-      "Explosive Trap deals 25% increased Damage",
-      "Explosive Trap has 16% increased Area of Effect",
-      "Explosive Trap causes an additional smaller explosion"
-    ],
     "eternal": [
       "Explosive Trap deals 40% increased Damage",
       "Explosive Trap has 24% increased Area of Effect",
       "Explosive Trap causes 2 additional smaller explosions"
+    ],
+    "merciless": [
+      "Explosive Trap deals 25% increased Damage",
+      "Explosive Trap has 16% increased Area of Effect",
+      "Explosive Trap causes an additional smaller explosion"
     ]
   },
-  "drop_level": null,
-  "type": [
-    "1"
-  ],
-  "mtx": [],
-  "description": "Throws a trap that creates a large explosion when triggered, dealing spell damage in an area. A number of smaller explosions occur around this area in quick succession after the first.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1414,40 +1449,6 @@
       ]
     }
   ],
-  "target_types": [
-    "enemy",
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% of Physical Damage Converted to Cold Damage",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Burning Damage",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Explosive Trap",
+  "description": "Throws a trap that creates a large explosion when triggered, dealing spell damage in an area. A number of smaller explosions occur around this area in quick succession after the first."
 }

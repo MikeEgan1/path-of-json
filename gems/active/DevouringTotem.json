@@ -1,19 +1,761 @@
 {
-  "name": "Devouring Totem",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Witch",
-        "Templar",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "% increased Totem Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased totem life",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Totem Placement speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "devouring-totem",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 4,
+        "strength": 16
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "9",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 6,
+        "strength": 20
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "12",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 9,
+        "strength": 27
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "14",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 12,
+        "strength": 33
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "17",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 41
+      },
+      "fields": [
+        {
+          "value": "61",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "19",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 50
+      },
+      "fields": [
+        {
+          "value": "70",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "22",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "79",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "24",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "value": "90",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "27",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "value": "102",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "29",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "115",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "32",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "129",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "34",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "144",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "37",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "157",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "40",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "173",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "42",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 55,
+        "strength": 123
+      },
+      "fields": [
+        {
+          "value": "191",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "45",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "211",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "47",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 61,
+        "strength": 136
+      },
+      "fields": [
+        {
+          "value": "231",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "50",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "253",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "53",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 148
+      },
+      "fields": [
+        {
+          "value": "275",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "56",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "299",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "59",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "325",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "62",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "352",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "66",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "382",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "69",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "413",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "73",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 47,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "447",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "76",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "483",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "80",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 49,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "522",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "84",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 50,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "563",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "88",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 50,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "606",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "92",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 51,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "652",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "96",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 51,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "677",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "98",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "701",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "100",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "727",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "102",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "753",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "104",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 53,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "781",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "106",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 53,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "808",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "108",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 53,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "837",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "110",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 54,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "866",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "112",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 54,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "897",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "114",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 54,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "927",
+          "name": "leeches__life_to_you_for_each_corpse_consumed"
+        },
+        {
+          "value": "116",
+          "name": "leeches__mana_to_you_for_each_corpse_consumed"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Summons a Totem which uses this Skill",
     "Totem lasts 8 seconds",
@@ -21,748 +763,8 @@
     "Leeches (9\u201359) Mana to you for each corpse Consumed"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "30"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 20,
-        "requires_level": 6
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "39"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 27,
-        "requires_level": 9
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "45"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "53"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "61"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "70"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "79"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "90"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "102"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "115"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "129"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "144"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "157"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "173"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 123,
-        "requires_level": 55
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "191"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "211"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 136,
-        "requires_level": 61
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "231"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "253"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "275"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "299"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "59"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "325"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "352"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "382"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "69"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "413"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "73"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 47,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "447"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "76"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "483"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "80"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 49,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "522"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 50,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "563"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "88"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 50,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "606"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 51,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "652"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "96"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 51,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "677"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "98"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "701"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "727"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "102"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "753"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "104"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 53,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "781"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "106"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 53,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "808"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "108"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 53,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "837"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "110"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 54,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "866"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "112"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 54,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "897"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "114"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 54,
-      "fields": [
-        {
-          "name": "leeches__life_to_you_for_each_corpse_consumed",
-          "value": "927"
-        },
-        {
-          "name": "leeches__mana_to_you_for_each_corpse_consumed",
-          "value": "116"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_skill_is_totemified [1]",
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Devouring Totem has 40% Chance to Consume an additional corpse",
-      "24% increased Devouring Totem Leech per second"
-    ],
-    "eternal": [
-      "Devouring Totem has 60% Chance to Consume an additional corpse",
-      "36% increased Devouring Totem Leech per second"
-    ]
-  },
-  "drop_level": 4,
-  "type": [
-    "spell",
-    "skillcantrap",
-    "skillcanmine",
-    "totem"
+  "target_types": [
+    "corpse"
   ],
   "mtx": [
     {
@@ -801,7 +803,39 @@
       "description": "Your Spell or Ballista totem becomes a Pylon of Pain."
     }
   ],
-  "description": "Summons a totem that can consume nearby corpses. If you are hurt, it will destroy a corpse to leech life to you.",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Witch",
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "skillcantrap",
+    "skillcanmine",
+    "totem"
+  ],
+  "tags": [
+    "base_skill_is_totemified [1]",
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Devouring Totem has 60% Chance to Consume an additional corpse",
+      "36% increased Devouring Totem Leech per second"
+    ],
+    "merciless": [
+      "Devouring Totem has 40% Chance to Consume an additional corpse",
+      "24% increased Devouring Totem Leech per second"
+    ]
+  },
   "support": [
     {
       "name": "Trap Support",
@@ -834,39 +868,6 @@
       ]
     }
   ],
-  "target_types": [
-    "corpse"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Totem Placement speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased totem life",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Totem Duration",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Devouring Totem",
+  "description": "Summons a totem that can consume nearby corpses. If you are hurt, it will destroy a corpse to leech life to you."
 }

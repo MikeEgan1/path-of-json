@@ -1,18 +1,561 @@
 {
-  "name": "Flicker Strike",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "% chance to gain a Frenzy Charge on Hit",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased teleport range",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "flicker-strike",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 10,
+        "dexterity": 29
+      },
+      "fields": [
+        {
+          "value": "142.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 13,
+        "dexterity": 35
+      },
+      "fields": [
+        {
+          "value": "143.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 17,
+        "dexterity": 43
+      },
+      "fields": [
+        {
+          "value": "144.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 21,
+        "dexterity": 52
+      },
+      "fields": [
+        {
+          "value": "146.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 25,
+        "dexterity": 60
+      },
+      "fields": [
+        {
+          "value": "147.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 29,
+        "dexterity": 69
+      },
+      "fields": [
+        {
+          "value": "149%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": 77
+      },
+      "fields": [
+        {
+          "value": "150.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "151.7%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": 90
+      },
+      "fields": [
+        {
+          "value": "153.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 96
+      },
+      "fields": [
+        {
+          "value": "154.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": 102
+      },
+      "fields": [
+        {
+          "value": "155.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "157.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 51,
+        "dexterity": 115
+      },
+      "fields": [
+        {
+          "value": "158.5%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 121
+      },
+      "fields": [
+        {
+          "value": "159.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 57,
+        "dexterity": 127
+      },
+      "fields": [
+        {
+          "value": "161.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "162.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 63,
+        "dexterity": 140
+      },
+      "fields": [
+        {
+          "value": "163.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "165.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "166.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "168%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "169.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "170.7%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "172.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "173.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "174.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "176.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "177.5%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "178.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "180.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "181.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "182.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "182.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "183.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "184.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "185%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "185.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "186.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "187%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "187.7%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "188.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (142.2\u2013168)% of Base Attack Damage",
     "10% increased Attack Speed per Frenzy Charge",
@@ -21,547 +564,7 @@
     "+3 seconds to Base duration"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 29,
-        "requires_level": 10
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "142.2%"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 35,
-        "requires_level": 13
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "143.6%"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 43,
-        "requires_level": 17
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "144.9%"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 52,
-        "requires_level": 21
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "146.3%"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 60,
-        "requires_level": 25
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.6%"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 69,
-        "requires_level": 29
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "149%"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 77,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150.4%"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "151.7%"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 90,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "153.1%"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 96,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "154.4%"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 102,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "155.8%"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "157.1%"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 115,
-        "requires_level": 51
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "158.5%"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 121,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "159.9%"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 127,
-        "requires_level": 57
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "161.2%"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "162.6%"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 140,
-        "requires_level": 63
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "163.9%"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "165.3%"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "166.6%"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "168%"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "169.4%"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "170.7%"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "172.1%"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "173.4%"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "174.8%"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "176.1%"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "177.5%"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.9%"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.2%"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "181.6%"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.3%"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.9%"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "183.6%"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "184.3%"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "185%"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "185.6%"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186.3%"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "187%"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "187.7%"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "188.4%"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "ignores_proximity_shield [1]",
-    "base_skill_show_average_damage_instead_of_dps [1]",
-    "melee_defer_damage_prediction [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Flicker Strike Damage",
-      "Flicker Strike has 20% increased Cooldown Recovery Rate",
-      "6% increased Flicker Strike Damage per Frenzy Charge"
-    ],
-    "eternal": [
-      "40% increased Flicker Strike Damage",
-      "Flicker Strike has 30% increased Cooldown Recovery Rate",
-      "9% increased Flicker Strike Damage per Frenzy Charge"
-    ]
-  },
-  "drop_level": 10,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -582,7 +585,39 @@
       "description": "Your Flicker Strike becomes a bloody mist."
     }
   ],
-  "description": "Teleports the character to a nearby monster and attacks with a melee weapon. If no specific monster is targeted, one is picked at random. Grants a buff that increases movement speed for a duration. The cooldown can be bypassed by expending a Frenzy Charge.",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "ignores_proximity_shield [1]",
+    "base_skill_show_average_damage_instead_of_dps [1]",
+    "melee_defer_damage_prediction [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Flicker Strike Damage",
+      "Flicker Strike has 30% increased Cooldown Recovery Rate",
+      "9% increased Flicker Strike Damage per Frenzy Charge"
+    ],
+    "merciless": [
+      "25% increased Flicker Strike Damage",
+      "Flicker Strike has 20% increased Cooldown Recovery Rate",
+      "6% increased Flicker Strike Damage per Frenzy Charge"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1243,40 +1278,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased teleport range",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% chance to gain a Frenzy Charge on Hit",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Flicker Strike",
+  "description": "Teleports the character to a nearby monster and attacks with a melee weapon. If no specific monster is targeted, one is picked at random. Grants a buff that increases movement speed for a duration. The cooldown can be bypassed by expending a Frenzy Charge."
 }

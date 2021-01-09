@@ -1,731 +1,729 @@
 {
-  "name": "Rejuvenation Totem",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "% increased Totem Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Aura Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased effect of Aura",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "rejuvenation-totem",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 4,
+        "strength": 16
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "6.4",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 6,
+        "strength": 20
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "8.7",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 9,
+        "strength": 27
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "12.4",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 12,
+        "strength": 33
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "16",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "strength": 41
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "21",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "strength": 50
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "26.3",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "32.3",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "39.4",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "46.1",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "53.7",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "61.8",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "72.8",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "82.7",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "92.7",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 55,
+        "strength": 123
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "102.9",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "114",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 61,
+        "strength": 136
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "123",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "135.6",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "strength": 148
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "149",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "162.2",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "168.6",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "177",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "182.1",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "191.2",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "200.7",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "206",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "217.4",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "228",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "241.2",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "253.4",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "260.1",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "266.8",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "273.5",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "280.2",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "286.8",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "293.5",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "300.2",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "306.9",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "313.6",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "320.3",
+          "name": "regenerate_._life_per_second"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Summons a Totem which uses this Skill",
     "Totem lasts 8 seconds",
     "Regenerate (6.4\u2013162.2) Life per second"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "9"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "6.4"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 20,
-        "requires_level": 6
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "9"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "8.7"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 27,
-        "requires_level": 9
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "10"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "12.4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 33,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "11"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "13"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "14"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "26.3"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "16"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "32.3"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "17"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "39.4"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "18"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "46.1"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "20"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "53.7"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "21"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "61.8"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "23"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "72.8"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "24"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "82.7"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "25"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "92.7"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 123,
-        "requires_level": 55
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "26"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "102.9"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "27"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "114"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 136,
-        "requires_level": 61
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "28"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "123"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "29"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "135.6"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "31"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "149"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "32"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "162.2"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "32"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "168.6"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "33"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "177"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "34"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "182.1"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "34"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "191.2"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "35"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "200.7"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "36"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "206"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "36"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "217.4"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "37"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "228"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "38"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "241.2"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "39"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "253.4"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "39"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "260.1"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "39"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "266.8"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "40"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "273.5"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "40"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "280.2"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "40"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "286.8"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "41"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "293.5"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "41"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "300.2"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "41"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "306.9"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "42"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "313.6"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "42"
-        },
-        {
-          "name": "regenerate_._life_per_second",
-          "value": "320.3"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_skill_is_totemified [1]",
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Gain 10% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration",
-      "30% increased Rejuvenation Totem Aura Effect"
-    ],
-    "eternal": [
-      "Gain 15% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration",
-      "45% increased Rejuvenation Totem Aura Effect"
-    ]
-  },
-  "drop_level": 4,
-  "type": [
-    "spell",
-    "buff",
-    "area",
-    "manacostreserved",
-    "type27",
-    "skillcantrap",
-    "skillcanmine",
-    "totem",
-    "aura",
-    "areaspell"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -764,7 +762,43 @@
       "description": "Your Spell or Ballista totem becomes a Pylon of Pain."
     }
   ],
-  "description": "Summons a totem that has an aura which regenerates life for you and your nearby allies.",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "buff",
+    "area",
+    "manacostreserved",
+    "type27",
+    "skillcantrap",
+    "skillcanmine",
+    "totem",
+    "aura",
+    "areaspell"
+  ],
+  "tags": [
+    "base_skill_is_totemified [1]",
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Gain 15% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration",
+      "45% increased Rejuvenation Totem Aura Effect"
+    ],
+    "merciless": [
+      "Gain 10% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration",
+      "30% increased Rejuvenation Totem Aura Effect"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -803,39 +837,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased effect of Aura",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Aura Area of Effect",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Totem Duration",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Rejuvenation Totem",
+  "description": "Summons a totem that has an aura which regenerates life for you and your nearby allies."
 }

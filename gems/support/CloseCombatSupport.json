@@ -1,47 +1,737 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Close Combat Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 18,
+        "strength": 14,
+        "dexterity": 21
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills deal % increased Melee Damage"
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "40"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "20"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 22,
+        "strength": 17,
+        "dexterity": 24
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 40.0,
-          "text": "% increased Effect of Combat Rush granted by Supported Skills"
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "41"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "20"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 26,
+        "strength": 19,
+        "dexterity": 28
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "% increased Damage to Close Range Enemies"
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "42"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "20"
         }
-      ],
-      "weight": 100.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 29,
+        "strength": 21,
+        "dexterity": 31
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "43"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 23,
+        "dexterity": 34
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "44"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 35,
+        "strength": 25,
+        "dexterity": 37
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "45"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 38,
+        "strength": 27,
+        "dexterity": 40
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "46"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 41,
+        "strength": 29,
+        "dexterity": 42
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "47"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 31,
+        "dexterity": 45
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "48"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 47,
+        "strength": 33,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "49"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 35,
+        "dexterity": 51
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "50"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 53,
+        "strength": 37,
+        "dexterity": 54
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "51"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 39,
+        "dexterity": 57
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "52"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 40,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "53"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 42,
+        "dexterity": 60
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "54"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 43,
+        "dexterity": 62
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "55"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 44,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "56"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 46,
+        "dexterity": 66
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "57"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 47,
+        "dexterity": 68
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "58"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 48,
+        "dexterity": 70
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "59"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "60"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "61"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "62"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "63"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "64"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "65"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "66"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "67"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "68"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "69"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "70"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "71"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "72"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "73"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "74"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "75"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "76"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "77"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "78"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
+          "value": "79"
+        },
+        {
+          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
+          "value": "29"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "close-combat-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills deal up to (40\u201359)% more Melee Damage to Enemies, based on proximity",
     "Supported Skills grant Combat Rush on HitCombat Rush lasts 2 seconds or until you use a Travel SkillCombat Rush grants (20\u201324)% more Attack and Cast Speed to Travel Skills that are not Supported by Close CombatSupported Skills can only be used with Axes or Swords"
   ],
-  "tags": [
-    "supported_by_slashing [1]"
-  ],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports melee attack skills. Cannot support skills which create minions.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -55,16 +745,19 @@
       "vendor_name": "Yeena"
     },
     "quest": {
+      "act": 2,
       "classes": [
         "Marauder",
         "Duelist",
         "Ranger"
       ],
-      "quest_name": "Sharp and Cruel",
-      "act": 2
+      "quest_name": "Sharp and Cruel"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -683,732 +1376,40 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Close Combat Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports melee attack skills. Cannot support skills which create minions.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "40"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "20"
+          "maximum": 10.0,
+          "text": "Supported Skills deal % increased Melee Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 18,
-        "dexterity": 21,
-        "strength": 14
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "41"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "20"
+          "maximum": 40.0,
+          "text": "% increased Effect of Combat Rush granted by Supported Skills",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 22,
-        "dexterity": 24,
-        "strength": 17
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "42"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "20"
+          "maximum": 20.0,
+          "text": "% increased Damage to Close Range Enemies",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 26,
-        "dexterity": 28,
-        "strength": 19
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "43"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "20"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 29,
-        "dexterity": 31,
-        "strength": 21
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "44"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "21"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 32,
-        "dexterity": 34,
-        "strength": 23
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "45"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "21"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 35,
-        "dexterity": 37,
-        "strength": 25
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "46"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "21"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 38,
-        "dexterity": 40,
-        "strength": 27
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "47"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "21"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 41,
-        "dexterity": 42,
-        "strength": 29
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "48"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "22"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 44,
-        "dexterity": 45,
-        "strength": 31
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "49"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "22"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 47,
-        "dexterity": 48,
-        "strength": 33
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "50"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "22"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 50,
-        "dexterity": 51,
-        "strength": 35
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "51"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "22"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 53,
-        "dexterity": 54,
-        "strength": 37
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "52"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "23"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 56,
-        "dexterity": 57,
-        "strength": 39
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "53"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "23"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 58,
-        "dexterity": 58,
-        "strength": 40
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "54"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "23"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 60,
-        "dexterity": 60,
-        "strength": 42
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "55"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "23"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 62,
-        "dexterity": 62,
-        "strength": 43
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "56"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "24"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 64,
-        "dexterity": 64,
-        "strength": 44
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "57"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "24"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 66,
-        "dexterity": 66,
-        "strength": 46
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "58"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "24"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 68,
-        "dexterity": 68,
-        "strength": 47
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "59"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "24"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "dexterity": 70,
-        "strength": 48
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "60"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "25"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "61"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "25"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "62"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "25"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "63"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "25"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "64"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "26"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "65"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "26"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "66"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "26"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "67"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "26"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "68"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "27"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "69"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "27"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "70"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "27"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "71"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "27"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "72"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "28"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "73"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "28"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "74"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "28"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "75"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "28"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "76"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "29"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "77"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "29"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "78"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "29"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_deal_up_to_%_more_melee_damage_to_enemies,_based_on_proximity",
-          "value": "79"
-        },
-        {
-          "name": "combat_rush_grants_%_more_attack_and_cast_speed_to_travel_skills_that_are_not_supported_by_close_combat",
-          "value": "29"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "dexterity": null,
-        "strength": null
-      }
+      "weight": 100.0
     }
+  },
+  "drop_level": null,
+  "tags": [
+    "supported_by_slashing [1]"
   ]
 }

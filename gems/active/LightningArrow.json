@@ -1,23 +1,1091 @@
 {
-  "name": "Lightning Arrow",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Ranger"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to Hit an additional Enemy",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to Shock enemies",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% of Physical Damage Converted to Lightning Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "lightning-arrow",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 33
+      },
+      "fields": [
+        {
+          "value": "110%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1, 13",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "100",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 15,
+        "dexterity": 39
+      },
+      "fields": [
+        {
+          "value": "111.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1, 16",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "11",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "105",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 19,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "value": "112.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1, 20",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "110",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 23,
+        "dexterity": 56
+      },
+      "fields": [
+        {
+          "value": "113.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1, 25",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "13",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "115",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 27,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "value": "115.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2, 31",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "120",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 73
+      },
+      "fields": [
+        {
+          "value": "116.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2, 37",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "15",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "125",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 35,
+        "dexterity": 81
+      },
+      "fields": [
+        {
+          "value": "117.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2, 45",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "130",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 38,
+        "dexterity": 88
+      },
+      "fields": [
+        {
+          "value": "118.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3, 51",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "17",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "135",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 41,
+        "dexterity": 94
+      },
+      "fields": [
+        {
+          "value": "120.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3, 59",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "140",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "121.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3, 66",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "19",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "145",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 47,
+        "dexterity": 106
+      },
+      "fields": [
+        {
+          "value": "122.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4, 75",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "150",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 113
+      },
+      "fields": [
+        {
+          "value": "123.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4, 85",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "155",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 53,
+        "dexterity": 119
+      },
+      "fields": [
+        {
+          "value": "125.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5, 95",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "160",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "126.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6, 107",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "23",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "165",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 59,
+        "dexterity": 132
+      },
+      "fields": [
+        {
+          "value": "127.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6, 120",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "170",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "128.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7, 134",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "25",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "175",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "130.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8, 144",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "180",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "131.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8, 155",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "185",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "132.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9, 167",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "190",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "134%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9, 179",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "195",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "135.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10, 192",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "200",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "136.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11, 206",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "205",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "137.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12, 221",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "210",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "139.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12, 237",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "215",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "140.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "13, 254",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "220",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "141.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "14, 272",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "35",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "225",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "142.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "15, 291",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "230",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "144.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16, 311",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "37",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "235",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "145.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18, 333",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "240",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "146.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19, 355",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "245",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "147.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19, 367",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "247",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "147.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20, 380",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "250",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "148.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21, 392",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "252",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "149.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21, 405",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "255",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "149.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22, 419",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "257",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "150.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23, 433",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "260",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "151.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24, 447",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "262",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "151.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24, 462",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "265",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "152.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25, 477",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "267",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "152.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "26, 492",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_effect_of_lightning_ailments"
+        },
+        {
+          "value": "270",
+          "name": "shocks_enemies_as_though_dealing_%_more_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (110\u2013134)% of Base Attack Damage",
     "50% of Physical Damage Converted to Lightning Damage",
@@ -27,1065 +1095,7 @@
     "Shocks Enemies as though dealing (100\u2013195)% more Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "110%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "1, 13"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "10"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "111.3%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "1, 16"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "11"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "105"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "112.5%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "1, 20"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "12"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "110"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "113.8%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "1, 25"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "13"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "115"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "115.1%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "2, 31"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "14"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "120"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "116.3%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "2, 37"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "15"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "125"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "117.6%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "2, 45"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "16"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "130"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "118.8%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "3, 51"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "17"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "135"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "120.1%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "3, 59"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "18"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "140"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "121.4%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "3, 66"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "19"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "145"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "122.6%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "4, 75"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "20"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "150"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "123.9%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "4, 85"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "21"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "155"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "125.2%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "5, 95"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "22"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "160"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "126.4%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "6, 107"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "23"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "165"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "127.7%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "6, 120"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "24"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "170"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "128.9%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "7, 134"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "25"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "175"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "130.2%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "8, 144"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "26"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "180"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "131.5%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "8, 155"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "27"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "185"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "132.7%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "9, 167"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "28"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "190"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "134%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "9, 179"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "29"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "195"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "135.3%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "10, 192"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "30"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "200"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "136.5%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "11, 206"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "31"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "205"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "137.8%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "12, 221"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "32"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "210"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "139.1%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "12, 237"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "33"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "215"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "140.3%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "13, 254"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "34"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "220"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141.6%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "14, 272"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "35"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "225"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "142.8%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "15, 291"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "36"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "230"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "144.1%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "16, 311"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "37"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "235"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "145.4%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "18, 333"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "38"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "240"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "146.6%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "19, 355"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "39"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "245"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.3%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "19, 367"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "39"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "247"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.9%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "20, 380"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "40"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "250"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "148.5%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "21, 392"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "40"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "252"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "149.2%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "21, 405"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "41"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "255"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "149.8%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "22, 419"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "41"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "257"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150.4%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "23, 433"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "42"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "260"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "151.1%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "24, 447"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "42"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "262"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "151.7%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "24, 462"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "43"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "265"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152.3%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "25, 477"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "43"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "267"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152.9%"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "26, 492"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "44"
-        },
-        {
-          "name": "shocks_enemies_as_though_dealing_%_more_damage",
-          "value": "270"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "skill_can_fire_arrows [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Lightning Arrow Damage",
-      "16% increased Lightning Arrow Area of Effect",
-      "Lightning Arrow hits an additional Enemy"
-    ],
-    "eternal": [
-      "40% increased Lightning Arrow Damage",
-      "24% increased Lightning Arrow Area of Effect",
-      "Lightning Arrow hits 2 additional Enemies"
-    ]
-  },
-  "drop_level": 12,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -1096,7 +1106,42 @@
       "description": "Your Lightning Arrow becomes a gory effect."
     }
   ],
-  "description": "Fires a charged arrow at the target, causing them to be struck by a bolt of lightning which damages nearby enemies.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Ranger"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "skill_can_fire_arrows [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Lightning Arrow Damage",
+      "24% increased Lightning Arrow Area of Effect",
+      "Lightning Arrow hits 2 additional Enemies"
+    ],
+    "merciless": [
+      "25% increased Lightning Arrow Damage",
+      "16% increased Lightning Arrow Area of Effect",
+      "Lightning Arrow hits an additional Enemy"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1862,50 +1907,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% of Physical Damage Converted to Lightning Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance to Hit an additional Enemy",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% chance to Shock enemies",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Lightning Arrow",
+  "description": "Fires a charged arrow at the target, causing them to be struck by a bolt of lightning which damages nearby enemies."
 }

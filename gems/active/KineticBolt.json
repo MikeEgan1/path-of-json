@@ -1,7 +1,787 @@
 {
-  "name": "Kinetic Bolt",
+  "quality": {
+    "anomalous": {
+      "weight": 5.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "Increases and Reductions to Cast Speed apply to Attack Speed",
+          "minimum": null
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "+ Mana gained for each Enemy hit",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": null,
+  "slug": "kinetic-bolt",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 1,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "140%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 2,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "141.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "143.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 7,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "145.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 11,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "147.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "149.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "151.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "152.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "154.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "156.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "158.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "160.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "162.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "163.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "165.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "167.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "169.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "171.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "173.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "175%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "176.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "178.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "180.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "182.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "184.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "186.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "187.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "189.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "191.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "193.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "194.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "195.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "196.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "197.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "198%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "198.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "199.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "200.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "201.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "202.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "projectile_changes_direction__times"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (140\u2013175)% of Base Attack Damage",
+    "Projectile changes direction (5\u20138) times",
+    "Increases and Reductions to Spell Damage also apply to Attack Damage from this Skill at 150% of their value",
+    "Modifiers which would cause projectiles to Fork instead cause them to change direction additional times"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/GhostflameKineticBolt.png?w=2&h=2&scale=1",
+      "name": "Ghostflame Kinetic Bolt Effect",
+      "description": "Your Kinetic Bolt becomes a Ghostflame Effect."
+    }
+  ],
   "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Witch"
+      ],
+      "act": 1
+    },
     "vendor": {
       "classes": [
         "Witch",
@@ -10,761 +790,8 @@
         "Scion"
       ],
       "vendor_name": "Nessa"
-    },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Witch"
-      ],
-      "act": 1
     }
   },
-  "mods": [
-    "Deals (140\u2013175)% of Base Attack Damage",
-    "Projectile changes direction (5\u20138) times",
-    "Increases and Reductions to Spell Damage also apply to Attack Damage from this Skill at 150% of their value",
-    "Modifiers which would cause projectiles to Fork instead cause them to change direction additional times"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "140%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141.8%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "143.7%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "145.5%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.4%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "149.2%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "151.1%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152.9%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "154.7%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "156.6%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "158.4%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "160.3%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "162.1%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "163.9%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "165.8%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "167.6%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "169.5%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "171.3%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "173.2%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "175%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "176.8%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.7%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.5%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.4%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "184.2%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186.1%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "187.9%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "189.7%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "191.6%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "193.4%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "194.3%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "195.3%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "196.2%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "197.1%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "198%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "198.9%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "199.9%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "200.8%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "201.7%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "202.6%"
-        },
-        {
-          "name": "projectile_changes_direction__times",
-          "value": "11"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_is_projectile [1]",
-    "skill_can_fire_wand_projectiles [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Kinetic Bolt has 10% increased Attack Speed",
-      "Kinetic Bolt has 20% increased Projectile Speed",
-      "Kinetic Bolt changes direction 1 additional time"
-    ],
-    "eternal": [
-      "Kinetic Bolt has 15% increased Attack Speed",
-      "Kinetic Bolt has 30% increased Projectile Speed",
-      "Kinetic Bolt changes direction 2 additional times"
-    ]
-  },
-  "drop_level": null,
   "type": [
     "attack",
     "projectile",
@@ -775,14 +802,22 @@
     "projectileattack",
     "triggerable"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/GhostflameKineticBolt.png?w=2&h=2&scale=1",
-      "name": "Ghostflame Kinetic Bolt Effect",
-      "description": "Your Kinetic Bolt becomes a Ghostflame Effect."
-    }
+  "tags": [
+    "base_is_projectile [1]",
+    "skill_can_fire_wand_projectiles [1]"
   ],
-  "description": "Fire a projectile from your wand that changes direction in a zig-zag pattern at regular intervals or when hitting enemies. Each time it changes direction, a secondary projectile breaks off, flying in the direction it changed away from.",
+  "enchants": {
+    "eternal": [
+      "Kinetic Bolt has 15% increased Attack Speed",
+      "Kinetic Bolt has 30% increased Projectile Speed",
+      "Kinetic Bolt changes direction 2 additional times"
+    ],
+    "merciless": [
+      "Kinetic Bolt has 10% increased Attack Speed",
+      "Kinetic Bolt has 20% increased Projectile Speed",
+      "Kinetic Bolt changes direction 1 additional time"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1518,40 +1553,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "+ Mana gained for each Enemy hit",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Increases and Reductions to Cast Speed apply to Attack Speed",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 5.0
-    }
-  }
+  "name": "Kinetic Bolt",
+  "description": "Fire a projectile from your wand that changes direction in a zig-zag pattern at regular intervals or when hitting enemies. Each time it changes direction, a secondary projectile breaks off, flying in the direction it changed away from."
 }

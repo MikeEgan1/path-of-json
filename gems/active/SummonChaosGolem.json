@@ -1,23 +1,926 @@
 {
-  "name": "Summon Chaos Golem",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "All",
-        "Classes"
-      ],
-      "vendor_name": "Petarus and Vanja"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Buff Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking the Seal",
-      "classes": [
-        "All",
-        "Classes"
-      ],
-      "act": 4
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Minion Maximum Life",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "Minions deal % increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Summoned Golems have % increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 34,
+  "slug": "summon-chaos-golem",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 34,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 104
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "46",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "3",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 50,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 50,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "56",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "58",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "62",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "64",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 54,
+      "requirements": {
+        "requires_level": 69,
+        "intelligence": 153
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "66",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 54,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "68",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 56,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "4",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "70",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 56,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "72",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 58,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "74",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 58,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "76",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "78",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "80",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "82",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "84",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 62,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "86",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 62,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "88",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 62,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "5",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "89",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "90",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "91",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "92",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "93",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "94",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "95",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "96",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "97",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "6",
+          "name": "golems_grant_%_additional_physical_damage_reduction"
+        },
+        {
+          "value": "98",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "(0\u201310)% increased Character Size",
     "Maximum 1 Summoned Golem",
@@ -25,902 +928,38 @@
     "(30\u201368)% increased Minion Maximum Life"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "requirements": {
-        "intelligence": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": ""
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "30"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ClockworkGolem.png?w=2&h=2&scale=1",
+      "name": "Clockwork Golem",
+      "description": "Your Summoned Elemental, Chaos or Stone Golem becomes a clockwork creation."
     },
     {
-      "level": 2,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "1"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "1"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "2"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "2"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "3"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "3"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "4"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "4"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "5"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "5"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "6"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 50,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "6"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 50,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "7"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "7"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "58"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "8"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "8"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "9"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 153,
-        "requires_level": 69
-      },
-      "mana_cost": 54,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "9"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 54,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "10"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "68"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 56,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "10"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "70"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 56,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "11"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 58,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "11"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "74"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 58,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "12"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "76"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "12"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "78"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "13"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "80"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "13"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "82"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "14"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 62,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "14"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "86"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 62,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "15"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "88"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 62,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "15"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "89"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "15"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "90"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "15"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "91"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "16"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "16"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "93"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "16"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "94"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "16"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "95"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "17"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "96"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "17"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "97"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "17"
-        },
-        {
-          "name": "golems_grant_%_additional_physical_damage_reduction",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "98"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/MiracleGolem.png?w=2&h=2&scale=1",
+      "name": "Miracle Golem Skin",
+      "description": "Your Summoned Elemental, Chaos or Stone Golem becomes a miraculous creation."
     }
   ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Chaos Golems deal 25% increased Damage",
-      "75% increased Effect of the Buff granted by your Chaos Golems",
-      "+24% to Chaos Golem Elemental Resistances"
-    ],
-    "eternal": [
-      "Chaos Golems deal 40% increased Damage",
-      "100% increased Effect of the Buff granted by your Chaos Golems",
-      "+36% to Chaos Golem Elemental Resistances"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking the Seal",
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "act": 4
+    },
+    "vendor": {
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "vendor_name": "Petarus and Vanja"
+    }
   },
-  "drop_level": 34,
   "type": [
     "triggerable",
     "chaosskill",
@@ -935,19 +974,19 @@
     "createsminion",
     "secondwindsupport"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ClockworkGolem.png?w=2&h=2&scale=1",
-      "name": "Clockwork Golem",
-      "description": "Your Summoned Elemental, Chaos or Stone Golem becomes a clockwork creation."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/MiracleGolem.png?w=2&h=2&scale=1",
-      "name": "Miracle Golem Skin",
-      "description": "Your Summoned Elemental, Chaos or Stone Golem becomes a miraculous creation."
-    }
-  ],
-  "description": "Summons a Chaos Golem that grants you Physical Damage Reduction. The Chaos Golem can use a damage over time Chaos aura and a cascade of Chaos spikes in addition to its melee attack.",
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Chaos Golems deal 40% increased Damage",
+      "100% increased Effect of the Buff granted by your Chaos Golems",
+      "+36% to Chaos Golem Elemental Resistances"
+    ],
+    "merciless": [
+      "Chaos Golems deal 25% increased Damage",
+      "75% increased Effect of the Buff granted by your Chaos Golems",
+      "+24% to Chaos Golem Elemental Resistances"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1096,44 +1135,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Summoned Golems have % increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Minion Maximum Life",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "Minions deal % increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Buff Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Summon Chaos Golem",
+  "description": "Summons a Chaos Golem that grants you Physical Damage Reduction. The Chaos Golem can use a damage over time Chaos aura and a cascade of Chaos spikes in addition to its melee attack."
 }

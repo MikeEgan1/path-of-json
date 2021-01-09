@@ -1,6 +1,869 @@
 {
-  "name": "Spark",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Projectiles Pierce  additional Targets",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% of Lightning Damage Converted to Chaos Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Fires  additional Projectiles",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": null,
+  "slug": "spark",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 5,
+      "maximum_damage": 20.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 1,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 23.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 2,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "1",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 28.0,
+      "minimum_damage": 1.0,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "2",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 38.0,
+      "minimum_damage": 2.0,
+      "requirements": {
+        "requires_level": 7,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "3",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 53.0,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "requires_level": 11,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 76.0,
+      "minimum_damage": 4.0,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "5",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 100.0,
+      "minimum_damage": 5.0,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 127.0,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "7",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 161.0,
+      "minimum_damage": 8.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 200.0,
+      "minimum_damage": 11.0,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "9",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 247.0,
+      "minimum_damage": 13.0,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 303.0,
+      "minimum_damage": 16.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "11",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 370.0,
+      "minimum_damage": 19.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 448.0,
+      "minimum_damage": 24.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "13",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 540.0,
+      "minimum_damage": 28.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 648.0,
+      "minimum_damage": 34.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "15",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 776.0,
+      "minimum_damage": 41.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 925.0,
+      "minimum_damage": 49.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "17",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1053.0,
+      "minimum_damage": 55.0,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1198.0,
+      "minimum_damage": 63.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "19",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1304.0,
+      "minimum_damage": 69.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1418.0,
+      "minimum_damage": 75.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1542.0,
+      "minimum_damage": 81.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1676.0,
+      "minimum_damage": 88.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "23",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1820.0,
+      "minimum_damage": 96.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1976.0,
+      "minimum_damage": 104.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "25",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2144.0,
+      "minimum_damage": 113.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2325.0,
+      "minimum_damage": 122.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2521.0,
+      "minimum_damage": 133.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2732.0,
+      "minimum_damage": 144.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2843.0,
+      "minimum_damage": 150.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2959.0,
+      "minimum_damage": 156.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 3080.0,
+      "minimum_damage": 162.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 3204.0,
+      "minimum_damage": 169.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 3334.0,
+      "minimum_damage": 175.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 3468.0,
+      "minimum_damage": 183.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3608.0,
+      "minimum_damage": 190.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3753.0,
+      "minimum_damage": 198.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3903.0,
+      "minimum_damage": 205.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 4059.0,
+      "minimum_damage": 214.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (1\u201363) to (20\u20131198) Lightning Damage",
+    "+2 seconds to Base duration",
+    "Fires (4\u20136) additional Projectiles",
+    "(0\u201319)% increased Projectile Speed"
+  ],
+  "vaal": true,
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/SparkSpider.png?w=1&h=1&scale=1",
+      "name": "Spark Spiders Effect",
+      "description": "Your Sparks become skittering spiders of raw electrical energy"
+    }
+  ],
   "acquisition": {
     "vendor": {
       "classes": [
@@ -12,842 +875,24 @@
       "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "Deals (1\u201363) to (20\u20131198) Lightning Damage",
-    "+2 seconds to Base duration",
-    "Fires (4\u20136) additional Projectiles",
-    "(0\u201319)% increased Projectile Speed"
-  ],
-  "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 5,
-      "maximum_damage": 20.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 5,
-      "maximum_damage": 23.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 1.0,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 6,
-      "maximum_damage": 28.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 2.0,
-      "requirements": {
-        "intelligence": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 7,
-      "maximum_damage": 38.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 3.0,
-      "requirements": {
-        "intelligence": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 7,
-      "maximum_damage": 53.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 4.0,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 9,
-      "maximum_damage": 76.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 5.0,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 10,
-      "maximum_damage": 100.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 7.0,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 11,
-      "maximum_damage": 127.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 8.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 11,
-      "maximum_damage": 161.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 11.0,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 12,
-      "maximum_damage": 200.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 13.0,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 13,
-      "maximum_damage": 247.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 16.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 14,
-      "maximum_damage": 303.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 19.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 15,
-      "maximum_damage": 370.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 24.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 16,
-      "maximum_damage": 448.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 28.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 17,
-      "maximum_damage": 540.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 34.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 18,
-      "maximum_damage": 648.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 41.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 19,
-      "maximum_damage": 776.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 49.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 20,
-      "maximum_damage": 925.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 55.0,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1053.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 63.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1198.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 69.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1304.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 75.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1418.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 81.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1542.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 88.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1676.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 96.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1820.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 104.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1976.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 113.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2144.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 122.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2325.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 133.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2521.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 144.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2732.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 150.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2843.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 156.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2959.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 162.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 27,
-      "maximum_damage": 3080.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 169.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 27,
-      "maximum_damage": 3204.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 175.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 27,
-      "maximum_damage": 3334.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 183.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 27,
-      "maximum_damage": 3468.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 190.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3608.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 198.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3753.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 205.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3903.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 214.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 28,
-      "maximum_damage": 4059.0,
-      "fields": [
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "34"
-        }
-      ]
-    }
+  "type": [
+    "1"
   ],
   "tags": [
     "base_is_projectile [1]"
   ],
   "enchants": {
-    "merciless": [
-      "25% increased Spark Damage",
-      "Spark fires 2 additional Projectiles",
-      "20% increased Spark Projectile Speed"
-    ],
     "eternal": [
       "40% increased Spark Damage",
       "Spark fires 3 additional Projectiles",
       "30% increased Spark Projectile Speed"
+    ],
+    "merciless": [
+      "25% increased Spark Damage",
+      "Spark fires 2 additional Projectiles",
+      "20% increased Spark Projectile Speed"
     ]
   },
-  "drop_level": null,
-  "type": [
-    "1"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/SparkSpider.png?w=1&h=1&scale=1",
-      "name": "Spark Spiders Effect",
-      "description": "Your Sparks become skittering spiders of raw electrical energy"
-    }
-  ],
-  "description": "Launches unpredictable sparks that move randomly until they hit an enemy or expire.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1515,50 +1560,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Fires  additional Projectiles",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% of Lightning Damage Converted to Chaos Damage",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Projectiles Pierce  additional Targets",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Spark",
+  "description": "Launches unpredictable sparks that move randomly until they hit an enemy or expire."
 }

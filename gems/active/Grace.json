@@ -1,738 +1,728 @@
 {
-  "name": "Grace",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "You and nearby Allies have % chance to avoid Elemental Ailments",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Duelist",
-        "Ranger"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 4.0,
+          "text": "You and nearby Allies have % chance to Avoid Chaos Damage from Hits",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 24,
+  "slug": "grace",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "227",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "value": "271",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 30,
+        "dexterity": 71
+      },
+      "fields": [
+        {
+          "value": "322",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": 77
+      },
+      "fields": [
+        {
+          "value": "379",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "444",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": 90
+      },
+      "fields": [
+        {
+          "value": "528",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 96
+      },
+      "fields": [
+        {
+          "value": "621",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": 102
+      },
+      "fields": [
+        {
+          "value": "722",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "845",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 113
+      },
+      "fields": [
+        {
+          "value": "940",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "1043",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 121
+      },
+      "fields": [
+        {
+          "value": "1155",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "1283",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 130
+      },
+      "fields": [
+        {
+          "value": "1413",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "1567",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "1732",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "1914",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "2115",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "2335",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "18",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "2575",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "19",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "2700",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "20",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "2835",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "21",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "2979",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "22",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "3124",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "23",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "3279",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "24",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "3444",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "25",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "3611",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "26",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "3795",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "27",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "3982",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "28",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "4179",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "4282",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "4386",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "4494",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "4603",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "4716",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "4830",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "4948",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "5067",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "5190",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "5314",
+          "name": "you_and_nearby_allies_gain__additional_evasion_rating"
+        },
+        {
+          "value": "34",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "You and nearby allies gain (227\u20132575) additional Evasion Rating",
     "+(0\u201319) to radius"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "227"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 64,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "271"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 71,
-        "requires_level": 30
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "322"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 77,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "379"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "444"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 90,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "528"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 96,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "621"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 102,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "722"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "845"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 113,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "940"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "1043"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 121,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "1155"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "1283"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "1413"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "1567"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "1732"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "1914"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "2115"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "2335"
-        },
-        {
-          "name": "to_radius",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "2575"
-        },
-        {
-          "name": "to_radius",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "2700"
-        },
-        {
-          "name": "to_radius",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "2835"
-        },
-        {
-          "name": "to_radius",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "2979"
-        },
-        {
-          "name": "to_radius",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "3124"
-        },
-        {
-          "name": "to_radius",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "3279"
-        },
-        {
-          "name": "to_radius",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "3444"
-        },
-        {
-          "name": "to_radius",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "3611"
-        },
-        {
-          "name": "to_radius",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "3795"
-        },
-        {
-          "name": "to_radius",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "3982"
-        },
-        {
-          "name": "to_radius",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "4179"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "4282"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "4386"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "4494"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "4603"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "4716"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "4830"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "4948"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "5067"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "5190"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain__additional_evasion_rating",
-          "value": "5314"
-        },
-        {
-          "name": "to_radius",
-          "value": "34"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Grace has 10% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Grace has 15% reduced Mana Reservation"
-    ]
-  },
-  "drop_level": 24,
-  "type": [
-    "spell",
-    "area",
-    "buff",
-    "manacostreserved",
-    "type27",
-    "manacostpercent",
-    "skillcantotem",
-    "aura",
-    "instant",
-    "areaspell",
-    "canhaveblessing",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -981,7 +971,51 @@
       "description": "Your Aura becomes a Darkwood Effect."
     }
   ],
-  "description": "Casts an aura that grants evasion to you and your allies.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Duelist",
+        "Ranger"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "spell",
+    "area",
+    "buff",
+    "manacostreserved",
+    "type27",
+    "manacostpercent",
+    "skillcantotem",
+    "aura",
+    "instant",
+    "areaspell",
+    "canhaveblessing",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Grace has 15% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Grace has 10% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1040,39 +1074,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "You and nearby Allies have % chance to Avoid Chaos Damage from Hits",
-          "minimum": 0.0,
-          "maximum": 4.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "You and nearby Allies have % chance to avoid Elemental Ailments",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Grace",
+  "description": "Casts an aura that grants evasion to you and your allies."
 }

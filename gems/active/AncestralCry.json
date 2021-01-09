@@ -1,25 +1,761 @@
 {
-  "name": "Ancestral Cry",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Yeena"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Warcry Speed",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Intruders in Black",
-      "classes": [
-        "Marauder",
-        "Duelist"
-      ],
-      "act": 2
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Buff grants % increased Armour",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 16,
+  "slug": "ancestral-cry",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 41
+      },
+      "fields": [
+        {
+          "value": "28, 170",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 50
+      },
+      "fields": [
+        {
+          "value": "38, 230",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "2",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "53, 320",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "value": "70, 420",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 31,
+        "strength": 73
+      },
+      "fields": [
+        {
+          "value": "82, 490",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 79
+      },
+      "fields": [
+        {
+          "value": "93, 560",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 37,
+        "strength": 85
+      },
+      "fields": [
+        {
+          "value": "107, 640",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "120, 720",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 43,
+        "strength": 98
+      },
+      "fields": [
+        {
+          "value": "133, 800",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 104
+      },
+      "fields": [
+        {
+          "value": "148, 890",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 49,
+        "strength": 111
+      },
+      "fields": [
+        {
+          "value": "160, 960",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "173, 1040",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 55,
+        "strength": 123
+      },
+      "fields": [
+        {
+          "value": "188, 1130",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "207, 1240",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 134
+      },
+      "fields": [
+        {
+          "value": "218, 1310",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 138
+      },
+      "fields": [
+        {
+          "value": "232, 1390",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "238, 1430",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 146
+      },
+      "fields": [
+        {
+          "value": "245, 1470",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 151
+      },
+      "fields": [
+        {
+          "value": "250, 1500",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "257, 1540",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "262, 1570",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "277, 1660",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "292, 1750",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "307, 1840",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "322, 1930",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "338, 2030",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "45",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "355, 2130",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "46",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "372, 2230",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "47",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "388, 2330",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "407, 2440",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "49",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "415, 2490",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "49",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "423, 2540",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "433, 2600",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "443, 2660",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "51",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "452, 2710",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "51",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "462, 2770",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "470, 2820",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "482, 2890",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "53",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "490, 2940",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "53",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "500, 3000",
+          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+(4\u20134.9) seconds to Base duration",
     "Exerts the next 8 Melee Strike Attacks you perform",
@@ -30,748 +766,8 @@
     "Counts total Power of Enemies in Range"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "28, 170"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "38, 230"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "53, 320"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "70, 420"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "82, 490"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "93, 560"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 85,
-        "requires_level": 37
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "107, 640"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "120, 720"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 98,
-        "requires_level": 43
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "133, 800"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "148, 890"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 111,
-        "requires_level": 49
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "160, 960"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "173, 1040"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 123,
-        "requires_level": 55
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "188, 1130"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "207, 1240"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "218, 1310"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "232, 1390"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "238, 1430"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "245, 1470"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "250, 1500"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "257, 1540"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "262, 1570"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "277, 1660"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "292, 1750"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "307, 1840"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "322, 1930"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "338, 2030"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "355, 2130"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "372, 2230"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "388, 2330"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "407, 2440"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "415, 2490"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "423, 2540"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "433, 2600"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "443, 2660"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "452, 2710"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "462, 2770"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "470, 2820"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "482, 2890"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "490, 2940"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour_per__power,_up_to_a_maximum_of_+",
-          "value": "500, 3000"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "54"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]",
-    "cannot_cancel_skill_before_contact_point [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Attacks Exerted by Ancestral Cry deal 35% increased Damage "
-    ],
-    "eternal": [
-      "Attacks Exerted by Ancestral Cry deal 50% increased Damage ",
-      "Ancestral Cry has a minimum of 10 Power"
-    ]
-  },
-  "drop_level": 16,
-  "type": [
-    "buff",
-    "area",
-    "duration",
-    "warcry",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -785,7 +781,45 @@
       "description": "Your Warcry becomes a Celestial Effect."
     }
   ],
-  "description": "Performs a warcry, taunting all nearby enemies to attack the user and exerting subsequent strike attacks. Grants a buff which gives you bonus armour and melee range.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Intruders in Black",
+      "classes": [
+        "Marauder",
+        "Duelist"
+      ],
+      "act": 2
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Yeena"
+    }
+  },
+  "type": [
+    "buff",
+    "area",
+    "duration",
+    "warcry",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]",
+    "cannot_cancel_skill_before_contact_point [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Attacks Exerted by Ancestral Cry deal 50% increased Damage ",
+      "Ancestral Cry has a minimum of 10 Power"
+    ],
+    "merciless": [
+      "Attacks Exerted by Ancestral Cry deal 35% increased Damage "
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -867,39 +901,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Buff grants % increased Armour",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Warcry Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Ancestral Cry",
+  "description": "Performs a warcry, taunting all nearby enemies to attack the user and exerting subsequent strike attacks. Grants a buff which gives you bonus armour and melee range."
 }

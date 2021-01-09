@@ -1,7 +1,1047 @@
 {
-  "name": "Fireball",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% reduced Projectile Speed",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 60.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "phantasmal": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "% chance to Debilitate Enemies for 1 second on Hit",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 40.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Effect of non-Damaging Ailments on Enemies",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 0.0,
+          "text": "% more Damage with Ignite",
+          "minimum": 40.0
+        }
+      ]
+    }
+  },
+  "drop_level": null,
+  "slug": "fireball",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "maximum_damage": 14.0,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "requires_level": 1,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "50",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 16.0,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "requires_level": 2,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "52",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 20.0,
+      "minimum_damage": 13.0,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "1",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "54",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 27.0,
+      "minimum_damage": 18.0,
+      "requirements": {
+        "requires_level": 7,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "1",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "56",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 40.0,
+      "minimum_damage": 26.0,
+      "requirements": {
+        "requires_level": 11,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "58",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 60.0,
+      "minimum_damage": 40.0,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "60",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 81.0,
+      "minimum_damage": 54.0,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "62",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 109.0,
+      "minimum_damage": 72.0,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "64",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 143.0,
+      "minimum_damage": 95.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "66",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 186.0,
+      "minimum_damage": 124.0,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "68",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 239.0,
+      "minimum_damage": 159.0,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "70",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 305.0,
+      "minimum_damage": 204.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "72",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 388.0,
+      "minimum_damage": 258.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "6",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "74",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 490.0,
+      "minimum_damage": 326.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "6",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "76",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 615.0,
+      "minimum_damage": 410.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "7",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "78",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 770.0,
+      "minimum_damage": 513.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "7",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "80",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 960.0,
+      "minimum_damage": 640.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "8",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "82",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1193.0,
+      "minimum_damage": 795.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "8",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "84",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1401.0,
+      "minimum_damage": 934.0,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "9",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "86",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1643.0,
+      "minimum_damage": 1095.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "9",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "88",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1826.0,
+      "minimum_damage": 1217.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "10",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "90",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2028.0,
+      "minimum_damage": 1352.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "10",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "92",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2251.0,
+      "minimum_damage": 1501.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "10",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "94",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2497.0,
+      "minimum_damage": 1665.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "10",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "96",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2769.0,
+      "minimum_damage": 1846.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "10",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "98",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3069.0,
+      "minimum_damage": 2046.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "11",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "100",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3399.0,
+      "minimum_damage": 2266.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "11",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "102",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 3763.0,
+      "minimum_damage": 2509.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "47",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "11",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "104",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4165.0,
+      "minimum_damage": 2777.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "11",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "106",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4608.0,
+      "minimum_damage": 3072.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "49",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "11",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "108",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4846.0,
+      "minimum_damage": 3231.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "12",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "109",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 5095.0,
+      "minimum_damage": 3397.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "12",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "110",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 5358.0,
+      "minimum_damage": 3572.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "12",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "111",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 5633.0,
+      "minimum_damage": 3755.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "12",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "112",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 5921.0,
+      "minimum_damage": 3947.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "12",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "113",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 6224.0,
+      "minimum_damage": 4149.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "55",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "13",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "114",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 6542.0,
+      "minimum_damage": 4361.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "56",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "13",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "115",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 6875.0,
+      "minimum_damage": 4583.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "57",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "13",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "116",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 7224.0,
+      "minimum_damage": 4816.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "58",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "13",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "117",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 7591.0,
+      "minimum_damage": 5061.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "59",
+          "name": "%_chance_to_ignite_enemies"
+        },
+        {
+          "value": "13",
+          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius"
+        },
+        {
+          "value": "118",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (9\u20131095) to (14\u20131643) Fire Damage",
+    "(20\u201339)% chance to Ignite enemies",
+    "Projectiles gain Radius as they travel farther, up to +(0\u20139) Radius",
+    "(50\u201388)% more Damage with Ignite"
+  ],
+  "vaal": true,
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Dragon_fireball.png?w=1&h=1&scale=1",
+      "name": "Dragon Fireball Effect",
+      "description": "Your Fireball becomes a flaming dragon whelp skeleton that explodes on impact"
+    }
+  ],
   "acquisition": {
+    "quest": {
+      "quest_name": "The Twilight Strand",
+      "classes": [
+        "Witch"
+      ],
+      "act": 1
+    },
     "vendor": {
       "classes": [
         "Marauder",
@@ -11,1011 +1051,26 @@
         "Scion"
       ],
       "vendor_name": "Nessa"
-    },
-    "quest": {
-      "quest_name": "The Twilight Strand",
-      "classes": [
-        "Witch"
-      ],
-      "act": 1
     }
   },
-  "mods": [
-    "Deals (9\u20131095) to (14\u20131643) Fire Damage",
-    "(20\u201339)% chance to Ignite enemies",
-    "Projectiles gain Radius as they travel farther, up to +(0\u20139) Radius",
-    "(50\u201388)% more Damage with Ignite"
-  ],
-  "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 9.0,
-      "requirements": {
-        "intelligence": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 6,
-      "maximum_damage": 14.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "20"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": ""
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 10.0,
-      "requirements": {
-        "intelligence": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 6,
-      "maximum_damage": 16.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "21"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": ""
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 13.0,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 7,
-      "maximum_damage": 20.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "22"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "1"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 18.0,
-      "requirements": {
-        "intelligence": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 8,
-      "maximum_damage": 27.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "23"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "1"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 26.0,
-      "requirements": {
-        "intelligence": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 9,
-      "maximum_damage": 40.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "24"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "2"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "58"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 40.0,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 10,
-      "maximum_damage": 60.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "25"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "2"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 54.0,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 11,
-      "maximum_damage": 81.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "26"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "3"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 72.0,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 12,
-      "maximum_damage": 109.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "27"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "3"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 95.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 13,
-      "maximum_damage": 143.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "28"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "4"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 124.0,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 14,
-      "maximum_damage": 186.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "29"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "4"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "68"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 159.0,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 15,
-      "maximum_damage": 239.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "30"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "5"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "70"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 204.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 16,
-      "maximum_damage": 305.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "31"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "5"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 258.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 18,
-      "maximum_damage": 388.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "32"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "6"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "74"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 326.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 19,
-      "maximum_damage": 490.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "33"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "6"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "76"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 410.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 20,
-      "maximum_damage": 615.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "34"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "7"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "78"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 513.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 21,
-      "maximum_damage": 770.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "35"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "7"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "80"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 640.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 22,
-      "maximum_damage": 960.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "36"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "8"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "82"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 795.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1193.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "37"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "8"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 934.0,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1401.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "38"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "9"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "86"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 1095.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1643.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "39"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "9"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "88"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 1217.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1826.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "40"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "10"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "90"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 1352.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2028.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "41"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "10"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 1501.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2251.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "42"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "10"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "94"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 1665.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2497.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "43"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "10"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "96"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 1846.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2769.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "44"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "10"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "98"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 2046.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3069.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "45"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "11"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 2266.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3399.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "46"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "11"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "102"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 2509.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 29,
-      "maximum_damage": 3763.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "47"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "11"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "104"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 2777.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4165.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "48"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "11"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "106"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 3072.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4608.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "49"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "11"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "108"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 3231.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4846.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "50"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "12"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "109"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 3397.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 31,
-      "maximum_damage": 5095.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "51"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "12"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "110"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 3572.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 31,
-      "maximum_damage": 5358.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "52"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "12"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "111"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 3755.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 31,
-      "maximum_damage": 5633.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "53"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "12"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "112"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 3947.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 31,
-      "maximum_damage": 5921.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "54"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "12"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "113"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 4149.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 32,
-      "maximum_damage": 6224.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "55"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "13"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "114"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 4361.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 32,
-      "maximum_damage": 6542.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "56"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "13"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "115"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 4583.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 32,
-      "maximum_damage": 6875.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "57"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "13"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "116"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 4816.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 33,
-      "maximum_damage": 7224.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "58"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "13"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "117"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 5061.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 33,
-      "maximum_damage": 7591.0,
-      "fields": [
-        {
-          "name": "%_chance_to_ignite_enemies",
-          "value": "59"
-        },
-        {
-          "name": "projectiles_gain_radius_as_they_travel_farther,_up_to__radius",
-          "value": "13"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "118"
-        }
-      ]
-    }
+  "type": [
+    "1"
   ],
   "tags": [
     "base_is_projectile [1]"
   ],
   "enchants": {
-    "merciless": [
-      "25% increased Fireball Damage",
-      "8% increased Fireball Cast Speed",
-      "Fireball has +20% chance to Ignite"
-    ],
     "eternal": [
       "40% increased Fireball Damage",
       "12% increased Fireball Cast Speed",
       "Fireball has +30% chance to Ignite"
+    ],
+    "merciless": [
+      "25% increased Fireball Damage",
+      "8% increased Fireball Cast Speed",
+      "Fireball has +20% chance to Ignite"
     ]
   },
-  "drop_level": null,
-  "type": [
-    "1"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Dragon_fireball.png?w=1&h=1&scale=1",
-      "name": "Dragon Fireball Effect",
-      "description": "Your Fireball becomes a flaming dragon whelp skeleton that explodes on impact"
-    }
-  ],
-  "description": "Unleashes a ball of fire towards a target which explodes, damaging nearby foes.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1699,60 +1754,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Effect of non-Damaging Ailments on Enemies",
-          "minimum": 0.0,
-          "maximum": 60.0
-        },
-        {
-          "text": "% more Damage with Ignite",
-          "minimum": 40.0,
-          "maximum": 0.0
-        }
-      ],
-      "weight": 40.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance to Debilitate Enemies for 1 second on Hit",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% reduced Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        },
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Fireball",
+  "description": "Unleashes a ball of fire towards a target which explodes, damaging nearby foes."
 }

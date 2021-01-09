@@ -1,40 +1,851 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Meat Shield Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 52
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 5.0,
-          "text": "Minions from Supported Skills have % additional Physical Damage Reduction"
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "15"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "20"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "10"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 34,
+        "intelligence": 57
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 5.0,
-          "text": "Minions from Supported Skills deal % more Damage to Enemies that are Near you"
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "15"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "21"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "11"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 60
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 8.0,
-          "text": "Minions from Supported Skills have +% Chance to Block Attack Damage"
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "16"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "21"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "12"
         }
-      ],
-      "weight": 20.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 63
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "16"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "22"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "17"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "22"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 69
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "17"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "23"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 72
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "18"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "23"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "18"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "24"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 78
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "19"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "24"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 81
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "19"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "25"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "20"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "25"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "20"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "26"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "21"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "26"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 93
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "21"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "27"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "22"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "27"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 99
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "22"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "28"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "23"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "28"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 105
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "23"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "29"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 108
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "24"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "29"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 111
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "24"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "30"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "25"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "30"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "25"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "31"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "26"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "31"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "26"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "32"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "27"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "32"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "27"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "33"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "28"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "33"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "28"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "34"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "37"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "29"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "34"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "38"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "29"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "35"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "30"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "35"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "30"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "36"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "31"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "36"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "31"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "37"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "32"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "37"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "32"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "38"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "33"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "38"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "33"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "39"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "47"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "34"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "39"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "minions_from_supported_skills_take_%_less_damage",
+          "value": "34"
+        },
+        {
+          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
+          "value": "40"
+        },
+        {
+          "name": "supported_skills_have_%_increased_minion_movement_speed",
+          "value": "49"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "meat-shield-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Minions from Supported Skills take (15\u201324)% less Damage",
     "Minions from Supported Skills deal (20\u201330)% more Damage to Enemies that are Near you",
@@ -42,7 +853,8 @@
     "Supported Skills have (10\u201329)% increased Minion Movement Speed",
     "Minions from Supported Skills are Defensive"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports skills which create Minions.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -53,15 +865,18 @@
       "vendor_name": "Clarissa"
     },
     "quest": {
+      "act": 3,
       "classes": [
         "Witch",
         "Templar"
       ],
-      "quest_name": "A Fixture of Fate",
-      "act": 3
+      "quest_name": "A Fixture of Fate"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -401,852 +1216,38 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Meat Shield Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports skills which create Minions.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "15"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "20"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "10"
+          "maximum": 5.0,
+          "text": "Minions from Supported Skills have % additional Physical Damage Reduction",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 31,
-        "intelligence": 52
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "15"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "21"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "11"
+          "maximum": 5.0,
+          "text": "Minions from Supported Skills deal % more Damage to Enemies that are Near you",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 34,
-        "intelligence": 57
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "16"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "21"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "12"
+          "maximum": 8.0,
+          "text": "Minions from Supported Skills have +% Chance to Block Attack Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 36,
-        "intelligence": 60
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "16"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "22"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "13"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 38,
-        "intelligence": 63
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "17"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "22"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "14"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 40,
-        "intelligence": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "17"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "23"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "15"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 42,
-        "intelligence": 69
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "18"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "23"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "16"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 44,
-        "intelligence": 72
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "18"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "24"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "17"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 46,
-        "intelligence": 75
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "19"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "24"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "18"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 48,
-        "intelligence": 78
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "19"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "25"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "19"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 50,
-        "intelligence": 81
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "20"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "25"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "20"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 52,
-        "intelligence": 84
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "20"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "26"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "21"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 54,
-        "intelligence": 87
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "21"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "26"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "22"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 56,
-        "intelligence": 90
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "21"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "27"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "23"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 58,
-        "intelligence": 93
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "22"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "27"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "24"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 60,
-        "intelligence": 96
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "22"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "28"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "25"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 62,
-        "intelligence": 99
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "23"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "28"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "26"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 64,
-        "intelligence": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "23"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "29"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "27"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 66,
-        "intelligence": 105
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "24"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "29"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "28"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 68,
-        "intelligence": 108
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "24"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "30"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "29"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "intelligence": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "25"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "30"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "30"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "25"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "31"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "31"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "26"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "31"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "32"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "26"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "32"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "33"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "27"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "32"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "34"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "27"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "33"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "35"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "28"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "33"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "36"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "28"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "34"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "37"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "29"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "34"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "38"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "29"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "35"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "39"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "30"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "35"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "40"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "30"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "36"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "41"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "31"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "36"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "42"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "31"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "37"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "43"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "32"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "37"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "44"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "32"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "38"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "45"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "33"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "38"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "46"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "33"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "39"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "47"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "34"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "39"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "48"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "minions_from_supported_skills_take_%_less_damage",
-          "value": "34"
-        },
-        {
-          "name": "minions_from_supported_skills_deal_%_more_damage_to_enemies_that_are_near_you",
-          "value": "40"
-        },
-        {
-          "name": "supported_skills_have_%_increased_minion_movement_speed",
-          "value": "49"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "intelligence": null
-      }
+      "weight": 20.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

@@ -1,24 +1,801 @@
 {
-  "name": "Caustic Arrow",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to inflict Withered for 2 seconds on Hit",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Ranger"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% of Physical Damage Converted to Chaos Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "caustic-arrow",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "minimum_damage": 8.8,
+      "requirements": {
+        "requires_level": 1,
+        "dexterity": 10
+      },
+      "fields": [
+        {
+          "value": "55%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "minimum_damage": 10.1,
+      "requirements": {
+        "requires_level": 2,
+        "dexterity": 12
+      },
+      "fields": [
+        {
+          "value": "55.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 6,
+      "minimum_damage": 13.1,
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 16
+      },
+      "fields": [
+        {
+          "value": "56%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 6,
+      "minimum_damage": 18.4,
+      "requirements": {
+        "requires_level": 7,
+        "dexterity": 22
+      },
+      "fields": [
+        {
+          "value": "56.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 7,
+      "minimum_damage": 27.8,
+      "requirements": {
+        "requires_level": 11,
+        "dexterity": 31
+      },
+      "fields": [
+        {
+          "value": "57%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 7,
+      "minimum_damage": 44.0,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "57.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 7,
+      "minimum_damage": 61.9,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "58%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 7,
+      "minimum_damage": 85.4,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "58.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 8,
+      "minimum_damage": 116.2,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "59%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 8,
+      "minimum_damage": 156.4,
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "59.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 8,
+      "minimum_damage": 208.5,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "59.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 8,
+      "minimum_damage": 275.9,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "60.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 9,
+      "minimum_damage": 362.7,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "60.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 9,
+      "minimum_damage": 474.1,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "61.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 9,
+      "minimum_damage": 616.9,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "61.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 9,
+      "minimum_damage": 799.3,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "62.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 10,
+      "minimum_damage": 1031.9,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "62.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "minimum_damage": 1327.6,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "63.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 10,
+      "minimum_damage": 1600.8,
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 148
+      },
+      "fields": [
+        {
+          "value": "63.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 10,
+      "minimum_damage": 1927.1,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "64.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 11,
+      "minimum_damage": 2179.2,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "64.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 11,
+      "minimum_damage": 2462.7,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "65.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "minimum_damage": 2781.5,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "65.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "minimum_damage": 3139.9,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "66.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 12,
+      "minimum_damage": 3542.6,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "66.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 12,
+      "minimum_damage": 3995.0,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "67.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 12,
+      "minimum_damage": 4503.1,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "67.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "minimum_damage": 5073.4,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "68.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 13,
+      "minimum_damage": 5713.5,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "68.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 13,
+      "minimum_damage": 6431.6,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "69.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 13,
+      "minimum_damage": 6822.8,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "69.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 13,
+      "minimum_damage": 7237.1,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "70.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 14,
+      "minimum_damage": 7675.8,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "70.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 14,
+      "minimum_damage": 8140.3,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "71.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 14,
+      "minimum_damage": 8632.2,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "71.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 14,
+      "minimum_damage": 9152.9,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "72.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 15,
+      "minimum_damage": 9704.2,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "72.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 15,
+      "minimum_damage": 10287.7,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "73.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 15,
+      "minimum_damage": 10905.4,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "73.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 15,
+      "minimum_damage": 11559.3,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "74.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (55\u201364.4)% of Base Attack Damage",
     "+2 seconds to Base duration",
@@ -28,787 +805,40 @@
     "Modifiers to Projectile Damage apply to this Skill's Damage Over Time effect"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "minimum_damage": 8.8,
-      "requirements": {
-        "dexterity": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "55%"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/EtherealPoisonArrow.png?w=1&h=1&scale=1",
+      "name": "Tentacle Caustic Arrow Effect",
+      "description": "Your Caustic Arrow becomes an area of ethereal purple tentacles."
     },
     {
-      "level": 2,
-      "minimum_damage": 10.1,
-      "requirements": {
-        "dexterity": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "55.5%"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 13.1,
-      "requirements": {
-        "dexterity": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "56%"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 18.4,
-      "requirements": {
-        "dexterity": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "56.5%"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 27.8,
-      "requirements": {
-        "dexterity": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "57%"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 44.0,
-      "requirements": {
-        "dexterity": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "57.5%"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 61.9,
-      "requirements": {
-        "dexterity": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "58%"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 85.4,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "58.5%"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 116.2,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "59%"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 156.4,
-      "requirements": {
-        "dexterity": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "59.5%"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 208.5,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "59.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 275.9,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "60.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 362.7,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "60.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 474.1,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "61.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 616.9,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "61.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 799.3,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "62.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 1031.9,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "62.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 1327.6,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "63.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 1600.8,
-      "requirements": {
-        "dexterity": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "63.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 1927.1,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "64.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 2179.2,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "64.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 2462.7,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "65.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 2781.5,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "65.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 3139.9,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "66.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 3542.6,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "66.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 3995.0,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "67.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 4503.1,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "67.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 5073.4,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "68.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 5713.5,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "68.9%"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 6431.6,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "69.4%"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 6822.8,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "69.8%"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 7237.1,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "70.3%"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 7675.8,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "70.8%"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 8140.3,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "71.3%"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 8632.2,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "71.8%"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 9152.9,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "72.3%"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 9704.2,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "72.8%"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 10287.7,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "73.3%"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 10905.4,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "73.8%"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 11559.3,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "74.3%"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialCausticArrow.png?w=2&h=2&scale=1",
+      "name": "Celestial Caustic Arrow Effect",
+      "description": "Your Caustic Arrow becomes a Celestial Effect."
     }
   ],
-  "tags": [
-    "skill_can_fire_arrows [1]",
-    "visual_hit_effect_chaos_is_green [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Caustic Arrow Damage",
-      "20% increased Caustic Arrow Duration",
-      "16% increased Caustic Arrow Area of Effect",
-      "Caustic Arrow has 14% chance to inflict Withered on Hit for 2 seconds base Duration"
-    ],
-    "eternal": [
-      "40% increased Caustic Arrow Damage",
-      "30% increased Caustic Arrow Duration",
-      "24% increased Caustic Arrow Area of Effect",
-      "Caustic Arrow has 20% chance to inflict Withered on Hit for 2 seconds base Duration"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Ranger"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
   },
-  "drop_level": null,
   "type": [
     "attack",
     "projectileattack",
@@ -824,19 +854,24 @@
     "chaosskill",
     "triggerable"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/EtherealPoisonArrow.png?w=1&h=1&scale=1",
-      "name": "Tentacle Caustic Arrow Effect",
-      "description": "Your Caustic Arrow becomes an area of ethereal purple tentacles."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialCausticArrow.png?w=2&h=2&scale=1",
-      "name": "Celestial Caustic Arrow Effect",
-      "description": "Your Caustic Arrow becomes a Celestial Effect."
-    }
+  "tags": [
+    "skill_can_fire_arrows [1]",
+    "visual_hit_effect_chaos_is_green [1]"
   ],
-  "description": "Fires an arrow which deals chaos damage in an area on impact, and spreads caustic ground. Enemies standing on the caustic ground take chaos damage over time.",
+  "enchants": {
+    "eternal": [
+      "40% increased Caustic Arrow Damage",
+      "30% increased Caustic Arrow Duration",
+      "24% increased Caustic Arrow Area of Effect",
+      "Caustic Arrow has 20% chance to inflict Withered on Hit for 2 seconds base Duration"
+    ],
+    "merciless": [
+      "25% increased Caustic Arrow Damage",
+      "20% increased Caustic Arrow Duration",
+      "16% increased Caustic Arrow Area of Effect",
+      "Caustic Arrow has 14% chance to inflict Withered on Hit for 2 seconds base Duration"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1616,40 +1651,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% of Physical Damage Converted to Chaos Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to inflict Withered for 2 seconds on Hit",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Caustic Arrow",
+  "description": "Fires an arrow which deals chaos damage in an area on impact, and spreads caustic ground. Enemies standing on the caustic ground take chaos damage over time."
 }

@@ -1,17 +1,766 @@
 {
-  "name": "Immortal Call",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Petarus and Vanja"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 0.0,
+          "text": "% less Physical Damage taken per Endurance Charge removed",
+          "minimum": 2.0
+        },
+        {
+          "maximum": 2.0,
+          "text": "% less Elemental Damage taken per Endurance Charge removed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 34,
+  "slug": "immortal-call",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 79
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "25",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "26",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 38,
+        "strength": 88
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "26",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "27",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 96
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "27",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "28",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 104
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "28",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "29",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 113
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "29",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "30",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 121
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "30",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 125
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "31",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "31",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 134
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "32",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 138
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "32",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "33",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 146
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "33",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 151
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "34",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 69,
+        "strength": 153
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "34",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "35",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "35",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "36",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "36",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "37",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "37",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "38",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "38",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "39",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "39",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "40",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "40",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "40",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "40",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "41",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "41",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 47,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "41",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 47,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "41",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "42",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "42",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 49,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "%_less_elemental_damage_taken"
+        },
+        {
+          "value": "42",
+          "name": "%_less_physical_damage_taken"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+1 seconds to Base duration",
     "(25\u201334)% less Elemental Damage taken",
@@ -21,751 +770,8 @@
     "This Skill's Cooldown does not recover during its effect"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "25"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "25"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "26"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "26"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "27"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "27"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "28"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "28"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "29"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "29"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "30"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "30"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "31"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "31"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "32"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "32"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "33"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "33"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 153,
-        "requires_level": 69
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "34"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "34"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "35"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "35"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "36"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "36"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "37"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "37"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "38"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "38"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "39"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "39"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "39"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "40"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "40"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "40"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "40"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 47,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "41"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 47,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "41"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "41"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "41"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 49,
-      "fields": [
-        {
-          "name": "%_less_elemental_damage_taken",
-          "value": "42"
-        },
-        {
-          "name": "%_less_physical_damage_taken",
-          "value": "42"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Immortal Call has 20% increased Buff Duration per Endurance Charge removed",
-      "34% increased Immortal Call Duration"
-    ],
-    "eternal": [
-      "Immortal Call has 30% increased Buff Duration per Endurance Charge removed",
-      "36% increased Immortal Call Duration"
-    ]
-  },
-  "drop_level": 34,
-  "type": [
-    "spell",
-    "buff",
-    "duration",
-    "skillcantotem",
-    "triggerable",
-    "instant",
-    "guardskill",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -784,7 +790,40 @@
       "description": "Your Immortal Call becomes an Angelic Effect."
     }
   ],
-  "description": "Take less Physical and Elemental Damage for a short time. Consumes up to 5 Endurance Charges to lengthen the buff and further lessen Physical Damage taken. Shares a cooldown with other Guard skills.",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Petarus and Vanja"
+    }
+  },
+  "type": [
+    "spell",
+    "buff",
+    "duration",
+    "skillcantotem",
+    "triggerable",
+    "instant",
+    "guardskill",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Immortal Call has 30% increased Buff Duration per Endurance Charge removed",
+      "36% increased Immortal Call Duration"
+    ],
+    "merciless": [
+      "Immortal Call has 20% increased Buff Duration per Endurance Charge removed",
+      "34% increased Immortal Call Duration"
+    ]
+  },
   "support": [
     {
       "name": "Increased Duration Support",
@@ -868,44 +907,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% less Physical Damage taken per Endurance Charge removed",
-          "minimum": 2.0,
-          "maximum": 0.0
-        },
-        {
-          "text": "% less Elemental Damage taken per Endurance Charge removed",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Immortal Call",
+  "description": "Take less Physical and Elemental Damage for a short time. Consumes up to 5 Endurance Charges to lengthen the buff and further lessen Physical Damage taken. Shares a cooldown with other Guard skills."
 }

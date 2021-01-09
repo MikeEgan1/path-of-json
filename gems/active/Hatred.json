@@ -1,945 +1,929 @@
 {
-  "name": "Hatred",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Witch",
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "You and nearby Allies have % increased Chill and Freeze Duration",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "You and nearby Allies have % increased Movement Speed while on Chilled Ground",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 24,
+  "slug": "hatred",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 37,
+        "intelligence": 25
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "dexterity": 41,
+        "intelligence": 28
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 30,
+        "dexterity": 45,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": 49,
+        "intelligence": 34
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 53,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": 56,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 60,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": 64,
+        "intelligence": 45
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 71,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 76,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 79,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        },
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 82,
+        "intelligence": 57
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        },
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        },
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 87,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        },
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        },
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 92,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        },
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 95,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "18",
+          "name": "to_radius"
+        },
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "19",
+          "name": "to_radius"
+        },
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "20",
+          "name": "to_radius"
+        },
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "21",
+          "name": "to_radius"
+        },
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "22",
+          "name": "to_radius"
+        },
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "23",
+          "name": "to_radius"
+        },
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "24",
+          "name": "to_radius"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "25",
+          "name": "to_radius"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "26",
+          "name": "to_radius"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "27",
+          "name": "to_radius"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "28",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage"
+        },
+        {
+          "value": "34",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_deal_%_more_cold_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "You and nearby allies gain (16\u201325)% of Physical Damage as Extra Cold Damage",
     "+(0\u201319) to radius",
     "You and nearby allies deal (14\u201318)% more Cold Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 37,
-        "intelligence": 25,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "16"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 41,
-        "intelligence": 28,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "16"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 45,
-        "intelligence": 31,
-        "requires_level": 30
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "17"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 49,
-        "intelligence": 34,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "17"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "18"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 56,
-        "intelligence": 39,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "18"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 60,
-        "intelligence": 42,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "19"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 64,
-        "intelligence": 45,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "19"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "20"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 71,
-        "intelligence": 49,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "20"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "21"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 76,
-        "intelligence": 53,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "21"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "22"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 82,
-        "intelligence": 57,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "22"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "23"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 87,
-        "intelligence": 60,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "23"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "24"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 92,
-        "intelligence": 64,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "24"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 95,
-        "intelligence": 66,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "25"
-        },
-        {
-          "name": "to_radius",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "25"
-        },
-        {
-          "name": "to_radius",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "26"
-        },
-        {
-          "name": "to_radius",
-          "value": "20"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "26"
-        },
-        {
-          "name": "to_radius",
-          "value": "21"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "27"
-        },
-        {
-          "name": "to_radius",
-          "value": "22"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "27"
-        },
-        {
-          "name": "to_radius",
-          "value": "23"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "28"
-        },
-        {
-          "name": "to_radius",
-          "value": "24"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "28"
-        },
-        {
-          "name": "to_radius",
-          "value": "25"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "29"
-        },
-        {
-          "name": "to_radius",
-          "value": "26"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "29"
-        },
-        {
-          "name": "to_radius",
-          "value": "27"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "30"
-        },
-        {
-          "name": "to_radius",
-          "value": "28"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "30"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "30"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "31"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "31"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "31"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "31"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "32"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "32"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "32"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "32"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_of_physical_damage_as_extra_cold_damage",
-          "value": "33"
-        },
-        {
-          "name": "to_radius",
-          "value": "34"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_cold_damage",
-          "value": "22"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Hatred has 10% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Hatred has 15% reduced Mana Reservation"
-    ]
-  },
-  "drop_level": 24,
-  "type": [
-    "spell",
-    "area",
-    "buff",
-    "manacostreserved",
-    "type27",
-    "manacostpercent",
-    "skillcantotem",
-    "aura",
-    "coldskill",
-    "instant",
-    "areaspell",
-    "canhaveblessing",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -1188,7 +1172,57 @@
       "description": "Your Aura becomes a Darkwood Effect."
     }
   ],
-  "description": "Casts an aura that grants extra cold damage based on physical damage to you and your allies.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Witch",
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "spell",
+    "area",
+    "buff",
+    "manacostreserved",
+    "type27",
+    "manacostpercent",
+    "skillcantotem",
+    "aura",
+    "coldskill",
+    "instant",
+    "areaspell",
+    "canhaveblessing",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Hatred has 15% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Hatred has 10% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1247,39 +1281,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "You and nearby Allies have % increased Movement Speed while on Chilled Ground",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "You and nearby Allies have % increased Chill and Freeze Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Hatred",
+  "description": "Casts an aura that grants extra cold damage based on physical damage to you and your allies."
 }

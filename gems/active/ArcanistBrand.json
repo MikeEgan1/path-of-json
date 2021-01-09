@@ -1,25 +1,651 @@
 {
-  "name": "Arcanist Brand",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Petarus and Vanja"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "",
+          "minimum": null
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Eternal Nightmare",
-      "classes": [
-        "Witch",
-        "Templar"
-      ],
-      "act": 4
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "",
+          "minimum": null
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Activation frequency",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "",
+          "minimum": null
+        }
+      ]
     }
   },
+  "drop_level": 38,
+  "slug": "arcanist-brand",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 18,
+      "minimum_damage": 40.0,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "55",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 18,
+      "minimum_damage": 41.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "55",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 19,
+      "minimum_damage": 42.0,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 20,
+      "minimum_damage": 43.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 22,
+      "minimum_damage": 44.0,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 104
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 23,
+      "minimum_damage": 45.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 23,
+      "minimum_damage": 46.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 24,
+      "minimum_damage": 47.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 25,
+      "minimum_damage": 48.0,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 25,
+      "minimum_damage": 49.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 26,
+      "minimum_damage": 50.0,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 26,
+      "minimum_damage": 51.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 28,
+      "minimum_damage": 52.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "49",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 29,
+      "minimum_damage": 53.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "49",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 29,
+      "minimum_damage": 54.0,
+      "requirements": {
+        "requires_level": 65,
+        "intelligence": 144
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 30,
+      "minimum_damage": 55.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 30,
+      "minimum_damage": 56.0,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "47",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 31,
+      "minimum_damage": 57.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "47",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 32,
+      "minimum_damage": 58.0,
+      "requirements": {
+        "requires_level": 69,
+        "intelligence": 153
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 32,
+      "minimum_damage": 59.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 34,
+      "minimum_damage": 60.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 34,
+      "minimum_damage": 61.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 35,
+      "minimum_damage": 62.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 36,
+      "minimum_damage": 63.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 36,
+      "minimum_damage": 64.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 37,
+      "minimum_damage": 65.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 37,
+      "minimum_damage": 66.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 38,
+      "minimum_damage": 67.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 38,
+      "minimum_damage": 68.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 40,
+      "minimum_damage": 69.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 40,
+      "minimum_damage": 69.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 41,
+      "minimum_damage": 70.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 41,
+      "minimum_damage": 70.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 41,
+      "minimum_damage": 71.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 42,
+      "minimum_damage": 71.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 42,
+      "minimum_damage": 72.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 42,
+      "minimum_damage": 72.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 42,
+      "minimum_damage": 73.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 43,
+      "minimum_damage": 73.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 43,
+      "minimum_damage": 74.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Can be Attached for a total Duration of 3 seconds",
     "Activates every 1 second while Attached",
@@ -33,629 +659,48 @@
     "This Skill is Triggered by Arcanist Brand, from the Brand's location"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 40.0,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "55"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Eternal Nightmare",
+      "classes": [
+        "Witch",
+        "Templar"
+      ],
+      "act": 4
     },
-    {
-      "level": 2,
-      "minimum_damage": 41.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "55"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 42.0,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 43.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 44.0,
-      "requirements": {
-        "intelligence": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 45.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 46.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 47.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 48.0,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 49.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 50.0,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 51.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 52.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 53.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 54.0,
-      "requirements": {
-        "intelligence": 144,
-        "requires_level": 65
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 55.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 56.0,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 57.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 58.0,
-      "requirements": {
-        "intelligence": 153,
-        "requires_level": 69
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 59.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 60.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 61.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 62.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 63.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 64.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 65.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 66.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 67.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 68.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 69.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 69.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 70.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 70.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 71.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 71.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 72.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 72.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 73.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 73.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 74.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "38"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Petarus and Vanja"
     }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Arcanist Brand has 8% increased Cast Speed"
-    ],
-    "eternal": [
-      "Arcanist Brand has 12% increased Cast Speed",
-      "Spells Triggered by Arcanist Brand Unnerve enemies on Hit for 4 seconds"
-    ]
   },
-  "drop_level": 38,
   "type": [
     "spell",
     "duration",
     "spellcanrepeat",
     "brand"
   ],
-  "mtx": [],
-  "description": "Supports spell skills that do not reserve mana. Cannot support skills used by totems, traps or mines. Cannot modify the skills of minions.Creates a magical brand which can attach to a nearby enemy. It periodically activates while attached, triggering linked spells. The brand will detach if the enemy dies.",
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Arcanist Brand has 12% increased Cast Speed",
+      "Spells Triggered by Arcanist Brand Unnerve enemies on Hit for 4 seconds"
+    ],
+    "merciless": [
+      "Arcanist Brand has 8% increased Cast Speed"
+    ]
+  },
   "support": [
     {
       "name": "Faster Casting Support",
@@ -731,50 +776,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Activation frequency",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Arcanist Brand",
+  "description": "Supports spell skills that do not reserve mana. Cannot support skills used by totems, traps or mines. Cannot modify the skills of minions.Creates a magical brand which can attach to a nearby enemy. It periodically activates while attached, triggering linked spells. The brand will detach if the enemy dies."
 }

@@ -1,25 +1,736 @@
 {
-  "name": "Earthshatter",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to create an additional Fissure",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Marauder",
-        "Duelist"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "Fissures deal % more Damage",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 60.0,
+          "text": "Spikes deal % less Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Fissure Length",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "earthshatter",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 12,
+        "strength": 33
+      },
+      "fields": [
+        {
+          "value": "125%",
+          "name": "base_damage"
+        },
+        {
+          "value": "",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 15,
+        "strength": 39
+      },
+      "fields": [
+        {
+          "value": "126.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 19,
+        "strength": 48
+      },
+      "fields": [
+        {
+          "value": "128.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 23,
+        "strength": 56
+      },
+      "fields": [
+        {
+          "value": "130.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "strength": 64
+      },
+      "fields": [
+        {
+          "value": "132.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 31,
+        "strength": 73
+      },
+      "fields": [
+        {
+          "value": "134.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 35,
+        "strength": 81
+      },
+      "fields": [
+        {
+          "value": "136.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 38,
+        "strength": 88
+      },
+      "fields": [
+        {
+          "value": "137.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 41,
+        "strength": 94
+      },
+      "fields": [
+        {
+          "value": "139.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "141.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 47,
+        "strength": 106
+      },
+      "fields": [
+        {
+          "value": "143.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "strength": 113
+      },
+      "fields": [
+        {
+          "value": "145.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 53,
+        "strength": 119
+      },
+      "fields": [
+        {
+          "value": "147.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 125
+      },
+      "fields": [
+        {
+          "value": "148.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "13",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 59,
+        "strength": 132
+      },
+      "fields": [
+        {
+          "value": "150.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "14",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "strength": 138
+      },
+      "fields": [
+        {
+          "value": "152.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "15",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "154.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 146
+      },
+      "fields": [
+        {
+          "value": "156.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 151
+      },
+      "fields": [
+        {
+          "value": "158.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "160%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "161.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "163.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "165.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "167.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "169.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "171.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "172.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "26",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "174.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "27",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "176.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "28",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "178.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "29",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "179.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "29",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "180.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "30",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "181.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "30",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "182.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "31",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "183%",
+          "name": "base_damage"
+        },
+        {
+          "value": "31",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "183.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "32",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "184.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "32",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "185.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "33",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "186.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "33",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "187.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "34",
+          "name": "%_more_area_of_effect"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (125\u2013160)% of Base Attack Damage",
     "+6 seconds to Base duration",
@@ -29,709 +740,48 @@
     "Maximum 15 Spikes"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 33,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "125%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": ""
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Marauder",
+        "Duelist"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 39,
-        "requires_level": 15
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "126.8%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 48,
-        "requires_level": 19
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "128.7%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 56,
-        "requires_level": 23
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "130.5%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 64,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "132.4%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 73,
-        "requires_level": 31
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "134.2%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 81,
-        "requires_level": 35
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "136.1%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 88,
-        "requires_level": 38
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "137.9%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 94,
-        "requires_level": 41
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "139.7%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141.6%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 106,
-        "requires_level": 47
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "143.4%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 113,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "145.3%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 119,
-        "requires_level": 53
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.1%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "148.9%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 132,
-        "requires_level": 59
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150.8%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 138,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152.6%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "154.5%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 146,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "156.3%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 151,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "158.2%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "160%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "161.8%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "163.7%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "165.5%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "167.4%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "169.2%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "171.1%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "172.9%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "174.7%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "176.6%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.4%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "179.3%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.3%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "181.2%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.1%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "183%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "183.9%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "184.9%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "185.8%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186.7%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "187.6%"
-        },
-        {
-          "name": "%_more_area_of_effect",
-          "value": "34"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
     }
+  },
+  "type": [
+    "ground",
+    "enemy"
   ],
   "tags": [
     "is_area_damage [1]"
   ],
   "enchants": {
-    "merciless": [
-      "Earthshatter deals 25% increased Damage",
-      "Earthshatter has 16% increased Area of Effect"
-    ],
     "eternal": [
       "Earthshatter deals 40% increased Damage",
       "Earthshatter has 24% increased Area of Effect",
       "Earthshatter creates +1 fissures"
+    ],
+    "merciless": [
+      "Earthshatter deals 25% increased Damage",
+      "Earthshatter has 16% increased Area of Effect"
     ]
   },
-  "drop_level": 12,
-  "type": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
-  "description": "Slam the ground, sending out rectangular fissures that deal area damage to enemies and thrust a spike from the ground when they end. Warcries or other Slam Attacks performed by you or allied players near any spike will cause them to shatter, damaging surrounding enemies. Works with Maces, Sceptres, Axes, Staves and Unarmed.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1392,55 +1442,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Fissure Length",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Fissures deal % more Damage",
-          "minimum": 0.0,
-          "maximum": 60.0
-        },
-        {
-          "text": "Spikes deal % less Damage",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to create an additional Fissure",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Earthshatter",
+  "description": "Slam the ground, sending out rectangular fissures that deal area damage to enemies and thrust a spike from the ground when they end. Warcries or other Slam Attacks performed by you or allied players near any spike will cause them to shatter, damaging surrounding enemies. Works with Maces, Sceptres, Axes, Staves and Unarmed."
 }

@@ -1,7 +1,701 @@
 {
-  "name": "Vaal Burning Arrow",
+  "quality": {
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "+% to Fire Damage over Time Multiplier",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": null,
+  "slug": "vaal-burning-arrow",
   "gem_class": "Active Skill Gems",
-  "acquisition": {},
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 1,
+        "dexterity": 10
+      },
+      "fields": [
+        {
+          "value": "160%",
+          "name": "base_damage"
+        },
+        {
+          "value": "150",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 2,
+        "dexterity": 12
+      },
+      "fields": [
+        {
+          "value": "162%",
+          "name": "base_damage"
+        },
+        {
+          "value": "152",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 16
+      },
+      "fields": [
+        {
+          "value": "164%",
+          "name": "base_damage"
+        },
+        {
+          "value": "154",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 7,
+        "dexterity": 22
+      },
+      "fields": [
+        {
+          "value": "166%",
+          "name": "base_damage"
+        },
+        {
+          "value": "156",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 11,
+        "dexterity": 31
+      },
+      "fields": [
+        {
+          "value": "168%",
+          "name": "base_damage"
+        },
+        {
+          "value": "158",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "170%",
+          "name": "base_damage"
+        },
+        {
+          "value": "160",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "172%",
+          "name": "base_damage"
+        },
+        {
+          "value": "162",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "174%",
+          "name": "base_damage"
+        },
+        {
+          "value": "164",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "176%",
+          "name": "base_damage"
+        },
+        {
+          "value": "166",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "178%",
+          "name": "base_damage"
+        },
+        {
+          "value": "168",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "180%",
+          "name": "base_damage"
+        },
+        {
+          "value": "170",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "182%",
+          "name": "base_damage"
+        },
+        {
+          "value": "172",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "184%",
+          "name": "base_damage"
+        },
+        {
+          "value": "174",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "186%",
+          "name": "base_damage"
+        },
+        {
+          "value": "176",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "188%",
+          "name": "base_damage"
+        },
+        {
+          "value": "178",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "190%",
+          "name": "base_damage"
+        },
+        {
+          "value": "180",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "192%",
+          "name": "base_damage"
+        },
+        {
+          "value": "182",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "194%",
+          "name": "base_damage"
+        },
+        {
+          "value": "184",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 148
+      },
+      "fields": [
+        {
+          "value": "196%",
+          "name": "base_damage"
+        },
+        {
+          "value": "186",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "198%",
+          "name": "base_damage"
+        },
+        {
+          "value": "188",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "200%",
+          "name": "base_damage"
+        },
+        {
+          "value": "190",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "202%",
+          "name": "base_damage"
+        },
+        {
+          "value": "192",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "204%",
+          "name": "base_damage"
+        },
+        {
+          "value": "194",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "206%",
+          "name": "base_damage"
+        },
+        {
+          "value": "196",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "208%",
+          "name": "base_damage"
+        },
+        {
+          "value": "198",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "210%",
+          "name": "base_damage"
+        },
+        {
+          "value": "200",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "212%",
+          "name": "base_damage"
+        },
+        {
+          "value": "202",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "214%",
+          "name": "base_damage"
+        },
+        {
+          "value": "204",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "216%",
+          "name": "base_damage"
+        },
+        {
+          "value": "206",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "218%",
+          "name": "base_damage"
+        },
+        {
+          "value": "208",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "219%",
+          "name": "base_damage"
+        },
+        {
+          "value": "209",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "220%",
+          "name": "base_damage"
+        },
+        {
+          "value": "210",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "221%",
+          "name": "base_damage"
+        },
+        {
+          "value": "211",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "222%",
+          "name": "base_damage"
+        },
+        {
+          "value": "212",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "223%",
+          "name": "base_damage"
+        },
+        {
+          "value": "213",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "224%",
+          "name": "base_damage"
+        },
+        {
+          "value": "214",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "225%",
+          "name": "base_damage"
+        },
+        {
+          "value": "215",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "226%",
+          "name": "base_damage"
+        },
+        {
+          "value": "216",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "227%",
+          "name": "base_damage"
+        },
+        {
+          "value": "217",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "228%",
+          "name": "base_damage"
+        },
+        {
+          "value": "218",
+          "name": "%_more_damage_with_ignite"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (160\u2013198)% of Base Attack Damage",
     "50% chance to Ignite enemies",
@@ -11,687 +705,24 @@
     "Can't be Evaded"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 10,
-        "requires_level": 1
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "160%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "150"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 12,
-        "requires_level": 2
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "162%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "152"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "164%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "154"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 22,
-        "requires_level": 7
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "166%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "156"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 31,
-        "requires_level": 11
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "168%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "158"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "170%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "160"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "172%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "162"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "174%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "164"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "176%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "166"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "168"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "170"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "172"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "184%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "174"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "176"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "188%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "178"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "190%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "180"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "192%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "182"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "194%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "184"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "196%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "186"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "198%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "188"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "200%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "190"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "202%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "192"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "204%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "194"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "206%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "196"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "208%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "198"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "210%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "200"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "212%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "202"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "214%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "204"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "216%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "206"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "218%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "208"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "219%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "209"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "220%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "210"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "221%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "211"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "222%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "212"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "223%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "213"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "224%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "214"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "225%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "215"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "226%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "216"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "227%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "217"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "228%"
-        },
-        {
-          "name": "%_more_damage_with_ignite",
-          "value": "218"
-        }
-      ]
-    }
+  "target_types": [
+    "attack",
+    "projectileattack",
+    "projectile",
+    "skillcanvolley",
+    "skillcantotem",
+    "skillcantrap",
+    "skillcanmine",
+    "area",
+    "vaal",
+    "fireskill",
+    "type55",
+    "cantusefistofwar"
+  ],
+  "mtx": [],
+  "acquisition": {},
+  "type": [
+    "2711"
   ],
   "tags": [
     "vaal_burning_arrow_explode_on_hit [1]",
@@ -699,15 +730,9 @@
     "cannot_cancel_skill_before_contact_point [1]"
   ],
   "enchants": {
-    "merciless": [],
-    "eternal": []
+    "eternal": [],
+    "merciless": []
   },
-  "drop_level": null,
-  "type": [
-    "2711"
-  ],
-  "mtx": [],
-  "description": "Fires an arrow that explodes, dealing fire damage to its target and other nearby enemies, with an increased chance of igniting them.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1481,30 +1506,6 @@
       ]
     }
   ],
-  "target_types": [
-    "attack",
-    "projectileattack",
-    "projectile",
-    "skillcanvolley",
-    "skillcantotem",
-    "skillcantrap",
-    "skillcanmine",
-    "area",
-    "vaal",
-    "fireskill",
-    "type55",
-    "cantusefistofwar"
-  ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "text": "+% to Fire Damage over Time Multiplier",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Vaal Burning Arrow",
+  "description": "Fires an arrow that explodes, dealing fire damage to its target and other nearby enemies, with an increased chance of igniting them."
 }

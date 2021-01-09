@@ -1,7 +1,739 @@
 {
-  "name": "Spellslinger",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "",
+          "minimum": null
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "",
+          "minimum": null
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "",
+          "minimum": null
+        }
+      ]
+    }
+  },
+  "drop_level": 24,
+  "slug": "spellslinger",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "2",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 30,
+        "intelligence": 71
+      },
+      "fields": [
+        {
+          "value": "55",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "intelligence": 77
+      },
+      "fields": [
+        {
+          "value": "58",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "61",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "63",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "66",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "71",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "74",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "76",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "79",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "82",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "84",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "87",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "89",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "92",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "95",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "97",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "46",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "56",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "58",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "59",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "61",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "62",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "63",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "64",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "65",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "66",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "67",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage"
+        },
+        {
+          "value": "68",
+          "name": "%_increased_cooldown_recovery_rate"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "This Skill's Mana Reservation is the total of the Mana Reservations of Supported Skills, and cannot be further modified",
+    "Trigger this Spell when you fire Projectiles from a Non-Triggered Wand Attack",
+    "Supported Skills have Added Spell Damage equal to (50\u2013100)% of Damage of Equipped WandIf two Wands are Equipped, each contributes half as much Added Damage(0\u201338)% increased Cooldown Recovery Rate"
+  ],
+  "vaal": false,
+  "target_types": [
+    "any"
+  ],
+  "mtx": [],
   "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Witch"
+      ],
+      "act": 3
+    },
     "vendor": {
       "classes": [
         "Witch",
@@ -10,715 +742,8 @@
         "Scion"
       ],
       "vendor_name": "Clarissa"
-    },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Witch"
-      ],
-      "act": 3
     }
   },
-  "mods": [
-    "This Skill's Mana Reservation is the total of the Mana Reservations of Supported Skills, and cannot be further modified",
-    "Trigger this Spell when you fire Projectiles from a Non-Triggered Wand Attack",
-    "Supported Skills have Added Spell Damage equal to (50\u2013100)% of Damage of Equipped WandIf two Wands are Equipped, each contributes half as much Added Damage(0\u201338)% increased Cooldown Recovery Rate"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "50"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "53"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 71,
-        "requires_level": 30
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "55"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 77,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "58"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "61"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 90,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "63"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "66"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 102,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "68"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "71"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "74"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "76"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "79"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "82"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "84"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "87"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "89"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "92"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "95"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "97"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "58"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "59"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "61"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "63"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "65"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "67"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "supported_skills_have_added_spell_damage_equal_to_%_of_damage_of_equipped_wand\\nif_two_wands_are_equipped,_each_contributes_half_as_much_added_damage",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "68"
-        }
-      ]
-    }
-  ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Skills Supported by Spellslinger have 10% reduced Mana Reservation",
-      "Skills Supported by Spellslinger have 20% increased Cooldown Recovery Rate"
-    ],
-    "eternal": [
-      "Skills Supported by Spellslinger have 15% reduced Mana Reservation",
-      "Skills Supported by Spellslinger have 30% increased Cooldown Recovery Rate"
-    ]
-  },
-  "drop_level": 24,
   "type": [
     "spell",
     "instant",
@@ -726,8 +751,17 @@
     "manacostpercent",
     "secondwindsupport"
   ],
-  "mtx": [],
-  "description": "Supports spell skills that do not reserve mana. Cannot support skills used by totems, traps or mines. Cannot modify the skills of minions.Reserves mana based on the supported spells to cause those spells to trigger when you fire projectiles from a wand attack.",
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Skills Supported by Spellslinger have 15% reduced Mana Reservation",
+      "Skills Supported by Spellslinger have 30% increased Cooldown Recovery Rate"
+    ],
+    "merciless": [
+      "Skills Supported by Spellslinger have 10% reduced Mana Reservation",
+      "Skills Supported by Spellslinger have 20% increased Cooldown Recovery Rate"
+    ]
+  },
   "support": [
     {
       "name": "Arcane Surge Support",
@@ -742,39 +776,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Spellslinger",
+  "description": "Supports spell skills that do not reserve mana. Cannot support skills used by totems, traps or mines. Cannot modify the skills of minions.Reserves mana based on the supported spells to cause those spells to trigger when you fire projectiles from a wand attack."
 }

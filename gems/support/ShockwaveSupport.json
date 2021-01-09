@@ -1,47 +1,37 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Shockwave Support",
+  "levels": [
+    {
+      "requirements": {},
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "% increased Melee Damage"
+          "name": "implicit",
+          "value": "is_area_damage [1]triggered_by_shockwave_support [1]"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "requirements": {},
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "% increased Area of Effect"
+          "name": "implicit",
+          "value": ":"
         }
-      ],
-      "weight": 100.0
-    },
-    "divergent": {
-      "mods": [
-        {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "% increased Cooldown Recovery Rate"
-        }
-      ],
-      "weight": 100.0
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "shockwave-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills will Trigger Shockwave on Melee Hit",
     "Supported Skills can only be used with Maces, Sceptres or Staves",
     "Deals (160\u2013260)% of Base Attack Damage",
     "Supported Skills have (0\u201338)% increased Cooldown Recovery Rate"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports melee attack skills. Cannot support Triggered attacks, skills used by Totems, or skills which create minions.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -53,15 +43,18 @@
       "vendor_name": "Yeena"
     },
     "quest": {
+      "act": 2,
       "classes": [
         "Templar",
         "Marauder"
       ],
-      "quest_name": "Sharp and Cruel",
-      "act": 2
+      "quest_name": "Sharp and Cruel"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -610,30 +603,38 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Shockwave Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports melee attack skills. Cannot support Triggered attacks, skills used by Totems, or skills which create minions.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "implicit",
-          "value": "is_area_damage [1]triggered_by_shockwave_support [1]"
+          "maximum": 10.0,
+          "text": "% increased Melee Damage",
+          "minimum": 0.0
         }
       ],
-      "requirements": {}
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "implicit",
-          "value": ":"
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
         }
       ],
-      "requirements": {}
+      "weight": 100.0
+    },
+    "divergent": {
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

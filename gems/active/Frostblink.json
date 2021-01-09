@@ -1,14 +1,1023 @@
 {
-  "name": "Frostblink",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "All",
-        "Classes"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Effect of Cold Ailments",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "",
+          "minimum": null
+        },
+        {
+          "maximum": 40.0,
+          "text": "% increased Cooldown Recovery Rate for each Normal or Magic Enemy in Area% increased Cooldown Recovery Rate for each Rare or Unique Enemy in Area",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 4,
+  "slug": "frostblink",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 12,
+      "maximum_damage": 14.0,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "15, 80",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "0",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 17.0,
+      "minimum_damage": 11.0,
+      "requirements": {
+        "requires_level": 6,
+        "intelligence": 20
+      },
+      "fields": [
+        {
+          "value": "15, 81",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "2",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 23.0,
+      "minimum_damage": 15.0,
+      "requirements": {
+        "requires_level": 9,
+        "intelligence": 27
+      },
+      "fields": [
+        {
+          "value": "15, 82",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 30.0,
+      "minimum_damage": 20.0,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "15, 83",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 42.0,
+      "minimum_damage": 28.0,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "16, 84",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 58.0,
+      "minimum_damage": 39.0,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "16, 85",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 78.0,
+      "minimum_damage": 52.0,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "16, 86",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 102.0,
+      "minimum_damage": 68.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "16, 87",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 134.0,
+      "minimum_damage": 89.0,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "17, 88",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 173.0,
+      "minimum_damage": 116.0,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "17, 89",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 223.0,
+      "minimum_damage": 148.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "17, 90",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 284.0,
+      "minimum_damage": 190.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "17, 91",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 361.0,
+      "minimum_damage": 241.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "18, 92",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 456.0,
+      "minimum_damage": 304.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "18, 93",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 542.0,
+      "minimum_damage": 361.0,
+      "requirements": {
+        "requires_level": 55,
+        "intelligence": 123
+      },
+      "fields": [
+        {
+          "value": "18, 94",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 643.0,
+      "minimum_damage": 428.0,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "18, 95",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 761.0,
+      "minimum_damage": 507.0,
+      "requirements": {
+        "requires_level": 61,
+        "intelligence": 136
+      },
+      "fields": [
+        {
+          "value": "19, 96",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 898.0,
+      "minimum_damage": 599.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "19, 97",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1060.0,
+      "minimum_damage": 706.0,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "19, 98",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1248.0,
+      "minimum_damage": 832.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "19, 99",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1390.0,
+      "minimum_damage": 927.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "20, 100",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1548.0,
+      "minimum_damage": 1032.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "20, 101",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1723.0,
+      "minimum_damage": 1149.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "20, 102",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1917.0,
+      "minimum_damage": 1278.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "20, 103",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "46",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2131.0,
+      "minimum_damage": 1421.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "21, 104",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2368.0,
+      "minimum_damage": 1579.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "21, 105",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2630.0,
+      "minimum_damage": 1754.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "21, 106",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2920.0,
+      "minimum_damage": 1947.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "21, 107",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3241.0,
+      "minimum_damage": 2160.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22, 108",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "56",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3595.0,
+      "minimum_damage": 2396.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22, 109",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "58",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3785.0,
+      "minimum_damage": 2524.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22, 109",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "59",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 3986.0,
+      "minimum_damage": 2657.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22, 110",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 4196.0,
+      "minimum_damage": 2798.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22, 110",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "61",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 4418.0,
+      "minimum_damage": 2945.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22, 111",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "62",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 4650.0,
+      "minimum_damage": 3100.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22, 111",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "63",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4895.0,
+      "minimum_damage": 3263.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "23, 112",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "64",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 5151.0,
+      "minimum_damage": 3434.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "23, 112",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "65",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 5421.0,
+      "minimum_damage": 3614.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "23, 113",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "66",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 5704.0,
+      "minimum_damage": 3803.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "23, 113",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "67",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 6002.0,
+      "minimum_damage": 4001.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "23, 114",
+          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area"
+        },
+        {
+          "value": "68",
+          "name": "%_increased_maximum_travel_distance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "+3 seconds to Base duration",
+    "(15\u201319)% increased Cooldown Recovery Rate for each Normal or Magic Enemy in Area(80\u201399)% increased Cooldown Recovery Rate for each Rare or Unique Enemy in AreaDeals (9\u2013832) to (14\u20131248) Cold Damage(0\u201338)% increased maximum travel distance+(0\u20133) to radius"
+  ],
+  "vaal": false,
+  "target_types": [
+    "enemy",
+    "ground"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/WranglerIceDash.png?w=2&h=2&scale=1",
+      "name": "Wrangler Frostblink Effect",
+      "description": "Your Frostblink becomes a Wrangler Effect."
+    }
+  ],
+  "acquisition": {
     "quest": {
       "quest_name": "Breaking Some Eggs",
       "classes": [
@@ -18,989 +1027,15 @@
         "Scion"
       ],
       "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "+3 seconds to Base duration",
-    "(15\u201319)% increased Cooldown Recovery Rate for each Normal or Magic Enemy in Area(80\u201399)% increased Cooldown Recovery Rate for each Rare or Unique Enemy in AreaDeals (9\u2013832) to (14\u20131248) Cold Damage(0\u201338)% increased maximum travel distance+(0\u20133) to radius"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 9.0,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 12,
-      "maximum_damage": 14.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "15, 80"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "0"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 11.0,
-      "requirements": {
-        "intelligence": 20,
-        "requires_level": 6
-      },
-      "mana_cost": 12,
-      "maximum_damage": 17.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "15, 81"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 15.0,
-      "requirements": {
-        "intelligence": 27,
-        "requires_level": 9
-      },
-      "mana_cost": 13,
-      "maximum_damage": 23.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "15, 82"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 20.0,
-      "requirements": {
-        "intelligence": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 13,
-      "maximum_damage": 30.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "15, 83"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "6"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 28.0,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 14,
-      "maximum_damage": 42.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "16, 84"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "8"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 39.0,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 14,
-      "maximum_damage": 58.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "16, 85"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 52.0,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 15,
-      "maximum_damage": 78.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "16, 86"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "12"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 68.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 15,
-      "maximum_damage": 102.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "16, 87"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "14"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 89.0,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 16,
-      "maximum_damage": 134.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "17, 88"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "16"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 116.0,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 17,
-      "maximum_damage": 173.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "17, 89"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "18"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 148.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 17,
-      "maximum_damage": 223.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "17, 90"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "20"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 190.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 18,
-      "maximum_damage": 284.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "17, 91"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "22"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 241.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 18,
-      "maximum_damage": 361.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "18, 92"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "24"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 304.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 19,
-      "maximum_damage": 456.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "18, 93"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "26"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 361.0,
-      "requirements": {
-        "intelligence": 123,
-        "requires_level": 55
-      },
-      "mana_cost": 20,
-      "maximum_damage": 542.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "18, 94"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "28"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 428.0,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 20,
-      "maximum_damage": 643.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "18, 95"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "30"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 507.0,
-      "requirements": {
-        "intelligence": 136,
-        "requires_level": 61
-      },
-      "mana_cost": 21,
-      "maximum_damage": 761.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "19, 96"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "32"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 599.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 21,
-      "maximum_damage": 898.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "19, 97"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "34"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 706.0,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1060.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "19, 98"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "36"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 832.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1248.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "19, 99"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "38"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 927.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1390.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "20, 100"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "40"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 1032.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1548.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "20, 101"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "42"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 1149.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1723.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "20, 102"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "44"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 1278.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1917.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "20, 103"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "46"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 1421.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2131.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "21, 104"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "48"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 1579.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2368.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "21, 105"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "50"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1754.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2630.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "21, 106"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "52"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1947.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2920.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "21, 107"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "54"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 2160.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3241.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "22, 108"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "56"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 2396.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3595.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "22, 109"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "58"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 2524.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3785.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "22, 109"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "59"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 2657.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "maximum_damage": 3986.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "22, 110"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "60"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 2798.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "maximum_damage": 4196.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "22, 110"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "61"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 2945.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "maximum_damage": 4418.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "22, 111"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "62"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 3100.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 29,
-      "maximum_damage": 4650.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "22, 111"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "63"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 3263.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4895.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "23, 112"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "64"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 3434.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 30,
-      "maximum_damage": 5151.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "23, 112"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "65"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 3614.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 30,
-      "maximum_damage": 5421.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "23, 113"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "66"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 3803.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 30,
-      "maximum_damage": 5704.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "23, 113"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "67"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 4001.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 31,
-      "maximum_damage": 6002.0,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate_for_each_normal_or_magic_enemy_in_area\\n%_increased_cooldown_recovery_rate_for_each_rare_or_unique_enemy_in_area",
-          "value": "23, 114"
-        },
-        {
-          "name": "%_increased_maximum_travel_distance",
-          "value": "68"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Frostblink has 20% increased Cooldown Recovery Rate",
-      "Frostblink has 50% increased maximum travel distance"
-    ],
-    "eternal": [
-      "Frostblink has 30% increased Cooldown Recovery Rate",
-      "Frostblink has 75% increased maximum travel distance"
-    ]
-  },
-  "drop_level": 4,
   "type": [
     "spell",
     "movementskill",
@@ -1020,14 +1055,19 @@
     "type92",
     "secondwindsupport"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/WranglerIceDash.png?w=2&h=2&scale=1",
-      "name": "Wrangler Frostblink Effect",
-      "description": "Your Frostblink becomes a Wrangler Effect."
-    }
+  "tags": [
+    "is_area_damage [1]"
   ],
-  "description": "Teleport to a location, damaging enemies and leaving Chilled ground in an area at both ends of the teleport. Shares a cooldown with other Blink skills.",
+  "enchants": {
+    "eternal": [
+      "Frostblink has 30% increased Cooldown Recovery Rate",
+      "Frostblink has 75% increased maximum travel distance"
+    ],
+    "merciless": [
+      "Frostblink has 20% increased Cooldown Recovery Rate",
+      "Frostblink has 50% increased maximum travel distance"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1586,45 +1626,6 @@
       ]
     }
   ],
-  "target_types": [
-    "enemy",
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "",
-          "minimum": null,
-          "maximum": null
-        },
-        {
-          "text": "% increased Cooldown Recovery Rate for each Normal or Magic Enemy in Area% increased Cooldown Recovery Rate for each Rare or Unique Enemy in Area",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Effect of Cold Ailments",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Frostblink",
+  "description": "Teleport to a location, damaging enemies and leaving Chilled ground in an area at both ends of the teleport. Shares a cooldown with other Blink skills."
 }

@@ -1,44 +1,536 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Blood Magic Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 31,
+        "strength": 52
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills have % reduced Mana Cost"
+          "name": "mana_multiplier",
+          "value": "245%"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 57
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 1.0,
-          "text": "Supported Skills have % reduced Mana Reserved"
+          "name": "mana_multiplier",
+          "value": "242%"
         }
-      ],
-      "weight": 10.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 60
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 60.0,
-          "text": "Supported Skills Deal % increased Damage when on Low Life"
+          "name": "mana_multiplier",
+          "value": "239%"
         }
-      ],
-      "weight": 100.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 38,
+        "strength": 63
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "237%"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 66
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "234%"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 69
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "232%"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 72
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "229%"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "226%"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 78
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "224%"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 81
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "221%"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 84
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "218%"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 87
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "216%"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 90
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "213%"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 93
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "211%"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 96
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "208%"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 99
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "205%"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 102
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "203%"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 105
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "200%"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 108
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "197%"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 111
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "196%"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "193%"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "190%"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "187%"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "184%"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "181%"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "178%"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "175%"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "172%"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "169%"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "166%"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "164%"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "163%"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "162%"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "160%"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "158%"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "157%"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "156%"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "154%"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "152%"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "mana_multiplier",
+          "value": "151%"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "blood-magic-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills Spend Life instead of Mana"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports any skill.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -50,543 +542,52 @@
       "vendor_name": "Clarissa"
     },
     "quest": {
+      "act": 3,
       "classes": [
         "Marauder",
         "Duelist"
       ],
-      "quest_name": "A Fixture of Fate",
-      "act": 3
+      "quest_name": "A Fixture of Fate"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [],
-  "gem_class": "Support Skill Gems",
-  "name": "Blood Magic Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports any skill.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "mana_multiplier",
-          "value": "245%"
+          "maximum": 10.0,
+          "text": "Supported Skills have % reduced Mana Cost",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 31,
-        "strength": 52
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "mana_multiplier",
-          "value": "242%"
+          "maximum": 1.0,
+          "text": "Supported Skills have % reduced Mana Reserved",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 34,
-        "strength": 57
-      }
+      "weight": 10.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "mana_multiplier",
-          "value": "239%"
+          "maximum": 60.0,
+          "text": "Supported Skills Deal % increased Damage when on Low Life",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 36,
-        "strength": 60
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "237%"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 38,
-        "strength": 63
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "234%"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 40,
-        "strength": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "232%"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 42,
-        "strength": 69
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "229%"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 44,
-        "strength": 72
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "226%"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 46,
-        "strength": 75
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "224%"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 48,
-        "strength": 78
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "221%"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 50,
-        "strength": 81
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "218%"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 52,
-        "strength": 84
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "216%"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 54,
-        "strength": 87
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "213%"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 56,
-        "strength": 90
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "211%"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 58,
-        "strength": 93
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "208%"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 60,
-        "strength": 96
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "205%"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 62,
-        "strength": 99
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "203%"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 64,
-        "strength": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "200%"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 66,
-        "strength": 105
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "197%"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 68,
-        "strength": 108
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "196%"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "strength": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "193%"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "190%"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "187%"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "184%"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "181%"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "178%"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "175%"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "172%"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "169%"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "166%"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "164%"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "163%"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "162%"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "160%"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "158%"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "157%"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "156%"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "154%"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "152%"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "mana_multiplier",
-          "value": "151%"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "strength": null
-      }
+      "weight": 100.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

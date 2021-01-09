@@ -1,24 +1,771 @@
 {
-  "name": "Scourge Arrow",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Each Spore Pod fires  Thorn Arrows",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Ranger"
-      ],
-      "act": 3
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to Poison on Hit",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "scourge-arrow",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "28%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20, 30",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 73
+      },
+      "fields": [
+        {
+          "value": "28.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23, 35",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 34,
+        "dexterity": 79
+      },
+      "fields": [
+        {
+          "value": "28.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "27, 40",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 37,
+        "dexterity": 85
+      },
+      "fields": [
+        {
+          "value": "29.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "31, 46",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "29.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "35, 53",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 96
+      },
+      "fields": [
+        {
+          "value": "29.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "38, 58",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "30.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "42, 63",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 46,
+        "dexterity": 104
+      },
+      "fields": [
+        {
+          "value": "30.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "45, 68",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "30.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "49, 74",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 113
+      },
+      "fields": [
+        {
+          "value": "31.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "53, 80",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "31.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "58, 86",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 121
+      },
+      "fields": [
+        {
+          "value": "32.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "62, 93",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "32.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "67, 101",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 130
+      },
+      "fields": [
+        {
+          "value": "32.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "73, 109",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "33.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "78, 117",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "33.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "84, 126",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "33.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "91, 136",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "34.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "98, 146",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "34.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "105, 157",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "35%",
+          "name": "base_damage"
+        },
+        {
+          "value": "113, 169",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "35.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "121, 181",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "35.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "130, 195",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "139, 209",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "149, 224",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "160, 239",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "37.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "171, 256",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "37.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "183, 274",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "37.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "196, 293",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "38.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "209, 314",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "38.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "223, 335",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "38.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "231, 346",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "39.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "239, 358",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "39.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "247, 370",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "39.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "255, 382",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "39.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "263, 395",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "39.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "272, 408",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "40%",
+          "name": "base_damage"
+        },
+        {
+          "value": "281, 421",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "40.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "290, 435",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "40.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "300, 449",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "40.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "309, 464",
+          "name": "_to__added_chaos_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (28\u201335)% of Base Attack Damage",
     "5 maximum Stages",
@@ -30,745 +777,7 @@
     "Arrows Pierce all Targets"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "28%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "20, 30"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "28.4%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "23, 35"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "28.7%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "27, 40"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 85,
-        "requires_level": 37
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "29.1%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "31, 46"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "29.5%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "35, 53"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "29.8%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "38, 58"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "30.2%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "42, 63"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "30.6%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "45, 68"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "30.9%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "49, 74"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "31.3%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "53, 80"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "31.7%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "58, 86"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "32.1%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "62, 93"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "32.4%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "67, 101"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "32.8%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "73, 109"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "33.2%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "78, 117"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "33.5%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "84, 126"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "33.9%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "91, 136"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "34.3%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "98, 146"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "34.6%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "105, 157"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "35%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "113, 169"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "35.4%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "121, 181"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "35.7%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "130, 195"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.1%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "139, 209"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.5%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "149, 224"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.8%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "160, 239"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "37.2%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "171, 256"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "37.6%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "183, 274"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "37.9%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "196, 293"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "38.3%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "209, 314"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "38.7%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "223, 335"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "38.9%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "231, 346"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "39.1%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "239, 358"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "39.2%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "247, 370"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "39.4%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "255, 382"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "39.6%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "263, 395"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "39.8%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "272, 408"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "40%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "281, 421"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "40.2%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "290, 435"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "40.3%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "300, 449"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "40.5%"
-        },
-        {
-          "name": "_to__added_chaos_damage",
-          "value": "309, 464"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "skill_can_fire_arrows [1]",
-    "visual_hit_effect_chaos_is_green [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Scourge Arrow deals 25% increased Damage",
-      "Scourge Arrow has 6% chance to Poison per Stage"
-    ],
-    "eternal": [
-      "Scourge Arrow deals 40% increased Damage",
-      "Scourge Arrow has 8% chance to Poison per Stage",
-      "Scourge Arrow creates an additional spore pod at Maximum Stages"
-    ]
-  },
-  "drop_level": 28,
-  "type": [
+  "target_types": [
     "unknown_11"
   ],
   "mtx": [
@@ -778,7 +787,42 @@
       "description": "Your Scourge Arrow becomes a Night Lotus Effect."
     }
   ],
-  "description": "Channel to infuse an arrow with chaos, gaining stages while it is held. Release to fire it, leaving spore pods in its wake. Each spore pod blooms, firing thorn arrows, which travel for a short time before dissipating. Modifiers that cause additional projectiles to be fired will only apply to the initial arrows, and the spore pods will be split between those arrows.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Ranger"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "unknown_11"
+  ],
+  "tags": [
+    "skill_can_fire_arrows [1]",
+    "visual_hit_effect_chaos_is_green [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Scourge Arrow deals 40% increased Damage",
+      "Scourge Arrow has 8% chance to Poison per Stage",
+      "Scourge Arrow creates an additional spore pod at Maximum Stages"
+    ],
+    "merciless": [
+      "Scourge Arrow deals 25% increased Damage",
+      "Scourge Arrow has 6% chance to Poison per Stage"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1506,49 +1550,6 @@
       ]
     }
   ],
-  "target_types": [
-    "unknown_11"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance to Poison on Hit",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Each Spore Pod fires  Thorn Arrows",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Scourge Arrow",
+  "description": "Channel to infuse an arrow with chaos, gaining stages while it is held. Release to fire it, leaving spore pods in its wake. Each spore pod blooms, firing thorn arrows, which travel for a short time before dissipating. Modifiers that cause additional projectiles to be fired will only apply to the initial arrows, and the spore pods will be split between those arrows."
 }

@@ -1,15 +1,771 @@
 {
-  "name": "Mirror Arrow",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "All",
-        "Classes"
-      ],
-      "vendor_name": "Lilly Roth (Level 1)"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Minions have % increased Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "+ Cooldown Uses",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 30.0,
+          "text": "% increased Arrow Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Minion Maximum Life",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "mirror-arrow",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 10,
+        "dexterity": 29
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 13,
+        "dexterity": 35
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "3",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 17,
+        "dexterity": 43
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 21,
+        "dexterity": 52
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "9",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 25,
+        "dexterity": 60
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 29,
+        "dexterity": 69
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "15",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": 77
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": 90
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 96
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": 102
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "66",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 51,
+        "dexterity": 115
+      },
+      "fields": [
+        {
+          "value": "72",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 121
+      },
+      "fields": [
+        {
+          "value": "78",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 57,
+        "dexterity": 127
+      },
+      "fields": [
+        {
+          "value": "84",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "90",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "45",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 63,
+        "dexterity": 140
+      },
+      "fields": [
+        {
+          "value": "96",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "102",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "51",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "108",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "114",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "57",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "120",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "126",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "63",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "132",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "66",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "138",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "69",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "144",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "72",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "150",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "75",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "156",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "78",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "162",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "81",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "168",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "84",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "174",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "87",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "177",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "89",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "180",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "90",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "183",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "92",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "186",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "93",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "189",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "95",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "192",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "96",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "195",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "98",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "198",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "99",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "201",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "101",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "204",
+          "name": "minions_deal_%_increased_damage"
+        },
+        {
+          "value": "102",
+          "name": "%_increased_minion_maximum_life"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+3 seconds to Base duration",
     "Minions deal (0\u2013114)% increased Damage",
@@ -17,745 +773,7 @@
     "Minions deal 75% more Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 29,
-        "requires_level": 10
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": ""
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 35,
-        "requires_level": 13
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 43,
-        "requires_level": 17
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "12"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 52,
-        "requires_level": 21
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "18"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 60,
-        "requires_level": 25
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 69,
-        "requires_level": 29
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "30"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 77,
-        "requires_level": 33
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "36"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "42"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 90,
-        "requires_level": 39
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "48"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "54"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 102,
-        "requires_level": 45
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "60"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "66"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 115,
-        "requires_level": 51
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "72"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "78"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 127,
-        "requires_level": 57
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "84"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "90"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 140,
-        "requires_level": 63
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "96"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "102"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "108"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "114"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "57"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "120"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "126"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "63"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "132"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "138"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "69"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "144"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "150"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "75"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "156"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "78"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "162"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "81"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "168"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "174"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "87"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "177"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "89"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "180"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "90"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "183"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "186"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "93"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "189"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "95"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "192"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "96"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "195"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "98"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "198"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "99"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "201"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "101"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "minions_deal_%_increased_damage",
-          "value": "204"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "102"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Mirror Arrow and Mirror Arrow Clones deal 25% increased Damage",
-      "Mirror Arrow and Mirror Arrow Clones have 10% increased Attack Speed",
-      "Mirror Arrow has 20% increased Cooldown Recovery Rate"
-    ],
-    "eternal": [
-      "Mirror Arrow and Mirror Arrow Clones deal 40% increased Damage",
-      "Mirror Arrow and Mirror Arrow Clones have 15% increased Attack Speed",
-      "Mirror Arrow has 30% increased Cooldown Recovery Rate"
-    ]
-  },
-  "drop_level": 10,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -781,7 +799,34 @@
       "description": "Your Blink or Mirror Arrow becomes infused with a mystical glow."
     }
   ],
-  "description": "Fires an arrow at the target destination. When the arrow lands, a clone is summoned. The clone is a minion that uses your bow and quiver.",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "vendor_name": "Lilly Roth (Level 1)"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Mirror Arrow and Mirror Arrow Clones deal 40% increased Damage",
+      "Mirror Arrow and Mirror Arrow Clones have 15% increased Attack Speed",
+      "Mirror Arrow has 30% increased Cooldown Recovery Rate"
+    ],
+    "merciless": [
+      "Mirror Arrow and Mirror Arrow Clones deal 25% increased Damage",
+      "Mirror Arrow and Mirror Arrow Clones have 10% increased Attack Speed",
+      "Mirror Arrow has 20% increased Cooldown Recovery Rate"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1478,50 +1523,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Minion Maximum Life",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "+ Cooldown Uses",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Arrow Speed",
-          "minimum": 0.0,
-          "maximum": 30.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Minions have % increased Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Mirror Arrow",
+  "description": "Fires an arrow at the target destination. When the arrow lands, a clone is summoned. The clone is a minion that uses your bow and quiver."
 }

@@ -1,16 +1,508 @@
 {
-  "name": "Hexblast",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Shadow",
-        "Scion",
-        "Templar"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
     },
+    "phantasmal": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Hexblast has % chance to not remove a Hex",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Damage with Ailments",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Effect of non-Damaging Ailments on Enemies",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 28,
+  "slug": "hexblast",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 10,
+      "maximum_damage": 92.0,
+      "minimum_damage": 61.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 110.0,
+      "minimum_damage": 74.0,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 132.0,
+      "minimum_damage": 88.0,
+      "requirements": {
+        "requires_level": 34,
+        "intelligence": 79
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 157.0,
+      "minimum_damage": 105.0,
+      "requirements": {
+        "requires_level": 37,
+        "intelligence": 85
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 186.0,
+      "minimum_damage": 124.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 207.0,
+      "minimum_damage": 138.0,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 231.0,
+      "minimum_damage": 154.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 257.0,
+      "minimum_damage": 171.0,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 104
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 286.0,
+      "minimum_damage": 191.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 318.0,
+      "minimum_damage": 212.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [],
+      "level": 10
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 352.0,
+      "minimum_damage": 235.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [],
+      "level": 11
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 391.0,
+      "minimum_damage": 260.0,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [],
+      "level": 12
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 432.0,
+      "minimum_damage": 288.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [],
+      "level": 13
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 478.0,
+      "minimum_damage": 319.0,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [],
+      "level": 14
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 529.0,
+      "minimum_damage": 352.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 584.0,
+      "minimum_damage": 389.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [],
+      "level": 16
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 644.0,
+      "minimum_damage": 429.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [],
+      "level": 17
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 710.0,
+      "minimum_damage": 473.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 782.0,
+      "minimum_damage": 522.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [],
+      "level": 19
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 862.0,
+      "minimum_damage": 574.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 948.0,
+      "minimum_damage": 632.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 21
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1043.0,
+      "minimum_damage": 695.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 22
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1146.0,
+      "minimum_damage": 764.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 23
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1259.0,
+      "minimum_damage": 839.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 24
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1382.0,
+      "minimum_damage": 922.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 25
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1517.0,
+      "minimum_damage": 1011.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 26
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1664.0,
+      "minimum_damage": 1109.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 27
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1824.0,
+      "minimum_damage": 1216.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 28
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1999.0,
+      "minimum_damage": 1333.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 29
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2190.0,
+      "minimum_damage": 1460.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 30
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2292.0,
+      "minimum_damage": 1528.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 31
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2398.0,
+      "minimum_damage": 1599.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 32
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2509.0,
+      "minimum_damage": 1673.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 33
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2625.0,
+      "minimum_damage": 1750.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 34
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2746.0,
+      "minimum_damage": 1831.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 35
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2872.0,
+      "minimum_damage": 1915.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 36
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3004.0,
+      "minimum_damage": 2003.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 37
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3142.0,
+      "minimum_damage": 2095.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 38
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3286.0,
+      "minimum_damage": 2190.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 39
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3435.0,
+      "minimum_damage": 2290.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (61\u2013574) to (92\u2013862) Chaos Damage",
+    "25% less Area Damage",
+    "50% more Damage with Hits per 5 Doom on Hex with most DoomRemoves Hex with most Doom after Damaging35% more Damage with Ailments per 5 Doom on Hex with most DoomAll Damage can IgniteAll Damage can FreezeAll Damage can ShockChaos Damage with Hits is Resisted by lowest Resistance instead"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
     "quest": {
       "quest_name": "Sever the Right Hand",
       "classes": [
@@ -19,470 +511,17 @@
         "Scion"
       ],
       "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Shadow",
+        "Scion",
+        "Templar"
+      ],
+      "vendor_name": "Clarissa"
     }
   },
-  "mods": [
-    "Deals (61\u2013574) to (92\u2013862) Chaos Damage",
-    "25% less Area Damage",
-    "50% more Damage with Hits per 5 Doom on Hex with most DoomRemoves Hex with most Doom after Damaging35% more Damage with Ailments per 5 Doom on Hex with most DoomAll Damage can IgniteAll Damage can FreezeAll Damage can ShockChaos Damage with Hits is Resisted by lowest Resistance instead"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 61.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 10,
-      "maximum_damage": 92.0,
-      "fields": []
-    },
-    {
-      "level": 2,
-      "minimum_damage": 74.0,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 10,
-      "maximum_damage": 110.0,
-      "fields": []
-    },
-    {
-      "level": 3,
-      "minimum_damage": 88.0,
-      "requirements": {
-        "intelligence": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 11,
-      "maximum_damage": 132.0,
-      "fields": []
-    },
-    {
-      "level": 4,
-      "minimum_damage": 105.0,
-      "requirements": {
-        "intelligence": 85,
-        "requires_level": 37
-      },
-      "mana_cost": 12,
-      "maximum_damage": 157.0,
-      "fields": []
-    },
-    {
-      "level": 5,
-      "minimum_damage": 124.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 12,
-      "maximum_damage": 186.0,
-      "fields": []
-    },
-    {
-      "level": 6,
-      "minimum_damage": 138.0,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 13,
-      "maximum_damage": 207.0,
-      "fields": []
-    },
-    {
-      "level": 7,
-      "minimum_damage": 154.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 14,
-      "maximum_damage": 231.0,
-      "fields": []
-    },
-    {
-      "level": 8,
-      "minimum_damage": 171.0,
-      "requirements": {
-        "intelligence": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 14,
-      "maximum_damage": 257.0,
-      "fields": []
-    },
-    {
-      "level": 9,
-      "minimum_damage": 191.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 15,
-      "maximum_damage": 286.0,
-      "fields": []
-    },
-    {
-      "level": 10,
-      "minimum_damage": 212.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 15,
-      "maximum_damage": 318.0,
-      "fields": []
-    },
-    {
-      "level": 11,
-      "minimum_damage": 235.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 16,
-      "maximum_damage": 352.0,
-      "fields": []
-    },
-    {
-      "level": 12,
-      "minimum_damage": 260.0,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 16,
-      "maximum_damage": 391.0,
-      "fields": []
-    },
-    {
-      "level": 13,
-      "minimum_damage": 288.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 17,
-      "maximum_damage": 432.0,
-      "fields": []
-    },
-    {
-      "level": 14,
-      "minimum_damage": 319.0,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 17,
-      "maximum_damage": 478.0,
-      "fields": []
-    },
-    {
-      "level": 15,
-      "minimum_damage": 352.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "maximum_damage": 529.0,
-      "fields": []
-    },
-    {
-      "level": 16,
-      "minimum_damage": 389.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 18,
-      "maximum_damage": 584.0,
-      "fields": []
-    },
-    {
-      "level": 17,
-      "minimum_damage": 429.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 18,
-      "maximum_damage": 644.0,
-      "fields": []
-    },
-    {
-      "level": 18,
-      "minimum_damage": 473.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 19,
-      "maximum_damage": 710.0,
-      "fields": []
-    },
-    {
-      "level": 19,
-      "minimum_damage": 522.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 19,
-      "maximum_damage": 782.0,
-      "fields": []
-    },
-    {
-      "level": 20,
-      "minimum_damage": 574.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 20,
-      "maximum_damage": 862.0,
-      "fields": []
-    },
-    {
-      "level": 21,
-      "minimum_damage": 632.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "maximum_damage": 948.0,
-      "fields": []
-    },
-    {
-      "level": 22,
-      "minimum_damage": 695.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1043.0,
-      "fields": []
-    },
-    {
-      "level": 23,
-      "minimum_damage": 764.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1146.0,
-      "fields": []
-    },
-    {
-      "level": 24,
-      "minimum_damage": 839.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1259.0,
-      "fields": []
-    },
-    {
-      "level": 25,
-      "minimum_damage": 922.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1382.0,
-      "fields": []
-    },
-    {
-      "level": 26,
-      "minimum_damage": 1011.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1517.0,
-      "fields": []
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1109.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1664.0,
-      "fields": []
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1216.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1824.0,
-      "fields": []
-    },
-    {
-      "level": 29,
-      "minimum_damage": 1333.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1999.0,
-      "fields": []
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1460.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2190.0,
-      "fields": []
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1528.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2292.0,
-      "fields": []
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1599.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2398.0,
-      "fields": []
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1673.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2509.0,
-      "fields": []
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1750.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2625.0,
-      "fields": []
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1831.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2746.0,
-      "fields": []
-    },
-    {
-      "level": 36,
-      "minimum_damage": 1915.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2872.0,
-      "fields": []
-    },
-    {
-      "level": 37,
-      "minimum_damage": 2003.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3004.0,
-      "fields": []
-    },
-    {
-      "level": 38,
-      "minimum_damage": 2095.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3142.0,
-      "fields": []
-    },
-    {
-      "level": 39,
-      "minimum_damage": 2190.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3286.0,
-      "fields": []
-    },
-    {
-      "level": 40,
-      "minimum_damage": 2290.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3435.0,
-      "fields": []
-    }
-  ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Hexblast deals 25% increased Damage",
-      "Hexblast has 16% increased Area of Effect",
-      "Hexblast has 10% chance to not remove a Hex"
-    ],
-    "eternal": [
-      "Hexblast deals 40% increased Damage",
-      "Hexblast has 24% increased Area of Effect",
-      "Hexblast has 15% chance to not remove a Hex"
-    ]
-  },
-  "drop_level": 28,
   "type": [
     "spell",
     "hit",
@@ -497,8 +536,19 @@
     "hex",
     "areaspell"
   ],
-  "mtx": [],
-  "description": "Deals chaos damage to a single enemy, dealing more damage if they are Hexed, then removes the Hex with the highest Doom. If a Hex was removed this way, also deals area damage to other enemies around the target, boosting damage and removing Hexes from those enemies in the same way.",
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Hexblast deals 40% increased Damage",
+      "Hexblast has 24% increased Area of Effect",
+      "Hexblast has 15% chance to not remove a Hex"
+    ],
+    "merciless": [
+      "Hexblast deals 25% increased Damage",
+      "Hexblast has 16% increased Area of Effect",
+      "Hexblast has 10% chance to not remove a Hex"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1093,55 +1143,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Damage with Ailments",
-          "minimum": 0.0,
-          "maximum": 40.0
-        },
-        {
-          "text": "% increased Effect of non-Damaging Ailments on Enemies",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Hexblast has % chance to not remove a Hex",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Hexblast",
+  "description": "Deals chaos damage to a single enemy, dealing more damage if they are Hexed, then removes the Hex with the highest Doom. If a Hex was removed this way, also deals area damage to other enemies around the target, boosting damage and removing Hexes from those enemies in the same way."
 }

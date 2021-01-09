@@ -1,609 +1,618 @@
 {
-  "name": "Barrage",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to Knock Enemies Back on hit",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "Inflict non-Damaging Ailments as though dealing % more Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Projectile Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Attack Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "barrage",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 33
+      },
+      "fields": [
+        {
+          "value": "40%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 15,
+        "dexterity": 39
+      },
+      "fields": [
+        {
+          "value": "40.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 19,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "value": "40.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 23,
+        "dexterity": 56
+      },
+      "fields": [
+        {
+          "value": "41.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 27,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "value": "41.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 73
+      },
+      "fields": [
+        {
+          "value": "42%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 35,
+        "dexterity": 81
+      },
+      "fields": [
+        {
+          "value": "42.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 38,
+        "dexterity": 88
+      },
+      "fields": [
+        {
+          "value": "42.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 41,
+        "dexterity": 94
+      },
+      "fields": [
+        {
+          "value": "43.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "43.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 47,
+        "dexterity": 106
+      },
+      "fields": [
+        {
+          "value": "44%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 113
+      },
+      "fields": [
+        {
+          "value": "44.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 53,
+        "dexterity": 119
+      },
+      "fields": [
+        {
+          "value": "44.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "45.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 59,
+        "dexterity": 132
+      },
+      "fields": [
+        {
+          "value": "45.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "46%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "46.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "46.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "47.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "47.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "48%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "48.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "48.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "49.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "49.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "50%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "50.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "50.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "51.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "51.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "51.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "52%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "52.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "52.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "52.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "52.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "53%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "53.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "53.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "53.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (40\u201347.6)% of Base Attack Damage",
     "Fires 4 additional Projectiles",
     "Fires Projectiles sequentially"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "40%"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "40.4%"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "40.8%"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "41.2%"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "41.6%"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "42%"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "42.4%"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "42.8%"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "43.2%"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "43.6%"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "44%"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "44.4%"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "44.8%"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "45.2%"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "45.6%"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "46%"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "46.4%"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "46.8%"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "47.2%"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "47.6%"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "48%"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "48.4%"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "48.8%"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "49.2%"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "49.6%"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "50%"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "50.4%"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "50.8%"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "51.2%"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "51.6%"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "51.8%"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "52%"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "52.2%"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "52.4%"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "52.6%"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "52.8%"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "53%"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "53.2%"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "53.4%"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "53.6%"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "skill_can_fire_arrows [1]",
-    "skill_can_fire_wand_projectiles [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Barrage Damage",
-      "10% increased Barrage Attack Speed",
-      "Barrage fires an additional Projectile",
-      "Pyroclast Mine deals 25% increased Damage",
-      "Pyroclast Mine has 10% increased Throwing Speed",
-      "Pyroclast Mine fires an additional Projectile"
-    ],
-    "eternal": [
-      "40% increased Barrage Damage",
-      "15% increased Barrage Attack Speed",
-      "Barrage fires an additional Projectile",
-      "Pyroclast Mine deals 40% increased Damage",
-      "Pyroclast Mine has 15% increased Throwing Speed",
-      "Pyroclast Mine fires an additional Projectile"
-    ]
-  },
-  "drop_level": 12,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -619,7 +628,43 @@
       "description": "Your Barrage becomes a Celestial Effect."
     }
   ],
-  "description": "After a short preparation time, you attack repeatedly with a ranged weapon. These attacks have a small randomised spread. Only works with Bows and Wands.",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "skill_can_fire_arrows [1]",
+    "skill_can_fire_wand_projectiles [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Barrage Damage",
+      "15% increased Barrage Attack Speed",
+      "Barrage fires an additional Projectile",
+      "Pyroclast Mine deals 40% increased Damage",
+      "Pyroclast Mine has 15% increased Throwing Speed",
+      "Pyroclast Mine fires an additional Projectile"
+    ],
+    "merciless": [
+      "25% increased Barrage Damage",
+      "10% increased Barrage Attack Speed",
+      "Barrage fires an additional Projectile",
+      "Pyroclast Mine deals 25% increased Damage",
+      "Pyroclast Mine has 10% increased Throwing Speed",
+      "Pyroclast Mine fires an additional Projectile"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1361,50 +1406,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Attack Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Inflict non-Damaging Ailments as though dealing % more Damage",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Projectile Damage",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to Knock Enemies Back on hit",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Barrage",
+  "description": "After a short preparation time, you attack repeatedly with a ranged weapon. These attacks have a small randomised spread. Only works with Bows and Wands."
 }

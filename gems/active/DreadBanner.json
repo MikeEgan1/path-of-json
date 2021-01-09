@@ -1,25 +1,726 @@
 {
-  "name": "Dread Banner",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Nearby Enemies deal % less Damage",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 60.0,
+          "text": "% less Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Duelist"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased effect of Aura",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "You and nearby Allies have % chance to Impale Enemies on Hit with Attacks",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 24,
+  "slug": "dread-banner",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "strength": 64
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "1",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 30,
+        "strength": 71
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "2",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "strength": 77
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "3",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "4",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "strength": 90
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "5",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "strength": 96
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "6",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "strength": 102
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "7",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "8",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "strength": 113
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "9",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "10",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "strength": 121
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "11",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 125
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "12",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "13",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 134
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "strength": 138
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 146
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 151
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "28",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "29",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "30",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "31",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "32",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "33",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "34",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "35",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "36",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "37",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "38",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "nearby_enemies_have_%_less_accuracy_rating"
+        },
+        {
+          "value": "39",
+          "name": "you_and_nearby_allies_have_%_increased_impale_effect"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Base Duration of 10 seconds after being Placed",
     "Nearby Enemies have (15\u201321)% less Accuracy Rating",
@@ -33,714 +734,8 @@
     "Gain 1 Stage when you Impale an Enemy while carrying the Banner, up to 5 per second"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "15"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 64,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "15"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 71,
-        "requires_level": 30
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "15"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 77,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 90,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 96,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "17"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 102,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "17"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "17"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 113,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 121,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 138,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "20"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "20"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 146,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "20"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 151,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "21"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "21"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "21"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "22"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "22"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "22"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "23"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "23"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "23"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "24"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "24"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "24"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "25"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "25"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "25"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "26"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "26"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "26"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "27"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "27"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "27"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "nearby_enemies_have_%_less_accuracy_rating",
-          "value": "28"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_impale_effect",
-          "value": "39"
-        }
-      ]
-    }
-  ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Dread Banner has 25% increased Aura Effect"
-    ],
-    "eternal": [
-      "Dread Banner has 40% increased Aura Effect"
-    ]
-  },
-  "drop_level": 24,
-  "type": [
-    "buff",
-    "area",
-    "spell",
-    "duration",
-    "manacostreserved",
-    "aura",
-    "manacostpercent",
-    "instant",
-    "areaspell",
-    "auraduration",
-    "physicalskill",
-    "banner",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "ground"
   ],
   "mtx": [
     {
@@ -994,7 +989,51 @@
       "description": "Your Banner now has a Demonic Eye skin."
     }
   ],
-  "description": "Casting once reserves mana to carry a banner which makes nearby allies inflict impale with attacks, and lessens the accuracy of nearby enemies. Gain stages by impaling enemies while carrying the banner. Casting the skill again places the banner, ending the mana reservation. Once placed, it becomes more powerful for each stage gained. You cannot have multiple banners at the same time.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Duelist"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "buff",
+    "area",
+    "spell",
+    "duration",
+    "manacostreserved",
+    "aura",
+    "manacostpercent",
+    "instant",
+    "areaspell",
+    "auraduration",
+    "physicalskill",
+    "banner",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Dread Banner has 40% increased Aura Effect"
+    ],
+    "merciless": [
+      "Dread Banner has 25% increased Aura Effect"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1088,44 +1127,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "You and nearby Allies have % chance to Impale Enemies on Hit with Attacks",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased effect of Aura",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Nearby Enemies deal % less Damage",
-          "minimum": 0.0,
-          "maximum": 2.0
-        },
-        {
-          "text": "% less Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 10.0
-    }
-  }
+  "name": "Dread Banner",
+  "description": "Casting once reserves mana to carry a banner which makes nearby allies inflict impale with attacks, and lessens the accuracy of nearby enemies. Gain stages by impaling enemies while carrying the banner. Casting the skill again places the banner, ending the mana reservation. Once placed, it becomes more powerful for each stage gained. You cannot have multiple banners at the same time."
 }

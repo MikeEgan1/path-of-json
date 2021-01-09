@@ -1,44 +1,536 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Life Gain on Hit Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 8,
+        "strength": 18
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "+ Life gained for each Enemy hit by Attacks from Supported Skills"
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "6"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 10,
+        "strength": 21
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 40.0,
-          "text": "Supported Skills deal % increased Damage when on Full Life"
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "8"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 13,
+        "strength": 25
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 2.0,
-          "text": "+ Mana gained for each Enemy hit by Attacks from Supported Skills"
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "10"
         }
-      ],
-      "weight": 10.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 17,
+        "strength": 31
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 21,
+        "strength": 37
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 25,
+        "strength": 43
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 29,
+        "strength": 49
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 33,
+        "strength": 55
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 37,
+        "strength": 61
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 66
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 43,
+        "strength": 70
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 49,
+        "strength": 79
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 84
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 55,
+        "strength": 88
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 93
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 61,
+        "strength": 97
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "38"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 102
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 106
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 111
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "52"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "54"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "56"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "62"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "65"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "66"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "67"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "68"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "69"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "70"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "71"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "72"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "73"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
+          "value": "74"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "life-gain-on-hit-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "+(6\u201344) Life gained for each Enemy hit by Attacks from Supported Skills"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports attack skills.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -50,7 +542,10 @@
       "vendor_name": "Nessa"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -1168,532 +1663,38 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Life Gain on Hit Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports attack skills.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "6"
+          "maximum": 10.0,
+          "text": "+ Life gained for each Enemy hit by Attacks from Supported Skills",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 8,
-        "strength": 18
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "8"
+          "maximum": 40.0,
+          "text": "Supported Skills deal % increased Damage when on Full Life",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 10,
-        "strength": 21
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "10"
+          "maximum": 2.0,
+          "text": "+ Mana gained for each Enemy hit by Attacks from Supported Skills",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 13,
-        "strength": 25
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "12"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 17,
-        "strength": 31
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "14"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 21,
-        "strength": 37
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "16"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 25,
-        "strength": 43
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "18"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 29,
-        "strength": 49
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "20"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 33,
-        "strength": 55
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "22"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 37,
-        "strength": 61
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "24"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 40,
-        "strength": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "26"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 43,
-        "strength": 70
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "28"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 46,
-        "strength": 75
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "30"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 49,
-        "strength": 79
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "32"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 52,
-        "strength": 84
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "34"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 55,
-        "strength": 88
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "36"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 58,
-        "strength": 93
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "38"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 61,
-        "strength": 97
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "40"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 64,
-        "strength": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "42"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 67,
-        "strength": 106
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "44"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "strength": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "46"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "48"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "50"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "52"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "54"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "56"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "58"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "60"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "62"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "64"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "65"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "66"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "67"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "68"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "69"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "70"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "71"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "72"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "73"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "+_life_gained_for_each_enemy_hit_by_attacks_from_supported_skills",
-          "value": "74"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "strength": null
-      }
+      "weight": 10.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

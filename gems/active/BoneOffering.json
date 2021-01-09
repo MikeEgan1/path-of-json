@@ -1,6 +1,943 @@
 {
-  "name": "Bone Offering",
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% less Skill Effect Duration",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 100.0,
+          "text": "Minions recover  Life when they Block",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Grants Minions % increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 5.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Grants Minions +% Chance to Block Attack Damage",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 2.0,
+          "text": "Grants Minions +% Chance to Block Spell Damage",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 12,
+  "slug": "bone-offering",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "25",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "11",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 15,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "25",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "14",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 19,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "26",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "20",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 23,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "26",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "27",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "27",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "38",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "27",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "50",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 35,
+        "intelligence": 81
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "28",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "66",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "28",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "81",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 41,
+        "intelligence": 94
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "29",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "99",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "29",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "120",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 47,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "30",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "146",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "30",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "176",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 53,
+        "intelligence": 119
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "31",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "212",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "31",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "255",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 59,
+        "intelligence": 132
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "32",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "306",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "32",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "366",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "33",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "414",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "33",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "468",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "34",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "528",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "34",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "594",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "35",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "644",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "35",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "693",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "36",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "743",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "36",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "792",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "37",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "842",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "37",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "891",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "38",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "941",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "38",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "990",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "39",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1040",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "39",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1089",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "39",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1114",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "40",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1139",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "40",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1164",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "40",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1188",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "40",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1213",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "41",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1238",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 47,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "41",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1262",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "41",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1287",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 49,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "41",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1312",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 50,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "grants_minions_+%_chance_to_block_attack_damage"
+        },
+        {
+          "value": "42",
+          "name": "grants_minions_+%_chance_to_block_spell_damage"
+        },
+        {
+          "value": "1336",
+          "name": "minions_recover__life_when_they_block"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "+5 seconds to Base duration",
+    "Grants Minions +(25\u201335)% Chance to Block Attack Damage",
+    "Grants Minions +(25\u201334)% Chance to Block Spell Damage",
+    "Additional 1 seconds Base Duration per extra corpse Consumed",
+    "Minions recover (11\u2013594) Life when they Block"
+  ],
+  "vaal": false,
+  "target_types": [
+    "corpse"
+  ],
+  "mtx": [],
   "acquisition": {
     "vendor": {
       "classes": [
@@ -11,910 +948,6 @@
       "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "+5 seconds to Base duration",
-    "Grants Minions +(25\u201335)% Chance to Block Attack Damage",
-    "Grants Minions +(25\u201334)% Chance to Block Spell Damage",
-    "Additional 1 seconds Base Duration per extra corpse Consumed",
-    "Minions recover (11\u2013594) Life when they Block"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "25"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "25"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "26"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "25"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "26"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "26"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "27"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "26"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "27"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "27"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "28"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "27"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "28"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "28"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "29"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "28"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "81"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "29"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "29"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "99"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "30"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "29"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "120"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "30"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "30"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "146"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "31"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "30"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "176"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "31"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "31"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "212"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "32"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "31"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "255"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "32"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "32"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "306"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "33"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "32"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "366"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "33"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "33"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "414"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "34"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "33"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "468"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "34"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "34"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "528"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "35"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "34"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "594"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "35"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "35"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "644"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "36"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "35"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "693"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "36"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "36"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "743"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "37"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "36"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "792"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "37"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "37"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "842"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "38"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "37"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "891"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "38"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "38"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "941"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "39"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "38"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "990"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "39"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "39"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1040"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "40"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "39"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1089"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "40"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "39"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1114"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "40"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "40"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1139"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "40"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "40"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1164"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "41"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "40"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1188"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "41"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "40"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1213"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "41"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "41"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1238"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 47,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "41"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "41"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1262"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "42"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "41"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1287"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 49,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "42"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "41"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1312"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 50,
-      "fields": [
-        {
-          "name": "grants_minions_+%_chance_to_block_attack_damage",
-          "value": "42"
-        },
-        {
-          "name": "grants_minions_+%_chance_to_block_spell_damage",
-          "value": "42"
-        },
-        {
-          "name": "minions_recover__life_when_they_block",
-          "value": "1336"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "30% increased Bone Offering Duration",
-      "Bone Offering grants an additional +6% Chance to Block Attack Damage"
-    ],
-    "eternal": [
-      "45% increased Bone Offering Duration",
-      "Bone Offering grants an additional +9% Chance to Block Attack Damage"
-    ]
-  },
-  "drop_level": 12,
   "type": [
     "spell",
     "buff",
@@ -926,8 +959,19 @@
     "skillcantotem",
     "spellcancascade"
   ],
-  "mtx": [],
-  "description": "Consumes a corpse, granting all of your minions the power to block both attacks and spells. The skill consumes other nearby corpses, increasing the duration for each corpse consumed.",
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "45% increased Bone Offering Duration",
+      "Bone Offering grants an additional +9% Chance to Block Attack Damage"
+    ],
+    "merciless": [
+      "30% increased Bone Offering Duration",
+      "Bone Offering grants an additional +6% Chance to Block Attack Damage"
+    ]
+  },
   "support": [
     {
       "name": "Trap Support",
@@ -1021,49 +1065,6 @@
       ]
     }
   ],
-  "target_types": [
-    "corpse"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Grants Minions +% Chance to Block Attack Damage",
-          "minimum": 0.0,
-          "maximum": 2.0
-        },
-        {
-          "text": "Grants Minions +% Chance to Block Spell Damage",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 5.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "Grants Minions % increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% less Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 40.0
-        },
-        {
-          "text": "Minions recover  Life when they Block",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Bone Offering",
+  "description": "Consumes a corpse, granting all of your minions the power to block both attacks and spells. The skill consumes other nearby corpses, increasing the duration for each corpse consumed."
 }

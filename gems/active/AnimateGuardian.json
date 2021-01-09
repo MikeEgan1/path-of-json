@@ -1,6 +1,1133 @@
 {
-  "name": "Animate Guardian",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "Minions have % increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "Minions have % increased Movement Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Minion Maximum Life",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 28,
+  "slug": "animate-guardian",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 42,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "22, 34",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 31,
+        "strength": 46,
+        "intelligence": 32
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "4",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "25, 37",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 50,
+        "intelligence": 35
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "8",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "27, 41",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 37,
+        "strength": 54,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "12",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "30, 44",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 58,
+        "intelligence": 40
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "16",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "32, 48",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 60,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "20",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "34, 50",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "24",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "35, 53",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 66,
+        "intelligence": 46
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "28",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "37, 55",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "56",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "32",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "38, 58",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 71,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "value": "58",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "36",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "40, 60",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "61",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "40",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "42, 62",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 76,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "63",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "44",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "43, 65",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 79,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "66",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "48",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "45, 67",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 82,
+        "intelligence": 57
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "52",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "46, 70",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "71",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "56",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "56",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "48, 72",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 87,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "73",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "60",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "50, 74",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "76",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "64",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "64",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "51, 77",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 92,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "79",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "68",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "68",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "53, 79",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 95,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "82",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "72",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "72",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "54, 82",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "76",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "76",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "56, 84",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "80",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "80",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "58, 86",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "84",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "84",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "59, 89",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "88",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "88",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "61, 91",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "92",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "92",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "62, 94",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "96",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "96",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "64, 96",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "100",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "100",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "66, 98",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "104",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "104",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "67, 101",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "108",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "108",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "69, 103",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "112",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "112",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "70, 106",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "116",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "116",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "72, 108",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "118",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "118",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "72, 110",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "120",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "120",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "73, 111",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "122",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "122",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "74, 112",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "124",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "124",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "75, 113",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "126",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "126",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "76, 114",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "128",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "128",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "76, 116",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "130",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "130",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "77, 117",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "132",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "132",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "78, 118",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "134",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "134",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "78, 120",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "can_use_items_requiring_up_to_level_"
+        },
+        {
+          "value": "136",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "136",
+          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks"
+        },
+        {
+          "value": "79, 121",
+          "name": "minions'_attacks_deal__to__additional_physical_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Can use Items requiring up to Level (33\u2013100)",
+    "(0\u201376)% increased Minion Maximum Life",
+    "Minions deal (0\u201376)% increased Physical Damage with Melee Attacks",
+    "Minions' Attacks deal (22\u201356) to (34\u201384) additional Physical Damage"
+  ],
+  "vaal": false,
+  "target_types": [
+    "armour",
+    "ground"
+  ],
+  "mtx": [],
   "acquisition": {
     "vendor": {
       "classes": [
@@ -10,1107 +1137,6 @@
       "vendor_name": "Clarissa"
     }
   },
-  "mods": [
-    "Can use Items requiring up to Level (33\u2013100)",
-    "(0\u201376)% increased Minion Maximum Life",
-    "Minions deal (0\u201376)% increased Physical Damage with Melee Attacks",
-    "Minions' Attacks deal (22\u201356) to (34\u201384) additional Physical Damage"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "33"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": ""
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": ""
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "22, 34"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 46,
-        "intelligence": 32,
-        "requires_level": 31
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "36"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "4"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "4"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "25, 37"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 50,
-        "intelligence": 35,
-        "requires_level": 34
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "39"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "8"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "8"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "27, 41"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 54,
-        "intelligence": 37,
-        "requires_level": 37
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "43"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "12"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "12"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "30, 44"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "46"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "16"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "16"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "32, 48"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 42,
-        "requires_level": 42
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "48"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "20"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "20"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "34, 50"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "51"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "24"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "24"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "35, 53"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 46,
-        "requires_level": 46
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "53"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "28"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "28"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "37, 55"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "56"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "32"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "32"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "38, 58"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 71,
-        "intelligence": 49,
-        "requires_level": 50
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "58"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "36"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "36"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "40, 60"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "61"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "40"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "40"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "42, 62"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 76,
-        "intelligence": 53,
-        "requires_level": 54
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "63"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "44"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "44"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "43, 65"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "66"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "48"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "48"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "45, 67"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 82,
-        "intelligence": 57,
-        "requires_level": 58
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "68"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "52"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "52"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "46, 70"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "71"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "56"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "56"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "48, 72"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 87,
-        "intelligence": 60,
-        "requires_level": 62
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "73"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "60"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "60"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "50, 74"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "76"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "64"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "64"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "51, 77"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 92,
-        "intelligence": 64,
-        "requires_level": 66
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "79"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "68"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "68"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "53, 79"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 95,
-        "intelligence": 66,
-        "requires_level": 68
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "82"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "72"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "72"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "54, 82"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "76"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "76"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "56, 84"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "80"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "80"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "58, 86"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "84"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "84"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "59, 89"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "88"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "88"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "61, 91"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "92"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "92"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "62, 94"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "96"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "96"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "64, 96"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "100"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "100"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "66, 98"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "104"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "104"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "67, 101"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "108"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "108"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "69, 103"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "112"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "112"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "70, 106"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "116"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "116"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "72, 108"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "118"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "118"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "72, 110"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "120"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "120"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "73, 111"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "122"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "122"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "74, 112"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "124"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "124"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "75, 113"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "126"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "126"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "76, 114"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "128"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "128"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "76, 116"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "130"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "130"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "77, 117"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "132"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "132"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "78, 118"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "134"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "134"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "78, 120"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "can_use_items_requiring_up_to_level_",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "136"
-        },
-        {
-          "name": "minions_deal_%_increased_physical_damage_with_melee_attacks",
-          "value": "136"
-        },
-        {
-          "name": "minions'_attacks_deal__to__additional_physical_damage",
-          "value": "79, 121"
-        }
-      ]
-    }
-  ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Animated Guardians deal 25% increased Damage",
-      "+24% to Animated Guardian Elemental Resistances"
-    ],
-    "eternal": [
-      "Animated Guardians deal 40% increased Damage",
-      "+36% to Animated Guardian Elemental Resistances"
-    ]
-  },
-  "drop_level": 28,
   "type": [
     "spell",
     "minion",
@@ -1120,8 +1146,17 @@
     "createsminion",
     "physicalskill"
   ],
-  "mtx": [],
-  "description": "Animates a melee weapon or armour, attaching it to an invisible Guardian that fights by your side. Animating multiple items attaches them to the same Guardian. You cannot animate unidentified items. Cannot be used by Traps or Mines.",
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Animated Guardians deal 40% increased Damage",
+      "+36% to Animated Guardian Elemental Resistances"
+    ],
+    "merciless": [
+      "Animated Guardians deal 25% increased Damage",
+      "+24% to Animated Guardian Elemental Resistances"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1240,40 +1275,6 @@
       ]
     }
   ],
-  "target_types": [
-    "armour",
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Minion Maximum Life",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "Minions have % increased Movement Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Minions have % increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Animate Guardian",
+  "description": "Animates a melee weapon or armour, attaching it to an invisible Guardian that fights by your side. Animating multiple items attaches them to the same Guardian. You cannot animate unidentified items. Cannot be used by Traps or Mines."
 }

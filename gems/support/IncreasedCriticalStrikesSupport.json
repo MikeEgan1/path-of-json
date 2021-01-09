@@ -1,45 +1,697 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Increased Critical Strikes Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 8,
+        "intelligence": 18
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Supported Skills have % increased Critical Strike Chance"
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "50"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 10,
+        "intelligence": 21
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 5.0,
-          "text": "Supported Skills have +% to Critical Strike Multiplier"
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "52"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 13,
+        "intelligence": 25
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills have % chance to gain a Power Charge on Killing Blow"
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "54"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.1"
         }
-      ],
-      "weight": 20.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 17,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "56"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.1"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 21,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "58"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.2"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 25,
+        "intelligence": 43
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "60"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.2"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 29,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "62"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.3"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 33,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "64"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.3"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 37,
+        "intelligence": 61
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "66"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.4"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "68"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.4"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 43,
+        "intelligence": 70
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "70"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "72"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 49,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "74"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.6"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "76"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.6"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 55,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "78"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.7"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 93
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "80"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.7"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 61,
+        "intelligence": 97
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "82"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.8"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "84"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.8"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "86"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.9"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 111
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "88"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "1.9"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "90"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "92"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "94"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.1"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "96"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.1"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "98"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.2"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "100"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.2"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "102"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.3"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "104"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.3"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "106"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.4"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "108"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.4"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "109"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.4"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "110"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.5"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "111"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.5"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "112"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.5"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "113"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.5"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "114"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.6"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "115"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.6"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "116"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.6"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "117"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.6"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_increased_critical_strike_chance",
+          "value": "118"
+        },
+        {
+          "name": "supported_skills_have_+%_to_critical_strike_chance",
+          "value": "2.7"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "increased-critical-strikes-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills have (50\u201388)% increased Critical Strike Chance",
     "Supported Skills have +(1\u20131.9)% to Critical Strike Chance"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports any skill that hits enemies.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -51,7 +703,10 @@
       "vendor_name": "Nessa"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -2479,692 +3134,38 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Increased Critical Strikes Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports any skill that hits enemies.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "50"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1"
+          "maximum": 20.0,
+          "text": "Supported Skills have % increased Critical Strike Chance",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 8,
-        "intelligence": 18
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "52"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1"
+          "maximum": 5.0,
+          "text": "Supported Skills have +% to Critical Strike Multiplier",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 10,
-        "intelligence": 21
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "54"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.1"
+          "maximum": 10.0,
+          "text": "Supported Skills have % chance to gain a Power Charge on Killing Blow",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 13,
-        "intelligence": 25
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "56"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.1"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 17,
-        "intelligence": 31
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "58"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.2"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 21,
-        "intelligence": 37
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "60"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.2"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 25,
-        "intelligence": 43
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "62"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.3"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 29,
-        "intelligence": 49
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "64"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.3"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 33,
-        "intelligence": 55
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "66"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.4"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 37,
-        "intelligence": 61
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "68"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.4"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 40,
-        "intelligence": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "70"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.5"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 43,
-        "intelligence": 70
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "72"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.5"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 46,
-        "intelligence": 75
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "74"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.6"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 49,
-        "intelligence": 79
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "76"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.6"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 52,
-        "intelligence": 84
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "78"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.7"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 55,
-        "intelligence": 88
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "80"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.7"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 58,
-        "intelligence": 93
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "82"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.8"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 61,
-        "intelligence": 97
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "84"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.8"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 64,
-        "intelligence": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "86"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.9"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 67,
-        "intelligence": 106
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "88"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "1.9"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "intelligence": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "90"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "92"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "94"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.1"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "96"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.1"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "98"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.2"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "100"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.2"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "102"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.3"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "104"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.3"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "106"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.4"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "108"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.4"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "109"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.4"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "110"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.5"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "111"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.5"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "112"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.5"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "113"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.5"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "114"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.6"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "115"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.6"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "116"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.6"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "117"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.6"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_increased_critical_strike_chance",
-          "value": "118"
-        },
-        {
-          "name": "supported_skills_have_+%_to_critical_strike_chance",
-          "value": "2.7"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "intelligence": null
-      }
+      "weight": 20.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

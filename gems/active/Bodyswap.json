@@ -1,7 +1,550 @@
 {
-  "name": "Bodyswap",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "% increased Burning Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Damage if not Consuming a Corpse",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 10,
+  "slug": "bodyswap",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 8,
+      "maximum_damage": 5.0,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "requires_level": 10,
+        "dexterity": 12,
+        "intelligence": 18
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 7.0,
+      "minimum_damage": 5.0,
+      "requirements": {
+        "requires_level": 13,
+        "dexterity": 15,
+        "intelligence": 22
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 9.0,
+      "minimum_damage": 6.0,
+      "requirements": {
+        "requires_level": 17,
+        "dexterity": 19,
+        "intelligence": 27
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 13.0,
+      "minimum_damage": 8.0,
+      "requirements": {
+        "requires_level": 21,
+        "dexterity": 23,
+        "intelligence": 33
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 17.0,
+      "minimum_damage": 11.0,
+      "requirements": {
+        "requires_level": 25,
+        "dexterity": 26,
+        "intelligence": 38
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 22.0,
+      "minimum_damage": 15.0,
+      "requirements": {
+        "requires_level": 29,
+        "dexterity": 30,
+        "intelligence": 43
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 28.0,
+      "minimum_damage": 19.0,
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": 34,
+        "intelligence": 49
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 34.0,
+      "minimum_damage": 23.0,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 36,
+        "intelligence": 53
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 41.0,
+      "minimum_damage": 27.0,
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": 39,
+        "intelligence": 56
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 49.0,
+      "minimum_damage": 33.0,
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 42,
+        "intelligence": 60
+      },
+      "fields": [],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 58.0,
+      "minimum_damage": 39.0,
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": 45,
+        "intelligence": 64
+      },
+      "fields": [],
+      "level": 11
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 69.0,
+      "minimum_damage": 46.0,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 48,
+        "intelligence": 68
+      },
+      "fields": [],
+      "level": 12
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 82.0,
+      "minimum_damage": 55.0,
+      "requirements": {
+        "requires_level": 51,
+        "dexterity": 50,
+        "intelligence": 72
+      },
+      "fields": [],
+      "level": 13
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 97.0,
+      "minimum_damage": 65.0,
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 53,
+        "intelligence": 76
+      },
+      "fields": [],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 115.0,
+      "minimum_damage": 77.0,
+      "requirements": {
+        "requires_level": 57,
+        "dexterity": 56,
+        "intelligence": 80
+      },
+      "fields": [],
+      "level": 15
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 136.0,
+      "minimum_damage": 90.0,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 59,
+        "intelligence": 84
+      },
+      "fields": [],
+      "level": 16
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 159.0,
+      "minimum_damage": 106.0,
+      "requirements": {
+        "requires_level": 63,
+        "dexterity": 61,
+        "intelligence": 88
+      },
+      "fields": [],
+      "level": 17
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 187.0,
+      "minimum_damage": 125.0,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 64,
+        "intelligence": 92
+      },
+      "fields": [],
+      "level": 18
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 208.0,
+      "minimum_damage": 139.0,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 66,
+        "intelligence": 95
+      },
+      "fields": [],
+      "level": 19
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 231.0,
+      "minimum_damage": 154.0,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 68,
+        "intelligence": 98
+      },
+      "fields": [],
+      "level": 20
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 257.0,
+      "minimum_damage": 171.0,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 21
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 285.0,
+      "minimum_damage": 190.0,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 316.0,
+      "minimum_damage": 211.0,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 350.0,
+      "minimum_damage": 233.0,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 24
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 388.0,
+      "minimum_damage": 259.0,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 430.0,
+      "minimum_damage": 286.0,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 476.0,
+      "minimum_damage": 317.0,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 526.0,
+      "minimum_damage": 351.0,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 28
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 582.0,
+      "minimum_damage": 388.0,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 643.0,
+      "minimum_damage": 429.0,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 30
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 676.0,
+      "minimum_damage": 451.0,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 711.0,
+      "minimum_damage": 474.0,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 747.0,
+      "minimum_damage": 498.0,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 785.0,
+      "minimum_damage": 523.0,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 34
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 825.0,
+      "minimum_damage": 550.0,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 35
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 867.0,
+      "minimum_damage": 578.0,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 36
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 911.0,
+      "minimum_damage": 607.0,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 37
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 957.0,
+      "minimum_damage": 638.0,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 38
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 1005.0,
+      "minimum_damage": 670.0,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 39
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 1056.0,
+      "minimum_damage": 704.0,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Explosion deals base Fire Damage equal to 6% of the corpse's Maximum Life",
+    "This Spell deals (3\u2013154) to (5\u2013231), plus 3% of your maximum Life, as base Fire Damage",
+    "300% more Area of Effect if Consuming a corpse"
+  ],
+  "vaal": false,
+  "target_types": [
+    "corpse",
+    "enemy"
+  ],
+  "mtx": [],
   "acquisition": {
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Witch"
+      ],
+      "act": 1
+    },
     "vendor": {
       "classes": [
         "Witch",
@@ -11,517 +554,8 @@
         "Scion"
       ],
       "vendor_name": "Nessa"
-    },
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Witch"
-      ],
-      "act": 1
     }
   },
-  "mods": [
-    "Explosion deals base Fire Damage equal to 6% of the corpse's Maximum Life",
-    "This Spell deals (3\u2013154) to (5\u2013231), plus 3% of your maximum Life, as base Fire Damage",
-    "300% more Area of Effect if Consuming a corpse"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 3.0,
-      "requirements": {
-        "dexterity": 12,
-        "intelligence": 18,
-        "requires_level": 10
-      },
-      "mana_cost": 8,
-      "maximum_damage": 5.0,
-      "fields": []
-    },
-    {
-      "level": 2,
-      "minimum_damage": 5.0,
-      "requirements": {
-        "dexterity": 15,
-        "intelligence": 22,
-        "requires_level": 13
-      },
-      "mana_cost": 9,
-      "maximum_damage": 7.0,
-      "fields": []
-    },
-    {
-      "level": 3,
-      "minimum_damage": 6.0,
-      "requirements": {
-        "dexterity": 19,
-        "intelligence": 27,
-        "requires_level": 17
-      },
-      "mana_cost": 10,
-      "maximum_damage": 9.0,
-      "fields": []
-    },
-    {
-      "level": 4,
-      "minimum_damage": 8.0,
-      "requirements": {
-        "dexterity": 23,
-        "intelligence": 33,
-        "requires_level": 21
-      },
-      "mana_cost": 11,
-      "maximum_damage": 13.0,
-      "fields": []
-    },
-    {
-      "level": 5,
-      "minimum_damage": 11.0,
-      "requirements": {
-        "dexterity": 26,
-        "intelligence": 38,
-        "requires_level": 25
-      },
-      "mana_cost": 12,
-      "maximum_damage": 17.0,
-      "fields": []
-    },
-    {
-      "level": 6,
-      "minimum_damage": 15.0,
-      "requirements": {
-        "dexterity": 30,
-        "intelligence": 43,
-        "requires_level": 29
-      },
-      "mana_cost": 13,
-      "maximum_damage": 22.0,
-      "fields": []
-    },
-    {
-      "level": 7,
-      "minimum_damage": 19.0,
-      "requirements": {
-        "dexterity": 34,
-        "intelligence": 49,
-        "requires_level": 33
-      },
-      "mana_cost": 14,
-      "maximum_damage": 28.0,
-      "fields": []
-    },
-    {
-      "level": 8,
-      "minimum_damage": 23.0,
-      "requirements": {
-        "dexterity": 36,
-        "intelligence": 53,
-        "requires_level": 36
-      },
-      "mana_cost": 15,
-      "maximum_damage": 34.0,
-      "fields": []
-    },
-    {
-      "level": 9,
-      "minimum_damage": 27.0,
-      "requirements": {
-        "dexterity": 39,
-        "intelligence": 56,
-        "requires_level": 39
-      },
-      "mana_cost": 16,
-      "maximum_damage": 41.0,
-      "fields": []
-    },
-    {
-      "level": 10,
-      "minimum_damage": 33.0,
-      "requirements": {
-        "dexterity": 42,
-        "intelligence": 60,
-        "requires_level": 42
-      },
-      "mana_cost": 16,
-      "maximum_damage": 49.0,
-      "fields": []
-    },
-    {
-      "level": 11,
-      "minimum_damage": 39.0,
-      "requirements": {
-        "dexterity": 45,
-        "intelligence": 64,
-        "requires_level": 45
-      },
-      "mana_cost": 17,
-      "maximum_damage": 58.0,
-      "fields": []
-    },
-    {
-      "level": 12,
-      "minimum_damage": 46.0,
-      "requirements": {
-        "dexterity": 48,
-        "intelligence": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 18,
-      "maximum_damage": 69.0,
-      "fields": []
-    },
-    {
-      "level": 13,
-      "minimum_damage": 55.0,
-      "requirements": {
-        "dexterity": 50,
-        "intelligence": 72,
-        "requires_level": 51
-      },
-      "mana_cost": 19,
-      "maximum_damage": 82.0,
-      "fields": []
-    },
-    {
-      "level": 14,
-      "minimum_damage": 65.0,
-      "requirements": {
-        "dexterity": 53,
-        "intelligence": 76,
-        "requires_level": 54
-      },
-      "mana_cost": 19,
-      "maximum_damage": 97.0,
-      "fields": []
-    },
-    {
-      "level": 15,
-      "minimum_damage": 77.0,
-      "requirements": {
-        "dexterity": 56,
-        "intelligence": 80,
-        "requires_level": 57
-      },
-      "mana_cost": 20,
-      "maximum_damage": 115.0,
-      "fields": []
-    },
-    {
-      "level": 16,
-      "minimum_damage": 90.0,
-      "requirements": {
-        "dexterity": 59,
-        "intelligence": 84,
-        "requires_level": 60
-      },
-      "mana_cost": 21,
-      "maximum_damage": 136.0,
-      "fields": []
-    },
-    {
-      "level": 17,
-      "minimum_damage": 106.0,
-      "requirements": {
-        "dexterity": 61,
-        "intelligence": 88,
-        "requires_level": 63
-      },
-      "mana_cost": 21,
-      "maximum_damage": 159.0,
-      "fields": []
-    },
-    {
-      "level": 18,
-      "minimum_damage": 125.0,
-      "requirements": {
-        "dexterity": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "mana_cost": 22,
-      "maximum_damage": 187.0,
-      "fields": []
-    },
-    {
-      "level": 19,
-      "minimum_damage": 139.0,
-      "requirements": {
-        "dexterity": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "mana_cost": 22,
-      "maximum_damage": 208.0,
-      "fields": []
-    },
-    {
-      "level": 20,
-      "minimum_damage": 154.0,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 23,
-      "maximum_damage": 231.0,
-      "fields": []
-    },
-    {
-      "level": 21,
-      "minimum_damage": 171.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 24,
-      "maximum_damage": 257.0,
-      "fields": []
-    },
-    {
-      "level": 22,
-      "minimum_damage": 190.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 24,
-      "maximum_damage": 285.0,
-      "fields": []
-    },
-    {
-      "level": 23,
-      "minimum_damage": 211.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "maximum_damage": 316.0,
-      "fields": []
-    },
-    {
-      "level": 24,
-      "minimum_damage": 233.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "maximum_damage": 350.0,
-      "fields": []
-    },
-    {
-      "level": 25,
-      "minimum_damage": 259.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 26,
-      "maximum_damage": 388.0,
-      "fields": []
-    },
-    {
-      "level": 26,
-      "minimum_damage": 286.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "maximum_damage": 430.0,
-      "fields": []
-    },
-    {
-      "level": 27,
-      "minimum_damage": 317.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "maximum_damage": 476.0,
-      "fields": []
-    },
-    {
-      "level": 28,
-      "minimum_damage": 351.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "maximum_damage": 526.0,
-      "fields": []
-    },
-    {
-      "level": 29,
-      "minimum_damage": 388.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 28,
-      "maximum_damage": 582.0,
-      "fields": []
-    },
-    {
-      "level": 30,
-      "minimum_damage": 429.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "maximum_damage": 643.0,
-      "fields": []
-    },
-    {
-      "level": 31,
-      "minimum_damage": 451.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 28,
-      "maximum_damage": 676.0,
-      "fields": []
-    },
-    {
-      "level": 32,
-      "minimum_damage": 474.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "maximum_damage": 711.0,
-      "fields": []
-    },
-    {
-      "level": 33,
-      "minimum_damage": 498.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "maximum_damage": 747.0,
-      "fields": []
-    },
-    {
-      "level": 34,
-      "minimum_damage": 523.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "maximum_damage": 785.0,
-      "fields": []
-    },
-    {
-      "level": 35,
-      "minimum_damage": 550.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 29,
-      "maximum_damage": 825.0,
-      "fields": []
-    },
-    {
-      "level": 36,
-      "minimum_damage": 578.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 30,
-      "maximum_damage": 867.0,
-      "fields": []
-    },
-    {
-      "level": 37,
-      "minimum_damage": 607.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 30,
-      "maximum_damage": 911.0,
-      "fields": []
-    },
-    {
-      "level": 38,
-      "minimum_damage": 638.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 30,
-      "maximum_damage": 957.0,
-      "fields": []
-    },
-    {
-      "level": 39,
-      "minimum_damage": 670.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 30,
-      "maximum_damage": 1005.0,
-      "fields": []
-    },
-    {
-      "level": 40,
-      "minimum_damage": 704.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 31,
-      "maximum_damage": 1056.0,
-      "fields": []
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Bodyswap Damage",
-      "8% increased Bodyswap Cast Speed"
-    ],
-    "eternal": [
-      "40% increased Bodyswap Damage",
-      "12% increased Bodyswap Cast Speed"
-    ]
-  },
-  "drop_level": 10,
   "type": [
     "movementskill",
     "spell",
@@ -535,8 +569,19 @@
     "areaspell",
     "travelskill"
   ],
-  "mtx": [],
-  "description": "Violently destroys your body and recreates it at the location of a targeted enemy or corpse, dealing spell damage in an area at both locations. If there is no specific target, it will prioritise corpses over enemies. If targeting a corpse, the corpse will also explode, dealing damage around it that is not affected by modifiers to spell damage, and cannot be reflected. This spell cannot be repeated.",
+  "tags": [
+    "is_area_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Bodyswap Damage",
+      "12% increased Bodyswap Cast Speed"
+    ],
+    "merciless": [
+      "25% increased Bodyswap Damage",
+      "8% increased Bodyswap Cast Speed"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1087,50 +1132,6 @@
       ]
     }
   ],
-  "target_types": [
-    "corpse",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% increased Damage if not Consuming a Corpse",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Burning Damage",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Bodyswap",
+  "description": "Violently destroys your body and recreates it at the location of a targeted enemy or corpse, dealing spell damage in an area at both locations. If there is no specific target, it will prioritise corpses over enemies. If targeting a corpse, the corpse will also explode, dealing damage around it that is not affected by modifiers to spell damage, and cannot be reflected. This spell cannot be repeated."
 }

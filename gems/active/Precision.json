@@ -1,1060 +1,1054 @@
 {
-  "name": "Precision",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% reduced Mana Reserved",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Duelist",
-        "Ranger"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "You and nearby Allies deal % increased Damage",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 10.0,
+          "text": "You and nearby Allies have % less Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "precision",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 10,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "93",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 13,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "128",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 17,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "162",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 21,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "193",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 25,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "59",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "223",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "28",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 29,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "276",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "30",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "76",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "305",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "32",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "86",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "332",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "34",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "94",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "359",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "36",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "102",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "385",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "38",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "110",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "444",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "40",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "118",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "469",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "42",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 51,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "126",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "493",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "44",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "135",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "516",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "46",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 57,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "142",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "539",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "48",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "151",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "606",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "50",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 63,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "159",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "630",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "52",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "167",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "653",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "54",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "176",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "677",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "56",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "18",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "186",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "701",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "58",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "19",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "195",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "778",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "60",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "20",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "202",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "804",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "62",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "21",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "208",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "831",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "64",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "22",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "215",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "857",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "66",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "23",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "222",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "883",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "68",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "24",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "228",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "972",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "70",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "25",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "235",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1000",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "72",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "26",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "242",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1029",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "74",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "27",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "248",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1058",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "76",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "28",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "255",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1087",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "78",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "270",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1172",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "79",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "278",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1187",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "80",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "286",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1203",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "81",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "294",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1218",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "82",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "303",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1233",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "83",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "311",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1324",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "84",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "319",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1340",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "85",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "327",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1357",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "86",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "335",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1374",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "87",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "343",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "1390",
+          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating"
+        },
+        {
+          "value": "88",
+          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance"
+        },
+        {
+          "value": "34",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "You and nearby allies gain +(93\u2013701) to Accuracy Rating",
     "You and nearby allies gain (20\u201358)% increased Critical Strike Chance",
     "+(0\u201319) to radius"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 10
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "22"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "93"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "20"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 13
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "32"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "128"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "22"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 17
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "40"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "162"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "24"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 21
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "50"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "193"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "26"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 25
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "59"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "223"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "28"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 29
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "68"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "276"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "30"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "76"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "305"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "32"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "86"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "332"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "34"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "94"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "359"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "36"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "102"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "385"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "38"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "110"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "444"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "40"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "118"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "469"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "42"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 51
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "126"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "493"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "44"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "135"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "516"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "46"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 57
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "142"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "539"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "48"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "151"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "606"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "50"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 63
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "159"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "630"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "52"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "167"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "653"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "54"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "176"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "677"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "56"
-        },
-        {
-          "name": "to_radius",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "186"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "701"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "58"
-        },
-        {
-          "name": "to_radius",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "195"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "778"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "60"
-        },
-        {
-          "name": "to_radius",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "202"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "804"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "62"
-        },
-        {
-          "name": "to_radius",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "208"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "831"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "64"
-        },
-        {
-          "name": "to_radius",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "215"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "857"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "66"
-        },
-        {
-          "name": "to_radius",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "222"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "883"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "68"
-        },
-        {
-          "name": "to_radius",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "228"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "972"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "70"
-        },
-        {
-          "name": "to_radius",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "235"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1000"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "72"
-        },
-        {
-          "name": "to_radius",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "242"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1029"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "74"
-        },
-        {
-          "name": "to_radius",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "248"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1058"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "76"
-        },
-        {
-          "name": "to_radius",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "255"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1087"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "78"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "270"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1172"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "79"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "278"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1187"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "80"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "286"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1203"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "81"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "294"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1218"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "82"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "303"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1233"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "83"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "311"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1324"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "84"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "319"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1340"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "85"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "327"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1357"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "86"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "335"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1374"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "87"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "343"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_+_to_accuracy_rating",
-          "value": "1390"
-        },
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_critical_strike_chance",
-          "value": "88"
-        },
-        {
-          "name": "to_radius",
-          "value": "34"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Precision has 20% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Precision has 30% reduced Mana Reservation"
-    ]
-  },
-  "drop_level": 10,
-  "type": [
-    "spell",
-    "area",
-    "buff",
-    "manacostreserved",
-    "type27",
-    "skillcantotem",
-    "aura",
-    "instant",
-    "areaspell",
-    "canhaveblessing",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -1303,7 +1297,52 @@
       "description": "Your Aura becomes a Darkwood Effect."
     }
   ],
-  "description": "Casts an aura that grants accuracy and critical strike chance to you and your allies.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Duelist",
+        "Ranger"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "area",
+    "buff",
+    "manacostreserved",
+    "type27",
+    "skillcantotem",
+    "aura",
+    "instant",
+    "areaspell",
+    "canhaveblessing",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Precision has 30% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Precision has 20% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1362,44 +1401,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "You and nearby Allies deal % increased Damage",
-          "minimum": 0.0,
-          "maximum": 10.0
-        },
-        {
-          "text": "You and nearby Allies have % less Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% reduced Mana Reserved",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 10.0
-    }
-  }
+  "name": "Precision",
+  "description": "Casts an aura that grants accuracy and critical strike chance to you and your allies."
 }

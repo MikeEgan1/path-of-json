@@ -1,902 +1,889 @@
 {
-  "name": "Wrath",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "% increased effect of Aura",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Shadow",
-        "Scion"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 1.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "% reduced Mana Reserved",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 24,
+  "slug": "wrath",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "2, 37",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "3, 43",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 30,
+        "intelligence": 71
+      },
+      "fields": [
+        {
+          "value": "3, 50",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "intelligence": 77
+      },
+      "fields": [
+        {
+          "value": "4, 57",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "4, 66",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "5, 75",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "5, 85",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "value": "6, 97",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "7, 109",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "7, 118",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "8, 128",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "9, 138",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "9, 149",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        },
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "10, 161",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        },
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "11, 173",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        },
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "12, 186",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "13, 200",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "13, 215",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "14, 231",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "18",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "16, 248",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "19",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17, 267",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "20",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "18, 286",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "21",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "19, 306",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "22",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "20, 328",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "23",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22, 351",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "24",
+          "name": "to_radius"
+        },
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "23, 375",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "25",
+          "name": "to_radius"
+        },
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "25, 401",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "26",
+          "name": "to_radius"
+        },
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "27, 429",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "27",
+          "name": "to_radius"
+        },
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29, 458",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "28",
+          "name": "to_radius"
+        },
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31, 490",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        },
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32, 506",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        },
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33, 523",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        },
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34, 540",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        },
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35, 558",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        },
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36, 576",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        },
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37, 595",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        },
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38, 614",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        },
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40, 634",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        },
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41, 655",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        },
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42, 676",
+          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks"
+        },
+        {
+          "value": "34",
+          "name": "to_radius"
+        },
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "You and nearby allies deal (2\u201316) to (37\u2013248) additional Lightning Damage with Attacks",
     "+(0\u201319) to radius",
     "You and nearby allies deal (15\u201321)% more Spell Lightning Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "2, 37"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "3, 43"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 71,
-        "requires_level": 30
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "3, 50"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 77,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "4, 57"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "4, 66"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 90,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "5, 75"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "5, 85"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 102,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "6, 97"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "7, 109"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "7, 118"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "8, 128"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "9, 138"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "9, 149"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "10, 161"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "11, 173"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "12, 186"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "13, 200"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "13, 215"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "14, 231"
-        },
-        {
-          "name": "to_radius",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "16, 248"
-        },
-        {
-          "name": "to_radius",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "17, 267"
-        },
-        {
-          "name": "to_radius",
-          "value": "20"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "18, 286"
-        },
-        {
-          "name": "to_radius",
-          "value": "21"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "19, 306"
-        },
-        {
-          "name": "to_radius",
-          "value": "22"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "20, 328"
-        },
-        {
-          "name": "to_radius",
-          "value": "23"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "22, 351"
-        },
-        {
-          "name": "to_radius",
-          "value": "24"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "23, 375"
-        },
-        {
-          "name": "to_radius",
-          "value": "25"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "25, 401"
-        },
-        {
-          "name": "to_radius",
-          "value": "26"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "27, 429"
-        },
-        {
-          "name": "to_radius",
-          "value": "27"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "29, 458"
-        },
-        {
-          "name": "to_radius",
-          "value": "28"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "31, 490"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "32, 506"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "33, 523"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "34, 540"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "35, 558"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "36, 576"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "37, 595"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "38, 614"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "40, 634"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "41, 655"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal__to__additional_lightning_damage_with_attacks",
-          "value": "42, 676"
-        },
-        {
-          "name": "to_radius",
-          "value": "34"
-        },
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_lightning_damage",
-          "value": "26"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Wrath has 10% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Wrath has 15% reduced Mana Reservation"
-    ]
-  },
-  "drop_level": 24,
-  "type": [
-    "spell",
-    "area",
-    "buff",
-    "manacostreserved",
-    "type27",
-    "manacostpercent",
-    "skillcantotem",
-    "aura",
-    "lightningskill",
-    "instant",
-    "areaspell",
-    "canhaveblessing",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -1145,7 +1132,54 @@
       "description": "Your Aura becomes a Darkwood Effect."
     }
   ],
-  "description": "Casts an aura that adds lightning damage to the attacks of you and your allies, and makes your spells deal more lightning damage.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Shadow",
+        "Scion"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "spell",
+    "area",
+    "buff",
+    "manacostreserved",
+    "type27",
+    "manacostpercent",
+    "skillcantotem",
+    "aura",
+    "lightningskill",
+    "instant",
+    "areaspell",
+    "canhaveblessing",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Wrath has 15% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Wrath has 10% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1204,39 +1238,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% reduced Mana Reserved",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 1.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased effect of Aura",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Wrath",
+  "description": "Casts an aura that adds lightning damage to the attacks of you and your allies, and makes your spells deal more lightning damage."
 }

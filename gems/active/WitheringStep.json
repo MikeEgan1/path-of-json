@@ -1,26 +1,961 @@
 {
-  "name": "Withering Step",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Inflicts  Withered Debuffs the first time each Enemy enters the Area",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Shadow",
-        "Scion"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Effect of Elusive from this Skill",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance not to remove Buff on Skill use",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "withering-step",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 10,
+        "dexterity": 18,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 13,
+        "dexterity": 22,
+        "intelligence": 15
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "2",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 17,
+        "dexterity": 27,
+        "intelligence": 19
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 21,
+        "dexterity": 33,
+        "intelligence": 23
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 25,
+        "dexterity": 38,
+        "intelligence": 26
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 29,
+        "dexterity": 43,
+        "intelligence": 30
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": 49,
+        "intelligence": 34
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 53,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": 56,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 60,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": 64,
+        "intelligence": 45
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 51,
+        "dexterity": 72,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 76,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "6",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 57,
+        "dexterity": 80,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "6",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "6",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 63,
+        "dexterity": 88,
+        "intelligence": 61
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "6",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 92,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "6",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 95,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "6",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "6",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "7",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "7",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "7",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "7",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "46",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "7",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "7",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "7",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "56",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "58",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "59",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "61",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "62",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "63",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "64",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "65",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "66",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        },
+        {
+          "value": "8",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "67",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        },
+        {
+          "value": "9",
+          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area"
+        },
+        {
+          "value": "68",
+          "name": "%_increased_effect_of_elusive_from_this_skill"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+(0\u20136) to radius",
     "Inflicts (4\u20136) Withered Debuffs the first time each Enemy enters the Area",
@@ -31,942 +966,30 @@
     "Removes existing Elusive before granting a new Elusive Buff when used"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 18,
-        "intelligence": 12,
-        "requires_level": 10
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": ""
-        }
-      ]
+  "target_types": [
+    "any"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Shadow",
+        "Scion"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 22,
-        "intelligence": 15,
-        "requires_level": 13
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 27,
-        "intelligence": 19,
-        "requires_level": 17
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 33,
-        "intelligence": 23,
-        "requires_level": 21
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 38,
-        "intelligence": 26,
-        "requires_level": 25
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 43,
-        "intelligence": 30,
-        "requires_level": 29
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 49,
-        "intelligence": 34,
-        "requires_level": 33
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 56,
-        "intelligence": 39,
-        "requires_level": 39
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 60,
-        "intelligence": 42,
-        "requires_level": 42
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 64,
-        "intelligence": 45,
-        "requires_level": 45
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 72,
-        "intelligence": 50,
-        "requires_level": 51
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 76,
-        "intelligence": 53,
-        "requires_level": 54
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 80,
-        "intelligence": 56,
-        "requires_level": 57
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 88,
-        "intelligence": 61,
-        "requires_level": 63
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 92,
-        "intelligence": 64,
-        "requires_level": 66
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 95,
-        "intelligence": 66,
-        "requires_level": 68
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "58"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "59"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "61"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "63"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "65"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "13"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "67"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "13"
-        },
-        {
-          "name": "inflicts__withered_debuffs_the_first_time_each_enemy_enters_the_area",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_elusive_from_this_skill",
-          "value": "68"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
     }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Withering Step inflicts 2 additional Withered Debuffs",
-      "Withering Step has 20% increased Elusive Effect"
-    ],
-    "eternal": [
-      "Withering Step inflicts 3 additional Withered Debuffs",
-      "Withering Step has 30% increased Elusive Effect"
-    ]
   },
-  "drop_level": 10,
   "type": [
     "travelskill",
     "buff",
@@ -980,8 +1003,19 @@
     "duration",
     "secondwindsupport"
   ],
-  "mtx": [],
-  "description": "Removes any existing Elusive buff before applying both Elusive and a buff that grants Phasing. While you have this buff, monsters that enter an area around you will be Withered. Using a skill or losing the Elusive buff ends this skill's effects. Shares a cooldown with other Blink skills.",
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Withering Step inflicts 3 additional Withered Debuffs",
+      "Withering Step has 30% increased Elusive Effect"
+    ],
+    "merciless": [
+      "Withering Step inflicts 2 additional Withered Debuffs",
+      "Withering Step has 20% increased Elusive Effect"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1081,39 +1115,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% chance not to remove Buff on Skill use",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Effect of Elusive from this Skill",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Inflicts  Withered Debuffs the first time each Enemy enters the Area",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Withering Step",
+  "description": "Removes any existing Elusive buff before applying both Elusive and a buff that grants Phasing. While you have this buff, monsters that enter an area around you will be Withered. Using a skill or losing the Elusive buff ends this skill's effects. Shares a cooldown with other Blink skills."
 }

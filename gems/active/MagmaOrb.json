@@ -1,852 +1,860 @@
 {
-  "name": "Magma Orb",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Witch",
-        "Templar"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to Detonate for Double Damage instead of Chaining",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "magma-orb",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "maximum_damage": 12.0,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "requires_level": 1,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 14.0,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "requires_level": 2,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 17.0,
+      "minimum_damage": 12.0,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 24.0,
+      "minimum_damage": 16.0,
+      "requirements": {
+        "requires_level": 7,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 34.0,
+      "minimum_damage": 23.0,
+      "requirements": {
+        "requires_level": 11,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 52.0,
+      "minimum_damage": 35.0,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 70.0,
+      "minimum_damage": 47.0,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 92.0,
+      "minimum_damage": 62.0,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 120.0,
+      "minimum_damage": 80.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 155.0,
+      "minimum_damage": 104.0,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 199.0,
+      "minimum_damage": 132.0,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 252.0,
+      "minimum_damage": 168.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 318.0,
+      "minimum_damage": 212.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 398.0,
+      "minimum_damage": 266.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 497.0,
+      "minimum_damage": 331.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 617.0,
+      "minimum_damage": 412.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 764.0,
+      "minimum_damage": 509.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 943.0,
+      "minimum_damage": 628.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1101.0,
+      "minimum_damage": 734.0,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1284.0,
+      "minimum_damage": 856.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1422.0,
+      "minimum_damage": 948.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1574.0,
+      "minimum_damage": 1049.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1740.0,
+      "minimum_damage": 1160.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1924.0,
+      "minimum_damage": 1282.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2125.0,
+      "minimum_damage": 1417.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2347.0,
+      "minimum_damage": 1564.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2590.0,
+      "minimum_damage": 1727.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2857.0,
+      "minimum_damage": 1905.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3150.0,
+      "minimum_damage": 2100.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3473.0,
+      "minimum_damage": 2315.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3645.0,
+      "minimum_damage": 2430.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 3826.0,
+      "minimum_damage": 2551.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 4015.0,
+      "minimum_damage": 2677.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 4214.0,
+      "minimum_damage": 2809.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 4422.0,
+      "minimum_damage": 2948.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4639.0,
+      "minimum_damage": 3093.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4867.0,
+      "minimum_damage": 3245.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 5106.0,
+      "minimum_damage": 3404.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 5356.0,
+      "minimum_damage": 3570.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 5617.0,
+      "minimum_damage": 3745.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (9\u2013856) to (12\u20131284) Fire Damage",
     "Chains +(2\u20133) Times",
     "+(0\u20134) to radius"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 9.0,
-      "requirements": {
-        "intelligence": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 6,
-      "maximum_damage": 12.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 10.0,
-      "requirements": {
-        "intelligence": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 6,
-      "maximum_damage": 14.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 12.0,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 6,
-      "maximum_damage": 17.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 16.0,
-      "requirements": {
-        "intelligence": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 7,
-      "maximum_damage": 24.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 23.0,
-      "requirements": {
-        "intelligence": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 8,
-      "maximum_damage": 34.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 35.0,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 9,
-      "maximum_damage": 52.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 47.0,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 10,
-      "maximum_damage": 70.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 62.0,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 11,
-      "maximum_damage": 92.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 80.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 12,
-      "maximum_damage": 120.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "2"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 104.0,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 13,
-      "maximum_damage": 155.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 132.0,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 14,
-      "maximum_damage": 199.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 168.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 15,
-      "maximum_damage": 252.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 212.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 16,
-      "maximum_damage": 318.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 266.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 17,
-      "maximum_damage": 398.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 331.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 18,
-      "maximum_damage": 497.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 412.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 19,
-      "maximum_damage": 617.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 509.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 20,
-      "maximum_damage": 764.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 628.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 21,
-      "maximum_damage": 943.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 734.0,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1101.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 856.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1284.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "3"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 948.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1422.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 1049.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1574.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 1160.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1740.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 1282.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1924.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 1417.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2125.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 1564.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2347.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1727.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2590.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1905.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2857.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 2100.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3150.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 2315.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3473.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 2430.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3645.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 2551.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "maximum_damage": 3826.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 2677.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "maximum_damage": 4015.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 2809.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "maximum_damage": 4214.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 2948.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 29,
-      "maximum_damage": 4422.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 3093.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4639.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 3245.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4867.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 3404.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 30,
-      "maximum_damage": 5106.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 3570.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 30,
-      "maximum_damage": 5356.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 3745.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 31,
-      "maximum_damage": 5617.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]",
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Magma Orb Damage",
-      "Magma Orb Chains an additional time",
-      "16% increased Magma Orb Area of Effect"
-    ],
-    "eternal": [
-      "40% increased Magma Orb Damage",
-      "Magma Orb Chains an additional time",
-      "24% increased Magma Orb Area of Effect"
-    ]
-  },
-  "drop_level": null,
-  "type": [
-    "1"
+  "target_types": [
+    "ground",
+    "enemy"
   ],
   "mtx": [
     {
@@ -860,7 +868,44 @@
       "description": "Your Magma Orb becomes a blue harbinger effect."
     }
   ],
-  "description": "Lob a fiery orb that explodes as it hits the ground. The skill chains, releasing another fiery orb that repeats this effect.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Witch",
+        "Templar"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "1"
+  ],
+  "tags": [
+    "is_area_damage [1]",
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Magma Orb Damage",
+      "Magma Orb Chains an additional time",
+      "24% increased Magma Orb Area of Effect"
+    ],
+    "merciless": [
+      "25% increased Magma Orb Damage",
+      "Magma Orb Chains an additional time",
+      "16% increased Magma Orb Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1544,50 +1589,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance to Detonate for Double Damage instead of Chaining",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Magma Orb",
+  "description": "Lob a fiery orb that explodes as it hits the ground. The skill chains, releasing another fiery orb that repeats this effect."
 }

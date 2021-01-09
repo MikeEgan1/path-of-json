@@ -1,6 +1,651 @@
 {
-  "name": "Conversion Trap",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Converted Enemies have % chance to Taunt on Hit",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 400.0,
+          "text": "Converted Enemies deal % increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 4,
+  "slug": "conversion-trap",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 7,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "5.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 6,
+        "dexterity": 9,
+        "intelligence": 13
+      },
+      "fields": [
+        {
+          "value": "5.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 9,
+        "dexterity": 12,
+        "intelligence": 17
+      },
+      "fields": [
+        {
+          "value": "5.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 14,
+        "intelligence": 21
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 18,
+        "intelligence": 26
+      },
+      "fields": [
+        {
+          "value": "6.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 22,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "6.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 25,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "6.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 29,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 33,
+        "intelligence": 47
+      },
+      "fields": [
+        {
+          "value": "7.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 36,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "7.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 40,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "7.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 44,
+        "intelligence": 63
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 48,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "8.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 51,
+        "intelligence": 74
+      },
+      "fields": [
+        {
+          "value": "8.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 55,
+        "dexterity": 54,
+        "intelligence": 78
+      },
+      "fields": [
+        {
+          "value": "8.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 57,
+        "intelligence": 82
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 61,
+        "dexterity": 60,
+        "intelligence": 86
+      },
+      "fields": [
+        {
+          "value": "9.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "9.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 65,
+        "intelligence": 94
+      },
+      "fields": [
+        {
+          "value": "9.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.65",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.9",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13.15",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13.3",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13.4",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13.5",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13.65",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13.8",
+          "name": "+._seconds_to_base_duration"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Trap lasts 4 seconds",
+    "+(5.3\u201310) seconds to Base duration",
+    "Traps do not Trigger at the end of their Duration"
+  ],
+  "vaal": false,
+  "target_types": [
+    "enemy"
+  ],
+  "mtx": [],
   "acquisition": {
     "vendor": {
       "classes": [
@@ -12,629 +657,6 @@
       "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "Trap lasts 4 seconds",
-    "+(5.3\u201310) seconds to Base duration",
-    "Traps do not Trigger at the end of their Duration"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 7,
-        "intelligence": 10,
-        "requires_level": 4
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "5.3"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 9,
-        "intelligence": 13,
-        "requires_level": 6
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "5.5"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 12,
-        "intelligence": 17,
-        "requires_level": 9
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "5.8"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 14,
-        "intelligence": 21,
-        "requires_level": 12
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 18,
-        "intelligence": 26,
-        "requires_level": 16
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "6.3"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 22,
-        "intelligence": 31,
-        "requires_level": 20
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "6.5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 25,
-        "intelligence": 37,
-        "requires_level": 24
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "6.8"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 29,
-        "intelligence": 42,
-        "requires_level": 28
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 33,
-        "intelligence": 47,
-        "requires_level": 32
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "7.3"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 36,
-        "intelligence": 53,
-        "requires_level": 36
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "7.5"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 40,
-        "intelligence": 58,
-        "requires_level": 40
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "7.8"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 44,
-        "intelligence": 63,
-        "requires_level": 44
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 48,
-        "intelligence": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "8.3"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "8.5"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 54,
-        "intelligence": 78,
-        "requires_level": 55
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "8.8"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 60,
-        "intelligence": 86,
-        "requires_level": 61
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "9.3"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "9.5"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 65,
-        "intelligence": 94,
-        "requires_level": 67
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "9.8"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "10.3"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "10.5"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "10.8"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "11.3"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "11.5"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "11.8"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "12.3"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "12.5"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "12.65"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "12.8"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "12.9"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "13.15"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "13.3"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "13.4"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "13.5"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "13.65"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "+._seconds_to_base_duration",
-          "value": "13.8"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_skill_is_trapped [1]",
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Converted Enemies have 25% increased Damage",
-      "Conversion Trap 20% increased Cooldown Recovery Rate"
-    ],
-    "eternal": [
-      "Converted Enemies have 40% increased Damage",
-      "Conversion Trap 30% increased Cooldown Recovery Rate"
-    ]
-  },
-  "drop_level": 4,
   "type": [
     "spell",
     "duration",
@@ -642,8 +664,20 @@
     "trap",
     "secondwindsupport"
   ],
-  "mtx": [],
-  "description": "Throws a trap that, when triggered by an enemy, converts that enemy to your side for a short duration. Does not affect unique monsters or players.",
+  "tags": [
+    "base_skill_is_trapped [1]",
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Converted Enemies have 40% increased Damage",
+      "Conversion Trap 30% increased Cooldown Recovery Rate"
+    ],
+    "merciless": [
+      "Converted Enemies have 25% increased Damage",
+      "Conversion Trap 20% increased Cooldown Recovery Rate"
+    ]
+  },
   "support": [
     {
       "name": "Faster Casting Support",
@@ -751,39 +785,6 @@
       ]
     }
   ],
-  "target_types": [
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Converted Enemies deal % increased Damage",
-          "minimum": 0.0,
-          "maximum": 400.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Converted Enemies have % chance to Taunt on Hit",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Conversion Trap",
+  "description": "Throws a trap that, when triggered by an enemy, converts that enemy to your side for a short duration. Does not affect unique monsters or players."
 }

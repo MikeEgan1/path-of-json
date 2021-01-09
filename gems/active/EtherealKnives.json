@@ -1,23 +1,721 @@
 {
-  "name": "Ethereal Knives",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Witch",
-        "Shadow"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Fires  additional Projectiles",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Shadow"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to Impale on Spell Hit",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "ethereal-knives",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 5,
+      "maximum_damage": 10.0,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "requires_level": 1,
+        "dexterity": 6,
+        "intelligence": 4
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 12.0,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "requires_level": 2,
+        "dexterity": 7,
+        "intelligence": 5
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 15.0,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 10,
+        "intelligence": 7
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 20.0,
+      "minimum_damage": 13.0,
+      "requirements": {
+        "requires_level": 7,
+        "dexterity": 14,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 28.0,
+      "minimum_damage": 19.0,
+      "requirements": {
+        "requires_level": 11,
+        "dexterity": 19,
+        "intelligence": 13
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 42.0,
+      "minimum_damage": 28.0,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 26,
+        "intelligence": 18
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 57.0,
+      "minimum_damage": 38.0,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 31,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 74.0,
+      "minimum_damage": 49.0,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 37,
+        "intelligence": 25
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 96.0,
+      "minimum_damage": 64.0,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 42,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 123.0,
+      "minimum_damage": 82.0,
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 47,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 156.0,
+      "minimum_damage": 104.0,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 53,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 197.0,
+      "minimum_damage": 131.0,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 58,
+        "intelligence": 40
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 246.0,
+      "minimum_damage": 164.0,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 307.0,
+      "minimum_damage": 204.0,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 380.0,
+      "minimum_damage": 253.0,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 468.0,
+      "minimum_damage": 312.0,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 79,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 575.0,
+      "minimum_damage": 383.0,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 704.0,
+      "minimum_damage": 470.0,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 818.0,
+      "minimum_damage": 546.0,
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 94,
+        "intelligence": 65
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 949.0,
+      "minimum_damage": 633.0,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1047.0,
+      "minimum_damage": 698.0,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1155.0,
+      "minimum_damage": 770.0,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1272.0,
+      "minimum_damage": 848.0,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1401.0,
+      "minimum_damage": 934.0,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1542.0,
+      "minimum_damage": 1028.0,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1697.0,
+      "minimum_damage": 1131.0,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1866.0,
+      "minimum_damage": 1244.0,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 2051.0,
+      "minimum_damage": 1367.0,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2253.0,
+      "minimum_damage": 1502.0,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2474.0,
+      "minimum_damage": 1650.0,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2593.0,
+      "minimum_damage": 1728.0,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2716.0,
+      "minimum_damage": 1811.0,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2845.0,
+      "minimum_damage": 1897.0,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2981.0,
+      "minimum_damage": 1987.0,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 3122.0,
+      "minimum_damage": 2081.0,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 3270.0,
+      "minimum_damage": 2180.0,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3424.0,
+      "minimum_damage": 2283.0,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3585.0,
+      "minimum_damage": 2390.0,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3754.0,
+      "minimum_damage": 2503.0,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3930.0,
+      "minimum_damage": 2620.0,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_increased_projectile_speed"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+6 seconds to Base duration",
     "Deals (7\u2013633) to (10\u2013949) Physical Damage",
@@ -28,705 +726,9 @@
     "Leaves 50% fewer Lingering Blades in the ground if you don't Cast this Spell yourself"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 7.0,
-      "requirements": {
-        "dexterity": 6,
-        "intelligence": 4,
-        "requires_level": 1
-      },
-      "mana_cost": 5,
-      "maximum_damage": 10.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 9.0,
-      "requirements": {
-        "dexterity": 7,
-        "intelligence": 5,
-        "requires_level": 2
-      },
-      "mana_cost": 5,
-      "maximum_damage": 12.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 10.0,
-      "requirements": {
-        "dexterity": 10,
-        "intelligence": 7,
-        "requires_level": 4
-      },
-      "mana_cost": 5,
-      "maximum_damage": 15.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 13.0,
-      "requirements": {
-        "dexterity": 14,
-        "intelligence": 10,
-        "requires_level": 7
-      },
-      "mana_cost": 6,
-      "maximum_damage": 20.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 19.0,
-      "requirements": {
-        "dexterity": 19,
-        "intelligence": 13,
-        "requires_level": 11
-      },
-      "mana_cost": 7,
-      "maximum_damage": 28.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 28.0,
-      "requirements": {
-        "dexterity": 26,
-        "intelligence": 18,
-        "requires_level": 16
-      },
-      "mana_cost": 8,
-      "maximum_damage": 42.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 38.0,
-      "requirements": {
-        "dexterity": 31,
-        "intelligence": 22,
-        "requires_level": 20
-      },
-      "mana_cost": 9,
-      "maximum_damage": 57.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 49.0,
-      "requirements": {
-        "dexterity": 37,
-        "intelligence": 25,
-        "requires_level": 24
-      },
-      "mana_cost": 10,
-      "maximum_damage": 74.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 64.0,
-      "requirements": {
-        "dexterity": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "mana_cost": 11,
-      "maximum_damage": 96.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 82.0,
-      "requirements": {
-        "dexterity": 47,
-        "intelligence": 33,
-        "requires_level": 32
-      },
-      "mana_cost": 11,
-      "maximum_damage": 123.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 104.0,
-      "requirements": {
-        "dexterity": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "mana_cost": 12,
-      "maximum_damage": 156.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 131.0,
-      "requirements": {
-        "dexterity": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "mana_cost": 13,
-      "maximum_damage": 197.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 164.0,
-      "requirements": {
-        "dexterity": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "mana_cost": 14,
-      "maximum_damage": 246.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 204.0,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "mana_cost": 15,
-      "maximum_damage": 307.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 253.0,
-      "requirements": {
-        "dexterity": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "mana_cost": 16,
-      "maximum_damage": 380.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 312.0,
-      "requirements": {
-        "dexterity": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "mana_cost": 17,
-      "maximum_damage": 468.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 383.0,
-      "requirements": {
-        "dexterity": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "maximum_damage": 575.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 470.0,
-      "requirements": {
-        "dexterity": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "mana_cost": 18,
-      "maximum_damage": 704.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 546.0,
-      "requirements": {
-        "dexterity": 94,
-        "intelligence": 65,
-        "requires_level": 67
-      },
-      "mana_cost": 19,
-      "maximum_damage": 818.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 633.0,
-      "requirements": {
-        "dexterity": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 20,
-      "maximum_damage": 949.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 698.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1047.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 770.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1155.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 848.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1272.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 934.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1401.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 1028.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1542.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 1131.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1697.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1244.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1866.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1367.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 23,
-      "maximum_damage": 2051.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 1502.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2253.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1650.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2474.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1728.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2593.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1811.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2716.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1897.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2845.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1987.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2981.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 2081.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 25,
-      "maximum_damage": 3122.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 2180.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 25,
-      "maximum_damage": 3270.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 2283.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3424.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 2390.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3585.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 2503.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3754.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 2620.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3930.0,
-      "fields": [
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "34"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Ethereal Knives Damage",
-      "20% increased Ethereal Knives Projectile Speed"
-    ],
-    "eternal": [
-      "40% increased Ethereal Knives Damage",
-      "30% increased Ethereal Knives Projectile Speed",
-      "Ethereal Knives Pierces an additional Target "
-    ]
-  },
-  "drop_level": null,
-  "type": [
-    "1"
+  "target_types": [
+    "enemy",
+    "ground"
   ],
   "mtx": [
     {
@@ -750,7 +752,40 @@
       "description": "Your Ethereal Knives becomes an Illusionist Effect."
     }
   ],
-  "description": "Fires an arc of knives in front of the caster which deals physical damage.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Witch",
+        "Shadow"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "1"
+  ],
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Ethereal Knives Damage",
+      "30% increased Ethereal Knives Projectile Speed",
+      "Ethereal Knives Pierces an additional Target "
+    ],
+    "merciless": [
+      "25% increased Ethereal Knives Damage",
+      "20% increased Ethereal Knives Projectile Speed"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1418,40 +1453,6 @@
       ]
     }
   ],
-  "target_types": [
-    "enemy",
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% chance to Impale on Spell Hit",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Fires  additional Projectiles",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Ethereal Knives",
+  "description": "Fires an arc of knives in front of the caster which deals physical damage."
 }

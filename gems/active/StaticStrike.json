@@ -1,27 +1,1101 @@
 {
-  "name": "Static Strike",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Templar",
-        "Marauder",
-        "Scion"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Beam frequency",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% reduced Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 5.0,
+      "mods": [
+        {
+          "maximum": 1.0,
+          "text": "Chains + Times",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 40.0,
+          "text": "% reduced Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "static-strike",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 12,
+        "strength": 21,
+        "intelligence": 14
+      },
+      "fields": [
+        {
+          "value": "110%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.4",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 15,
+        "strength": 25,
+        "intelligence": 17
+      },
+      "fields": [
+        {
+          "value": "112.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.4",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 19,
+        "strength": 30,
+        "intelligence": 21
+      },
+      "fields": [
+        {
+          "value": "114.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.39",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 23,
+        "strength": 35,
+        "intelligence": 24
+      },
+      "fields": [
+        {
+          "value": "116.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.39",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "strength": 41,
+        "intelligence": 28
+      },
+      "fields": [
+        {
+          "value": "118.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.38",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 31,
+        "strength": 46,
+        "intelligence": 32
+      },
+      "fields": [
+        {
+          "value": "120.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.38",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 35,
+        "strength": 51,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "122.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.38",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 38,
+        "strength": 55,
+        "intelligence": 38
+      },
+      "fields": [
+        {
+          "value": "124.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.37",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 41,
+        "strength": 59,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "126.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.37",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "128.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.36",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 47,
+        "strength": 67,
+        "intelligence": 47
+      },
+      "fields": [
+        {
+          "value": "131.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.36",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "strength": 71,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "value": "133.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.36",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 53,
+        "strength": 75,
+        "intelligence": 52
+      },
+      "fields": [
+        {
+          "value": "135.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.35",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 79,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "137.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.35",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 59,
+        "strength": 83,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "139.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.34",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "strength": 87,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "141.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.34",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "143.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.34",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 92,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "145.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.33",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 95,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "147.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.33",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "150%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.32",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "152.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.32",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "154.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.32",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "156.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.31",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "158.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.31",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "160.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.3",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "162.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.3",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "164.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.3",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "166.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.29",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "168.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.29",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "171.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.28",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "172.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.28",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "173.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.28",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "174.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.28",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "175.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.28",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "176.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.27",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "177.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.27",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "178.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.27",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "179.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.27",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "180.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.27",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "181.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.26",
+          "name": "beams_hit_enemies_every_._seconds"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "_maximum_beam_targets"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (110\u2013150)% of Base Attack Damage",
     "+2 seconds to Base duration",
@@ -33,1070 +1107,51 @@
     "Beams deal 40% less Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 21,
-        "intelligence": 14,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "110%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.4"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Templar",
+        "Marauder",
+        "Scion"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 25,
-        "intelligence": 17,
-        "requires_level": 15
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "112.1%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.4"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 30,
-        "intelligence": 21,
-        "requires_level": 19
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "114.2%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.39"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 35,
-        "intelligence": 24,
-        "requires_level": 23
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "116.3%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.39"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 41,
-        "intelligence": 28,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "118.4%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.38"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 46,
-        "intelligence": 32,
-        "requires_level": 31
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "120.5%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.38"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 51,
-        "intelligence": 36,
-        "requires_level": 35
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "122.6%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.38"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 55,
-        "intelligence": 38,
-        "requires_level": 38
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "124.7%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.37"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 59,
-        "intelligence": 41,
-        "requires_level": 41
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "126.8%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.37"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "128.9%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.36"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 67,
-        "intelligence": 47,
-        "requires_level": 47
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "131.1%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.36"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 71,
-        "intelligence": 49,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "133.2%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.36"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 75,
-        "intelligence": 52,
-        "requires_level": 53
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "135.3%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.35"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "137.4%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.35"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 83,
-        "intelligence": 58,
-        "requires_level": 59
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "139.5%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.34"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 87,
-        "intelligence": 60,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141.6%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.34"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "143.7%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.34"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 92,
-        "intelligence": 64,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "145.8%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.33"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 95,
-        "intelligence": 66,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.9%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.33"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.32"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152.1%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.32"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "154.2%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.32"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "156.3%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.31"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "158.4%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.31"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "160.5%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.3"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "162.6%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.3"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "164.7%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.3"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "166.8%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.29"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "168.9%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.29"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "171.1%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.28"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "172.1%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.28"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "173.2%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.28"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "174.2%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.28"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "175.3%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.28"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "176.3%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.27"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "177.4%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.27"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.4%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.27"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "179.5%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.27"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.5%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.27"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "181.6%"
-        },
-        {
-          "name": "beams_hit_enemies_every_._seconds",
-          "value": "0.26"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_maximum_beam_targets",
-          "value": "7"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
     }
+  },
+  "type": [
+    "ground",
+    "enemy"
   ],
   "tags": [],
   "enchants": {
-    "merciless": [
-      "25% increased Static Strike Damage",
-      "30% increased Static Strike Duration",
-      "16% increased Static Strike Area of Effect",
-      "Static Strike has +1 maximum Beam Targets"
-    ],
     "eternal": [
       "40% increased Static Strike Damage",
       "45% increased Static Strike Duration",
       "24% increased Static Strike Area of Effect",
       "Static Strike has +2 maximum Beam Targets"
+    ],
+    "merciless": [
+      "25% increased Static Strike Damage",
+      "30% increased Static Strike Duration",
+      "16% increased Static Strike Area of Effect",
+      "Static Strike has +1 maximum Beam Targets"
     ]
   },
-  "drop_level": 12,
-  "type": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
-  "description": "Attack with a melee weapon, gaining static energy for a duration if you hit an enemy. While you have static energy, you'll frequently hit a number of nearby enemies with beams, dealing attack damage.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1795,60 +1850,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Chains + Times",
-          "minimum": 0.0,
-          "maximum": 1.0
-        },
-        {
-          "text": "% reduced Damage",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 5.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% increased Beam frequency",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% reduced Area of Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Static Strike",
+  "description": "Attack with a melee weapon, gaining static energy for a duration if you hit an enemy. While you have static energy, you'll frequently hit a number of nearby enemies with beams, dealing attack damage."
 }

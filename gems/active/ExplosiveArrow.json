@@ -1,16 +1,611 @@
 {
-  "name": "Explosive Arrow",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Ranger"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Critical Strike Chance",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to Ignite enemies",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 4.0,
+          "text": "Maximum  Explosive Arrows stuck in an Enemy",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 40.0,
+          "text": "% less Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "explosive-arrow",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "47, 71",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 73
+      },
+      "fields": [
+        {
+          "value": "57, 86",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 34,
+        "dexterity": 79
+      },
+      "fields": [
+        {
+          "value": "69, 104",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 37,
+        "dexterity": 85
+      },
+      "fields": [
+        {
+          "value": "83, 125",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "100, 149",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 96
+      },
+      "fields": [
+        {
+          "value": "112, 168",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "126, 189",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 46,
+        "dexterity": 104
+      },
+      "fields": [
+        {
+          "value": "141, 212",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "158, 238",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 113
+      },
+      "fields": [
+        {
+          "value": "177, 266",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "198, 298",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 121
+      },
+      "fields": [
+        {
+          "value": "222, 333",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "247, 371",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 130
+      },
+      "fields": [
+        {
+          "value": "276, 414",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "307, 461",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "342, 513",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "381, 571",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "423, 635",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "470, 705",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "522, 783",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "579, 868",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "642, 963",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "711, 1067",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "788, 1181",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "872, 1308",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "964, 1447",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1067, 1600",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1179, 1768",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1302, 1954",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1438, 2157",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1511, 2267",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1588, 2382",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1668, 2502",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1752, 2628",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1840, 2760",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1933, 2899",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "2030, 3044",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "2131, 3197",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "2238, 3356",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "2349, 3524",
+          "name": "explosion_will_have__to__added_fire_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+1 seconds to Base duration",
     "+2 to Explosion Radius per Explosive Arrow on Target, up to +12",
@@ -20,590 +615,7 @@
     "Maximum 20 Explosive Arrows stuck in an Enemy"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "47, 71"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "57, 86"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "69, 104"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 85,
-        "requires_level": 37
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "83, 125"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "100, 149"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "112, 168"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "126, 189"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "141, 212"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "158, 238"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "177, 266"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "198, 298"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "222, 333"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "247, 371"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "276, 414"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "307, 461"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "342, 513"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "381, 571"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "423, 635"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "470, 705"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "522, 783"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "579, 868"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "642, 963"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "711, 1067"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "788, 1181"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "872, 1308"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "964, 1447"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1067, 1600"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1179, 1768"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1302, 1954"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1438, 2157"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1511, 2267"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1588, 2382"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1668, 2502"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1752, 2628"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1840, 2760"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "1933, 2899"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "2030, 3044"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "2131, 3197"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "2238, 3356"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "explosion_will_have__to__added_fire_damage",
-          "value": "2349, 3524"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "skill_can_fire_arrows [1]",
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Explosive Arrow deals 25% increased Damage",
-      "Explosive Arrow has 16% increased Area of Effect",
-      "Explosive Arrow has 10% increased Attack Speed",
-      "Explosive Arrow has 25% increased Duration",
-      "Explosive Arrow has 20% reduced Duration"
-    ],
-    "eternal": [
-      "Explosive Arrow deals 40% increased Damage",
-      "Explosive Arrow has 24% increased Area of Effect",
-      "Explosive Arrow has 15% increased Attack Speed",
-      "Explosive Arrow has 40% increased Duration",
-      "Explosive Arrow has 30% reduced Duration"
-    ]
-  },
-  "drop_level": 28,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -614,7 +626,40 @@
       "description": "Your Explosive Arrow becomes a Revenant Effect."
     }
   ],
-  "description": "Fires an arrow which will stick into an enemy or wall, and then explode, dealing area damage around it, either after a duration or when the maximum number of arrows stuck to that target is reached. If an enemy has multiple Explosive Arrows stuck in them, the first one to explode will consume the others, adding their damage to its explosion.",
+  "acquisition": {
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Ranger"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "skill_can_fire_arrows [1]",
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Explosive Arrow deals 40% increased Damage",
+      "Explosive Arrow has 24% increased Area of Effect",
+      "Explosive Arrow has 15% increased Attack Speed",
+      "Explosive Arrow has 40% increased Duration",
+      "Explosive Arrow has 30% reduced Duration"
+    ],
+    "merciless": [
+      "Explosive Arrow deals 25% increased Damage",
+      "Explosive Arrow has 16% increased Area of Effect",
+      "Explosive Arrow has 10% increased Attack Speed",
+      "Explosive Arrow has 25% increased Duration",
+      "Explosive Arrow has 20% reduced Duration"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1422,50 +1467,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Maximum  Explosive Arrows stuck in an Enemy",
-          "minimum": 0.0,
-          "maximum": 4.0
-        },
-        {
-          "text": "% less Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% chance to Ignite enemies",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Critical Strike Chance",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Explosive Arrow",
+  "description": "Fires an arrow which will stick into an enemy or wall, and then explode, dealing area damage around it, either after a duration or when the maximum number of arrows stuck to that target is reached. If an enemy has multiple Explosive Arrows stuck in them, the first one to explode will consume the others, adding their damage to its explosion."
 }

@@ -1,44 +1,576 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Elemental Damage with Attacks Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 18,
+        "intelligence": 14,
+        "strength": 21
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "% increased Elemental Damage with Attack Skills"
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "35"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 22,
+        "intelligence": 17,
+        "strength": 24
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 5.0,
-          "text": "Supported Skills have % chance to Freeze, Shock and Ignite"
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "36"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 26,
+        "intelligence": 19,
+        "strength": 28
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 5.0,
-          "text": "% of Elemental Damage Leeched as Mana"
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "37"
         }
-      ],
-      "weight": 10.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 29,
+        "intelligence": 21,
+        "strength": 31
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "38"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 23,
+        "strength": 34
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 35,
+        "intelligence": 25,
+        "strength": 37
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 27,
+        "strength": 40
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 41,
+        "intelligence": 29,
+        "strength": 42
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 31,
+        "strength": 45
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 47,
+        "intelligence": 33,
+        "strength": 48
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 35,
+        "strength": 51
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 53,
+        "intelligence": 37,
+        "strength": 54
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 39,
+        "strength": 57
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "47"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 40,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 42,
+        "strength": 60
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "49"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 43,
+        "strength": 62
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 44,
+        "strength": 64
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 46,
+        "strength": 66
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "52"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 47,
+        "strength": 68
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "53"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 48,
+        "strength": 70
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "54"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "55"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "56"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "57"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "59"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "61"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "62"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "63"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "65"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "65"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "66"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "66"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "67"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "67"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "68"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "68"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attack_skills_deal_%_more_elemental_damage",
+          "value": "69"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "elemental-damage-with-attacks-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Attack Skills deal (35\u201354)% more Elemental Damage"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports attack skills.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -52,6 +584,7 @@
       "vendor_name": "Yeena"
     },
     "quest": {
+      "act": 2,
       "classes": [
         "Templar",
         "Marauder",
@@ -59,11 +592,13 @@
         "Ranger",
         "Scion"
       ],
-      "quest_name": "Sharp and Cruel",
-      "act": 2
+      "quest_name": "Sharp and Cruel"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -1181,572 +1716,38 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Elemental Damage with Attacks Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports attack skills.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "35"
+          "maximum": 10.0,
+          "text": "% increased Elemental Damage with Attack Skills",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 18,
-        "strength": 21,
-        "intelligence": 14
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "36"
+          "maximum": 5.0,
+          "text": "Supported Skills have % chance to Freeze, Shock and Ignite",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 22,
-        "strength": 24,
-        "intelligence": 17
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "37"
+          "maximum": 5.0,
+          "text": "% of Elemental Damage Leeched as Mana",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 26,
-        "strength": 28,
-        "intelligence": 19
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "38"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 29,
-        "strength": 31,
-        "intelligence": 21
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "39"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 32,
-        "strength": 34,
-        "intelligence": 23
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "40"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 35,
-        "strength": 37,
-        "intelligence": 25
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "41"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 38,
-        "strength": 40,
-        "intelligence": 27
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "42"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 41,
-        "strength": 42,
-        "intelligence": 29
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "43"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 44,
-        "strength": 45,
-        "intelligence": 31
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "44"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 47,
-        "strength": 48,
-        "intelligence": 33
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "45"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 50,
-        "strength": 51,
-        "intelligence": 35
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "46"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 53,
-        "strength": 54,
-        "intelligence": 37
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "47"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 56,
-        "strength": 57,
-        "intelligence": 39
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "48"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 58,
-        "strength": 58,
-        "intelligence": 40
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "49"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 60,
-        "strength": 60,
-        "intelligence": 42
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "50"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 62,
-        "strength": 62,
-        "intelligence": 43
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "51"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 64,
-        "strength": 64,
-        "intelligence": 44
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "52"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 66,
-        "strength": 66,
-        "intelligence": 46
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "53"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 68,
-        "strength": 68,
-        "intelligence": 47
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "54"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "strength": 70,
-        "intelligence": 48
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "55"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "56"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "57"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "58"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "59"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "60"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "61"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "62"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "63"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "64"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "64"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "65"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "65"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "66"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "66"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "67"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "67"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "68"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "68"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "strength": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attack_skills_deal_%_more_elemental_damage",
-          "value": "69"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "strength": null,
-        "intelligence": null
-      }
+      "weight": 10.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

@@ -1,46 +1,698 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Rage Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 18,
+        "strength": 33
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills deal % increased Attack Damage"
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "2, 4"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 22,
+        "strength": 39
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills have % increased Attack Speed while you have at least 20 Rage"
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "3, 6"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 26,
+        "strength": 45
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "% chance to gain 1 Rage when you use Supported Skills"
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "4, 7"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
         }
-      ],
-      "weight": 5.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 29,
+        "strength": 49
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "5, 9"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 54
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "6, 10"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 35,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "7, 12"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 38,
+        "strength": 63
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "8, 14"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 41,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "9, 17"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 72
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "11, 20"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 47,
+        "strength": 76
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "13, 23"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 2"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 81
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "15, 27"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "1, 3"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 53,
+        "strength": 85
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "17, 32"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "2, 3"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 90
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "20, 37"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "2, 4"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 93
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "22, 41"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "2, 4"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 96
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "24, 45"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "2, 4"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 99
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "27, 49"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "3, 5"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 102
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "29, 54"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "3, 5"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 105
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "32, 60"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "3, 6"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 108
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "35, 66"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "4, 7"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 111
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "39, 72"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "4, 7"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "43, 79"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "4, 8"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "47, 87"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "5, 9"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "51, 95"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "5, 10"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "56, 105"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "6, 10"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "62, 115"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "6, 11"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "68, 126"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "7, 13"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "74, 137"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "7, 14"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "81, 150"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "8, 15"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "89, 164"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "9, 16"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "97, 180"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "10, 18"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "101, 188"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "10, 19"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "106, 196"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "11, 20"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "111, 205"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "11, 21"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "115, 214"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "12, 21"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "121, 224"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "12, 22"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "126, 234"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "13, 23"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "132, 245"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "13, 24"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "138, 256"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "14, 26"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "144, 267"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "14, 27"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
+          "value": "150, 279"
+        },
+        {
+          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
+          "value": "15, 28"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "rage-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills grant 1 Rage on Melee Hit, no more than once every 0.4 seconds",
     "Supported Attacks deal (2\u201339) to (4\u201372) added Physical Damage with Weapons while you have at least 10 Rage",
     "Supported Attacks deal (1\u20134) to (2\u20137) added Physical Damage with Weapons per 10 Rage"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports melee attack skills. Minions cannot gain rage.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -54,15 +706,18 @@
       "vendor_name": "Yeena"
     },
     "quest": {
+      "act": 2,
       "classes": [
         "Marauder",
         "Duelist"
       ],
-      "quest_name": "Sharp and Cruel",
-      "act": 2
+      "quest_name": "Sharp and Cruel"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -694,692 +1349,38 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Rage Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports melee attack skills. Minions cannot gain rage.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "2, 4"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
+          "maximum": 10.0,
+          "text": "Supported Skills deal % increased Attack Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 18,
-        "strength": 33
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "3, 6"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
+          "maximum": 10.0,
+          "text": "Supported Skills have % increased Attack Speed while you have at least 20 Rage",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 22,
-        "strength": 39
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "4, 7"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
+          "maximum": 20.0,
+          "text": "% chance to gain 1 Rage when you use Supported Skills",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 26,
-        "strength": 45
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "5, 9"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 29,
-        "strength": 49
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "6, 10"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 32,
-        "strength": 54
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "7, 12"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 35,
-        "strength": 58
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "8, 14"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 38,
-        "strength": 63
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "9, 17"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 41,
-        "strength": 67
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "11, 20"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 44,
-        "strength": 72
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "13, 23"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 2"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 47,
-        "strength": 76
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "15, 27"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "1, 3"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 50,
-        "strength": 81
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "17, 32"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "2, 3"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 53,
-        "strength": 85
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "20, 37"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "2, 4"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 56,
-        "strength": 90
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "22, 41"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "2, 4"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 58,
-        "strength": 93
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "24, 45"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "2, 4"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 60,
-        "strength": 96
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "27, 49"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "3, 5"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 62,
-        "strength": 99
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "29, 54"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "3, 5"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 64,
-        "strength": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "32, 60"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "3, 6"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 66,
-        "strength": 105
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "35, 66"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "4, 7"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 68,
-        "strength": 108
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "39, 72"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "4, 7"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "strength": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "43, 79"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "4, 8"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "47, 87"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "5, 9"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "51, 95"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "5, 10"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "56, 105"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "6, 10"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "62, 115"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "6, 11"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "68, 126"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "7, 13"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "74, 137"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "7, 14"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "81, 150"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "8, 15"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "89, 164"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "9, 16"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "97, 180"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "10, 18"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "101, 188"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "10, 19"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "106, 196"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "11, 20"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "111, 205"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "11, 21"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "115, 214"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "12, 21"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "121, 224"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "12, 22"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "126, 234"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "13, 23"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "132, 245"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "13, 24"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "138, 256"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "14, 26"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "144, 267"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "14, 27"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_while_you_have_at_least__rage",
-          "value": "150, 279"
-        },
-        {
-          "name": "supported_attacks_deal__to__added_physical_damage_with_weapons_per__rage",
-          "value": "15, 28"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "strength": null
-      }
+      "weight": 5.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

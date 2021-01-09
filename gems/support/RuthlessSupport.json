@@ -1,52 +1,699 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Ruthless Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 1,
+        "strength": 7
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills deal % increased Attack Damage"
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills have % increased Attack Speed"
-        }
-      ],
-      "weight": 100.0
-    },
-    "divergent": {
-      "mods": [
-        {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Supported Skills have % reduced Attack Speed"
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "75"
         },
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Ruthless Blows with Supported Skills deal % more Melee Damage"
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "75"
         }
-      ],
-      "weight": 100.0
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 2,
+        "strength": 9
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "78"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "78"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 4,
+        "strength": 12
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "81"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "81"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 7,
+        "strength": 16
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "84"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "84"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 11,
+        "strength": 22
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "87"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "87"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 30
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "90"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 36
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "93"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "93"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 42
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "96"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 48
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "99"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "99"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 54
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "102"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "102"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 60
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "105"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "105"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 66
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "108"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "108"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 72
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "111"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "111"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 78
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "114"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "114"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 84
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "117"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "117"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 90
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "120"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "120"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 96
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "123"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "123"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 102
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "126"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "126"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 106
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "129"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "129"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 111
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "132"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "132"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "135"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "135"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "138"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "138"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "141"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "141"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "144"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "144"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "147"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "147"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "150"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "150"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "153"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "153"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "156"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "156"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "159"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "159"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "162"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "162"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "165"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "165"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "168"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "168"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "171"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "171"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "174"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "174"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "177"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "177"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "180"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "180"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "183"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "183"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "186"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "186"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "189"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "189"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
+          "value": "192"
+        },
+        {
+          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
+          "value": "192"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "ruthless-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Every third Attack with Supported Melee Attacks deals a Ruthless Blow",
     "Ruthless Blows with Supported Skills deal (75\u2013132)% more Melee Damage",
     "Ruthless Blows with Supported Skills have a base Stun Duration of 0.8 seconds",
     "Ruthless Blows with Supported Skills deal (75\u2013132)% more Damage with Bleeding caused by Melee Hits"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports melee attack skills. Every third time you use a supported attack, that use of the skill will be more powerful. Cannot support channelling skills.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -57,14 +704,17 @@
       "vendor_name": "Quest Reward"
     },
     "quest": {
+      "act": 1,
       "classes": [
         "Marauder"
       ],
-      "quest_name": "The Twilight Strand",
-      "act": 1
+      "quest_name": "The Twilight Strand"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -650,692 +1300,43 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Ruthless Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports melee attack skills. Every third time you use a supported attack, that use of the skill will be more powerful. Cannot support channelling skills.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "75"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "75"
+          "maximum": 10.0,
+          "text": "Supported Skills deal % increased Attack Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 1,
-        "strength": 7
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "78"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "78"
+          "maximum": 10.0,
+          "text": "Supported Skills have % increased Attack Speed",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 2,
-        "strength": 9
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "81"
+          "maximum": 20.0,
+          "text": "Supported Skills have % reduced Attack Speed",
+          "minimum": 0.0
         },
         {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "81"
+          "maximum": 20.0,
+          "text": "Ruthless Blows with Supported Skills deal % more Melee Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 4,
-        "strength": 12
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "84"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "84"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 7,
-        "strength": 16
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "87"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "87"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 11,
-        "strength": 22
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "90"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "90"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 16,
-        "strength": 30
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "93"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "93"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 20,
-        "strength": 36
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "96"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "96"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 24,
-        "strength": 42
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "99"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "99"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 28,
-        "strength": 48
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "102"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "102"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 32,
-        "strength": 54
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "105"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "105"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 36,
-        "strength": 60
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "108"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "108"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 40,
-        "strength": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "111"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "111"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 44,
-        "strength": 72
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "114"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "114"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 48,
-        "strength": 78
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "117"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "117"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 52,
-        "strength": 84
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "120"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "120"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 56,
-        "strength": 90
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "123"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "123"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 60,
-        "strength": 96
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "126"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "126"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 64,
-        "strength": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "129"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "129"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 67,
-        "strength": 106
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "132"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "132"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "strength": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "135"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "135"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "138"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "138"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "141"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "141"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "144"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "144"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "147"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "147"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "150"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "150"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "153"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "153"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "156"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "156"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "159"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "159"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "162"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "162"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "165"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "165"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "168"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "168"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "171"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "171"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "174"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "174"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "177"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "177"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "180"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "180"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "183"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "183"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "186"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "186"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "189"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "189"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_melee_damage",
-          "value": "192"
-        },
-        {
-          "name": "ruthless_blows_with_supported_skills_deal_%_more_damage_with_bleeding_caused_by_melee_hits",
-          "value": "192"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "strength": null
-      }
+      "weight": 100.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

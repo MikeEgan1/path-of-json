@@ -1,896 +1,888 @@
 {
-  "name": "Vitality",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 4.0,
+          "text": "You and nearby Allies Leech % of Physical Attack Damage as Life",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Templar"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "You and nearby Allies deal % increased Damage while on Full Life",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "vitality",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 13,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "26.5",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 17,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "42",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 21,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "63",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "57.5",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 25,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "74",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "73",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 29,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "85",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "88.4",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "96",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "103.9",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "108",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "115.5",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "118",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "127.1",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "128",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "138.8",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "138",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "150.3",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "148",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "161.9",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 51,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "158",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "173.5",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "169",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "185.1",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 57,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "178",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "196.8",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "189",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "208.3",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 63,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "199",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "219.9",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "209",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "231.5",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "221",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "239.3",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "18",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "233",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "247",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "19",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "244",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "254.8",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "20",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "253",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "262.5",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "21",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "261",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "270.1",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "22",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "269",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "277.9",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "23",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "278",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "285.6",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "24",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "286",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "293.4",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "25",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "294",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "301.1",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "26",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "303",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "308.9",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "27",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "311",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "316.6",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "28",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "319",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "324.4",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "338",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "328.1",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "348",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "332",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "358",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "335.9",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "368",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "339.8",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "379",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "343.6",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "389",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "347.5",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "399",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "351.4",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "409",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "355.3",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "419",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "359.1",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "429",
+          "name": "mana_reserved"
+        },
+        {
+          "value": "363",
+          "name": "you_and_nearby_allies_regenerate__life_per_second"
+        },
+        {
+          "value": "34",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "You and nearby Allies Regenerate (15\u2013247) Life per second",
     "+(0\u201319) to radius"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": null,
-        "requires_level": 10
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "28"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "15"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": null,
-        "requires_level": 13
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "40"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "26.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": null,
-        "requires_level": 17
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "51"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "42"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": null,
-        "requires_level": 21
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "63"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "57.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": null,
-        "requires_level": 25
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "74"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "73"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": null,
-        "requires_level": 29
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "85"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "88.4"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": null,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "96"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "103.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": null,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "108"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "115.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": null,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "118"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "127.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": null,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "128"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "138.8"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": null,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "138"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "150.3"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": null,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "148"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "161.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": null,
-        "requires_level": 51
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "158"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "173.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": null,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "169"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "185.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": null,
-        "requires_level": 57
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "178"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "196.8"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": null,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "189"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "208.3"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": null,
-        "requires_level": 63
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "199"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "219.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": null,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "209"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "231.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": null,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "221"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "239.3"
-        },
-        {
-          "name": "to_radius",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": null,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "233"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "247"
-        },
-        {
-          "name": "to_radius",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "244"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "254.8"
-        },
-        {
-          "name": "to_radius",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "253"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "262.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "261"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "270.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "269"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "277.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "278"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "285.6"
-        },
-        {
-          "name": "to_radius",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "286"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "293.4"
-        },
-        {
-          "name": "to_radius",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "294"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "301.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "303"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "308.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "311"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "316.6"
-        },
-        {
-          "name": "to_radius",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "319"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "324.4"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "338"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "328.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "348"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "332"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "358"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "335.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "368"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "339.8"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "379"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "343.6"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "389"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "347.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "399"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "351.4"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "409"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "355.3"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "419"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "359.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "429"
-        },
-        {
-          "name": "you_and_nearby_allies_regenerate__life_per_second",
-          "value": "363"
-        },
-        {
-          "name": "to_radius",
-          "value": "34"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Vitality has 20% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Vitality has 30% reduced Mana Reservation"
-    ]
-  },
-  "drop_level": 10,
-  "type": [
-    "spell",
-    "area",
-    "buff",
-    "manacostreserved",
-    "type27",
-    "skillcantotem",
-    "aura",
-    "instant",
-    "areaspell",
-    "canhaveblessing",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -1139,7 +1131,49 @@
       "description": "Your Aura becomes a Darkwood Effect."
     }
   ],
-  "description": "Casts an aura that grants life regeneration to you and your allies.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Templar"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "spell",
+    "area",
+    "buff",
+    "manacostreserved",
+    "type27",
+    "skillcantotem",
+    "aura",
+    "instant",
+    "areaspell",
+    "canhaveblessing",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Vitality has 30% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Vitality has 20% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1198,39 +1232,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "You and nearby Allies deal % increased Damage while on Full Life",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "You and nearby Allies Leech % of Physical Attack Damage as Life",
-          "minimum": 0.0,
-          "maximum": 4.0
-        }
-      ],
-      "weight": 10.0
-    }
-  }
+  "name": "Vitality",
+  "description": "Casts an aura that grants life regeneration to you and your allies."
 }

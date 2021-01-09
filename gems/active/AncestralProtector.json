@@ -1,26 +1,891 @@
 {
-  "name": "Ancestral Protector",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Totem Placement speed",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Templar",
-        "Marauder",
-        "Duelist"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Buff Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Totem Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Activation range",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "ancestral-protector",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 4,
+        "strength": 16
+      },
+      "fields": [
+        {
+          "value": "90.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "10",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 6,
+        "strength": 20
+      },
+      "fields": [
+        {
+          "value": "93%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "11",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 9,
+        "strength": 27
+      },
+      "fields": [
+        {
+          "value": "95.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "11",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 12,
+        "strength": 33
+      },
+      "fields": [
+        {
+          "value": "98.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "12",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "strength": 41
+      },
+      "fields": [
+        {
+          "value": "101.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "12",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "strength": 50
+      },
+      "fields": [
+        {
+          "value": "104.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "13",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "107.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "13",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "value": "110%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "14",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "value": "112.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "14",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "115.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "15",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "118.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "15",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "121.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "16",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "124.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "16",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "127%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "17",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 55,
+        "strength": 123
+      },
+      "fields": [
+        {
+          "value": "129.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "17",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "132.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "18",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 61,
+        "strength": 136
+      },
+      "fields": [
+        {
+          "value": "135.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "18",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "138.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "19",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "strength": 148
+      },
+      "fields": [
+        {
+          "value": "141.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "19",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "144%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "20",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "146.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "20",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "149.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "21",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "152.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "21",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "155.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "22",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "158.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "22",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "161%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "23",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "163.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "23",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "166.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "24",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "169.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "24",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "172.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "25",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "173.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "25",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "175.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "25",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "176.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "25",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "178%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "26",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "179.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "26",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "180.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "26",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "182.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "26",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "183.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "27",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "185.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "27",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "186.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "27",
+          "name": "%_more_attack_speed_while_totem_is_active"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (90.2\u2013144)% of Base Attack Damage",
     "Totem lasts 12 seconds",
@@ -30,872 +895,52 @@
     "Summons a Totem which uses this Skill"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "90.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "16"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "10"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Templar",
+        "Marauder",
+        "Duelist"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 20,
-        "requires_level": 6
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "93%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "16"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 27,
-        "requires_level": 9
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "95.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "16"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 33,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "98.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "16"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "101.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "16"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "104.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "16"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "107.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "17"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "110%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "17"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "112.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "17"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "115.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "17"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "118.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "17"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "121.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "17"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "124.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "17"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "127%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 123,
-        "requires_level": 55
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "129.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "132.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 136,
-        "requires_level": 61
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "135.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "138.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "144%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "146.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "149.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "155.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "158.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "161%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "163.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "166.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "169.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "172.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "173.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "175.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "176.6%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "179.4%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "183.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "185.1%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_more_attack_speed_while_totem_is_active",
-          "value": "27"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
     }
+  },
+  "type": [
+    "ground",
+    "enemy"
   ],
   "tags": [
     "base_skill_is_totemified [1]"
   ],
   "enchants": {
-    "merciless": [
-      "Ancestral Protector Totem deals 25% increased Damage",
-      "12% increased Ancestral Protector Totem Placement Speed",
-      "+24% to Ancestral Protector Totem Elemental Resistances",
-      "Ancestral Protector Totem grants 12% increased Attack Speed while Active"
-    ],
     "eternal": [
       "Ancestral Protector Totem deals 40% increased Damage",
       "18% increased Ancestral Protector Totem Placement Speed",
       "+36% to Ancestral Protector Totem Elemental Resistances",
       "Ancestral Protector Totem grants 18% increased Attack Speed while Active"
+    ],
+    "merciless": [
+      "Ancestral Protector Totem deals 25% increased Damage",
+      "12% increased Ancestral Protector Totem Placement Speed",
+      "+24% to Ancestral Protector Totem Elemental Resistances",
+      "Ancestral Protector Totem grants 12% increased Attack Speed while Active"
     ]
   },
-  "drop_level": 4,
-  "type": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
-  "description": "Summons an Ancestor Totem which attacks enemies with melee strikes while you're near it. Being near it grants you more attack speed.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1492,50 +1537,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Activation range",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% increased Buff Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Totem Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Totem Placement speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Ancestral Protector",
+  "description": "Summons an Ancestor Totem which attacks enemies with melee strikes while you're near it. Being near it grants you more attack speed."
 }

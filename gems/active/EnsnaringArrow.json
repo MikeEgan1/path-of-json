@@ -1,24 +1,761 @@
 {
-  "name": "Ensnaring Arrow",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Yeena"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Intruders in Black",
-      "classes": [
-        "Ranger"
-      ],
-      "act": 2
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Attack Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Ensnared Enemies take % increased Spell Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 16,
+  "slug": "ensnaring-arrow",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "140%",
+          "name": "base_damage"
+        },
+        {
+          "value": "15",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "141.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "15",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "143.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "145.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 73
+      },
+      "fields": [
+        {
+          "value": "147.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 34,
+        "dexterity": 79
+      },
+      "fields": [
+        {
+          "value": "149.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 37,
+        "dexterity": 85
+      },
+      "fields": [
+        {
+          "value": "151.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "152.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 43,
+        "dexterity": 98
+      },
+      "fields": [
+        {
+          "value": "154.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 46,
+        "dexterity": 104
+      },
+      "fields": [
+        {
+          "value": "156.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 49,
+        "dexterity": 111
+      },
+      "fields": [
+        {
+          "value": "158.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "160.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 55,
+        "dexterity": 123
+      },
+      "fields": [
+        {
+          "value": "162.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 130
+      },
+      "fields": [
+        {
+          "value": "163.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "165.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "167.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "169.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "171.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "173.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "175%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "176.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "178.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "180.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "182.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "184.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "186.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "187.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "189.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "191.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "193.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "194.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "195.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "196.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "197.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "198%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "198.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "199.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "200.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "201.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "202.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (140\u2013175)% of Base Attack Damage",
     "Each Snare applies 40% less Movement Speed to Normal or Magic Enemies",
@@ -28,748 +765,46 @@
     "Maximum 3 Snares per Enemy"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "140%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "15"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Intruders in Black",
+      "classes": [
+        "Ranger"
+      ],
+      "act": 2
     },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141.8%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "143.7%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "145.5%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.4%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "149.2%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 85,
-        "requires_level": 37
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "151.1%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152.9%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 98,
-        "requires_level": 43
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "154.7%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "156.6%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 111,
-        "requires_level": 49
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "158.4%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "160.3%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 123,
-        "requires_level": 55
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "162.1%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "163.9%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "165.8%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "167.6%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "169.5%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "171.3%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "173.2%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "175%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "176.8%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.7%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.5%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.4%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "184.2%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186.1%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "187.9%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "189.7%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "191.6%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "193.4%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "194.3%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "195.3%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "196.2%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "197.1%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "198%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "198.9%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "199.9%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "200.8%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "201.7%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "202.6%"
-        },
-        {
-          "name": "ensnared_enemies_take_%_increased_projectile_damage_from_attack_hits",
-          "value": "24"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Yeena"
     }
+  },
+  "type": [
+    "ground",
+    "enemy"
   ],
   "tags": [
     "skill_can_fire_arrows [1]"
   ],
   "enchants": {
-    "merciless": [
-      "Ensnaring Arrow has 20% increased Debuff Effect",
-      "Ensnaring Arrow has 60% increased Area of Effect"
-    ],
     "eternal": [
       "Ensnaring Arrow has 30% increased Debuff Effect",
       "Ensnaring Arrow has 90% increased Area of Effect"
+    ],
+    "merciless": [
+      "Ensnaring Arrow has 20% increased Debuff Effect",
+      "Ensnaring Arrow has 60% increased Area of Effect"
     ]
   },
-  "drop_level": 16,
-  "type": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
-  "description": "Fires an arrow that remains in the ground behind its final target, tethering that enemy to it. Ensnared enemies always count as moving, and have less movement speed while trying to break the snare. The snare will break if they leave the area of effect.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1535,40 +1570,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Ensnared Enemies take % increased Spell Damage",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Attack Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Ensnaring Arrow",
+  "description": "Fires an arrow that remains in the ground behind its final target, tethering that enemy to it. Ensnared enemies always count as moving, and have less movement speed while trying to break the snare. The snare will break if they leave the area of effect."
 }

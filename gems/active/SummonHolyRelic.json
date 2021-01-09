@@ -1,22 +1,961 @@
 {
-  "name": "Summon Holy Relic",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Minion Maximum Life",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Templar"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Minions have % increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Summoned Holy Relics have % increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "summon-holy-relic",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 4,
+        "strength": 7,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "3.5",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "6",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 6,
+        "strength": 9,
+        "intelligence": 13
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "4.2",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "8",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 9,
+        "strength": 12,
+        "intelligence": 17
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "5.3",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "11",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 12,
+        "strength": 14,
+        "intelligence": 21
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "6.7",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "14",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 18,
+        "intelligence": 26
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "8.9",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "18",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 22,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "11.6",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "25",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 25,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "14.9",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "33",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 29,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "18.7",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "43",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 33,
+        "intelligence": 47
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "23",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "54",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 36,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "28",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "67",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 40,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "33.7",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "83",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 44,
+        "intelligence": 63
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "40",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "100",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 48,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "47",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "121",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 51,
+        "intelligence": 74
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "54.8",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "144",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 55,
+        "strength": 54,
+        "intelligence": 78
+      },
+      "fields": [
+        {
+          "value": "56",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "61.5",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "167",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 57,
+        "intelligence": 82
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "68.7",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "190",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 61,
+        "strength": 60,
+        "intelligence": 86
+      },
+      "fields": [
+        {
+          "value": "64",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "76.5",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "215",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "84.8",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "244",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 65,
+        "intelligence": 94
+      },
+      "fields": [
+        {
+          "value": "72",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "93.6",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "275",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "76",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "103.1",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "309",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "80",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "110.4",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "331",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "84",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "115.8",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "347",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "88",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "121.4",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "364",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "92",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "127",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "381",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "96",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "132.8",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "398",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "138.8",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "416",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "104",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "144.8",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "434",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "108",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "151",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "453",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "112",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "157.3",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "472",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "116",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "163.8",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "491",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "118",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "165.4",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "496",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "120",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "167.1",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "501",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "122",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "168.8",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "506",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "124",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "170.5",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "511",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "126",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "172.2",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "516",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "128",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "173.9",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "521",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "130",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "175.7",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "527",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "132",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "177.4",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "532",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "134",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "179.2",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "538",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "136",
+          "name": "%_more_minion_movement_speed"
+        },
+        {
+          "value": "181",
+          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies"
+        },
+        {
+          "value": "543",
+          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Maximum 1 Summoned Holy Relic",
     "(0\u201376)% more Minion Movement Speed",
@@ -25,942 +964,33 @@
     "Minions cannot Taunt Enemies"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "requirements": {
-        "strength": 7,
-        "intelligence": 10,
-        "requires_level": 4
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": ""
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "3.5"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 9,
-        "intelligence": 13,
-        "requires_level": 6
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "4"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "4.2"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 12,
-        "intelligence": 17,
-        "requires_level": 9
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "5.3"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 14,
-        "intelligence": 21,
-        "requires_level": 12
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "12"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "6.7"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 18,
-        "intelligence": 26,
-        "requires_level": 16
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "16"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "8.9"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 22,
-        "intelligence": 31,
-        "requires_level": 20
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "20"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "11.6"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 25,
-        "intelligence": 37,
-        "requires_level": 24
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "24"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "14.9"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 29,
-        "intelligence": 42,
-        "requires_level": 28
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "28"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "18.7"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 33,
-        "intelligence": 47,
-        "requires_level": 32
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "32"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "23"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 36,
-        "intelligence": 53,
-        "requires_level": 36
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "36"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "28"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "67"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 40,
-        "intelligence": 58,
-        "requires_level": 40
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "40"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "33.7"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "83"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 44,
-        "intelligence": 63,
-        "requires_level": 44
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "44"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "40"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 48,
-        "intelligence": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "48"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "47"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "121"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "52"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "54.8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "144"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 54,
-        "intelligence": 78,
-        "requires_level": 55
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "56"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "61.5"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "167"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "60"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "68.7"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "190"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 86,
-        "requires_level": 61
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "64"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "76.5"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "215"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "68"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "84.8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "244"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 65,
-        "intelligence": 94,
-        "requires_level": 67
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "72"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "93.6"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "275"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "76"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "103.1"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "309"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "80"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "110.4"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "331"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "84"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "115.8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "347"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "88"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "121.4"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "364"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "92"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "127"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "381"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "96"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "132.8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "398"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "100"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "138.8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "416"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "104"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "144.8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "434"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "108"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "151"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "453"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "112"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "157.3"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "472"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "116"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "163.8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "491"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "118"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "165.4"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "496"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "120"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "167.1"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "501"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "122"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "168.8"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "506"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "124"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "170.5"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "511"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "126"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "172.2"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "516"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "128"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "173.9"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "521"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "130"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "175.7"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "527"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "132"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "177.4"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "532"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "134"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "179.2"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "538"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "%_more_minion_movement_speed",
-          "value": "136"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants_._life_regenerated_per_second_to_allies",
-          "value": "181"
-        },
-        {
-          "name": "holy_relic's_nova_skill_grants__life_regenerated_per_second_to_minions",
-          "value": "543"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Portals/AbyssPortal.png?w=2&h=2&scale=1",
+      "name": "Exalted Holy Relic",
+      "description": "Your Holy Relic becomes a Exalted Effect."
     }
   ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Summoned Holy Relics deal 25% increased Damage",
-      "Summoned Holy Relics have 16% increased Area of Effect",
-      "Summoned Holy Relics have 75% increased Buff Effect"
-    ],
-    "eternal": [
-      "Summoned Holy Relics deal 40% increased Damage",
-      "Summoned Holy Relics have 24% increased Area of Effect",
-      "Summoned Holy Relics have 100% increased Buff Effect"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Templar"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar"
+      ],
+      "vendor_name": "Nessa"
+    }
   },
-  "drop_level": 4,
   "type": [
     "triggerable",
     "skillcanmine",
@@ -973,14 +1003,19 @@
     "createsminion",
     "secondwindsupport"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Portals/AbyssPortal.png?w=2&h=2&scale=1",
-      "name": "Exalted Holy Relic",
-      "description": "Your Holy Relic becomes a Exalted Effect."
-    }
-  ],
-  "description": "Summon a Holy Relic that stays near you. When you hit an enemy with an attack, the Holy Relic triggers a nova spell, with a very short cooldown, that deals physical damage to enemies and grants life regeneration to allies. This life regeneration is higher when applied to minions.",
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Summoned Holy Relics deal 40% increased Damage",
+      "Summoned Holy Relics have 24% increased Area of Effect",
+      "Summoned Holy Relics have 100% increased Buff Effect"
+    ],
+    "merciless": [
+      "Summoned Holy Relics deal 25% increased Damage",
+      "Summoned Holy Relics have 16% increased Area of Effect",
+      "Summoned Holy Relics have 75% increased Buff Effect"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1129,40 +1164,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Summoned Holy Relics have % increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "Minions have % increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Minion Maximum Life",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Summon Holy Relic",
+  "description": "Summon a Holy Relic that stays near you. When you hit an enemy with an attack, the Holy Relic triggers a nova spell, with a very short cooldown, that deals physical damage to enemies and grants life regeneration to allies. This life regeneration is higher when applied to minions."
 }

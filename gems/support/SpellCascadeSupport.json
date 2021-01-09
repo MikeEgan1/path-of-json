@@ -1,51 +1,698 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Spell Cascade Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 12
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills have % increased Area of Effect"
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills deal % increased Damage"
-        }
-      ],
-      "weight": 100.0
-    },
-    "divergent": {
-      "mods": [
-        {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Supported Skills have % increased Area of Effect"
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "25"
         },
         {
-          "minimum": 0.0,
-          "maximum": 100.0,
-          "text": "Supported Skills have % increased delay between affected Areas"
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "40"
         }
-      ],
-      "weight": 20.0
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 6,
+        "intelligence": 15
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "25"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 9,
+        "intelligence": 19
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "24"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "38"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 24
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "24"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "37"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 30
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "23"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "23"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "22"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "22"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 54
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "21"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "21"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "20"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 72
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "20"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 78
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "19"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "19"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 55,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "18"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 93
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "18"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 61,
+        "intelligence": 97
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "17"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "17"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "16"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 111
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "16"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "15"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "15"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "14"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "14"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "13"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "13"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "12"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "12"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "11"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "11"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "11"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "10"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "10"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "10"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "10"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "9"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "9"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "9"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "9"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_less_area_of_effect",
+          "value": "8"
+        },
+        {
+          "name": "supported_skills_deal_%_less_damage",
+          "value": "6"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "spell-cascade-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Area of Effect Skills also affect areas in front of and behind the targeted area",
     "Supported Skills have (16\u201325)% less Area of Effect",
     "Supported Skills deal (21\u201340)% less Damage"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports spell skills that apply an effect to an area around a targeted location. Cannot support Vaal skills, minion skills, or skills used by totems, traps, or mines.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -57,17 +704,20 @@
       "vendor_name": "Nessa"
     },
     "quest": {
+      "act": 1,
       "classes": [
         "Witch",
         "Templar",
         "Shadow",
         "Scion"
       ],
-      "quest_name": "Mercy Mission",
-      "act": 1
+      "quest_name": "Mercy Mission"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -509,692 +1159,43 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Spell Cascade Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports spell skills that apply an effect to an area around a targeted location. Cannot support Vaal skills, minion skills, or skills used by totems, traps, or mines.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "25"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "40"
+          "maximum": 10.0,
+          "text": "Supported Skills have % increased Area of Effect",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 4,
-        "intelligence": 12
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "25"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "39"
+          "maximum": 10.0,
+          "text": "Supported Skills deal % increased Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 6,
-        "intelligence": 15
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "24"
+          "maximum": 20.0,
+          "text": "Supported Skills have % increased Area of Effect",
+          "minimum": 0.0
         },
         {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "38"
+          "maximum": 100.0,
+          "text": "Supported Skills have % increased delay between affected Areas",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 9,
-        "intelligence": 19
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "24"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "37"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 12,
-        "intelligence": 24
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "23"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "36"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 16,
-        "intelligence": 30
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "23"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "35"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 20,
-        "intelligence": 36
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "22"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "34"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 24,
-        "intelligence": 42
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "22"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "33"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 28,
-        "intelligence": 48
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "21"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "32"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 32,
-        "intelligence": 54
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "21"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "31"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 36,
-        "intelligence": 60
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "20"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "30"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 40,
-        "intelligence": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "20"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "29"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 44,
-        "intelligence": 72
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "19"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "28"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 48,
-        "intelligence": 78
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "19"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "27"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 52,
-        "intelligence": 84
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "18"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "26"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 55,
-        "intelligence": 88
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "18"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "25"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 58,
-        "intelligence": 93
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "17"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "24"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 61,
-        "intelligence": 97
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "17"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "23"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 64,
-        "intelligence": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "16"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "22"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 67,
-        "intelligence": 106
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "16"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "21"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "intelligence": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "15"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "20"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "15"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "19"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "14"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "18"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "14"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "17"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "13"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "16"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "13"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "15"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "12"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "14"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "12"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "13"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "11"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "12"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "11"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "11"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "11"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "11"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "10"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "10"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "10"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "10"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "10"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "9"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "10"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "9"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "9"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "8"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "9"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "8"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "9"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "7"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "9"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "7"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_less_area_of_effect",
-          "value": "8"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "6"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "intelligence": null
-      }
+      "weight": 20.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

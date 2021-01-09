@@ -1,28 +1,616 @@
 {
-  "name": "Ice Crash",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to Freeze enemies",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Templar",
-        "Marauder",
-        "Duelist"
-      ],
-      "act": 3
+    "phantasmal": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "First Stage deals % less Damage",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 0.0,
+          "text": "Third Stage deals % less Damage",
+          "minimum": 30.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Damage with Ailments",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "ice-crash",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 42,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "230%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 31,
+        "strength": 46,
+        "intelligence": 32
+      },
+      "fields": [
+        {
+          "value": "232.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 34,
+        "strength": 50,
+        "intelligence": 35
+      },
+      "fields": [
+        {
+          "value": "235.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 37,
+        "strength": 54,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "237.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 58,
+        "intelligence": 40
+      },
+      "fields": [
+        {
+          "value": "240.5%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "strength": 60,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "243.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "245.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 46,
+        "strength": 66,
+        "intelligence": 46
+      },
+      "fields": [
+        {
+          "value": "248.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "251.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "strength": 71,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "value": "253.7%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "256.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "strength": 76,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "258.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 79,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "261.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 82,
+        "intelligence": 57
+      },
+      "fields": [
+        {
+          "value": "264.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "266.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "strength": 87,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "269.5%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "272.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 92,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "274.7%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 95,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "277.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "280%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "282.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "285.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "287.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "290.5%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "293.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "295.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "298.4%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "301.1%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "303.7%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "306.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "307.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "308.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "310.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "311.6%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "312.9%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "314.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "315.5%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "316.8%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "318.2%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "318.3%",
+          "name": "base_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (230\u2013280)% of Base Attack Damage",
     "100% of Physical Damage Converted to Cold Damage",
@@ -30,586 +618,7 @@
     "Third Stage deals 30% less Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "230%"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 46,
-        "intelligence": 32,
-        "requires_level": 31
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "232.6%"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 50,
-        "intelligence": 35,
-        "requires_level": 34
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "235.3%"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 54,
-        "intelligence": 37,
-        "requires_level": 37
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "237.9%"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "240.5%"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 42,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "243.2%"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "245.8%"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 46,
-        "requires_level": 46
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "248.4%"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "251.1%"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 71,
-        "intelligence": 49,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "253.7%"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "256.3%"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 76,
-        "intelligence": 53,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "258.9%"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "261.6%"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 82,
-        "intelligence": 57,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "264.2%"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "266.8%"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 87,
-        "intelligence": 60,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "269.5%"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "272.1%"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 92,
-        "intelligence": 64,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "274.7%"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 95,
-        "intelligence": 66,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "277.4%"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "280%"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "282.6%"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "285.3%"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "287.9%"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "290.5%"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "293.2%"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "295.8%"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "298.4%"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "301.1%"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "303.7%"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "306.3%"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "307.6%"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "308.9%"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "310.3%"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "311.6%"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "312.9%"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "314.2%"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "315.5%"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "316.8%"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "318.2%"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "318.3%"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]",
-    "console_skill_dont_chase [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Ice Crash Damage",
-      "10% of Ice Crash Physical Damage gained as Extra Cold Damage",
-      "16% increased Ice Crash Area of Effect"
-    ],
-    "eternal": [
-      "40% increased Ice Crash Damage",
-      "15% of Ice Crash Physical Damage gained as Extra Cold Damage",
-      "24% increased Ice Crash Area of Effect"
-    ]
-  },
-  "drop_level": 28,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -620,7 +629,48 @@
       "description": "Your Ice Crash becomes an Automaton Effect."
     }
   ],
-  "description": "Slam the ground, damaging enemies in an area around the impact in three stages. Enemies take slightly less damage on the second and third stage. Works with Swords, Maces, Sceptres, Axes, Staves and Unarmed.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Templar",
+        "Marauder",
+        "Duelist"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "is_area_damage [1]",
+    "console_skill_dont_chase [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Ice Crash Damage",
+      "15% of Ice Crash Physical Damage gained as Extra Cold Damage",
+      "24% increased Ice Crash Area of Effect"
+    ],
+    "merciless": [
+      "25% increased Ice Crash Damage",
+      "10% of Ice Crash Physical Damage gained as Extra Cold Damage",
+      "16% increased Ice Crash Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1267,55 +1317,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Damage with Ailments",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "First Stage deals % less Damage",
-          "minimum": 0.0,
-          "maximum": 40.0
-        },
-        {
-          "text": "Third Stage deals % less Damage",
-          "minimum": 30.0,
-          "maximum": 0.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to Freeze enemies",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Ice Crash",
+  "description": "Slam the ground, damaging enemies in an area around the impact in three stages. Enemies take slightly less damage on the second and third stage. Works with Swords, Maces, Sceptres, Axes, Staves and Unarmed."
 }

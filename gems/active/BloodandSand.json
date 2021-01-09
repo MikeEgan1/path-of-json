@@ -1,24 +1,623 @@
 {
-  "name": "Blood and Sand",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Attack Damage while in Blood Stance",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed while in Sand Stance",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Duelist"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Spells deal % increased Area Damage while in Blood Stance",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 10.0,
+          "text": "Spells have % increased Area of Effect while in Sand Stance",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "blood-and-sand",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 4,
+        "strength": 10,
+        "dexterity": 7
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "10",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "10",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 12,
+        "strength": 21,
+        "dexterity": 14
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "11",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "11",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 42,
+        "dexterity": 29
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "12",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "dexterity": 44
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "13",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 82,
+        "dexterity": 57
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "14",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "14",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "dexterity": 68
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "15",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "15",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": 100,
+        "dexterity": 70
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "16",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "16",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": 103,
+        "dexterity": 72
+      },
+      "fields": [
+        {
+          "value": "70",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "17",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "17",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": 106,
+        "dexterity": 73
+      },
+      "fields": [
+        {
+          "value": "80",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "18",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": 108,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "90",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "19",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "19",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": 111,
+        "dexterity": 77
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "20",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "20",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": 113,
+        "dexterity": 79
+      },
+      "fields": [
+        {
+          "value": "110",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "21",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "21",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": 116,
+        "dexterity": 81
+      },
+      "fields": [
+        {
+          "value": "120",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "22",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "22",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": 119,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "130",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "23",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "23",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": 121,
+        "dexterity": 85
+      },
+      "fields": [
+        {
+          "value": "140",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "24",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "24",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": 124,
+        "dexterity": 86
+      },
+      "fields": [
+        {
+          "value": "150",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "25",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "25",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": 125,
+        "dexterity": 87
+      },
+      "fields": [
+        {
+          "value": "160",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "25",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "25",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": 127,
+        "dexterity": 88
+      },
+      "fields": [
+        {
+          "value": "170",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "26",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "26",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": 128,
+        "dexterity": 89
+      },
+      "fields": [
+        {
+          "value": "180",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "26",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "26",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": 129,
+        "dexterity": 90
+      },
+      "fields": [
+        {
+          "value": "190",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "27",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "27",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "200",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "27",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "27",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "210",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "28",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "28",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "220",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "28",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "28",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "230",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "29",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "29",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "240",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "29",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "29",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "250",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "30",
+          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance"
+        },
+        {
+          "value": "30",
+          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance"
+        }
+      ],
+      "level": 26
+    }
+  ],
   "mods": [
     "(0\u201350)% increased Cooldown Recovery Rate",
     "Melee Skills have 5% less Area of Effect while in Blood Stance",
@@ -27,604 +626,8 @@
     "Melee Skills deal 5% less Area Damage while in Sand Stance"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 7,
-        "strength": 10,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": ""
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "10"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 14,
-        "strength": 21,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "10"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "11"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 29,
-        "strength": 42,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "20"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "12"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 44,
-        "strength": 63,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "30"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 57,
-        "strength": 82,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "40"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "14"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 68,
-        "strength": 98,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "50"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "15"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 70,
-        "strength": 100,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "60"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "16"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 72,
-        "strength": 103,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "70"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "17"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 73,
-        "strength": 106,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "80"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "18"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 75,
-        "strength": 108,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "90"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "19"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 77,
-        "strength": 111,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "100"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "20"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 79,
-        "strength": 113,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "110"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "21"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 81,
-        "strength": 116,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "120"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "22"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 83,
-        "strength": 119,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "130"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "23"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 85,
-        "strength": 121,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "140"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "24"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 86,
-        "strength": 124,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "150"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "25"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 87,
-        "strength": 125,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "160"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "25"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 88,
-        "strength": 127,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "170"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "26"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 89,
-        "strength": 128,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "180"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "26"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 90,
-        "strength": 129,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "190"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "27"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "200"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "27"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "210"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "28"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "220"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "28"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "230"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "29"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "240"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "29"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "250"
-        },
-        {
-          "name": "melee_skills_deal_%_more_area_damage_while_in_blood_stance",
-          "value": "30"
-        },
-        {
-          "name": "melee_skills_have_%_more_area_of_effect_while_in_sand_stance",
-          "value": "30"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]",
-    "console_skill_dont_chase [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Blood and Sand has 25% increased Buff Effect"
-    ],
-    "eternal": [
-      "Blood and Sand has 40% increased Buff Effect"
-    ]
-  },
-  "drop_level": 4,
-  "type": [
-    "spell",
-    "buff",
-    "instant",
-    "manacostreserved",
-    "manacostpercent",
-    "instant",
-    "type91",
-    "type92",
-    "secondwindsupport",
-    "stanceskill"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -643,7 +646,48 @@
       "description": "Your Blood and Sand and Flesh and Stone becomes a Sunrise Effect."
     }
   ],
-  "description": "Casts a buff that grants different bonuses to melee skills depending on your stance. Using the skill again alternates between Blood Stance and Sand Stance.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Duelist"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "buff",
+    "instant",
+    "manacostreserved",
+    "manacostpercent",
+    "instant",
+    "type91",
+    "type92",
+    "secondwindsupport",
+    "stanceskill"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]",
+    "console_skill_dont_chase [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Blood and Sand has 40% increased Buff Effect"
+    ],
+    "merciless": [
+      "Blood and Sand has 25% increased Buff Effect"
+    ]
+  },
   "support": [
     {
       "name": "Arcane Surge Support",
@@ -658,49 +702,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Spells deal % increased Area Damage while in Blood Stance",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "Spells have % increased Area of Effect while in Sand Stance",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Projectile Attack Damage while in Blood Stance",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% increased Projectile Speed while in Sand Stance",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Blood and Sand",
+  "description": "Casts a buff that grants different bonuses to melee skills depending on your stance. Using the skill again alternates between Blood Stance and Sand Stance."
 }

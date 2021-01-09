@@ -1,663 +1,681 @@
 {
-  "name": "Vaal Righteous Fire",
+  "quality": {
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Burning Damage",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 16,
+  "slug": "vaal-righteous-fire",
   "gem_class": "Active Skill Gems",
-  "acquisition": {},
+  "levels": [
+    {
+      "maximum_damage": 161.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 18,
+        "intelligence": 26
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "maximum_damage": 162.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 22,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "maximum_damage": 163.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 25,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "maximum_damage": 164.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 29,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "maximum_damage": 165.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 31,
+        "strength": 32,
+        "intelligence": 46
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "maximum_damage": 166.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 35,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "maximum_damage": 167.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 37,
+        "strength": 37,
+        "intelligence": 54
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "maximum_damage": 168.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 40,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "maximum_damage": 169.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 43,
+        "strength": 43,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "maximum_damage": 170.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 46,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "maximum_damage": 171.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 49,
+        "strength": 48,
+        "intelligence": 70
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "maximum_damage": 172.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 51,
+        "intelligence": 74
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "maximum_damage": 173.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 55,
+        "strength": 54,
+        "intelligence": 78
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "maximum_damage": 174.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 57,
+        "intelligence": 82
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "maximum_damage": 175.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 59,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "maximum_damage": 176.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 60,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "maximum_damage": 177.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "maximum_damage": 178.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 64,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "maximum_damage": 179.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 66,
+        "intelligence": 95
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "maximum_damage": 180.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "maximum_damage": 181.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "maximum_damage": 182.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "maximum_damage": 183.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "maximum_damage": 184.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "maximum_damage": 185.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "maximum_damage": 186.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "maximum_damage": 187.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "maximum_damage": 188.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "maximum_damage": 189.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "maximum_damage": 190.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "maximum_damage": 191.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "maximum_damage": 192.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "maximum_damage": 193.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "maximum_damage": 194.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "maximum_damage": 195.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "maximum_damage": 196.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "maximum_damage": 197.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "maximum_damage": 198.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "maximum_damage": 199.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "maximum_damage": 200.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "grants_%_more_spell_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Sacrifices 30% of your total Energy Shield and LifeDeals (161\u2013180)% of Sacrificed Energy Shield and Life as Fire Damage per second+4 seconds to Base durationGrants (15\u201328)% more Spell DamageModifiers to Skill Effect Duration also apply to this Skill's Soul Gain Prevention"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 18,
-        "intelligence": 26,
-        "requires_level": 16
-      },
-      "maximum_damage": 161.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 22,
-        "intelligence": 31,
-        "requires_level": 20
-      },
-      "maximum_damage": 162.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 25,
-        "intelligence": 37,
-        "requires_level": 24
-      },
-      "maximum_damage": 163.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 29,
-        "intelligence": 42,
-        "requires_level": 28
-      },
-      "maximum_damage": 164.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 32,
-        "intelligence": 46,
-        "requires_level": 31
-      },
-      "maximum_damage": 165.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 35,
-        "intelligence": 50,
-        "requires_level": 34
-      },
-      "maximum_damage": 166.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 37,
-        "intelligence": 54,
-        "requires_level": 37
-      },
-      "maximum_damage": 167.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 40,
-        "intelligence": 58,
-        "requires_level": 40
-      },
-      "maximum_damage": 168.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 43,
-        "intelligence": 62,
-        "requires_level": 43
-      },
-      "maximum_damage": 169.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 46,
-        "intelligence": 66,
-        "requires_level": 46
-      },
-      "maximum_damage": 170.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 48,
-        "intelligence": 70,
-        "requires_level": 49
-      },
-      "maximum_damage": 171.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "maximum_damage": 172.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 54,
-        "intelligence": 78,
-        "requires_level": 55
-      },
-      "maximum_damage": 173.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "maximum_damage": 174.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 59,
-        "intelligence": 84,
-        "requires_level": 60
-      },
-      "maximum_damage": 175.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 87,
-        "requires_level": 62
-      },
-      "maximum_damage": 176.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "maximum_damage": 177.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "maximum_damage": 178.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "maximum_damage": 179.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "maximum_damage": 180.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "maximum_damage": 181.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "maximum_damage": 182.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "maximum_damage": 183.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "maximum_damage": 184.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "maximum_damage": 185.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "maximum_damage": 186.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "maximum_damage": 187.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "maximum_damage": 188.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "maximum_damage": 189.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "maximum_damage": 190.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "maximum_damage": 191.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "maximum_damage": 192.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "maximum_damage": 193.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "maximum_damage": 194.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "maximum_damage": 195.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "maximum_damage": 196.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "maximum_damage": 197.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "maximum_damage": 198.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "maximum_damage": 199.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "maximum_damage": 200.0,
-      "fields": [
-        {
-          "name": "grants_%_more_spell_damage",
-          "value": "38"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [],
-    "eternal": []
-  },
-  "drop_level": 16,
-  "type": [
-    "skill_stat_descriptions"
+  "target_types": [
+    "spell",
+    "buff",
+    "area",
+    "causesburning",
+    "damageovertime",
+    "fireskill",
+    "skillcantotem",
+    "vaal",
+    "duration",
+    "areaspell",
+    "instant",
+    "type91",
+    "type92",
+    "secondwindsupport",
+    "cantusefistofwar"
   ],
   "mtx": [
     {
@@ -676,7 +694,17 @@
       "description": "Your Righteous Fire becomes a celestial effect."
     }
   ],
-  "description": "Sacrifices a portion of your Life and Energy Shield to engulf you in magical fire that rapidly burns nearby enemies for a duration. Your spell damage is substantially increased while under this effect.",
+  "acquisition": {},
+  "type": [
+    "skill_stat_descriptions"
+  ],
+  "tags": [
+    "is_area_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [],
+    "merciless": []
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -832,33 +860,6 @@
       ]
     }
   ],
-  "target_types": [
-    "spell",
-    "buff",
-    "area",
-    "causesburning",
-    "damageovertime",
-    "fireskill",
-    "skillcantotem",
-    "vaal",
-    "duration",
-    "areaspell",
-    "instant",
-    "type91",
-    "type92",
-    "secondwindsupport",
-    "cantusefistofwar"
-  ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Burning Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Vaal Righteous Fire",
+  "description": "Sacrifices a portion of your Life and Energy Shield to engulf you in magical fire that rapidly burns nearby enemies for a duration. Your spell damage is substantially increased while under this effect."
 }

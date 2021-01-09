@@ -1,25 +1,881 @@
 {
-  "name": "Riposte",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Ranger",
-        "Shadow"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Ranger",
-        "Shadow"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to gain Onslaught for 4 seconds on Hit",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "riposte",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 16
+      },
+      "fields": [
+        {
+          "value": "160%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "2, 3",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 6,
+        "dexterity": 20
+      },
+      "fields": [
+        {
+          "value": "163.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "3, 4",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 9,
+        "dexterity": 27
+      },
+      "fields": [
+        {
+          "value": "167.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "3, 5",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 33
+      },
+      "fields": [
+        {
+          "value": "171.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4, 6",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "174.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5, 8",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "178.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7, 10",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "182.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "8, 12",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "185.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "10, 15",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "189.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "12, 18",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "193.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "15, 22",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "196.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "18, 26",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "200.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "21, 31",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "204.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "25, 37",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "207.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "29, 43",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 55,
+        "dexterity": 123
+      },
+      "fields": [
+        {
+          "value": "211.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "32, 49",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 130
+      },
+      "fields": [
+        {
+          "value": "215.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "36, 54",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 61,
+        "dexterity": 136
+      },
+      "fields": [
+        {
+          "value": "218.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "41, 61",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "222.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "45, 68",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 148
+      },
+      "fields": [
+        {
+          "value": "226.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "51, 76",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "230%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "56, 85",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "233.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "60, 91",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "237.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "65, 97",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "241.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "70, 104",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "244.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "75, 112",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "248.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "80, 120",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "252.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "85, 128",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "255.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "91, 137",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "259.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "98, 147",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "263.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "105, 157",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "266.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "112, 168",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "268.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "115, 173",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "270.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "119, 179",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "272.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "123, 185",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "274.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "127, 191",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "276.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "132, 197",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "277.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "136, 204",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "279.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "140, 211",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "281.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "145, 218",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "283.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "150, 225",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "285.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "155, 232",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (160\u2013230)% of Base Attack Damage",
     "Trigger this Skill when you Block",
@@ -28,869 +884,48 @@
     "You cannot use this Attack directly"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "160%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "2, 3"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Ranger",
+        "Shadow"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 20,
-        "requires_level": 6
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "163.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "3, 4"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 27,
-        "requires_level": 9
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "167.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "3, 5"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 33,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "171.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "4, 6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "174.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "5, 8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "7, 10"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "8, 12"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "185.8%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "10, 15"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "189.5%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "12, 18"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "193.2%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "15, 22"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "196.8%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "18, 26"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "200.5%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "21, 31"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "204.2%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "25, 37"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "207.9%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "29, 43"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 123,
-        "requires_level": 55
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "211.6%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "32, 49"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "215.3%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "36, 54"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 136,
-        "requires_level": 61
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "218.9%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "41, 61"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "222.6%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "45, 68"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "226.3%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "51, 76"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "230%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "56, 85"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "233.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "60, 91"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "237.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "65, 97"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "241.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "70, 104"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "244.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "75, 112"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "248.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "80, 120"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "252.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "85, 128"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "255.8%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "91, 137"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "259.5%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "98, 147"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "263.2%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "105, 157"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "266.8%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "112, 168"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "268.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "115, 173"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "270.5%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "119, 179"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "272.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "123, 185"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "274.2%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "127, 191"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "276.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "132, 197"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "277.9%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "136, 204"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "279.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "140, 211"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "281.6%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "145, 218"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "283.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "150, 225"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "285.3%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "155, 232"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Ranger",
+        "Shadow"
+      ],
+      "vendor_name": "Nessa"
     }
+  },
+  "type": [
+    "ground",
+    "enemy"
   ],
   "tags": [
     "base_skill_show_average_damage_instead_of_dps [1]",
     "skill_double_hits_when_dual_wielding [1]"
   ],
   "enchants": {
-    "merciless": [
-      "25% increased Riposte Damage",
-      "Riposte has 20% increased Cooldown Recovery Rate"
-    ],
     "eternal": [
       "40% increased Riposte Damage",
       "Riposte has 30% increased Cooldown Recovery Rate"
+    ],
+    "merciless": [
+      "25% increased Riposte Damage",
+      "Riposte has 20% increased Cooldown Recovery Rate"
     ]
   },
-  "drop_level": 4,
-  "type": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
-  "description": "Perform a deadly counter-attack when you block. Uses both weapons while you're dual wielding.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1495,40 +1530,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% chance to gain Onslaught for 4 seconds on Hit",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Riposte",
+  "description": "Perform a deadly counter-attack when you block. Uses both weapons while you're dual wielding."
 }

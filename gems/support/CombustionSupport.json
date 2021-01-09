@@ -1,51 +1,858 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Combustion Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 8,
+        "intelligence": 18
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills deal % increased Fire Damage"
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "minimum": 0.0,
-          "maximum": 5.0,
-          "text": "Ignites from Supported Skills deal Damage % faster"
-        }
-      ],
-      "weight": 100.0
-    },
-    "divergent": {
-      "mods": [
-        {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Ignites from Supported Skills deal Damage % slower"
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "30"
         },
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Supported Skills deal % increased Fire Damage"
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "10"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-10"
         }
-      ],
-      "weight": 50.0
+      ]
+    },
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 10,
+        "intelligence": 21
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "31"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "11"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-10"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 13,
+        "intelligence": 25
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "32"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "12"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-11"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 17,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "33"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "13"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-11"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 21,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "34"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "14"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-12"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 25,
+        "intelligence": 43
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "35"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "15"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-12"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 29,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "36"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "16"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-13"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 33,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "37"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "17"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-13"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 37,
+        "intelligence": 61
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "38"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "18"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-14"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "39"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "19"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-14"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 43,
+        "intelligence": 70
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "40"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "20"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-15"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "41"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "21"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-15"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 49,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "42"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "22"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-16"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "43"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "23"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-16"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 55,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "44"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "24"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-17"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 93
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "45"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "25"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-17"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 61,
+        "intelligence": 97
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "46"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "26"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-18"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "47"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "27"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-18"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "48"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "28"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-19"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 111
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "49"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "29"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-19"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "50"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "30"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-20"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "51"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "31"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-20"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "52"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "32"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-21"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "53"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "33"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-21"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "54"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "34"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-22"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "55"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "35"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-22"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "56"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "36"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-23"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "57"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "37"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-23"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "58"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "38"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-24"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "59"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "39"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-24"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "59"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "39"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-24"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "60"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "40"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-25"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "60"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "40"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-25"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "61"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "41"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-25"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "61"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "41"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-25"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "62"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "42"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-26"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "62"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "42"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-26"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "63"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "43"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-26"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "63"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "43"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-26"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_ignite",
+          "value": "64"
+        },
+        {
+          "name": "supported_skills_deal_%_more_fire_damage",
+          "value": "44"
+        },
+        {
+          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
+          "value": "-27"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "combustion-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills have (30\u201349)% chance to Ignite",
     "Supported Skills deal (10\u201329)% more Fire Damage",
     "Enemies Ignited by Supported Skills have (-19\u2013-10)% to Fire Resistance"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports any skill that hits enemies.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -57,15 +864,18 @@
       "vendor_name": "Nessa"
     },
     "quest": {
+      "act": 1,
       "classes": [
         "Witch",
         "Templar"
       ],
-      "quest_name": "The Caged Brute",
-      "act": 1
+      "quest_name": "The Caged Brute"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -2493,852 +3303,43 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Combustion Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports any skill that hits enemies.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "30"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "10"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-10"
+          "maximum": 10.0,
+          "text": "Supported Skills deal % increased Fire Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 8,
-        "intelligence": 18
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "31"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "11"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-10"
+          "maximum": 5.0,
+          "text": "Ignites from Supported Skills deal Damage % faster",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 10,
-        "intelligence": 21
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "32"
+          "maximum": 10.0,
+          "text": "Ignites from Supported Skills deal Damage % slower",
+          "minimum": 0.0
         },
         {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "12"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-11"
+          "maximum": 20.0,
+          "text": "Supported Skills deal % increased Fire Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 13,
-        "intelligence": 25
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "33"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "13"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-11"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 17,
-        "intelligence": 31
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "34"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "14"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-12"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 21,
-        "intelligence": 37
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "35"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "15"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-12"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 25,
-        "intelligence": 43
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "36"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "16"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-13"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 29,
-        "intelligence": 49
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "37"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "17"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-13"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 33,
-        "intelligence": 55
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "38"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "18"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-14"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 37,
-        "intelligence": 61
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "39"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "19"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-14"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 40,
-        "intelligence": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "40"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "20"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-15"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 43,
-        "intelligence": 70
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "41"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "21"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-15"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 46,
-        "intelligence": 75
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "42"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "22"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-16"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 49,
-        "intelligence": 79
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "43"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "23"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-16"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 52,
-        "intelligence": 84
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "44"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "24"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-17"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 55,
-        "intelligence": 88
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "45"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "25"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-17"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 58,
-        "intelligence": 93
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "46"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "26"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-18"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 61,
-        "intelligence": 97
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "47"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "27"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-18"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 64,
-        "intelligence": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "48"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "28"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-19"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 67,
-        "intelligence": 106
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "49"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "29"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-19"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "intelligence": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "50"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "30"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-20"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "51"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "31"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-20"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "52"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "32"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-21"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "53"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "33"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-21"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "54"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "34"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-22"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "55"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "35"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-22"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "56"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "36"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-23"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "57"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "37"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-23"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "58"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "38"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-24"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "59"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "39"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-24"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "59"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "39"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-24"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "60"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "40"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-25"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "60"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "40"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-25"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "61"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "41"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-25"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "61"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "41"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-25"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "62"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "42"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-26"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "62"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "42"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-26"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "63"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "43"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-26"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "63"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "43"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-26"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_ignite",
-          "value": "64"
-        },
-        {
-          "name": "supported_skills_deal_%_more_fire_damage",
-          "value": "44"
-        },
-        {
-          "name": "enemies_ignited_by_supported_skills_have_-%_to_fire_resistance",
-          "value": "-27"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "intelligence": null
-      }
+      "weight": 50.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

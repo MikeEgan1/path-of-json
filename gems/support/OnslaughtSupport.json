@@ -1,44 +1,576 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Onslaught Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 1,
+        "strength": 3,
+        "dexterity": 5
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills have % increased Attack and Cast Speed"
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "20, 3"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 2,
+        "strength": 4,
+        "dexterity": 5
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "% increased Onslaught duration"
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "21, 3.2"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 4,
+        "strength": 5,
+        "dexterity": 7
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Supported Skills have % increased Attack and Cast Speed during Onslaught"
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "22, 3.4"
         }
-      ],
-      "weight": 100.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 7,
+        "strength": 7,
+        "dexterity": 10
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "23, 3.6"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 11,
+        "strength": 10,
+        "dexterity": 14
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "24, 3.8"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 13,
+        "dexterity": 19
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "25, 4"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 16,
+        "dexterity": 23
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "26, 4.2"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 18,
+        "dexterity": 26
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "27, 4.4"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 21,
+        "dexterity": 30
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "28, 4.6"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 23,
+        "dexterity": 34
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "29, 4.8"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 26,
+        "dexterity": 38
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "30, 5"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 29,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "31, 5.2"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 31,
+        "dexterity": 45
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "32, 5.4"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 34,
+        "dexterity": 49
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "33, 5.6"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 37,
+        "dexterity": 53
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "34, 5.8"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 39,
+        "dexterity": 57
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "35, 6"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 42,
+        "dexterity": 60
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "36, 6.2"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 44,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "37, 6.4"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 46,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "38, 6.6"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 48,
+        "dexterity": 70
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "39, 6.8"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "40, 7"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "41, 7.2"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "42, 7.4"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "43, 7.6"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "44, 7.8"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "45, 8"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "46, 8.2"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "47, 8.4"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "48, 8.6"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "49, 8.8"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "49, 8.9"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "50, 9"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "50, 9.1"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "51, 9.2"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "51, 9.3"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "52, 9.4"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "52, 9.5"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "53, 9.6"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "53, 9.7"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
+          "value": "54, 9.8"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "onslaught-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills have (20\u201339)% chance to grant Onslaught for (3\u20136.8) seconds ondealing a Killing BlowSupported Skills have 10% chance to grant Onslaught for 3 seconds when you Hit a Unique Enemy"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports any skill that hits enemies.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -51,14 +583,17 @@
       "vendor_name": "Quest Reward"
     },
     "quest": {
+      "act": 1,
       "classes": [
         "Scion"
       ],
-      "quest_name": "The Twilight Strand",
-      "act": 1
+      "quest_name": "The Twilight Strand"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -2486,572 +3021,38 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Onslaught Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports any skill that hits enemies.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "20, 3"
+          "maximum": 10.0,
+          "text": "Supported Skills have % increased Attack and Cast Speed",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 1,
-        "dexterity": 5,
-        "strength": 3
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "21, 3.2"
+          "maximum": 20.0,
+          "text": "% increased Onslaught duration",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 2,
-        "dexterity": 5,
-        "strength": 4
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "22, 3.4"
+          "maximum": 20.0,
+          "text": "Supported Skills have % increased Attack and Cast Speed during Onslaught",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 4,
-        "dexterity": 7,
-        "strength": 5
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "23, 3.6"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 7,
-        "dexterity": 10,
-        "strength": 7
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "24, 3.8"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 11,
-        "dexterity": 14,
-        "strength": 10
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "25, 4"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 16,
-        "dexterity": 19,
-        "strength": 13
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "26, 4.2"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 20,
-        "dexterity": 23,
-        "strength": 16
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "27, 4.4"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 24,
-        "dexterity": 26,
-        "strength": 18
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "28, 4.6"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 28,
-        "dexterity": 30,
-        "strength": 21
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "29, 4.8"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 32,
-        "dexterity": 34,
-        "strength": 23
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "30, 5"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 36,
-        "dexterity": 38,
-        "strength": 26
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "31, 5.2"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 40,
-        "dexterity": 41,
-        "strength": 29
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "32, 5.4"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 44,
-        "dexterity": 45,
-        "strength": 31
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "33, 5.6"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 48,
-        "dexterity": 49,
-        "strength": 34
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "34, 5.8"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 52,
-        "dexterity": 53,
-        "strength": 37
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "35, 6"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 56,
-        "dexterity": 57,
-        "strength": 39
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "36, 6.2"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 60,
-        "dexterity": 60,
-        "strength": 42
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "37, 6.4"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 64,
-        "dexterity": 64,
-        "strength": 44
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "38, 6.6"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 67,
-        "dexterity": 67,
-        "strength": 46
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "39, 6.8"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "dexterity": 70,
-        "strength": 48
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "40, 7"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "41, 7.2"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "42, 7.4"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "43, 7.6"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "44, 7.8"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "45, 8"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "46, 8.2"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "47, 8.4"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "48, 8.6"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "49, 8.8"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "49, 8.9"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "50, 9"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "50, 9.1"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "51, 9.2"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "51, 9.3"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "52, 9.4"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "52, 9.5"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "53, 9.6"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "53, 9.7"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_grant_onslaught_for__seconds_on\\ndealing_a_killing_blow",
-          "value": "54, 9.8"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "dexterity": null,
-        "strength": null
-      }
+      "weight": 100.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

@@ -1,936 +1,928 @@
 {
-  "name": "Flesh and Stone",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Yeena"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Buff grants % increased Evasion Rating and Armour",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Intruders in Black",
-      "classes": [
-        "Duelist"
-      ],
-      "act": 2
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Buff grants % increased Damage if you've changed Stance recently",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 16,
+  "slug": "flesh-and-stone",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 16,
+        "strength": 26,
+        "dexterity": 18
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "13",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "strength": 31,
+        "dexterity": 22
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "13",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 37,
+        "dexterity": 25
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "13",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 42,
+        "dexterity": 29
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "13",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 31,
+        "strength": 46,
+        "dexterity": 32
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "13",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 34,
+        "strength": 50,
+        "dexterity": 35
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "13",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 37,
+        "strength": 54,
+        "dexterity": 37
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "14",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 58,
+        "dexterity": 40
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "14",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 43,
+        "strength": 62,
+        "dexterity": 43
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "14",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 46,
+        "strength": 66,
+        "dexterity": 46
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "14",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 49,
+        "strength": 70,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "14",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 74,
+        "dexterity": 51
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "14",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 55,
+        "strength": 78,
+        "dexterity": 54
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "15",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 82,
+        "dexterity": 57
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "15",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 84,
+        "dexterity": 59
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "15",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "strength": 87,
+        "dexterity": 60
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "15",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "dexterity": 62
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "15",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 92,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "15",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 95,
+        "dexterity": 66
+      },
+      "fields": [
+        {
+          "value": "47",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "16",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "dexterity": 68
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "16",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "16",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "56",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "16",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "59",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "16",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "62",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "16",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "65",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "17",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "17",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "71",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "17",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "74",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "17",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "77",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "17",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "80",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "17",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "82",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "84",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "86",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "88",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "90",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "92",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "94",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "96",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "98",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance"
+        },
+        {
+          "value": "18",
+          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "(0\u201350)% increased Cooldown Recovery Rate",
     "Nearby Enemies are Blinded while in Sand StanceYou take (9\u201311)% less Damage from Attacks from Enemies that aren't nearby while in Sand StanceNearby Enemies are Maimed while in Blood StanceEnemies Maimed by this Skill take (13\u201316)% increased Physical Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 18,
-        "strength": 26,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": ""
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "9"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 22,
-        "strength": 31,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "2"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "9"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 25,
-        "strength": 37,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "5"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "9"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 29,
-        "strength": 42,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "7"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "9"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 32,
-        "strength": 46,
-        "requires_level": 31
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "10"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "9"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 35,
-        "strength": 50,
-        "requires_level": 34
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "13"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "9"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 37,
-        "strength": 54,
-        "requires_level": 37
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "15"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "9"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 40,
-        "strength": 58,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "18"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "10"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 43,
-        "strength": 62,
-        "requires_level": 43
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "21"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "10"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 46,
-        "strength": 66,
-        "requires_level": 46
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "23"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "10"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 48,
-        "strength": 70,
-        "requires_level": 49
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "26"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "10"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 51,
-        "strength": 74,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "29"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "10"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 54,
-        "strength": 78,
-        "requires_level": 55
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "31"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "10"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 57,
-        "strength": 82,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "34"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "10"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 59,
-        "strength": 84,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "37"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "11"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 60,
-        "strength": 87,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "39"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "11"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 62,
-        "strength": 90,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "42"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "11"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 64,
-        "strength": 92,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "45"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "11"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 66,
-        "strength": 95,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "47"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "11"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 68,
-        "strength": 98,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "50"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "11"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "53"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "11"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "56"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "12"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "59"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "12"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "62"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "12"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "65"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "12"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "68"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "12"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "71"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "12"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "74"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "12"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "77"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "80"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "82"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "84"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "86"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "88"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "90"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "92"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "94"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "96"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "98"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "100"
-        },
-        {
-          "name": "nearby_enemies_are_blinded_while_in_sand_stance\\nyou_take_%_less_damage_from_attacks_from_enemies_that_aren't_nearby_while_in_sand_stance\\nnearby_enemies_are_maimed_while_in_blood_stance",
-          "value": "13"
-        },
-        {
-          "name": "enemies_maimed_by_this_skill_take_%_increased_physical_damage",
-          "value": "18"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Flesh and Stone has 20% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Flesh and Stone has 30% reduced Mana Reservation"
-    ]
-  },
-  "drop_level": 16,
-  "type": [
-    "spell",
-    "buff",
-    "aura",
-    "auradebuff",
-    "instant",
-    "manacostreserved",
-    "manacostpercent",
-    "maims",
-    "area",
-    "type91",
-    "type92",
-    "secondwindsupport",
-    "stanceskill"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -954,7 +946,49 @@
       "description": "Your Blood and Sand and Flesh and Stone becomes a Sunrise Effect."
     }
   ],
-  "description": "Casts an aura that affects you and nearby enemies differently depending on your stance. Using the skill again alternates between Blood Stance and Sand Stance.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Intruders in Black",
+      "classes": [
+        "Duelist"
+      ],
+      "act": 2
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Yeena"
+    }
+  },
+  "type": [
+    "spell",
+    "buff",
+    "aura",
+    "auradebuff",
+    "instant",
+    "manacostreserved",
+    "manacostpercent",
+    "maims",
+    "area",
+    "type91",
+    "type92",
+    "secondwindsupport",
+    "stanceskill"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Flesh and Stone has 30% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Flesh and Stone has 20% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1000,39 +1034,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Buff grants % increased Damage if you've changed Stance recently",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Buff grants % increased Evasion Rating and Armour",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Flesh and Stone",
+  "description": "Casts an aura that affects you and nearby enemies differently depending on your stance. Using the skill again alternates between Blood Stance and Sand Stance."
 }

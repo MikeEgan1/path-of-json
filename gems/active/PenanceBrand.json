@@ -1,24 +1,721 @@
 {
-  "name": "Penance Brand",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% of Physical Damage Converted to Fire Damage",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Witch",
-        "Templar"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to Shock enemies",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "penance-brand",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 15,
+      "maximum_damage": 27.0,
+      "minimum_damage": 18.0,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 29,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 33.0,
+      "minimum_damage": 22.0,
+      "requirements": {
+        "requires_level": 31,
+        "strength": 32,
+        "intelligence": 46
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 39.0,
+      "minimum_damage": 26.0,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 35,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 46.0,
+      "minimum_damage": 31.0,
+      "requirements": {
+        "requires_level": 37,
+        "strength": 37,
+        "intelligence": 54
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 55.0,
+      "minimum_damage": 37.0,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 40,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 61.0,
+      "minimum_damage": 41.0,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 42,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 68.0,
+      "minimum_damage": 45.0,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 44,
+        "intelligence": 63
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 76.0,
+      "minimum_damage": 51.0,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 46,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 84.0,
+      "minimum_damage": 56.0,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 48,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 94.0,
+      "minimum_damage": 63.0,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 49,
+        "intelligence": 71
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 104.0,
+      "minimum_damage": 69.0,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 51,
+        "intelligence": 74
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 115.0,
+      "minimum_damage": 77.0,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 53,
+        "intelligence": 76
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 128.0,
+      "minimum_damage": 85.0,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 55,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 141.0,
+      "minimum_damage": 94.0,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 57,
+        "intelligence": 82
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 156.0,
+      "minimum_damage": 104.0,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 59,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 172.0,
+      "minimum_damage": 115.0,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 60,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 190.0,
+      "minimum_damage": 127.0,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 210.0,
+      "minimum_damage": 140.0,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 64,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 231.0,
+      "minimum_damage": 154.0,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 66,
+        "intelligence": 95
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 254.0,
+      "minimum_damage": 170.0,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 280.0,
+      "minimum_damage": 187.0,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 308.0,
+      "minimum_damage": 205.0,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 338.0,
+      "minimum_damage": 226.0,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 372.0,
+      "minimum_damage": 248.0,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 408.0,
+      "minimum_damage": 272.0,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 448.0,
+      "minimum_damage": 299.0,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 491.0,
+      "minimum_damage": 327.0,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 539.0,
+      "minimum_damage": 359.0,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 590.0,
+      "minimum_damage": 393.0,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 647.0,
+      "minimum_damage": 431.0,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 677.0,
+      "minimum_damage": 451.0,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 34,
+      "maximum_damage": 708.0,
+      "minimum_damage": 472.0,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 34,
+      "maximum_damage": 741.0,
+      "minimum_damage": 494.0,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 34,
+      "maximum_damage": 775.0,
+      "minimum_damage": 517.0,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 35,
+      "maximum_damage": 811.0,
+      "minimum_damage": 540.0,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 35,
+      "maximum_damage": 848.0,
+      "minimum_damage": 565.0,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 35,
+      "maximum_damage": 887.0,
+      "minimum_damage": 591.0,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 35,
+      "maximum_damage": 928.0,
+      "minimum_damage": 618.0,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 36,
+      "maximum_damage": 970.0,
+      "minimum_damage": 647.0,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 36,
+      "maximum_damage": 1014.0,
+      "minimum_damage": 676.0,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Can be Attached for a total Duration of 2.5 seconds",
     "Activates every 0.5 seconds while Attached",
@@ -32,706 +729,29 @@
     "+1 to Explosion Radius per EnergyPulse deals 50% more Damage with Hits and Ailments"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 18.0,
-      "requirements": {
-        "strength": 29,
-        "intelligence": 42,
-        "requires_level": 28
-      },
-      "mana_cost": 15,
-      "maximum_damage": 27.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "0"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Witch",
+        "Templar"
+      ],
+      "act": 3
     },
-    {
-      "level": 2,
-      "minimum_damage": 22.0,
-      "requirements": {
-        "strength": 32,
-        "intelligence": 46,
-        "requires_level": 31
-      },
-      "mana_cost": 15,
-      "maximum_damage": 33.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 26.0,
-      "requirements": {
-        "strength": 35,
-        "intelligence": 50,
-        "requires_level": 34
-      },
-      "mana_cost": 16,
-      "maximum_damage": 39.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 31.0,
-      "requirements": {
-        "strength": 37,
-        "intelligence": 54,
-        "requires_level": 37
-      },
-      "mana_cost": 17,
-      "maximum_damage": 46.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 37.0,
-      "requirements": {
-        "strength": 40,
-        "intelligence": 58,
-        "requires_level": 40
-      },
-      "mana_cost": 18,
-      "maximum_damage": 55.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 41.0,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 60,
-        "requires_level": 42
-      },
-      "mana_cost": 19,
-      "maximum_damage": 61.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 45.0,
-      "requirements": {
-        "strength": 44,
-        "intelligence": 63,
-        "requires_level": 44
-      },
-      "mana_cost": 19,
-      "maximum_damage": 68.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 51.0,
-      "requirements": {
-        "strength": 46,
-        "intelligence": 66,
-        "requires_level": 46
-      },
-      "mana_cost": 20,
-      "maximum_damage": 76.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 56.0,
-      "requirements": {
-        "strength": 48,
-        "intelligence": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 21,
-      "maximum_damage": 84.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 63.0,
-      "requirements": {
-        "strength": 49,
-        "intelligence": 71,
-        "requires_level": 50
-      },
-      "mana_cost": 21,
-      "maximum_damage": 94.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 69.0,
-      "requirements": {
-        "strength": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 22,
-      "maximum_damage": 104.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 77.0,
-      "requirements": {
-        "strength": 53,
-        "intelligence": 76,
-        "requires_level": 54
-      },
-      "mana_cost": 22,
-      "maximum_damage": 115.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 85.0,
-      "requirements": {
-        "strength": 55,
-        "intelligence": 79,
-        "requires_level": 56
-      },
-      "mana_cost": 23,
-      "maximum_damage": 128.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 94.0,
-      "requirements": {
-        "strength": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "mana_cost": 24,
-      "maximum_damage": 141.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 104.0,
-      "requirements": {
-        "strength": 59,
-        "intelligence": 84,
-        "requires_level": 60
-      },
-      "mana_cost": 24,
-      "maximum_damage": 156.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 115.0,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 87,
-        "requires_level": 62
-      },
-      "mana_cost": 25,
-      "maximum_damage": 172.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 127.0,
-      "requirements": {
-        "strength": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 25,
-      "maximum_damage": 190.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 140.0,
-      "requirements": {
-        "strength": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "mana_cost": 26,
-      "maximum_damage": 210.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 154.0,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "mana_cost": 27,
-      "maximum_damage": 231.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 170.0,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 27,
-      "maximum_damage": 254.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 187.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 28,
-      "maximum_damage": 280.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 205.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 28,
-      "maximum_damage": 308.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 226.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 29,
-      "maximum_damage": 338.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 248.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 30,
-      "maximum_damage": 372.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 272.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 30,
-      "maximum_damage": 408.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 299.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 31,
-      "maximum_damage": 448.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 327.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 31,
-      "maximum_damage": 491.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 359.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 32,
-      "maximum_damage": 539.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 393.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 32,
-      "maximum_damage": 590.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 431.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 33,
-      "maximum_damage": 647.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 451.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 33,
-      "maximum_damage": 677.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 472.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 34,
-      "maximum_damage": 708.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 494.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 34,
-      "maximum_damage": 741.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 517.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 34,
-      "maximum_damage": 775.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 540.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 35,
-      "maximum_damage": 811.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 565.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 35,
-      "maximum_damage": 848.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 591.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 35,
-      "maximum_damage": 887.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 618.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 35,
-      "maximum_damage": 928.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 647.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 36,
-      "maximum_damage": 970.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 676.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 36,
-      "maximum_damage": 1014.0,
-      "fields": [
-        {
-          "name": "up_to__to_energy_spread_radius,_scaled_by_distance_from_brand",
-          "value": "17"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
     }
-  ],
-  "tags": [
-    "is_area_damage [1]",
-    "skill_can_add_multiple_charges_per_action [1]",
-    "console_skill_dont_chase [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Penance Brand deals 25% increased Damage",
-      "Penance Brand has 8% increased Cast Speed",
-      "Penance Brand has 16% increased Area of Effect"
-    ],
-    "eternal": [
-      "Penance Brand deals 40% increased Damage",
-      "Penance Brand has 12% increased Cast Speed",
-      "Penance Brand has 24% increased Area of Effect"
-    ]
   },
-  "drop_level": 28,
   "type": [
     "spell",
     "hit",
@@ -747,8 +767,23 @@
     "brand",
     "areaspell"
   ],
-  "mtx": [],
-  "description": "Creates a magical brand which can attach to a nearby enemy. It periodically activates while attached, adding energy to the branded enemy. Each activation, energy spreads from each energised enemy to an enemy in range which is not energised by the brand. If the branded enemy has 20 energy, each activation will instead deal a pulse of area damage. Energy explodes when the energised enemy dies or the brand is removed, dealing damage in an area.",
+  "tags": [
+    "is_area_damage [1]",
+    "skill_can_add_multiple_charges_per_action [1]",
+    "console_skill_dont_chase [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Penance Brand deals 40% increased Damage",
+      "Penance Brand has 12% increased Cast Speed",
+      "Penance Brand has 24% increased Area of Effect"
+    ],
+    "merciless": [
+      "Penance Brand deals 25% increased Damage",
+      "Penance Brand has 8% increased Cast Speed",
+      "Penance Brand has 16% increased Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1331,40 +1366,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% chance to Shock enemies",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% of Physical Damage Converted to Fire Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Penance Brand",
+  "description": "Creates a magical brand which can attach to a nearby enemy. It periodically activates while attached, adding energy to the branded enemy. Each activation, energy spreads from each energised enemy to an enemy in range which is not energised by the brand. If the branded enemy has 20 energy, each activation will instead deal a pulse of area damage. Energy explodes when the energised enemy dies or the brand is removed, dealing damage in an area."
 }

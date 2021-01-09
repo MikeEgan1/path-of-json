@@ -1,24 +1,816 @@
 {
-  "name": "Shattering Steel",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Duelist"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 30.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Impale Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "Fires an additional Projectile",
+          "minimum": null
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "shattering-steel",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 12,
+        "strength": 14,
+        "dexterity": 21
+      },
+      "fields": [
+        {
+          "value": "100%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8, 12",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 15,
+        "strength": 17,
+        "dexterity": 25
+      },
+      "fields": [
+        {
+          "value": "101.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10, 15",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 19,
+        "strength": 21,
+        "dexterity": 30
+      },
+      "fields": [
+        {
+          "value": "102.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "13, 19",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 23,
+        "strength": 24,
+        "dexterity": 35
+      },
+      "fields": [
+        {
+          "value": "104.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16, 24",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 27,
+        "strength": 28,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "105.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19, 29",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 31,
+        "strength": 32,
+        "dexterity": 46
+      },
+      "fields": [
+        {
+          "value": "107.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23, 35",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 35,
+        "strength": 36,
+        "dexterity": 51
+      },
+      "fields": [
+        {
+          "value": "108.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "28, 42",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 38,
+        "strength": 38,
+        "dexterity": 55
+      },
+      "fields": [
+        {
+          "value": "110.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "32, 48",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 41,
+        "strength": 41,
+        "dexterity": 59
+      },
+      "fields": [
+        {
+          "value": "111.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "37, 55",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 44,
+        "dexterity": 63
+      },
+      "fields": [
+        {
+          "value": "113%",
+          "name": "base_damage"
+        },
+        {
+          "value": "42, 63",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 47,
+        "strength": 47,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "114.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "47, 71",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 49,
+        "dexterity": 71
+      },
+      "fields": [
+        {
+          "value": "115.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "53, 80",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 53,
+        "strength": 52,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "117.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "60, 90",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 55,
+        "dexterity": 79
+      },
+      "fields": [
+        {
+          "value": "118.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "67, 101",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 59,
+        "strength": 58,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "120.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "75, 113",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 60,
+        "dexterity": 87
+      },
+      "fields": [
+        {
+          "value": "121.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "84, 126",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "dexterity": 90
+      },
+      "fields": [
+        {
+          "value": "123%",
+          "name": "base_damage"
+        },
+        {
+          "value": "91, 136",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 64,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "124.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "98, 146",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 66,
+        "dexterity": 95
+      },
+      "fields": [
+        {
+          "value": "125.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "105, 157",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "dexterity": 98
+      },
+      "fields": [
+        {
+          "value": "127.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "113, 169",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "128.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "121, 181",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "130.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "130, 195",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "131.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "139, 209",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "133.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "149, 224",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "134.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "160, 239",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "136%",
+          "name": "base_damage"
+        },
+        {
+          "value": "171, 256",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "137.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "183, 274",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "138.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "196, 293",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "140.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "209, 314",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "141.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "223, 335",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "141.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "231, 346",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "143.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "239, 358",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "144.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "247, 370",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "146.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "255, 382",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "147.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "263, 395",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "149%",
+          "name": "base_damage"
+        },
+        {
+          "value": "272, 408",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "150.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "281, 421",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "151.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "290, 435",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "153.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "300, 449",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "154.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "309, 464",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (100\u2013127.4)% of Base Attack Damage",
     "+5 seconds to Base duration",
@@ -30,784 +822,7 @@
     "Gain a Steel Ward if you have at least 2 Steel Shards, up to a maximum of 6Each Steel Ward grants +4% Chance to Block Projectile Attack DamageIf you have no Steel Shards, only Fires 1 Projectile"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 21,
-        "strength": 14,
-        "requires_level": 12
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "100%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "8, 12"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 25,
-        "strength": 17,
-        "requires_level": 15
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "101.4%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "10, 15"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 30,
-        "strength": 21,
-        "requires_level": 19
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "102.9%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "13, 19"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 35,
-        "strength": 24,
-        "requires_level": 23
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "104.3%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "16, 24"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 41,
-        "strength": 28,
-        "requires_level": 27
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "105.8%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "19, 29"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 46,
-        "strength": 32,
-        "requires_level": 31
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "107.2%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "23, 35"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 51,
-        "strength": 36,
-        "requires_level": 35
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "108.6%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "28, 42"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 55,
-        "strength": 38,
-        "requires_level": 38
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "110.1%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "32, 48"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 59,
-        "strength": 41,
-        "requires_level": 41
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "111.5%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "37, 55"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 63,
-        "strength": 44,
-        "requires_level": 44
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "113%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "42, 63"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 67,
-        "strength": 47,
-        "requires_level": 47
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "114.4%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "47, 71"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 71,
-        "strength": 49,
-        "requires_level": 50
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "115.8%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "53, 80"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 75,
-        "strength": 52,
-        "requires_level": 53
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "117.3%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "60, 90"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 79,
-        "strength": 55,
-        "requires_level": 56
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "118.7%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "67, 101"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 83,
-        "strength": 58,
-        "requires_level": 59
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "120.2%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "75, 113"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 87,
-        "strength": 60,
-        "requires_level": 62
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "121.6%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "84, 126"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 90,
-        "strength": 62,
-        "requires_level": 64
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "123%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "91, 136"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 92,
-        "strength": 64,
-        "requires_level": 66
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "124.5%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "98, 146"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 95,
-        "strength": 66,
-        "requires_level": 68
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "125.9%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "105, 157"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 98,
-        "strength": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "127.4%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "113, 169"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "128.8%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "121, 181"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "130.2%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "130, 195"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "131.7%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "139, 209"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "133.1%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "149, 224"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "134.6%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "160, 239"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "136%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "171, 256"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "137.4%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "183, 274"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "138.9%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "196, 293"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "140.3%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "209, 314"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141.8%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "223, 335"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141.8%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "231, 346"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "143.2%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "239, 358"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "144.6%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "247, 370"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "146.1%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "255, 382"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.5%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "263, 395"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "149%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "272, 408"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150.4%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "281, 421"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "151.8%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "290, 435"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "153.3%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "300, 449"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "154.7%"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "309, 464"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Shattering Steel deals 25% increased Damage",
-      "Shattering Steel has 20% chance to not consume Steel Shards"
-    ],
-    "eternal": [
-      "Shattering Steel deals 40% increased Damage",
-      "Shattering Steel grants Fortify on Hitting an Enemy at Close Range",
-      "Shattering Steel has 30% chance to not consume Steel Shards"
-    ]
-  },
-  "drop_level": 12,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -818,7 +833,42 @@
       "description": "Your Shattering Steel becomes a Temple Effect."
     }
   ],
-  "description": "Swing an Axe or Sword, consuming Steel Shards to gain a Steel Ward that protects you for a duration, and fire projectiles which shatter on impact or soon after being launched, dealing area damage in front of where they shatter. Steel Shards are gained with the Call of Steel Skill.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Duelist"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Shattering Steel deals 40% increased Damage",
+      "Shattering Steel grants Fortify on Hitting an Enemy at Close Range",
+      "Shattering Steel has 30% chance to not consume Steel Shards"
+    ],
+    "merciless": [
+      "Shattering Steel deals 25% increased Damage",
+      "Shattering Steel has 20% chance to not consume Steel Shards"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1580,55 +1630,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Fires an additional Projectile",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 10.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 30.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Impale Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        },
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Shattering Steel",
+  "description": "Swing an Axe or Sword, consuming Steel Shards to gain a Steel Ward that protects you for a duration, and fire projectiles which shatter on impact or soon after being launched, dealing area damage in front of where they shatter. Steel Shards are gained with the Call of Steel Skill."
 }

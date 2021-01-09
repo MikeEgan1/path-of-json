@@ -1,24 +1,1141 @@
 {
-  "name": "Splitting Steel",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Scion",
-        "Ranger"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to inflict an additional Impale when this Skill inflicts Impale",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Duelist",
-        "Scion"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 0.0,
+          "text": "% chance to Impale Enemies on Hit",
+          "minimum": 40.0
+        },
+        {
+          "maximum": 40.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Impale Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "splitting-steel",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 1,
+        "strength": 6,
+        "dexterity": 4
+      },
+      "fields": [
+        {
+          "value": "100%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "2, 3",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 2,
+        "strength": 7,
+        "dexterity": 5
+      },
+      "fields": [
+        {
+          "value": "103.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "2, 3",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 4,
+        "strength": 10,
+        "dexterity": 7
+      },
+      "fields": [
+        {
+          "value": "107.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "3, 4",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 7,
+        "strength": 14,
+        "dexterity": 10
+      },
+      "fields": [
+        {
+          "value": "110.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "4, 6",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 11,
+        "strength": 19,
+        "dexterity": 13
+      },
+      "fields": [
+        {
+          "value": "114.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "5, 8",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 26,
+        "dexterity": 18
+      },
+      "fields": [
+        {
+          "value": "118%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "7, 11",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 31,
+        "dexterity": 22
+      },
+      "fields": [
+        {
+          "value": "121.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "9, 13",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 37,
+        "dexterity": 25
+      },
+      "fields": [
+        {
+          "value": "125.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "11, 17",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 42,
+        "dexterity": 29
+      },
+      "fields": [
+        {
+          "value": "128.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "14, 20",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 47,
+        "dexterity": 33
+      },
+      "fields": [
+        {
+          "value": "132.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "16, 25",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 53,
+        "dexterity": 36
+      },
+      "fields": [
+        {
+          "value": "136%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "20, 30",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 58,
+        "dexterity": 40
+      },
+      "fields": [
+        {
+          "value": "139.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "24, 35",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "dexterity": 44
+      },
+      "fields": [
+        {
+          "value": "143.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "28, 42",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 68,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "value": "146.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "33, 49",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 74,
+        "dexterity": 51
+      },
+      "fields": [
+        {
+          "value": "150.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "39, 58",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 79,
+        "dexterity": 55
+      },
+      "fields": [
+        {
+          "value": "154%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "45, 68",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 84,
+        "dexterity": 59
+      },
+      "fields": [
+        {
+          "value": "157.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "52, 79",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "dexterity": 62
+      },
+      "fields": [
+        {
+          "value": "161.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "61, 91",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 94,
+        "dexterity": 65
+      },
+      "fields": [
+        {
+          "value": "164.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "68, 102",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "dexterity": 68
+      },
+      "fields": [
+        {
+          "value": "168.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "75, 113",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "172%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "81, 122",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "175.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "87, 130",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "179.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "93, 140",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "182.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "100, 150",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "186.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "107, 160",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "190%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "114, 172",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "193.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "123, 184",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "197.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "131, 197",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "200.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "140, 210",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "204.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "150, 224",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "204.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "155, 232",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "208%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "160, 240",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "211.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "165, 248",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "215.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "171, 256",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "218.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "176, 265",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "222.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "182, 273",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "226%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "188, 282",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "229.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "194, 292",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "233.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "201, 301",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "236.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "projectiles_split_towards__targets"
+        },
+        {
+          "value": "207, 311",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (100\u2013168.4)% of Base Attack Damage",
     "Projectiles Split towards (2\u20134) targets",
@@ -31,1104 +1148,29 @@
     "Modifiers to number of Projectiles instead apply tothe number of targets Projectile Splits towardsIf you have no Steel Shards, Projectile counts as already having SplitProjectiles can Split without hitting a target"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 4,
-        "strength": 6,
-        "requires_level": 1
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "100%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "2, 3"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Duelist",
+        "Scion"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 5,
-        "strength": 7,
-        "requires_level": 2
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "103.6%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "2, 3"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 7,
-        "strength": 10,
-        "requires_level": 4
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "107.2%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "3, 4"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 10,
-        "strength": 14,
-        "requires_level": 7
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "110.8%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "4, 6"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 13,
-        "strength": 19,
-        "requires_level": 11
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "114.4%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "5, 8"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 18,
-        "strength": 26,
-        "requires_level": 16
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "118%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "7, 11"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 22,
-        "strength": 31,
-        "requires_level": 20
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "121.6%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "9, 13"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 25,
-        "strength": 37,
-        "requires_level": 24
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "125.2%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "11, 17"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 29,
-        "strength": 42,
-        "requires_level": 28
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "128.8%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "14, 20"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 33,
-        "strength": 47,
-        "requires_level": 32
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "132.4%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "16, 25"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 36,
-        "strength": 53,
-        "requires_level": 36
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "136%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "20, 30"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 40,
-        "strength": 58,
-        "requires_level": 40
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "139.6%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "24, 35"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 44,
-        "strength": 63,
-        "requires_level": 44
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "143.2%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "28, 42"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 48,
-        "strength": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "146.8%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "33, 49"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 51,
-        "strength": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150.4%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "39, 58"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 55,
-        "strength": 79,
-        "requires_level": 56
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "154%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "45, 68"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 59,
-        "strength": 84,
-        "requires_level": 60
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "157.6%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "52, 79"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 62,
-        "strength": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "161.2%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "61, 91"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 65,
-        "strength": 94,
-        "requires_level": 67
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "164.8%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "68, 102"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 68,
-        "strength": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "168.4%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "75, 113"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "172%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "81, 122"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "175.6%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "87, 130"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "179.2%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "93, 140"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.8%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "100, 150"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186.4%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "107, 160"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "190%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "114, 172"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "193.6%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "123, 184"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "197.2%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "131, 197"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "200.8%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "140, 210"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "204.4%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "150, 224"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "204.4%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "155, 232"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "208%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "160, 240"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "211.6%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "165, 248"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "215.2%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "171, 256"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "218.8%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "176, 265"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "222.4%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "182, 273"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "226%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "188, 282"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "229.6%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "6"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "194, 292"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "233.2%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "6"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "201, 301"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "236.8%"
-        },
-        {
-          "name": "projectiles_split_towards__targets",
-          "value": "6"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "207, 311"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Scion",
+        "Ranger"
+      ],
+      "vendor_name": "Nessa"
     }
-  ],
-  "tags": [
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Splitting Steel deals 25% increased Damage",
-      "Splitting Steel has 16% increased Area of Effect",
-      "Splitting Steel has 20% chance to not consume Steel Shards"
-    ],
-    "eternal": [
-      "Splitting Steel deals 40% increased Damage",
-      "Splitting Steel has 24% increased Area of Effect",
-      "Splitting Steel has 30% chance to not consume Steel Shards"
-    ]
   },
-  "drop_level": null,
   "type": [
     "attack",
     "projectileattack",
@@ -1138,8 +1180,21 @@
     "area",
     "physicalskill"
   ],
-  "mtx": [],
-  "description": "Consume a Steel Shard to fire a single projectile that splits on impact or at the targeted location, dealing area damage when it splits and again when the split projectiles explode at the end of their flight. Requires a Sword or Axe. Steel Shards are gained with the Call of Steel Skill.",
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Splitting Steel deals 40% increased Damage",
+      "Splitting Steel has 24% increased Area of Effect",
+      "Splitting Steel has 30% chance to not consume Steel Shards"
+    ],
+    "merciless": [
+      "Splitting Steel deals 25% increased Damage",
+      "Splitting Steel has 16% increased Area of Effect",
+      "Splitting Steel has 20% chance to not consume Steel Shards"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1873,60 +1928,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        },
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance to Impale Enemies on Hit",
-          "minimum": 40.0,
-          "maximum": 0.0
-        },
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Impale Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to inflict an additional Impale when this Skill inflicts Impale",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Splitting Steel",
+  "description": "Consume a Steel Shard to fire a single projectile that splits on impact or at the targeted location, dealing area damage when it splits and again when the split projectiles explode at the end of their flight. Requires a Sword or Axe. Steel Shards are gained with the Call of Steel Skill."
 }

@@ -1,771 +1,768 @@
 {
-  "name": "General's Cry",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Warcry Speed",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Marauder"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "Mirage Warriors have % increased Movement Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 24,
+  "slug": "general's-cry",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "45",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 27,
+        "strength": 64
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "44",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 30,
+        "strength": 71
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "43",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 33,
+        "strength": 77
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "43",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "42",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 39,
+        "strength": 90
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "41",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 96
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "40",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 45,
+        "strength": 102
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "39",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "39",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 113
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "38",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "37",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 121
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "36",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 125
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "36",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "35",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 134
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "34",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 138
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "33",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "32",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 146
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "32",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 151
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "31",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "30",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "29",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "28",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "28",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "27",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "26",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "25",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "24",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "47",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "24",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "23",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "49",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "22",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "49",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "22",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "21",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "21",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "21",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "20",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "20",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "19",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "19",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "19",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "%_increased_warcry_speed"
+        },
+        {
+          "value": "18",
+          "name": "supported_skills_deal_%_less_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+(4\u20134.9) seconds to Base duration",
     "Summons Mirage Warriors from 2 corpses per 5 Power, minimum 1 corpseMaximum 5 Summoned Mirage Warriors(0\u201338)% increased Warcry SpeedCounts total Power of Enemies and Corpses in RangeSupported Skills deal (30\u201345)% less DamageThis Skill is used by Mirage Warriors Summoned by General's CryThis Skill counts as TriggeredAttacks with this Skill count as ExertedSupported Strike Skills cannot target additional Enemies"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": ""
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "2"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 71,
-        "requires_level": 30
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "4"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 77,
-        "requires_level": 33
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "6"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "8"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 90,
-        "requires_level": 39
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "10"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "12"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 102,
-        "requires_level": 45
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "14"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "16"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "18"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "20"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "22"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "24"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "26"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "28"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "30"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "32"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "34"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "36"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "38"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "40"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "41"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "42"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "43"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "44"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "45"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "46"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "47"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "48"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "49"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "49"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "50"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "50"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "51"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "51"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "52"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "52"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "53"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "53"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "54"
-        },
-        {
-          "name": "supported_skills_deal_%_less_damage",
-          "value": "18"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]",
-    "cannot_cancel_skill_before_contact_point [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "General's Cry has 20% increased Cooldown Recovery Rate"
-    ],
-    "eternal": [
-      "General's Cry has 30% increased Cooldown Recovery Rate",
-      "General's Cry has +1 to maximum number of Mirage Warriors"
-    ]
-  },
-  "drop_level": 24,
-  "type": [
-    "buff",
-    "area",
-    "duration",
-    "warcry",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -779,7 +776,44 @@
       "description": "Your Warcry becomes a Celestial Effect."
     }
   ],
-  "description": "Supports melee attack skills. Those skills will be used by Mirage Warriors summoned by General's Cry. Supported skills cannot be supported by Multistrike.Performs a warcry, taunting nearby enemies to attack the user, and summoning Mirage Warriors from nearby corpses. The Mirage Warriors each use a linked attack skill once before dissipating.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Marauder"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "buff",
+    "area",
+    "duration",
+    "warcry",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]",
+    "cannot_cancel_skill_before_contact_point [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "General's Cry has 30% increased Cooldown Recovery Rate",
+      "General's Cry has +1 to maximum number of Mirage Warriors"
+    ],
+    "merciless": [
+      "General's Cry has 20% increased Cooldown Recovery Rate"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -861,39 +895,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Mirage Warriors have % increased Movement Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Warcry Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "General's Cry",
+  "description": "Supports melee attack skills. Those skills will be used by Mirage Warriors summoned by General's Cry. Supported skills cannot be supported by Multistrike.Performs a warcry, taunting nearby enemies to attack the user, and summoning Mirage Warriors from nearby corpses. The Mirage Warriors each use a linked attack skill once before dissipating."
 }

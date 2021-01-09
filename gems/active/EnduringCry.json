@@ -1,25 +1,766 @@
 {
-  "name": "Enduring Cry",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Warcry Speed",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Marauder",
-        "Duelist"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Buff Effect",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 40.0,
+          "text": "% reduced Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "enduring-cry",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 10,
+        "strength": 29
+      },
+      "fields": [
+        {
+          "value": "120",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 13,
+        "strength": 35
+      },
+      "fields": [
+        {
+          "value": "212",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "2",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 17,
+        "strength": 43
+      },
+      "fields": [
+        {
+          "value": "336",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 21,
+        "strength": 52
+      },
+      "fields": [
+        {
+          "value": "460",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 25,
+        "strength": 60
+      },
+      "fields": [
+        {
+          "value": "584",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 29,
+        "strength": 69
+      },
+      "fields": [
+        {
+          "value": "707",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 33,
+        "strength": 77
+      },
+      "fields": [
+        {
+          "value": "831",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "924",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 39,
+        "strength": 90
+      },
+      "fields": [
+        {
+          "value": "1017",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 96
+      },
+      "fields": [
+        {
+          "value": "1110",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 45,
+        "strength": 102
+      },
+      "fields": [
+        {
+          "value": "1202",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "1295",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 51,
+        "strength": 115
+      },
+      "fields": [
+        {
+          "value": "1388",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 121
+      },
+      "fields": [
+        {
+          "value": "1481",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 57,
+        "strength": 127
+      },
+      "fields": [
+        {
+          "value": "1574",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 134
+      },
+      "fields": [
+        {
+          "value": "1666",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 63,
+        "strength": 140
+      },
+      "fields": [
+        {
+          "value": "1759",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 146
+      },
+      "fields": [
+        {
+          "value": "1852",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 151
+      },
+      "fields": [
+        {
+          "value": "1914",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "1976",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2038",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2100",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2161",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2223",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2285",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2347",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "45",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2409",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "46",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2471",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "47",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2533",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2595",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "49",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2625",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "49",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2656",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2687",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2718",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "51",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2749",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "51",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2780",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2811",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2842",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "53",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2873",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "53",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "2904",
+          "name": "regenerate__life_over__second"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_warcry_speed"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+2 seconds to Base duration",
     "Gain 1 Endurance Charge per 5 Power",
@@ -30,750 +771,8 @@
     "Counts total Power of Enemies in Range"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 29,
-        "requires_level": 10
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "120"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 35,
-        "requires_level": 13
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "212"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 43,
-        "requires_level": 17
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "336"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 52,
-        "requires_level": 21
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "460"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 60,
-        "requires_level": 25
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "584"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 69,
-        "requires_level": 29
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "707"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 77,
-        "requires_level": 33
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "831"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "924"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 90,
-        "requires_level": 39
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1017"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1110"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 102,
-        "requires_level": 45
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1202"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1295"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 115,
-        "requires_level": 51
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1388"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1481"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 127,
-        "requires_level": 57
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1574"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1666"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 140,
-        "requires_level": 63
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1759"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1852"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1914"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "1976"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2038"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2100"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2161"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2223"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2285"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2347"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2409"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2471"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2533"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2595"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2625"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2656"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2687"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2718"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2749"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2780"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2811"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2842"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2873"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "regenerate__life_over__second",
-          "value": "2904"
-        },
-        {
-          "name": "%_increased_warcry_speed",
-          "value": "54"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]",
-    "cannot_cancel_skill_before_contact_point [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Enduring Cry has 20% increased Cooldown Recovery Rate",
-      "Enduring Cry has 24% increased Cooldown Recovery Rate"
-    ],
-    "eternal": [
-      "Enduring Cry has 30% increased Cooldown Recovery Rate",
-      "Enduring Cry has 36% increased Cooldown Recovery Rate",
-      "Enduring Cry grants 1 additional Endurance Charge"
-    ]
-  },
-  "drop_level": 10,
-  "type": [
-    "buff",
-    "area",
-    "duration",
-    "warcry",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -787,7 +786,47 @@
       "description": "Your Warcry becomes a Celestial Effect."
     }
   ],
-  "description": "Performs a warcry, taunting all nearby enemies to attack the user and granting endurance charges. Gives a brief burst of life regeneration, as well as a buff which grants resistances and physical damage reduction based on your endurance charges.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Marauder",
+        "Duelist"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "buff",
+    "area",
+    "duration",
+    "warcry",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]",
+    "cannot_cancel_skill_before_contact_point [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Enduring Cry has 30% increased Cooldown Recovery Rate",
+      "Enduring Cry has 36% increased Cooldown Recovery Rate",
+      "Enduring Cry grants 1 additional Endurance Charge"
+    ],
+    "merciless": [
+      "Enduring Cry has 20% increased Cooldown Recovery Rate",
+      "Enduring Cry has 24% increased Cooldown Recovery Rate"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -869,44 +908,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Buff Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% reduced Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Warcry Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Enduring Cry",
+  "description": "Performs a warcry, taunting all nearby enemies to attack the user and granting endurance charges. Gives a brief burst of life regeneration, as well as a buff which grants resistances and physical damage reduction based on your endurance charges."
 }

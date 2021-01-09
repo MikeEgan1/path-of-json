@@ -1,27 +1,851 @@
 {
-  "name": "Ice Nova",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 30.0,
+          "text": "% increased Damage with Hits against Chilled Enemies",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Effect of Chill",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "ice-nova",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 8,
+      "maximum_damage": 26.0,
+      "minimum_damage": 18.0,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "3, 4",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 33.0,
+      "minimum_damage": 23.0,
+      "requirements": {
+        "requires_level": 15,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "3, 5",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 44.0,
+      "minimum_damage": 30.0,
+      "requirements": {
+        "requires_level": 19,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "5, 7",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 58.0,
+      "minimum_damage": 40.0,
+      "requirements": {
+        "requires_level": 23,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "6, 9",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 75.0,
+      "minimum_damage": 51.0,
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "8, 11",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 97.0,
+      "minimum_damage": 66.0,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "10, 15",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 122.0,
+      "minimum_damage": 83.0,
+      "requirements": {
+        "requires_level": 35,
+        "intelligence": 81
+      },
+      "fields": [
+        {
+          "value": "13, 19",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 145.0,
+      "minimum_damage": 99.0,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "15, 22",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 172.0,
+      "minimum_damage": 117.0,
+      "requirements": {
+        "requires_level": 41,
+        "intelligence": 94
+      },
+      "fields": [
+        {
+          "value": "18, 26",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 203.0,
+      "minimum_damage": 138.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "21, 31",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 238.0,
+      "minimum_damage": 162.0,
+      "requirements": {
+        "requires_level": 47,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "value": "25, 36",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 279.0,
+      "minimum_damage": 190.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "29, 42",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 326.0,
+      "minimum_damage": 222.0,
+      "requirements": {
+        "requires_level": 53,
+        "intelligence": 119
+      },
+      "fields": [
+        {
+          "value": "34, 50",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 381.0,
+      "minimum_damage": 259.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "40, 58",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 443.0,
+      "minimum_damage": 301.0,
+      "requirements": {
+        "requires_level": 59,
+        "intelligence": 132
+      },
+      "fields": [
+        {
+          "value": "46, 67",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 515.0,
+      "minimum_damage": 350.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "54, 78",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 568.0,
+      "minimum_damage": 387.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "59, 86",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 627.0,
+      "minimum_damage": 426.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "65, 95",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 691.0,
+      "minimum_damage": 470.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "72, 105",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 762.0,
+      "minimum_damage": 518.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "79, 116",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 839.0,
+      "minimum_damage": 570.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "87, 127",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 923.0,
+      "minimum_damage": 628.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "96, 140",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1015.0,
+      "minimum_damage": 690.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "106, 154",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1116.0,
+      "minimum_damage": 759.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "116, 170",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 1226.0,
+      "minimum_damage": 833.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "127, 186",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 1346.0,
+      "minimum_damage": 915.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "140, 205",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 1477.0,
+      "minimum_damage": 1004.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "154, 225",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 1620.0,
+      "minimum_damage": 1102.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "169, 246",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 1777.0,
+      "minimum_damage": 1208.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "185, 270",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 1947.0,
+      "minimum_damage": 1324.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "203, 296",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 2039.0,
+      "minimum_damage": 1386.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "212, 310",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 2134.0,
+      "minimum_damage": 1451.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "222, 324",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 2233.0,
+      "minimum_damage": 1519.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "232, 339",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 2337.0,
+      "minimum_damage": 1589.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "243, 355",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 2445.0,
+      "minimum_damage": 1663.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "254, 372",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 2559.0,
+      "minimum_damage": 1740.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "266, 389",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 2677.0,
+      "minimum_damage": 1820.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "278, 407",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 2800.0,
+      "minimum_damage": 1904.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "291, 426",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 2929.0,
+      "minimum_damage": 1992.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "305, 445",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 3064.0,
+      "minimum_damage": 2083.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "319, 466",
+          "name": "adds__to__cold_damage_against_chilled_enemies"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (18\u2013518) to (26\u2013762) Cold Damage",
     "Can expand from up to 2 Frostbolt Projectiles",
@@ -30,839 +854,8 @@
     "+(0\u20134) to radius"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 18.0,
-      "requirements": {
-        "intelligence": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 8,
-      "maximum_damage": 26.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "3, 4"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 23.0,
-      "requirements": {
-        "intelligence": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 9,
-      "maximum_damage": 33.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "3, 5"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 30.0,
-      "requirements": {
-        "intelligence": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 10,
-      "maximum_damage": 44.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "5, 7"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 40.0,
-      "requirements": {
-        "intelligence": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 11,
-      "maximum_damage": 58.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "6, 9"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 51.0,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 12,
-      "maximum_damage": 75.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "8, 11"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 66.0,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 13,
-      "maximum_damage": 97.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "10, 15"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 83.0,
-      "requirements": {
-        "intelligence": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 14,
-      "maximum_damage": 122.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "13, 19"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 99.0,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 15,
-      "maximum_damage": 145.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "15, 22"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 117.0,
-      "requirements": {
-        "intelligence": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 16,
-      "maximum_damage": 172.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "18, 26"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 138.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 16,
-      "maximum_damage": 203.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "21, 31"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 162.0,
-      "requirements": {
-        "intelligence": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 17,
-      "maximum_damage": 238.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "25, 36"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 190.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 18,
-      "maximum_damage": 279.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "29, 42"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 222.0,
-      "requirements": {
-        "intelligence": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 19,
-      "maximum_damage": 326.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "34, 50"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 259.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 19,
-      "maximum_damage": 381.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "40, 58"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 301.0,
-      "requirements": {
-        "intelligence": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 20,
-      "maximum_damage": 443.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "46, 67"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 350.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 21,
-      "maximum_damage": 515.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "54, 78"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 387.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 21,
-      "maximum_damage": 568.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "59, 86"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 426.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 22,
-      "maximum_damage": 627.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "65, 95"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 470.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 22,
-      "maximum_damage": 691.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "72, 105"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 518.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 23,
-      "maximum_damage": 762.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "79, 116"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 570.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 24,
-      "maximum_damage": 839.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "87, 127"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 628.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 24,
-      "maximum_damage": 923.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "96, 140"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 690.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1015.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "106, 154"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 759.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1116.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "116, 170"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 833.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 26,
-      "maximum_damage": 1226.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "127, 186"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 915.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "maximum_damage": 1346.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "140, 205"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1004.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "maximum_damage": 1477.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "154, 225"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1102.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "maximum_damage": 1620.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "169, 246"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 1208.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 28,
-      "maximum_damage": 1777.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "185, 270"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1324.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "maximum_damage": 1947.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "203, 296"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1386.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 28,
-      "maximum_damage": 2039.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "212, 310"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1451.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "maximum_damage": 2134.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "222, 324"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1519.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "maximum_damage": 2233.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "232, 339"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1589.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "maximum_damage": 2337.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "243, 355"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1663.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 29,
-      "maximum_damage": 2445.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "254, 372"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 1740.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 30,
-      "maximum_damage": 2559.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "266, 389"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 1820.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 30,
-      "maximum_damage": 2677.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "278, 407"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 1904.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 30,
-      "maximum_damage": 2800.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "291, 426"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 1992.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 30,
-      "maximum_damage": 2929.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "305, 445"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 2083.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 31,
-      "maximum_damage": 3064.0,
-      "fields": [
-        {
-          "name": "adds__to__cold_damage_against_chilled_enemies",
-          "value": "319, 466"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Ice Nova Damage",
-      "Ice Nova has +20% chance to Freeze",
-      "16% increased Ice Nova Area of Effect",
-      "Chills from Ice Nova Hits always reduce Action Speed by at least 6%"
-    ],
-    "eternal": [
-      "40% increased Ice Nova Damage",
-      "Ice Nova has +30% chance to Freeze",
-      "24% increased Ice Nova Area of Effect",
-      "Chills from Ice Nova Hits always reduce Action Speed by at least 8%"
-    ]
-  },
-  "drop_level": 12,
-  "type": [
-    "spell",
-    "hit",
-    "area",
-    "skillcantrap",
-    "skillcantotem",
-    "skillcanmine",
-    "spellcanrepeat",
-    "triggerable",
-    "coldskill",
-    "canrapidfire",
-    "areaspell",
-    "novaspell"
+  "target_types": [
+    "ground"
   ],
   "mtx": [
     {
@@ -886,7 +879,58 @@
       "description": "Your Ice Nova becomes a Celestial Effect."
     }
   ],
-  "description": "A chilling circle of ice expands from the caster. If the caster targets near their Frostbolt projectiles, it will expand from a number of those projectiles instead. If this skill would repeat when cast this way, it will instead expand again from the same projectiles after a short delay.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "hit",
+    "area",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "spellcanrepeat",
+    "triggerable",
+    "coldskill",
+    "canrapidfire",
+    "areaspell",
+    "novaspell"
+  ],
+  "tags": [
+    "is_area_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Ice Nova Damage",
+      "Ice Nova has +30% chance to Freeze",
+      "24% increased Ice Nova Area of Effect",
+      "Chills from Ice Nova Hits always reduce Action Speed by at least 8%"
+    ],
+    "merciless": [
+      "25% increased Ice Nova Damage",
+      "Ice Nova has +20% chance to Freeze",
+      "16% increased Ice Nova Area of Effect",
+      "Chills from Ice Nova Hits always reduce Action Speed by at least 6%"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1461,49 +1505,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% increased Effect of Chill",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Damage with Hits against Chilled Enemies",
-          "minimum": 0.0,
-          "maximum": 30.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Ice Nova",
+  "description": "A chilling circle of ice expands from the caster. If the caster targets near their Frostbolt projectiles, it will expand from a number of those projectiles instead. If this skill would repeat when cast this way, it will instead expand again from the same projectiles after a short delay."
 }

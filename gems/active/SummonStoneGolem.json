@@ -1,23 +1,966 @@
 {
-  "name": "Summon Stone Golem",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "All",
-        "Classes"
-      ],
-      "vendor_name": "Petarus and Vanja"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Buff Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking the Seal",
-      "classes": [
-        "All",
-        "Classes"
-      ],
-      "act": 4
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Minion Maximum Life",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "Minions deal % increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Summoned Golems have % increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 34,
+  "slug": "summon-stone-golem",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 50,
+        "dexterity": 35
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "33",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 53,
+        "dexterity": 36
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "36",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 38,
+        "strength": 55,
+        "dexterity": 38
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "39",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 58,
+        "dexterity": 40
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "42",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 60,
+        "dexterity": 42
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "45",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "dexterity": 44
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "49",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 66,
+        "dexterity": 46
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "52",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 68,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "56",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 71,
+        "dexterity": 49
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "46",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "60",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 74,
+        "dexterity": 51
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "64",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 76,
+        "dexterity": 53
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "68",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 79,
+        "dexterity": 55
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "72",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 50,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 82,
+        "dexterity": 57
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "76",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 50,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 84,
+        "dexterity": 59
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "56",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "81",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 87,
+        "dexterity": 60
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "58",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "85",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "dexterity": 62
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "90",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 92,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "62",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "95",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 95,
+        "dexterity": 66
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "64",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "100",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 54,
+      "requirements": {
+        "requires_level": 69,
+        "strength": 96,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "66",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "103",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 54,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "dexterity": 68
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "68",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "105",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 56,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "70",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "110",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 56,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "72",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "116",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 58,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "74",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "121",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 58,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "76",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "127",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "78",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "133",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "80",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "139",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "82",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "145",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "84",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "151",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 62,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "86",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "157",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 62,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "88",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "164",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 62,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "89",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "167",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "90",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "170",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "91",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "173",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "92",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "176",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "93",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "179",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "94",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "182",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "95",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "185",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "96",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "188",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "97",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "191",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 64,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "%_increased_character_size"
+        },
+        {
+          "value": "98",
+          "name": "%_increased_minion_maximum_life"
+        },
+        {
+          "value": "194",
+          "name": "golems_grant__life_regenerated_per_second"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "(0\u201310)% increased Character Size",
     "Maximum 1 Summoned Golem",
@@ -25,942 +968,38 @@
     "Golems grant (33\u2013105) Life Regenerated per second"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "requirements": {
-        "dexterity": 35,
-        "strength": 50,
-        "requires_level": 34
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": ""
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "30"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "33"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ClockworkGolem.png?w=2&h=2&scale=1",
+      "name": "Clockwork Golem",
+      "description": "Your Summoned Elemental, Chaos or Stone Golem becomes a clockwork creation."
     },
     {
-      "level": 2,
-      "requirements": {
-        "dexterity": 36,
-        "strength": 53,
-        "requires_level": 36
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "1"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "32"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 38,
-        "strength": 55,
-        "requires_level": 38
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "1"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "34"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 40,
-        "strength": 58,
-        "requires_level": 40
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "2"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "36"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 42,
-        "strength": 60,
-        "requires_level": 42
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "2"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "38"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 44,
-        "strength": 63,
-        "requires_level": 44
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "40"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 46,
-        "strength": 66,
-        "requires_level": 46
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "42"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 48,
-        "strength": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "44"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 49,
-        "strength": 71,
-        "requires_level": 50
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "46"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 51,
-        "strength": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "48"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 53,
-        "strength": 76,
-        "requires_level": 54
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "50"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "68"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 55,
-        "strength": 79,
-        "requires_level": 56
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "52"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 57,
-        "strength": 82,
-        "requires_level": 58
-      },
-      "mana_cost": 50,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "54"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "76"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 59,
-        "strength": 84,
-        "requires_level": 60
-      },
-      "mana_cost": 50,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "56"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "81"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 60,
-        "strength": 87,
-        "requires_level": 62
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "58"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "85"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 62,
-        "strength": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "60"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "90"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 64,
-        "strength": 92,
-        "requires_level": 66
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "62"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "95"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 66,
-        "strength": 95,
-        "requires_level": 68
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "64"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 67,
-        "strength": 96,
-        "requires_level": 69
-      },
-      "mana_cost": 54,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "66"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "103"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 68,
-        "strength": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 54,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "68"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "105"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 56,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "70"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "110"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 56,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "72"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "116"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 58,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "74"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "121"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 58,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "12"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "76"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "127"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "12"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "78"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "133"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "13"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "80"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "139"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "13"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "82"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "145"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "14"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "84"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "151"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 62,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "14"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "86"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "157"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 62,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "15"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "88"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "164"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 62,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "15"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "89"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "167"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "15"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "90"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "170"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "15"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "91"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "173"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "16"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "92"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "176"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "16"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "93"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "179"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "16"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "94"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "182"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "16"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "95"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "185"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "17"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "96"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "188"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "17"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "97"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "191"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 64,
-      "fields": [
-        {
-          "name": "%_increased_character_size",
-          "value": "17"
-        },
-        {
-          "name": "%_increased_minion_maximum_life",
-          "value": "98"
-        },
-        {
-          "name": "golems_grant__life_regenerated_per_second",
-          "value": "194"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/MiracleGolem.png?w=2&h=2&scale=1",
+      "name": "Miracle Golem Skin",
+      "description": "Your Summoned Elemental, Chaos or Stone Golem becomes a miraculous creation."
     }
   ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Stone Golems deal 25% increased Damage",
-      "+24% to Stone Golem Elemental Resistances",
-      "100% increased Effect of the Buff granted by your Stone Golems"
-    ],
-    "eternal": [
-      "Stone Golems deal 40% increased Damage",
-      "+36% to Stone Golem Elemental Resistances",
-      "150% increased Effect of the Buff granted by your Stone Golems"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking the Seal",
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "act": 4
+    },
+    "vendor": {
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "vendor_name": "Petarus and Vanja"
+    }
   },
-  "drop_level": 34,
   "type": [
     "triggerable",
     "skillcanmine",
@@ -976,19 +1015,19 @@
     "createsminion",
     "secondwindsupport"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ClockworkGolem.png?w=2&h=2&scale=1",
-      "name": "Clockwork Golem",
-      "description": "Your Summoned Elemental, Chaos or Stone Golem becomes a clockwork creation."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/MiracleGolem.png?w=2&h=2&scale=1",
-      "name": "Miracle Golem Skin",
-      "description": "Your Summoned Elemental, Chaos or Stone Golem becomes a miraculous creation."
-    }
-  ],
-  "description": "Summons a Stone Golem that grants you life regeneration. In addition to its melee attack, the Stone Golem uses a rolling charge and a powerful slam that can taunt enemies.",
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Stone Golems deal 40% increased Damage",
+      "+36% to Stone Golem Elemental Resistances",
+      "150% increased Effect of the Buff granted by your Stone Golems"
+    ],
+    "merciless": [
+      "Stone Golems deal 25% increased Damage",
+      "+24% to Stone Golem Elemental Resistances",
+      "100% increased Effect of the Buff granted by your Stone Golems"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1137,44 +1176,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Summoned Golems have % increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Minion Maximum Life",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "Minions deal % increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Buff Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Summon Stone Golem",
+  "description": "Summons a Stone Golem that grants you life regeneration. In addition to its melee attack, the Stone Golem uses a rolling charge and a powerful slam that can taunt enemies."
 }

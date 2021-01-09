@@ -1,775 +1,777 @@
 {
-  "name": "Rain of Arrows",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "% chance to fire an additional sequence of arrows",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to Maim on Hit",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 4.0,
+          "text": "Fires  additional Arrows",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "rain-of-arrows",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 33
+      },
+      "fields": [
+        {
+          "value": "48%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 15,
+        "dexterity": 39
+      },
+      "fields": [
+        {
+          "value": "48.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 19,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "value": "49.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 23,
+        "dexterity": 56
+      },
+      "fields": [
+        {
+          "value": "49.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 27,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "value": "50.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 73
+      },
+      "fields": [
+        {
+          "value": "51.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 35,
+        "dexterity": 81
+      },
+      "fields": [
+        {
+          "value": "51.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 38,
+        "dexterity": 88
+      },
+      "fields": [
+        {
+          "value": "52.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 41,
+        "dexterity": 94
+      },
+      "fields": [
+        {
+          "value": "53.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "53.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 47,
+        "dexterity": 106
+      },
+      "fields": [
+        {
+          "value": "54.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 113
+      },
+      "fields": [
+        {
+          "value": "54.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 53,
+        "dexterity": 119
+      },
+      "fields": [
+        {
+          "value": "55.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "56.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 59,
+        "dexterity": 132
+      },
+      "fields": [
+        {
+          "value": "56.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "57.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "58.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "58.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "59.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "60%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "60.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "61.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "61.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "62.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "63.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "63.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "64.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "65.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "65.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "66.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "66.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "66.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "67.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "67.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "67.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "68.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "68.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "68.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "69.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "69.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25",
+          "name": "fires__additional_arrows"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (48\u201360)% of Base Attack Damage",
     "Fires (17\u201321) additional Arrows"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "48%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "48.6%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "49.3%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "49.9%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "50.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "51.2%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "51.8%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "52.4%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "53.1%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "53.7%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "54.3%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "54.9%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "55.6%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "56.2%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "56.8%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "57.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "58.1%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "58.7%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "59.4%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "60%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "60.6%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "61.3%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "61.9%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "62.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "63.2%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "63.8%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "64.4%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "65.1%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "65.7%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "66.3%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "66.6%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "66.9%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "67.3%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "67.6%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "67.9%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "68.2%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "68.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "68.8%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "69.2%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "69.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "25"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_is_projectile [1]",
-    "is_area_damage [1]",
-    "skill_can_fire_arrows [1]",
-    "cannot_pierce [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Rain of Arrows Damage",
-      "10% increased Rain of Arrows Attack Speed",
-      "16% increased Rain of Arrows Area of Effect",
-      "Rain of Arrows has 10% chance to fire an additional sequence of arrows"
-    ],
-    "eternal": [
-      "40% increased Rain of Arrows Damage",
-      "15% increased Rain of Arrows Attack Speed",
-      "24% increased Rain of Arrows Area of Effect",
-      "Rain of Arrows has 15% chance to fire an additional sequence of arrows"
-    ]
-  },
-  "drop_level": 12,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -785,7 +787,50 @@
       "description": "Your Rain of Arrows becomes a Celestial Effect."
     }
   ],
-  "description": "Fires multiple arrows into the air, to land in sequence after a delay, starting at the targeted location and spreading outwards in all directions. Each arrow deals damage in an area around it. Half of the arrows will land directly on targets if there are targets in their range.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "base_is_projectile [1]",
+    "is_area_damage [1]",
+    "skill_can_fire_arrows [1]",
+    "cannot_pierce [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Rain of Arrows Damage",
+      "15% increased Rain of Arrows Attack Speed",
+      "24% increased Rain of Arrows Area of Effect",
+      "Rain of Arrows has 15% chance to fire an additional sequence of arrows"
+    ],
+    "merciless": [
+      "25% increased Rain of Arrows Damage",
+      "10% increased Rain of Arrows Attack Speed",
+      "16% increased Rain of Arrows Area of Effect",
+      "Rain of Arrows has 10% chance to fire an additional sequence of arrows"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1467,50 +1512,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Fires  additional Arrows",
-          "minimum": 0.0,
-          "maximum": 4.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance to Maim on Hit",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to fire an additional sequence of arrows",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Rain of Arrows",
+  "description": "Fires multiple arrows into the air, to land in sequence after a delay, starting at the targeted location and spreading outwards in all directions. Each arrow deals damage in an area around it. Half of the arrows will land directly on targets if there are targets in their range."
 }

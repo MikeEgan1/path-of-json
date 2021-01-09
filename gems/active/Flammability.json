@@ -1,17 +1,975 @@
 {
-  "name": "Flammability",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "Curses inflicted by this Skill have + to maximum Doom",
+          "minimum": 0.0
+        }
+      ]
     },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Ignite on Cursed enemies has % increased Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Hits against Cursed Enemies have +% chance to Ignite",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 24,
+  "slug": "flammability",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 25,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "-25",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 27,
+        "strength": 28,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "9.1",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "-26",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 30,
+        "strength": 31,
+        "intelligence": 45
+      },
+      "fields": [
+        {
+          "value": "9.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "-27",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 33,
+        "strength": 34,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "value": "9.3",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "-28",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 36,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "9.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "-29",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 39,
+        "strength": 39,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "9.5",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "-30",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 42,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "9.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "-31",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 45,
+        "strength": 45,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "9.7",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "-32",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 48,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "9.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "-33",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 49,
+        "intelligence": 71
+      },
+      "fields": [
+        {
+          "value": "9.9",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "-34",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 51,
+        "intelligence": 74
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "-35",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 53,
+        "intelligence": 76
+      },
+      "fields": [
+        {
+          "value": "10.1",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "-36",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 55,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "10.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "-37",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 57,
+        "intelligence": 82
+      },
+      "fields": [
+        {
+          "value": "10.3",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "-38",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 59,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "value": "10.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "-39",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 60,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "value": "10.5",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "-40",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "10.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "-41",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 47,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 64,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "10.7",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "-42",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 48,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 66,
+        "intelligence": 95
+      },
+      "fields": [
+        {
+          "value": "10.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "-43",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 50,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "10.9",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "-44",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 51,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "-45",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 52,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.1",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "-46",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 53,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "-47",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 54,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.3",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        },
+        {
+          "value": "-48",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 56,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        },
+        {
+          "value": "-49",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 57,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.5",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        },
+        {
+          "value": "-50",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 58,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        },
+        {
+          "value": "-51",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 59,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.7",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        },
+        {
+          "value": "-52",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 60,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        },
+        {
+          "value": "-53",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 61,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.9",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        },
+        {
+          "value": "-54",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 63,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11.95",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        },
+        {
+          "value": "-54",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 65,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        },
+        {
+          "value": "-55",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 66,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.05",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        },
+        {
+          "value": "-55",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 67,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.1",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        },
+        {
+          "value": "-56",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 68,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.15",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        },
+        {
+          "value": "-56",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 70,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        },
+        {
+          "value": "-57",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 71,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.25",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        },
+        {
+          "value": "-57",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 72,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.3",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        },
+        {
+          "value": "-58",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 73,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.35",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        },
+        {
+          "value": "-58",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 75,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        },
+        {
+          "value": "-59",
+          "name": "cursed_enemies_have_-%_to_fire_resistance"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "+(9\u201310.9) seconds to Base duration",
+    "+(0\u201310) to radius",
+    "Cursed enemies have (-44\u2013-25)% to Fire Resistance",
+    "Hits against Cursed Enemies have +25% chance to Ignite",
+    "Curse gains 10 Doom per second if you Cast this Spell yourself"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
     "quest": {
       "quest_name": "Lost in Love",
       "classes": [
@@ -21,952 +979,18 @@
         "Scion"
       ],
       "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
     }
   },
-  "mods": [
-    "+(9\u201310.9) seconds to Base duration",
-    "+(0\u201310) to radius",
-    "Cursed enemies have (-44\u2013-25)% to Fire Resistance",
-    "Hits against Cursed Enemies have +25% chance to Ignite",
-    "Curse gains 10 Doom per second if you Cast this Spell yourself"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 25,
-        "intelligence": 37,
-        "requires_level": 24
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-25"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 28,
-        "intelligence": 41,
-        "requires_level": 27
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-26"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 31,
-        "intelligence": 45,
-        "requires_level": 30
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.2"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-27"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 34,
-        "intelligence": 49,
-        "requires_level": 33
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.3"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-28"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 36,
-        "intelligence": 53,
-        "requires_level": 36
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.4"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-29"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 39,
-        "intelligence": 56,
-        "requires_level": 39
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-30"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 60,
-        "requires_level": 42
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.6"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-31"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 45,
-        "intelligence": 64,
-        "requires_level": 45
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.7"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-32"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 48,
-        "intelligence": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.8"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-33"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 49,
-        "intelligence": 71,
-        "requires_level": 50
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-34"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-35"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 53,
-        "intelligence": 76,
-        "requires_level": 54
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-36"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 55,
-        "intelligence": 79,
-        "requires_level": 56
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.2"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-37"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.3"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-38"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 59,
-        "intelligence": 84,
-        "requires_level": 60
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.4"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-39"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 87,
-        "requires_level": 62
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-40"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.6"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-41"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "mana_cost": 47,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.7"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-42"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "mana_cost": 48,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.8"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-43"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 50,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-44"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 51,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-45"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 52,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-46"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 53,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.2"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-47"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 54,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.3"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-48"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 56,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.4"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-49"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 57,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.5"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-50"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 58,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.6"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-51"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 59,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.7"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-52"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 60,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.8"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-53"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 61,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.9"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-54"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 63,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.95"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-54"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 65,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-55"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 66,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.05"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-55"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 67,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.1"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-56"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 68,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.15"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-56"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 70,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.2"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-57"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 71,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.25"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-57"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 72,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.3"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-58"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 73,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.35"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-58"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 75,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.4"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        },
-        {
-          "name": "cursed_enemies_have_-%_to_fire_resistance",
-          "value": "-59"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "20% increased Flammability Curse Effect",
-      "30% increased Flammability Duration"
-    ],
-    "eternal": [
-      "30% increased Flammability Curse Effect",
-      "45% increased Flammability Duration"
-    ]
-  },
-  "drop_level": 24,
   "type": [
     "spell",
     "area",
@@ -985,8 +1009,19 @@
     "type92",
     "hex"
   ],
-  "mtx": [],
-  "description": "Curses all targets in an area, lowering their fire resistance and giving them a chance to be ignited when hit.",
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "30% increased Flammability Curse Effect",
+      "45% increased Flammability Duration"
+    ],
+    "merciless": [
+      "20% increased Flammability Curse Effect",
+      "30% increased Flammability Duration"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1198,40 +1233,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Hits against Cursed Enemies have +% chance to Ignite",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "Ignite on Cursed enemies has % increased Duration",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Curses inflicted by this Skill have + to maximum Doom",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Flammability",
+  "description": "Curses all targets in an area, lowering their fire resistance and giving them a chance to be ignited when hit."
 }

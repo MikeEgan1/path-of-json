@@ -1,7 +1,751 @@
 {
-  "name": "Unearth",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Physical Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "Corpses Spawned have % increased Maximum Life",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Maximum of  corpses allowed",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 10,
+  "slug": "unearth",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 7,
+      "maximum_damage": 37.0,
+      "minimum_damage": 25.0,
+      "requirements": {
+        "requires_level": 10,
+        "dexterity": 18,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 47.0,
+      "minimum_damage": 31.0,
+      "requirements": {
+        "requires_level": 13,
+        "dexterity": 22,
+        "intelligence": 15
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 63.0,
+      "minimum_damage": 42.0,
+      "requirements": {
+        "requires_level": 17,
+        "dexterity": 27,
+        "intelligence": 19
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 82.0,
+      "minimum_damage": 55.0,
+      "requirements": {
+        "requires_level": 21,
+        "dexterity": 33,
+        "intelligence": 23
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 106.0,
+      "minimum_damage": 71.0,
+      "requirements": {
+        "requires_level": 25,
+        "dexterity": 38,
+        "intelligence": 26
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 134.0,
+      "minimum_damage": 89.0,
+      "requirements": {
+        "requires_level": 29,
+        "dexterity": 43,
+        "intelligence": 30
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 168.0,
+      "minimum_damage": 112.0,
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": 49,
+        "intelligence": 34
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 198.0,
+      "minimum_damage": 132.0,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 53,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 232.0,
+      "minimum_damage": 155.0,
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": 56,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 271.0,
+      "minimum_damage": 181.0,
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 60,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "47",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 316.0,
+      "minimum_damage": 211.0,
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": 64,
+        "intelligence": 45
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 367.0,
+      "minimum_damage": 244.0,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 425.0,
+      "minimum_damage": 283.0,
+      "requirements": {
+        "requires_level": 51,
+        "dexterity": 72,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "57",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 490.0,
+      "minimum_damage": 327.0,
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 76,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 565.0,
+      "minimum_damage": 377.0,
+      "requirements": {
+        "requires_level": 57,
+        "dexterity": 80,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "64",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 650.0,
+      "minimum_damage": 433.0,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "67",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 746.0,
+      "minimum_damage": 497.0,
+      "requirements": {
+        "requires_level": 63,
+        "dexterity": 88,
+        "intelligence": 61
+      },
+      "fields": [
+        {
+          "value": "71",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 855.0,
+      "minimum_damage": 570.0,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 92,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "74",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 936.0,
+      "minimum_damage": 624.0,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 95,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "77",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1023.0,
+      "minimum_damage": 682.0,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "80",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1118.0,
+      "minimum_damage": 745.0,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "81",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1221.0,
+      "minimum_damage": 814.0,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "82",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1333.0,
+      "minimum_damage": 889.0,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "83",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1454.0,
+      "minimum_damage": 969.0,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "84",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1585.0,
+      "minimum_damage": 1057.0,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "85",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1728.0,
+      "minimum_damage": 1152.0,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "86",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1882.0,
+      "minimum_damage": 1255.0,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "87",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 2049.0,
+      "minimum_damage": 1366.0,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "88",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2230.0,
+      "minimum_damage": 1487.0,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "89",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2426.0,
+      "minimum_damage": 1617.0,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "90",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2530.0,
+      "minimum_damage": 1687.0,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "90",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2638.0,
+      "minimum_damage": 1759.0,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "91",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2751.0,
+      "minimum_damage": 1834.0,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "91",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2868.0,
+      "minimum_damage": 1912.0,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "92",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2989.0,
+      "minimum_damage": 1993.0,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "92",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 3116.0,
+      "minimum_damage": 2077.0,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "93",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3248.0,
+      "minimum_damage": 2165.0,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "93",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3385.0,
+      "minimum_damage": 2256.0,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "94",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3527.0,
+      "minimum_damage": 2351.0,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "94",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3675.0,
+      "minimum_damage": 2450.0,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "95",
+          "name": "spawns_corpses_with_level_"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (25\u2013682) to (37\u20131023) Physical Damage",
+    "Spawns corpses with Level (12\u201380)",
+    "Maximum of 10 corpses allowed",
+    "Projectiles Pierce all Targets"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground",
+    "unknown_11"
+  ],
+  "mtx": [],
   "acquisition": {
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 1
+    },
     "vendor": {
       "classes": [
         "Witch",
@@ -11,720 +755,8 @@
         "Scion"
       ],
       "vendor_name": "Nessa"
-    },
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Shadow"
-      ],
-      "act": 1
     }
   },
-  "mods": [
-    "Deals (25\u2013682) to (37\u20131023) Physical Damage",
-    "Spawns corpses with Level (12\u201380)",
-    "Maximum of 10 corpses allowed",
-    "Projectiles Pierce all Targets"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 25.0,
-      "requirements": {
-        "dexterity": 18,
-        "intelligence": 12,
-        "requires_level": 10
-      },
-      "mana_cost": 7,
-      "maximum_damage": 37.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 31.0,
-      "requirements": {
-        "dexterity": 22,
-        "intelligence": 15,
-        "requires_level": 13
-      },
-      "mana_cost": 7,
-      "maximum_damage": 47.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 42.0,
-      "requirements": {
-        "dexterity": 27,
-        "intelligence": 19,
-        "requires_level": 17
-      },
-      "mana_cost": 8,
-      "maximum_damage": 63.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 55.0,
-      "requirements": {
-        "dexterity": 33,
-        "intelligence": 23,
-        "requires_level": 21
-      },
-      "mana_cost": 9,
-      "maximum_damage": 82.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 71.0,
-      "requirements": {
-        "dexterity": 38,
-        "intelligence": 26,
-        "requires_level": 25
-      },
-      "mana_cost": 10,
-      "maximum_damage": 106.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 89.0,
-      "requirements": {
-        "dexterity": 43,
-        "intelligence": 30,
-        "requires_level": 29
-      },
-      "mana_cost": 11,
-      "maximum_damage": 134.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 112.0,
-      "requirements": {
-        "dexterity": 49,
-        "intelligence": 34,
-        "requires_level": 33
-      },
-      "mana_cost": 12,
-      "maximum_damage": 168.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 132.0,
-      "requirements": {
-        "dexterity": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "mana_cost": 12,
-      "maximum_damage": 198.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 155.0,
-      "requirements": {
-        "dexterity": 56,
-        "intelligence": 39,
-        "requires_level": 39
-      },
-      "mana_cost": 13,
-      "maximum_damage": 232.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 181.0,
-      "requirements": {
-        "dexterity": 60,
-        "intelligence": 42,
-        "requires_level": 42
-      },
-      "mana_cost": 14,
-      "maximum_damage": 271.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 211.0,
-      "requirements": {
-        "dexterity": 64,
-        "intelligence": 45,
-        "requires_level": 45
-      },
-      "mana_cost": 14,
-      "maximum_damage": 316.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 244.0,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "mana_cost": 15,
-      "maximum_damage": 367.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 283.0,
-      "requirements": {
-        "dexterity": 72,
-        "intelligence": 50,
-        "requires_level": 51
-      },
-      "mana_cost": 16,
-      "maximum_damage": 425.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "57"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 327.0,
-      "requirements": {
-        "dexterity": 76,
-        "intelligence": 53,
-        "requires_level": 54
-      },
-      "mana_cost": 16,
-      "maximum_damage": 490.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 377.0,
-      "requirements": {
-        "dexterity": 80,
-        "intelligence": 56,
-        "requires_level": 57
-      },
-      "mana_cost": 17,
-      "maximum_damage": 565.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 433.0,
-      "requirements": {
-        "dexterity": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "mana_cost": 18,
-      "maximum_damage": 650.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "67"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 497.0,
-      "requirements": {
-        "dexterity": 88,
-        "intelligence": 61,
-        "requires_level": 63
-      },
-      "mana_cost": 18,
-      "maximum_damage": 746.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "71"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 570.0,
-      "requirements": {
-        "dexterity": 92,
-        "intelligence": 64,
-        "requires_level": 66
-      },
-      "mana_cost": 19,
-      "maximum_damage": 855.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "74"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 624.0,
-      "requirements": {
-        "dexterity": 95,
-        "intelligence": 66,
-        "requires_level": 68
-      },
-      "mana_cost": 19,
-      "maximum_damage": 936.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "77"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 682.0,
-      "requirements": {
-        "dexterity": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1023.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "80"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 745.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1118.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "81"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 814.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1221.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "82"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 889.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1333.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "83"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 969.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1454.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 1057.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1585.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "85"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 1152.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1728.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "86"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1255.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1882.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "87"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1366.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 23,
-      "maximum_damage": 2049.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "88"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 1487.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2230.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "89"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1617.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2426.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "90"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1687.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2530.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "90"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1759.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2638.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "91"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1834.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2751.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "91"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1912.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2868.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1993.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2989.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 2077.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 25,
-      "maximum_damage": 3116.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "93"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 2165.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3248.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "93"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 2256.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3385.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "94"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 2351.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3527.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "94"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 2450.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3675.0,
-      "fields": [
-        {
-          "name": "spawns_corpses_with_level_",
-          "value": "95"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Unearth Spawns corpses with +3 Level",
-      "25% increased Unearth Damage",
-      "8% increased Unearth Cast Speed"
-    ],
-    "eternal": [
-      "Unearth Spawns corpses with +5 Level",
-      "40% increased Unearth Damage",
-      "12% increased Unearth Cast Speed"
-    ]
-  },
-  "drop_level": 10,
   "type": [
     "spell",
     "projectile",
@@ -740,8 +772,21 @@
     "areaspell",
     "physicalskill"
   ],
-  "mtx": [],
-  "description": "Fires a projectile that will pierce through enemies to impact the ground at the targeted location, creating a Bone Archer corpse where it lands.",
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Unearth Spawns corpses with +5 Level",
+      "40% increased Unearth Damage",
+      "12% increased Unearth Cast Speed"
+    ],
+    "merciless": [
+      "Unearth Spawns corpses with +3 Level",
+      "25% increased Unearth Damage",
+      "8% increased Unearth Cast Speed"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1425,50 +1470,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "unknown_11"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Maximum of  corpses allowed",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Corpses Spawned have % increased Maximum Life",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Physical Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Unearth",
+  "description": "Fires a projectile that will pierce through enemies to impact the ground at the targeted location, creating a Bone Archer corpse where it lands."
 }

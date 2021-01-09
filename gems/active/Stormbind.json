@@ -1,25 +1,696 @@
 {
-  "name": "Stormbind",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Effect of Shock",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Witch",
-        "Templar"
-      ],
-      "act": 3
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% more Damage",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 0.0,
+          "text": "Runes deal % more Damage with Hits and Ailments for each time they have been Improved",
+          "minimum": 60.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Runes have % increased Area of Effect for each time they've been Improved",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "stormbind",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 3,
+      "maximum_damage": 108.0,
+      "minimum_damage": 36.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 128.0,
+      "minimum_damage": 43.0,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 152.0,
+      "minimum_damage": 51.0,
+      "requirements": {
+        "requires_level": 34,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 180.0,
+      "minimum_damage": 60.0,
+      "requirements": {
+        "requires_level": 37,
+        "intelligence": 85
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 211.0,
+      "minimum_damage": 70.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 235.0,
+      "minimum_damage": 78.0,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 261.0,
+      "minimum_damage": 87.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 3,
+      "maximum_damage": 289.0,
+      "minimum_damage": 96.0,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 104
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 320.0,
+      "minimum_damage": 107.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 354.0,
+      "minimum_damage": 118.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 391.0,
+      "minimum_damage": 130.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 432.0,
+      "minimum_damage": 144.0,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 476.0,
+      "minimum_damage": 159.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 524.0,
+      "minimum_damage": 175.0,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 576.0,
+      "minimum_damage": 192.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 634.0,
+      "minimum_damage": 211.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 696.0,
+      "minimum_damage": 232.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 4,
+      "maximum_damage": 764.0,
+      "minimum_damage": 255.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 838.0,
+      "minimum_damage": 279.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 919.0,
+      "minimum_damage": 306.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1006.0,
+      "minimum_damage": 335.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1102.0,
+      "minimum_damage": 367.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1206.0,
+      "minimum_damage": 402.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1319.0,
+      "minimum_damage": 440.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1442.0,
+      "minimum_damage": 481.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1575.0,
+      "minimum_damage": 525.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 5,
+      "maximum_damage": 1720.0,
+      "minimum_damage": 573.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 1877.0,
+      "minimum_damage": 626.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2048.0,
+      "minimum_damage": 683.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2234.0,
+      "minimum_damage": 745.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2332.0,
+      "minimum_damage": 777.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2435.0,
+      "minimum_damage": 812.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2542.0,
+      "minimum_damage": 847.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2654.0,
+      "minimum_damage": 885.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2770.0,
+      "minimum_damage": 923.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 2891.0,
+      "minimum_damage": 964.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 3017.0,
+      "minimum_damage": 1006.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 3148.0,
+      "minimum_damage": 1049.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 3285.0,
+      "minimum_damage": 1095.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 3427.0,
+      "minimum_damage": 1142.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "a_rune_is_improved_for_each__mana_spent"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+12 seconds to Base duration",
     "Deals (36\u2013306) to (108\u2013919) Lightning Damage",
@@ -30,664 +701,35 @@
     "Runes have 30% more Area of Effect for each time they have been Improved"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "minimum_damage": 36.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 3,
-      "maximum_damage": 108.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 43.0,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 3,
-      "maximum_damage": 128.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 51.0,
-      "requirements": {
-        "intelligence": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 3,
-      "maximum_damage": 152.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 60.0,
-      "requirements": {
-        "intelligence": 85,
-        "requires_level": 37
-      },
-      "mana_cost": 3,
-      "maximum_damage": 180.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 70.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 3,
-      "maximum_damage": 211.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 78.0,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 3,
-      "maximum_damage": 235.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 87.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 3,
-      "maximum_damage": 261.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 96.0,
-      "requirements": {
-        "intelligence": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 3,
-      "maximum_damage": 289.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 107.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 4,
-      "maximum_damage": 320.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 118.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 4,
-      "maximum_damage": 354.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 130.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 4,
-      "maximum_damage": 391.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 144.0,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 4,
-      "maximum_damage": 432.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 159.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 4,
-      "maximum_damage": 476.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 175.0,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 4,
-      "maximum_damage": 524.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 192.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 4,
-      "maximum_damage": 576.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 211.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 4,
-      "maximum_damage": 634.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 232.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 4,
-      "maximum_damage": 696.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 255.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 4,
-      "maximum_damage": 764.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 279.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 5,
-      "maximum_damage": 838.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 306.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 5,
-      "maximum_damage": 919.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 335.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1006.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 367.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1102.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 402.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1206.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 440.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1319.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 481.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1442.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 525.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1575.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 573.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 5,
-      "maximum_damage": 1720.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 626.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 6,
-      "maximum_damage": 1877.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 683.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2048.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 745.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2234.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 777.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2332.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 812.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2435.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 847.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2542.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 885.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2654.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 923.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2770.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 964.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 6,
-      "maximum_damage": 2891.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 1006.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 6,
-      "maximum_damage": 3017.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 1049.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 6,
-      "maximum_damage": 3148.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 1095.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 6,
-      "maximum_damage": 3285.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 1142.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 6,
-      "maximum_damage": 3427.0,
-      "fields": [
-        {
-          "name": "a_rune_is_improved_for_each__mana_spent",
-          "value": "39"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/GoreStormbindEffect.png?w=2&h=2&scale=1",
+      "name": "Gore Stormbind Effect",
+      "description": "Your Stormbind becomes a Gore Effect."
     }
   ],
-  "tags": [
-    "is_area_damage [1]",
-    "base_skill_show_average_damage_instead_of_dps [1]",
-    "skill_can_add_multiple_charges_per_action [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Stormbind has 16% increased Area of Effect",
-      "Stormbind deals 25% increased Damage"
-    ],
-    "eternal": [
-      "Stormbind has 24% increased Area of Effect",
-      "Stormbind deals 40% increased Damage"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Witch",
+        "Templar"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
   },
-  "drop_level": 28,
   "type": [
     "spell",
     "area",
@@ -698,14 +740,21 @@
     "skillcantotem",
     "duration"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/GoreStormbindEffect.png?w=2&h=2&scale=1",
-      "name": "Gore Stormbind Effect",
-      "description": "Your Stormbind becomes a Gore Effect."
-    }
+  "tags": [
+    "is_area_damage [1]",
+    "base_skill_show_average_damage_instead_of_dps [1]",
+    "skill_can_add_multiple_charges_per_action [1]"
   ],
-  "description": "Channel to spread runes on the ground in a growing pattern. The runes fade away after a duration, or will be immediately removed and deal damage in a circular area when detonated by Rune Blast. Enemies standing on the runes are Hindered, reducing their movement speed.",
+  "enchants": {
+    "eternal": [
+      "Stormbind has 24% increased Area of Effect",
+      "Stormbind deals 40% increased Damage"
+    ],
+    "merciless": [
+      "Stormbind has 16% increased Area of Effect",
+      "Stormbind deals 25% increased Damage"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1246,54 +1295,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Runes have % increased Area of Effect for each time they've been Improved",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% more Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "Runes deal % more Damage with Hits and Ailments for each time they have been Improved",
-          "minimum": 60.0,
-          "maximum": 0.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Effect of Shock",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Stormbind",
+  "description": "Channel to spread runes on the ground in a growing pattern. The runes fade away after a duration, or will be immediately removed and deal damage in a circular area when detonated by Rune Blast. Enemies standing on the runes are Hindered, reducing their movement speed."
 }

@@ -1,23 +1,771 @@
 {
-  "name": "Summon Skeletons",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Minions can't be Damaged for  seconds after being Summoned",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Witch"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "% chance to Summon a Skeleton Archer instead of a Skeleton Warrior",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Minions deal % increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Minions' Attacks have % chance to Maim Enemies on Hit",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "summon-skeletons",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 10,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "5",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 13,
+        "intelligence": 35
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "5",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 17,
+        "intelligence": 43
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "5",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 21,
+        "intelligence": 52
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "5",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 25,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "5",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 29,
+        "intelligence": 69
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 33,
+        "intelligence": 77
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 39,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 45,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 51,
+        "intelligence": 115
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 57,
+        "intelligence": 127
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "6",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 63,
+        "intelligence": 140
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "7",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "8",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "9",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "summons__skeleton_warriors"
+        },
+        {
+          "value": "9",
+          "name": "maximum__summoned_skeletons"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Summons (2\u20133) Skeleton Warriors",
     "Maximum (5\u20137) Summoned Skeletons",
@@ -25,755 +773,8 @@
     "Minions gain 50% more Added Damage"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 29,
-        "requires_level": 10
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 35,
-        "requires_level": 13
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 43,
-        "requires_level": 17
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 52,
-        "requires_level": 21
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 60,
-        "requires_level": 25
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 69,
-        "requires_level": 29
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 77,
-        "requires_level": 33
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 90,
-        "requires_level": 39
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "2"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 102,
-        "requires_level": 45
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 115,
-        "requires_level": 51
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 127,
-        "requires_level": 57
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 140,
-        "requires_level": 63
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "3"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "4"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "summons__skeleton_warriors",
-          "value": "5"
-        },
-        {
-          "name": "maximum__summoned_skeletons",
-          "value": "9"
-        }
-      ]
-    }
-  ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Skeletons deal 25% increased Damage",
-      "20% chance to Summon an additional Skeleton Warrior with Summon Skeleton",
-      "20% chance to Summon an additional Skeleton Warrior with Summon Skeleton"
-    ],
-    "eternal": [
-      "Skeletons deal 40% increased Damage",
-      "40% chance to Summon an additional Skeleton Warrior with Summon Skeleton",
-      "40% chance to Summon an additional Skeleton Warrior with Summon Skeleton"
-    ]
-  },
-  "drop_level": 10,
-  "type": [
-    "spell",
-    "minion",
-    "duration",
-    "createminion",
-    "skillcantrap",
-    "skillcantotem",
-    "skillcanmine",
-    "spellcanrepeat",
-    "triggerable",
-    "canrapidfire",
-    "createsminion",
-    "secondwindsupport"
+  "target_types": [
+    "ground"
   ],
   "mtx": [
     {
@@ -807,7 +808,50 @@
       "description": "Your Summoned Skeletons' Skins becomes Celestial."
     }
   ],
-  "description": "Summon Skeleton Warrior minions at the targeted location. They use a melee attack and die after a duration. If made aggressive, Skeleton Warriors will also dash towards nearby enemies.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Witch"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "minion",
+    "duration",
+    "createminion",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "spellcanrepeat",
+    "triggerable",
+    "canrapidfire",
+    "createsminion",
+    "secondwindsupport"
+  ],
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Skeletons deal 40% increased Damage",
+      "40% chance to Summon an additional Skeleton Warrior with Summon Skeleton",
+      "40% chance to Summon an additional Skeleton Warrior with Summon Skeleton"
+    ],
+    "merciless": [
+      "Skeletons deal 25% increased Damage",
+      "20% chance to Summon an additional Skeleton Warrior with Summon Skeleton",
+      "20% chance to Summon an additional Skeleton Warrior with Summon Skeleton"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1011,49 +1055,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Minions' Attacks have % chance to Maim Enemies on Hit",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance to Summon a Skeleton Archer instead of a Skeleton Warrior",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "Minions deal % increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Minions can't be Damaged for  seconds after being Summoned",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Summon Skeletons",
+  "description": "Summon Skeleton Warrior minions at the targeted location. They use a melee attack and die after a duration. If made aggressive, Skeleton Warriors will also dash towards nearby enemies."
 }

@@ -1,6 +1,853 @@
 {
-  "name": "Flame Surge",
+  "quality": {
+    "anomalous": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to Scorch Enemies",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "+ to Area of Effect length",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 12,
+  "slug": "flame-surge",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "maximum_damage": 40.0,
+      "minimum_damage": 27.0,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 50.0,
+      "minimum_damage": 33.0,
+      "requirements": {
+        "requires_level": 15,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 65.0,
+      "minimum_damage": 43.0,
+      "requirements": {
+        "requires_level": 19,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 84.0,
+      "minimum_damage": 56.0,
+      "requirements": {
+        "requires_level": 23,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "56",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 106.0,
+      "minimum_damage": 71.0,
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "58",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 133.0,
+      "minimum_damage": 88.0,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 164.0,
+      "minimum_damage": 110.0,
+      "requirements": {
+        "requires_level": 35,
+        "intelligence": 81
+      },
+      "fields": [
+        {
+          "value": "62",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 192.0,
+      "minimum_damage": 128.0,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "64",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 223.0,
+      "minimum_damage": 149.0,
+      "requirements": {
+        "requires_level": 41,
+        "intelligence": 94
+      },
+      "fields": [
+        {
+          "value": "66",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 259.0,
+      "minimum_damage": 173.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 300.0,
+      "minimum_damage": 200.0,
+      "requirements": {
+        "requires_level": 47,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "value": "70",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 345.0,
+      "minimum_damage": 230.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "72",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 397.0,
+      "minimum_damage": 265.0,
+      "requirements": {
+        "requires_level": 53,
+        "intelligence": 119
+      },
+      "fields": [
+        {
+          "value": "74",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "6",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 456.0,
+      "minimum_damage": 304.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "76",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "6",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 522.0,
+      "minimum_damage": 348.0,
+      "requirements": {
+        "requires_level": 59,
+        "intelligence": 132
+      },
+      "fields": [
+        {
+          "value": "78",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "7",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 596.0,
+      "minimum_damage": 397.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "80",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "7",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 651.0,
+      "minimum_damage": 434.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "82",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "8",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 710.0,
+      "minimum_damage": 473.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "84",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "8",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 774.0,
+      "minimum_damage": 516.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "86",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "9",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 844.0,
+      "minimum_damage": 563.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "88",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "9",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 919.0,
+      "minimum_damage": 613.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "90",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "10",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 1000.0,
+      "minimum_damage": 667.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "92",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "10",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 1088.0,
+      "minimum_damage": 725.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "94",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "11",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 1183.0,
+      "minimum_damage": 788.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "96",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "11",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 1285.0,
+      "minimum_damage": 857.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "98",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "12",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 1395.0,
+      "minimum_damage": 930.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "12",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 1515.0,
+      "minimum_damage": 1010.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "102",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "13",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 1643.0,
+      "minimum_damage": 1096.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "104",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "13",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1782.0,
+      "minimum_damage": 1188.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "106",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "14",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1932.0,
+      "minimum_damage": 1288.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "108",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "14",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 2011.0,
+      "minimum_damage": 1341.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "108",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "14",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 2094.0,
+      "minimum_damage": 1396.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "110",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "15",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2179.0,
+      "minimum_damage": 1453.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "110",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "15",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2268.0,
+      "minimum_damage": 1512.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "112",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "15",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2360.0,
+      "minimum_damage": 1573.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "112",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "15",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2456.0,
+      "minimum_damage": 1637.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "114",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "16",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2555.0,
+      "minimum_damage": 1703.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "114",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "16",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 2658.0,
+      "minimum_damage": 1772.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "116",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "16",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 2765.0,
+      "minimum_damage": 1844.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "116",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "16",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 2876.0,
+      "minimum_damage": 1918.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "118",
+          "name": "%_more_damage_with_hits_against_burning_enemies"
+        },
+        {
+          "value": "17",
+          "name": "to_area_of_effect_length"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (27\u2013563) to (40\u2013844) Fire Damage",
+    "(50\u201388)% more Damage with Hits against Burning enemies",
+    "+(0\u20139) to Area of Effect length",
+    "Cannot Ignite"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
   "acquisition": {
     "vendor": {
       "classes": [
@@ -12,831 +859,6 @@
       "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "Deals (27\u2013563) to (40\u2013844) Fire Damage",
-    "(50\u201388)% more Damage with Hits against Burning enemies",
-    "+(0\u20139) to Area of Effect length",
-    "Cannot Ignite"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 27.0,
-      "requirements": {
-        "intelligence": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 6,
-      "maximum_damage": 40.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "50"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 33.0,
-      "requirements": {
-        "intelligence": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 6,
-      "maximum_damage": 50.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "52"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 43.0,
-      "requirements": {
-        "intelligence": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 7,
-      "maximum_damage": 65.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "54"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 56.0,
-      "requirements": {
-        "intelligence": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 8,
-      "maximum_damage": 84.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "56"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 71.0,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 9,
-      "maximum_damage": 106.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "58"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 88.0,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 9,
-      "maximum_damage": 133.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "60"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 110.0,
-      "requirements": {
-        "intelligence": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 10,
-      "maximum_damage": 164.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "62"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 128.0,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 11,
-      "maximum_damage": 192.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "64"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 149.0,
-      "requirements": {
-        "intelligence": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 11,
-      "maximum_damage": 223.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "66"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 173.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 12,
-      "maximum_damage": 259.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "68"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 200.0,
-      "requirements": {
-        "intelligence": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 12,
-      "maximum_damage": 300.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "70"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 230.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 13,
-      "maximum_damage": 345.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "72"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 265.0,
-      "requirements": {
-        "intelligence": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 13,
-      "maximum_damage": 397.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "74"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 304.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 14,
-      "maximum_damage": 456.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "76"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 348.0,
-      "requirements": {
-        "intelligence": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 14,
-      "maximum_damage": 522.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "78"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 397.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 15,
-      "maximum_damage": 596.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "80"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 434.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 15,
-      "maximum_damage": 651.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "82"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 473.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 16,
-      "maximum_damage": 710.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "84"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 516.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 16,
-      "maximum_damage": 774.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "86"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 563.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 16,
-      "maximum_damage": 844.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "88"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 613.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 17,
-      "maximum_damage": 919.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "90"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 667.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 17,
-      "maximum_damage": 1000.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "92"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 725.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 18,
-      "maximum_damage": 1088.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "94"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 788.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 18,
-      "maximum_damage": 1183.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "96"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 857.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 18,
-      "maximum_damage": 1285.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "98"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 930.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 19,
-      "maximum_damage": 1395.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "100"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1010.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 19,
-      "maximum_damage": 1515.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "102"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1096.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 19,
-      "maximum_damage": 1643.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "104"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 1188.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1782.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "106"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1288.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1932.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "108"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1341.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 20,
-      "maximum_damage": 2011.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "108"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1396.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 20,
-      "maximum_damage": 2094.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "110"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1453.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2179.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "110"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1512.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2268.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "112"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1573.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2360.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "112"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 1637.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2456.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "114"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 1703.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2555.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "114"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 1772.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 22,
-      "maximum_damage": 2658.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "116"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 1844.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 22,
-      "maximum_damage": 2765.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "116"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 1918.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 22,
-      "maximum_damage": 2876.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_against_burning_enemies",
-          "value": "118"
-        },
-        {
-          "name": "to_area_of_effect_length",
-          "value": "17"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Flame Surge Damage",
-      "60% increased Flame Surge Critical Strike Chance",
-      "40% increased Flame Surge Damage against Burning Enemies"
-    ],
-    "eternal": [
-      "40% increased Flame Surge Damage",
-      "90% increased Flame Surge Critical Strike Chance",
-      "60% increased Flame Surge Damage against Burning Enemies"
-    ]
-  },
-  "drop_level": 12,
   "type": [
     "spell",
     "hit",
@@ -850,8 +872,21 @@
     "canrapidfire",
     "areaspell"
   ],
-  "mtx": [],
-  "description": "Strikes enemies in front of you with a surge of flame. Burning enemies are dealt more damage.",
+  "tags": [
+    "is_area_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Flame Surge Damage",
+      "90% increased Flame Surge Critical Strike Chance",
+      "60% increased Flame Surge Damage against Burning Enemies"
+    ],
+    "merciless": [
+      "25% increased Flame Surge Damage",
+      "60% increased Flame Surge Critical Strike Chance",
+      "40% increased Flame Surge Damage against Burning Enemies"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1426,40 +1461,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "+ to Area of Effect length",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to Scorch Enemies",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 10.0
-    }
-  }
+  "name": "Flame Surge",
+  "description": "Strikes enemies in front of you with a surge of flame. Burning enemies are dealt more damage."
 }

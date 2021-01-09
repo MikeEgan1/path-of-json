@@ -1,940 +1,930 @@
 {
-  "name": "Split Arrow",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "Fires an additional Arrow",
+          "minimum": null
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Ranger",
-        "Scion"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Attack Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "split-arrow",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 1,
+        "dexterity": 10
+      },
+      "fields": [
+        {
+          "value": "100%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "1, 2",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 2,
+        "dexterity": 12
+      },
+      "fields": [
+        {
+          "value": "101%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "2, 3",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 16
+      },
+      "fields": [
+        {
+          "value": "102%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "2, 3",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 7,
+        "dexterity": 22
+      },
+      "fields": [
+        {
+          "value": "103%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "3, 4",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 11,
+        "dexterity": 31
+      },
+      "fields": [
+        {
+          "value": "104%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "4, 6",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "105%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "5, 8",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "106%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "7, 10",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "107%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "8, 12",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "108%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "10, 15",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "109%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "12, 18",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "110%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "15, 22",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "111%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "18, 26",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "112%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "21, 31",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "113%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "25, 37",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "114%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "29, 43",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "115%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "34, 50",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "116%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "39, 59",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "117%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "45, 68",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 148
+      },
+      "fields": [
+        {
+          "value": "118%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "51, 76",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "119%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "56, 85",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "120%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "60, 91",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "121%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "65, 97",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "122%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "70, 104",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "123%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "75, 112",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "124%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "80, 120",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "125%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "85, 128",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "126%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "91, 137",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "127%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "98, 147",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "128%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "105, 157",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "129%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "112, 168",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "129.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "115, 173",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "130%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "119, 179",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "130.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "123, 185",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "131%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "127, 191",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "131.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "132, 197",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "132%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "136, 204",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "132.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "140, 211",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "133%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "145, 218",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "133.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "150, 225",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "134%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "fires__additional_arrows"
+        },
+        {
+          "value": "155, 232",
+          "name": "_to__added_attack_physical_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (100\u2013119)% of Base Attack Damage",
     "Fires (4\u20138) additional Arrows",
     "(1\u201356) to (2\u201385) Added Attack Physical Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "100%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "1, 2"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "101%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "2, 3"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "102%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "2, 3"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "103%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "3, 4"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "104%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "4, 6"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "105%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "5, 8"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "106%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "7, 10"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "107%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "6"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "8, 12"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "108%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "6"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "10, 15"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "109%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "6"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "12, 18"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "110%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "6"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "15, 22"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "111%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "7"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "18, 26"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "112%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "7"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "21, 31"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "113%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "7"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "25, 37"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "114%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "7"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "29, 43"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "115%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "7"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "34, 50"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "116%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "8"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "39, 59"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "117%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "8"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "45, 68"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "118%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "8"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "51, 76"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "119%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "8"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "56, 85"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "120%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "9"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "60, 91"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "121%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "9"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "65, 97"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "122%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "9"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "70, 104"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "123%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "9"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "75, 112"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "124%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "10"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "80, 120"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "125%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "10"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "85, 128"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "126%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "10"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "91, 137"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "127%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "10"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "98, 147"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "128%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "10"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "105, 157"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "129%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "112, 168"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "129.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "115, 173"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "130%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "119, 179"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "130.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "123, 185"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "131%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "127, 191"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "131.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "132, 197"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "132%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "136, 204"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "132.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "12"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "140, 211"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "133%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "12"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "145, 218"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "133.5%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "12"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "150, 225"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "134%"
-        },
-        {
-          "name": "fires__additional_arrows",
-          "value": "12"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "155, 232"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "skill_can_fire_arrows [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Split Arrow Damage",
-      "60% increased Split Arrow Critical Strike Chance",
-      "Split Arrow fires 2 additional Projectiles"
-    ],
-    "eternal": [
-      "40% increased Split Arrow Damage",
-      "90% increased Split Arrow Critical Strike Chance",
-      "Split Arrow fires 3 additional Projectiles"
-    ]
-  },
-  "drop_level": null,
-  "type": [
-    "attack",
-    "projectileattack",
-    "skillcanmiragearcher",
-    "projectile",
-    "skillcanvolley",
-    "skillcantotem",
-    "skillcantrap",
-    "skillcanmine",
-    "triggerable",
-    "physicalskill"
+  "target_types": [
+    "ground",
+    "enemy"
   ],
   "mtx": [
     {
@@ -948,7 +938,52 @@
       "description": "Your Split Arrow becomes a demonic effect."
     }
   ],
-  "description": "Fires multiple arrows at different targets.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Ranger",
+        "Scion"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "attack",
+    "projectileattack",
+    "skillcanmiragearcher",
+    "projectile",
+    "skillcanvolley",
+    "skillcantotem",
+    "skillcantrap",
+    "skillcanmine",
+    "triggerable",
+    "physicalskill"
+  ],
+  "tags": [
+    "skill_can_fire_arrows [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Split Arrow Damage",
+      "90% increased Split Arrow Critical Strike Chance",
+      "Split Arrow fires 3 additional Projectiles"
+    ],
+    "merciless": [
+      "25% increased Split Arrow Damage",
+      "60% increased Split Arrow Critical Strike Chance",
+      "Split Arrow fires 2 additional Projectiles"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1690,40 +1725,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Attack Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Fires an additional Arrow",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Split Arrow",
+  "description": "Fires multiple arrows at different targets."
 }

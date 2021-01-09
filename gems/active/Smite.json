@@ -1,23 +1,1411 @@
 {
-  "name": "Smite",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Templar"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "Aura grants % increased Attack and Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Lightning Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "smite",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 1,
+        "strength": 6,
+        "intelligence": 4
+      },
+      "fields": [
+        {
+          "value": "195.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "1, 4",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "30",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 2,
+        "strength": 7,
+        "intelligence": 5
+      },
+      "fields": [
+        {
+          "value": "196.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "1, 5",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "29",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 4,
+        "strength": 10,
+        "intelligence": 7
+      },
+      "fields": [
+        {
+          "value": "197.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "1, 6",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "29",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 7,
+        "strength": 14,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "199.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "1, 8",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "28",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 11,
+        "strength": 19,
+        "intelligence": 13
+      },
+      "fields": [
+        {
+          "value": "200.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "1, 11",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "28",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "strength": 26,
+        "intelligence": 18
+      },
+      "fields": [
+        {
+          "value": "201.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "1, 16",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "27",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "strength": 31,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "202.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "1, 21",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "27",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 37,
+        "intelligence": 25
+      },
+      "fields": [
+        {
+          "value": "203.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "1, 26",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "26",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 42,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "205%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "2, 33",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "26",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "strength": 47,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "206.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "2, 40",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "25",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 53,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "207.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "3, 49",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "25",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 58,
+        "intelligence": 40
+      },
+      "fields": [
+        {
+          "value": "208.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "11",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "3, 60",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "24",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "209.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "4, 72",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "24",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "210.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "13",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "5, 87",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "23",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "212.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "14",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "5, 104",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "23",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 79,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "213.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "15",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "6, 123",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "22",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 84,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "214.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "16",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "8, 146",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "22",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "215.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "17",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "9, 173",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "21",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "strength": 94,
+        "intelligence": 65
+      },
+      "fields": [
+        {
+          "value": "216.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "10, 195",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "21",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "218%",
+          "name": "base_damage"
+        },
+        {
+          "value": "19",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "12, 220",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "20",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "219.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "13, 239",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "20",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "220.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "14, 258",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "19",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "221.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "15, 280",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "19",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "222.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "16, 302",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "18",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "223.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "17, 327",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "18",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "225.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "19, 353",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "17",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "226.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "26",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "20, 381",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "17",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "227.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "27",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "22, 411",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "16",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "228.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "28",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "23, 444",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "16",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "229.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "29",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "25, 479",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "15",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "230.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "30",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "26, 497",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "15",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "231%",
+          "name": "base_damage"
+        },
+        {
+          "value": "30",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "27, 516",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "15",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "231.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "31",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "28, 536",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "15",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "232.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "31",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "29, 556",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "14",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "232.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "32",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "30, 577",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "14",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "233.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "32",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "32, 599",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "14",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "234%",
+          "name": "base_damage"
+        },
+        {
+          "value": "33",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "33, 621",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "14",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "234.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "33",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "34, 645",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "13",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "235.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "34",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "35, 669",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "13",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "235.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "34",
+          "name": "aura_grants_%_chance_to_shock"
+        },
+        {
+          "value": "37, 694",
+          "name": "aura_grants__to__added_lightning_damage"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "13",
+          "name": "%_less_area_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (195.5\u2013218)% of Base Attack Damage",
     "50% of Physical Damage Converted to Lightning Damage",
@@ -29,1385 +1417,28 @@
     "(20\u201330)% less Area Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 6,
-        "intelligence": 4,
-        "requires_level": 1
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "195.5%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "0"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "1, 4"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "30"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Templar"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 7,
-        "intelligence": 5,
-        "requires_level": 2
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "196.7%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "1"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "1, 5"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 10,
-        "intelligence": 7,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "197.9%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "2"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "1, 6"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 14,
-        "intelligence": 10,
-        "requires_level": 7
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "199.1%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "3"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "1, 8"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 19,
-        "intelligence": 13,
-        "requires_level": 11
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "200.3%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "4"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "1, 11"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 26,
-        "intelligence": 18,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "201.5%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "5"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "1, 16"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 31,
-        "intelligence": 22,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "202.6%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "6"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "1, 21"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 37,
-        "intelligence": 25,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "203.8%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "7"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "1, 26"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "205%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "8"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "2, 33"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 47,
-        "intelligence": 33,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "206.2%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "9"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "2, 40"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "207.4%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "10"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "3, 49"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "208.5%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "11"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "3, 60"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "209.7%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "12"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "4, 72"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "210.9%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "13"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "5, 87"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "212.1%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "14"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "5, 104"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "213.3%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "15"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "6, 123"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "214.5%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "16"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "8, 146"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "215.6%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "17"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "9, 173"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 94,
-        "intelligence": 65,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "216.8%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "18"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "10, 195"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "218%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "19"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "12, 220"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "219.2%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "20"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "13, 239"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "220.4%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "21"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "14, 258"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "221.5%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "22"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "15, 280"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "222.7%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "23"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "16, 302"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "223.9%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "24"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "17, 327"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "225.1%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "25"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "19, 353"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "226.3%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "26"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "20, 381"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "227.5%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "27"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "22, 411"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "228.6%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "28"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "23, 444"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "229.8%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "29"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "25, 479"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "230.4%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "30"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "26, 497"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "231%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "30"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "27, 516"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "231.6%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "31"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "28, 536"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "232.2%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "31"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "29, 556"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "232.8%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "32"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "30, 577"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "233.4%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "32"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "32, 599"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "234%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "33"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "33, 621"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "234.5%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "33"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "34, 645"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "235.1%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "34"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "35, 669"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "235.7%"
-        },
-        {
-          "name": "aura_grants_%_chance_to_shock",
-          "value": "34"
-        },
-        {
-          "name": "aura_grants__to__added_lightning_damage",
-          "value": "37, 694"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "%_less_area_damage",
-          "value": "13"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
     }
-  ],
-  "tags": [
-    "visual_hit_effect_elemental_is_holy [1]",
-    "console_skill_dont_chase [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Smite deals 25% increased Damage",
-      "Smite has a 10% chance for lightning to strike another target",
-      "Smite has 20% increased Aura Effect"
-    ],
-    "eternal": [
-      "Smite deals 40% increased Damage",
-      "Smite has a 15% chance for lightning to strike another target",
-      "Smite has 30% increased Aura Effect"
-    ]
   },
-  "drop_level": null,
   "type": [
     "melee",
     "attack",
@@ -1420,8 +1451,22 @@
     "buff",
     "lightningskill"
   ],
-  "mtx": [],
-  "description": "Performs a melee attack, and causes lightning to strike a targeted location or nearby enemy, dealing damage in an area. If the melee strike hits a target, that enemy cannot also be hit by the area damage. If this skill hits an enemy, you gain an aura buff, granting you and your allies additional lightning damage for a duration. Requires a Sword, Axe, Mace, Sceptre, Staff or Unarmed.",
+  "tags": [
+    "visual_hit_effect_elemental_is_holy [1]",
+    "console_skill_dont_chase [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Smite deals 40% increased Damage",
+      "Smite has a 15% chance for lightning to strike another target",
+      "Smite has 30% increased Aura Effect"
+    ],
+    "merciless": [
+      "Smite deals 25% increased Damage",
+      "Smite has a 10% chance for lightning to strike another target",
+      "Smite has 20% increased Aura Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -2140,50 +2185,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Lightning Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Aura grants % increased Attack and Cast Speed",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Smite",
+  "description": "Performs a melee attack, and causes lightning to strike a targeted location or nearby enemy, dealing damage in an area. If the melee strike hits a target, that enemy cannot also be hit by the area damage. If this skill hits an enemy, you gain an aura buff, granting you and your allies additional lightning damage for a duration. Requires a Sword, Axe, Mace, Sceptre, Staff or Unarmed."
 }

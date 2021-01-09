@@ -1,23 +1,941 @@
 {
-  "name": "Raise Zombie",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "Raised Zombies' Slam Attack has % increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Witch"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Minions take Chaos Damage equal to % of their Life over one second when Raised",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 10.0,
+          "text": "Minions gain % of Physical Damage as Extra Chaos Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Minion Maximum Life",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Minion Movement Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Minions Regenerate % of Life per second",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "raise-zombie",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 1,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "0",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 2,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "4",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "4",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "8",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "8",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 7,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "12",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 11,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "16",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "16",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "20",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "20",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "24",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "24",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "28",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "28",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "32",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "32",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "36",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "36",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "40",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "40",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "44",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "44",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "48",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "48",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "52",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "52",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "56",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "56",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "60",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "60",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "64",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "64",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "68",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "68",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "72",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "72",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "76",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "76",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "80",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "80",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "84",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "84",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "88",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "88",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "92",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "92",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "96",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "96",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "100",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "100",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "104",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "104",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "108",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "108",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "112",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "112",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "116",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "116",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "118",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "118",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "120",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "120",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "122",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "122",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "124",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "124",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "126",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "126",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "128",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "128",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "130",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "130",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "132",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "132",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "134",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "134",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "maximum__raised_zombies"
+        },
+        {
+          "value": "136",
+          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "136",
+          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Maximum (3\u20136) Raised Zombies",
     "Minions deal 100% of Damage",
@@ -25,904 +943,8 @@
     "Raised Zombies' Slam Attack has (0\u201376)% increased Area of Effect"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "3"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "0"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "3"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "4"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "3"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "8"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "3"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "12"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "4"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "16"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "4"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "20"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "4"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "24"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "4"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "28"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "4"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "32"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "4"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "36"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "4"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "40"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "5"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "44"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "5"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "48"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "5"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "52"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "5"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "56"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "5"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "60"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "5"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "64"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "6"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "68"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "68"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "6"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "72"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "6"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "76"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "76"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "6"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "80"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "80"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "6"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "84"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "6"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "88"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "88"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "6"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "92"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "96"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "96"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "100"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "104"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "104"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "108"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "108"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "112"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "112"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "116"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "116"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "118"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "118"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "120"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "120"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "7"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "122"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "122"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "8"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "124"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "124"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "8"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "126"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "126"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "8"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "128"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "128"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "8"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "130"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "130"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "8"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "132"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "132"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "8"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "134"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "134"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "maximum__raised_zombies",
-          "value": "8"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_cooldown_recovery_rate",
-          "value": "136"
-        },
-        {
-          "name": "raised_zombies'_slam_attack_has_%_increased_area_of_effect",
-          "value": "136"
-        }
-      ]
-    }
-  ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Raised Zombies deal 25% increased Damage",
-      "Raised Zombies have 10% increased Attack Speed",
-      "Raised Zombies have +24% to Elemental Resistances"
-    ],
-    "eternal": [
-      "Raised Zombies deal 40% increased Damage",
-      "Raised Zombies have 15% increased Attack Speed",
-      "Raised Zombies have +36% to Elemental Resistances"
-    ]
-  },
-  "drop_level": null,
-  "type": [
-    "1"
+  "target_types": [
+    "corpse"
   ],
   "mtx": [
     {
@@ -941,7 +963,39 @@
       "description": "The standard skin on your Raised Zombies are replaced by a Project skin."
     }
   ],
-  "description": "Raises a zombie minion from a corpse, which will follow you and attack enemies with a melee attack and an area of effect slam which cannot be evaded.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Witch"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "1"
+  ],
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Raised Zombies deal 40% increased Damage",
+      "Raised Zombies have 15% increased Attack Speed",
+      "Raised Zombies have +36% to Elemental Resistances"
+    ],
+    "merciless": [
+      "Raised Zombies deal 25% increased Damage",
+      "Raised Zombies have 10% increased Attack Speed",
+      "Raised Zombies have +24% to Elemental Resistances"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1096,59 +1150,6 @@
       ]
     }
   ],
-  "target_types": [
-    "corpse"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Minions Regenerate % of Life per second",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Minions take Chaos Damage equal to % of their Life over one second when Raised",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "Minions gain % of Physical Damage as Extra Chaos Damage",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Minion Maximum Life",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% increased Minion Movement Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Raised Zombies' Slam Attack has % increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Raise Zombie",
+  "description": "Raises a zombie minion from a corpse, which will follow you and attack enemies with a melee attack and an area of effect slam which cannot be evaded."
 }

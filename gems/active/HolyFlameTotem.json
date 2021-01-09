@@ -1,23 +1,536 @@
 {
-  "name": "Holy Flame Totem",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Witch",
-        "Templar"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": null,
+          "text": "Fires an additional Projectile",
+          "minimum": null
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Templar"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Totem Placement speed",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Totem Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% of Physical Damage Converted to Fire Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "holy-flame-totem",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 11,
+      "maximum_damage": 5.0,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "requires_level": 4,
+        "strength": 10,
+        "intelligence": 7
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 6.0,
+      "minimum_damage": 3.0,
+      "requirements": {
+        "requires_level": 6,
+        "strength": 13,
+        "intelligence": 9
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 8.0,
+      "minimum_damage": 4.0,
+      "requirements": {
+        "requires_level": 9,
+        "strength": 17,
+        "intelligence": 12
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 11.0,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "requires_level": 12,
+        "strength": 21,
+        "intelligence": 14
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 14.0,
+      "minimum_damage": 8.0,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 26,
+        "intelligence": 18
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 18.0,
+      "minimum_damage": 12.0,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 31,
+        "intelligence": 22
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 23.0,
+      "minimum_damage": 15.0,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 37,
+        "intelligence": 25
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 29.0,
+      "minimum_damage": 19.0,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 42,
+        "intelligence": 29
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 36.0,
+      "minimum_damage": 24.0,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 47,
+        "intelligence": 33
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 44.0,
+      "minimum_damage": 29.0,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 53,
+        "intelligence": 36
+      },
+      "fields": [],
+      "level": 10
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 54.0,
+      "minimum_damage": 36.0,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 58,
+        "intelligence": 40
+      },
+      "fields": [],
+      "level": 11
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 65.0,
+      "minimum_damage": 43.0,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 63,
+        "intelligence": 44
+      },
+      "fields": [],
+      "level": 12
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 78.0,
+      "minimum_damage": 52.0,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 68,
+        "intelligence": 48
+      },
+      "fields": [],
+      "level": 13
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 94.0,
+      "minimum_damage": 62.0,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 74,
+        "intelligence": 51
+      },
+      "fields": [],
+      "level": 14
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 107.0,
+      "minimum_damage": 71.0,
+      "requirements": {
+        "requires_level": 55,
+        "strength": 78,
+        "intelligence": 54
+      },
+      "fields": [],
+      "level": 15
+    },
+    {
+      "mana_cost": 34,
+      "maximum_damage": 122.0,
+      "minimum_damage": 81.0,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 82,
+        "intelligence": 57
+      },
+      "fields": [],
+      "level": 16
+    },
+    {
+      "mana_cost": 36,
+      "maximum_damage": 138.0,
+      "minimum_damage": 92.0,
+      "requirements": {
+        "requires_level": 61,
+        "strength": 86,
+        "intelligence": 60
+      },
+      "fields": [],
+      "level": 17
+    },
+    {
+      "mana_cost": 37,
+      "maximum_damage": 157.0,
+      "minimum_damage": 105.0,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 90,
+        "intelligence": 62
+      },
+      "fields": [],
+      "level": 18
+    },
+    {
+      "mana_cost": 38,
+      "maximum_damage": 178.0,
+      "minimum_damage": 119.0,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 94,
+        "intelligence": 65
+      },
+      "fields": [],
+      "level": 19
+    },
+    {
+      "mana_cost": 39,
+      "maximum_damage": 202.0,
+      "minimum_damage": 134.0,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 98,
+        "intelligence": 68
+      },
+      "fields": [],
+      "level": 20
+    },
+    {
+      "mana_cost": 40,
+      "maximum_damage": 219.0,
+      "minimum_damage": 146.0,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 21
+    },
+    {
+      "mana_cost": 41,
+      "maximum_damage": 237.0,
+      "minimum_damage": 158.0,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 22
+    },
+    {
+      "mana_cost": 42,
+      "maximum_damage": 257.0,
+      "minimum_damage": 172.0,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 23
+    },
+    {
+      "mana_cost": 43,
+      "maximum_damage": 279.0,
+      "minimum_damage": 186.0,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 24
+    },
+    {
+      "mana_cost": 44,
+      "maximum_damage": 302.0,
+      "minimum_damage": 201.0,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 25
+    },
+    {
+      "mana_cost": 45,
+      "maximum_damage": 327.0,
+      "minimum_damage": 218.0,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 26
+    },
+    {
+      "mana_cost": 46,
+      "maximum_damage": 353.0,
+      "minimum_damage": 236.0,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 27
+    },
+    {
+      "mana_cost": 46,
+      "maximum_damage": 382.0,
+      "minimum_damage": 255.0,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 28
+    },
+    {
+      "mana_cost": 47,
+      "maximum_damage": 413.0,
+      "minimum_damage": 275.0,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 29
+    },
+    {
+      "mana_cost": 48,
+      "maximum_damage": 446.0,
+      "minimum_damage": 297.0,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 30
+    },
+    {
+      "mana_cost": 49,
+      "maximum_damage": 463.0,
+      "minimum_damage": 309.0,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 31
+    },
+    {
+      "mana_cost": 49,
+      "maximum_damage": 482.0,
+      "minimum_damage": 321.0,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 32
+    },
+    {
+      "mana_cost": 49,
+      "maximum_damage": 500.0,
+      "minimum_damage": 334.0,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 33
+    },
+    {
+      "mana_cost": 50,
+      "maximum_damage": 520.0,
+      "minimum_damage": 347.0,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 34
+    },
+    {
+      "mana_cost": 50,
+      "maximum_damage": 540.0,
+      "minimum_damage": 360.0,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 35
+    },
+    {
+      "mana_cost": 51,
+      "maximum_damage": 561.0,
+      "minimum_damage": 374.0,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 36
+    },
+    {
+      "mana_cost": 51,
+      "maximum_damage": 583.0,
+      "minimum_damage": 388.0,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 37
+    },
+    {
+      "mana_cost": 52,
+      "maximum_damage": 605.0,
+      "minimum_damage": 403.0,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 38
+    },
+    {
+      "mana_cost": 52,
+      "maximum_damage": 628.0,
+      "minimum_damage": 419.0,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 39
+    },
+    {
+      "mana_cost": 52,
+      "maximum_damage": 652.0,
+      "minimum_damage": 435.0,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 40
+    }
+  ],
   "mods": [
     "Totem lasts 8 seconds",
     "Deals (3\u2013134) to (5\u2013202) Physical Damage",
@@ -28,519 +541,9 @@
     "Consecrated Ground grants Immunity to Curses to you and Allies"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 3.0,
-      "requirements": {
-        "strength": 10,
-        "intelligence": 7,
-        "requires_level": 4
-      },
-      "mana_cost": 11,
-      "maximum_damage": 5.0,
-      "fields": []
-    },
-    {
-      "level": 2,
-      "minimum_damage": 3.0,
-      "requirements": {
-        "strength": 13,
-        "intelligence": 9,
-        "requires_level": 6
-      },
-      "mana_cost": 12,
-      "maximum_damage": 6.0,
-      "fields": []
-    },
-    {
-      "level": 3,
-      "minimum_damage": 4.0,
-      "requirements": {
-        "strength": 17,
-        "intelligence": 12,
-        "requires_level": 9
-      },
-      "mana_cost": 13,
-      "maximum_damage": 8.0,
-      "fields": []
-    },
-    {
-      "level": 4,
-      "minimum_damage": 7.0,
-      "requirements": {
-        "strength": 21,
-        "intelligence": 14,
-        "requires_level": 12
-      },
-      "mana_cost": 14,
-      "maximum_damage": 11.0,
-      "fields": []
-    },
-    {
-      "level": 5,
-      "minimum_damage": 8.0,
-      "requirements": {
-        "strength": 26,
-        "intelligence": 18,
-        "requires_level": 16
-      },
-      "mana_cost": 16,
-      "maximum_damage": 14.0,
-      "fields": []
-    },
-    {
-      "level": 6,
-      "minimum_damage": 12.0,
-      "requirements": {
-        "strength": 31,
-        "intelligence": 22,
-        "requires_level": 20
-      },
-      "mana_cost": 18,
-      "maximum_damage": 18.0,
-      "fields": []
-    },
-    {
-      "level": 7,
-      "minimum_damage": 15.0,
-      "requirements": {
-        "strength": 37,
-        "intelligence": 25,
-        "requires_level": 24
-      },
-      "mana_cost": 19,
-      "maximum_damage": 23.0,
-      "fields": []
-    },
-    {
-      "level": 8,
-      "minimum_damage": 19.0,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "mana_cost": 21,
-      "maximum_damage": 29.0,
-      "fields": []
-    },
-    {
-      "level": 9,
-      "minimum_damage": 24.0,
-      "requirements": {
-        "strength": 47,
-        "intelligence": 33,
-        "requires_level": 32
-      },
-      "mana_cost": 23,
-      "maximum_damage": 36.0,
-      "fields": []
-    },
-    {
-      "level": 10,
-      "minimum_damage": 29.0,
-      "requirements": {
-        "strength": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "mana_cost": 25,
-      "maximum_damage": 44.0,
-      "fields": []
-    },
-    {
-      "level": 11,
-      "minimum_damage": 36.0,
-      "requirements": {
-        "strength": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "mana_cost": 26,
-      "maximum_damage": 54.0,
-      "fields": []
-    },
-    {
-      "level": 12,
-      "minimum_damage": 43.0,
-      "requirements": {
-        "strength": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "mana_cost": 28,
-      "maximum_damage": 65.0,
-      "fields": []
-    },
-    {
-      "level": 13,
-      "minimum_damage": 52.0,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "mana_cost": 30,
-      "maximum_damage": 78.0,
-      "fields": []
-    },
-    {
-      "level": 14,
-      "minimum_damage": 62.0,
-      "requirements": {
-        "strength": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "mana_cost": 32,
-      "maximum_damage": 94.0,
-      "fields": []
-    },
-    {
-      "level": 15,
-      "minimum_damage": 71.0,
-      "requirements": {
-        "strength": 78,
-        "intelligence": 54,
-        "requires_level": 55
-      },
-      "mana_cost": 33,
-      "maximum_damage": 107.0,
-      "fields": []
-    },
-    {
-      "level": 16,
-      "minimum_damage": 81.0,
-      "requirements": {
-        "strength": 82,
-        "intelligence": 57,
-        "requires_level": 58
-      },
-      "mana_cost": 34,
-      "maximum_damage": 122.0,
-      "fields": []
-    },
-    {
-      "level": 17,
-      "minimum_damage": 92.0,
-      "requirements": {
-        "strength": 86,
-        "intelligence": 60,
-        "requires_level": 61
-      },
-      "mana_cost": 36,
-      "maximum_damage": 138.0,
-      "fields": []
-    },
-    {
-      "level": 18,
-      "minimum_damage": 105.0,
-      "requirements": {
-        "strength": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "mana_cost": 37,
-      "maximum_damage": 157.0,
-      "fields": []
-    },
-    {
-      "level": 19,
-      "minimum_damage": 119.0,
-      "requirements": {
-        "strength": 94,
-        "intelligence": 65,
-        "requires_level": 67
-      },
-      "mana_cost": 38,
-      "maximum_damage": 178.0,
-      "fields": []
-    },
-    {
-      "level": 20,
-      "minimum_damage": 134.0,
-      "requirements": {
-        "strength": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 39,
-      "maximum_damage": 202.0,
-      "fields": []
-    },
-    {
-      "level": 21,
-      "minimum_damage": 146.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 40,
-      "maximum_damage": 219.0,
-      "fields": []
-    },
-    {
-      "level": 22,
-      "minimum_damage": 158.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 41,
-      "maximum_damage": 237.0,
-      "fields": []
-    },
-    {
-      "level": 23,
-      "minimum_damage": 172.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 42,
-      "maximum_damage": 257.0,
-      "fields": []
-    },
-    {
-      "level": 24,
-      "minimum_damage": 186.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 43,
-      "maximum_damage": 279.0,
-      "fields": []
-    },
-    {
-      "level": 25,
-      "minimum_damage": 201.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 44,
-      "maximum_damage": 302.0,
-      "fields": []
-    },
-    {
-      "level": 26,
-      "minimum_damage": 218.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 45,
-      "maximum_damage": 327.0,
-      "fields": []
-    },
-    {
-      "level": 27,
-      "minimum_damage": 236.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 46,
-      "maximum_damage": 353.0,
-      "fields": []
-    },
-    {
-      "level": 28,
-      "minimum_damage": 255.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 46,
-      "maximum_damage": 382.0,
-      "fields": []
-    },
-    {
-      "level": 29,
-      "minimum_damage": 275.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 47,
-      "maximum_damage": 413.0,
-      "fields": []
-    },
-    {
-      "level": 30,
-      "minimum_damage": 297.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 48,
-      "maximum_damage": 446.0,
-      "fields": []
-    },
-    {
-      "level": 31,
-      "minimum_damage": 309.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 49,
-      "maximum_damage": 463.0,
-      "fields": []
-    },
-    {
-      "level": 32,
-      "minimum_damage": 321.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 49,
-      "maximum_damage": 482.0,
-      "fields": []
-    },
-    {
-      "level": 33,
-      "minimum_damage": 334.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 49,
-      "maximum_damage": 500.0,
-      "fields": []
-    },
-    {
-      "level": 34,
-      "minimum_damage": 347.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 50,
-      "maximum_damage": 520.0,
-      "fields": []
-    },
-    {
-      "level": 35,
-      "minimum_damage": 360.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 50,
-      "maximum_damage": 540.0,
-      "fields": []
-    },
-    {
-      "level": 36,
-      "minimum_damage": 374.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 51,
-      "maximum_damage": 561.0,
-      "fields": []
-    },
-    {
-      "level": 37,
-      "minimum_damage": 388.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 51,
-      "maximum_damage": 583.0,
-      "fields": []
-    },
-    {
-      "level": 38,
-      "minimum_damage": 403.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 52,
-      "maximum_damage": 605.0,
-      "fields": []
-    },
-    {
-      "level": 39,
-      "minimum_damage": 419.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 52,
-      "maximum_damage": 628.0,
-      "fields": []
-    },
-    {
-      "level": 40,
-      "minimum_damage": 435.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 52,
-      "maximum_damage": 652.0,
-      "fields": []
-    }
-  ],
-  "tags": [
-    "base_skill_is_totemified [1]",
-    "base_is_projectile [1]",
-    "visual_hit_effect_elemental_is_holy [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Holy Flame Totem deals 25% increased Damage",
-      "Holy Flame Totem fires an additional Projectile",
-      "Holy Flame Totem has 20% increased Projectile Speed",
-      "Consecrated Ground from Holy Flame Totem applies 6% increased Damage taken to Enemies"
-    ],
-    "eternal": [
-      "Holy Flame Totem deals 40% increased Damage",
-      "Holy Flame Totem fires 2 additional Projectiles",
-      "Holy Flame Totem has 30% increased Projectile Speed",
-      "Consecrated Ground from Holy Flame Totem applies 9% increased Damage taken to Enemies"
-    ]
-  },
-  "drop_level": 4,
-  "type": [
-    "spell",
-    "projectile",
-    "skillcanvolley",
-    "hit",
-    "skillcantrap",
-    "skillcanmine",
-    "totem",
-    "fireskill",
-    "channelled",
-    "physicalskill"
+  "target_types": [
+    "ground",
+    "enemy"
   ],
   "mtx": [
     {
@@ -584,7 +587,54 @@
       "description": "Your Spell or Ballista totem becomes a Pylon of Pain."
     }
   ],
-  "description": "Summons a totem that channels to fire a stream of flame at nearby enemies, and creates an area of consecrated ground around the totem.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Templar"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Witch",
+        "Templar"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "projectile",
+    "skillcanvolley",
+    "hit",
+    "skillcantrap",
+    "skillcanmine",
+    "totem",
+    "fireskill",
+    "channelled",
+    "physicalskill"
+  ],
+  "tags": [
+    "base_skill_is_totemified [1]",
+    "base_is_projectile [1]",
+    "visual_hit_effect_elemental_is_holy [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Holy Flame Totem deals 40% increased Damage",
+      "Holy Flame Totem fires 2 additional Projectiles",
+      "Holy Flame Totem has 30% increased Projectile Speed",
+      "Consecrated Ground from Holy Flame Totem applies 9% increased Damage taken to Enemies"
+    ],
+    "merciless": [
+      "Holy Flame Totem deals 25% increased Damage",
+      "Holy Flame Totem fires an additional Projectile",
+      "Holy Flame Totem has 20% increased Projectile Speed",
+      "Consecrated Ground from Holy Flame Totem applies 6% increased Damage taken to Enemies"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1164,55 +1214,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% of Physical Damage Converted to Fire Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% increased Totem Placement speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% increased Totem Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Fires an additional Projectile",
-          "minimum": null,
-          "maximum": null
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Holy Flame Totem",
+  "description": "Summons a totem that channels to fire a stream of flame at nearby enemies, and creates an area of consecrated ground around the totem."
 }

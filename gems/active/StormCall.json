@@ -1,24 +1,856 @@
 {
-  "name": "Storm Call",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 40.0,
+          "text": "% reduced Cast Speed",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Templar"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "% chance for Lightning to Strike the Marker when Cast",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% reduced Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "storm-call",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "maximum_damage": 31.0,
+      "minimum_damage": 16.0,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 38.0,
+      "minimum_damage": 21.0,
+      "requirements": {
+        "requires_level": 15,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        },
+        {
+          "value": "11",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 51.0,
+      "minimum_damage": 27.0,
+      "requirements": {
+        "requires_level": 19,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 66.0,
+      "minimum_damage": 36.0,
+      "requirements": {
+        "requires_level": 23,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "13",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 85.0,
+      "minimum_damage": 46.0,
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 107.0,
+      "minimum_damage": 58.0,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "15",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 134.0,
+      "minimum_damage": 72.0,
+      "requirements": {
+        "requires_level": 35,
+        "intelligence": 81
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 158.0,
+      "minimum_damage": 85.0,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        },
+        {
+          "value": "17",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 186.0,
+      "minimum_damage": 100.0,
+      "requirements": {
+        "requires_level": 41,
+        "intelligence": 94
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 217.0,
+      "minimum_damage": 117.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "19",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 253.0,
+      "minimum_damage": 136.0,
+      "requirements": {
+        "requires_level": 47,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 294.0,
+      "minimum_damage": 158.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 341.0,
+      "minimum_damage": 183.0,
+      "requirements": {
+        "requires_level": 53,
+        "intelligence": 119
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 394.0,
+      "minimum_damage": 212.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        },
+        {
+          "value": "23",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 455.0,
+      "minimum_damage": 245.0,
+      "requirements": {
+        "requires_level": 59,
+        "intelligence": 132
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 524.0,
+      "minimum_damage": 282.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "25",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 575.0,
+      "minimum_damage": 310.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 631.0,
+      "minimum_damage": 340.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 692.0,
+      "minimum_damage": 372.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 758.0,
+      "minimum_damage": 408.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 830.0,
+      "minimum_damage": 447.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 908.0,
+      "minimum_damage": 489.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 993.0,
+      "minimum_damage": 535.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 1085.0,
+      "minimum_damage": 584.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 1186.0,
+      "minimum_damage": 638.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 1295.0,
+      "minimum_damage": 697.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        },
+        {
+          "value": "35",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 1413.0,
+      "minimum_damage": 761.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 1541.0,
+      "minimum_damage": 830.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "37",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1681.0,
+      "minimum_damage": 905.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1832.0,
+      "minimum_damage": 986.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1912.0,
+      "minimum_damage": 1030.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1996.0,
+      "minimum_damage": 1075.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2083.0,
+      "minimum_damage": 1122.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2174.0,
+      "minimum_damage": 1171.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2268.0,
+      "minimum_damage": 1221.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2367.0,
+      "minimum_damage": 1274.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 2469.0,
+      "minimum_damage": 1330.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 2576.0,
+      "minimum_damage": 1387.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 2687.0,
+      "minimum_damage": 1447.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 2802.0,
+      "minimum_damage": 1509.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (16\u2013408) to (31\u2013758) Lightning Damage",
     "+1.5 seconds to Base duration",
@@ -26,840 +858,8 @@
     "(10\u201329)% increased Effect of Lightning Ailments"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 16.0,
-      "requirements": {
-        "intelligence": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 6,
-      "maximum_damage": 31.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 21.0,
-      "requirements": {
-        "intelligence": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 6,
-      "maximum_damage": 38.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 27.0,
-      "requirements": {
-        "intelligence": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 7,
-      "maximum_damage": 51.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 36.0,
-      "requirements": {
-        "intelligence": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 8,
-      "maximum_damage": 66.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 46.0,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 9,
-      "maximum_damage": 85.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 58.0,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 9,
-      "maximum_damage": 107.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 72.0,
-      "requirements": {
-        "intelligence": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 10,
-      "maximum_damage": 134.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 85.0,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 11,
-      "maximum_damage": 158.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 100.0,
-      "requirements": {
-        "intelligence": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 11,
-      "maximum_damage": 186.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 117.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 12,
-      "maximum_damage": 217.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 136.0,
-      "requirements": {
-        "intelligence": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 12,
-      "maximum_damage": 253.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 158.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 13,
-      "maximum_damage": 294.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 183.0,
-      "requirements": {
-        "intelligence": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 13,
-      "maximum_damage": 341.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 212.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 14,
-      "maximum_damage": 394.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 245.0,
-      "requirements": {
-        "intelligence": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 14,
-      "maximum_damage": 455.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 282.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 15,
-      "maximum_damage": 524.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 310.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 15,
-      "maximum_damage": 575.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 340.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 16,
-      "maximum_damage": 631.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 372.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 16,
-      "maximum_damage": 692.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 408.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 16,
-      "maximum_damage": 758.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 447.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 17,
-      "maximum_damage": 830.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 489.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 17,
-      "maximum_damage": 908.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 535.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 18,
-      "maximum_damage": 993.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 584.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 18,
-      "maximum_damage": 1085.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 638.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 18,
-      "maximum_damage": 1186.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 697.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 19,
-      "maximum_damage": 1295.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 761.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 19,
-      "maximum_damage": 1413.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 830.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 19,
-      "maximum_damage": 1541.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 905.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1681.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 986.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1832.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1030.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1912.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1075.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1996.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1122.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2083.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1171.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2174.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1221.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2268.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 1274.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2367.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 1330.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 21,
-      "maximum_damage": 2469.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 1387.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 22,
-      "maximum_damage": 2576.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 1447.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 22,
-      "maximum_damage": 2687.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 1509.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 22,
-      "maximum_damage": 2802.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "44"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]",
-    "base_skill_show_average_damage_instead_of_dps [1]",
-    "console_skill_dont_chase [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Storm Call Damage",
-      "20% reduced Storm Call Duration",
-      "16% increased Storm Call Area of Effect"
-    ],
-    "eternal": [
-      "40% increased Storm Call Damage",
-      "30% reduced Storm Call Duration",
-      "24% increased Storm Call Area of Effect"
-    ]
-  },
-  "drop_level": 12,
-  "type": [
-    "spell",
-    "hit",
-    "area",
-    "duration",
-    "skillcantrap",
-    "skillcantotem",
-    "skillcanmine",
-    "triggerable",
-    "spellcanrepeat",
-    "lightningskill",
-    "spellcancascade",
-    "canrapidfire",
-    "areaspell"
+  "target_types": [
+    "ground"
   ],
   "mtx": [
     {
@@ -888,7 +888,56 @@
       "description": "Your Storm Call becomes an arcane effect."
     }
   ],
-  "description": "Sets a marker at a location. After a short duration, lightning strikes the marker, dealing damage around it. When this happens, it will also set off the lightning at any other markers you've cast.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Templar"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "hit",
+    "area",
+    "duration",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "triggerable",
+    "spellcanrepeat",
+    "lightningskill",
+    "spellcancascade",
+    "canrapidfire",
+    "areaspell"
+  ],
+  "tags": [
+    "is_area_damage [1]",
+    "base_skill_show_average_damage_instead_of_dps [1]",
+    "console_skill_dont_chase [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Storm Call Damage",
+      "30% reduced Storm Call Duration",
+      "24% increased Storm Call Area of Effect"
+    ],
+    "merciless": [
+      "25% increased Storm Call Damage",
+      "20% reduced Storm Call Duration",
+      "16% increased Storm Call Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1489,54 +1538,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% reduced Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance for Lightning to Strike the Marker when Cast",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 40.0
-        },
-        {
-          "text": "% reduced Cast Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Storm Call",
+  "description": "Sets a marker at a location. After a short duration, lightning strikes the marker, dealing damage around it. When this happens, it will also set off the lightning at any other markers you've cast."
 }

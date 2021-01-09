@@ -1,1027 +1,1043 @@
 {
-  "name": "Vaal Molten Shell",
+  "quality": {
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 4,
+  "slug": "vaal-molten-shell",
   "gem_class": "Active Skill Gems",
-  "acquisition": {},
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 4,
+        "strength": 16
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "30, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "300",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "20",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 6,
+        "strength": 20
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "30, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "390",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "20",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 9,
+        "strength": 27
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "31, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "540",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "21",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 12,
+        "strength": 33
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "31, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "750",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "21",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "strength": 41
+      },
+      "fields": [
+        {
+          "value": "58",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "31, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "990",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "22",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "strength": 50
+      },
+      "fields": [
+        {
+          "value": "71",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "31, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "1260",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "22",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "86",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "32, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "1590",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "23",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "value": "102",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "32, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "1950",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "23",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "value": "121",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "32, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "2340",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "24",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "141",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "33, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "2760",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "24",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "164",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "33, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "3240",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "25",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "189",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "33, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "3750",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "25",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "217",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "33, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "4290",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "26",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "248",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "34, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "4860",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "26",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 55,
+        "strength": 123
+      },
+      "fields": [
+        {
+          "value": "273",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "34, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "5460",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "27",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "300",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "34, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "6120",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "27",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 61,
+        "strength": 136
+      },
+      "fields": [
+        {
+          "value": "329",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "35, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "6780",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "28",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "360",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "35, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "7500",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "28",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "strength": 148
+      },
+      "fields": [
+        {
+          "value": "393",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "35, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "8220",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "29",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "429",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "35, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "9000",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "29",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "455",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "36, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "9810",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "30",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "481",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "36, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "10650",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "30",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "509",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "36, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "11490",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "31",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "538",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "37, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "12390",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "31",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "569",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "37, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "13320",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "32",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "601",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "37, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "14280",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "32",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "634",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "37, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "15270",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "33",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "669",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "38, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "16290",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "33",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "706",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "38, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "17310",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "34",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "744",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "38, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "18390",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "34",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "764",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "38, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "19500",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "34",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "785",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "39, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "20640",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "35",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "805",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "39, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "21780",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "35",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "827",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "39, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "22980",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "35",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "848",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "39, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "24180",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "35",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "871",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "39, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "25440",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "36",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "893",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "39, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "26700",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "36",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "917",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "39, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "28020",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "36",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "940",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "40, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "29340",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "36",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "965",
+          "name": "buff_grants_+_to_armour"
+        },
+        {
+          "value": "40, 30, 30000",
+          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_"
+        },
+        {
+          "value": "30690",
+          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted"
+        },
+        {
+          "value": "37",
+          "name": "buff_grants_%_more_armour"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+9 seconds to Base duration",
     "Buff grants +(25\u2013429) to Armour",
     "(30\u201335)% of Damage from Hits is taken from the Buff before your Life or Energy ShieldBuff can take Damage equal to 30% of your Armour, up to a maximum of 30000Reflects (300\u20139000)% of Damage taken from Buff as Fire Damage each second,or when Buff expires or is depletedBuff grants (20\u201329)% more ArmourModifiers to Skill Effect Duration also apply to this Skill's Soul Gain Prevention"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "25"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "30, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "300"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 20,
-        "requires_level": 6
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "30"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "30, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "390"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 27,
-        "requires_level": 9
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "37"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "31, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "540"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 33,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "46"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "31, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "750"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "58"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "31, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "990"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "71"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "31, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "1260"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "86"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "32, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "1590"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "102"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "32, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "1950"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "121"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "32, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "2340"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "141"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "33, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "2760"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "164"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "33, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "3240"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "189"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "33, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "3750"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "217"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "33, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "4290"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "248"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "34, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "4860"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 123,
-        "requires_level": 55
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "273"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "34, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "5460"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "300"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "34, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "6120"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 136,
-        "requires_level": 61
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "329"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "35, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "6780"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "360"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "35, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "7500"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "393"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "35, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "8220"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "429"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "35, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "9000"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "455"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "36, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "9810"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "481"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "36, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "10650"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "509"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "36, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "11490"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "538"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "37, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "12390"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "569"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "37, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "13320"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "601"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "37, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "14280"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "634"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "37, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "15270"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "669"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "38, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "16290"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "706"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "38, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "17310"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "744"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "38, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "18390"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "764"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "38, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "19500"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "785"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "39, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "20640"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "805"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "39, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "21780"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "827"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "39, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "22980"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "848"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "39, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "24180"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "871"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "39, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "25440"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "893"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "39, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "26700"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "917"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "39, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "28020"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "940"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "40, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "29340"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "buff_grants_+_to_armour",
-          "value": "965"
-        },
-        {
-          "name": "%_of_damage_from_hits_is_taken_from_the_buff_before_your_life_or_energy_shield\\nbuff_can_take_damage_equal_to_%_of_your_armour,_up_to_a_maximum_of_",
-          "value": "40, 30, 30000"
-        },
-        {
-          "name": "reflects_%_of_damage_taken_from_buff_as_fire_damage_when_buff_expires_or_is_depleted",
-          "value": "30690"
-        },
-        {
-          "name": "buff_grants_%_more_armour",
-          "value": "37"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_skill_show_average_damage_instead_of_dps [1]",
-    "molten_shell_explode_each_hit [1]",
-    "damage_originates_from_initiator_location [1]"
-  ],
-  "enchants": {
-    "merciless": [],
-    "eternal": []
-  },
-  "drop_level": 4,
-  "type": [
-    "1210"
+  "target_types": [
+    "spell",
+    "area",
+    "duration",
+    "skillcantotem",
+    "type31",
+    "fireskill",
+    "instant",
+    "areaspell",
+    "physicalskill",
+    "vaal",
+    "type92",
+    "type91",
+    "secondwindsupport",
+    "cantusefistofwar",
+    "guardskill"
   ],
   "mtx": [
     {
@@ -1040,7 +1056,19 @@
       "description": "Your Molten Shell becomes a Viper Effect."
     }
   ],
-  "description": "Applies a buff that raises your armour, and takes some of the damage from hits for you before being depleted. Each second, the skill deals reflected damage to surrounding enemies based on the damage taken by the buff in that second. When the buff is removed, the skill deals reflected damage to enemies around you based on the total damage that was taken by the buff. You cannot have the buff at the same time as any other Guard skill.",
+  "acquisition": {},
+  "type": [
+    "1210"
+  ],
+  "tags": [
+    "base_skill_show_average_damage_instead_of_dps [1]",
+    "molten_shell_explode_each_hit [1]",
+    "damage_originates_from_initiator_location [1]"
+  ],
+  "enchants": {
+    "eternal": [],
+    "merciless": []
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1130,33 +1158,6 @@
       ]
     }
   ],
-  "target_types": [
-    "spell",
-    "area",
-    "duration",
-    "skillcantotem",
-    "type31",
-    "fireskill",
-    "instant",
-    "areaspell",
-    "physicalskill",
-    "vaal",
-    "type92",
-    "type91",
-    "secondwindsupport",
-    "cantusefistofwar",
-    "guardskill"
-  ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Vaal Molten Shell",
+  "description": "Applies a buff that raises your armour, and takes some of the damage from hits for you before being depleted. Each second, the skill deals reflected damage to surrounding enemies based on the damage taken by the buff in that second. When the buff is removed, the skill deals reflected damage to enemies around you based on the total damage that was taken by the buff. You cannot have the buff at the same time as any other Guard skill."
 }

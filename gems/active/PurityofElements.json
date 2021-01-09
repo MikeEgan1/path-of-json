@@ -1,776 +1,768 @@
 {
-  "name": "Purity of Elements",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "All",
-        "Classes"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "You and nearby Allies have % chance to avoid Elemental Ailments",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Witch"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 5.0,
+      "mods": [
+        {
+          "maximum": 4.0,
+          "text": "Your and nearby Allies' Damage Penetrates % Elemental Resistances",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 24,
+  "slug": "purity-of-elements",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 25,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "strength": 28,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 30,
+        "strength": 31,
+        "intelligence": 45
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "strength": 34,
+        "intelligence": 49
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 36,
+        "intelligence": 53
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "strength": 39,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "strength": 42,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "strength": 45,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 48,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "strength": 49,
+        "intelligence": 71
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 51,
+        "intelligence": 74
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "strength": 53,
+        "intelligence": 76
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 55,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 57,
+        "intelligence": 82
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 59,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "strength": 60,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 64,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 66,
+        "intelligence": 95
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "18",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "19",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "20",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "21",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "22",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "23",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "24",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "25",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "26",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "27",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "28",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances"
+        },
+        {
+          "value": "34",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "You and nearby allies gain +(12\u201327)% to all Elemental Resistances",
     "+(0\u201319) to radius"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 25,
-        "intelligence": 37,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "12"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 28,
-        "intelligence": 41,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "13"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 31,
-        "intelligence": 45,
-        "requires_level": 30
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "14"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 34,
-        "intelligence": 49,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "15"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 36,
-        "intelligence": 53,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "15"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 39,
-        "intelligence": 56,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "16"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 42,
-        "intelligence": 60,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "17"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 45,
-        "intelligence": 64,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "18"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 48,
-        "intelligence": 68,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "19"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 49,
-        "intelligence": 71,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "20"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "20"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 53,
-        "intelligence": 76,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "21"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 55,
-        "intelligence": 79,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "22"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "23"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 59,
-        "intelligence": 84,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "24"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 87,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "25"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "25"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "26"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "27"
-        },
-        {
-          "name": "to_radius",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "27"
-        },
-        {
-          "name": "to_radius",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "28"
-        },
-        {
-          "name": "to_radius",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "29"
-        },
-        {
-          "name": "to_radius",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "29"
-        },
-        {
-          "name": "to_radius",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "30"
-        },
-        {
-          "name": "to_radius",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "31"
-        },
-        {
-          "name": "to_radius",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "31"
-        },
-        {
-          "name": "to_radius",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "32"
-        },
-        {
-          "name": "to_radius",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "33"
-        },
-        {
-          "name": "to_radius",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "33"
-        },
-        {
-          "name": "to_radius",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "34"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "34"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "34"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "34"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "35"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "35"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "36"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "36"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "36"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "36"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_+%_to_all_elemental_resistances",
-          "value": "37"
-        },
-        {
-          "name": "to_radius",
-          "value": "34"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Purity of Elements has 14% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Purity of Elements has 20% reduced Mana Reservation"
-    ]
-  },
-  "drop_level": 24,
-  "type": [
-    "spell",
-    "area",
-    "buff",
-    "manacostreserved",
-    "type27",
-    "manacostpercent",
-    "skillcantotem",
-    "aura",
-    "instant",
-    "areaspell",
-    "canhaveblessing",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -1019,7 +1011,49 @@
       "description": "Your Aura becomes a Darkwood Effect."
     }
   ],
-  "description": "Casts an aura that grants elemental resistances to you and your allies.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Witch"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "spell",
+    "area",
+    "buff",
+    "manacostreserved",
+    "type27",
+    "manacostpercent",
+    "skillcantotem",
+    "aura",
+    "instant",
+    "areaspell",
+    "canhaveblessing",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Purity of Elements has 20% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Purity of Elements has 14% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1078,39 +1112,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Your and nearby Allies' Damage Penetrates % Elemental Resistances",
-          "minimum": 0.0,
-          "maximum": 4.0
-        }
-      ],
-      "weight": 5.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "You and nearby Allies have % chance to avoid Elemental Ailments",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Purity of Elements",
+  "description": "Casts an aura that grants elemental resistances to you and your allies."
 }

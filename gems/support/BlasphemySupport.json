@@ -1,50 +1,537 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Blasphemy Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 52
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "% increased Effect of Supported Curses"
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": ""
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 34,
+        "intelligence": 57
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "% reduced Effect of Supported Curses"
-        },
-        {
-          "minimum": 0.0,
-          "maximum": 40.0,
-          "text": "Supported Skills have % increased Area of Effect"
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "4"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 60
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 2.0,
-          "text": "Supported Skills have % reduced Mana Reserved"
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "8"
         }
-      ],
-      "weight": 10.0
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 63
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 69
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 72
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 78
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 81
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 93
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "52"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "56"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 99
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 105
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "68"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 108
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "72"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 111
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "76"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "80"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "84"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "88"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "92"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "104"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "108"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "112"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "116"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "118"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "120"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "122"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "124"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "126"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "128"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "130"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "132"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "134"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "name": "%_increased_area_of_effect_of_supported_curse_skills",
+          "value": "136"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "blasphemy-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "(0\u201376)% increased Area of Effect of Supported Curse Skills",
     "Supported Skills apply their Curse as an AurasSupported Curse Skills also count as Aura SkillsUsing Supported Skills is Instant"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports hex curse skills, turning them into auras that will apply their effect to all enemies in an area around you.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -54,15 +541,18 @@
       "vendor_name": "Clarissa"
     },
     "quest": {
+      "act": 3,
       "classes": [
         "Witch",
         "Templar"
       ],
-      "quest_name": "A Fixture of Fate",
-      "act": 3
+      "quest_name": "A Fixture of Fate"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [
     {
       "name": "Invisible Buff Effect",
@@ -498,532 +988,43 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Blasphemy Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports hex curse skills, turning them into auras that will apply their effect to all enemies in an area around you.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": ""
+          "maximum": 10.0,
+          "text": "% increased Effect of Supported Curses",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 31,
-        "intelligence": 52
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "4"
+          "maximum": 10.0,
+          "text": "% reduced Effect of Supported Curses",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 40.0,
+          "text": "Supported Skills have % increased Area of Effect",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 34,
-        "intelligence": 57
-      }
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "8"
+          "maximum": 2.0,
+          "text": "Supported Skills have % reduced Mana Reserved",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 36,
-        "intelligence": 60
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "12"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 38,
-        "intelligence": 63
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "16"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 40,
-        "intelligence": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "20"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 42,
-        "intelligence": 69
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "24"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 44,
-        "intelligence": 72
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "28"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 46,
-        "intelligence": 75
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "32"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 48,
-        "intelligence": 78
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "36"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 50,
-        "intelligence": 81
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "40"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 52,
-        "intelligence": 84
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "44"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 54,
-        "intelligence": 87
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "48"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 56,
-        "intelligence": 90
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "52"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 58,
-        "intelligence": 93
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "56"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 60,
-        "intelligence": 96
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "60"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 62,
-        "intelligence": 99
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "64"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 64,
-        "intelligence": 102
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "68"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 66,
-        "intelligence": 105
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "72"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 68,
-        "intelligence": 108
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "76"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "intelligence": 111
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "80"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "84"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "88"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "92"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "96"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "100"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "104"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "108"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "112"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "116"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "118"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "120"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "122"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "124"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "126"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "128"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "130"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "132"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "134"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "%_increased_area_of_effect_of_supported_curse_skills",
-          "value": "136"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "intelligence": null
-      }
+      "weight": 10.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

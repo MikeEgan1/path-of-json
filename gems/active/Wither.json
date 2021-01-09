@@ -1,24 +1,761 @@
 {
-  "name": "Wither",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 4.0,
+          "text": "Hindered Enemies deal % reduced Chaos Damage",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Witch"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "% chance to apply an additional Withered Debuff if you Cast this spell yourself",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "wither",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 3,
+      "requirements": {
+        "requires_level": 10,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 3,
+      "requirements": {
+        "requires_level": 13,
+        "intelligence": 35
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "1",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 17,
+        "intelligence": 43
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "2",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 21,
+        "intelligence": 52
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "3",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 25,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 29,
+        "intelligence": 69
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "5",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 33,
+        "intelligence": 77
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "7",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 39,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "9",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 45,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "11",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 51,
+        "intelligence": 115
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "13",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 57,
+        "intelligence": 127
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "15",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 63,
+        "intelligence": 140
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "17",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "19",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "23",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "25",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_reduced_movement_speed"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_area_of_effect"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "(30\u201336)% reduced Movement Speed",
     "6% increased Chaos Damage taken",
@@ -27,756 +764,8 @@
     "(0\u201319)% increased Area of Effect"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 29,
-        "requires_level": 10
-      },
-      "mana_cost": 3,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "30"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 35,
-        "requires_level": 13
-      },
-      "mana_cost": 3,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "30"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 43,
-        "requires_level": 17
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "30"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 52,
-        "requires_level": 21
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "31"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 60,
-        "requires_level": 25
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "31"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 69,
-        "requires_level": 29
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "31"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 77,
-        "requires_level": 33
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "32"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "32"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 90,
-        "requires_level": 39
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "32"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "33"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 102,
-        "requires_level": 45
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "33"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "33"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 115,
-        "requires_level": 51
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "34"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "34"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 127,
-        "requires_level": 57
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "34"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "35"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 140,
-        "requires_level": 63
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "35"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "35"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "36"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "36"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "36"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "37"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "37"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "37"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "38"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "38"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "38"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "39"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "39"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "39"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "39"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "40"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "40"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "40"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "40"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "40"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "40"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "41"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "41"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_reduced_movement_speed",
-          "value": "41"
-        },
-        {
-          "name": "%_increased_area_of_effect",
-          "value": "34"
-        }
-      ]
-    }
-  ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Caustic Arrow has 14% chance to inflict Withered on Hit for 2 seconds base Duration",
-      "Wither has 24% increased Duration",
-      "Wither has 16% increased Area of Effect",
-      "Withering Step inflicts 2 additional Withered Debuffs",
-      "Withering Step has 20% increased Elusive Effect",
-      "Venom Gyre has a 12% chance to inflict Withered for 2 seconds on Hit"
-    ],
-    "eternal": [
-      "Caustic Arrow has 20% chance to inflict Withered on Hit for 2 seconds base Duration",
-      "Wither has 36% increased Duration",
-      "Wither has 24% increased Area of Effect",
-      "Withering Step inflicts 3 additional Withered Debuffs",
-      "Withering Step has 30% increased Elusive Effect",
-      "Venom Gyre has a 20% chance to inflict Withered for 2 seconds on Hit"
-    ]
-  },
-  "drop_level": 10,
-  "type": [
-    "spell",
-    "area",
-    "duration",
-    "skillcantotem",
-    "chaosskill",
-    "channelled",
-    "areaspell"
+  "target_types": [
+    "ground"
   ],
   "mtx": [
     {
@@ -790,7 +779,52 @@
       "description": "Your Wither becomes a Celestial Effect."
     }
   ],
-  "description": "Casts a debilitating debuff on enemies in an area, hindering their movement and also inflicts the Withered debuff, which increases the Chaos Damage they take and can stack up to 15 times.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Witch"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "area",
+    "duration",
+    "skillcantotem",
+    "chaosskill",
+    "channelled",
+    "areaspell"
+  ],
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Caustic Arrow has 20% chance to inflict Withered on Hit for 2 seconds base Duration",
+      "Wither has 36% increased Duration",
+      "Wither has 24% increased Area of Effect",
+      "Withering Step inflicts 3 additional Withered Debuffs",
+      "Withering Step has 30% increased Elusive Effect",
+      "Venom Gyre has a 20% chance to inflict Withered for 2 seconds on Hit"
+    ],
+    "merciless": [
+      "Caustic Arrow has 14% chance to inflict Withered on Hit for 2 seconds base Duration",
+      "Wither has 24% increased Duration",
+      "Wither has 16% increased Area of Effect",
+      "Withering Step inflicts 2 additional Withered Debuffs",
+      "Withering Step has 20% increased Elusive Effect",
+      "Venom Gyre has a 12% chance to inflict Withered for 2 seconds on Hit"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -898,39 +932,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% chance to apply an additional Withered Debuff if you Cast this spell yourself",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Hindered Enemies deal % reduced Chaos Damage",
-          "minimum": 0.0,
-          "maximum": 4.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Wither",
+  "description": "Casts a debilitating debuff on enemies in an area, hindering their movement and also inflicts the Withered debuff, which increases the Chaos Damage they take and can stack up to 15 times."
 }

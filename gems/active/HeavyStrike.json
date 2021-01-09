@@ -1,24 +1,726 @@
 {
-  "name": "Heavy Strike",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Knockback Distance",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Twilight Strand",
-      "classes": [
-        "Marauder"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Stun Duration on enemies",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "% reduced Knockback Distance",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "heavy-strike",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 1,
+        "strength": 10
+      },
+      "fields": [
+        {
+          "value": "176%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 2,
+        "strength": 12
+      },
+      "fields": [
+        {
+          "value": "178.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 4,
+        "strength": 16
+      },
+      "fields": [
+        {
+          "value": "180.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 7,
+        "strength": 22
+      },
+      "fields": [
+        {
+          "value": "183.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 11,
+        "strength": 31
+      },
+      "fields": [
+        {
+          "value": "185.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "strength": 41
+      },
+      "fields": [
+        {
+          "value": "188.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "strength": 50
+      },
+      "fields": [
+        {
+          "value": "190.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "192.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "value": "195.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "value": "197.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "200.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "202.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "205.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "207.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "209.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 125
+      },
+      "fields": [
+        {
+          "value": "212.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 134
+      },
+      "fields": [
+        {
+          "value": "214.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "217.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "strength": 148
+      },
+      "fields": [
+        {
+          "value": "219.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "222%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "224.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "226.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "229.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "231.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "234.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "236.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "238.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "241.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "243.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "246.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "247.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "248.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "249.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "251.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "252.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "253.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "254.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "255.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "257.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "258.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "+_to_melee_strike_range"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (176\u2013222)% of Base Attack Damage",
     "Knocks Enemies Back on Hit",
@@ -27,710 +729,48 @@
     "20% chance to deal Double Damage"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 10,
-        "requires_level": 1
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "176%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 12,
-        "requires_level": 2
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.4%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 22,
-        "requires_level": 7
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "183.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 31,
-        "requires_level": 11
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "185.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "188.1%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "190.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "192.9%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "195.4%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "197.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "200.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "202.6%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "205.1%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "207.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "209.9%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "212.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "214.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "217.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "219.6%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "222%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "224.4%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "226.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "229.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "231.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "234.1%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "236.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "238.9%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "241.4%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "243.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "246.2%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "247.4%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "248.6%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "249.8%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "251.1%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "252.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "253.5%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "254.7%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "255.9%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "257.1%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "258.3%"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "7"
-        }
-      ]
-    }
+  "target_types": [
+    "ground",
+    "enemy"
   ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "25% increased Heavy Strike Damage",
-      "10% increased Heavy Strike Attack Speed",
-      "Heavy Strike has a 8% chance to deal Double Damage"
-    ],
-    "eternal": [
-      "40% increased Heavy Strike Damage",
-      "15% increased Heavy Strike Attack Speed",
-      "Heavy Strike has a 12% chance to deal Double Damage"
-    ]
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Twilight Strand",
+      "classes": [
+        "Marauder"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
   },
-  "drop_level": null,
   "type": [
     "attack",
     "meleesingletarget",
     "attackcanrepeat",
     "melee"
   ],
-  "mtx": [],
-  "description": "Attacks enemies with a forceful blow, knocking them back. Requires a Mace, Sceptre, Axe, Sword or Two-Handed Weapon.",
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "40% increased Heavy Strike Damage",
+      "15% increased Heavy Strike Attack Speed",
+      "Heavy Strike has a 12% chance to deal Double Damage"
+    ],
+    "merciless": [
+      "25% increased Heavy Strike Damage",
+      "10% increased Heavy Strike Attack Speed",
+      "Heavy Strike has a 8% chance to deal Double Damage"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1371,45 +1411,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% reduced Knockback Distance",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Stun Duration on enemies",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Knockback Distance",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Heavy Strike",
+  "description": "Attacks enemies with a forceful blow, knocking them back. Requires a Mace, Sceptre, Axe, Sword or Two-Handed Weapon."
 }

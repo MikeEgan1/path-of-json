@@ -1,7 +1,512 @@
 {
-  "name": "Contagion",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Chaos Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% chance to Spread when affected Enemy is Hit",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 4,
+  "slug": "contagion",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 5,
+      "minimum_damage": 3.5,
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 7,
+        "intelligence": 10
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "minimum_damage": 4.3,
+      "requirements": {
+        "requires_level": 6,
+        "dexterity": 9,
+        "intelligence": 13
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "mana_cost": 6,
+      "minimum_damage": 5.7,
+      "requirements": {
+        "requires_level": 9,
+        "dexterity": 12,
+        "intelligence": 17
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "mana_cost": 7,
+      "minimum_damage": 7.4,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 14,
+        "intelligence": 21
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "mana_cost": 8,
+      "minimum_damage": 10.2,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 18,
+        "intelligence": 26
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "minimum_damage": 13.6,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 22,
+        "intelligence": 31
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "mana_cost": 10,
+      "minimum_damage": 18.0,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 25,
+        "intelligence": 37
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "mana_cost": 11,
+      "minimum_damage": 23.3,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 29,
+        "intelligence": 42
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "mana_cost": 11,
+      "minimum_damage": 29.9,
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 33,
+        "intelligence": 47
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "mana_cost": 12,
+      "minimum_damage": 38.1,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 36,
+        "intelligence": 53
+      },
+      "fields": [],
+      "level": 10
+    },
+    {
+      "mana_cost": 13,
+      "minimum_damage": 48.1,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 40,
+        "intelligence": 58
+      },
+      "fields": [],
+      "level": 11
+    },
+    {
+      "mana_cost": 14,
+      "minimum_damage": 60.3,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 44,
+        "intelligence": 63
+      },
+      "fields": [],
+      "level": 12
+    },
+    {
+      "mana_cost": 15,
+      "minimum_damage": 75.2,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 48,
+        "intelligence": 68
+      },
+      "fields": [],
+      "level": 13
+    },
+    {
+      "mana_cost": 16,
+      "minimum_damage": 93.3,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 51,
+        "intelligence": 74
+      },
+      "fields": [],
+      "level": 14
+    },
+    {
+      "mana_cost": 16,
+      "minimum_damage": 109.5,
+      "requirements": {
+        "requires_level": 55,
+        "dexterity": 54,
+        "intelligence": 78
+      },
+      "fields": [],
+      "level": 15
+    },
+    {
+      "mana_cost": 17,
+      "minimum_damage": 128.1,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 57,
+        "intelligence": 82
+      },
+      "fields": [],
+      "level": 16
+    },
+    {
+      "mana_cost": 18,
+      "minimum_damage": 149.6,
+      "requirements": {
+        "requires_level": 61,
+        "dexterity": 60,
+        "intelligence": 86
+      },
+      "fields": [],
+      "level": 17
+    },
+    {
+      "mana_cost": 18,
+      "minimum_damage": 174.4,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 62,
+        "intelligence": 90
+      },
+      "fields": [],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "minimum_damage": 203.0,
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 65,
+        "intelligence": 94
+      },
+      "fields": [],
+      "level": 19
+    },
+    {
+      "mana_cost": 20,
+      "minimum_damage": 235.9,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 68,
+        "intelligence": 98
+      },
+      "fields": [],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "minimum_damage": 260.5,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 21
+    },
+    {
+      "mana_cost": 21,
+      "minimum_damage": 287.5,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 22
+    },
+    {
+      "mana_cost": 21,
+      "minimum_damage": 317.2,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 23
+    },
+    {
+      "mana_cost": 21,
+      "minimum_damage": 349.7,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 24
+    },
+    {
+      "mana_cost": 22,
+      "minimum_damage": 385.4,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 25
+    },
+    {
+      "mana_cost": 22,
+      "minimum_damage": 424.5,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 26
+    },
+    {
+      "mana_cost": 23,
+      "minimum_damage": 467.3,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 27
+    },
+    {
+      "mana_cost": 23,
+      "minimum_damage": 514.3,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 28
+    },
+    {
+      "mana_cost": 24,
+      "minimum_damage": 565.7,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 29
+    },
+    {
+      "mana_cost": 24,
+      "minimum_damage": 621.9,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 30
+    },
+    {
+      "mana_cost": 24,
+      "minimum_damage": 652.0,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 31
+    },
+    {
+      "mana_cost": 25,
+      "minimum_damage": 683.5,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 32
+    },
+    {
+      "mana_cost": 25,
+      "minimum_damage": 716.5,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 33
+    },
+    {
+      "mana_cost": 25,
+      "minimum_damage": 750.9,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 34
+    },
+    {
+      "mana_cost": 25,
+      "minimum_damage": 787.0,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 35
+    },
+    {
+      "mana_cost": 25,
+      "minimum_damage": 824.7,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 36
+    },
+    {
+      "mana_cost": 26,
+      "minimum_damage": 864.1,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 37
+    },
+    {
+      "mana_cost": 26,
+      "minimum_damage": 905.4,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 38
+    },
+    {
+      "mana_cost": 26,
+      "minimum_damage": 948.5,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 39
+    },
+    {
+      "mana_cost": 26,
+      "minimum_damage": 993.6,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (3.5\u2013235.9) Base Chaos Damage per second",
+    "+5 seconds to Base duration",
+    "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ArcaneContagion.png?w=1&h=1&scale=1",
+      "name": "Arcane Contagion Effect",
+      "description": "Your Contagion becomes a blue arcane effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialContagion.png?w=2&h=2&scale=1",
+      "name": "Celestial Contagion Effect",
+      "description": "Your Contagion becomes a Celestial Effect."
+    }
+  ],
   "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Witch",
+        "Shadow"
+      ],
+      "act": 1
+    },
     "vendor": {
       "classes": [
         "Witch",
@@ -10,480 +515,8 @@
         "Scion"
       ],
       "vendor_name": "Nessa"
-    },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Witch",
-        "Shadow"
-      ],
-      "act": 1
     }
   },
-  "mods": [
-    "Deals (3.5\u2013235.9) Base Chaos Damage per second",
-    "+5 seconds to Base duration",
-    "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 3.5,
-      "requirements": {
-        "dexterity": 7,
-        "intelligence": 10,
-        "requires_level": 4
-      },
-      "mana_cost": 5,
-      "fields": []
-    },
-    {
-      "level": 2,
-      "minimum_damage": 4.3,
-      "requirements": {
-        "dexterity": 9,
-        "intelligence": 13,
-        "requires_level": 6
-      },
-      "mana_cost": 6,
-      "fields": []
-    },
-    {
-      "level": 3,
-      "minimum_damage": 5.7,
-      "requirements": {
-        "dexterity": 12,
-        "intelligence": 17,
-        "requires_level": 9
-      },
-      "mana_cost": 6,
-      "fields": []
-    },
-    {
-      "level": 4,
-      "minimum_damage": 7.4,
-      "requirements": {
-        "dexterity": 14,
-        "intelligence": 21,
-        "requires_level": 12
-      },
-      "mana_cost": 7,
-      "fields": []
-    },
-    {
-      "level": 5,
-      "minimum_damage": 10.2,
-      "requirements": {
-        "dexterity": 18,
-        "intelligence": 26,
-        "requires_level": 16
-      },
-      "mana_cost": 8,
-      "fields": []
-    },
-    {
-      "level": 6,
-      "minimum_damage": 13.6,
-      "requirements": {
-        "dexterity": 22,
-        "intelligence": 31,
-        "requires_level": 20
-      },
-      "mana_cost": 9,
-      "fields": []
-    },
-    {
-      "level": 7,
-      "minimum_damage": 18.0,
-      "requirements": {
-        "dexterity": 25,
-        "intelligence": 37,
-        "requires_level": 24
-      },
-      "mana_cost": 10,
-      "fields": []
-    },
-    {
-      "level": 8,
-      "minimum_damage": 23.3,
-      "requirements": {
-        "dexterity": 29,
-        "intelligence": 42,
-        "requires_level": 28
-      },
-      "mana_cost": 11,
-      "fields": []
-    },
-    {
-      "level": 9,
-      "minimum_damage": 29.9,
-      "requirements": {
-        "dexterity": 33,
-        "intelligence": 47,
-        "requires_level": 32
-      },
-      "mana_cost": 11,
-      "fields": []
-    },
-    {
-      "level": 10,
-      "minimum_damage": 38.1,
-      "requirements": {
-        "dexterity": 36,
-        "intelligence": 53,
-        "requires_level": 36
-      },
-      "mana_cost": 12,
-      "fields": []
-    },
-    {
-      "level": 11,
-      "minimum_damage": 48.1,
-      "requirements": {
-        "dexterity": 40,
-        "intelligence": 58,
-        "requires_level": 40
-      },
-      "mana_cost": 13,
-      "fields": []
-    },
-    {
-      "level": 12,
-      "minimum_damage": 60.3,
-      "requirements": {
-        "dexterity": 44,
-        "intelligence": 63,
-        "requires_level": 44
-      },
-      "mana_cost": 14,
-      "fields": []
-    },
-    {
-      "level": 13,
-      "minimum_damage": 75.2,
-      "requirements": {
-        "dexterity": 48,
-        "intelligence": 68,
-        "requires_level": 48
-      },
-      "mana_cost": 15,
-      "fields": []
-    },
-    {
-      "level": 14,
-      "minimum_damage": 93.3,
-      "requirements": {
-        "dexterity": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 16,
-      "fields": []
-    },
-    {
-      "level": 15,
-      "minimum_damage": 109.5,
-      "requirements": {
-        "dexterity": 54,
-        "intelligence": 78,
-        "requires_level": 55
-      },
-      "mana_cost": 16,
-      "fields": []
-    },
-    {
-      "level": 16,
-      "minimum_damage": 128.1,
-      "requirements": {
-        "dexterity": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "mana_cost": 17,
-      "fields": []
-    },
-    {
-      "level": 17,
-      "minimum_damage": 149.6,
-      "requirements": {
-        "dexterity": 60,
-        "intelligence": 86,
-        "requires_level": 61
-      },
-      "mana_cost": 18,
-      "fields": []
-    },
-    {
-      "level": 18,
-      "minimum_damage": 174.4,
-      "requirements": {
-        "dexterity": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 18,
-      "fields": []
-    },
-    {
-      "level": 19,
-      "minimum_damage": 203.0,
-      "requirements": {
-        "dexterity": 65,
-        "intelligence": 94,
-        "requires_level": 67
-      },
-      "mana_cost": 19,
-      "fields": []
-    },
-    {
-      "level": 20,
-      "minimum_damage": 235.9,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 20,
-      "fields": []
-    },
-    {
-      "level": 21,
-      "minimum_damage": 260.5,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "fields": []
-    },
-    {
-      "level": 22,
-      "minimum_damage": 287.5,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 21,
-      "fields": []
-    },
-    {
-      "level": 23,
-      "minimum_damage": 317.2,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 21,
-      "fields": []
-    },
-    {
-      "level": 24,
-      "minimum_damage": 349.7,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 21,
-      "fields": []
-    },
-    {
-      "level": 25,
-      "minimum_damage": 385.4,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 22,
-      "fields": []
-    },
-    {
-      "level": 26,
-      "minimum_damage": 424.5,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 22,
-      "fields": []
-    },
-    {
-      "level": 27,
-      "minimum_damage": 467.3,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 23,
-      "fields": []
-    },
-    {
-      "level": 28,
-      "minimum_damage": 514.3,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 23,
-      "fields": []
-    },
-    {
-      "level": 29,
-      "minimum_damage": 565.7,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 24,
-      "fields": []
-    },
-    {
-      "level": 30,
-      "minimum_damage": 621.9,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 24,
-      "fields": []
-    },
-    {
-      "level": 31,
-      "minimum_damage": 652.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 24,
-      "fields": []
-    },
-    {
-      "level": 32,
-      "minimum_damage": 683.5,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 25,
-      "fields": []
-    },
-    {
-      "level": 33,
-      "minimum_damage": 716.5,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 25,
-      "fields": []
-    },
-    {
-      "level": 34,
-      "minimum_damage": 750.9,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 25,
-      "fields": []
-    },
-    {
-      "level": 35,
-      "minimum_damage": 787.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 25,
-      "fields": []
-    },
-    {
-      "level": 36,
-      "minimum_damage": 824.7,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 25,
-      "fields": []
-    },
-    {
-      "level": 37,
-      "minimum_damage": 864.1,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 26,
-      "fields": []
-    },
-    {
-      "level": 38,
-      "minimum_damage": 905.4,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 26,
-      "fields": []
-    },
-    {
-      "level": 39,
-      "minimum_damage": 948.5,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 26,
-      "fields": []
-    },
-    {
-      "level": 40,
-      "minimum_damage": 993.6,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 26,
-      "fields": []
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Contagion Damage",
-      "20% increased Contagion Duration",
-      "16% increased Contagion Area of Effect"
-    ],
-    "eternal": [
-      "40% increased Contagion Damage",
-      "30% increased Contagion Duration",
-      "24% increased Contagion Area of Effect"
-    ]
-  },
-  "drop_level": 4,
   "type": [
     "spell",
     "area",
@@ -500,19 +533,21 @@
     "canrapidfire",
     "areaspell"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ArcaneContagion.png?w=1&h=1&scale=1",
-      "name": "Arcane Contagion Effect",
-      "description": "Your Contagion becomes a blue arcane effect."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialContagion.png?w=2&h=2&scale=1",
-      "name": "Celestial Contagion Effect",
-      "description": "Your Contagion becomes a Celestial Effect."
-    }
+  "tags": [
+    "is_area_damage [1]"
   ],
-  "description": "Unleashes a vile contagion on enemies, dealing chaos damage over time. If an enemy dies while affected by Contagion, it spreads to other enemies.",
+  "enchants": {
+    "eternal": [
+      "40% increased Contagion Damage",
+      "30% increased Contagion Duration",
+      "24% increased Contagion Area of Effect"
+    ],
+    "merciless": [
+      "25% increased Contagion Damage",
+      "20% increased Contagion Duration",
+      "16% increased Contagion Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -736,40 +771,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% chance to Spread when affected Enemy is Hit",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Chaos Damage",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Contagion",
+  "description": "Unleashes a vile contagion on enemies, dealing chaos damage over time. If an enemy dies while affected by Contagion, it spreads to other enemies."
 }

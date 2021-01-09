@@ -1,7 +1,1021 @@
 {
-  "name": "Vaal Double Strike",
+  "quality": {
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Attack Speed",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": null,
+  "slug": "vaal-double-strike",
   "gem_class": "Active Skill Gems",
-  "acquisition": {},
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 1,
+        "dexterity": 10
+      },
+      "fields": [
+        {
+          "value": "28%",
+          "name": "base_damage"
+        },
+        {
+          "value": "",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "3, 5",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 2,
+        "dexterity": 12
+      },
+      "fields": [
+        {
+          "value": "28.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "3, 5",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 16
+      },
+      "fields": [
+        {
+          "value": "28.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "4, 6",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 7,
+        "dexterity": 22
+      },
+      "fields": [
+        {
+          "value": "28.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "6, 8",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 11,
+        "dexterity": 31
+      },
+      "fields": [
+        {
+          "value": "29.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "12",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "8, 11",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "29.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "15",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "10, 16",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "29.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "18",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "13, 20",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "29.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "17, 25",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "30.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "20, 30",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "30.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "27",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "25, 37",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "30.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "30",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "30, 44",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "30.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "33",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "35, 53",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "31.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "36",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "42, 63",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "31.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "39",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "49, 74",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "31.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "42",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "58, 86",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "31.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "45",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "67, 101",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "32.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "48",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "78, 117",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "32.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "51",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "91, 136",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 148
+      },
+      "fields": [
+        {
+          "value": "32.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "54",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "101, 152",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "33%",
+          "name": "base_damage"
+        },
+        {
+          "value": "57",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "113, 169",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "33.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "60",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "121, 181",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "33.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "63",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "130, 195",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "33.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "66",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "139, 209",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "34.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "69",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "149, 224",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "34.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "72",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "160, 239",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "34.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "75",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "171, 256",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "34.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "78",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "183, 274",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "35.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "81",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "196, 293",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "35.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "84",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "209, 314",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "35.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "87",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "223, 335",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "35.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "88",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "231, 346",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "35.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "90",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "239, 358",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36%",
+          "name": "base_damage"
+        },
+        {
+          "value": "92",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "247, 370",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "93",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "255, 382",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "94",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "263, 395",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "96",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "272, 408",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "98",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "281, 421",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "99",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "290, 435",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "100",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "300, 449",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "36.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "102",
+          "name": "doubles_have_%_increased_movement_speed"
+        },
+        {
+          "value": "309, 464",
+          "name": "adds__to__physical_damage_against_bleeding_enemies"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (28\u201333)% of Base Attack Damage",
     "+6 seconds to Base duration",
@@ -13,1018 +1027,14 @@
     "Modifiers to Skill Effect Duration also apply to this Skill's Soul Gain Prevention"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 10,
-        "requires_level": 1
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "28%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": ""
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "3, 5"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 12,
-        "requires_level": 2
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "28.3%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "3"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "3, 5"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "28.5%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "6"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "4, 6"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 22,
-        "requires_level": 7
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "28.8%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "9"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "6, 8"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 31,
-        "requires_level": 11
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "29.1%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "12"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "8, 11"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "29.3%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "15"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "10, 16"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "29.6%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "18"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "13, 20"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "29.8%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "21"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "17, 25"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "30.1%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "24"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "20, 30"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "30.4%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "27"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "25, 37"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "30.6%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "30"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "30, 44"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "30.9%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "33"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "35, 53"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "31.2%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "36"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "42, 63"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "31.4%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "39"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "49, 74"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "31.7%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "42"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "58, 86"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "31.9%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "45"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "67, 101"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "32.2%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "48"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "78, 117"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "32.5%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "51"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "91, 136"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "32.7%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "54"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "101, 152"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "33%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "57"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "113, 169"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "33.3%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "60"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "121, 181"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "33.5%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "63"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "130, 195"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "33.8%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "66"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "139, 209"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "34.1%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "69"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "149, 224"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "34.3%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "72"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "160, 239"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "34.6%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "75"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "171, 256"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "34.8%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "78"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "183, 274"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "35.1%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "81"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "196, 293"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "35.4%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "84"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "209, 314"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "35.6%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "87"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "223, 335"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "35.8%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "88"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "231, 346"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "35.9%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "90"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "239, 358"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "92"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "247, 370"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.2%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "93"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "255, 382"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.3%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "94"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "263, 395"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.4%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "96"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "272, 408"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.6%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "98"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "281, 421"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.7%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "99"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "290, 435"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.8%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "100"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "300, 449"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "36.9%"
-        },
-        {
-          "name": "doubles_have_%_increased_movement_speed",
-          "value": "102"
-        },
-        {
-          "name": "adds__to__physical_damage_against_bleeding_enemies",
-          "value": "309, 464"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "cannot_cancel_skill_before_contact_point [1]"
-  ],
-  "enchants": {
-    "merciless": [],
-    "eternal": []
-  },
-  "drop_level": null,
-  "type": [
-    "6970"
+  "target_types": [
+    "attack",
+    "meleesingletarget",
+    "melee",
+    "duration",
+    "vaal",
+    "physicalskill",
+    "cantusefistofwar"
   ],
   "mtx": [
     {
@@ -1033,7 +1043,17 @@
       "description": "Your Double Strike becomes a Prismatic Effect."
     }
   ],
-  "description": "Performs two fast strikes with a melee weapon, each of which summons a double of you for a duration to continuously attack monsters in this fashion.",
+  "acquisition": {},
+  "type": [
+    "6970"
+  ],
+  "tags": [
+    "cannot_cancel_skill_before_contact_point [1]"
+  ],
+  "enchants": {
+    "eternal": [],
+    "merciless": []
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1664,25 +1684,6 @@
       ]
     }
   ],
-  "target_types": [
-    "attack",
-    "meleesingletarget",
-    "melee",
-    "duration",
-    "vaal",
-    "physicalskill",
-    "cantusefistofwar"
-  ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Attack Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Vaal Double Strike",
+  "description": "Performs two fast strikes with a melee weapon, each of which summons a double of you for a duration to continuously attack monsters in this fashion."
 }

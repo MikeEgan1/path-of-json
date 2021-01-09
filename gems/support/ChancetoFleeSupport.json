@@ -1,34 +1,576 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Chance to Flee Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 8,
+        "intelligence": 8,
+        "dexterity": 11
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Supported Skills have % chance to Cause Monsters to Flee"
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "25"
         }
-      ],
-      "weight": 10000.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 10,
+        "intelligence": 9,
+        "dexterity": 13
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills have % reduced Cast Speed"
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "26"
         }
-      ],
-      "weight": 1.0
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 13,
+        "intelligence": 11,
+        "dexterity": 16
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 17,
+        "intelligence": 14,
+        "dexterity": 20
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 21,
+        "intelligence": 16,
+        "dexterity": 23
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 25,
+        "intelligence": 19,
+        "dexterity": 27
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 29,
+        "intelligence": 21,
+        "dexterity": 31
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 33,
+        "intelligence": 24,
+        "dexterity": 35
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 37,
+        "intelligence": 27,
+        "dexterity": 39
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 29,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 43,
+        "intelligence": 31,
+        "dexterity": 44
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 33,
+        "dexterity": 47
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 49,
+        "intelligence": 35,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "37"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 37,
+        "dexterity": 53
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "38"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 55,
+        "intelligence": 39,
+        "dexterity": 56
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 40,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 61,
+        "intelligence": 42,
+        "dexterity": 61
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 44,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 46,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 48,
+        "dexterity": 70
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "47"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "49"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "52"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "53"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "54"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "54"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "55"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "55"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "56"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "56"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "57"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "57"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
+          "value": "59"
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "chance-to-flee-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills have (25\u201344)% chance to Cause Monsters to Flee"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports any skill that hits enemies.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -41,7 +583,10 @@
       "vendor_name": "Nessa"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -2469,572 +3014,28 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Chance to Flee Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports any skill that hits enemies.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "25"
+          "maximum": 20.0,
+          "text": "Supported Skills have % chance to Cause Monsters to Flee",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 8,
-        "dexterity": 11,
-        "intelligence": 8
-      }
+      "weight": 10000.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "26"
+          "maximum": 10.0,
+          "text": "Supported Skills have % reduced Cast Speed",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 10,
-        "dexterity": 13,
-        "intelligence": 9
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "27"
-        }
-      ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 13,
-        "dexterity": 16,
-        "intelligence": 11
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "28"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 17,
-        "dexterity": 20,
-        "intelligence": 14
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "29"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 21,
-        "dexterity": 23,
-        "intelligence": 16
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "30"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 25,
-        "dexterity": 27,
-        "intelligence": 19
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "31"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 29,
-        "dexterity": 31,
-        "intelligence": 21
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "32"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 33,
-        "dexterity": 35,
-        "intelligence": 24
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "33"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 37,
-        "dexterity": 39,
-        "intelligence": 27
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "34"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 40,
-        "dexterity": 41,
-        "intelligence": 29
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "35"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 43,
-        "dexterity": 44,
-        "intelligence": 31
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "36"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 46,
-        "dexterity": 47,
-        "intelligence": 33
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "37"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 49,
-        "dexterity": 50,
-        "intelligence": 35
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "38"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 52,
-        "dexterity": 53,
-        "intelligence": 37
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "39"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 55,
-        "dexterity": 56,
-        "intelligence": 39
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "40"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 58,
-        "dexterity": 58,
-        "intelligence": 40
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "41"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 61,
-        "dexterity": 61,
-        "intelligence": 42
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "42"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 64,
-        "dexterity": 64,
-        "intelligence": 44
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "43"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 67,
-        "dexterity": 67,
-        "intelligence": 46
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "44"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "dexterity": 70,
-        "intelligence": 48
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "45"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "46"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "47"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "48"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "49"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "50"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "51"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "52"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "53"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "54"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "54"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "55"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "55"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "56"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "56"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "57"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "57"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "58"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "58"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "dexterity": null,
-        "intelligence": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_chance_to_cause_monsters_to_flee",
-          "value": "59"
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "dexterity": null,
-        "intelligence": null
-      }
+      "weight": 1.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

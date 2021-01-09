@@ -1,27 +1,611 @@
 {
-  "name": "Decoy Totem",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Totem Placement speed",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Scion"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "Totems Explode on Death, dealing % of their Life as Physical Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased totem life",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Totems Regenerate % of Life per second",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "decoy-totem",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 4,
+        "strength": 16
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 6,
+        "strength": 20
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 9,
+        "strength": 27
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 12,
+        "strength": 33
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 41
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 50
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 32,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 55,
+        "strength": 123
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 61,
+        "strength": 136
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 148
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "56",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "58",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "59",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "61",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "62",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "63",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 45,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "64",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "65",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "66",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 46,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "67",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 47,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "%_increased_totem_life"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Summons a Totem which uses this Skill",
     "Totem lasts 8 seconds",
@@ -29,593 +613,8 @@
     "Totems Summoned by this Skill cannot Evade"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 20,
-        "requires_level": 6
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 27,
-        "requires_level": 9
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 123,
-        "requires_level": 55
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 136,
-        "requires_level": 61
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "58"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "59"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "61"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "63"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "mana_cost": 45,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "65"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "mana_cost": 46,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "67"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "mana_cost": 47,
-      "fields": [
-        {
-          "name": "%_increased_totem_life",
-          "value": "68"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_skill_is_totemified [1]",
-    "base_deal_no_damage [1]",
-    "totem_ignores_cooldown [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "40% increased Decoy Totem Life",
-      "16% increased Decoy Totem Area of Effect"
-    ],
-    "eternal": [
-      "60% increased Decoy Totem Life",
-      "24% increased Decoy Totem Area of Effect"
-    ]
-  },
-  "drop_level": 4,
-  "type": [
-    "spell",
-    "skillcantrap",
-    "skillcanmine",
-    "area",
-    "totem",
-    "spellcanrepeat",
-    "areaspell",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -654,7 +653,52 @@
       "description": "Your Spell or Ballista totem becomes a Pylon of Pain."
     }
   ],
-  "description": "Summons a totem that taunts nearby monsters to attack it.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Scion"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "skillcantrap",
+    "skillcanmine",
+    "area",
+    "totem",
+    "spellcanrepeat",
+    "areaspell",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_skill_is_totemified [1]",
+    "base_deal_no_damage [1]",
+    "totem_ignores_cooldown [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "60% increased Decoy Totem Life",
+      "24% increased Decoy Totem Area of Effect"
+    ],
+    "merciless": [
+      "40% increased Decoy Totem Life",
+      "16% increased Decoy Totem Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -717,49 +761,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Totems Regenerate % of Life per second",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Totems Explode on Death, dealing % of their Life as Physical Damage",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased totem life",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Totem Placement speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Decoy Totem",
+  "description": "Summons a totem that taunts nearby monsters to attack it."
 }

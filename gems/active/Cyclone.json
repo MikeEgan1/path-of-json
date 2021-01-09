@@ -1,27 +1,1091 @@
 {
-  "name": "Cyclone",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance to Knock Enemies Back on hit",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Scion"
-      ],
-      "act": 3
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% Chance to Avoid Interruption from Stuns While Using this Skill",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "% more Movement Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "cyclone",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 29,
+        "dexterity": 42
+      },
+      "fields": [
+        {
+          "value": "44%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.33",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "5, 8",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 31,
+        "strength": 32,
+        "dexterity": 46
+      },
+      "fields": [
+        {
+          "value": "44.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.33",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "6, 9",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 34,
+        "strength": 35,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "45.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.33",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "7, 10",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 37,
+        "strength": 37,
+        "dexterity": 54
+      },
+      "fields": [
+        {
+          "value": "45.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.33",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "8, 12",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 40,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "46.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.33",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "9, 13",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "3",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "strength": 42,
+        "dexterity": 60
+      },
+      "fields": [
+        {
+          "value": "46.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.25",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "10, 14",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 44,
+        "dexterity": 63
+      },
+      "fields": [
+        {
+          "value": "47.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.25",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "10, 16",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 46,
+        "strength": 46,
+        "dexterity": 66
+      },
+      "fields": [
+        {
+          "value": "47.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.25",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "11, 17",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 48,
+        "dexterity": 68
+      },
+      "fields": [
+        {
+          "value": "48.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.25",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "12, 18",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "strength": 49,
+        "dexterity": 71
+      },
+      "fields": [
+        {
+          "value": "48.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.25",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "13, 20",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "4",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 51,
+        "dexterity": 74
+      },
+      "fields": [
+        {
+          "value": "49.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.2",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "14, 22",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "strength": 53,
+        "dexterity": 76
+      },
+      "fields": [
+        {
+          "value": "49.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.2",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "16, 23",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "strength": 55,
+        "dexterity": 79
+      },
+      "fields": [
+        {
+          "value": "50.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.2",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "17, 25",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 57,
+        "dexterity": 82
+      },
+      "fields": [
+        {
+          "value": "50.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.2",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "18, 27",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 59,
+        "dexterity": 84
+      },
+      "fields": [
+        {
+          "value": "51.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.2",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "20, 29",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "5",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "strength": 60,
+        "dexterity": 87
+      },
+      "fields": [
+        {
+          "value": "51.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.17",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "21, 32",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "dexterity": 90
+      },
+      "fields": [
+        {
+          "value": "52.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.17",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "23, 34",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 64,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "52.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.17",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "24, 37",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 66,
+        "dexterity": 95
+      },
+      "fields": [
+        {
+          "value": "53.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.17",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "26, 39",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "dexterity": 98
+      },
+      "fields": [
+        {
+          "value": "54%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.17",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "28, 42",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "6",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "54.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.14",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "30, 45",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "55.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.14",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "32, 49",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "55.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.14",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "35, 52",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "56.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.14",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "37, 56",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "56.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.14",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "40, 60",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "7",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "57.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.125",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "43, 64",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "57.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.125",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "46, 69",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "58.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.125",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "49, 73",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "58.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.125",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "52, 78",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "59.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.125",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "56, 84",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "59.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.125",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "58, 87",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "8",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "59.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "60, 89",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "60.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "62, 92",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "60.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "64, 96",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "60.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "66, 99",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "60.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "68, 102",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "61.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "70, 105",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "61.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "73, 109",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "61.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "75, 112",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "61.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0.11",
+          "name": "gains__stage_every_._seconds_while_channelling"
+        },
+        {
+          "value": "77, 116",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "9",
+          "name": "maximum__stages"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (44\u201354)% of Base Attack Damage",
     "30% less Movement Speed",
@@ -34,1064 +1098,7 @@
     "8% increased Area of Effect per 1 additional Melee Strike Range"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 42,
-        "strength": 29,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "44%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.33"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "5, 8"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 46,
-        "strength": 32,
-        "requires_level": 31
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "44.5%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.33"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "6, 9"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 50,
-        "strength": 35,
-        "requires_level": 34
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "45.1%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.33"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "7, 10"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 54,
-        "strength": 37,
-        "requires_level": 37
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "45.6%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.33"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "8, 12"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 58,
-        "strength": 40,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "46.1%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.33"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "9, 13"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 60,
-        "strength": 42,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "46.6%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.25"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "10, 14"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 63,
-        "strength": 44,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "47.2%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.25"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "10, 16"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 66,
-        "strength": 46,
-        "requires_level": 46
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "47.7%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.25"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "11, 17"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 68,
-        "strength": 48,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "48.2%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.25"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "12, 18"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 71,
-        "strength": 49,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "48.7%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.25"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "13, 20"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 74,
-        "strength": 51,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "49.3%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "14, 22"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 76,
-        "strength": 53,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "49.8%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "16, 23"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 79,
-        "strength": 55,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "50.3%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "17, 25"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 82,
-        "strength": 57,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "50.8%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "18, 27"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 84,
-        "strength": 59,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "51.4%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "20, 29"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 87,
-        "strength": 60,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "51.9%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.17"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "21, 32"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 90,
-        "strength": 62,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "52.4%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.17"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "23, 34"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 92,
-        "strength": 64,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "52.9%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.17"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "24, 37"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 95,
-        "strength": 66,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "53.5%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.17"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "26, 39"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 98,
-        "strength": 68,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "54%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.17"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "28, 42"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "54.5%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.14"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "30, 45"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "55.1%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.14"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "32, 49"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "55.6%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.14"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "35, 52"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "56.1%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.14"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "37, 56"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "56.6%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.14"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "40, 60"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "57.2%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.125"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "43, 64"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "57.7%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.125"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "46, 69"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "58.2%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.125"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "49, 73"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "58.7%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.125"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "52, 78"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "59.3%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.125"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "56, 84"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "59.5%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.125"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "58, 87"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "59.8%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "60, 89"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "60.1%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "62, 92"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "60.3%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "64, 96"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "60.6%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "66, 99"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "60.8%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "68, 102"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "61.1%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "70, 105"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "61.4%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "73, 109"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "61.6%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "75, 112"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "61.9%"
-        },
-        {
-          "name": "gains__stage_every_._seconds_while_channelling",
-          "value": "0.11"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "77, 116"
-        },
-        {
-          "name": "maximum__stages",
-          "value": "9"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]",
-    "skill_can_add_multiple_charges_per_action [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Cyclone Damage",
-      "10% increased Cyclone Attack Speed"
-    ],
-    "eternal": [
-      "40% increased Cyclone Damage",
-      "15% increased Cyclone Attack Speed"
-    ]
-  },
-  "drop_level": 28,
-  "type": [
+  "target_types": [
     "ground"
   ],
   "mtx": [
@@ -1136,7 +1143,44 @@
       "description": "Your Cyclone becomes an Automaton Effect."
     }
   ],
-  "description": "Channel this skill to move towards a targeted location while spinning, building up stages while constantly attacking enemies in an area around you. While channelling this skill, you cannot be knocked back.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Scion"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "ground"
+  ],
+  "tags": [
+    "is_area_damage [1]",
+    "skill_can_add_multiple_charges_per_action [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Cyclone Damage",
+      "15% increased Cyclone Attack Speed"
+    ],
+    "merciless": [
+      "25% increased Cyclone Damage",
+      "10% increased Cyclone Attack Speed"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1777,49 +1821,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% more Movement Speed",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% Chance to Avoid Interruption from Stuns While Using this Skill",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to Knock Enemies Back on hit",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Cyclone",
+  "description": "Channel this skill to move towards a targeted location while spinning, building up stages while constantly attacking enemies in an area around you. While channelling this skill, you cannot be knocked back."
 }

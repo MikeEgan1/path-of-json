@@ -1,23 +1,851 @@
 {
-  "name": "Arc",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Chaining range",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Witch"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% reduced Enemy Stun Threshold",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to Shock enemies",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Damage for each time this Skill has Chained",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "arc",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 8,
+      "maximum_damage": 33.0,
+      "minimum_damage": 6.0,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 41.0,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "requires_level": 15,
+        "intelligence": 39
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "11",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 54.0,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "requires_level": 19,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 70.0,
+      "minimum_damage": 12.0,
+      "requirements": {
+        "requires_level": 23,
+        "intelligence": 56
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "13",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 89.0,
+      "minimum_damage": 16.0,
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 112.0,
+      "minimum_damage": 20.0,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "15",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 139.0,
+      "minimum_damage": 25.0,
+      "requirements": {
+        "requires_level": 35,
+        "intelligence": 81
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 163.0,
+      "minimum_damage": 29.0,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "17",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 191.0,
+      "minimum_damage": 34.0,
+      "requirements": {
+        "requires_level": 41,
+        "intelligence": 94
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 223.0,
+      "minimum_damage": 39.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "19",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 258.0,
+      "minimum_damage": 46.0,
+      "requirements": {
+        "requires_level": 47,
+        "intelligence": 106
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 299.0,
+      "minimum_damage": 53.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 346.0,
+      "minimum_damage": 61.0,
+      "requirements": {
+        "requires_level": 53,
+        "intelligence": 119
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 399.0,
+      "minimum_damage": 70.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "23",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 458.0,
+      "minimum_damage": 81.0,
+      "requirements": {
+        "requires_level": 59,
+        "intelligence": 132
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 526.0,
+      "minimum_damage": 93.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "25",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 577.0,
+      "minimum_damage": 102.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 631.0,
+      "minimum_damage": 111.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 690.0,
+      "minimum_damage": 122.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 754.0,
+      "minimum_damage": 133.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 824.0,
+      "minimum_damage": 145.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 900.0,
+      "minimum_damage": 159.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 982.0,
+      "minimum_damage": 173.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1070.0,
+      "minimum_damage": 189.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 1167.0,
+      "minimum_damage": 206.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 1271.0,
+      "minimum_damage": 224.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "35",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 1384.0,
+      "minimum_damage": 244.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 1506.0,
+      "minimum_damage": 266.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "37",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 1639.0,
+      "minimum_damage": 289.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 1782.0,
+      "minimum_damage": 314.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 1858.0,
+      "minimum_damage": 328.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 1937.0,
+      "minimum_damage": 342.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 2019.0,
+      "minimum_damage": 356.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 2105.0,
+      "minimum_damage": 371.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 2193.0,
+      "minimum_damage": 387.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 2286.0,
+      "minimum_damage": 403.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 2382.0,
+      "minimum_damage": 420.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 2482.0,
+      "minimum_damage": 438.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 2586.0,
+      "minimum_damage": 456.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 2694.0,
+      "minimum_damage": 475.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "chains_+_times"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_effect_of_lightning_ailments"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (6\u2013133) to (33\u2013754) Lightning Damage",
     "10% chance to Shock enemies",
@@ -26,861 +854,9 @@
     "15% more Damage for each remaining Chain"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 6.0,
-      "requirements": {
-        "intelligence": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 8,
-      "maximum_damage": 33.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 7.0,
-      "requirements": {
-        "intelligence": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 9,
-      "maximum_damage": 41.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 9.0,
-      "requirements": {
-        "intelligence": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 10,
-      "maximum_damage": 54.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 12.0,
-      "requirements": {
-        "intelligence": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 11,
-      "maximum_damage": 70.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 16.0,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 12,
-      "maximum_damage": 89.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 20.0,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 13,
-      "maximum_damage": 112.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 25.0,
-      "requirements": {
-        "intelligence": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 14,
-      "maximum_damage": 139.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 29.0,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 15,
-      "maximum_damage": 163.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 34.0,
-      "requirements": {
-        "intelligence": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 16,
-      "maximum_damage": 191.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 39.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 16,
-      "maximum_damage": 223.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 46.0,
-      "requirements": {
-        "intelligence": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 17,
-      "maximum_damage": 258.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 53.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 18,
-      "maximum_damage": 299.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 61.0,
-      "requirements": {
-        "intelligence": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 19,
-      "maximum_damage": 346.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 70.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 19,
-      "maximum_damage": 399.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 81.0,
-      "requirements": {
-        "intelligence": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 20,
-      "maximum_damage": 458.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 93.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 21,
-      "maximum_damage": 526.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 102.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 21,
-      "maximum_damage": 577.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 111.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 22,
-      "maximum_damage": 631.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 122.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 22,
-      "maximum_damage": 690.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 133.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 23,
-      "maximum_damage": 754.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 145.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 24,
-      "maximum_damage": 824.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 159.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 24,
-      "maximum_damage": 900.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 173.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "maximum_damage": 982.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 189.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1070.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 206.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 26,
-      "maximum_damage": 1167.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 224.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "maximum_damage": 1271.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 244.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "maximum_damage": 1384.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 266.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "maximum_damage": 1506.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 289.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 28,
-      "maximum_damage": 1639.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 314.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "maximum_damage": 1782.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 328.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 28,
-      "maximum_damage": 1858.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 342.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "maximum_damage": 1937.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 356.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "maximum_damage": 2019.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 371.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "maximum_damage": 2105.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 387.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 29,
-      "maximum_damage": 2193.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 403.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 30,
-      "maximum_damage": 2286.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 420.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 30,
-      "maximum_damage": 2382.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 438.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 30,
-      "maximum_damage": 2482.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 456.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 30,
-      "maximum_damage": 2586.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 475.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 31,
-      "maximum_damage": 2694.0,
-      "fields": [
-        {
-          "name": "chains_+_times",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_effect_of_lightning_ailments",
-          "value": "44"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "arc_enhanced_behaviour [1]",
-    "disable_visual_hit_effect [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Ancestral Warchief Totem Damage",
-      "25% increased Arc Damage",
-      "25% increased Creeping Frost Damage",
-      "Arc Chains an additional time",
-      "Arc has +20% chance to Shock",
-      "Arc deals 8% increased Damage for each time it has Chained",
-      "Arcane Cloak Spends an additional 10% of current Mana",
-      "16% increased Ancestral Warchief Totem Area of Effect",
-      "Ancestral Warchief Totem grants 20% increased Melee Damage while Active",
-      "24% increased Arctic Armour Buff Effect",
-      "Arctic Armour has 20% reduced Mana Reservation",
-      "24% increased Creeping Frost Duration",
-      "16% increased Creeping Frost Area of Effect",
-      "Arcanist Brand has 8% increased Cast Speed"
-    ],
-    "eternal": [
-      "40% increased Ancestral Warchief Totem Damage",
-      "40% increased Arc Damage",
-      "40% increased Creeping Frost Damage",
-      "Arc Chains an additional time",
-      "Arc has +30% chance to Shock",
-      "Arc deals 12% increased Damage for each time it has Chained",
-      "Arcane Cloak Spends an additional 15% of current Mana",
-      "Arcane Cloak grants Life Regeneration equal to 15% of Mana Spent per Second",
-      "24% increased Ancestral Warchief Totem Area of Effect",
-      "Ancestral Warchief Totem grants 30% increased Melee Damage while Active",
-      "36% increased Arctic Armour Buff Effect",
-      "Arctic Armour has 30% reduced Mana Reservation",
-      "36% increased Creeping Frost Duration",
-      "24% increased Creeping Frost Area of Effect",
-      "Creeping Frost's Chilling Area has 38% increased Movement Speed",
-      "Arcanist Brand has 12% increased Cast Speed",
-      "Spells Triggered by Arcanist Brand Unnerve enemies on Hit for 4 seconds"
-    ]
-  },
-  "drop_level": 12,
-  "type": [
-    "spell",
-    "hit",
-    "skillcantrap",
-    "skillcantotem",
-    "skillcanmine",
-    "chaining",
-    "spellcanrepeat",
-    "triggerable",
-    "lightningskill",
-    "canrapidfire"
+  "target_types": [
+    "ground",
+    "enemy"
   ],
   "mtx": [
     {
@@ -904,7 +880,76 @@
       "description": "Your Arc becomes a Celestial Effect."
     }
   ],
-  "description": "An arc of lightning stretches from the caster to a targeted enemy and chains on to other nearby enemies. Each time the main beam chains it will also chain to a second enemy, but that secondary arc cannot chain further.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Witch"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "spell",
+    "hit",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "chaining",
+    "spellcanrepeat",
+    "triggerable",
+    "lightningskill",
+    "canrapidfire"
+  ],
+  "tags": [
+    "arc_enhanced_behaviour [1]",
+    "disable_visual_hit_effect [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Ancestral Warchief Totem Damage",
+      "40% increased Arc Damage",
+      "40% increased Creeping Frost Damage",
+      "Arc Chains an additional time",
+      "Arc has +30% chance to Shock",
+      "Arc deals 12% increased Damage for each time it has Chained",
+      "Arcane Cloak Spends an additional 15% of current Mana",
+      "Arcane Cloak grants Life Regeneration equal to 15% of Mana Spent per Second",
+      "24% increased Ancestral Warchief Totem Area of Effect",
+      "Ancestral Warchief Totem grants 30% increased Melee Damage while Active",
+      "36% increased Arctic Armour Buff Effect",
+      "Arctic Armour has 30% reduced Mana Reservation",
+      "36% increased Creeping Frost Duration",
+      "24% increased Creeping Frost Area of Effect",
+      "Creeping Frost's Chilling Area has 38% increased Movement Speed",
+      "Arcanist Brand has 12% increased Cast Speed",
+      "Spells Triggered by Arcanist Brand Unnerve enemies on Hit for 4 seconds"
+    ],
+    "merciless": [
+      "25% increased Ancestral Warchief Totem Damage",
+      "25% increased Arc Damage",
+      "25% increased Creeping Frost Damage",
+      "Arc Chains an additional time",
+      "Arc has +20% chance to Shock",
+      "Arc deals 8% increased Damage for each time it has Chained",
+      "Arcane Cloak Spends an additional 10% of current Mana",
+      "16% increased Ancestral Warchief Totem Area of Effect",
+      "Ancestral Warchief Totem grants 20% increased Melee Damage while Active",
+      "24% increased Arctic Armour Buff Effect",
+      "Arctic Armour has 20% reduced Mana Reservation",
+      "24% increased Creeping Frost Duration",
+      "16% increased Creeping Frost Area of Effect",
+      "Arcanist Brand has 8% increased Cast Speed"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1469,50 +1514,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Damage for each time this Skill has Chained",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% reduced Enemy Stun Threshold",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% chance to Shock enemies",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Chaining range",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Arc",
+  "description": "An arc of lightning stretches from the caster to a targeted enemy and chains on to other nearby enemies. Each time the main beam chains it will also chain to a second enemy, but that secondary arc cannot chain further."
 }

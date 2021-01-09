@@ -1,7 +1,711 @@
 {
-  "name": "Shock Nova",
+  "quality": {
+    "anomalous": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "Ring has % chance to Shock",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 100.0,
+          "text": "Ring Shocks as if dealing % more Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Shock Duration on enemies",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Lightning Damage",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 28,
+  "slug": "shock-nova",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 12,
+      "maximum_damage": 102.0,
+      "minimum_damage": 34.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 124.0,
+      "minimum_damage": 41.0,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 150.0,
+      "minimum_damage": 50.0,
+      "requirements": {
+        "requires_level": 34,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 180.0,
+      "minimum_damage": 60.0,
+      "requirements": {
+        "requires_level": 37,
+        "intelligence": 85
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 215.0,
+      "minimum_damage": 72.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 242.0,
+      "minimum_damage": 81.0,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 272.0,
+      "minimum_damage": 91.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 305.0,
+      "minimum_damage": 102.0,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 104
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 341.0,
+      "minimum_damage": 114.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 382.0,
+      "minimum_damage": 127.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 427.0,
+      "minimum_damage": 142.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 476.0,
+      "minimum_damage": 159.0,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 531.0,
+      "minimum_damage": 177.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 592.0,
+      "minimum_damage": 197.0,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 659.0,
+      "minimum_damage": 220.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 733.0,
+      "minimum_damage": 244.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 815.0,
+      "minimum_damage": 272.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 905.0,
+      "minimum_damage": 302.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1004.0,
+      "minimum_damage": 335.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1114.0,
+      "minimum_damage": 371.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1235.0,
+      "minimum_damage": 412.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1368.0,
+      "minimum_damage": 456.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1515.0,
+      "minimum_damage": 505.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1676.0,
+      "minimum_damage": 559.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 1854.0,
+      "minimum_damage": 618.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2050.0,
+      "minimum_damage": 683.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2265.0,
+      "minimum_damage": 755.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2501.0,
+      "minimum_damage": 834.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "47",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 2762.0,
+      "minimum_damage": 921.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3047.0,
+      "minimum_damage": 1016.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "49",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3201.0,
+      "minimum_damage": 1067.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "49",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 3361.0,
+      "minimum_damage": 1120.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 3530.0,
+      "minimum_damage": 1177.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 3707.0,
+      "minimum_damage": 1236.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 3892.0,
+      "minimum_damage": 1297.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4085.0,
+      "minimum_damage": 1362.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4289.0,
+      "minimum_damage": 1430.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4501.0,
+      "minimum_damage": 1500.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4725.0,
+      "minimum_damage": 1575.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "53",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 4958.0,
+      "minimum_damage": 1653.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "%_increased_effect_of_shock"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Deals (34\u2013371) to (102\u20131114) Lightning Damage",
+    "Ring deals 50% less Damage",
+    "20% chance to Shock enemies",
+    "(20\u201339)% increased Effect of Shock"
+  ],
+  "vaal": false,
+  "target_types": [
+    "any"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/RiftwormShockNova.png?w=1&h=1&scale=1",
+      "name": "Rift Worm Shock Nova Effect",
+      "description": "Your Shock Nova becomes a nova of purple rift worms."
+    }
+  ],
   "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Templar"
+      ],
+      "act": 3
+    },
     "vendor": {
       "classes": [
         "Witch",
@@ -10,680 +714,8 @@
         "Scion"
       ],
       "vendor_name": "Clarissa"
-    },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Templar"
-      ],
-      "act": 3
     }
   },
-  "mods": [
-    "Deals (34\u2013371) to (102\u20131114) Lightning Damage",
-    "Ring deals 50% less Damage",
-    "20% chance to Shock enemies",
-    "(20\u201339)% increased Effect of Shock"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 34.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 12,
-      "maximum_damage": 102.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 41.0,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 13,
-      "maximum_damage": 124.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 50.0,
-      "requirements": {
-        "intelligence": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 14,
-      "maximum_damage": 150.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 60.0,
-      "requirements": {
-        "intelligence": 85,
-        "requires_level": 37
-      },
-      "mana_cost": 15,
-      "maximum_damage": 180.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 72.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 15,
-      "maximum_damage": 215.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 81.0,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 16,
-      "maximum_damage": 242.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 91.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 16,
-      "maximum_damage": 272.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 102.0,
-      "requirements": {
-        "intelligence": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 17,
-      "maximum_damage": 305.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 114.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 17,
-      "maximum_damage": 341.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 127.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 18,
-      "maximum_damage": 382.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 142.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 18,
-      "maximum_damage": 427.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 159.0,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 19,
-      "maximum_damage": 476.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 177.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 19,
-      "maximum_damage": 531.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 197.0,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 20,
-      "maximum_damage": 592.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 220.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 20,
-      "maximum_damage": 659.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 244.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 21,
-      "maximum_damage": 733.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 272.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 21,
-      "maximum_damage": 815.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 302.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 22,
-      "maximum_damage": 905.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 335.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1004.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 371.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1114.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 412.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1235.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 456.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1368.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 505.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1515.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 559.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1676.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 618.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 26,
-      "maximum_damage": 1854.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 683.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2050.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 755.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2265.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 834.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2501.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 921.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 28,
-      "maximum_damage": 2762.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1016.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3047.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1067.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3201.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1120.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "maximum_damage": 3361.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1177.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "maximum_damage": 3530.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1236.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "maximum_damage": 3707.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1297.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 29,
-      "maximum_damage": 3892.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 1362.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4085.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 1430.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4289.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 1500.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4501.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 1575.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4725.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 1653.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 31,
-      "maximum_damage": 4958.0,
-      "fields": [
-        {
-          "name": "%_increased_effect_of_shock",
-          "value": "54"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Shock Nova Damage",
-      "Shock Nova ring deals 40% increased Damage",
-      "16% increased Shock Nova Area of Effect"
-    ],
-    "eternal": [
-      "40% increased Shock Nova Damage",
-      "Shock Nova ring deals 60% increased Damage",
-      "24% increased Shock Nova Area of Effect"
-    ]
-  },
-  "drop_level": 28,
   "type": [
     "spell",
     "hit",
@@ -698,14 +730,21 @@
     "areaspell",
     "novaspell"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/RiftwormShockNova.png?w=1&h=1&scale=1",
-      "name": "Rift Worm Shock Nova Effect",
-      "description": "Your Shock Nova becomes a nova of purple rift worms."
-    }
+  "tags": [
+    "is_area_damage [1]"
   ],
-  "description": "Casts a ring of Lightning around you, followed by a larger Lightning nova. Each effect hits enemies caught in their area with Lightning Damage.",
+  "enchants": {
+    "eternal": [
+      "40% increased Shock Nova Damage",
+      "Shock Nova ring deals 60% increased Damage",
+      "24% increased Shock Nova Area of Effect"
+    ],
+    "merciless": [
+      "25% increased Shock Nova Damage",
+      "Shock Nova ring deals 40% increased Damage",
+      "16% increased Shock Nova Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1280,44 +1319,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Lightning Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Shock Duration on enemies",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Ring has % chance to Shock",
-          "minimum": 0.0,
-          "maximum": 40.0
-        },
-        {
-          "text": "Ring Shocks as if dealing % more Damage",
-          "minimum": 0.0,
-          "maximum": 100.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Shock Nova",
+  "description": "Casts a ring of Lightning around you, followed by a larger Lightning nova. Each effect hits enemies caught in their area with Lightning Damage."
 }

@@ -1,24 +1,1241 @@
 {
-  "name": "Elemental Hit",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Ranger"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Elemental Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Effect of non-Damaging Ailments on Enemies",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "elemental-hit",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 33
+      },
+      "fields": [
+        {
+          "value": "22, 40",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "18, 33",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "4, 67",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "30",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 15,
+        "dexterity": 39
+      },
+      "fields": [
+        {
+          "value": "27, 51",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "22, 41",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "4, 83",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "31",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 19,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "value": "36, 66",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "29, 54",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "6, 109",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "32",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 23,
+        "dexterity": 56
+      },
+      "fields": [
+        {
+          "value": "46, 86",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "38, 70",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "7, 141",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "33",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 27,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "value": "59, 109",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "48, 89",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "9, 179",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "34",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 73
+      },
+      "fields": [
+        {
+          "value": "73, 136",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "60, 112",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "12, 224",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "35",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 35,
+        "dexterity": 81
+      },
+      "fields": [
+        {
+          "value": "91, 169",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "75, 139",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "15, 279",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "36",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 38,
+        "dexterity": 88
+      },
+      "fields": [
+        {
+          "value": "107, 198",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "87, 162",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "17, 326",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "37",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 41,
+        "dexterity": 94
+      },
+      "fields": [
+        {
+          "value": "125, 231",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "102, 189",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "20, 380",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "38",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "145, 269",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "118, 220",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "23, 442",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "39",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 47,
+        "dexterity": 106
+      },
+      "fields": [
+        {
+          "value": "168, 311",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "137, 255",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "27, 512",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "40",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 113
+      },
+      "fields": [
+        {
+          "value": "194, 360",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "158, 294",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "31, 591",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "41",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 53,
+        "dexterity": 119
+      },
+      "fields": [
+        {
+          "value": "223, 414",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "183, 339",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "36, 682",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "42",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "257, 476",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "210, 390",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "41, 783",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "43",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 59,
+        "dexterity": 132
+      },
+      "fields": [
+        {
+          "value": "294, 547",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "241, 447",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "47, 899",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "44",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "337, 626",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "276, 512",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "54, 1029",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "45",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "369, 684",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "302, 560",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "59, 1125",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "46",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "403, 748",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "329, 612",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "65, 1230",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "47",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "440, 816",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "360, 668",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "71, 1342",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "48",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "480, 891",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "392, 729",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "77, 1465",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "49",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "523, 971",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "428, 795",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "84, 1597",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "50",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "570, 1059",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "466, 866",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "92, 1741",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "51",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "621, 1153",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "508, 943",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "100, 1896",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "52",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "676, 1255",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "553, 1027",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "109, 2064",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "53",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "735, 1366",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "602, 1117",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "118, 2246",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "54",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "800, 1485",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "654, 1215",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "129, 2442",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "55",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "869, 1614",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "711, 1321",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "140, 2655",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "56",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "944, 1754",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "773, 1435",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "152, 2884",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "57",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1026, 1905",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "839, 1558",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "165, 3132",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "58",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1113, 2068",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "911, 1692",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "179, 3400",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "59",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1160, 2154",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "949, 1762",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "186, 3542",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "59",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1208, 2244",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "988, 1836",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "194, 3689",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "60",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1258, 2337",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "1030, 1912",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "202, 3843",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "60",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1311, 2434",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "1072, 1991",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "211, 4002",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "61",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1365, 2534",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "1117, 2074",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "219, 4167",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "61",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1421, 2639",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "1163, 2159",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "228, 4339",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "62",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1479, 2748",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "1210, 2248",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "238, 4518",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "62",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1540, 2860",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "1260, 2340",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "248, 4703",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "63",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1603, 2978",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "1312, 2436",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "258, 4896",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "63",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "1669, 3099",
+          "name": "_to__added_fire_damage"
+        },
+        {
+          "value": "1365, 2536",
+          "name": "_to__added_cold_damage"
+        },
+        {
+          "value": "268, 5096",
+          "name": "_to__added_lightning_damage"
+        },
+        {
+          "value": "64",
+          "name": "%_chance_to_freeze,_shock_and_ignite"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "(22\u2013480) to (40\u2013891) Added Fire Damage",
     "(18\u2013392) to (33\u2013729) Added Cold Damage",
@@ -30,1225 +1247,35 @@
     "Only Deals Damage of the chosen ElementDeals no Damage of other Damage Types"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "requirements": {
-        "dexterity": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "22, 40"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "18, 33"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "4, 67"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "30"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 39,
-        "requires_level": 15
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "27, 51"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "22, 41"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "4, 83"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "31"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 48,
-        "requires_level": 19
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "36, 66"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "29, 54"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "6, 109"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "32"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 56,
-        "requires_level": 23
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "46, 86"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "38, 70"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "7, 141"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "33"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "59, 109"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "48, 89"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "9, 179"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "34"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "73, 136"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "60, 112"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "12, 224"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "35"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 81,
-        "requires_level": 35
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "91, 169"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "75, 139"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "15, 279"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "36"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "107, 198"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "87, 162"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "17, 326"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "37"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 94,
-        "requires_level": 41
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "125, 231"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "102, 189"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "20, 380"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "38"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "145, 269"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "118, 220"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "23, 442"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "39"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 106,
-        "requires_level": 47
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "168, 311"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "137, 255"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "27, 512"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "40"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "194, 360"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "158, 294"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "31, 591"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "41"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 119,
-        "requires_level": 53
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "223, 414"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "183, 339"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "36, 682"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "42"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "257, 476"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "210, 390"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "41, 783"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "43"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 132,
-        "requires_level": 59
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "294, 547"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "241, 447"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "47, 899"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "44"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "337, 626"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "276, 512"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "54, 1029"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "45"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "369, 684"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "302, 560"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "59, 1125"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "46"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "403, 748"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "329, 612"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "65, 1230"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "47"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "440, 816"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "360, 668"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "71, 1342"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "48"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "480, 891"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "392, 729"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "77, 1465"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "49"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "523, 971"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "428, 795"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "84, 1597"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "50"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "570, 1059"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "466, 866"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "92, 1741"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "51"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "621, 1153"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "508, 943"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "100, 1896"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "52"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "676, 1255"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "553, 1027"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "109, 2064"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "53"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "735, 1366"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "602, 1117"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "118, 2246"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "54"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "800, 1485"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "654, 1215"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "129, 2442"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "55"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "869, 1614"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "711, 1321"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "140, 2655"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "56"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "944, 1754"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "773, 1435"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "152, 2884"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "57"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1026, 1905"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "839, 1558"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "165, 3132"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "58"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1113, 2068"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "911, 1692"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "179, 3400"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "59"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1160, 2154"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "949, 1762"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "186, 3542"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "59"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1208, 2244"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "988, 1836"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "194, 3689"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "60"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1258, 2337"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "1030, 1912"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "202, 3843"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "60"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1311, 2434"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "1072, 1991"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "211, 4002"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "61"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1365, 2534"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "1117, 2074"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "219, 4167"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "61"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1421, 2639"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "1163, 2159"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "228, 4339"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "62"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1479, 2748"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "1210, 2248"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "238, 4518"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "62"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1540, 2860"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "1260, 2340"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "248, 4703"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "63"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1603, 2978"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "1312, 2436"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "258, 4896"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "63"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "_to__added_fire_damage",
-          "value": "1669, 3099"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "1365, 2536"
-        },
-        {
-          "name": "_to__added_lightning_damage",
-          "value": "268, 5096"
-        },
-        {
-          "name": "%_chance_to_freeze,_shock_and_ignite",
-          "value": "64"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ShadowstalkerElementalHit.png?w=2&h=2&scale=1",
+      "name": "Shadowstalker Elemental Hit Effect",
+      "description": "Your Elemental Hit becomes a Shadowstalker Effect."
     }
   ],
-  "tags": [
-    "skill_can_fire_arrows [1]",
-    "skill_can_fire_wand_projectiles [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Elemental Hit deals 25% increased Damage",
-      "10% increased Elemental Hit Attack Speed",
-      "Elemental Hit has +20% chance to Freeze, Shock and Ignite"
-    ],
-    "eternal": [
-      "Elemental Hit deals 40% increased Damage",
-      "15% increased Elemental Hit Attack Speed",
-      "Elemental Hit has +30% chance to Freeze, Shock and Ignite"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Ranger"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
   },
-  "drop_level": 12,
   "type": [
     "attack",
     "projectile",
@@ -1267,14 +1294,22 @@
     "area",
     "triggerable"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ShadowstalkerElementalHit.png?w=2&h=2&scale=1",
-      "name": "Shadowstalker Elemental Hit Effect",
-      "description": "Your Elemental Hit becomes a Shadowstalker Effect."
-    }
+  "tags": [
+    "skill_can_fire_arrows [1]",
+    "skill_can_fire_wand_projectiles [1]"
   ],
-  "description": "Each attack with this skill will choose an element at random, and will only be able to deal damage of that element. If the attack hits an enemy, it will also deal damage in an area around them, with the radius being larger if that enemy is suffering from an ailment of the chosen element. It will avoid choosing the same element twice in a row.",
+  "enchants": {
+    "eternal": [
+      "Elemental Hit deals 40% increased Damage",
+      "15% increased Elemental Hit Attack Speed",
+      "Elemental Hit has +30% chance to Freeze, Shock and Ignite"
+    ],
+    "merciless": [
+      "Elemental Hit deals 25% increased Damage",
+      "10% increased Elemental Hit Attack Speed",
+      "Elemental Hit has +20% chance to Freeze, Shock and Ignite"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -2142,40 +2177,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Effect of non-Damaging Ailments on Enemies",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Elemental Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Elemental Hit",
+  "description": "Each attack with this skill will choose an element at random, and will only be able to deal damage of that element. If the attack hits an enemy, it will also deal damage in an area around them, with the radius being larger if that enemy is suffering from an ailment of the chosen element. It will avoid choosing the same element twice in a row."
 }

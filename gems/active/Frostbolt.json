@@ -1,491 +1,504 @@
 {
-  "name": "Frostbolt",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 100.0,
+          "text": "% reduced Damage",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% chance to inflict Cold Exposure on Hit",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Templar"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% chance for Projectiles to Return",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Cold Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% less Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "frostbolt",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 6,
+      "maximum_damage": 13.0,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "requires_level": 1,
+        "intelligence": 10
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 15.0,
+      "minimum_damage": 10.0,
+      "requirements": {
+        "requires_level": 2,
+        "intelligence": 12
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 19.0,
+      "minimum_damage": 13.0,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 26.0,
+      "minimum_damage": 18.0,
+      "requirements": {
+        "requires_level": 7,
+        "intelligence": 22
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 38.0,
+      "minimum_damage": 25.0,
+      "requirements": {
+        "requires_level": 11,
+        "intelligence": 31
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 58.0,
+      "minimum_damage": 38.0,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 78.0,
+      "minimum_damage": 52.0,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 103.0,
+      "minimum_damage": 69.0,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 135.0,
+      "minimum_damage": 90.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 174.0,
+      "minimum_damage": 116.0,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [],
+      "level": 10
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 223.0,
+      "minimum_damage": 148.0,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [],
+      "level": 11
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 283.0,
+      "minimum_damage": 189.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [],
+      "level": 12
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 357.0,
+      "minimum_damage": 238.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [],
+      "level": 13
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 448.0,
+      "minimum_damage": 299.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 560.0,
+      "minimum_damage": 373.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [],
+      "level": 15
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 697.0,
+      "minimum_damage": 465.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [],
+      "level": 16
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 864.0,
+      "minimum_damage": 576.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [],
+      "level": 17
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1067.0,
+      "minimum_damage": 711.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [],
+      "level": 18
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1248.0,
+      "minimum_damage": 832.0,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [],
+      "level": 19
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1458.0,
+      "minimum_damage": 972.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [],
+      "level": 20
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 1615.0,
+      "minimum_damage": 1077.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 21
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 1789.0,
+      "minimum_damage": 1192.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 22
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 1980.0,
+      "minimum_damage": 1320.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 23
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2190.0,
+      "minimum_damage": 1460.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 24
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 2421.0,
+      "minimum_damage": 1614.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 25
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 2676.0,
+      "minimum_damage": 1784.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 26
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 2955.0,
+      "minimum_damage": 1970.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 27
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 3263.0,
+      "minimum_damage": 2175.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 28
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 3600.0,
+      "minimum_damage": 2400.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 29
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 3972.0,
+      "minimum_damage": 2648.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 30
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 4171.0,
+      "minimum_damage": 2780.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 31
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 4379.0,
+      "minimum_damage": 2919.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 32
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 4598.0,
+      "minimum_damage": 3065.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 33
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 4827.0,
+      "minimum_damage": 3218.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 34
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 5067.0,
+      "minimum_damage": 3378.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 35
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 5318.0,
+      "minimum_damage": 3546.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 36
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 5582.0,
+      "minimum_damage": 3721.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 37
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 5858.0,
+      "minimum_damage": 3905.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 38
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 6147.0,
+      "minimum_damage": 4098.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 39
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 6449.0,
+      "minimum_damage": 4300.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (9\u2013972) to (13\u20131458) Cold Damage",
     "Projectiles Pierce all Targets"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 9.0,
-      "requirements": {
-        "intelligence": 10,
-        "requires_level": 1
-      },
-      "mana_cost": 6,
-      "maximum_damage": 13.0,
-      "fields": []
-    },
-    {
-      "level": 2,
-      "minimum_damage": 10.0,
-      "requirements": {
-        "intelligence": 12,
-        "requires_level": 2
-      },
-      "mana_cost": 6,
-      "maximum_damage": 15.0,
-      "fields": []
-    },
-    {
-      "level": 3,
-      "minimum_damage": 13.0,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 7,
-      "maximum_damage": 19.0,
-      "fields": []
-    },
-    {
-      "level": 4,
-      "minimum_damage": 18.0,
-      "requirements": {
-        "intelligence": 22,
-        "requires_level": 7
-      },
-      "mana_cost": 8,
-      "maximum_damage": 26.0,
-      "fields": []
-    },
-    {
-      "level": 5,
-      "minimum_damage": 25.0,
-      "requirements": {
-        "intelligence": 31,
-        "requires_level": 11
-      },
-      "mana_cost": 9,
-      "maximum_damage": 38.0,
-      "fields": []
-    },
-    {
-      "level": 6,
-      "minimum_damage": 38.0,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 10,
-      "maximum_damage": 58.0,
-      "fields": []
-    },
-    {
-      "level": 7,
-      "minimum_damage": 52.0,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 11,
-      "maximum_damage": 78.0,
-      "fields": []
-    },
-    {
-      "level": 8,
-      "minimum_damage": 69.0,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 12,
-      "maximum_damage": 103.0,
-      "fields": []
-    },
-    {
-      "level": 9,
-      "minimum_damage": 90.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 13,
-      "maximum_damage": 135.0,
-      "fields": []
-    },
-    {
-      "level": 10,
-      "minimum_damage": 116.0,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 14,
-      "maximum_damage": 174.0,
-      "fields": []
-    },
-    {
-      "level": 11,
-      "minimum_damage": 148.0,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 15,
-      "maximum_damage": 223.0,
-      "fields": []
-    },
-    {
-      "level": 12,
-      "minimum_damage": 189.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 16,
-      "maximum_damage": 283.0,
-      "fields": []
-    },
-    {
-      "level": 13,
-      "minimum_damage": 238.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 18,
-      "maximum_damage": 357.0,
-      "fields": []
-    },
-    {
-      "level": 14,
-      "minimum_damage": 299.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 19,
-      "maximum_damage": 448.0,
-      "fields": []
-    },
-    {
-      "level": 15,
-      "minimum_damage": 373.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 20,
-      "maximum_damage": 560.0,
-      "fields": []
-    },
-    {
-      "level": 16,
-      "minimum_damage": 465.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 21,
-      "maximum_damage": 697.0,
-      "fields": []
-    },
-    {
-      "level": 17,
-      "minimum_damage": 576.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 22,
-      "maximum_damage": 864.0,
-      "fields": []
-    },
-    {
-      "level": 18,
-      "minimum_damage": 711.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1067.0,
-      "fields": []
-    },
-    {
-      "level": 19,
-      "minimum_damage": 832.0,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1248.0,
-      "fields": []
-    },
-    {
-      "level": 20,
-      "minimum_damage": 972.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1458.0,
-      "fields": []
-    },
-    {
-      "level": 21,
-      "minimum_damage": 1077.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 25,
-      "maximum_damage": 1615.0,
-      "fields": []
-    },
-    {
-      "level": 22,
-      "minimum_damage": 1192.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 26,
-      "maximum_damage": 1789.0,
-      "fields": []
-    },
-    {
-      "level": 23,
-      "minimum_damage": 1320.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 26,
-      "maximum_damage": 1980.0,
-      "fields": []
-    },
-    {
-      "level": 24,
-      "minimum_damage": 1460.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2190.0,
-      "fields": []
-    },
-    {
-      "level": 25,
-      "minimum_damage": 1614.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 27,
-      "maximum_damage": 2421.0,
-      "fields": []
-    },
-    {
-      "level": 26,
-      "minimum_damage": 1784.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 28,
-      "maximum_damage": 2676.0,
-      "fields": []
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1970.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 28,
-      "maximum_damage": 2955.0,
-      "fields": []
-    },
-    {
-      "level": 28,
-      "minimum_damage": 2175.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 29,
-      "maximum_damage": 3263.0,
-      "fields": []
-    },
-    {
-      "level": 29,
-      "minimum_damage": 2400.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 30,
-      "maximum_damage": 3600.0,
-      "fields": []
-    },
-    {
-      "level": 30,
-      "minimum_damage": 2648.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 30,
-      "maximum_damage": 3972.0,
-      "fields": []
-    },
-    {
-      "level": 31,
-      "minimum_damage": 2780.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 30,
-      "maximum_damage": 4171.0,
-      "fields": []
-    },
-    {
-      "level": 32,
-      "minimum_damage": 2919.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 31,
-      "maximum_damage": 4379.0,
-      "fields": []
-    },
-    {
-      "level": 33,
-      "minimum_damage": 3065.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 31,
-      "maximum_damage": 4598.0,
-      "fields": []
-    },
-    {
-      "level": 34,
-      "minimum_damage": 3218.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 31,
-      "maximum_damage": 4827.0,
-      "fields": []
-    },
-    {
-      "level": 35,
-      "minimum_damage": 3378.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 31,
-      "maximum_damage": 5067.0,
-      "fields": []
-    },
-    {
-      "level": 36,
-      "minimum_damage": 3546.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 32,
-      "maximum_damage": 5318.0,
-      "fields": []
-    },
-    {
-      "level": 37,
-      "minimum_damage": 3721.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 32,
-      "maximum_damage": 5582.0,
-      "fields": []
-    },
-    {
-      "level": 38,
-      "minimum_damage": 3905.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 32,
-      "maximum_damage": 5858.0,
-      "fields": []
-    },
-    {
-      "level": 39,
-      "minimum_damage": 4098.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 33,
-      "maximum_damage": 6147.0,
-      "fields": []
-    },
-    {
-      "level": 40,
-      "minimum_damage": 4300.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 33,
-      "maximum_damage": 6449.0,
-      "fields": []
-    }
-  ],
-  "tags": [
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Frostbolt Damage",
-      "10% increased Frostbolt Cast Speed",
-      "Frostbolt has +10% chance to Freeze",
-      "Vortex has 30% increased Area of Effect when Cast on Frostbolt"
-    ],
-    "eternal": [
-      "40% increased Frostbolt Damage",
-      "15% increased Frostbolt Cast Speed",
-      "Frostbolt has +15% chance to Freeze",
-      "Vortex has 45% increased Area of Effect when Cast on Frostbolt"
-    ]
-  },
-  "drop_level": null,
-  "type": [
-    "1"
+  "target_types": [
+    "enemy",
+    "ground"
   ],
   "mtx": [
     {
@@ -494,7 +507,44 @@
       "description": "Your Frostbolt becomes a flying black hole."
     }
   ],
-  "description": "Fires a slow-moving projectile that pierces through enemies, dealing cold damage.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Templar"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "1"
+  ],
+  "tags": [
+    "base_is_projectile [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Frostbolt Damage",
+      "15% increased Frostbolt Cast Speed",
+      "Frostbolt has +15% chance to Freeze",
+      "Vortex has 45% increased Area of Effect when Cast on Frostbolt"
+    ],
+    "merciless": [
+      "25% increased Frostbolt Damage",
+      "10% increased Frostbolt Cast Speed",
+      "Frostbolt has +10% chance to Freeze",
+      "Vortex has 30% increased Area of Effect when Cast on Frostbolt"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1148,55 +1198,6 @@
       ]
     }
   ],
-  "target_types": [
-    "enemy",
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% less Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance for Projectiles to Return",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cold Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% reduced Damage",
-          "minimum": 0.0,
-          "maximum": 100.0
-        },
-        {
-          "text": "% chance to inflict Cold Exposure on Hit",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 10.0
-    }
-  }
+  "name": "Frostbolt",
+  "description": "Fires a slow-moving projectile that pierces through enemies, dealing cold damage."
 }

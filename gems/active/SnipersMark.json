@@ -1,7 +1,921 @@
 {
-  "name": "Sniper's Mark",
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Curse Skills have % increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "Cursed enemies take % increased Damage from Projectile Hits",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "Hits on Cursed Enemies have an additional % chance to Knockback",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 24,
+  "slug": "sniper's-mark",
   "gem_class": "Active Skill Gems",
-  "acquisition": {},
+  "levels": [
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "16",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 27,
+        "dexterity": 64
+      },
+      "fields": [
+        {
+          "value": "6.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "17",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 30,
+        "dexterity": 71
+      },
+      "fields": [
+        {
+          "value": "6.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "18",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 33,
+        "dexterity": 77
+      },
+      "fields": [
+        {
+          "value": "6.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "19",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "6.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "20",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 39,
+        "dexterity": 90
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "21",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 23,
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 96
+      },
+      "fields": [
+        {
+          "value": "7.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "22",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 24,
+      "requirements": {
+        "requires_level": 45,
+        "dexterity": 102
+      },
+      "fields": [
+        {
+          "value": "7.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "23",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 25,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "7.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "24",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 113
+      },
+      "fields": [
+        {
+          "value": "7.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "3",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "25",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 26,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "26",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 27,
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 121
+      },
+      "fields": [
+        {
+          "value": "8.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "27",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 28,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "8.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "28",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 130
+      },
+      "fields": [
+        {
+          "value": "8.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "29",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 29,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "8.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "30",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 30,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 138
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "31",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "9.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "32",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 31,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 146
+      },
+      "fields": [
+        {
+          "value": "9.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "33",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 32,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 151
+      },
+      "fields": [
+        {
+          "value": "9.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "34",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 33,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "9.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "4",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "35",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "36",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 34,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "10.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "37",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 35,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "10.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "38",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "10.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "39",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 36,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "10.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "40",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 37,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "41",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 38,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "11.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "42",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "11.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "43",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 39,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "11.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "44",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "11.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "45",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 40,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "11.9",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "45",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "46",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 41,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12.1",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "46",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12.2",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "47",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12.3",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "47",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 42,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12.4",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "48",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12.5",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "48",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12.6",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "49",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 43,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12.7",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "49",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 44,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "12.8",
+          "name": "+_seconds_to_base_duration"
+        },
+        {
+          "value": "5",
+          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets"
+        },
+        {
+          "value": "50",
+          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+(6\u20139.8) seconds to Base duration",
     "Projectiles which Hit Cursed Enemies Split towards (3\u20134) additional targets",
@@ -9,902 +923,12 @@
     "You gain a Mana Flask Charge when you Hit Cursed Enemy, no morethan once every 0.5 secondsYou gain a Life Flask Charge when you Hit Cursed Enemy, no morethan once every 0.5 seconds"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "6"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 64,
-        "requires_level": 27
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "6.2"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 71,
-        "requires_level": 30
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "6.4"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 77,
-        "requires_level": 33
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "6.6"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "6.8"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 90,
-        "requires_level": 39
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "7"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 23,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "7.2"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 102,
-        "requires_level": 45
-      },
-      "mana_cost": 24,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "7.4"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 25,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "7.6"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "7.8"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "3"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 26,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "8"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 27,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "8.2"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 28,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "8.4"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "8.6"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 29,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "8.8"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 30,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.2"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 31,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.4"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 32,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.6"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 33,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "9.8"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "4"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 34,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.2"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 35,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.4"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.6"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 36,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "10.8"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 37,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 38,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.2"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.4"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 39,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.6"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.8"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 40,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "11.9"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 41,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.1"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.2"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.3"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 42,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.4"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.5"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.6"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 43,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.7"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 44,
-      "fields": [
-        {
-          "name": "+_seconds_to_base_duration",
-          "value": "12.8"
-        },
-        {
-          "name": "projectiles_which_hit_cursed_enemies_split_towards__additional_targets",
-          "value": "5"
-        },
-        {
-          "name": "cursed_enemies_take_%_increased_damage_from_projectile_hits",
-          "value": "50"
-        }
-      ]
-    }
+  "target_types": [
+    "ground",
+    "enemy"
   ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Sniper's Mark has 20% increased Curse Effect",
-      "Sniper's Mark has 30% increased Duration"
-    ],
-    "eternal": [
-      "Sniper's Mark has 30% increased Curse Effect",
-      "Sniper's Mark has 45% increased Duration"
-    ]
-  },
-  "drop_level": 24,
+  "mtx": [],
+  "acquisition": {},
   "type": [
     "spell",
     "duration",
@@ -919,8 +943,19 @@
     "type92",
     "mark"
   ],
-  "mtx": [],
-  "description": "Curses a single enemy, increasing the damage they take from projectiles, and making projectiles split when hitting them, to hit other targets around them. You can gain charges for your life and mana flasks by hitting the cursed enemy. You can only have one Mark at a time.",
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Sniper's Mark has 30% increased Curse Effect",
+      "Sniper's Mark has 45% increased Duration"
+    ],
+    "merciless": [
+      "Sniper's Mark has 20% increased Curse Effect",
+      "Sniper's Mark has 30% increased Duration"
+    ]
+  },
   "support": [
     {
       "name": "Trap Support",
@@ -1046,40 +1081,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Hits on Cursed Enemies have an additional % chance to Knockback",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "Cursed enemies take % increased Damage from Projectile Hits",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Curse Skills have % increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Sniper's Mark",
+  "description": "Curses a single enemy, increasing the damage they take from projectiles, and making projectiles split when hitting them, to hit other targets around them. You can gain charges for your life and mana flasks by hitting the cursed enemy. You can only have one Mark at a time."
 }

@@ -1,24 +1,731 @@
 {
-  "name": "Wave of Conviction",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Yeena"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Intruders in Black",
-      "classes": [
-        "Templar"
-      ],
-      "act": 2
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% of Physical Damage Converted to Cold Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Elemental Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 16,
+  "slug": "wave-of-conviction",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 9,
+      "maximum_damage": 48.0,
+      "minimum_damage": 32.0,
+      "requirements": {
+        "requires_level": 16,
+        "strength": 18,
+        "intelligence": 26
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 66.0,
+      "minimum_damage": 44.0,
+      "requirements": {
+        "requires_level": 20,
+        "strength": 22,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 89.0,
+      "minimum_damage": 59.0,
+      "requirements": {
+        "requires_level": 24,
+        "strength": 25,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 117.0,
+      "minimum_damage": 78.0,
+      "requirements": {
+        "requires_level": 28,
+        "strength": 29,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 144.0,
+      "minimum_damage": 96.0,
+      "requirements": {
+        "requires_level": 31,
+        "strength": 32,
+        "intelligence": 46
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 175.0,
+      "minimum_damage": 117.0,
+      "requirements": {
+        "requires_level": 34,
+        "strength": 35,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 212.0,
+      "minimum_damage": 142.0,
+      "requirements": {
+        "requires_level": 37,
+        "strength": 37,
+        "intelligence": 54
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 257.0,
+      "minimum_damage": 171.0,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 40,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 309.0,
+      "minimum_damage": 206.0,
+      "requirements": {
+        "requires_level": 43,
+        "strength": 43,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 370.0,
+      "minimum_damage": 247.0,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 46,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 443.0,
+      "minimum_damage": 295.0,
+      "requirements": {
+        "requires_level": 49,
+        "strength": 48,
+        "intelligence": 70
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 528.0,
+      "minimum_damage": 352.0,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 51,
+        "intelligence": 74
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 629.0,
+      "minimum_damage": 419.0,
+      "requirements": {
+        "requires_level": 55,
+        "strength": 54,
+        "intelligence": 78
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 747.0,
+      "minimum_damage": 498.0,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 57,
+        "intelligence": 82
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 837.0,
+      "minimum_damage": 558.0,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 59,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 936.0,
+      "minimum_damage": 624.0,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 60,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1047.0,
+      "minimum_damage": 698.0,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1170.0,
+      "minimum_damage": 780.0,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 64,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1307.0,
+      "minimum_damage": 871.0,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 66,
+        "intelligence": 95
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 1459.0,
+      "minimum_damage": 972.0,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1627.0,
+      "minimum_damage": 1085.0,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 1813.0,
+      "minimum_damage": 1209.0,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2020.0,
+      "minimum_damage": 1347.0,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 2249.0,
+      "minimum_damage": 1499.0,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2503.0,
+      "minimum_damage": 1669.0,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 2784.0,
+      "minimum_damage": 1856.0,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "50",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 3095.0,
+      "minimum_damage": 2063.0,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 27,
+      "maximum_damage": 3440.0,
+      "minimum_damage": 2293.0,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 3821.0,
+      "minimum_damage": 2547.0,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "56",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 4242.0,
+      "minimum_damage": 2828.0,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "58",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 4469.0,
+      "minimum_damage": 2980.0,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "59",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 4708.0,
+      "minimum_damage": 3139.0,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 4959.0,
+      "minimum_damage": 3306.0,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "61",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 5223.0,
+      "minimum_damage": 3482.0,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "62",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 5501.0,
+      "minimum_damage": 3667.0,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "63",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 5793.0,
+      "minimum_damage": 3862.0,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "64",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 6100.0,
+      "minimum_damage": 4066.0,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "65",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 6422.0,
+      "minimum_damage": 4281.0,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "66",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 6761.0,
+      "minimum_damage": 4507.0,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "67",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 7117.0,
+      "minimum_damage": 4745.0,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "%_increased_skill_effect_duration"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+0.5 seconds to Base duration",
     "Deals (32\u2013972) to (48\u20131459) Physical Damage",
@@ -29,705 +736,29 @@
     "Exposure applies -25% to Elemental Resistance matching highest Damage taken"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 32.0,
-      "requirements": {
-        "strength": 18,
-        "intelligence": 26,
-        "requires_level": 16
-      },
-      "mana_cost": 9,
-      "maximum_damage": 48.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": ""
-        }
-      ]
+  "target_types": [
+    "enemy",
+    "ground"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Intruders in Black",
+      "classes": [
+        "Templar"
+      ],
+      "act": 2
     },
-    {
-      "level": 2,
-      "minimum_damage": 44.0,
-      "requirements": {
-        "strength": 22,
-        "intelligence": 31,
-        "requires_level": 20
-      },
-      "mana_cost": 10,
-      "maximum_damage": 66.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 59.0,
-      "requirements": {
-        "strength": 25,
-        "intelligence": 37,
-        "requires_level": 24
-      },
-      "mana_cost": 11,
-      "maximum_damage": 89.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 78.0,
-      "requirements": {
-        "strength": 29,
-        "intelligence": 42,
-        "requires_level": 28
-      },
-      "mana_cost": 12,
-      "maximum_damage": 117.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 96.0,
-      "requirements": {
-        "strength": 32,
-        "intelligence": 46,
-        "requires_level": 31
-      },
-      "mana_cost": 13,
-      "maximum_damage": 144.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 117.0,
-      "requirements": {
-        "strength": 35,
-        "intelligence": 50,
-        "requires_level": 34
-      },
-      "mana_cost": 14,
-      "maximum_damage": 175.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 142.0,
-      "requirements": {
-        "strength": 37,
-        "intelligence": 54,
-        "requires_level": 37
-      },
-      "mana_cost": 15,
-      "maximum_damage": 212.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 171.0,
-      "requirements": {
-        "strength": 40,
-        "intelligence": 58,
-        "requires_level": 40
-      },
-      "mana_cost": 15,
-      "maximum_damage": 257.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 206.0,
-      "requirements": {
-        "strength": 43,
-        "intelligence": 62,
-        "requires_level": 43
-      },
-      "mana_cost": 16,
-      "maximum_damage": 309.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 247.0,
-      "requirements": {
-        "strength": 46,
-        "intelligence": 66,
-        "requires_level": 46
-      },
-      "mana_cost": 17,
-      "maximum_damage": 370.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 295.0,
-      "requirements": {
-        "strength": 48,
-        "intelligence": 70,
-        "requires_level": 49
-      },
-      "mana_cost": 18,
-      "maximum_damage": 443.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 352.0,
-      "requirements": {
-        "strength": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "mana_cost": 18,
-      "maximum_damage": 528.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 419.0,
-      "requirements": {
-        "strength": 54,
-        "intelligence": 78,
-        "requires_level": 55
-      },
-      "mana_cost": 19,
-      "maximum_damage": 629.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 498.0,
-      "requirements": {
-        "strength": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "mana_cost": 20,
-      "maximum_damage": 747.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 558.0,
-      "requirements": {
-        "strength": 59,
-        "intelligence": 84,
-        "requires_level": 60
-      },
-      "mana_cost": 20,
-      "maximum_damage": 837.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 624.0,
-      "requirements": {
-        "strength": 60,
-        "intelligence": 87,
-        "requires_level": 62
-      },
-      "mana_cost": 21,
-      "maximum_damage": 936.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 698.0,
-      "requirements": {
-        "strength": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1047.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 780.0,
-      "requirements": {
-        "strength": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1170.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 871.0,
-      "requirements": {
-        "strength": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1307.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 972.0,
-      "requirements": {
-        "strength": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "mana_cost": 23,
-      "maximum_damage": 1459.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 1085.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1627.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 1209.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 24,
-      "maximum_damage": 1813.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 1347.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2020.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 1499.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 25,
-      "maximum_damage": 2249.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 1669.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2503.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 1856.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 26,
-      "maximum_damage": 2784.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 2063.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 27,
-      "maximum_damage": 3095.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 2293.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 27,
-      "maximum_damage": 3440.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 2547.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 28,
-      "maximum_damage": 3821.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 2828.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 28,
-      "maximum_damage": 4242.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "58"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 2980.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 28,
-      "maximum_damage": 4469.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "59"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 3139.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 29,
-      "maximum_damage": 4708.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 3306.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 29,
-      "maximum_damage": 4959.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "61"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 3482.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 29,
-      "maximum_damage": 5223.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 3667.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 29,
-      "maximum_damage": 5501.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "63"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 3862.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 30,
-      "maximum_damage": 5793.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 4066.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 30,
-      "maximum_damage": 6100.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "65"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 4281.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 30,
-      "maximum_damage": 6422.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 4507.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 30,
-      "maximum_damage": 6761.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "67"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 4745.0,
-      "requirements": {
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 31,
-      "maximum_damage": 7117.0,
-      "fields": [
-        {
-          "name": "%_increased_skill_effect_duration",
-          "value": "68"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Yeena"
     }
-  ],
-  "tags": [
-    "is_area_damage [1]",
-    "visual_hit_effect_elemental_is_holy [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Wave of Conviction deals 25% increased Damage",
-      "Wave of Conviction's Exposure applies -4% Elemental Resistance",
-      "Wave of Conviction has 20% increased Duration"
-    ],
-    "eternal": [
-      "Wave of Conviction deals 40% increased Damage",
-      "Wave of Conviction's Exposure applies -6% Elemental Resistance",
-      "Wave of Conviction has 30% increased Duration"
-    ]
   },
-  "drop_level": 16,
   "type": [
     "spell",
     "area",
@@ -744,8 +775,22 @@
     "areaspell",
     "physicalskill"
   ],
-  "mtx": [],
-  "description": "An expanding wave of energy surges forward, damaging enemies in a cone-shaped area over a duration. Each enemy hit is inflicted with Exposure matching the element of which they took the highest damage. Only one Wave of Conviction can be active at a time",
+  "tags": [
+    "is_area_damage [1]",
+    "visual_hit_effect_elemental_is_holy [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Wave of Conviction deals 40% increased Damage",
+      "Wave of Conviction's Exposure applies -6% Elemental Resistance",
+      "Wave of Conviction has 30% increased Duration"
+    ],
+    "merciless": [
+      "Wave of Conviction deals 25% increased Damage",
+      "Wave of Conviction's Exposure applies -4% Elemental Resistance",
+      "Wave of Conviction has 20% increased Duration"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1334,50 +1379,6 @@
       ]
     }
   ],
-  "target_types": [
-    "enemy",
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% of Physical Damage Converted to Cold Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Elemental Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Wave of Conviction",
+  "description": "An expanding wave of energy surges forward, damaging enemies in a cone-shaped area over a duration. Each enemy hit is inflicted with Exposure matching the element of which they took the highest damage. Only one Wave of Conviction can be active at a time"
 }

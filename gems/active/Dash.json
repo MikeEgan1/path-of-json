@@ -1,14 +1,778 @@
 {
-  "name": "Dash",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "All",
-        "Classes"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased travel distance",
+          "minimum": 0.0
+        }
+      ]
     },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Grants Phasing for  seconds",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 4,
+  "slug": "dash",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 4,
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 16
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "0",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 6,
+        "dexterity": 20
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "3",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 5,
+      "requirements": {
+        "requires_level": 9,
+        "dexterity": 27
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 6,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 33
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "9",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 7,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "15",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 8,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 9,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 10,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 11,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 12,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 13,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 55,
+        "dexterity": 123
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 14,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 130
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "45",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 61,
+        "dexterity": 136
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 15,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "51",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "51",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 148
+      },
+      "fields": [
+        {
+          "value": "54",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 16,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "57",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "57",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 17,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "63",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "63",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "66",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "66",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "69",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "69",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 18,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "72",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "72",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "75",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "75",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "78",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "78",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 19,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "81",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "81",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "84",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "84",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "87",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "87",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "88",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "88",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 20,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "90",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "90",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "91",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "91",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "93",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "93",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "94",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "94",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "96",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "96",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 21,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "97",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "97",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "99",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "99",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "100",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 22,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "102",
+          "name": "%_increased_cooldown_recovery_rate"
+        },
+        {
+          "value": "102",
+          "name": "%_increased_travel_distance"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "(0\u201357)% increased Cooldown Recovery Rate",
+    "(0\u201357)% increased travel distance",
+    "This Skill's Cast Speed cannot be modified"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/WildDashEffect.png?w=2&h=2&scale=1",
+      "name": "Wild Dash Effect",
+      "description": "Your Dash becomes a Wild Effect."
+    }
+  ],
+  "acquisition": {
     "quest": {
       "quest_name": "Breaking Some Eggs",
       "classes": [
@@ -18,735 +782,21 @@
         "Scion"
       ],
       "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "All",
+        "Classes"
+      ],
+      "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "(0\u201357)% increased Cooldown Recovery Rate",
-    "(0\u201357)% increased travel distance",
-    "This Skill's Cast Speed cannot be modified"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": ""
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 20,
-        "requires_level": 6
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 27,
-        "requires_level": 9
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "12"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "15"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "18"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "21"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "27"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "30"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "33"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "36"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "39"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 123,
-        "requires_level": 55
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "42"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "45"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 136,
-        "requires_level": 61
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "48"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "51"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "54"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "57"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "57"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "60"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "63"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "63"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "66"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "69"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "69"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "72"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "75"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "75"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "78"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "78"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "81"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "81"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "84"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "87"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "87"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "88"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "88"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "90"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "90"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "91"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "91"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "93"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "93"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "94"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "94"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "96"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "96"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "97"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "97"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "99"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "99"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "100"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "%_increased_cooldown_recovery_rate",
-          "value": "102"
-        },
-        {
-          "name": "%_increased_travel_distance",
-          "value": "102"
-        }
-      ]
-    }
+  "type": [
+    "spell",
+    "movementskill",
+    "travelskill",
+    "blinkskill",
+    "secondwindsupport"
   ],
   "tags": [
     "base_deal_no_damage [1]",
@@ -755,17 +805,6 @@
     "skill_cannot_be_stunned [1]"
   ],
   "enchants": {
-    "merciless": [
-      "25% increased Charged Dash Damage",
-      "25% increased Flame Dash Damage",
-      "4% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently",
-      "Charged Dash has +4 to Radius of each Wave's last damage Area",
-      "Charged Dash has 10% more Movement Speed",
-      "Lacerate deals (4\u20138) to (10\u201315) added Physical Damage against Bleeding Enemies",
-      "Flame Dash has 20% increased Cooldown Recovery Rate",
-      "Dash travels 65% increased distance",
-      "Dash has +1 Cooldown Use"
-    ],
     "eternal": [
       "40% increased Charged Dash Damage",
       "40% increased Flame Dash Damage",
@@ -776,24 +815,19 @@
       "Flame Dash has 30% increased Cooldown Recovery Rate",
       "Dash travels 100% increased distance",
       "Dash has +2 Cooldown Uses"
+    ],
+    "merciless": [
+      "25% increased Charged Dash Damage",
+      "25% increased Flame Dash Damage",
+      "4% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently",
+      "Charged Dash has +4 to Radius of each Wave's last damage Area",
+      "Charged Dash has 10% more Movement Speed",
+      "Lacerate deals (4\u20138) to (10\u201315) added Physical Damage against Bleeding Enemies",
+      "Flame Dash has 20% increased Cooldown Recovery Rate",
+      "Dash travels 65% increased distance",
+      "Dash has +1 Cooldown Use"
     ]
   },
-  "drop_level": 4,
-  "type": [
-    "spell",
-    "movementskill",
-    "travelskill",
-    "blinkskill",
-    "secondwindsupport"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/WildDashEffect.png?w=2&h=2&scale=1",
-      "name": "Wild Dash Effect",
-      "description": "Your Dash becomes a Wild Effect."
-    }
-  ],
-  "description": "Performs a series of quick teleports towards a targeted location. If using the \"Attack in Place\" option, the direction is reversed. Shares a cooldown with other Blink skills.",
   "support": [
     {
       "name": "Faster Casting Support",
@@ -814,39 +848,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Grants Phasing for  seconds",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased travel distance",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Dash",
+  "description": "Performs a series of quick teleports towards a targeted location. If using the \"Attack in Place\" option, the direction is reversed. Shares a cooldown with other Blink skills."
 }

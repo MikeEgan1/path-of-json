@@ -1,50 +1,44 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Impending Doom Support",
+  "levels": [
+    {
+      "requirements": {},
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "% increased Area of Effect"
+          "name": "implicit",
+          "value": "Trigger This Skill when a Hex from Supported Skills endsis_area_damage [1]"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "anomalous": {
-      "mods": [
+    {
+      "requirements": {},
+      "fields": [
         {
-          "minimum": null,
-          "maximum": null,
-          "text": ""
+          "name": "implicit",
+          "value": ":"
         }
-      ],
-      "weight": 100.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "requirements": {},
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 1.0,
-          "text": "+ Cooldown Use"
-        },
-        {
-          "minimum": 25.0,
-          "maximum": 0.0,
-          "text": "% more Damage per 5 Doom on Hex"
+          "name": "implicit",
+          "value": "50% more Damage per 5 Doom on Hex"
         }
-      ],
-      "weight": 20.0
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "impending-doom-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Trigger Doom Blast when a Hex from Supported Curse Skills ends",
     "Deals (25\u2013216) to (37\u2013325) Chaos Damage"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports hex curse skills, causing them to trigger Doom Blast when the hex ends. Cannot support curse skills which are triggered or applied as an aura.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -56,16 +50,19 @@
       "vendor_name": "Clarissa"
     },
     "quest": {
+      "act": 3,
       "classes": [
         "Witch",
         "Shadow",
         "Scion"
       ],
-      "quest_name": "A Fixture of Fate",
-      "act": 3
+      "quest_name": "A Fixture of Fate"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -255,39 +252,43 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Impending Doom Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports hex curse skills, causing them to trigger Doom Blast when the hex ends. Cannot support curse skills which are triggered or applied as an aura.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "implicit",
-          "value": "Trigger This Skill when a Hex from Supported Skills endsis_area_damage [1]"
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
         }
       ],
-      "requirements": {}
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "implicit",
-          "value": ":"
+          "maximum": null,
+          "text": "",
+          "minimum": null
         }
       ],
-      "requirements": {}
+      "weight": 100.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "implicit",
-          "value": "50% more Damage per 5 Doom on Hex"
+          "maximum": 1.0,
+          "text": "+ Cooldown Use",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 0.0,
+          "text": "% more Damage per 5 Doom on Hex",
+          "minimum": 25.0
         }
       ],
-      "requirements": {}
+      "weight": 20.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

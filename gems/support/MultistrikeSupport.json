@@ -1,45 +1,731 @@
 {
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
-  "quality": {
-    "superior": {
-      "mods": [
+  "name": "Multistrike Support",
+  "levels": [
+    {
+      "level": 1,
+      "requirements": {
+        "requires_level": 38,
+        "strength": 40,
+        "dexterity": 27
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills deal % increased Melee Physical Damage"
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Supported Skills have % reduced Attack Speed"
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "35"
         },
         {
-          "minimum": 0.0,
-          "maximum": 20.0,
-          "text": "Supported Skills have % increased Area of Effect per Repeat"
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "20"
         }
-      ],
-      "weight": 50.0
+      ]
     },
-    "divergent": {
-      "mods": [
+    {
+      "level": 2,
+      "requirements": {
+        "requires_level": 40,
+        "strength": 41,
+        "dexterity": 29
+      },
+      "fields": [
         {
-          "minimum": 0.0,
-          "maximum": 10.0,
-          "text": "Supported Skills have % increased Attack Speed"
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "35"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "19"
         }
-      ],
-      "weight": 100.0
+      ]
+    },
+    {
+      "level": 3,
+      "requirements": {
+        "requires_level": 42,
+        "strength": 43,
+        "dexterity": 30
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "36"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "requirements": {
+        "requires_level": 44,
+        "strength": 45,
+        "dexterity": 31
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "36"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "requirements": {
+        "requires_level": 46,
+        "strength": 47,
+        "dexterity": 33
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "37"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "requirements": {
+        "requires_level": 48,
+        "strength": 49,
+        "dexterity": 34
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "37"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "requirements": {
+        "requires_level": 50,
+        "strength": 51,
+        "dexterity": 35
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "38"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "requirements": {
+        "requires_level": 52,
+        "strength": 53,
+        "dexterity": 37
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "38"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "requirements": {
+        "requires_level": 54,
+        "strength": 55,
+        "dexterity": 38
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "39"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "requirements": {
+        "requires_level": 56,
+        "strength": 57,
+        "dexterity": 39
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "39"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "requirements": {
+        "requires_level": 58,
+        "strength": 58,
+        "dexterity": 40
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "40"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "requirements": {
+        "requires_level": 60,
+        "strength": 60,
+        "dexterity": 42
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "40"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "requirements": {
+        "requires_level": 62,
+        "strength": 62,
+        "dexterity": 43
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "41"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "requirements": {
+        "requires_level": 64,
+        "strength": 64,
+        "dexterity": 44
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "41"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "requirements": {
+        "requires_level": 65,
+        "strength": 65,
+        "dexterity": 45
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "42"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "requirements": {
+        "requires_level": 66,
+        "strength": 66,
+        "dexterity": 46
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "42"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "requirements": {
+        "requires_level": 67,
+        "strength": 67,
+        "dexterity": 46
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "43"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "requirements": {
+        "requires_level": 68,
+        "strength": 68,
+        "dexterity": 47
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "43"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "requirements": {
+        "requires_level": 69,
+        "strength": 69,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "44"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "requirements": {
+        "requires_level": 70,
+        "strength": 70,
+        "dexterity": 48
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "44"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "requirements": {
+        "requires_level": 72,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "45"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "requirements": {
+        "requires_level": 74,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "45"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "requirements": {
+        "requires_level": 76,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "46"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "requirements": {
+        "requires_level": 78,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "46"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "requirements": {
+        "requires_level": 80,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "47"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "requirements": {
+        "requires_level": 82,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "47"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "requirements": {
+        "requires_level": 84,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "48"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "requirements": {
+        "requires_level": 86,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "48"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "requirements": {
+        "requires_level": 88,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "49"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "requirements": {
+        "requires_level": 90,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "49"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "requirements": {
+        "requires_level": 91,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "50"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "requirements": {
+        "requires_level": 92,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "50"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "requirements": {
+        "requires_level": 93,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "51"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "requirements": {
+        "requires_level": 94,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "51"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "requirements": {
+        "requires_level": 95,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "52"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "requirements": {
+        "requires_level": 96,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "52"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "requirements": {
+        "requires_level": 97,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "53"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "requirements": {
+        "requires_level": 98,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "53"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "requirements": {
+        "requires_level": 99,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "54"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "requirements": {
+        "requires_level": 100,
+        "strength": null,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "name": "supported_skills_have_%_more_melee_attack_speed",
+          "value": "54"
+        },
+        {
+          "name": "supported_skills_deal_%_less_attack_damage",
+          "value": ""
+        }
+      ]
     }
-  },
+  ],
+  "vaal": false,
+  "slug": "multistrike-support",
+  "type": [],
+  "target_types": [],
   "mods": [
     "Supported Skills Repeat 2 additional times",
     "Supported Skills have (35\u201344)% more Melee Attack Speed",
@@ -47,7 +733,8 @@
     "Second Repeat of Supported Skills deals 44% more Damage",
     "Supported Skills deal (10\u201320)% less Attack Damage"
   ],
-  "tags": [],
+  "gem_class": "Support Skill Gems",
+  "description": "Supports melee attack skills, making them repeat twice when used, targeting a random enemy each time. Cannot support Vaal skills, totem skills, channelling skills, or triggered skills.",
   "acquisition": {
     "vendor": {
       "classes": [
@@ -57,15 +744,18 @@
       "vendor_name": "Petarus and Vanja"
     },
     "quest": {
+      "act": 4,
       "classes": [
         "All",
         "Classes"
       ],
-      "quest_name": "The Eternal Nightmare",
-      "act": 4
+      "quest_name": "The Eternal Nightmare"
     }
   },
-  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
   "mtx": [],
   "support": [
     {
@@ -450,732 +1140,43 @@
       ]
     }
   ],
-  "gem_class": "Support Skill Gems",
-  "name": "Multistrike Support",
-  "target_types": [],
-  "vaal": false,
-  "description": "Supports melee attack skills, making them repeat twice when used, targeting a random enemy each time. Cannot support Vaal skills, totem skills, channelling skills, or triggered skills.",
-  "drop_level": null,
-  "levels": [
-    {
-      "fields": [
+  "quality": {
+    "superior": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "35"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "20"
+          "maximum": 10.0,
+          "text": "Supported Skills deal % increased Melee Physical Damage",
+          "minimum": 0.0
         }
       ],
-      "level": 1,
-      "requirements": {
-        "requires_level": 38,
-        "dexterity": 27,
-        "strength": 40
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "anomalous": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "35"
+          "maximum": 20.0,
+          "text": "Supported Skills have % reduced Attack Speed",
+          "minimum": 0.0
         },
         {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "19"
+          "maximum": 20.0,
+          "text": "Supported Skills have % increased Area of Effect per Repeat",
+          "minimum": 0.0
         }
       ],
-      "level": 2,
-      "requirements": {
-        "requires_level": 40,
-        "dexterity": 29,
-        "strength": 41
-      }
+      "weight": 50.0
     },
-    {
-      "fields": [
+    "divergent": {
+      "mods": [
         {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "36"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "19"
+          "maximum": 10.0,
+          "text": "Supported Skills have % increased Attack Speed",
+          "minimum": 0.0
         }
       ],
-      "level": 3,
-      "requirements": {
-        "requires_level": 42,
-        "dexterity": 30,
-        "strength": 43
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "36"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "18"
-        }
-      ],
-      "level": 4,
-      "requirements": {
-        "requires_level": 44,
-        "dexterity": 31,
-        "strength": 45
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "37"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "18"
-        }
-      ],
-      "level": 5,
-      "requirements": {
-        "requires_level": 46,
-        "dexterity": 33,
-        "strength": 47
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "37"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "17"
-        }
-      ],
-      "level": 6,
-      "requirements": {
-        "requires_level": 48,
-        "dexterity": 34,
-        "strength": 49
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "38"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "17"
-        }
-      ],
-      "level": 7,
-      "requirements": {
-        "requires_level": 50,
-        "dexterity": 35,
-        "strength": 51
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "38"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "16"
-        }
-      ],
-      "level": 8,
-      "requirements": {
-        "requires_level": 52,
-        "dexterity": 37,
-        "strength": 53
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "39"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "16"
-        }
-      ],
-      "level": 9,
-      "requirements": {
-        "requires_level": 54,
-        "dexterity": 38,
-        "strength": 55
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "39"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "15"
-        }
-      ],
-      "level": 10,
-      "requirements": {
-        "requires_level": 56,
-        "dexterity": 39,
-        "strength": 57
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "40"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "15"
-        }
-      ],
-      "level": 11,
-      "requirements": {
-        "requires_level": 58,
-        "dexterity": 40,
-        "strength": 58
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "40"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "14"
-        }
-      ],
-      "level": 12,
-      "requirements": {
-        "requires_level": 60,
-        "dexterity": 42,
-        "strength": 60
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "41"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "14"
-        }
-      ],
-      "level": 13,
-      "requirements": {
-        "requires_level": 62,
-        "dexterity": 43,
-        "strength": 62
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "41"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "13"
-        }
-      ],
-      "level": 14,
-      "requirements": {
-        "requires_level": 64,
-        "dexterity": 44,
-        "strength": 64
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "42"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "13"
-        }
-      ],
-      "level": 15,
-      "requirements": {
-        "requires_level": 65,
-        "dexterity": 45,
-        "strength": 65
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "42"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "12"
-        }
-      ],
-      "level": 16,
-      "requirements": {
-        "requires_level": 66,
-        "dexterity": 46,
-        "strength": 66
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "43"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "12"
-        }
-      ],
-      "level": 17,
-      "requirements": {
-        "requires_level": 67,
-        "dexterity": 46,
-        "strength": 67
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "43"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "11"
-        }
-      ],
-      "level": 18,
-      "requirements": {
-        "requires_level": 68,
-        "dexterity": 47,
-        "strength": 68
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "44"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "11"
-        }
-      ],
-      "level": 19,
-      "requirements": {
-        "requires_level": 69,
-        "dexterity": 48,
-        "strength": 69
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "44"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "10"
-        }
-      ],
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "dexterity": 48,
-        "strength": 70
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "45"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "10"
-        }
-      ],
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "45"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "9"
-        }
-      ],
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "46"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "9"
-        }
-      ],
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "46"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "8"
-        }
-      ],
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "47"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "8"
-        }
-      ],
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "47"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "7"
-        }
-      ],
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "48"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "7"
-        }
-      ],
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "48"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "6"
-        }
-      ],
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "49"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "6"
-        }
-      ],
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "49"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "5"
-        }
-      ],
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "50"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "5"
-        }
-      ],
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "50"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "4"
-        }
-      ],
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "51"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "4"
-        }
-      ],
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "51"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "3"
-        }
-      ],
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "52"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "3"
-        }
-      ],
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "52"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "2"
-        }
-      ],
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "53"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "2"
-        }
-      ],
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "53"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "1"
-        }
-      ],
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "54"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": "1"
-        }
-      ],
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "dexterity": null,
-        "strength": null
-      }
-    },
-    {
-      "fields": [
-        {
-          "name": "supported_skills_have_%_more_melee_attack_speed",
-          "value": "54"
-        },
-        {
-          "name": "supported_skills_deal_%_less_attack_damage",
-          "value": ""
-        }
-      ],
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "dexterity": null,
-        "strength": null
-      }
+      "weight": 100.0
     }
-  ]
+  },
+  "drop_level": null,
+  "tags": []
 }

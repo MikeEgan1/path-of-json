@@ -1,24 +1,1206 @@
 {
-  "name": "Frost Blades",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Fires  additional Projectiles",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Ranger"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Duration of Cold Ailments",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": null,
+  "slug": "frost-blades",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 1,
+        "dexterity": 10
+      },
+      "fields": [
+        {
+          "value": "100%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "2, 3",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 2,
+        "dexterity": 12
+      },
+      "fields": [
+        {
+          "value": "102.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "1",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "2, 3",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 16
+      },
+      "fields": [
+        {
+          "value": "104.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "2",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "3, 4",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 7,
+        "dexterity": 22
+      },
+      "fields": [
+        {
+          "value": "106.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "3",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "4, 6",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 11,
+        "dexterity": 31
+      },
+      "fields": [
+        {
+          "value": "108.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "18",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "5, 8",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 41
+      },
+      "fields": [
+        {
+          "value": "110.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "5",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "7, 11",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 50
+      },
+      "fields": [
+        {
+          "value": "112.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "6",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "9, 13",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 58
+      },
+      "fields": [
+        {
+          "value": "114.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "7",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "11, 17",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 67
+      },
+      "fields": [
+        {
+          "value": "116.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "14, 20",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 75
+      },
+      "fields": [
+        {
+          "value": "118.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "19",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "9",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "16, 25",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 83
+      },
+      "fields": [
+        {
+          "value": "121.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "10",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "20, 30",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 92
+      },
+      "fields": [
+        {
+          "value": "123.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "11",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "24, 35",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 100
+      },
+      "fields": [
+        {
+          "value": "125.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "28, 42",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 109
+      },
+      "fields": [
+        {
+          "value": "127.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "13",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "33, 49",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 117
+      },
+      "fields": [
+        {
+          "value": "129.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "6",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "20",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "14",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "39, 58",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 125
+      },
+      "fields": [
+        {
+          "value": "131.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "15",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "45, 68",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 134
+      },
+      "fields": [
+        {
+          "value": "133.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "52, 79",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 142
+      },
+      "fields": [
+        {
+          "value": "135.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "17",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "61, 91",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 148
+      },
+      "fields": [
+        {
+          "value": "137.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "18",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "68, 102",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 155
+      },
+      "fields": [
+        {
+          "value": "140%",
+          "name": "base_damage"
+        },
+        {
+          "value": "7",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "21",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "19",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "75, 113",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "142.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "22",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "81, 122",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "144.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "22",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "87, 130",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "146.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "22",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "93, 140",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "148.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "22",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "23",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "100, 150",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "150.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "8",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "22",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "107, 160",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "152.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "23",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "25",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "114, 172",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "154.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "23",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "123, 184",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "156.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "23",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "131, 197",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "158.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "23",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "140, 210",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "161.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "23",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "150, 224",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "162.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "9",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "23",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "155, 232",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "163.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "160, 240",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "164.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "165, 248",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "165.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "171, 256",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "166.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "176, 265",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "167.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "182, 273",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "168.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "188, 282",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "169.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "194, 292",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "170.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "201, 301",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null
+      },
+      "fields": [
+        {
+          "value": "171.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "10",
+          "name": "fires__additional_projectiles"
+        },
+        {
+          "value": "24",
+          "name": "+_to_melee_strike_range"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_projectile_speed"
+        },
+        {
+          "value": "207, 311",
+          "name": "_to__added_cold_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (100\u2013140)% of Base Attack Damage",
     "Fires (4\u20137) additional Projectiles",
@@ -28,1182 +1210,35 @@
     "(2\u201375) to (3\u2013113) Added Cold Damage"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "requirements": {
-        "dexterity": 10,
-        "requires_level": 1
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "100%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": ""
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "2, 3"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 12,
-        "requires_level": 2
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "102.1%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "2, 3"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "104.2%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "3, 4"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 22,
-        "requires_level": 7
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "106.3%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "4, 6"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 31,
-        "requires_level": 11
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "108.4%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "4"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "18"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "5, 8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "110.5%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "7, 11"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "112.6%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "6"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "9, 13"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "114.7%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "7"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "11, 17"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "116.8%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "8"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "14, 20"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "118.9%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "5"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "19"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "9"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "16, 25"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "121.1%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "10"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "20, 30"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "123.2%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "11"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "24, 35"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "125.3%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "12"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "28, 42"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "127.4%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "13"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "33, 49"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "129.5%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "6"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "20"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "14"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "39, 58"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "131.6%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "15"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "45, 68"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "133.7%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "16"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "52, 79"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "135.8%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "17"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "61, 91"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "137.9%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "18"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "68, 102"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "140%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "7"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "21"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "19"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "75, 113"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "142.1%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "22"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "20"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "81, 122"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "144.2%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "22"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "21"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "87, 130"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "146.3%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "22"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "22"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "93, 140"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "148.4%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "22"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "23"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "100, 150"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150.5%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "8"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "22"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "24"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "107, 160"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152.6%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "9"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "23"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "25"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "114, 172"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "154.7%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "9"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "23"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "26"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "123, 184"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "156.8%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "9"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "23"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "27"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "131, 197"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "158.9%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "9"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "23"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "28"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "140, 210"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "161.1%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "9"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "23"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "29"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "150, 224"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "162.1%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "9"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "23"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "29"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "155, 232"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "163.2%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "30"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "160, 240"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "164.2%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "30"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "165, 248"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "165.3%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "31"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "171, 256"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "166.3%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "31"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "176, 265"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "167.4%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "32"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "182, 273"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "168.4%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "32"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "188, 282"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "169.5%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "33"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "194, 292"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "170.5%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "33"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "201, 301"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "171.6%"
-        },
-        {
-          "name": "fires__additional_projectiles",
-          "value": "10"
-        },
-        {
-          "name": "+_to_melee_strike_range",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_projectile_speed",
-          "value": "34"
-        },
-        {
-          "name": "_to__added_cold_damage",
-          "value": "207, 311"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianFrostBlades.png?w=2&h=2&scale=1",
+      "name": "Stygian Frost Blades Effect",
+      "description": "Your Frost Blades becomes a Stygian Effect."
     }
   ],
-  "tags": [
-    "show_number_of_projectiles [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Frost Blades Damage",
-      "20% increased Frost Blades Projectile Speed"
-    ],
-    "eternal": [
-      "40% increased Frost Blades Damage",
-      "30% increased Frost Blades Projectile Speed"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Enemy at the Gate",
+      "classes": [
+        "Ranger"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
   },
-  "drop_level": null,
   "type": [
     "attack",
     "projectile",
@@ -1214,14 +1249,19 @@
     "projectileattack",
     "type83"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianFrostBlades.png?w=2&h=2&scale=1",
-      "name": "Stygian Frost Blades Effect",
-      "description": "Your Frost Blades becomes a Stygian Effect."
-    }
+  "tags": [
+    "show_number_of_projectiles [1]"
   ],
-  "description": "Attack enemies with increased range, releasing icy blades from the first enemy hit which fly at other enemies. Requires a Melee Weapon.",
+  "enchants": {
+    "eternal": [
+      "40% increased Frost Blades Damage",
+      "30% increased Frost Blades Projectile Speed"
+    ],
+    "merciless": [
+      "25% increased Frost Blades Damage",
+      "20% increased Frost Blades Projectile Speed"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1993,45 +2033,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Duration of Cold Ailments",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Fires  additional Projectiles",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Frost Blades",
+  "description": "Attack enemies with increased range, releasing icy blades from the first enemy hit which fly at other enemies. Requires a Melee Weapon."
 }

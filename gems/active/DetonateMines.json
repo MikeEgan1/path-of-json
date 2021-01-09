@@ -1,6 +1,139 @@
 {
-  "name": "Detonate Mines",
+  "quality": {
+    "anomalous": {
+      "weight": 1.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Recover % of Life for each Mine Detonated",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 1000.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Mines have % increased Detonation Speed",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 8,
+  "slug": "detonate-mines",
   "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 8,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 10
+    }
+  ],
+  "mods": [
+    "First Mine Detonates InstantlyMines get 10% more Detonation Speed for each prior Mine in Detonation Sequence"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [],
   "acquisition": {
     "vendor": {
       "classes": [
@@ -10,120 +143,6 @@
       "vendor_name": "Lilly Roth (Level 1)"
     }
   },
-  "mods": [
-    "First Mine Detonates InstantlyMines get 10% more Detonation Speed for each prior Mine in Detonation Sequence"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 8
-      },
-      "fields": []
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [],
-    "eternal": []
-  },
-  "drop_level": 8,
   "type": [
     "spell",
     "skillcantrap",
@@ -132,8 +151,13 @@
     "instant",
     "secondwindsupport"
   ],
-  "mtx": [],
-  "description": "Detonates a Mine, starting a Detonation Sequence which will detonate other Mines around it.",
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [],
+    "merciless": []
+  },
   "support": [
     {
       "name": "Trap Support",
@@ -180,29 +204,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "text": "Mines have % increased Detonation Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 1000.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Recover % of Life for each Mine Detonated",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 1.0
-    }
-  }
+  "name": "Detonate Mines",
+  "description": "Detonates a Mine, starting a Detonation Sequence which will detonate other Mines around it."
 }

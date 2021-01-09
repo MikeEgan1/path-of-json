@@ -1,25 +1,726 @@
 {
-  "name": "War Banner",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "You and nearby allies gain % increased Accuracy Rating",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 60.0,
+          "text": "% less Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Duelist"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased effect of Aura",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "war-banner",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 4,
+        "strength": 16
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "8",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 6,
+        "strength": 20
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "8",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 9,
+        "strength": 27
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "8",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 12,
+        "strength": 33
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "8",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "strength": 41
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "8",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "strength": 50
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "strength": 58
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "strength": 67
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "strength": 75
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "9",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "strength": 92
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "strength": 100
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "strength": 117
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 55,
+        "strength": 123
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "10",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "strength": 130
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 61,
+        "strength": 136
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "strength": 142
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "strength": 148
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "11",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "12",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "13",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating"
+        },
+        {
+          "value": "14",
+          "name": "nearby_enemies_take_%_increased_physical_damage"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Base Duration of 10 seconds after being Placed",
     "You and nearby allies gain (15\u201321)% increased Accuracy Rating",
@@ -31,714 +732,8 @@
     "Gain 1 Stage when you Kill an Enemy while carrying the Banner"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "15"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 20,
-        "requires_level": 6
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "15"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 27,
-        "requires_level": 9
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "15"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 33,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "16"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "16"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "16"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "17"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "17"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "17"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "18"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "18"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "18"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "19"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "19"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 123,
-        "requires_level": 55
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "19"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "20"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 136,
-        "requires_level": 61
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "20"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "20"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "21"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "21"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "21"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "22"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "22"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "22"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "23"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "23"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "23"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "24"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "24"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "24"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "25"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "25"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "25"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "26"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "26"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "26"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "27"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "27"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "27"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_gain_%_increased_accuracy_rating",
-          "value": "28"
-        },
-        {
-          "name": "nearby_enemies_take_%_increased_physical_damage",
-          "value": "14"
-        }
-      ]
-    }
-  ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "War Banner has 25% increased Aura Effect"
-    ],
-    "eternal": [
-      "War Banner has 40% increased Aura Effect"
-    ]
-  },
-  "drop_level": 4,
-  "type": [
-    "buff",
-    "area",
-    "spell",
-    "duration",
-    "manacostreserved",
-    "aura",
-    "manacostpercent",
-    "instant",
-    "areaspell",
-    "auraduration",
-    "physicalskill",
-    "banner",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "ground"
   ],
   "mtx": [
     {
@@ -992,7 +987,51 @@
       "description": "Your Banner now has a Demonic Eye skin."
     }
   ],
-  "description": "Casting once reserves mana to carry a banner which increases the accuracy of nearby allies, and physical damage taken by nearby enemies. Gain stages by killing enemies while carrying the banner. Casting the skill again places the banner, ending the mana reservation. Once placed, it becomes more powerful for each stage gained. You cannot have multiple banners at the same time.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Duelist"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "buff",
+    "area",
+    "spell",
+    "duration",
+    "manacostreserved",
+    "aura",
+    "manacostpercent",
+    "instant",
+    "areaspell",
+    "auraduration",
+    "physicalskill",
+    "banner",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "War Banner has 40% increased Aura Effect"
+    ],
+    "merciless": [
+      "War Banner has 25% increased Aura Effect"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1086,44 +1125,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased effect of Aura",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "You and nearby allies gain % increased Accuracy Rating",
-          "minimum": 0.0,
-          "maximum": 10.0
-        },
-        {
-          "text": "% less Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 10.0
-    }
-  }
+  "name": "War Banner",
+  "description": "Casting once reserves mana to carry a banner which increases the accuracy of nearby allies, and physical damage taken by nearby enemies. Gain stages by killing enemies while carrying the banner. Casting the skill again places the banner, ending the mana reservation. Once placed, it becomes more powerful for each stage gained. You cannot have multiple banners at the same time."
 }

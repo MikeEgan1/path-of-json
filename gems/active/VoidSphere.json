@@ -1,16 +1,715 @@
 {
-  "name": "Void Sphere",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Petarus and Vanja"
+  "quality": {
+    "anomalous": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% reduced Skill Effect Duration",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 40.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
     },
+    "phantasmal": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Void Sphere has % increased Pulse Frequency",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% of Physical Damage Converted to Cold Damage",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 34,
+  "slug": "void-sphere",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 30,
+      "maximum_damage": 41.0,
+      "minimum_damage": 27.0,
+      "requirements": {
+        "requires_level": 34,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 47.0,
+      "minimum_damage": 31.0,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 34,
+      "maximum_damage": 53.0,
+      "minimum_damage": 36.0,
+      "requirements": {
+        "requires_level": 38,
+        "intelligence": 88
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 36,
+      "maximum_damage": 61.0,
+      "minimum_damage": 40.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 38,
+      "maximum_damage": 69.0,
+      "minimum_damage": 46.0,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 40,
+      "maximum_damage": 78.0,
+      "minimum_damage": 52.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 42,
+      "maximum_damage": 88.0,
+      "minimum_damage": 59.0,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 104
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 44,
+      "maximum_damage": 100.0,
+      "minimum_damage": 67.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 44,
+      "maximum_damage": 113.0,
+      "minimum_damage": 75.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 46,
+      "maximum_damage": 127.0,
+      "minimum_damage": 85.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 48,
+      "maximum_damage": 143.0,
+      "minimum_damage": 96.0,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 48,
+      "maximum_damage": 161.0,
+      "minimum_damage": 108.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 50,
+      "maximum_damage": 181.0,
+      "minimum_damage": 121.0,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 50,
+      "maximum_damage": 204.0,
+      "minimum_damage": 136.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 52,
+      "maximum_damage": 229.0,
+      "minimum_damage": 153.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 52,
+      "maximum_damage": 257.0,
+      "minimum_damage": 171.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 52,
+      "maximum_damage": 288.0,
+      "minimum_damage": 192.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 52,
+      "maximum_damage": 323.0,
+      "minimum_damage": 215.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 54,
+      "maximum_damage": 342.0,
+      "minimum_damage": 228.0,
+      "requirements": {
+        "requires_level": 69,
+        "intelligence": 153
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 54,
+      "maximum_damage": 361.0,
+      "minimum_damage": 241.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 56,
+      "maximum_damage": 404.0,
+      "minimum_damage": 270.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 56,
+      "maximum_damage": 452.0,
+      "minimum_damage": 302.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 58,
+      "maximum_damage": 506.0,
+      "minimum_damage": 337.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 58,
+      "maximum_damage": 565.0,
+      "minimum_damage": 376.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "41",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 60,
+      "maximum_damage": 630.0,
+      "minimum_damage": 420.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 60,
+      "maximum_damage": 704.0,
+      "minimum_damage": 469.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "42",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 60,
+      "maximum_damage": 785.0,
+      "minimum_damage": 523.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 60,
+      "maximum_damage": 875.0,
+      "minimum_damage": 583.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "43",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 62,
+      "maximum_damage": 975.0,
+      "minimum_damage": 650.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 62,
+      "maximum_damage": 1086.0,
+      "minimum_damage": 724.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 62,
+      "maximum_damage": 1146.0,
+      "minimum_damage": 764.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 63,
+      "maximum_damage": 1209.0,
+      "minimum_damage": 806.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 63,
+      "maximum_damage": 1276.0,
+      "minimum_damage": 851.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 63,
+      "maximum_damage": 1346.0,
+      "minimum_damage": 897.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 63,
+      "maximum_damage": 1420.0,
+      "minimum_damage": 947.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "45",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 64,
+      "maximum_damage": 1498.0,
+      "minimum_damage": 998.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 64,
+      "maximum_damage": 1580.0,
+      "minimum_damage": 1053.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 64,
+      "maximum_damage": 1666.0,
+      "minimum_damage": 1111.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 64,
+      "maximum_damage": 1757.0,
+      "minimum_damage": 1171.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "46",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 64,
+      "maximum_damage": 1852.0,
+      "minimum_damage": 1235.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "47",
+          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "+5 seconds to Base duration",
+    "Deals (27\u2013241) to (41\u2013361) Physical Damage",
+    "Enemies in range are Hindered, with up to (30\u201339)% reduced Movement Speed, based on distance from the Void Sphere",
+    "40% of Physical Damage Converted to Chaos Damage",
+    "Pulses every 0.4 seconds"
+  ],
+  "vaal": false,
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DivineVoidSphere.png?w=2&h=2&scale=1",
+      "name": "Divine Void Sphere Effect",
+      "description": "Your Void Sphere becomes a Divine Effect."
+    }
+  ],
+  "acquisition": {
     "quest": {
       "quest_name": "Breaking the Seal",
       "classes": [
@@ -20,675 +719,17 @@
         "Scion"
       ],
       "act": 4
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Petarus and Vanja"
     }
   },
-  "mods": [
-    "+5 seconds to Base duration",
-    "Deals (27\u2013241) to (41\u2013361) Physical Damage",
-    "Enemies in range are Hindered, with up to (30\u201339)% reduced Movement Speed, based on distance from the Void Sphere",
-    "40% of Physical Damage Converted to Chaos Damage",
-    "Pulses every 0.4 seconds"
-  ],
-  "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 27.0,
-      "requirements": {
-        "intelligence": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 30,
-      "maximum_damage": 41.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 31.0,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 32,
-      "maximum_damage": 47.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 36.0,
-      "requirements": {
-        "intelligence": 88,
-        "requires_level": 38
-      },
-      "mana_cost": 34,
-      "maximum_damage": 53.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 40.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 36,
-      "maximum_damage": 61.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 46.0,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 38,
-      "maximum_damage": 69.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 52.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 40,
-      "maximum_damage": 78.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 59.0,
-      "requirements": {
-        "intelligence": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 42,
-      "maximum_damage": 88.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 67.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 44,
-      "maximum_damage": 100.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 75.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 44,
-      "maximum_damage": 113.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 85.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 46,
-      "maximum_damage": 127.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 96.0,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 48,
-      "maximum_damage": 143.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 108.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 48,
-      "maximum_damage": 161.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 121.0,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 50,
-      "maximum_damage": 181.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 136.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 50,
-      "maximum_damage": 204.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 153.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 52,
-      "maximum_damage": 229.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 171.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 52,
-      "maximum_damage": 257.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 192.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 52,
-      "maximum_damage": 288.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 215.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 52,
-      "maximum_damage": 323.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 228.0,
-      "requirements": {
-        "intelligence": 153,
-        "requires_level": 69
-      },
-      "mana_cost": 54,
-      "maximum_damage": 342.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 241.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 54,
-      "maximum_damage": 361.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 270.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 56,
-      "maximum_damage": 404.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 302.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 56,
-      "maximum_damage": 452.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 337.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 58,
-      "maximum_damage": 506.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 376.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 58,
-      "maximum_damage": 565.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 420.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 60,
-      "maximum_damage": 630.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 469.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 60,
-      "maximum_damage": 704.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 523.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 60,
-      "maximum_damage": 785.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 583.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 60,
-      "maximum_damage": 875.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 650.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 62,
-      "maximum_damage": 975.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 724.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 62,
-      "maximum_damage": 1086.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 764.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 62,
-      "maximum_damage": 1146.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 806.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 63,
-      "maximum_damage": 1209.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 851.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 63,
-      "maximum_damage": 1276.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 897.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 63,
-      "maximum_damage": 1346.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 947.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 63,
-      "maximum_damage": 1420.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 998.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 64,
-      "maximum_damage": 1498.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 1053.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 64,
-      "maximum_damage": 1580.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 1111.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 64,
-      "maximum_damage": 1666.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 1171.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 64,
-      "maximum_damage": 1757.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 1235.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 64,
-      "maximum_damage": 1852.0,
-      "fields": [
-        {
-          "name": "enemies_in_range_are_hindered,_with_up_to_%_reduced_movement_speed,_based_on_distance_from_the_void_sphere",
-          "value": "47"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]",
-    "skill_can_add_multiple_charges_per_action [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Void Sphere has 20% increased Cooldown Recovery Rate",
-      "Enemies in Void Sphere's range take up to 6% increased Damage, based on distance from the Void Sphere",
-      "Void Sphere has 12% increased Pulse Frequency"
-    ],
-    "eternal": [
-      "Void Sphere has 30% increased Cooldown Recovery Rate",
-      "Enemies in Void Sphere's range take up to 10% increased Damage, based on distance from the Void Sphere",
-      "Void Sphere has 18% increased Pulse Frequency"
-    ]
-  },
-  "drop_level": 34,
   "type": [
     "spell",
     "area",
@@ -703,14 +744,22 @@
     "hit",
     "chaosskill"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DivineVoidSphere.png?w=2&h=2&scale=1",
-      "name": "Divine Void Sphere Effect",
-      "description": "Your Void Sphere becomes a Divine Effect."
-    }
+  "tags": [
+    "is_area_damage [1]",
+    "skill_can_add_multiple_charges_per_action [1]"
   ],
-  "description": "Creates a Void Sphere which Hinders enemies in an area around it, with the debuff being stronger on enemies closer to the sphere. It also regularly releases pulses of area damage. The Void Sphere will consume the corpses of any enemies which die in its area. Can only have one Void Sphere at a time.",
+  "enchants": {
+    "eternal": [
+      "Void Sphere has 30% increased Cooldown Recovery Rate",
+      "Enemies in Void Sphere's range take up to 10% increased Damage, based on distance from the Void Sphere",
+      "Void Sphere has 18% increased Pulse Frequency"
+    ],
+    "merciless": [
+      "Void Sphere has 20% increased Cooldown Recovery Rate",
+      "Enemies in Void Sphere's range take up to 6% increased Damage, based on distance from the Void Sphere",
+      "Void Sphere has 12% increased Pulse Frequency"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1281,54 +1330,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% of Physical Damage Converted to Cold Damage",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Void Sphere has % increased Pulse Frequency",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% reduced Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 40.0
-        },
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Void Sphere",
+  "description": "Creates a Void Sphere which Hinders enemies in an area around it, with the debuff being stronger on enemies closer to the sphere. It also regularly releases pulses of area damage. The Void Sphere will consume the corpses of any enemies which die in its area. Can only have one Void Sphere at a time."
 }

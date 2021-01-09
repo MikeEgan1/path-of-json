@@ -1,23 +1,681 @@
 {
-  "name": "Dark Pact",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 1.0,
+          "text": "Sacrifices % of Skeleton's Life to deal that much Chaos Damage",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Witch"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Minions recover % of Life on Hit",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "dark-pact",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 7,
+      "maximum_damage": 36.0,
+      "minimum_damage": 24.0,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 43.0,
+      "minimum_damage": 29.0,
+      "requirements": {
+        "requires_level": 31,
+        "intelligence": 73
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 52.0,
+      "minimum_damage": 35.0,
+      "requirements": {
+        "requires_level": 34,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 62.0,
+      "minimum_damage": 41.0,
+      "requirements": {
+        "requires_level": 37,
+        "intelligence": 85
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 74.0,
+      "minimum_damage": 49.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 83.0,
+      "minimum_damage": 55.0,
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 92.0,
+      "minimum_damage": 62.0,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 103.0,
+      "minimum_damage": 69.0,
+      "requirements": {
+        "requires_level": 46,
+        "intelligence": 104
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 115.0,
+      "minimum_damage": 77.0,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 129.0,
+      "minimum_damage": 86.0,
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 143.0,
+      "minimum_damage": 95.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "40",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 159.0,
+      "minimum_damage": 106.0,
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "44",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 177.0,
+      "minimum_damage": 118.0,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "48",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 196.0,
+      "minimum_damage": 131.0,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "52",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 218.0,
+      "minimum_damage": 145.0,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "56",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 242.0,
+      "minimum_damage": 161.0,
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "60",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 267.0,
+      "minimum_damage": 178.0,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "64",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 296.0,
+      "minimum_damage": 197.0,
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "68",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 327.0,
+      "minimum_damage": 218.0,
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "72",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 362.0,
+      "minimum_damage": 241.0,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "76",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 400.0,
+      "minimum_damage": 266.0,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "80",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 441.0,
+      "minimum_damage": 294.0,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "84",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 486.0,
+      "minimum_damage": 324.0,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "88",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 536.0,
+      "minimum_damage": 358.0,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "92",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 591.0,
+      "minimum_damage": 394.0,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "96",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 651.0,
+      "minimum_damage": 434.0,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 717.0,
+      "minimum_damage": 478.0,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "104",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 789.0,
+      "minimum_damage": 526.0,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "108",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 868.0,
+      "minimum_damage": 578.0,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "112",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 954.0,
+      "minimum_damage": 636.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "116",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 1000.0,
+      "minimum_damage": 667.0,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "118",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 1048.0,
+      "minimum_damage": 699.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "120",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 1099.0,
+      "minimum_damage": 733.0,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "122",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 1152.0,
+      "minimum_damage": 768.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "124",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 1207.0,
+      "minimum_damage": 805.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "126",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 1265.0,
+      "minimum_damage": 843.0,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "128",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 1325.0,
+      "minimum_damage": 884.0,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "130",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 1389.0,
+      "minimum_damage": 926.0,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "132",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 1455.0,
+      "minimum_damage": 970.0,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "134",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 1524.0,
+      "minimum_damage": 1016.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "136",
+          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Sacrifices 6% of Skeleton's Life to deal that much Chaos Damage",
     "Deals (24\u2013241) to (36\u2013362) Chaos Damage",
@@ -26,668 +684,28 @@
     "Uses your Life if no Skeletons in range"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 24.0,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 7,
-      "maximum_damage": 36.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "0"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "self"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Witch"
+      ],
+      "act": 3
     },
-    {
-      "level": 2,
-      "minimum_damage": 29.0,
-      "requirements": {
-        "intelligence": 73,
-        "requires_level": 31
-      },
-      "mana_cost": 7,
-      "maximum_damage": 43.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 35.0,
-      "requirements": {
-        "intelligence": 79,
-        "requires_level": 34
-      },
-      "mana_cost": 8,
-      "maximum_damage": 52.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 41.0,
-      "requirements": {
-        "intelligence": 85,
-        "requires_level": 37
-      },
-      "mana_cost": 8,
-      "maximum_damage": 62.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 49.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 9,
-      "maximum_damage": 74.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 55.0,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "mana_cost": 9,
-      "maximum_damage": 83.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 62.0,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 9,
-      "maximum_damage": 92.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 69.0,
-      "requirements": {
-        "intelligence": 104,
-        "requires_level": 46
-      },
-      "mana_cost": 10,
-      "maximum_damage": 103.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 77.0,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 10,
-      "maximum_damage": 115.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 86.0,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "mana_cost": 10,
-      "maximum_damage": 129.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 95.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 11,
-      "maximum_damage": 143.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 106.0,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "mana_cost": 11,
-      "maximum_damage": 159.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 118.0,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "mana_cost": 11,
-      "maximum_damage": 177.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 131.0,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 11,
-      "maximum_damage": 196.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 145.0,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "mana_cost": 12,
-      "maximum_damage": 218.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 161.0,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "mana_cost": 12,
-      "maximum_damage": 242.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 178.0,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 12,
-      "maximum_damage": 267.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 197.0,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "mana_cost": 13,
-      "maximum_damage": 296.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "68"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 218.0,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "mana_cost": 13,
-      "maximum_damage": 327.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 241.0,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 13,
-      "maximum_damage": 362.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "76"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 266.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 13,
-      "maximum_damage": 400.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "80"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 294.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 14,
-      "maximum_damage": 441.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 324.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 14,
-      "maximum_damage": 486.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "88"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 358.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 14,
-      "maximum_damage": 536.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 394.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 15,
-      "maximum_damage": 591.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "96"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 434.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 15,
-      "maximum_damage": 651.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 478.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 15,
-      "maximum_damage": 717.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "104"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 526.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 15,
-      "maximum_damage": 789.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "108"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 578.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 16,
-      "maximum_damage": 868.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "112"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 636.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 16,
-      "maximum_damage": 954.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "116"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 667.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 16,
-      "maximum_damage": 1000.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "118"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 699.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 16,
-      "maximum_damage": 1048.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "120"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 733.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 16,
-      "maximum_damage": 1099.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "122"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 768.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 17,
-      "maximum_damage": 1152.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "124"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 805.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 17,
-      "maximum_damage": 1207.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "126"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 843.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 17,
-      "maximum_damage": 1265.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "128"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 884.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 17,
-      "maximum_damage": 1325.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "130"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 926.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 17,
-      "maximum_damage": 1389.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "132"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 970.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 17,
-      "maximum_damage": 1455.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "134"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 1016.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 17,
-      "maximum_damage": 1524.0,
-      "fields": [
-        {
-          "name": "%_more_damage_with_hits_and_ailments_if_using_your_life",
-          "value": "136"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
     }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Dark Pact Damage",
-      "8% increased Dark Pact Cast Speed",
-      "16% increased Dark Pact Area of Effect",
-      "8% increased Dark Pact Cast Speed",
-      "16% increased Dark Pact Area of Effect"
-    ],
-    "eternal": [
-      "40% increased Dark Pact Damage",
-      "12% increased Dark Pact Cast Speed",
-      "24% increased Dark Pact Area of Effect",
-      "12% increased Dark Pact Cast Speed",
-      "24% increased Dark Pact Area of Effect"
-    ]
   },
-  "drop_level": 28,
   "type": [
     "spell",
     "hit",
@@ -704,8 +722,25 @@
     "areaspell",
     "novaspell"
   ],
-  "mtx": [],
-  "description": "This spell removes some life from one of your Skeleton minions near you or the targeted location to deal chaos damage in an area around it. This effect will chain to your other nearby skeletons. If you have no skeletons near you or the targeted location, it will sacrifice your own life to deal damage instead.",
+  "tags": [
+    "is_area_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Dark Pact Damage",
+      "12% increased Dark Pact Cast Speed",
+      "24% increased Dark Pact Area of Effect",
+      "12% increased Dark Pact Cast Speed",
+      "24% increased Dark Pact Area of Effect"
+    ],
+    "merciless": [
+      "25% increased Dark Pact Damage",
+      "8% increased Dark Pact Cast Speed",
+      "16% increased Dark Pact Area of Effect",
+      "8% increased Dark Pact Cast Speed",
+      "16% increased Dark Pact Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1292,40 +1327,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "self"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Minions recover % of Life on Hit",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Sacrifices % of Skeleton's Life to deal that much Chaos Damage",
-          "minimum": 0.0,
-          "maximum": 1.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Dark Pact",
+  "description": "This spell removes some life from one of your Skeleton minions near you or the targeted location to deal chaos damage in an area around it. This effect will chain to your other nearby skeletons. If you have no skeletons near you or the targeted location, it will sacrifice your own life to deal damage instead."
 }

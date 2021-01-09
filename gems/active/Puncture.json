@@ -1,24 +1,1091 @@
 {
-  "name": "Puncture",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Projectiles Pierce  additional Targets",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Duelist",
-        "Ranger"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% chance to Maim on Hit",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Bleeding inflicted by this Skill deals Damage % faster",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Targets  additional nearby Enemies",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "puncture",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 10,
+        "intelligence": 7
+      },
+      "fields": [
+        {
+          "value": "134.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "3, 4",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "30",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 6,
+        "dexterity": 13,
+        "intelligence": 9
+      },
+      "fields": [
+        {
+          "value": "136.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "3, 5",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "31",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 9,
+        "dexterity": 17,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "137.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "4, 7",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "32",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 21,
+        "intelligence": 14
+      },
+      "fields": [
+        {
+          "value": "139.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "5, 8",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "33",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 26,
+        "intelligence": 18
+      },
+      "fields": [
+        {
+          "value": "141%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "7, 11",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "34",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 31,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "142.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "0",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "9, 13",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "35",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 37,
+        "intelligence": 25
+      },
+      "fields": [
+        {
+          "value": "144.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "11, 17",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "36",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 42,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "145.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "14, 20",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "37",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 47,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "147.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "16, 25",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "38",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 53,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "148.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "20, 30",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "39",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 58,
+        "intelligence": 40
+      },
+      "fields": [
+        {
+          "value": "150.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "24, 35",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "40",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "152%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "28, 42",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "41",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "153.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "1",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "33, 49",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "42",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "155.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "39, 58",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "43",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 55,
+        "dexterity": 78,
+        "intelligence": 54
+      },
+      "fields": [
+        {
+          "value": "156.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "43, 65",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "44",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 82,
+        "intelligence": 57
+      },
+      "fields": [
+        {
+          "value": "158.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "49, 73",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "45",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 61,
+        "dexterity": 86,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "159.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "54, 82",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "46",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "161.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "61, 91",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "47",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 94,
+        "intelligence": 65
+      },
+      "fields": [
+        {
+          "value": "163%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "68, 102",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "48",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "164.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "2",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "75, 113",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "49",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "166.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "81, 122",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "50",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "167.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "87, 130",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "51",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "169.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "93, 140",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "52",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "170.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "100, 150",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "53",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "172.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "107, 160",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "54",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "174%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "114, 172",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "55",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "175.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "3",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "123, 184",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "56",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "177.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "131, 197",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "57",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "178.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "140, 210",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "58",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "180.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "150, 224",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "59",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "181.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "155, 232",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "60",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "181.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "160, 240",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "61",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "182.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "165, 248",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "62",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "183.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "4",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "171, 256",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "63",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "184.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "176, 265",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "64",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "185%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "182, 273",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "65",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "185.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "188, 282",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "66",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "186.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "194, 292",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "67",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "187.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "201, 301",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "68",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "188.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "5",
+          "name": "to_melee_strike_range"
+        },
+        {
+          "value": "207, 311",
+          "name": "_to__added_attack_physical_damage"
+        },
+        {
+          "value": "69",
+          "name": "%_more_damage_with_bleeding"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (134.7\u2013164.6)% of Base Attack Damage",
     "+8 seconds to Base duration",
@@ -28,1071 +1095,49 @@
     "Causes Bleeding"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": 10,
-        "intelligence": 7,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "134.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "3, 4"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "30"
-        }
-      ]
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Duelist",
+        "Ranger"
+      ],
+      "act": 1
     },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 13,
-        "intelligence": 9,
-        "requires_level": 6
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "136.3%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "3, 5"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 17,
-        "intelligence": 12,
-        "requires_level": 9
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "137.8%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "4, 7"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 21,
-        "intelligence": 14,
-        "requires_level": 12
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "139.5%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "5, 8"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 26,
-        "intelligence": 18,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "141%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "7, 11"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 31,
-        "intelligence": 22,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "142.5%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "0"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "9, 13"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 37,
-        "intelligence": 25,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "144.2%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "11, 17"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "145.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "14, 20"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 47,
-        "intelligence": 33,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "147.3%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "16, 25"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "148.9%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "20, 30"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "150.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "24, 35"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "152%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "28, 42"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "153.6%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "1"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "33, 49"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "155.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "39, 58"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 78,
-        "intelligence": 54,
-        "requires_level": 55
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "156.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "43, 65"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 82,
-        "intelligence": 57,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "158.3%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "49, 73"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 86,
-        "intelligence": 60,
-        "requires_level": 61
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "159.9%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "54, 82"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "161.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "61, 91"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 94,
-        "intelligence": 65,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "163%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "68, 102"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "164.6%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "2"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "75, 113"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "166.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "81, 122"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "167.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "87, 130"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "169.3%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "93, 140"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "170.8%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "100, 150"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "172.5%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "107, 160"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "174%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "114, 172"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "55"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "175.5%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "3"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "123, 184"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "177.2%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "131, 197"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "57"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "178.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "140, 210"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "58"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "180.3%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "150, 224"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "59"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "181.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "155, 232"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "181.9%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "160, 240"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "61"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "182.7%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "165, 248"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "183.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "4"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "171, 256"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "63"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "184.2%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "176, 265"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "185%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "182, 273"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "65"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "185.8%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "188, 282"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "186.6%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "194, 292"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "67"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "187.4%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "201, 301"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "68"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "188.1%"
-        },
-        {
-          "name": "to_melee_strike_range",
-          "value": "5"
-        },
-        {
-          "name": "_to__added_attack_physical_damage",
-          "value": "207, 311"
-        },
-        {
-          "name": "%_more_damage_with_bleeding",
-          "value": "69"
-        }
-      ]
+    "vendor": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow"
+      ],
+      "vendor_name": "Nessa"
     }
+  },
+  "type": [
+    "ground",
+    "enemy"
   ],
   "tags": [
     "skill_can_fire_arrows [1]",
     "bleed_duration_is_skill_duration [1]"
   ],
   "enchants": {
-    "merciless": [
-      "25% increased Puncture Damage",
-      "30% increased Puncture Duration",
-      "20% Chance for Puncture to Maim on hit"
-    ],
     "eternal": [
       "40% increased Puncture Damage",
       "45% increased Puncture Duration",
       "30% Chance for Puncture to Maim on hit"
+    ],
+    "merciless": [
+      "25% increased Puncture Damage",
+      "30% increased Puncture Duration",
+      "20% Chance for Puncture to Maim on hit"
     ]
   },
-  "drop_level": 4,
-  "type": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
-  "description": "Punctures enemies, causing a bleeding debuff, which will be affected by modifiers to skill duration. Puncture works with bows, daggers, claws or swords.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1950,50 +1995,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Targets  additional nearby Enemies",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% chance to Maim on Hit",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "Bleeding inflicted by this Skill deals Damage % faster",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Projectiles Pierce  additional Targets",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 20.0
-    }
-  }
+  "name": "Puncture",
+  "description": "Punctures enemies, causing a bleeding debuff, which will be affected by modifiers to skill duration. Puncture works with bows, daggers, claws or swords."
 }

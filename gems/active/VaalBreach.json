@@ -1,127 +1,147 @@
 {
-  "name": "Vaal Breach",
+  "quality": {
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 10,
+  "slug": "vaal-breach",
   "gem_class": "Active Skill Gems",
-  "acquisition": {},
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 10
+    }
+  ],
   "mods": [
     "Monsters from the Breach do not grant Experience or drop Items"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    }
+  "target_types": [
+    "spell",
+    "skillcantrap",
+    "skillcantotem",
+    "skillcanmine",
+    "type27",
+    "vaal",
+    "cantusefistofwar"
+  ],
+  "mtx": [],
+  "acquisition": {},
+  "type": [
+    "555"
   ],
   "tags": [
     "base_deal_no_damage [1]",
     "cannot_cancel_skill_before_contact_point [1]"
   ],
   "enchants": {
-    "merciless": [],
-    "eternal": []
+    "eternal": [],
+    "merciless": []
   },
-  "drop_level": 10,
-  "type": [
-    "555"
-  ],
-  "mtx": [],
-  "description": "Creates a breach, making you vulnerable to its powerful inhabitants.",
   "support": [
     {
       "name": "Trap Support",
@@ -162,25 +182,6 @@
       ]
     }
   ],
-  "target_types": [
-    "spell",
-    "skillcantrap",
-    "skillcantotem",
-    "skillcanmine",
-    "type27",
-    "vaal",
-    "cantusefistofwar"
-  ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Vaal Breach",
+  "description": "Creates a breach, making you vulnerable to its powerful inhabitants."
 }

@@ -1,119 +1,138 @@
 {
-  "name": "Portal",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {},
-  "mods": [],
-  "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
+  "quality": {
+    "anomalous": {
+      "weight": 1.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "% chance to travel to Winding Pier instead while on a Ley Fishing Line",
+          "minimum": 0.0
+        }
+      ]
     },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": null,
-        "strength": null,
-        "intelligence": null,
-        "requires_level": 10
-      },
-      "fields": []
+    "superior": {
+      "weight": 10000.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
     }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [],
-    "eternal": []
   },
   "drop_level": 10,
+  "slug": "portal",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": null,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 10
+    }
+  ],
+  "mods": [],
+  "vaal": true,
+  "target_types": [
+    "any"
+  ],
+  "mtx": [],
+  "acquisition": {},
   "type": [
     "spell",
     "skillcantrap",
@@ -122,8 +141,13 @@
     "triggerable",
     "type27"
   ],
-  "mtx": [],
-  "description": "Creates a portal to the current area's town.",
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [],
+    "merciless": []
+  },
   "support": [
     {
       "name": "Trap Support",
@@ -182,29 +206,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 10000.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% chance to travel to Winding Pier instead while on a Ley Fishing Line",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 1.0
-    }
-  }
+  "name": "Portal",
+  "description": "Creates a portal to the current area's town."
 }

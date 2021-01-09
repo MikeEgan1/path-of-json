@@ -1,7 +1,581 @@
 {
-  "name": "Vaal Blight",
+  "quality": {
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": null,
+  "slug": "vaal-blight",
   "gem_class": "Active Skill Gems",
-  "acquisition": {},
+  "levels": [
+    {
+      "minimum_damage": 4.3,
+      "requirements": {
+        "requires_level": 1,
+        "intelligence": 10
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "minimum_damage": 4.9,
+      "requirements": {
+        "requires_level": 2,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "minimum_damage": 6.2,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "minimum_damage": 8.6,
+      "requirements": {
+        "requires_level": 7,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "minimum_damage": 12.5,
+      "requirements": {
+        "requires_level": 11,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "minimum_damage": 19.0,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "minimum_damage": 25.8,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "minimum_damage": 34.4,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "minimum_damage": 45.2,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "minimum_damage": 58.8,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "minimum_damage": 75.8,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "minimum_damage": 97.0,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "minimum_damage": 123.2,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "minimum_damage": 155.7,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "minimum_damage": 195.8,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "minimum_damage": 245.2,
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "minimum_damage": 305.9,
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "minimum_damage": 380.4,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "minimum_damage": 447.1,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "minimum_damage": 524.7,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "minimum_damage": 583.3,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "minimum_damage": 648.1,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "minimum_damage": 719.6,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "minimum_damage": 798.6,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "minimum_damage": 885.8,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "minimum_damage": 982.1,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "minimum_damage": 1088.3,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "minimum_damage": 1205.5,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "minimum_damage": 1334.6,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "minimum_damage": 1477.0,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "minimum_damage": 1553.6,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "minimum_damage": 1634.0,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "minimum_damage": 1718.3,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "minimum_damage": 1806.9,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "minimum_damage": 1899.8,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "minimum_damage": 1997.3,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "minimum_damage": 2099.7,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "minimum_damage": 2207.1,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "minimum_damage": 2319.8,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "minimum_damage": 2438.0,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (4.3\u2013524.7) Base Chaos Damage per second",
     "+6 seconds to Base duration",
@@ -14,577 +588,19 @@
     "Modifiers to Skill Effect Duration also apply to this Skill's Soul Gain Prevention"
   ],
   "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 4.3,
-      "requirements": {
-        "intelligence": 10,
-        "requires_level": 1
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 4.9,
-      "requirements": {
-        "intelligence": 12,
-        "requires_level": 2
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 6.2,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 8.6,
-      "requirements": {
-        "intelligence": 22,
-        "requires_level": 7
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 12.5,
-      "requirements": {
-        "intelligence": 31,
-        "requires_level": 11
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 19.0,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 25.8,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 34.4,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 45.2,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 58.8,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 75.8,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 97.0,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 123.2,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 155.7,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 195.8,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 245.2,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 305.9,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 380.4,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 447.1,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 524.7,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 583.3,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 648.1,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 719.6,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 798.6,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 885.8,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 982.1,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1088.3,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1205.5,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 1334.6,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1477.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1553.6,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1634.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1718.3,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1806.9,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1899.8,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 1997.3,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 2099.7,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 2207.1,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 2319.8,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 2438.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "17"
-        }
-      ]
-    }
+  "target_types": [
+    "spell",
+    "chaosskill",
+    "area",
+    "skillcantotem",
+    "duration",
+    "damageovertime",
+    "type59",
+    "vaal",
+    "areaspell",
+    "novaspell",
+    "cantusefistofwar"
   ],
-  "tags": [
-    "cannot_cancel_skill_before_contact_point [1]"
-  ],
-  "enchants": {
-    "merciless": [],
-    "eternal": []
-  },
-  "drop_level": null,
-  "type": [],
   "mtx": [
     {
       "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialBlight.png?w=2&h=2&scale=1",
@@ -592,7 +608,15 @@
       "description": "Your Blight becomes a Celestial Effect."
     }
   ],
-  "description": "Apply a powerful debuff to enemies around you which deals chaos damage over time. Then applies two additional layers in a larger area, growing greatly in size each time. Enemies are also substantially hindered for a shorter secondary duration, slowing their movement.",
+  "acquisition": {},
+  "type": [],
+  "tags": [
+    "cannot_cancel_skill_before_contact_point [1]"
+  ],
+  "enchants": {
+    "eternal": [],
+    "merciless": []
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -738,29 +762,6 @@
       ]
     }
   ],
-  "target_types": [
-    "spell",
-    "chaosskill",
-    "area",
-    "skillcantotem",
-    "duration",
-    "damageovertime",
-    "type59",
-    "vaal",
-    "areaspell",
-    "novaspell",
-    "cantusefistofwar"
-  ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    }
-  }
+  "name": "Vaal Blight",
+  "description": "Apply a powerful debuff to enemies around you which deals chaos damage over time. Then applies two additional layers in a larger area, growing greatly in size each time. Enemies are also substantially hindered for a shorter secondary duration, slowing their movement."
 }

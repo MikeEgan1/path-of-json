@@ -1,15 +1,738 @@
 {
-  "name": "Detonate Dead",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Ranger",
-        "Shadow"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 60.0,
+          "text": "% of Fire Damage Converted to Chaos Damage",
+          "minimum": 0.0
+        }
+      ]
     },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 80.0,
+          "text": "Explosion deals % increased Damage if the Corpse is Ignited",
+          "minimum": 0.0
+        }
+      ]
+    }
+  },
+  "drop_level": 4,
+  "slug": "detonate-dead",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 5,
+      "maximum_damage": 22.0,
+      "minimum_damage": 15.0,
+      "requirements": {
+        "requires_level": 4,
+        "dexterity": 10,
+        "intelligence": 7
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 32.0,
+      "minimum_damage": 21.0,
+      "requirements": {
+        "requires_level": 6,
+        "dexterity": 13,
+        "intelligence": 9
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 6,
+      "maximum_damage": 42.0,
+      "minimum_damage": 32.0,
+      "requirements": {
+        "requires_level": 9,
+        "dexterity": 17,
+        "intelligence": 12
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 7,
+      "maximum_damage": 53.0,
+      "minimum_damage": 36.0,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 21,
+        "intelligence": 14
+      },
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 8,
+      "maximum_damage": 72.0,
+      "minimum_damage": 48.0,
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 26,
+        "intelligence": 18
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 9,
+      "maximum_damage": 94.0,
+      "minimum_damage": 63.0,
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 31,
+        "intelligence": 22
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 10,
+      "maximum_damage": 121.0,
+      "minimum_damage": 80.0,
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 37,
+        "intelligence": 25
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 153.0,
+      "minimum_damage": 102.0,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 42,
+        "intelligence": 29
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 11,
+      "maximum_damage": 192.0,
+      "minimum_damage": 128.0,
+      "requirements": {
+        "requires_level": 32,
+        "dexterity": 47,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 12,
+      "maximum_damage": 238.0,
+      "minimum_damage": 159.0,
+      "requirements": {
+        "requires_level": 36,
+        "dexterity": 53,
+        "intelligence": 36
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 293.0,
+      "minimum_damage": 195.0,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 58,
+        "intelligence": 40
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 359.0,
+      "minimum_damage": 239.0,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 63,
+        "intelligence": 44
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 15,
+      "maximum_damage": 436.0,
+      "minimum_damage": 291.0,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 68,
+        "intelligence": 48
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 529.0,
+      "minimum_damage": 352.0,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 74,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 609.0,
+      "minimum_damage": 406.0,
+      "requirements": {
+        "requires_level": 55,
+        "dexterity": 78,
+        "intelligence": 54
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 699.0,
+      "minimum_damage": 466.0,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 82,
+        "intelligence": 57
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 802.0,
+      "minimum_damage": 535.0,
+      "requirements": {
+        "requires_level": 61,
+        "dexterity": 86,
+        "intelligence": 60
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 918.0,
+      "minimum_damage": 612.0,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 90,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 1049.0,
+      "minimum_damage": 700.0,
+      "requirements": {
+        "requires_level": 67,
+        "dexterity": 94,
+        "intelligence": 65
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1197.0,
+      "minimum_damage": 798.0,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 98,
+        "intelligence": 68
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 1306.0,
+      "minimum_damage": 871.0,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1424.0,
+      "minimum_damage": 950.0,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1552.0,
+      "minimum_damage": 1035.0,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 21,
+      "maximum_damage": 1691.0,
+      "minimum_damage": 1127.0,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 1841.0,
+      "minimum_damage": 1227.0,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 2003.0,
+      "minimum_damage": 1335.0,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 2178.0,
+      "minimum_damage": 1452.0,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 2368.0,
+      "minimum_damage": 1579.0,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2573.0,
+      "minimum_damage": 1716.0,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2795.0,
+      "minimum_damage": 1863.0,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 2913.0,
+      "minimum_damage": 1942.0,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 3035.0,
+      "minimum_damage": 2023.0,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 3162.0,
+      "minimum_damage": 2108.0,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 3294.0,
+      "minimum_damage": 2196.0,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 3431.0,
+      "minimum_damage": 2287.0,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 3573.0,
+      "minimum_damage": 2382.0,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3722.0,
+      "minimum_damage": 2481.0,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 3875.0,
+      "minimum_damage": 2584.0,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 4035.0,
+      "minimum_damage": 2690.0,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 4202.0,
+      "minimum_damage": 2801.0,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
+  "mods": [
+    "Explosion deals base Fire Damage equal to 6% of the corpse's Maximum Life",
+    "Deals (15\u2013798) to (22\u20131197) Fire Damage",
+    "+(0\u20134) to radius"
+  ],
+  "vaal": true,
+  "target_types": [
+    "corpse"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/VoidDetonateDeadEffect.png?w=2&h=2&scale=1",
+      "name": "Void Detonate Dead Effect",
+      "description": "Your Detonate Dead becomes a Void Effect."
+    }
+  ],
+  "acquisition": {
     "quest": {
       "quest_name": "Breaking Some Eggs",
       "classes": [
@@ -17,712 +740,16 @@
         "Shadow"
       ],
       "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Ranger",
+        "Shadow"
+      ],
+      "vendor_name": "Nessa"
     }
   },
-  "mods": [
-    "Explosion deals base Fire Damage equal to 6% of the corpse's Maximum Life",
-    "Deals (15\u2013798) to (22\u20131197) Fire Damage",
-    "+(0\u20134) to radius"
-  ],
-  "vaal": true,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 15.0,
-      "requirements": {
-        "dexterity": 10,
-        "intelligence": 7,
-        "requires_level": 4
-      },
-      "mana_cost": 5,
-      "maximum_damage": 22.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 21.0,
-      "requirements": {
-        "dexterity": 13,
-        "intelligence": 9,
-        "requires_level": 6
-      },
-      "mana_cost": 6,
-      "maximum_damage": 32.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 32.0,
-      "requirements": {
-        "dexterity": 17,
-        "intelligence": 12,
-        "requires_level": 9
-      },
-      "mana_cost": 6,
-      "maximum_damage": 42.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 36.0,
-      "requirements": {
-        "dexterity": 21,
-        "intelligence": 14,
-        "requires_level": 12
-      },
-      "mana_cost": 7,
-      "maximum_damage": 53.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 48.0,
-      "requirements": {
-        "dexterity": 26,
-        "intelligence": 18,
-        "requires_level": 16
-      },
-      "mana_cost": 8,
-      "maximum_damage": 72.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 63.0,
-      "requirements": {
-        "dexterity": 31,
-        "intelligence": 22,
-        "requires_level": 20
-      },
-      "mana_cost": 9,
-      "maximum_damage": 94.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 80.0,
-      "requirements": {
-        "dexterity": 37,
-        "intelligence": 25,
-        "requires_level": 24
-      },
-      "mana_cost": 10,
-      "maximum_damage": 121.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 102.0,
-      "requirements": {
-        "dexterity": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "mana_cost": 11,
-      "maximum_damage": 153.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 128.0,
-      "requirements": {
-        "dexterity": 47,
-        "intelligence": 33,
-        "requires_level": 32
-      },
-      "mana_cost": 11,
-      "maximum_damage": 192.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 159.0,
-      "requirements": {
-        "dexterity": 53,
-        "intelligence": 36,
-        "requires_level": 36
-      },
-      "mana_cost": 12,
-      "maximum_damage": 238.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 195.0,
-      "requirements": {
-        "dexterity": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "mana_cost": 13,
-      "maximum_damage": 293.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 239.0,
-      "requirements": {
-        "dexterity": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "mana_cost": 14,
-      "maximum_damage": 359.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 291.0,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "mana_cost": 15,
-      "maximum_damage": 436.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 352.0,
-      "requirements": {
-        "dexterity": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "mana_cost": 16,
-      "maximum_damage": 529.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 406.0,
-      "requirements": {
-        "dexterity": 78,
-        "intelligence": 54,
-        "requires_level": 55
-      },
-      "mana_cost": 16,
-      "maximum_damage": 609.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 466.0,
-      "requirements": {
-        "dexterity": 82,
-        "intelligence": 57,
-        "requires_level": 58
-      },
-      "mana_cost": 17,
-      "maximum_damage": 699.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 535.0,
-      "requirements": {
-        "dexterity": 86,
-        "intelligence": 60,
-        "requires_level": 61
-      },
-      "mana_cost": 18,
-      "maximum_damage": 802.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 612.0,
-      "requirements": {
-        "dexterity": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "mana_cost": 18,
-      "maximum_damage": 918.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 700.0,
-      "requirements": {
-        "dexterity": 94,
-        "intelligence": 65,
-        "requires_level": 67
-      },
-      "mana_cost": 19,
-      "maximum_damage": 1049.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 798.0,
-      "requirements": {
-        "dexterity": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1197.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 871.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 20,
-      "maximum_damage": 1306.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 950.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1424.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 1035.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1552.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 1127.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 21,
-      "maximum_damage": 1691.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 1227.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 22,
-      "maximum_damage": 1841.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 1335.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 22,
-      "maximum_damage": 2003.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1452.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 23,
-      "maximum_damage": 2178.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1579.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 23,
-      "maximum_damage": 2368.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 1716.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2573.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1863.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2795.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1942.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 24,
-      "maximum_damage": 2913.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 2023.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 25,
-      "maximum_damage": 3035.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 2108.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 25,
-      "maximum_damage": 3162.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 2196.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 25,
-      "maximum_damage": 3294.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 2287.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 25,
-      "maximum_damage": 3431.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 2382.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 25,
-      "maximum_damage": 3573.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 2481.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3722.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 2584.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 26,
-      "maximum_damage": 3875.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 2690.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 26,
-      "maximum_damage": 4035.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 2801.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 26,
-      "maximum_damage": 4202.0,
-      "fields": [
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Detonate Dead Damage",
-      "Detonate Dead has a 30% chance to detonate an additional corpse",
-      "16% increased Detonate Dead Area of Effect"
-    ],
-    "eternal": [
-      "40% increased Detonate Dead Damage",
-      "Detonate Dead has a 45% chance to detonate an additional corpse",
-      "24% increased Detonate Dead Area of Effect"
-    ]
-  },
-  "drop_level": 4,
   "type": [
     "spell",
     "hit",
@@ -738,14 +765,21 @@
     "canrapidfire",
     "areaspell"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/VoidDetonateDeadEffect.png?w=2&h=2&scale=1",
-      "name": "Void Detonate Dead Effect",
-      "description": "Your Detonate Dead becomes a Void Effect."
-    }
+  "tags": [
+    "is_area_damage [1]"
   ],
-  "description": "Targets a corpse, and deals spell damage to enemies around the corpse, as well as causing the corpse to explode, dealing fire damage. The explosion is not affected by modifiers to spell damage and cannot be reflected.",
+  "enchants": {
+    "eternal": [
+      "40% increased Detonate Dead Damage",
+      "Detonate Dead has a 45% chance to detonate an additional corpse",
+      "24% increased Detonate Dead Area of Effect"
+    ],
+    "merciless": [
+      "25% increased Detonate Dead Damage",
+      "Detonate Dead has a 30% chance to detonate an additional corpse",
+      "16% increased Detonate Dead Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1332,39 +1366,6 @@
       ]
     }
   ],
-  "target_types": [
-    "corpse"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Explosion deals % increased Damage if the Corpse is Ignited",
-          "minimum": 0.0,
-          "maximum": 80.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% of Fire Damage Converted to Chaos Damage",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 10.0
-    }
-  }
+  "name": "Detonate Dead",
+  "description": "Targets a corpse, and deals spell damage to enemies around the corpse, as well as causing the corpse to explode, dealing fire damage. The explosion is not affected by modifiers to spell damage and cannot be reflected."
 }

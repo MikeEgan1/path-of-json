@@ -1,25 +1,976 @@
 {
-  "name": "Flame Wall",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "+% to Fire Damage over Time Multiplier",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 20.0,
+          "text": "% reduced Skill Effect Duration",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Witch",
-        "Templar"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 0.0,
+          "text": "Inflicts Fire Exposure for 4 seconds when Enemies enter the wall, applying % to their Fire Resistance",
+          "minimum": 410.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 4,
+  "slug": "flame-wall",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 4,
+      "minimum_damage": 8.7,
+      "requirements": {
+        "requires_level": 4,
+        "intelligence": 16
+      },
+      "fields": [
+        {
+          "value": "3, 5",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "40",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "mana_cost": 5,
+      "minimum_damage": 11.1,
+      "requirements": {
+        "requires_level": 6,
+        "intelligence": 20
+      },
+      "fields": [
+        {
+          "value": "4, 6",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.05",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "41",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "mana_cost": 5,
+      "minimum_damage": 15.5,
+      "requirements": {
+        "requires_level": 9,
+        "intelligence": 27
+      },
+      "fields": [
+        {
+          "value": "5, 8",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.11",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "42",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "mana_cost": 6,
+      "minimum_damage": 21.1,
+      "requirements": {
+        "requires_level": 12,
+        "intelligence": 33
+      },
+      "fields": [
+        {
+          "value": "7, 10",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.16",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "43",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "mana_cost": 7,
+      "minimum_damage": 31.1,
+      "requirements": {
+        "requires_level": 16,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "9, 13",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.21",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "44",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "mana_cost": 7,
+      "minimum_damage": 44.7,
+      "requirements": {
+        "requires_level": 20,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "11, 16",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.26",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "45",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "mana_cost": 8,
+      "minimum_damage": 63.0,
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "13, 19",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.32",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "46",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "mana_cost": 9,
+      "minimum_damage": 87.7,
+      "requirements": {
+        "requires_level": 28,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "16, 24",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.37",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "47",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "mana_cost": 10,
+      "minimum_damage": 120.6,
+      "requirements": {
+        "requires_level": 32,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "19, 29",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.42",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "48",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "mana_cost": 10,
+      "minimum_damage": 164.3,
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "22, 33",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.47",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "49",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "mana_cost": 11,
+      "minimum_damage": 222.1,
+      "requirements": {
+        "requires_level": 40,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "27, 40",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.53",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "50",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "mana_cost": 12,
+      "minimum_damage": 298.4,
+      "requirements": {
+        "requires_level": 44,
+        "intelligence": 100
+      },
+      "fields": [
+        {
+          "value": "31, 47",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.58",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "51",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "mana_cost": 12,
+      "minimum_damage": 398.7,
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "36, 55",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.63",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "52",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "mana_cost": 13,
+      "minimum_damage": 530.0,
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "42, 63",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.68",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "53",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "mana_cost": 14,
+      "minimum_damage": 654.5,
+      "requirements": {
+        "requires_level": 55,
+        "intelligence": 123
+      },
+      "fields": [
+        {
+          "value": "47, 71",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.74",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "54",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "mana_cost": 14,
+      "minimum_damage": 806.4,
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "52, 79",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.79",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "55",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "mana_cost": 15,
+      "minimum_damage": 991.6,
+      "requirements": {
+        "requires_level": 61,
+        "intelligence": 136
+      },
+      "fields": [
+        {
+          "value": "58, 87",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.84",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "56",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "mana_cost": 15,
+      "minimum_damage": 1217.2,
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "64, 96",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.89",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "57",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "mana_cost": 16,
+      "minimum_damage": 1491.6,
+      "requirements": {
+        "requires_level": 67,
+        "intelligence": 148
+      },
+      "fields": [
+        {
+          "value": "71, 106",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "1.95",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "58",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "mana_cost": 16,
+      "minimum_damage": 1825.2,
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "78, 117",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "59",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "mana_cost": 17,
+      "minimum_damage": 2086.3,
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "83, 125",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.05",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "60",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "mana_cost": 17,
+      "minimum_damage": 2383.4,
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "88, 132",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.11",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "61",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "mana_cost": 18,
+      "minimum_damage": 2721.3,
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "94, 141",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.16",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "62",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "mana_cost": 18,
+      "minimum_damage": 3105.3,
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "100, 150",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.21",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "63",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "mana_cost": 18,
+      "minimum_damage": 3541.8,
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "105, 158",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.26",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "64",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "mana_cost": 19,
+      "minimum_damage": 4037.5,
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "112, 168",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.32",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "65",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "mana_cost": 19,
+      "minimum_damage": 4600.5,
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "118, 177",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.37",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "66",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "mana_cost": 19,
+      "minimum_damage": 5239.6,
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "125, 188",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.42",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "67",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "mana_cost": 20,
+      "minimum_damage": 5964.9,
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "133, 199",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.47",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "68",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "mana_cost": 20,
+      "minimum_damage": 6787.7,
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "140, 210",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.53",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "69",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "mana_cost": 20,
+      "minimum_damage": 7239.6,
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "144, 215",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.55",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "69",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "mana_cost": 20,
+      "minimum_damage": 7720.9,
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "148, 222",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.58",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "70",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "mana_cost": 21,
+      "minimum_damage": 8233.4,
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "153, 229",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.61",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "70",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "mana_cost": 21,
+      "minimum_damage": 8779.0,
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "158, 237",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.63",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "71",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "mana_cost": 21,
+      "minimum_damage": 9360.0,
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "163, 245",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.66",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "71",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "mana_cost": 21,
+      "minimum_damage": 9978.5,
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "169, 253",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.68",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "72",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "mana_cost": 21,
+      "minimum_damage": 10636.9,
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "174, 261",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.71",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "72",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "mana_cost": 22,
+      "minimum_damage": 11337.7,
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "180, 269",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.74",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "73",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "mana_cost": 22,
+      "minimum_damage": 12083.7,
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "186, 278",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.76",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "73",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "mana_cost": 22,
+      "minimum_damage": 12877.7,
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "192, 287",
+          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage"
+        },
+        {
+          "value": "2.79",
+          "name": "base_secondary_duration_is__seconds"
+        },
+        {
+          "value": "74",
+          "name": "wall_will_be__units_long"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "+(3\u20134.9) seconds to Base duration",
     "Deals (2.2\u2013456.3) Base Fire Damage per second",
@@ -31,943 +982,35 @@
     "Modifiers to Spell Damage apply to this Skill's Damage Over Time effect"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "minimum_damage": 8.7,
-      "requirements": {
-        "intelligence": 16,
-        "requires_level": 4
-      },
-      "mana_cost": 4,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "3, 5"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 11.1,
-      "requirements": {
-        "intelligence": 20,
-        "requires_level": 6
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "4, 6"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.05"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 15.5,
-      "requirements": {
-        "intelligence": 27,
-        "requires_level": 9
-      },
-      "mana_cost": 5,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "5, 8"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.11"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 21.1,
-      "requirements": {
-        "intelligence": 33,
-        "requires_level": 12
-      },
-      "mana_cost": 6,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "7, 10"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.16"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 31.1,
-      "requirements": {
-        "intelligence": 41,
-        "requires_level": 16
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "9, 13"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.21"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 44.7,
-      "requirements": {
-        "intelligence": 50,
-        "requires_level": 20
-      },
-      "mana_cost": 7,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "11, 16"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.26"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 63.0,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "mana_cost": 8,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "13, 19"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.32"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 87.7,
-      "requirements": {
-        "intelligence": 67,
-        "requires_level": 28
-      },
-      "mana_cost": 9,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "16, 24"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.37"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 120.6,
-      "requirements": {
-        "intelligence": 75,
-        "requires_level": 32
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "19, 29"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.42"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 164.3,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "mana_cost": 10,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "22, 33"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.47"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 222.1,
-      "requirements": {
-        "intelligence": 92,
-        "requires_level": 40
-      },
-      "mana_cost": 11,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "27, 40"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.53"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 298.4,
-      "requirements": {
-        "intelligence": 100,
-        "requires_level": 44
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "31, 47"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.58"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 398.7,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "mana_cost": 12,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "36, 55"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.63"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 530.0,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "mana_cost": 13,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "42, 63"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.68"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 654.5,
-      "requirements": {
-        "intelligence": 123,
-        "requires_level": 55
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "47, 71"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.74"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 806.4,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "mana_cost": 14,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "52, 79"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.79"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "55"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 991.6,
-      "requirements": {
-        "intelligence": 136,
-        "requires_level": 61
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "58, 87"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.84"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 1217.2,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "mana_cost": 15,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "64, 96"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.89"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "57"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 1491.6,
-      "requirements": {
-        "intelligence": 148,
-        "requires_level": 67
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "71, 106"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "1.95"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "58"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 1825.2,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "mana_cost": 16,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "78, 117"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "59"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 2086.3,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "83, 125"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.05"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 2383.4,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 17,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "88, 132"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.11"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "61"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 2721.3,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "94, 141"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.16"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "62"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 3105.3,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "100, 150"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.21"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "63"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 3541.8,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 18,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "105, 158"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.26"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 4037.5,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "112, 168"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.32"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "65"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 4600.5,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "118, 177"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.37"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "66"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 5239.6,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 19,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "125, 188"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.42"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "67"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 5964.9,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "133, 199"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.47"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "68"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 6787.7,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "140, 210"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.53"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "69"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 7239.6,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "144, 215"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.55"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "69"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 7720.9,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 20,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "148, 222"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.58"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "70"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 8233.4,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "153, 229"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.61"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "70"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 8779.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "158, 237"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.63"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "71"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 9360.0,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "163, 245"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.66"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "71"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 9978.5,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "169, 253"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.68"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 10636.9,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 21,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "174, 261"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.71"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 11337.7,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "180, 269"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.74"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "73"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 12083.7,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "186, 278"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.76"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "73"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 12877.7,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 22,
-      "fields": [
-        {
-          "name": "projectiles_which_pass_through_the_wall_deal__to__added_fire_damage",
-          "value": "192, 287"
-        },
-        {
-          "name": "base_secondary_duration_is__seconds",
-          "value": "2.79"
-        },
-        {
-          "name": "wall_will_be__units_long",
-          "value": "74"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianFlameWallEffect.png?w=2&h=2&scale=1",
+      "name": "Stygian Flame Wall Effect",
+      "description": "Your Flame Wall becomes a Stygian Effect."
     }
   ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Flame Wall deals 25% increased Damage",
-      "Flame Wall grants 19 to 28 Added Fire Damage to Projectiles"
-    ],
-    "eternal": [
-      "Flame Wall deals 40% increased Damage",
-      "Flame Wall grants 31 to 47 Added Fire Damage to Projectiles",
-      "+1 to maximum number of Flame Walls"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Breaking Some Eggs",
+      "classes": [
+        "Witch",
+        "Templar"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
   },
-  "drop_level": 4,
   "type": [
     "spell",
     "damageovertime",
@@ -985,14 +1028,20 @@
     "spellcancascade",
     "causesburning"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianFlameWallEffect.png?w=2&h=2&scale=1",
-      "name": "Stygian Flame Wall Effect",
-      "description": "Your Flame Wall becomes a Stygian Effect."
-    }
+  "tags": [
+    "is_area_damage [1]"
   ],
-  "description": "Create a wall of fire for a duration, which deals burning damage to everything in its area. Each enemy that enters the wall also receives a secondary burning debuff which persists for a short duration after leaving the wall. Any projectiles fired through the wall by you and allies deal added fire damage and apply the wall's secondary debuff on hit.",
+  "enchants": {
+    "eternal": [
+      "Flame Wall deals 40% increased Damage",
+      "Flame Wall grants 31 to 47 Added Fire Damage to Projectiles",
+      "+1 to maximum number of Flame Walls"
+    ],
+    "merciless": [
+      "Flame Wall deals 25% increased Damage",
+      "Flame Wall grants 19 to 28 Added Fire Damage to Projectiles"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1250,54 +1299,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "Inflicts Fire Exposure for 4 seconds when Enemies enter the wall, applying % to their Fire Resistance",
-          "minimum": 410.0,
-          "maximum": 0.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "+% to Fire Damage over Time Multiplier",
-          "minimum": 0.0,
-          "maximum": 10.0
-        },
-        {
-          "text": "% reduced Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Flame Wall",
+  "description": "Create a wall of fire for a duration, which deals burning damage to everything in its area. Each enemy that enters the wall also receives a secondary burning debuff which persists for a short duration after leaving the wall. Any projectiles fired through the wall by you and allies deal added fire damage and apply the wall's secondary debuff on hit."
 }

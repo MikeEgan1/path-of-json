@@ -1,26 +1,881 @@
 {
-  "name": "Zealotry",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 5.0,
+          "text": "You and nearby Allies have +% to Critical Strike Multiplier",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Lost in Love",
-      "classes": [
-        "Witch",
-        "Templar",
-        "Scion"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 5.0,
+      "mods": [
+        {
+          "maximum": 4.0,
+          "text": "You and nearby Allies Regenerate % of Life per second",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 24,
+  "slug": "zealotry",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 24,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 27,
+        "intelligence": 64
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "21",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 30,
+        "intelligence": 71
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "22",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "intelligence": 77
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "23",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "24",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "25",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "intelligence": 96
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "26",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "intelligence": 102
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "27",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "intelligence": 109
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "28",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 50,
+        "intelligence": 113
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "29",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "intelligence": 117
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "30",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "intelligence": 121
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "31",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 56,
+        "intelligence": 125
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "32",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "intelligence": 130
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "33",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "intelligence": 134
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "34",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "14",
+          "name": "to_radius"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "intelligence": 138
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "35",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "15",
+          "name": "to_radius"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "intelligence": 142
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "36",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "16",
+          "name": "to_radius"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "intelligence": 146
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "37",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "17",
+          "name": "to_radius"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "intelligence": 151
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "38",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "18",
+          "name": "to_radius"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "intelligence": 155
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "39",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "19",
+          "name": "to_radius"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "40",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "20",
+          "name": "to_radius"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "41",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "21",
+          "name": "to_radius"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "42",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "22",
+          "name": "to_radius"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "43",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "23",
+          "name": "to_radius"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "44",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "24",
+          "name": "to_radius"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "45",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "25",
+          "name": "to_radius"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "46",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "26",
+          "name": "to_radius"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "47",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "27",
+          "name": "to_radius"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "48",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "28",
+          "name": "to_radius"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "49",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "49",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "29",
+          "name": "to_radius"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "50",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "50",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "30",
+          "name": "to_radius"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "51",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "51",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "31",
+          "name": "to_radius"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "52",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "52",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "32",
+          "name": "to_radius"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "53",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "53",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "33",
+          "name": "to_radius"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "you_and_nearby_allies_deal_%_more_spell_damage"
+        },
+        {
+          "value": "54",
+          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance"
+        },
+        {
+          "value": "34",
+          "name": "to_radius"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "You and nearby allies deal (10\u201315)% more Spell Damage",
     "You and nearby allies have (20\u201339)% increased Spell Critical Strike Chance",
@@ -28,875 +883,8 @@
     "+(0\u201319) to radius"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "intelligence": 58,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "10"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "20"
-        },
-        {
-          "name": "to_radius",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "intelligence": 64,
-        "requires_level": 27
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "10"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "21"
-        },
-        {
-          "name": "to_radius",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "intelligence": 71,
-        "requires_level": 30
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "10"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "22"
-        },
-        {
-          "name": "to_radius",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "intelligence": 77,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "11"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "23"
-        },
-        {
-          "name": "to_radius",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "intelligence": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "11"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "24"
-        },
-        {
-          "name": "to_radius",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "intelligence": 90,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "11"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "25"
-        },
-        {
-          "name": "to_radius",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "intelligence": 96,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "12"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "26"
-        },
-        {
-          "name": "to_radius",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "intelligence": 102,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "12"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "27"
-        },
-        {
-          "name": "to_radius",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "intelligence": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "12"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "28"
-        },
-        {
-          "name": "to_radius",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "intelligence": 113,
-        "requires_level": 50
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "12"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "29"
-        },
-        {
-          "name": "to_radius",
-          "value": "9"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "intelligence": 117,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "13"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "30"
-        },
-        {
-          "name": "to_radius",
-          "value": "10"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "intelligence": 121,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "13"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "31"
-        },
-        {
-          "name": "to_radius",
-          "value": "11"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "intelligence": 125,
-        "requires_level": 56
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "13"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "32"
-        },
-        {
-          "name": "to_radius",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "intelligence": 130,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "14"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "33"
-        },
-        {
-          "name": "to_radius",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "intelligence": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "14"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "34"
-        },
-        {
-          "name": "to_radius",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "intelligence": 138,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "14"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "35"
-        },
-        {
-          "name": "to_radius",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "intelligence": 142,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "14"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "36"
-        },
-        {
-          "name": "to_radius",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "intelligence": 146,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "15"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "37"
-        },
-        {
-          "name": "to_radius",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "intelligence": 151,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "15"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "38"
-        },
-        {
-          "name": "to_radius",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "intelligence": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "15"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "39"
-        },
-        {
-          "name": "to_radius",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "40"
-        },
-        {
-          "name": "to_radius",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "41"
-        },
-        {
-          "name": "to_radius",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "42"
-        },
-        {
-          "name": "to_radius",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "16"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "43"
-        },
-        {
-          "name": "to_radius",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "17"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "44"
-        },
-        {
-          "name": "to_radius",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "17"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "45"
-        },
-        {
-          "name": "to_radius",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "17"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "46"
-        },
-        {
-          "name": "to_radius",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "47"
-        },
-        {
-          "name": "to_radius",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "48"
-        },
-        {
-          "name": "to_radius",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "49"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "49"
-        },
-        {
-          "name": "to_radius",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "18"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "50"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "50"
-        },
-        {
-          "name": "to_radius",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "51"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "51"
-        },
-        {
-          "name": "to_radius",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "52"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "52"
-        },
-        {
-          "name": "to_radius",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "53"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "19"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "53"
-        },
-        {
-          "name": "to_radius",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "you_and_nearby_allies_deal_%_more_spell_damage",
-          "value": "20"
-        },
-        {
-          "name": "you_and_nearby_allies_have_%_increased_spell_critical_strike_chance",
-          "value": "54"
-        },
-        {
-          "name": "to_radius",
-          "value": "34"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Zealotry has 10% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Zealotry has 15% reduced Mana Reservation"
-    ]
-  },
-  "drop_level": 24,
-  "type": [
-    "spell",
-    "area",
-    "buff",
-    "manacostreserved",
-    "type27",
-    "manacostpercent",
-    "skillcantotem",
-    "aura",
-    "instant",
-    "areaspell",
-    "canhaveblessing",
-    "type91",
-    "type92",
-    "secondwindsupport"
+  "target_types": [
+    "any"
   ],
   "mtx": [
     {
@@ -1145,7 +1133,53 @@
       "description": "Your Aura becomes a Darkwood Effect."
     }
   ],
-  "description": "Casts an aura that grants bonuses to damage and critical strike chance of spells to you and your allies, and gives a chance to create Consecrated Ground against stronger enemies.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "Lost in Love",
+      "classes": [
+        "Witch",
+        "Templar",
+        "Scion"
+      ],
+      "act": 3
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
+    }
+  },
+  "type": [
+    "spell",
+    "area",
+    "buff",
+    "manacostreserved",
+    "type27",
+    "manacostpercent",
+    "skillcantotem",
+    "aura",
+    "instant",
+    "areaspell",
+    "canhaveblessing",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Zealotry has 15% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Zealotry has 10% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1204,39 +1238,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "You and nearby Allies Regenerate % of Life per second",
-          "minimum": 0.0,
-          "maximum": 4.0
-        }
-      ],
-      "weight": 5.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "You and nearby Allies have +% to Critical Strike Multiplier",
-          "minimum": 0.0,
-          "maximum": 5.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Zealotry",
+  "description": "Casts an aura that grants bonuses to damage and critical strike chance of spells to you and your allies, and gives a chance to create Consecrated Ground against stronger enemies."
 }

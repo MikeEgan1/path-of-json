@@ -1,28 +1,731 @@
 {
-  "name": "Leap Slam",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Templar",
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Templar",
-        "Marauder",
-        "Duelist",
-        "Scion"
-      ],
-      "act": 1
+    "phantasmal": {
+      "weight": 20.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "% increased Attack Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Stun Duration on enemies",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Damage",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 10,
+  "slug": "leap-slam",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 10,
+        "strength": 29
+      },
+      "fields": [
+        {
+          "value": "100%",
+          "name": "base_damage"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 13,
+        "strength": 35
+      },
+      "fields": [
+        {
+          "value": "101.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "21",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 17,
+        "strength": 43
+      },
+      "fields": [
+        {
+          "value": "102.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "22",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 21,
+        "strength": 52
+      },
+      "fields": [
+        {
+          "value": "103.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "23",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 25,
+        "strength": 60
+      },
+      "fields": [
+        {
+          "value": "104.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 29,
+        "strength": 69
+      },
+      "fields": [
+        {
+          "value": "105.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "25",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 33,
+        "strength": 77
+      },
+      "fields": [
+        {
+          "value": "106.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "26",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 36,
+        "strength": 83
+      },
+      "fields": [
+        {
+          "value": "107.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "27",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 39,
+        "strength": 90
+      },
+      "fields": [
+        {
+          "value": "108.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 42,
+        "strength": 96
+      },
+      "fields": [
+        {
+          "value": "109.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "29",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 45,
+        "strength": 102
+      },
+      "fields": [
+        {
+          "value": "110.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "30",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 48,
+        "strength": 109
+      },
+      "fields": [
+        {
+          "value": "111.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "31",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 51,
+        "strength": 115
+      },
+      "fields": [
+        {
+          "value": "112.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 54,
+        "strength": 121
+      },
+      "fields": [
+        {
+          "value": "113.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "33",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 57,
+        "strength": 127
+      },
+      "fields": [
+        {
+          "value": "114.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "34",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "strength": 134
+      },
+      "fields": [
+        {
+          "value": "115.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "35",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 63,
+        "strength": 140
+      },
+      "fields": [
+        {
+          "value": "116.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "strength": 146
+      },
+      "fields": [
+        {
+          "value": "117.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "37",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "strength": 151
+      },
+      "fields": [
+        {
+          "value": "118.9%",
+          "name": "base_damage"
+        },
+        {
+          "value": "38",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "strength": 155
+      },
+      "fields": [
+        {
+          "value": "120%",
+          "name": "base_damage"
+        },
+        {
+          "value": "39",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "121.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "122.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "41",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "123.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "42",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "124.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "43",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "125.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "126.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "45",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "127.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "46",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "128.4%",
+          "name": "base_damage"
+        },
+        {
+          "value": "47",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "129.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "130.5%",
+          "name": "base_damage"
+        },
+        {
+          "value": "49",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "131.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "131.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "50",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "132.1%",
+          "name": "base_damage"
+        },
+        {
+          "value": "51",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "132.6%",
+          "name": "base_damage"
+        },
+        {
+          "value": "51",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "133.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "133.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "134.2%",
+          "name": "base_damage"
+        },
+        {
+          "value": "53",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "134.7%",
+          "name": "base_damage"
+        },
+        {
+          "value": "53",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "135.3%",
+          "name": "base_damage"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "strength": null
+      },
+      "fields": [
+        {
+          "value": "135.8%",
+          "name": "base_damage"
+        },
+        {
+          "value": "54",
+          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (100\u2013120)% of Base Attack Damage",
     "+0.55 seconds to Attack Time",
@@ -30,705 +733,7 @@
     "Damaging Hits always Stun Enemies that are on Full Life"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "strength": 29,
-        "requires_level": 10
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "100%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "strength": 35,
-        "requires_level": 13
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "101.1%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "strength": 43,
-        "requires_level": 17
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "102.1%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "strength": 52,
-        "requires_level": 21
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "103.2%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "strength": 60,
-        "requires_level": 25
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "104.2%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "strength": 69,
-        "requires_level": 29
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "105.3%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "strength": 77,
-        "requires_level": 33
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "106.3%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "strength": 83,
-        "requires_level": 36
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "107.4%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "strength": 90,
-        "requires_level": 39
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "108.4%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "strength": 96,
-        "requires_level": 42
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "109.5%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "strength": 102,
-        "requires_level": 45
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "110.5%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "strength": 109,
-        "requires_level": 48
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "111.6%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "strength": 115,
-        "requires_level": 51
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "112.6%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "strength": 121,
-        "requires_level": 54
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "113.7%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "strength": 127,
-        "requires_level": 57
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "114.7%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "strength": 134,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "115.8%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "strength": 140,
-        "requires_level": 63
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "116.8%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "strength": 146,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "117.9%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "strength": 151,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "118.9%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "strength": 155,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "120%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "strength": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "121.1%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "strength": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "122.1%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "41"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "strength": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "123.2%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "42"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "strength": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "124.2%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "43"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "strength": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "125.3%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "strength": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "126.3%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "45"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "strength": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "127.4%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "46"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "strength": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "128.4%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "47"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "strength": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "129.5%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "strength": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "130.5%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "49"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "strength": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "131.1%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "strength": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "131.6%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "50"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "strength": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "132.1%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "strength": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "132.6%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "51"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "strength": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "133.2%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "strength": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "133.7%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "strength": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "134.2%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "strength": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "134.7%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "53"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "strength": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "135.3%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "54"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "strength": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "base_damage",
-          "value": "135.8%"
-        },
-        {
-          "name": "%_increased_stun_duration_against_enemies_that_are_on_full_life",
-          "value": "54"
-        }
-      ]
-    }
-  ],
-  "tags": [
-    "is_area_damage [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "25% increased Leap Slam Damage",
-      "10% increased Leap Slam Attack Speed",
-      "16% increased Leap Slam Area of Effect"
-    ],
-    "eternal": [
-      "40% increased Leap Slam Damage",
-      "15% increased Leap Slam Attack Speed",
-      "24% increased Leap Slam Area of Effect"
-    ]
-  },
-  "drop_level": 10,
-  "type": [
+  "target_types": [
     "ground",
     "enemy"
   ],
@@ -754,7 +759,47 @@
       "description": "Your Leap Slam becomes a Celestial Effect."
     }
   ],
-  "description": "Jump into the air, damaging and knocking back enemies with your weapon where you land. Enemies you would land on are pushed out of the way. Requires an Axe, Mace, Sceptre, Sword or Staff. Cannot be supported by Multistrike.",
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "classes": [
+        "Templar",
+        "Marauder",
+        "Duelist",
+        "Scion"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Marauder",
+        "Templar",
+        "Duelist",
+        "Ranger",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
+  },
+  "type": [
+    "ground",
+    "enemy"
+  ],
+  "tags": [
+    "is_area_damage [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Leap Slam Damage",
+      "15% increased Leap Slam Attack Speed",
+      "24% increased Leap Slam Area of Effect"
+    ],
+    "merciless": [
+      "25% increased Leap Slam Damage",
+      "10% increased Leap Slam Attack Speed",
+      "16% increased Leap Slam Area of Effect"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1389,50 +1434,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "phantasmal": {
-      "mods": [
-        {
-          "text": "% increased Attack Speed",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 20.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Stun Duration on enemies",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Leap Slam",
+  "description": "Jump into the air, damaging and knocking back enemies with your weapon where you land. Enemies you would land on are pushed out of the way. Requires an Axe, Mace, Sceptre, Sword or Staff. Cannot be supported by Multistrike."
 }

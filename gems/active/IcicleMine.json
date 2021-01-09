@@ -1,24 +1,681 @@
 {
-  "name": "Icicle Mine",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Templar",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 2.0,
+          "text": "Fires  additional Projectiles",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "The Siren's Cadence",
-      "classes": [
-        "Shadow"
-      ],
-      "act": 1
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Projectile Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Critical Strike Chance",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 12,
+  "slug": "icicle-mine",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "maximum_damage": 24.0,
+      "minimum_damage": 16.0,
+      "requirements": {
+        "requires_level": 12,
+        "dexterity": 14,
+        "intelligence": 21
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "maximum_damage": 31.0,
+      "minimum_damage": 20.0,
+      "requirements": {
+        "requires_level": 15,
+        "dexterity": 17,
+        "intelligence": 25
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "maximum_damage": 41.0,
+      "minimum_damage": 28.0,
+      "requirements": {
+        "requires_level": 19,
+        "dexterity": 21,
+        "intelligence": 30
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "maximum_damage": 55.0,
+      "minimum_damage": 36.0,
+      "requirements": {
+        "requires_level": 23,
+        "dexterity": 24,
+        "intelligence": 35
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "maximum_damage": 71.0,
+      "minimum_damage": 47.0,
+      "requirements": {
+        "requires_level": 27,
+        "dexterity": 28,
+        "intelligence": 41
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "maximum_damage": 92.0,
+      "minimum_damage": 61.0,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 32,
+        "intelligence": 46
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "maximum_damage": 117.0,
+      "minimum_damage": 78.0,
+      "requirements": {
+        "requires_level": 35,
+        "dexterity": 36,
+        "intelligence": 51
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "maximum_damage": 139.0,
+      "minimum_damage": 93.0,
+      "requirements": {
+        "requires_level": 38,
+        "dexterity": 38,
+        "intelligence": 55
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "maximum_damage": 166.0,
+      "minimum_damage": 111.0,
+      "requirements": {
+        "requires_level": 41,
+        "dexterity": 41,
+        "intelligence": 59
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "maximum_damage": 196.0,
+      "minimum_damage": 131.0,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 44,
+        "intelligence": 63
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "maximum_damage": 232.0,
+      "minimum_damage": 155.0,
+      "requirements": {
+        "requires_level": 47,
+        "dexterity": 47,
+        "intelligence": 67
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "maximum_damage": 273.0,
+      "minimum_damage": 182.0,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 49,
+        "intelligence": 71
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "maximum_damage": 321.0,
+      "minimum_damage": 214.0,
+      "requirements": {
+        "requires_level": 53,
+        "dexterity": 52,
+        "intelligence": 75
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "maximum_damage": 376.0,
+      "minimum_damage": 251.0,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 55,
+        "intelligence": 79
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "maximum_damage": 440.0,
+      "minimum_damage": 294.0,
+      "requirements": {
+        "requires_level": 59,
+        "dexterity": 58,
+        "intelligence": 83
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "maximum_damage": 514.0,
+      "minimum_damage": 343.0,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 60,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "maximum_damage": 569.0,
+      "minimum_damage": 380.0,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "maximum_damage": 630.0,
+      "minimum_damage": 420.0,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 64,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "maximum_damage": 697.0,
+      "minimum_damage": 465.0,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 66,
+        "intelligence": 95
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "maximum_damage": 771.0,
+      "minimum_damage": 514.0,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "maximum_damage": 851.0,
+      "minimum_damage": 568.0,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "maximum_damage": 940.0,
+      "minimum_damage": 627.0,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "maximum_damage": 1037.0,
+      "minimum_damage": 691.0,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "maximum_damage": 1144.0,
+      "minimum_damage": 762.0,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "maximum_damage": 1260.0,
+      "minimum_damage": 840.0,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "maximum_damage": 1389.0,
+      "minimum_damage": 926.0,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "maximum_damage": 1529.0,
+      "minimum_damage": 1019.0,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "maximum_damage": 1683.0,
+      "minimum_damage": 1122.0,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "maximum_damage": 1851.0,
+      "minimum_damage": 1234.0,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "maximum_damage": 2036.0,
+      "minimum_damage": 1357.0,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "maximum_damage": 2135.0,
+      "minimum_damage": 1423.0,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "maximum_damage": 2238.0,
+      "minimum_damage": 1492.0,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "maximum_damage": 2346.0,
+      "minimum_damage": 1564.0,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "maximum_damage": 2459.0,
+      "minimum_damage": 1639.0,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "maximum_damage": 2577.0,
+      "minimum_damage": 1718.0,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "maximum_damage": 2701.0,
+      "minimum_damage": 1801.0,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "maximum_damage": 2831.0,
+      "minimum_damage": 1887.0,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "maximum_damage": 2966.0,
+      "minimum_damage": 1977.0,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "maximum_damage": 3108.0,
+      "minimum_damage": 2072.0,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "maximum_damage": 3256.0,
+      "minimum_damage": 2170.0,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "mana_reserved"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Deals (16\u2013514) to (24\u2013771) Cold Damage",
     "Mine lasts 5 seconds",
@@ -29,670 +686,35 @@
     "Fires an additional Projectile for every 2 prior Mines in Detonation Sequence"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "minimum_damage": 16.0,
-      "requirements": {
-        "dexterity": 14,
-        "intelligence": 21,
-        "requires_level": 12
-      },
-      "maximum_damage": 24.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "minimum_damage": 20.0,
-      "requirements": {
-        "dexterity": 17,
-        "intelligence": 25,
-        "requires_level": 15
-      },
-      "maximum_damage": 31.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "minimum_damage": 28.0,
-      "requirements": {
-        "dexterity": 21,
-        "intelligence": 30,
-        "requires_level": 19
-      },
-      "maximum_damage": 41.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "minimum_damage": 36.0,
-      "requirements": {
-        "dexterity": 24,
-        "intelligence": 35,
-        "requires_level": 23
-      },
-      "maximum_damage": 55.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "3"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "minimum_damage": 47.0,
-      "requirements": {
-        "dexterity": 28,
-        "intelligence": 41,
-        "requires_level": 27
-      },
-      "maximum_damage": 71.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "minimum_damage": 61.0,
-      "requirements": {
-        "dexterity": 32,
-        "intelligence": 46,
-        "requires_level": 31
-      },
-      "maximum_damage": 92.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "minimum_damage": 78.0,
-      "requirements": {
-        "dexterity": 36,
-        "intelligence": 51,
-        "requires_level": 35
-      },
-      "maximum_damage": 117.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "minimum_damage": 93.0,
-      "requirements": {
-        "dexterity": 38,
-        "intelligence": 55,
-        "requires_level": 38
-      },
-      "maximum_damage": 139.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "minimum_damage": 111.0,
-      "requirements": {
-        "dexterity": 41,
-        "intelligence": 59,
-        "requires_level": 41
-      },
-      "maximum_damage": 166.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "minimum_damage": 131.0,
-      "requirements": {
-        "dexterity": 44,
-        "intelligence": 63,
-        "requires_level": 44
-      },
-      "maximum_damage": 196.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "minimum_damage": 155.0,
-      "requirements": {
-        "dexterity": 47,
-        "intelligence": 67,
-        "requires_level": 47
-      },
-      "maximum_damage": 232.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "minimum_damage": 182.0,
-      "requirements": {
-        "dexterity": 49,
-        "intelligence": 71,
-        "requires_level": 50
-      },
-      "maximum_damage": 273.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "minimum_damage": 214.0,
-      "requirements": {
-        "dexterity": 52,
-        "intelligence": 75,
-        "requires_level": 53
-      },
-      "maximum_damage": 321.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "minimum_damage": 251.0,
-      "requirements": {
-        "dexterity": 55,
-        "intelligence": 79,
-        "requires_level": 56
-      },
-      "maximum_damage": 376.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "minimum_damage": 294.0,
-      "requirements": {
-        "dexterity": 58,
-        "intelligence": 83,
-        "requires_level": 59
-      },
-      "maximum_damage": 440.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "minimum_damage": 343.0,
-      "requirements": {
-        "dexterity": 60,
-        "intelligence": 87,
-        "requires_level": 62
-      },
-      "maximum_damage": 514.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "minimum_damage": 380.0,
-      "requirements": {
-        "dexterity": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "maximum_damage": 569.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "5"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "minimum_damage": 420.0,
-      "requirements": {
-        "dexterity": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "maximum_damage": 630.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "minimum_damage": 465.0,
-      "requirements": {
-        "dexterity": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "maximum_damage": 697.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "minimum_damage": 514.0,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "maximum_damage": 771.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "minimum_damage": 568.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "maximum_damage": 851.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "minimum_damage": 627.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "maximum_damage": 940.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "minimum_damage": 691.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "maximum_damage": 1037.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "minimum_damage": 762.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "maximum_damage": 1144.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "minimum_damage": 840.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "maximum_damage": 1260.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "minimum_damage": 926.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "maximum_damage": 1389.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "minimum_damage": 1019.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "maximum_damage": 1529.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "minimum_damage": 1122.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "maximum_damage": 1683.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "minimum_damage": 1234.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "maximum_damage": 1851.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "minimum_damage": 1357.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "maximum_damage": 2036.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "minimum_damage": 1423.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "maximum_damage": 2135.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "minimum_damage": 1492.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "maximum_damage": 2238.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1564.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "maximum_damage": 2346.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "7"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1639.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "maximum_damage": 2459.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1718.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "maximum_damage": 2577.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "minimum_damage": 1801.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "maximum_damage": 2701.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "minimum_damage": 1887.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "maximum_damage": 2831.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "minimum_damage": 1977.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "maximum_damage": 2966.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "minimum_damage": 2072.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "maximum_damage": 3108.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "minimum_damage": 2170.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "maximum_damage": 3256.0,
-      "fields": [
-        {
-          "name": "mana_reserved",
-          "value": "8"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CorruptedEmperorIcicleMineEffect.png?w=2&h=2&scale=1",
+      "name": "Void Emperor Icicle Mine Effect",
+      "description": "Your Icicle Mine becomes a Void Emperor Effect."
     }
   ],
-  "tags": [
-    "base_skill_is_mined [1]",
-    "base_skill_show_average_damage_instead_of_dps [1]",
-    "base_is_projectile [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Icicle Mine has 8% increased Throwing Speed",
-      "8% increased Icicle Mine Throwing Speed",
-      "Icicle Mine deals 25% increased Damage",
-      "Icicle Mine has 10% increased Throwing Speed",
-      "Icicle Mine has +20% to Critical Strike Multiplier"
-    ],
-    "eternal": [
-      "Icicle Mine has 12% increased Throwing Speed",
-      "12% increased Icicle Mine Throwing Speed",
-      "Icicle Mine deals 40% increased Damage",
-      "Icicle Mine has 15% increased Throwing Speed",
-      "Icicle Mine has +30% to Critical Strike Multiplier"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "The Siren's Cadence",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 1
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Nessa"
+    }
   },
-  "drop_level": 12,
   "type": [
     "spell",
     "hit",
@@ -706,14 +728,27 @@
     "auradebuff",
     "type93"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CorruptedEmperorIcicleMineEffect.png?w=2&h=2&scale=1",
-      "name": "Void Emperor Icicle Mine Effect",
-      "description": "Your Icicle Mine becomes a Void Emperor Effect."
-    }
+  "tags": [
+    "base_skill_is_mined [1]",
+    "base_skill_show_average_damage_instead_of_dps [1]",
+    "base_is_projectile [1]"
   ],
-  "description": "Throws a mine that fires projectiles around it when detonated. These projectiles quickly dissipate as they travel, before disappearing",
+  "enchants": {
+    "eternal": [
+      "Icicle Mine has 12% increased Throwing Speed",
+      "12% increased Icicle Mine Throwing Speed",
+      "Icicle Mine deals 40% increased Damage",
+      "Icicle Mine has 15% increased Throwing Speed",
+      "Icicle Mine has +30% to Critical Strike Multiplier"
+    ],
+    "merciless": [
+      "Icicle Mine has 8% increased Throwing Speed",
+      "8% increased Icicle Mine Throwing Speed",
+      "Icicle Mine deals 25% increased Damage",
+      "Icicle Mine has 10% increased Throwing Speed",
+      "Icicle Mine has +20% to Critical Strike Multiplier"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1313,40 +1348,6 @@
       ]
     }
   ],
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Critical Strike Chance",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Fires  additional Projectiles",
-          "minimum": 0.0,
-          "maximum": 2.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Icicle Mine",
+  "description": "Throws a mine that fires projectiles around it when detonated. These projectiles quickly dissipate as they travel, before disappearing"
 }

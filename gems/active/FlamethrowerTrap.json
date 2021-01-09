@@ -1,23 +1,526 @@
 {
-  "name": "Flamethrower Trap",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Clarissa"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% less Skill Effect Duration",
+          "minimum": 0.0
+        },
+        {
+          "maximum": 60.0,
+          "text": "% increased Cooldown Recovery Rate",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Shadow"
-      ],
-      "act": 3
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Fire Damage",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "% increased Cast Speed",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 28,
+  "slug": "flamethrower-trap",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "mana_cost": 13,
+      "maximum_damage": 8.0,
+      "minimum_damage": 5.0,
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 42,
+        "intelligence": 29
+      },
+      "fields": [],
+      "level": 1
+    },
+    {
+      "mana_cost": 13,
+      "maximum_damage": 10.0,
+      "minimum_damage": 7.0,
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 46,
+        "intelligence": 32
+      },
+      "fields": [],
+      "level": 2
+    },
+    {
+      "mana_cost": 14,
+      "maximum_damage": 14.0,
+      "minimum_damage": 9.0,
+      "requirements": {
+        "requires_level": 34,
+        "dexterity": 50,
+        "intelligence": 35
+      },
+      "fields": [],
+      "level": 3
+    },
+    {
+      "mana_cost": 16,
+      "maximum_damage": 18.0,
+      "minimum_damage": 12.0,
+      "requirements": {
+        "requires_level": 37,
+        "dexterity": 54,
+        "intelligence": 37
+      },
+      "fields": [],
+      "level": 4
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 24.0,
+      "minimum_damage": 16.0,
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 58,
+        "intelligence": 40
+      },
+      "fields": [],
+      "level": 5
+    },
+    {
+      "mana_cost": 17,
+      "maximum_damage": 29.0,
+      "minimum_damage": 19.0,
+      "requirements": {
+        "requires_level": 42,
+        "dexterity": 60,
+        "intelligence": 42
+      },
+      "fields": [],
+      "level": 6
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 34.0,
+      "minimum_damage": 23.0,
+      "requirements": {
+        "requires_level": 44,
+        "dexterity": 63,
+        "intelligence": 44
+      },
+      "fields": [],
+      "level": 7
+    },
+    {
+      "mana_cost": 18,
+      "maximum_damage": 41.0,
+      "minimum_damage": 27.0,
+      "requirements": {
+        "requires_level": 46,
+        "dexterity": 66,
+        "intelligence": 46
+      },
+      "fields": [],
+      "level": 8
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 49.0,
+      "minimum_damage": 33.0,
+      "requirements": {
+        "requires_level": 48,
+        "dexterity": 68,
+        "intelligence": 48
+      },
+      "fields": [],
+      "level": 9
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 59.0,
+      "minimum_damage": 39.0,
+      "requirements": {
+        "requires_level": 50,
+        "dexterity": 71,
+        "intelligence": 49
+      },
+      "fields": [],
+      "level": 10
+    },
+    {
+      "mana_cost": 19,
+      "maximum_damage": 70.0,
+      "minimum_damage": 47.0,
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 74,
+        "intelligence": 51
+      },
+      "fields": [],
+      "level": 11
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 84.0,
+      "minimum_damage": 56.0,
+      "requirements": {
+        "requires_level": 54,
+        "dexterity": 76,
+        "intelligence": 53
+      },
+      "fields": [],
+      "level": 12
+    },
+    {
+      "mana_cost": 20,
+      "maximum_damage": 99.0,
+      "minimum_damage": 66.0,
+      "requirements": {
+        "requires_level": 56,
+        "dexterity": 79,
+        "intelligence": 55
+      },
+      "fields": [],
+      "level": 13
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 118.0,
+      "minimum_damage": 78.0,
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 82,
+        "intelligence": 57
+      },
+      "fields": [],
+      "level": 14
+    },
+    {
+      "mana_cost": 22,
+      "maximum_damage": 140.0,
+      "minimum_damage": 93.0,
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 84,
+        "intelligence": 59
+      },
+      "fields": [],
+      "level": 15
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 165.0,
+      "minimum_damage": 110.0,
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 87,
+        "intelligence": 60
+      },
+      "fields": [],
+      "level": 16
+    },
+    {
+      "mana_cost": 23,
+      "maximum_damage": 195.0,
+      "minimum_damage": 129.0,
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 90,
+        "intelligence": 62
+      },
+      "fields": [],
+      "level": 17
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 230.0,
+      "minimum_damage": 153.0,
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 92,
+        "intelligence": 64
+      },
+      "fields": [],
+      "level": 18
+    },
+    {
+      "mana_cost": 24,
+      "maximum_damage": 271.0,
+      "minimum_damage": 180.0,
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 95,
+        "intelligence": 66
+      },
+      "fields": [],
+      "level": 19
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 319.0,
+      "minimum_damage": 211.0,
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 98,
+        "intelligence": 68
+      },
+      "fields": [],
+      "level": 20
+    },
+    {
+      "mana_cost": 25,
+      "maximum_damage": 366.0,
+      "minimum_damage": 243.0,
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 21
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 421.0,
+      "minimum_damage": 279.0,
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 22
+    },
+    {
+      "mana_cost": 26,
+      "maximum_damage": 483.0,
+      "minimum_damage": 320.0,
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 23
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 554.0,
+      "minimum_damage": 368.0,
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 24
+    },
+    {
+      "mana_cost": 28,
+      "maximum_damage": 635.0,
+      "minimum_damage": 421.0,
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 25
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 728.0,
+      "minimum_damage": 483.0,
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 26
+    },
+    {
+      "mana_cost": 29,
+      "maximum_damage": 834.0,
+      "minimum_damage": 554.0,
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 27
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 955.0,
+      "minimum_damage": 634.0,
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 28
+    },
+    {
+      "mana_cost": 30,
+      "maximum_damage": 1094.0,
+      "minimum_damage": 726.0,
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 29
+    },
+    {
+      "mana_cost": 31,
+      "maximum_damage": 1251.0,
+      "minimum_damage": 830.0,
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 30
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 1338.0,
+      "minimum_damage": 888.0,
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 31
+    },
+    {
+      "mana_cost": 32,
+      "maximum_damage": 1431.0,
+      "minimum_damage": 950.0,
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 32
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 1530.0,
+      "minimum_damage": 1015.0,
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 33
+    },
+    {
+      "mana_cost": 33,
+      "maximum_damage": 1636.0,
+      "minimum_damage": 1086.0,
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 34
+    },
+    {
+      "mana_cost": 34,
+      "maximum_damage": 1749.0,
+      "minimum_damage": 1161.0,
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 35
+    },
+    {
+      "mana_cost": 35,
+      "maximum_damage": 1870.0,
+      "minimum_damage": 1241.0,
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 36
+    },
+    {
+      "mana_cost": 35,
+      "maximum_damage": 1999.0,
+      "minimum_damage": 1326.0,
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 37
+    },
+    {
+      "mana_cost": 36,
+      "maximum_damage": 2137.0,
+      "minimum_damage": 1418.0,
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 38
+    },
+    {
+      "mana_cost": 36,
+      "maximum_damage": 2283.0,
+      "minimum_damage": 1515.0,
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 39
+    },
+    {
+      "mana_cost": 37,
+      "maximum_damage": 2440.0,
+      "minimum_damage": 1619.0,
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [],
+      "level": 40
+    }
+  ],
   "mods": [
     "Trap lasts 4 seconds",
     "+3.5 seconds to Base duration",
@@ -27,510 +530,28 @@
     "Modifiers to Cast Speed apply to the rotation speed of the Flames"
   ],
   "vaal": false,
-  "levels": [
-    {
-      "level": 1,
-      "minimum_damage": 5.0,
-      "requirements": {
-        "dexterity": 42,
-        "intelligence": 29,
-        "requires_level": 28
-      },
-      "mana_cost": 13,
-      "maximum_damage": 8.0,
-      "fields": []
+  "target_types": [
+    "enemy",
+    "ground"
+  ],
+  "mtx": [],
+  "acquisition": {
+    "quest": {
+      "quest_name": "Sever the Right Hand",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 3
     },
-    {
-      "level": 2,
-      "minimum_damage": 7.0,
-      "requirements": {
-        "dexterity": 46,
-        "intelligence": 32,
-        "requires_level": 31
-      },
-      "mana_cost": 13,
-      "maximum_damage": 10.0,
-      "fields": []
-    },
-    {
-      "level": 3,
-      "minimum_damage": 9.0,
-      "requirements": {
-        "dexterity": 50,
-        "intelligence": 35,
-        "requires_level": 34
-      },
-      "mana_cost": 14,
-      "maximum_damage": 14.0,
-      "fields": []
-    },
-    {
-      "level": 4,
-      "minimum_damage": 12.0,
-      "requirements": {
-        "dexterity": 54,
-        "intelligence": 37,
-        "requires_level": 37
-      },
-      "mana_cost": 16,
-      "maximum_damage": 18.0,
-      "fields": []
-    },
-    {
-      "level": 5,
-      "minimum_damage": 16.0,
-      "requirements": {
-        "dexterity": 58,
-        "intelligence": 40,
-        "requires_level": 40
-      },
-      "mana_cost": 17,
-      "maximum_damage": 24.0,
-      "fields": []
-    },
-    {
-      "level": 6,
-      "minimum_damage": 19.0,
-      "requirements": {
-        "dexterity": 60,
-        "intelligence": 42,
-        "requires_level": 42
-      },
-      "mana_cost": 17,
-      "maximum_damage": 29.0,
-      "fields": []
-    },
-    {
-      "level": 7,
-      "minimum_damage": 23.0,
-      "requirements": {
-        "dexterity": 63,
-        "intelligence": 44,
-        "requires_level": 44
-      },
-      "mana_cost": 18,
-      "maximum_damage": 34.0,
-      "fields": []
-    },
-    {
-      "level": 8,
-      "minimum_damage": 27.0,
-      "requirements": {
-        "dexterity": 66,
-        "intelligence": 46,
-        "requires_level": 46
-      },
-      "mana_cost": 18,
-      "maximum_damage": 41.0,
-      "fields": []
-    },
-    {
-      "level": 9,
-      "minimum_damage": 33.0,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 48,
-        "requires_level": 48
-      },
-      "mana_cost": 19,
-      "maximum_damage": 49.0,
-      "fields": []
-    },
-    {
-      "level": 10,
-      "minimum_damage": 39.0,
-      "requirements": {
-        "dexterity": 71,
-        "intelligence": 49,
-        "requires_level": 50
-      },
-      "mana_cost": 19,
-      "maximum_damage": 59.0,
-      "fields": []
-    },
-    {
-      "level": 11,
-      "minimum_damage": 47.0,
-      "requirements": {
-        "dexterity": 74,
-        "intelligence": 51,
-        "requires_level": 52
-      },
-      "mana_cost": 19,
-      "maximum_damage": 70.0,
-      "fields": []
-    },
-    {
-      "level": 12,
-      "minimum_damage": 56.0,
-      "requirements": {
-        "dexterity": 76,
-        "intelligence": 53,
-        "requires_level": 54
-      },
-      "mana_cost": 20,
-      "maximum_damage": 84.0,
-      "fields": []
-    },
-    {
-      "level": 13,
-      "minimum_damage": 66.0,
-      "requirements": {
-        "dexterity": 79,
-        "intelligence": 55,
-        "requires_level": 56
-      },
-      "mana_cost": 20,
-      "maximum_damage": 99.0,
-      "fields": []
-    },
-    {
-      "level": 14,
-      "minimum_damage": 78.0,
-      "requirements": {
-        "dexterity": 82,
-        "intelligence": 57,
-        "requires_level": 58
-      },
-      "mana_cost": 22,
-      "maximum_damage": 118.0,
-      "fields": []
-    },
-    {
-      "level": 15,
-      "minimum_damage": 93.0,
-      "requirements": {
-        "dexterity": 84,
-        "intelligence": 59,
-        "requires_level": 60
-      },
-      "mana_cost": 22,
-      "maximum_damage": 140.0,
-      "fields": []
-    },
-    {
-      "level": 16,
-      "minimum_damage": 110.0,
-      "requirements": {
-        "dexterity": 87,
-        "intelligence": 60,
-        "requires_level": 62
-      },
-      "mana_cost": 23,
-      "maximum_damage": 165.0,
-      "fields": []
-    },
-    {
-      "level": 17,
-      "minimum_damage": 129.0,
-      "requirements": {
-        "dexterity": 90,
-        "intelligence": 62,
-        "requires_level": 64
-      },
-      "mana_cost": 23,
-      "maximum_damage": 195.0,
-      "fields": []
-    },
-    {
-      "level": 18,
-      "minimum_damage": 153.0,
-      "requirements": {
-        "dexterity": 92,
-        "intelligence": 64,
-        "requires_level": 66
-      },
-      "mana_cost": 24,
-      "maximum_damage": 230.0,
-      "fields": []
-    },
-    {
-      "level": 19,
-      "minimum_damage": 180.0,
-      "requirements": {
-        "dexterity": 95,
-        "intelligence": 66,
-        "requires_level": 68
-      },
-      "mana_cost": 24,
-      "maximum_damage": 271.0,
-      "fields": []
-    },
-    {
-      "level": 20,
-      "minimum_damage": 211.0,
-      "requirements": {
-        "dexterity": 98,
-        "intelligence": 68,
-        "requires_level": 70
-      },
-      "mana_cost": 25,
-      "maximum_damage": 319.0,
-      "fields": []
-    },
-    {
-      "level": 21,
-      "minimum_damage": 243.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "mana_cost": 25,
-      "maximum_damage": 366.0,
-      "fields": []
-    },
-    {
-      "level": 22,
-      "minimum_damage": 279.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "mana_cost": 26,
-      "maximum_damage": 421.0,
-      "fields": []
-    },
-    {
-      "level": 23,
-      "minimum_damage": 320.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "mana_cost": 26,
-      "maximum_damage": 483.0,
-      "fields": []
-    },
-    {
-      "level": 24,
-      "minimum_damage": 368.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "mana_cost": 28,
-      "maximum_damage": 554.0,
-      "fields": []
-    },
-    {
-      "level": 25,
-      "minimum_damage": 421.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "mana_cost": 28,
-      "maximum_damage": 635.0,
-      "fields": []
-    },
-    {
-      "level": 26,
-      "minimum_damage": 483.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "mana_cost": 29,
-      "maximum_damage": 728.0,
-      "fields": []
-    },
-    {
-      "level": 27,
-      "minimum_damage": 554.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "mana_cost": 29,
-      "maximum_damage": 834.0,
-      "fields": []
-    },
-    {
-      "level": 28,
-      "minimum_damage": 634.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "mana_cost": 30,
-      "maximum_damage": 955.0,
-      "fields": []
-    },
-    {
-      "level": 29,
-      "minimum_damage": 726.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "mana_cost": 30,
-      "maximum_damage": 1094.0,
-      "fields": []
-    },
-    {
-      "level": 30,
-      "minimum_damage": 830.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "mana_cost": 31,
-      "maximum_damage": 1251.0,
-      "fields": []
-    },
-    {
-      "level": 31,
-      "minimum_damage": 888.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "mana_cost": 32,
-      "maximum_damage": 1338.0,
-      "fields": []
-    },
-    {
-      "level": 32,
-      "minimum_damage": 950.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "mana_cost": 32,
-      "maximum_damage": 1431.0,
-      "fields": []
-    },
-    {
-      "level": 33,
-      "minimum_damage": 1015.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "mana_cost": 33,
-      "maximum_damage": 1530.0,
-      "fields": []
-    },
-    {
-      "level": 34,
-      "minimum_damage": 1086.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "mana_cost": 33,
-      "maximum_damage": 1636.0,
-      "fields": []
-    },
-    {
-      "level": 35,
-      "minimum_damage": 1161.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "mana_cost": 34,
-      "maximum_damage": 1749.0,
-      "fields": []
-    },
-    {
-      "level": 36,
-      "minimum_damage": 1241.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "mana_cost": 35,
-      "maximum_damage": 1870.0,
-      "fields": []
-    },
-    {
-      "level": 37,
-      "minimum_damage": 1326.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "mana_cost": 35,
-      "maximum_damage": 1999.0,
-      "fields": []
-    },
-    {
-      "level": 38,
-      "minimum_damage": 1418.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "mana_cost": 36,
-      "maximum_damage": 2137.0,
-      "fields": []
-    },
-    {
-      "level": 39,
-      "minimum_damage": 1515.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "mana_cost": 36,
-      "maximum_damage": 2283.0,
-      "fields": []
-    },
-    {
-      "level": 40,
-      "minimum_damage": 1619.0,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "mana_cost": 37,
-      "maximum_damage": 2440.0,
-      "fields": []
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Clarissa"
     }
-  ],
-  "tags": [
-    "is_area_damage [1]",
-    "base_skill_is_trapped [1]",
-    "base_skill_show_average_damage_instead_of_dps [1]"
-  ],
-  "enchants": {
-    "merciless": [
-      "Flamethrower Trap deals 25% increased Damage",
-      "Flamethrower Trap has 8% increased Cast Speed",
-      "Flamethrower Trap has 10% increased Cooldown Recovery Rate",
-      "Flamethrower Trap has 20% increased Skill Effect Duration",
-      "Flamethrower Trap has an additional Flame"
-    ],
-    "eternal": [
-      "Flamethrower Trap deals 40% increased Damage",
-      "Flamethrower Trap has 12% increased Cast Speed",
-      "Flamethrower Trap has 15% increased Cooldown Recovery Rate",
-      "Flamethrower Trap has 30% increased Skill Effect Duration",
-      "Flamethrower Trap has 2 additional Flames"
-    ]
   },
-  "drop_level": 28,
   "type": [
     "spell",
     "duration",
@@ -542,8 +563,27 @@
     "areaspell",
     "secondwindsupport"
   ],
-  "mtx": [],
-  "description": "Throws a trap that releases a number of flames in different directions around it when triggered. The flames last for a duration, rotating around the trap and repeatedly dealing damage. Burning enemies are dealt more damage.",
+  "tags": [
+    "is_area_damage [1]",
+    "base_skill_is_trapped [1]",
+    "base_skill_show_average_damage_instead_of_dps [1]"
+  ],
+  "enchants": {
+    "eternal": [
+      "Flamethrower Trap deals 40% increased Damage",
+      "Flamethrower Trap has 12% increased Cast Speed",
+      "Flamethrower Trap has 15% increased Cooldown Recovery Rate",
+      "Flamethrower Trap has 30% increased Skill Effect Duration",
+      "Flamethrower Trap has 2 additional Flames"
+    ],
+    "merciless": [
+      "Flamethrower Trap deals 25% increased Damage",
+      "Flamethrower Trap has 8% increased Cast Speed",
+      "Flamethrower Trap has 10% increased Cooldown Recovery Rate",
+      "Flamethrower Trap has 20% increased Skill Effect Duration",
+      "Flamethrower Trap has an additional Flame"
+    ]
+  },
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1086,45 +1126,6 @@
       ]
     }
   ],
-  "target_types": [
-    "enemy",
-    "ground"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "% increased Cast Speed",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Fire Damage",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "% less Skill Effect Duration",
-          "minimum": 0.0,
-          "maximum": 20.0
-        },
-        {
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0,
-          "maximum": 60.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Flamethrower Trap",
+  "description": "Throws a trap that releases a number of flames in different directions around it when triggered. The flames last for a duration, rotating around the trap and repeatedly dealing damage. Burning enemies are dealt more damage."
 }

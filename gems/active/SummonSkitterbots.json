@@ -1,24 +1,921 @@
 {
-  "name": "Summon Skitterbots",
-  "gem_class": "Active Skill Gems",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Witch",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Yeena"
+  "quality": {
+    "anomalous": {
+      "weight": 100.0,
+      "mods": [
+        {
+          "maximum": 20.0,
+          "text": "Minions have % increased Area of Effect",
+          "minimum": 0.0
+        }
+      ]
     },
-    "quest": {
-      "quest_name": "Intruders in Black",
-      "classes": [
-        "Shadow"
-      ],
-      "act": 2
+    "superior": {
+      "weight": 50.0,
+      "mods": [
+        {
+          "maximum": 40.0,
+          "text": "% increased Minion Movement Speed",
+          "minimum": 0.0
+        }
+      ]
+    },
+    "divergent": {
+      "weight": 10.0,
+      "mods": [
+        {
+          "maximum": 10.0,
+          "text": "Minions have % increased Effect of non-Damaging Ailments on Enemies",
+          "minimum": 0.0
+        }
+      ]
     }
   },
+  "drop_level": 16,
+  "slug": "summon-skitterbots",
+  "gem_class": "Active Skill Gems",
+  "levels": [
+    {
+      "requirements": {
+        "requires_level": 16,
+        "dexterity": 18,
+        "intelligence": 26
+      },
+      "fields": [
+        {
+          "value": "",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "requirements": {
+        "requires_level": 20,
+        "dexterity": 22,
+        "intelligence": 31
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "1",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "4",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "requirements": {
+        "requires_level": 24,
+        "dexterity": 25,
+        "intelligence": 37
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "2",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "8",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "requirements": {
+        "requires_level": 28,
+        "dexterity": 29,
+        "intelligence": 42
+      },
+      "fields": [
+        {
+          "value": "3",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "3",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "12",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "requirements": {
+        "requires_level": 31,
+        "dexterity": 32,
+        "intelligence": 46
+      },
+      "fields": [
+        {
+          "value": "4",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "4",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "16",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "requirements": {
+        "requires_level": 34,
+        "dexterity": 35,
+        "intelligence": 50
+      },
+      "fields": [
+        {
+          "value": "5",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "5",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "20",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 6
+    },
+    {
+      "requirements": {
+        "requires_level": 37,
+        "dexterity": 37,
+        "intelligence": 54
+      },
+      "fields": [
+        {
+          "value": "6",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "6",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "24",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 7
+    },
+    {
+      "requirements": {
+        "requires_level": 40,
+        "dexterity": 40,
+        "intelligence": 58
+      },
+      "fields": [
+        {
+          "value": "7",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "7",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "28",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 8
+    },
+    {
+      "requirements": {
+        "requires_level": 43,
+        "dexterity": 43,
+        "intelligence": 62
+      },
+      "fields": [
+        {
+          "value": "8",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "8",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "32",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 9
+    },
+    {
+      "requirements": {
+        "requires_level": 46,
+        "dexterity": 46,
+        "intelligence": 66
+      },
+      "fields": [
+        {
+          "value": "9",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "9",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "36",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 10
+    },
+    {
+      "requirements": {
+        "requires_level": 49,
+        "dexterity": 48,
+        "intelligence": 70
+      },
+      "fields": [
+        {
+          "value": "10",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "10",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "40",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 11
+    },
+    {
+      "requirements": {
+        "requires_level": 52,
+        "dexterity": 51,
+        "intelligence": 74
+      },
+      "fields": [
+        {
+          "value": "11",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "11",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "44",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 12
+    },
+    {
+      "requirements": {
+        "requires_level": 55,
+        "dexterity": 54,
+        "intelligence": 78
+      },
+      "fields": [
+        {
+          "value": "12",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "12",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "48",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 13
+    },
+    {
+      "requirements": {
+        "requires_level": 58,
+        "dexterity": 57,
+        "intelligence": 82
+      },
+      "fields": [
+        {
+          "value": "13",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "13",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "52",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 14
+    },
+    {
+      "requirements": {
+        "requires_level": 60,
+        "dexterity": 59,
+        "intelligence": 84
+      },
+      "fields": [
+        {
+          "value": "14",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "14",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "56",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 15
+    },
+    {
+      "requirements": {
+        "requires_level": 62,
+        "dexterity": 60,
+        "intelligence": 87
+      },
+      "fields": [
+        {
+          "value": "15",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "15",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "60",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 16
+    },
+    {
+      "requirements": {
+        "requires_level": 64,
+        "dexterity": 62,
+        "intelligence": 90
+      },
+      "fields": [
+        {
+          "value": "16",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "16",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "64",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 17
+    },
+    {
+      "requirements": {
+        "requires_level": 66,
+        "dexterity": 64,
+        "intelligence": 92
+      },
+      "fields": [
+        {
+          "value": "17",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "17",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "68",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 18
+    },
+    {
+      "requirements": {
+        "requires_level": 68,
+        "dexterity": 66,
+        "intelligence": 95
+      },
+      "fields": [
+        {
+          "value": "18",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "18",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "72",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 19
+    },
+    {
+      "requirements": {
+        "requires_level": 70,
+        "dexterity": 68,
+        "intelligence": 98
+      },
+      "fields": [
+        {
+          "value": "19",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "19",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "76",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 20
+    },
+    {
+      "requirements": {
+        "requires_level": 72,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "20",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "20",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "80",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 21
+    },
+    {
+      "requirements": {
+        "requires_level": 74,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "21",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "21",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "84",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 22
+    },
+    {
+      "requirements": {
+        "requires_level": 76,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "22",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "22",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "88",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 23
+    },
+    {
+      "requirements": {
+        "requires_level": 78,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "23",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "23",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "92",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 24
+    },
+    {
+      "requirements": {
+        "requires_level": 80,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "24",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "24",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "96",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 25
+    },
+    {
+      "requirements": {
+        "requires_level": 82,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "25",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "25",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "100",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 26
+    },
+    {
+      "requirements": {
+        "requires_level": 84,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "26",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "26",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "104",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 27
+    },
+    {
+      "requirements": {
+        "requires_level": 86,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "27",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "27",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "108",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 28
+    },
+    {
+      "requirements": {
+        "requires_level": 88,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "28",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "28",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "112",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 29
+    },
+    {
+      "requirements": {
+        "requires_level": 90,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "29",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "29",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "116",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 30
+    },
+    {
+      "requirements": {
+        "requires_level": 91,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "30",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "30",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "120",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 31
+    },
+    {
+      "requirements": {
+        "requires_level": 92,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "31",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "31",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "124",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 32
+    },
+    {
+      "requirements": {
+        "requires_level": 93,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "32",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "32",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "128",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 33
+    },
+    {
+      "requirements": {
+        "requires_level": 94,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "33",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "33",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "132",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 34
+    },
+    {
+      "requirements": {
+        "requires_level": 95,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "34",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "34",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "136",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 35
+    },
+    {
+      "requirements": {
+        "requires_level": 96,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "35",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "35",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "140",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 36
+    },
+    {
+      "requirements": {
+        "requires_level": 97,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "36",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "36",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "144",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 37
+    },
+    {
+      "requirements": {
+        "requires_level": 98,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "37",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "37",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "148",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 38
+    },
+    {
+      "requirements": {
+        "requires_level": 99,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "38",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "38",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "152",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 39
+    },
+    {
+      "requirements": {
+        "requires_level": 100,
+        "dexterity": null,
+        "intelligence": null
+      },
+      "fields": [
+        {
+          "value": "39",
+          "name": "minions_have_%_increased_shock_effect"
+        },
+        {
+          "value": "39",
+          "name": "minions_have_%_increased_chill_effect"
+        },
+        {
+          "value": "156",
+          "name": "%_increased_minion_movement_speed"
+        }
+      ],
+      "level": 40
+    }
+  ],
   "mods": [
     "Skitterbots grant 10% more Trap and Mine Damage",
     "Minions have (0\u201319)% increased Shock Effect",
@@ -29,900 +926,34 @@
     "Chilling Skitterbot's Aura Chills Enemies near it"
   ],
   "vaal": false,
-  "levels": [
+  "target_types": [
+    "any"
+  ],
+  "mtx": [
     {
-      "level": 1,
-      "requirements": {
-        "dexterity": 18,
-        "intelligence": 26,
-        "requires_level": 16
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": ""
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": ""
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "requirements": {
-        "dexterity": 22,
-        "intelligence": 31,
-        "requires_level": 20
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "1"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "1"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "4"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "dexterity": 25,
-        "intelligence": 37,
-        "requires_level": 24
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "2"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "2"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "8"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "dexterity": 29,
-        "intelligence": 42,
-        "requires_level": 28
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "3"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "3"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "dexterity": 32,
-        "intelligence": 46,
-        "requires_level": 31
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "4"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "4"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "dexterity": 35,
-        "intelligence": 50,
-        "requires_level": 34
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "5"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "5"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "dexterity": 37,
-        "intelligence": 54,
-        "requires_level": 37
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "6"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "6"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "dexterity": 40,
-        "intelligence": 58,
-        "requires_level": 40
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "7"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "7"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "dexterity": 43,
-        "intelligence": 62,
-        "requires_level": 43
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "8"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "8"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "dexterity": 46,
-        "intelligence": 66,
-        "requires_level": 46
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "9"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "9"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "dexterity": 48,
-        "intelligence": 70,
-        "requires_level": 49
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "10"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "10"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "40"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "dexterity": 51,
-        "intelligence": 74,
-        "requires_level": 52
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "11"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "11"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "44"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "dexterity": 54,
-        "intelligence": 78,
-        "requires_level": 55
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "12"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "12"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "48"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "dexterity": 57,
-        "intelligence": 82,
-        "requires_level": 58
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "13"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "13"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "52"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "dexterity": 59,
-        "intelligence": 84,
-        "requires_level": 60
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "14"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "14"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "56"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "dexterity": 60,
-        "intelligence": 87,
-        "requires_level": 62
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "15"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "15"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "60"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "dexterity": 62,
-        "intelligence": 90,
-        "requires_level": 64
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "16"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "16"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "64"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "dexterity": 64,
-        "intelligence": 92,
-        "requires_level": 66
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "17"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "17"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "68"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "dexterity": 66,
-        "intelligence": 95,
-        "requires_level": 68
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "18"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "18"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "72"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "dexterity": 68,
-        "intelligence": 98,
-        "requires_level": 70
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "19"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "19"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "76"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 72
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "20"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "20"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "80"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 74
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "21"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "21"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "84"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 76
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "22"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "22"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "88"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 78
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "23"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "23"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "92"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 80
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "24"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "24"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "96"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 82
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "25"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "25"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "100"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 84
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "26"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "26"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "104"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 86
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "27"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "27"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "108"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 88
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "28"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "28"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "112"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 90
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "29"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "29"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "116"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 91
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "30"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "30"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "120"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 92
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "31"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "31"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "124"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 93
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "32"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "32"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "128"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 94
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "33"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "33"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "132"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 95
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "34"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "34"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "136"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 96
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "35"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "35"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "140"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 97
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "36"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "36"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "144"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 98
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "37"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "37"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "148"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 99
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "38"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "38"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "152"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "dexterity": null,
-        "intelligence": null,
-        "requires_level": 100
-      },
-      "fields": [
-        {
-          "name": "minions_have_%_increased_shock_effect",
-          "value": "39"
-        },
-        {
-          "name": "minions_have_%_increased_chill_effect",
-          "value": "39"
-        },
-        {
-          "name": "%_increased_minion_movement_speed",
-          "value": "156"
-        }
-      ]
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CorruptedEmperorSummonSkitterbots.png?w=2&h=2&scale=1",
+      "name": "Void Emperor Summon Skitterbots Skin",
+      "description": "Your Summon Skitterbots' Skins becomes a Void Emperor Effect."
     }
   ],
-  "tags": [],
-  "enchants": {
-    "merciless": [
-      "Summoned Skitterbots have 60% increased Area of Effect",
-      "Summon Skitterbots has 14% reduced Mana Reservation"
-    ],
-    "eternal": [
-      "Summoned Skitterbots have 90% increased Area of Effect",
-      "Summon Skitterbots has 20% reduced Mana Reservation"
-    ]
+  "acquisition": {
+    "quest": {
+      "quest_name": "Intruders in Black",
+      "classes": [
+        "Shadow"
+      ],
+      "act": 2
+    },
+    "vendor": {
+      "classes": [
+        "Witch",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ],
+      "vendor_name": "Yeena"
+    }
   },
-  "drop_level": 16,
   "type": [
     "spell",
     "buff",
@@ -943,14 +974,17 @@
     "type92",
     "secondwindsupport"
   ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CorruptedEmperorSummonSkitterbots.png?w=2&h=2&scale=1",
-      "name": "Void Emperor Summon Skitterbots Skin",
-      "description": "Your Summon Skitterbots' Skins becomes a Void Emperor Effect."
-    }
-  ],
-  "description": "Summon a Chilling Skitterbot and a Shocking Skitterbot, which will trigger your traps and detonate your mines. Mines detonated by Skitterbots will re-arm and can then be detonated again. The Skitterbots grant you more trap and mine damage, and cannot be targeted or damaged.",
+  "tags": [],
+  "enchants": {
+    "eternal": [
+      "Summoned Skitterbots have 90% increased Area of Effect",
+      "Summon Skitterbots has 20% reduced Mana Reservation"
+    ],
+    "merciless": [
+      "Summoned Skitterbots have 60% increased Area of Effect",
+      "Summon Skitterbots has 14% reduced Mana Reservation"
+    ]
+  },
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1102,39 +1136,6 @@
       ]
     }
   ],
-  "target_types": [
-    "any"
-  ],
-  "quality": {
-    "divergent": {
-      "mods": [
-        {
-          "text": "Minions have % increased Effect of non-Damaging Ailments on Enemies",
-          "minimum": 0.0,
-          "maximum": 10.0
-        }
-      ],
-      "weight": 10.0
-    },
-    "superior": {
-      "mods": [
-        {
-          "text": "% increased Minion Movement Speed",
-          "minimum": 0.0,
-          "maximum": 40.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "text": "Minions have % increased Area of Effect",
-          "minimum": 0.0,
-          "maximum": 20.0
-        }
-      ],
-      "weight": 100.0
-    }
-  }
+  "name": "Summon Skitterbots",
+  "description": "Summon a Chilling Skitterbot and a Shocking Skitterbot, which will trigger your traps and detonate your mines. Mines detonated by Skitterbots will re-arm and can then be detonated again. The Skitterbots grant you more trap and mine damage, and cannot be targeted or damaged."
 }
