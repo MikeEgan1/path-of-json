@@ -1,562 +1,78 @@
 {
-  "name": "Arrow Nova Support",
-  "levels": [
-    {
-      "level": 1,
-      "requirements": {
-        "requires_level": 8,
-        "dexterity": 18
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "40"
-        }
+  "tags": [
+    "skill_is_rain_skill [1]"
+  ],
+  "description": "Supports bow attack skills that fire arrows forwards as projectiles. These skills will instead fire a payload arrow into the air to land at a targeted location. The supported skills' arrows will then fire out in a circle from where it lands. Cannot support skills that already fire arrows into the air, channelled skills, or skills that create Minions.",
+  "acquisition": {
+    "vendor": {
+      "vendor_name": "Nessa",
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
       ]
     },
-    {
-      "level": 2,
-      "requirements": {
-        "requires_level": 10,
-        "dexterity": 21
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 3,
-      "requirements": {
-        "requires_level": 13,
-        "dexterity": 25
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "39"
-        }
-      ]
-    },
-    {
-      "level": 4,
-      "requirements": {
-        "requires_level": 17,
-        "dexterity": 31
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "38"
-        }
-      ]
-    },
-    {
-      "level": 5,
-      "requirements": {
-        "requires_level": 21,
-        "dexterity": 37
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "37"
-        }
-      ]
-    },
-    {
-      "level": 6,
-      "requirements": {
-        "requires_level": 25,
-        "dexterity": 43
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 7,
-      "requirements": {
-        "requires_level": 29,
-        "dexterity": 49
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "36"
-        }
-      ]
-    },
-    {
-      "level": 8,
-      "requirements": {
-        "requires_level": 33,
-        "dexterity": 55
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "35"
-        }
-      ]
-    },
-    {
-      "level": 9,
-      "requirements": {
-        "requires_level": 37,
-        "dexterity": 61
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "34"
-        }
-      ]
-    },
-    {
-      "level": 10,
-      "requirements": {
-        "requires_level": 40,
-        "dexterity": 66
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 11,
-      "requirements": {
-        "requires_level": 43,
-        "dexterity": 70
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "level": 12,
-      "requirements": {
-        "requires_level": 46,
-        "dexterity": 75
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "32"
-        }
-      ]
-    },
-    {
-      "level": 13,
-      "requirements": {
-        "requires_level": 49,
-        "dexterity": 79
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "31"
-        }
-      ]
-    },
-    {
-      "level": 14,
-      "requirements": {
-        "requires_level": 52,
-        "dexterity": 84
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 15,
-      "requirements": {
-        "requires_level": 55,
-        "dexterity": 88
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "30"
-        }
-      ]
-    },
-    {
-      "level": 16,
-      "requirements": {
-        "requires_level": 58,
-        "dexterity": 93
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "29"
-        }
-      ]
-    },
-    {
-      "level": 17,
-      "requirements": {
-        "requires_level": 61,
-        "dexterity": 97
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "28"
-        }
-      ]
-    },
-    {
-      "level": 18,
-      "requirements": {
-        "requires_level": 64,
-        "dexterity": 102
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 19,
-      "requirements": {
-        "requires_level": 67,
-        "dexterity": 106
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "27"
-        }
-      ]
-    },
-    {
-      "level": 20,
-      "requirements": {
-        "requires_level": 70,
-        "dexterity": 111
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "26"
-        }
-      ]
-    },
-    {
-      "level": 21,
-      "requirements": {
-        "requires_level": 72,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 22,
-      "requirements": {
-        "requires_level": 74,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "25"
-        }
-      ]
-    },
-    {
-      "level": 23,
-      "requirements": {
-        "requires_level": 76,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "24"
-        }
-      ]
-    },
-    {
-      "level": 24,
-      "requirements": {
-        "requires_level": 78,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "23"
-        }
-      ]
-    },
-    {
-      "level": 25,
-      "requirements": {
-        "requires_level": 80,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 26,
-      "requirements": {
-        "requires_level": 82,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "22"
-        }
-      ]
-    },
-    {
-      "level": 27,
-      "requirements": {
-        "requires_level": 84,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "21"
-        }
-      ]
-    },
-    {
-      "level": 28,
-      "requirements": {
-        "requires_level": 86,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "20"
-        }
-      ]
-    },
-    {
-      "level": 29,
-      "requirements": {
-        "requires_level": 88,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 30,
-      "requirements": {
-        "requires_level": 90,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "19"
-        }
-      ]
-    },
-    {
-      "level": 31,
-      "requirements": {
-        "requires_level": 91,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "18"
-        }
-      ]
-    },
-    {
-      "level": 32,
-      "requirements": {
-        "requires_level": 92,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "17"
-        }
-      ]
-    },
-    {
-      "level": 33,
-      "requirements": {
-        "requires_level": 93,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 34,
-      "requirements": {
-        "requires_level": 94,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "16"
-        }
-      ]
-    },
-    {
-      "level": 35,
-      "requirements": {
-        "requires_level": 95,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "15"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "requirements": {
-        "requires_level": 96,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "14"
-        }
-      ]
-    },
-    {
-      "level": 37,
-      "requirements": {
-        "requires_level": 97,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 38,
-      "requirements": {
-        "requires_level": 98,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "13"
-        }
-      ]
-    },
-    {
-      "level": 39,
-      "requirements": {
-        "requires_level": 99,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "12"
-        }
-      ]
-    },
-    {
-      "level": 40,
-      "requirements": {
-        "requires_level": 100,
-        "dexterity": null
-      },
-      "fields": [
-        {
-          "name": "supported_skills_deal_%_less_projectile_damage",
-          "value": "11"
-        }
+    "quest": {
+      "quest_name": "The Caged Brute",
+      "act": 1,
+      "classes": [
+        "Ranger"
       ]
     }
-  ],
-  "vaal": false,
-  "slug": "arrow-nova-support",
+  },
   "type": [],
-  "target_types": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
+  "gem_class": "Support Skill Gems",
+  "quality": {
+    "superior": {
+      "mods": [
+        {
+          "text": "Supported Skills have % increased Attack Speed",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "divergent": {
+      "mods": [
+        {
+          "text": "Supported Skills have % reduced Projectile Speed",
+          "maximum": 40.0,
+          "minimum": 0.0
+        },
+        {
+          "text": "Supported Skills deal % increased Damage",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Supported Skills have % increased Projectile Speed",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    }
+  },
   "mods": [
     "Supported Skills fire 4 additional Projectiles",
     "Supported Skills deal (26\u201340)% less Projectile Damage",
     "Supported Skills Fire Projectiles in a circle",
     "Supported Skills fire a Payload Arrow into the airProjectiles from the Supported Skill Fire from where the Payload Arrow landsSupported Skills can only be used with Bows"
   ],
-  "gem_class": "Support Skill Gems",
-  "description": "Supports bow attack skills that fire arrows forwards as projectiles. These skills will instead fire a payload arrow into the air to land at a targeted location. The supported skills' arrows will then fire out in a circle from where it lands. Cannot support skills that already fire arrows into the air, channelled skills, or skills that create Minions.",
-  "acquisition": {
-    "vendor": {
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
-    },
-    "quest": {
-      "act": 1,
-      "classes": [
-        "Ranger"
-      ],
-      "quest_name": "The Caged Brute"
-    }
-  },
-  "enchants": {
-    "merciless": [],
-    "eternal": []
-  },
+  "target_types": [],
   "mtx": [],
+  "name": "Arrow Nova Support",
   "support": [
     {
       "name": "Spectral Shield Throw",
@@ -937,45 +453,529 @@
       ]
     }
   ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "Supported Skills have % increased Attack Speed",
-          "minimum": 0.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "Supported Skills have % increased Projectile Speed",
-          "minimum": 0.0
-        }
-      ],
-      "weight": 100.0
-    },
-    "divergent": {
-      "mods": [
-        {
-          "maximum": 40.0,
-          "text": "Supported Skills have % reduced Projectile Speed",
-          "minimum": 0.0
-        },
-        {
-          "maximum": 20.0,
-          "text": "Supported Skills deal % increased Damage",
-          "minimum": 0.0
-        }
-      ],
-      "weight": 100.0
-    }
-  },
   "drop_level": null,
-  "tags": [
-    "skill_is_rain_skill [1]"
+  "slug": "arrow-nova-support",
+  "vaal": false,
+  "levels": [
+    {
+      "requirements": {
+        "dexterity": 18,
+        "requires_level": 8
+      },
+      "level": 1,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 21,
+        "requires_level": 10
+      },
+      "level": 2,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 25,
+        "requires_level": 13
+      },
+      "level": 3,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 31,
+        "requires_level": 17
+      },
+      "level": 4,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "38"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 37,
+        "requires_level": 21
+      },
+      "level": 5,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "37"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 43,
+        "requires_level": 25
+      },
+      "level": 6,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 49,
+        "requires_level": 29
+      },
+      "level": 7,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 55,
+        "requires_level": 33
+      },
+      "level": 8,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 61,
+        "requires_level": 37
+      },
+      "level": 9,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 66,
+        "requires_level": 40
+      },
+      "level": 10,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 70,
+        "requires_level": 43
+      },
+      "level": 11,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 75,
+        "requires_level": 46
+      },
+      "level": 12,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 79,
+        "requires_level": 49
+      },
+      "level": 13,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 84,
+        "requires_level": 52
+      },
+      "level": 14,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 88,
+        "requires_level": 55
+      },
+      "level": 15,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 93,
+        "requires_level": 58
+      },
+      "level": 16,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 97,
+        "requires_level": 61
+      },
+      "level": 17,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 102,
+        "requires_level": 64
+      },
+      "level": 18,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 106,
+        "requires_level": 67
+      },
+      "level": 19,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 111,
+        "requires_level": 70
+      },
+      "level": 20,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 72
+      },
+      "level": 21,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 74
+      },
+      "level": 22,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 76
+      },
+      "level": 23,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 78
+      },
+      "level": 24,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 80
+      },
+      "level": 25,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 82
+      },
+      "level": 26,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 84
+      },
+      "level": 27,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 86
+      },
+      "level": 28,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 88
+      },
+      "level": 29,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 90
+      },
+      "level": 30,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 91
+      },
+      "level": 31,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 92
+      },
+      "level": 32,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 93
+      },
+      "level": 33,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 94
+      },
+      "level": 34,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 95
+      },
+      "level": 35,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 96
+      },
+      "level": 36,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 97
+      },
+      "level": 37,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 98
+      },
+      "level": 38,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 99
+      },
+      "level": 39,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 100
+      },
+      "level": 40,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_less_projectile_damage",
+          "value": "11"
+        }
+      ]
+    }
   ]
 }

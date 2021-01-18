@@ -1,536 +1,668 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% chance to Freeze enemies",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "phantasmal": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% less Skill Effect Duration",
-          "minimum": 0.0
-        },
-        {
-          "maximum": 20.0,
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Cold Damage",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Area of Effect",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 4,
-  "slug": "frost-bomb",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
-      "mana_cost": 4,
       "maximum_damage": 21.0,
-      "minimum_damage": 14.0,
       "requirements": {
-        "requires_level": 4,
-        "intelligence": 16
+        "intelligence": 16,
+        "requires_level": 4
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 4,
+      "minimum_damage": 14.0,
       "level": 1
     },
     {
-      "mana_cost": 5,
       "maximum_damage": 26.0,
-      "minimum_damage": 17.0,
       "requirements": {
-        "requires_level": 6,
-        "intelligence": 20
+        "intelligence": 20,
+        "requires_level": 6
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "0",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 5,
+      "minimum_damage": 18.0,
       "level": 2
     },
     {
-      "mana_cost": 5,
-      "maximum_damage": 35.0,
-      "minimum_damage": 23.0,
+      "maximum_damage": 36.0,
       "requirements": {
-        "requires_level": 9,
-        "intelligence": 27
+        "intelligence": 27,
+        "requires_level": 9
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 5,
+      "minimum_damage": 24.0,
       "level": 3
     },
     {
-      "mana_cost": 6,
-      "maximum_damage": 45.0,
-      "minimum_damage": 30.0,
+      "maximum_damage": 47.0,
       "requirements": {
-        "requires_level": 12,
-        "intelligence": 33
+        "intelligence": 33,
+        "requires_level": 12
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 6,
+      "minimum_damage": 31.0,
       "level": 4
     },
     {
-      "mana_cost": 7,
-      "maximum_damage": 62.0,
-      "minimum_damage": 41.0,
+      "maximum_damage": 66.0,
       "requirements": {
-        "requires_level": 16,
-        "intelligence": 41
+        "intelligence": 41,
+        "requires_level": 16
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "1",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 7,
+      "minimum_damage": 44.0,
       "level": 5
     },
     {
-      "mana_cost": 7,
-      "maximum_damage": 83.0,
-      "minimum_damage": 55.0,
+      "maximum_damage": 90.0,
       "requirements": {
-        "requires_level": 20,
-        "intelligence": 50
+        "intelligence": 50,
+        "requires_level": 20
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 7,
+      "minimum_damage": 60.0,
       "level": 6
     },
     {
-      "mana_cost": 8,
-      "maximum_damage": 110.0,
-      "minimum_damage": 73.0,
+      "maximum_damage": 121.0,
       "requirements": {
-        "requires_level": 24,
-        "intelligence": 58
+        "intelligence": 58,
+        "requires_level": 24
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "2",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 8,
+      "minimum_damage": 80.0,
       "level": 7
     },
     {
-      "mana_cost": 9,
-      "maximum_damage": 142.0,
-      "minimum_damage": 95.0,
+      "maximum_damage": 160.0,
       "requirements": {
-        "requires_level": 28,
-        "intelligence": 67
+        "intelligence": 67,
+        "requires_level": 28
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 9,
+      "minimum_damage": 107.0,
       "level": 8
     },
     {
-      "mana_cost": 10,
-      "maximum_damage": 183.0,
-      "minimum_damage": 122.0,
+      "maximum_damage": 210.0,
       "requirements": {
-        "requires_level": 32,
-        "intelligence": 75
+        "intelligence": 75,
+        "requires_level": 32
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 10,
+      "minimum_damage": 140.0,
       "level": 9
     },
     {
-      "mana_cost": 10,
-      "maximum_damage": 232.0,
-      "minimum_damage": 155.0,
+      "maximum_damage": 272.0,
       "requirements": {
-        "requires_level": 36,
-        "intelligence": 83
+        "intelligence": 83,
+        "requires_level": 36
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "3",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 10,
+      "minimum_damage": 181.0,
       "level": 10
     },
     {
-      "mana_cost": 11,
-      "maximum_damage": 293.0,
-      "minimum_damage": 196.0,
+      "maximum_damage": 350.0,
       "requirements": {
-        "requires_level": 40,
-        "intelligence": 92
+        "intelligence": 92,
+        "requires_level": 40
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 11,
+      "minimum_damage": 234.0,
       "level": 11
     },
     {
-      "mana_cost": 12,
-      "maximum_damage": 368.0,
-      "minimum_damage": 245.0,
+      "maximum_damage": 449.0,
       "requirements": {
-        "requires_level": 44,
-        "intelligence": 100
+        "intelligence": 100,
+        "requires_level": 44
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 12,
+      "minimum_damage": 299.0,
       "level": 12
     },
     {
-      "mana_cost": 12,
-      "maximum_damage": 459.0,
-      "minimum_damage": 306.0,
+      "maximum_damage": 571.0,
       "requirements": {
-        "requires_level": 48,
-        "intelligence": 109
+        "intelligence": 109,
+        "requires_level": 48
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "4",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 12,
+      "minimum_damage": 381.0,
       "level": 13
     },
     {
-      "mana_cost": 13,
-      "maximum_damage": 569.0,
-      "minimum_damage": 380.0,
+      "maximum_damage": 723.0,
       "requirements": {
-        "requires_level": 52,
-        "intelligence": 117
+        "intelligence": 117,
+        "requires_level": 52
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 13,
+      "minimum_damage": 482.0,
       "level": 14
     },
     {
-      "mana_cost": 14,
-      "maximum_damage": 668.0,
-      "minimum_damage": 445.0,
+      "maximum_damage": 861.0,
       "requirements": {
-        "requires_level": 55,
-        "intelligence": 123
+        "intelligence": 123,
+        "requires_level": 55
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "5",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 14,
+      "minimum_damage": 574.0,
       "level": 15
     },
     {
-      "mana_cost": 14,
-      "maximum_damage": 781.0,
-      "minimum_damage": 521.0,
+      "maximum_damage": 1023.0,
       "requirements": {
-        "requires_level": 58,
-        "intelligence": 130
+        "intelligence": 130,
+        "requires_level": 58
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 14,
+      "minimum_damage": 682.0,
       "level": 16
     },
     {
-      "mana_cost": 15,
-      "maximum_damage": 913.0,
-      "minimum_damage": 608.0,
+      "maximum_damage": 1214.0,
       "requirements": {
-        "requires_level": 61,
-        "intelligence": 136
+        "intelligence": 136,
+        "requires_level": 61
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 15,
+      "minimum_damage": 809.0,
       "level": 17
     },
     {
-      "mana_cost": 15,
-      "maximum_damage": 1064.0,
-      "minimum_damage": 709.0,
+      "maximum_damage": 1437.0,
       "requirements": {
-        "requires_level": 64,
-        "intelligence": 142
+        "intelligence": 142,
+        "requires_level": 64
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "6",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 15,
+      "minimum_damage": 958.0,
       "level": 18
     },
     {
-      "mana_cost": 16,
-      "maximum_damage": 1238.0,
-      "minimum_damage": 825.0,
+      "maximum_damage": 1698.0,
       "requirements": {
-        "requires_level": 67,
-        "intelligence": 148
+        "intelligence": 148,
+        "requires_level": 67
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 16,
+      "minimum_damage": 1132.0,
       "level": 19
     },
     {
-      "mana_cost": 16,
-      "maximum_damage": 1439.0,
-      "minimum_damage": 959.0,
+      "maximum_damage": 2003.0,
       "requirements": {
-        "requires_level": 70,
-        "intelligence": 155
+        "intelligence": 155,
+        "requires_level": 70
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 16,
+      "minimum_damage": 1336.0,
       "level": 20
     },
     {
-      "mana_cost": 17,
-      "maximum_damage": 1589.0,
-      "minimum_damage": 1059.0,
+      "maximum_damage": 2235.0,
       "requirements": {
-        "requires_level": 72,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 72
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "7",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 17,
+      "minimum_damage": 1490.0,
       "level": 21
     },
     {
-      "mana_cost": 17,
-      "maximum_damage": 1754.0,
-      "minimum_damage": 1169.0,
+      "maximum_damage": 2493.0,
       "requirements": {
-        "requires_level": 74,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 74
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 17,
+      "minimum_damage": 1662.0,
       "level": 22
     },
     {
-      "mana_cost": 18,
-      "maximum_damage": 1935.0,
-      "minimum_damage": 1290.0,
+      "maximum_damage": 2778.0,
       "requirements": {
-        "requires_level": 76,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 76
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 18,
+      "minimum_damage": 1852.0,
       "level": 23
     },
     {
-      "mana_cost": 18,
-      "maximum_damage": 2133.0,
-      "minimum_damage": 1422.0,
+      "maximum_damage": 3094.0,
       "requirements": {
-        "requires_level": 78,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 78
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "8",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 18,
+      "minimum_damage": 2063.0,
       "level": 24
     },
     {
-      "mana_cost": 18,
-      "maximum_damage": 2351.0,
-      "minimum_damage": 1567.0,
+      "maximum_damage": 3445.0,
       "requirements": {
-        "requires_level": 80,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 80
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 18,
+      "minimum_damage": 2296.0,
       "level": 25
     },
     {
-      "mana_cost": 19,
-      "maximum_damage": 2589.0,
-      "minimum_damage": 1726.0,
+      "maximum_damage": 3833.0,
       "requirements": {
-        "requires_level": 82,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 82
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "9",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 19,
+      "minimum_damage": 2555.0,
       "level": 26
     },
     {
-      "mana_cost": 19,
-      "maximum_damage": 2851.0,
-      "minimum_damage": 1901.0,
+      "maximum_damage": 4263.0,
       "requirements": {
-        "requires_level": 84,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 84
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 19,
+      "minimum_damage": 2842.0,
       "level": 27
     },
     {
-      "mana_cost": 19,
-      "maximum_damage": 3137.0,
-      "minimum_damage": 2091.0,
+      "maximum_damage": 4739.0,
       "requirements": {
-        "requires_level": 86,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 86
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 19,
+      "minimum_damage": 3159.0,
       "level": 28
     },
     {
-      "mana_cost": 20,
-      "maximum_damage": 3451.0,
-      "minimum_damage": 2300.0,
+      "maximum_damage": 5266.0,
       "requirements": {
-        "requires_level": 88,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 88
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "10",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 20,
+      "minimum_damage": 3511.0,
       "level": 29
     },
     {
-      "mana_cost": 20,
-      "maximum_damage": 3794.0,
-      "minimum_damage": 2529.0,
+      "maximum_damage": 5849.0,
       "requirements": {
-        "requires_level": 90,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 90
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 20,
+      "minimum_damage": 3899.0,
       "level": 30
     },
     {
-      "mana_cost": 20,
-      "maximum_damage": 3978.0,
-      "minimum_damage": 2652.0,
+      "maximum_damage": 6163.0,
       "requirements": {
-        "requires_level": 91,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 91
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 20,
+      "minimum_damage": 4109.0,
       "level": 31
     },
     {
-      "mana_cost": 20,
-      "maximum_damage": 4170.0,
-      "minimum_damage": 2780.0,
+      "maximum_damage": 6494.0,
       "requirements": {
-        "requires_level": 92,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 92
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 20,
+      "minimum_damage": 4329.0,
       "level": 32
     },
     {
-      "mana_cost": 21,
-      "maximum_damage": 4371.0,
-      "minimum_damage": 2914.0,
+      "maximum_damage": 6842.0,
       "requirements": {
-        "requires_level": 93,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 93
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 21,
+      "minimum_damage": 4561.0,
       "level": 33
     },
     {
-      "mana_cost": 21,
-      "maximum_damage": 4581.0,
-      "minimum_damage": 3054.0,
+      "maximum_damage": 7208.0,
       "requirements": {
-        "requires_level": 94,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 94
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "11",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 21,
+      "minimum_damage": 4805.0,
       "level": 34
     },
     {
-      "mana_cost": 21,
-      "maximum_damage": 4801.0,
-      "minimum_damage": 3200.0,
+      "maximum_damage": 7592.0,
       "requirements": {
-        "requires_level": 95,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 95
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 21,
+      "minimum_damage": 5061.0,
       "level": 35
     },
     {
-      "mana_cost": 21,
-      "maximum_damage": 5031.0,
-      "minimum_damage": 3354.0,
+      "maximum_damage": 7996.0,
       "requirements": {
-        "requires_level": 96,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 96
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 21,
+      "minimum_damage": 5331.0,
       "level": 36
     },
     {
-      "mana_cost": 21,
-      "maximum_damage": 5271.0,
-      "minimum_damage": 3514.0,
+      "maximum_damage": 8422.0,
       "requirements": {
-        "requires_level": 97,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 97
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 21,
+      "minimum_damage": 5614.0,
       "level": 37
     },
     {
-      "mana_cost": 22,
-      "maximum_damage": 5523.0,
-      "minimum_damage": 3682.0,
+      "maximum_damage": 8869.0,
       "requirements": {
-        "requires_level": 98,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 98
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 22,
+      "minimum_damage": 5912.0,
       "level": 38
     },
     {
-      "mana_cost": 22,
-      "maximum_damage": 5786.0,
-      "minimum_damage": 3857.0,
+      "maximum_damage": 9338.0,
       "requirements": {
-        "requires_level": 99,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 99
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "12",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 22,
+      "minimum_damage": 6226.0,
       "level": 39
     },
     {
-      "mana_cost": 22,
-      "maximum_damage": 6061.0,
-      "minimum_damage": 4041.0,
+      "maximum_damage": 9832.0,
       "requirements": {
-        "requires_level": 100,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 100
       },
-      "fields": [],
+      "fields": [
+        {
+          "value": "13",
+          "name": "to_radius"
+        }
+      ],
+      "mana_cost": 22,
+      "minimum_damage": 6555.0,
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (14\u2013959) to (21\u20131439) Cold Damage",
-    "+2 seconds to Base duration",
-    "Base secondary duration is 5 seconds",
-    "Cold Exposure applies -25% to Cold Resistance",
-    "75% reduced Life Regeneration rate",
-    "75% reduced Energy Shield Regeneration rate",
-    "25% reduced Energy Shield Recharge rate"
-  ],
-  "vaal": false,
-  "target_types": [
-    "ground"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialFrostBomb.png?w=2&h=2&scale=1",
-      "name": "Celestial Frost Bomb Effect",
-      "description": "Your Frost Bomb becomes a celestial effect."
-    }
-  ],
   "acquisition": {
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Witch",
-        "Templar",
-        "Scion"
-      ],
-      "act": 1
-    },
     "vendor": {
+      "vendor_name": "Nessa",
       "classes": [
         "Witch",
         "Templar",
         "Shadow",
         "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Witch",
+        "Templar",
+        "Scion"
       ],
-      "vendor_name": "Nessa"
+      "quest_name": "Breaking Some Eggs",
+      "act": 1
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "spell",
     "area",
@@ -550,20 +682,18 @@
     "is_area_damage [1]",
     "base_skill_show_average_damage_instead_of_dps [1]"
   ],
-  "enchants": {
-    "eternal": [
-      "40% increased Frost Bomb Damage",
-      "Frost Bomb has 30% increased Cooldown Recovery Rate",
-      "24% increased Frost Bomb Area of Effect",
-      "Frost Bomb has 30% increased Debuff Duration"
-    ],
-    "merciless": [
-      "25% increased Frost Bomb Damage",
-      "Frost Bomb has 20% increased Cooldown Recovery Rate",
-      "16% increased Frost Bomb Area of Effect",
-      "Frost Bomb has 20% increased Debuff Duration"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Deals (14\u20131336) to (21\u20132003) Cold Damage",
+    "+2 seconds to Base duration",
+    "Base secondary duration is 5 seconds",
+    "Cold Exposure applies -25% to Cold Resistance",
+    "75% reduced Life Regeneration rate",
+    "75% reduced Energy Shield Regeneration rate",
+    "25% reduced Energy Shield Recharge rate",
+    "+(0\u20137) to radius"
+  ],
+  "description": "Creates a crystal that pulses with cold for a duration. Each pulse applies a debuff to nearby enemies for a secondary duration which reduces life and energy shield regeneration rate, and reduces energy shield recharge rate, and also inflicts Cold Exposure. When the crystal's duration ends, it explodes, dealing heavy cold damage to enemies around it.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -783,6 +913,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1100,6 +1237,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1158,6 +1302,77 @@
       ]
     }
   ],
-  "name": "Frost Bomb",
-  "description": "Creates a crystal that pulses with cold for a duration. Each pulse applies a debuff to nearby enemies for a secondary duration which reduces life and energy shield regeneration rate, and reduces energy shield recharge rate, and also inflicts Cold Exposure. When the crystal's duration ends, it explodes, dealing heavy cold damage to enemies around it."
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialFrostBomb.png?w=2&h=2&scale=1",
+      "name": "Celestial Frost Bomb Effect",
+      "description": "Your Frost Bomb becomes a celestial effect."
+    }
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Frost Bomb Damage",
+      "Frost Bomb has 30% increased Cooldown Recovery Rate",
+      "24% increased Frost Bomb Area of Effect",
+      "Frost Bomb has 30% increased Debuff Duration"
+    ],
+    "merciless": [
+      "25% increased Frost Bomb Damage",
+      "Frost Bomb has 20% increased Cooldown Recovery Rate",
+      "16% increased Frost Bomb Area of Effect",
+      "Frost Bomb has 20% increased Debuff Duration"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Cold Damage",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% chance to Freeze enemies",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% less Skill Effect Duration",
+          "maximum": 20.0,
+          "minimum": 0.0
+        },
+        {
+          "text": "% increased Cooldown Recovery Rate",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    }
+  },
+  "slug": "frost-bomb",
+  "name": "Frost Bomb"
 }

@@ -1,54 +1,5 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% of Physical Damage Converted to Chaos Damage",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "phantasmal": {
-      "weight": 10.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% chance to also Poison a nearby Enemy when you inflict Poison",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% increased Attack Speed",
-          "minimum": 0.0
-        },
-        {
-          "maximum": 10.0,
-          "text": "% increased Poison Duration",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Chaos Damage",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": null,
-  "slug": "viper-strike",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -891,40 +842,25 @@
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (90\u2013135)% of Base Attack Damage",
-    "50% of Physical Damage Converted to Chaos Damage",
-    "60% chance to Poison on Hit",
-    "+4 seconds to Base duration",
-    "+(0\u20132) to Melee Strike Range",
-    "(5\u2013169) to (7\u2013254) Added Chaos Damage",
-    "Each Weapon Hits separately if Dual Wielding, dealing 20% less Damage",
-    "30% Less Attack Speed if Dual Wielding"
-  ],
-  "vaal": false,
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
   "acquisition": {
-    "quest": {
-      "quest_name": "The Twilight Strand",
-      "classes": [
-        "Shadow"
-      ],
-      "act": 1
-    },
     "vendor": {
+      "vendor_name": "Nessa",
       "classes": [
         "Duelist",
         "Ranger",
         "Shadow",
         "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Shadow"
       ],
-      "vendor_name": "Nessa"
+      "quest_name": "The Twilight Strand",
+      "act": 1
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "attack",
     "duration",
@@ -939,18 +875,18 @@
     "skill_double_hits_when_dual_wielding [1]",
     "visual_hit_effect_chaos_is_green [1]"
   ],
-  "enchants": {
-    "eternal": [
-      "40% increased Viper Strike Damage",
-      "90% increased Viper Strike Critical Strike Chance",
-      "30% increased Viper Strike Duration"
-    ],
-    "merciless": [
-      "25% increased Viper Strike Damage",
-      "60% increased Viper Strike Critical Strike Chance",
-      "20% increased Viper Strike Duration"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Deals (90\u2013135)% of Base Attack Damage",
+    "60% of Physical Damage Converted to Chaos Damage",
+    "60% chance to Poison on Hit",
+    "+4 seconds to Base duration",
+    "+(0\u20132) to Melee Strike Range",
+    "(5\u2013169) to (7\u2013254) Added Chaos Damage",
+    "Each Weapon Hits separately if Dual Wielding, dealing 20% less Damage",
+    "30% Less Attack Speed if Dual Wielding"
+  ],
+  "description": "Hits enemies, adding some of your physical damage as chaos damage and inflicting poison which will be affected by modifiers to skill duration. If dual wielding, will strike with both weapons. Requires a claw, dagger or sword.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1178,6 +1114,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1581,6 +1524,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1603,8 +1553,79 @@
         "attack",
         "causeelementalstatus"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Viper Strike",
-  "description": "Hits enemies, adding some of your physical damage as chaos damage and inflicting poison which will be affected by modifiers to skill duration. If dual wielding, will strike with both weapons. Requires a claw, dagger or sword."
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "enchants": {
+    "eternal": [
+      "40% increased Viper Strike Damage",
+      "90% increased Viper Strike Critical Strike Chance",
+      "30% increased Viper Strike Duration"
+    ],
+    "merciless": [
+      "25% increased Viper Strike Damage",
+      "60% increased Viper Strike Critical Strike Chance",
+      "20% increased Viper Strike Duration"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Chaos Damage",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Attack Speed",
+          "maximum": 10.0,
+          "minimum": 0.0
+        },
+        {
+          "text": "% increased Poison Duration",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% of Physical Damage Converted to Chaos Damage",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% chance to also Poison a nearby Enemy when you inflict Poison",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 10.0
+    }
+  },
+  "slug": "viper-strike",
+  "name": "Viper Strike"
 }

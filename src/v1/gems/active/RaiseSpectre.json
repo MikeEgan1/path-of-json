@@ -1,60 +1,10 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "Minions deal % increased Melee Damage",
-          "minimum": 0.0
-        },
-        {
-          "maximum": 20.0,
-          "text": "% increased Minion Maximum Life",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "phantasmal": {
-      "weight": 20.0,
-      "mods": [
-        {
-          "maximum": null,
-          "text": "Minions are Created with maximum Frenzy Charges",
-          "minimum": null
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Minion Movement Speed",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "Minions have % reduced Enemy Stun Threshold",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 28,
-  "slug": "raise-spectre",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
-      "mana_cost": 15,
       "requirements": {
-        "requires_level": 28,
-        "intelligence": 67
+        "intelligence": 67,
+        "requires_level": 28
       },
       "fields": [
         {
@@ -62,21 +12,21 @@
           "name": "maximum__raised_spectre"
         },
         {
-          "value": "31",
+          "value": "28",
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "150",
+          "value": "105",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
+      "mana_cost": 15,
       "level": 1
     },
     {
-      "mana_cost": 16,
       "requirements": {
-        "requires_level": 31,
-        "intelligence": 73
+        "intelligence": 73,
+        "requires_level": 31
       },
       "fields": [
         {
@@ -84,21 +34,65 @@
           "name": "maximum__raised_spectre"
         },
         {
-          "value": "34",
+          "value": "30",
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "170",
+          "value": "119",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
+      "mana_cost": 16,
       "level": 2
     },
     {
-      "mana_cost": 17,
       "requirements": {
-        "requires_level": 34,
-        "intelligence": 79
+        "intelligence": 79,
+        "requires_level": 34
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "33",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "136",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 17,
+      "level": 3
+    },
+    {
+      "requirements": {
+        "intelligence": 85,
+        "requires_level": 37
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "35",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "155",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 18,
+      "level": 4
+    },
+    {
+      "requirements": {
+        "intelligence": 92,
+        "requires_level": 40
       },
       "fields": [
         {
@@ -110,17 +104,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "194",
+          "value": "183",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 3
+      "mana_cost": 19,
+      "level": 5
     },
     {
-      "mana_cost": 18,
       "requirements": {
-        "requires_level": 37,
-        "intelligence": 85
+        "intelligence": 96,
+        "requires_level": 42
       },
       "fields": [
         {
@@ -132,17 +126,39 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "221",
+          "value": "200",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 4
+      "mana_cost": 19,
+      "level": 6
     },
     {
-      "mana_cost": 19,
       "requirements": {
-        "requires_level": 40,
-        "intelligence": 92
+        "intelligence": 100,
+        "requires_level": 44
+      },
+      "fields": [
+        {
+          "value": "1",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "42",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "227",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 20,
+      "level": 7
+    },
+    {
+      "requirements": {
+        "intelligence": 104,
+        "requires_level": 46
       },
       "fields": [
         {
@@ -154,17 +170,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "262",
+          "value": "245",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 5
+      "mana_cost": 21,
+      "level": 8
     },
     {
-      "mana_cost": 19,
       "requirements": {
-        "requires_level": 42,
-        "intelligence": 96
+        "intelligence": 109,
+        "requires_level": 48
       },
       "fields": [
         {
@@ -172,21 +188,21 @@
           "name": "maximum__raised_spectre"
         },
         {
-          "value": "46",
+          "value": "47",
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "286",
+          "value": "267",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 6
+      "mana_cost": 21,
+      "level": 9
     },
     {
-      "mana_cost": 20,
       "requirements": {
-        "requires_level": 44,
-        "intelligence": 100
+        "intelligence": 113,
+        "requires_level": 50
       },
       "fields": [
         {
@@ -198,17 +214,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "324",
+          "value": "301",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 7
+      "mana_cost": 22,
+      "level": 10
     },
     {
-      "mana_cost": 21,
       "requirements": {
-        "requires_level": 46,
-        "intelligence": 104
+        "intelligence": 117,
+        "requires_level": 52
       },
       "fields": [
         {
@@ -220,17 +236,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "350",
+          "value": "328",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 8
+      "mana_cost": 22,
+      "level": 11
     },
     {
-      "mana_cost": 21,
       "requirements": {
-        "requires_level": 48,
-        "intelligence": 109
+        "intelligence": 121,
+        "requires_level": 54
       },
       "fields": [
         {
@@ -242,21 +258,21 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "382",
+          "value": "370",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 9
+      "mana_cost": 23,
+      "level": 12
     },
     {
-      "mana_cost": 22,
       "requirements": {
-        "requires_level": 50,
-        "intelligence": 113
+        "intelligence": 125,
+        "requires_level": 56
       },
       "fields": [
         {
-          "value": "1",
+          "value": "2",
           "name": "maximum__raised_spectre"
         },
         {
@@ -264,21 +280,21 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "430",
+          "value": "400",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 10
+      "mana_cost": 24,
+      "level": 13
     },
     {
-      "mana_cost": 22,
       "requirements": {
-        "requires_level": 52,
-        "intelligence": 117
+        "intelligence": 130,
+        "requires_level": 58
       },
       "fields": [
         {
-          "value": "1",
+          "value": "2",
           "name": "maximum__raised_spectre"
         },
         {
@@ -286,21 +302,21 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "468",
+          "value": "432",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 11
+      "mana_cost": 24,
+      "level": 14
     },
     {
-      "mana_cost": 23,
       "requirements": {
-        "requires_level": 54,
-        "intelligence": 121
+        "intelligence": 134,
+        "requires_level": 60
       },
       "fields": [
         {
-          "value": "1",
+          "value": "2",
           "name": "maximum__raised_spectre"
         },
         {
@@ -308,105 +324,83 @@
           "name": "raised_spectres_are_level_"
         },
         {
+          "value": "487",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 25,
+      "level": 15
+    },
+    {
+      "requirements": {
+        "intelligence": 138,
+        "requires_level": 62
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "63",
+          "name": "raised_spectres_are_level_"
+        },
+        {
           "value": "528",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 12
-    },
-    {
-      "mana_cost": 24,
-      "requirements": {
-        "requires_level": 56,
-        "intelligence": 125
-      },
-      "fields": [
-        {
-          "value": "2",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "62",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "571",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
-      "level": 13
-    },
-    {
-      "mana_cost": 24,
-      "requirements": {
-        "requires_level": 58,
-        "intelligence": 130
-      },
-      "fields": [
-        {
-          "value": "2",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "64",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "617",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
-      "level": 14
-    },
-    {
       "mana_cost": 25,
-      "requirements": {
-        "requires_level": 60,
-        "intelligence": 134
-      },
-      "fields": [
-        {
-          "value": "2",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "66",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "696",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
-      "level": 15
-    },
-    {
-      "mana_cost": 25,
-      "requirements": {
-        "requires_level": 62,
-        "intelligence": 138
-      },
-      "fields": [
-        {
-          "value": "2",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "68",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "754",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
       "level": 16
     },
     {
-      "mana_cost": 26,
       "requirements": {
-        "requires_level": 64,
-        "intelligence": 142
+        "intelligence": 142,
+        "requires_level": 64
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "65",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "592",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 26,
+      "level": 17
+    },
+    {
+      "requirements": {
+        "intelligence": 146,
+        "requires_level": 66
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "67",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "640",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 27,
+      "level": 18
+    },
+    {
+      "requirements": {
+        "intelligence": 151,
+        "requires_level": 68
       },
       "fields": [
         {
@@ -418,17 +412,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "845",
+          "value": "692",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 17
+      "mana_cost": 27,
+      "level": 19
     },
     {
-      "mana_cost": 27,
       "requirements": {
-        "requires_level": 66,
-        "intelligence": 146
+        "intelligence": 155,
+        "requires_level": 70
       },
       "fields": [
         {
@@ -440,17 +434,39 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "914",
+          "value": "776",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 18
+      "mana_cost": 28,
+      "level": 20
     },
     {
-      "mana_cost": 27,
       "requirements": {
-        "requires_level": 68,
-        "intelligence": 151
+        "intelligence": null,
+        "requires_level": 72
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "73",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "806",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 29,
+      "level": 21
+    },
+    {
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 74
       },
       "fields": [
         {
@@ -462,17 +478,39 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "989",
+          "value": "839",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 19
+      "mana_cost": 29,
+      "level": 22
     },
     {
-      "mana_cost": 28,
       "requirements": {
-        "requires_level": 70,
-        "intelligence": 155
+        "intelligence": null,
+        "requires_level": 76
+      },
+      "fields": [
+        {
+          "value": "2",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "75",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "870",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 30,
+      "level": 23
+    },
+    {
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 78
       },
       "fields": [
         {
@@ -484,21 +522,43 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1109",
+          "value": "904",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 20
+      "mana_cost": 30,
+      "level": 24
     },
     {
-      "mana_cost": 29,
       "requirements": {
-        "requires_level": 72,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 80
       },
       "fields": [
         {
-          "value": "2",
+          "value": "3",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "77",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "939",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 31,
+      "level": 25
+    },
+    {
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 82
+      },
+      "fields": [
+        {
+          "value": "3",
           "name": "maximum__raised_spectre"
         },
         {
@@ -506,21 +566,43 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1152",
+          "value": "974",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 21
+      "mana_cost": 32,
+      "level": 26
     },
     {
-      "mana_cost": 29,
       "requirements": {
-        "requires_level": 74,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 84
       },
       "fields": [
         {
-          "value": "2",
+          "value": "3",
+          "name": "maximum__raised_spectre"
+        },
+        {
+          "value": "79",
+          "name": "raised_spectres_are_level_"
+        },
+        {
+          "value": "1013",
+          "name": "minions_have__additional_accuracy_rating"
+        }
+      ],
+      "mana_cost": 32,
+      "level": 27
+    },
+    {
+      "requirements": {
+        "intelligence": null,
+        "requires_level": 86
+      },
+      "fields": [
+        {
+          "value": "3",
           "name": "maximum__raised_spectre"
         },
         {
@@ -528,21 +610,21 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1198",
+          "value": "1051",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 22
+      "mana_cost": 33,
+      "level": 28
     },
     {
-      "mana_cost": 30,
       "requirements": {
-        "requires_level": 76,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 88
       },
       "fields": [
         {
-          "value": "2",
+          "value": "3",
           "name": "maximum__raised_spectre"
         },
         {
@@ -550,21 +632,21 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1243",
+          "value": "1092",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 23
+      "mana_cost": 33,
+      "level": 29
     },
     {
-      "mana_cost": 30,
       "requirements": {
-        "requires_level": 78,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 90
       },
       "fields": [
         {
-          "value": "2",
+          "value": "3",
           "name": "maximum__raised_spectre"
         },
         {
@@ -572,17 +654,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1291",
+          "value": "1134",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 24
+      "mana_cost": 34,
+      "level": 30
     },
     {
-      "mana_cost": 31,
       "requirements": {
-        "requires_level": 80,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 91
       },
       "fields": [
         {
@@ -594,17 +676,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1342",
+          "value": "1177",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 25
+      "mana_cost": 34,
+      "level": 31
     },
     {
-      "mana_cost": 32,
       "requirements": {
-        "requires_level": 82,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 92
       },
       "fields": [
         {
@@ -616,17 +698,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1392",
+          "value": "1223",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 26
+      "mana_cost": 35,
+      "level": 32
     },
     {
-      "mana_cost": 32,
       "requirements": {
-        "requires_level": 84,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 93
       },
       "fields": [
         {
@@ -638,17 +720,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1447",
+          "value": "1268",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 27
+      "mana_cost": 35,
+      "level": 33
     },
     {
-      "mana_cost": 33,
       "requirements": {
-        "requires_level": 86,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 94
       },
       "fields": [
         {
@@ -660,17 +742,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1502",
+          "value": "1317",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 28
+      "mana_cost": 35,
+      "level": 34
     },
     {
-      "mana_cost": 33,
       "requirements": {
-        "requires_level": 88,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 95
       },
       "fields": [
         {
@@ -682,17 +764,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1560",
+          "value": "1368",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 29
+      "mana_cost": 36,
+      "level": 35
     },
     {
-      "mana_cost": 34,
       "requirements": {
-        "requires_level": 90,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 96
       },
       "fields": [
         {
@@ -704,17 +786,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1620",
+          "value": "1420",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 30
+      "mana_cost": 36,
+      "level": 36
     },
     {
-      "mana_cost": 34,
       "requirements": {
-        "requires_level": 91,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 97
       },
       "fields": [
         {
@@ -726,17 +808,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1682",
+          "value": "1474",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 31
+      "mana_cost": 36,
+      "level": 37
     },
     {
-      "mana_cost": 35,
       "requirements": {
-        "requires_level": 92,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 98
       },
       "fields": [
         {
@@ -748,17 +830,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1747",
+          "value": "1529",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 32
+      "mana_cost": 37,
+      "level": 38
     },
     {
-      "mana_cost": 35,
       "requirements": {
-        "requires_level": 93,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 99
       },
       "fields": [
         {
@@ -770,17 +852,17 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1812",
+          "value": "1588",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 33
+      "mana_cost": 37,
+      "level": 39
     },
     {
-      "mana_cost": 35,
       "requirements": {
-        "requires_level": 94,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 100
       },
       "fields": [
         {
@@ -792,206 +874,32 @@
           "name": "raised_spectres_are_level_"
         },
         {
-          "value": "1882",
+          "value": "1646",
           "name": "minions_have__additional_accuracy_rating"
         }
       ],
-      "level": 34
-    },
-    {
-      "mana_cost": 36,
-      "requirements": {
-        "requires_level": 95,
-        "intelligence": null
-      },
-      "fields": [
-        {
-          "value": "3",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "93",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "1954",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
-      "level": 35
-    },
-    {
-      "mana_cost": 36,
-      "requirements": {
-        "requires_level": 96,
-        "intelligence": null
-      },
-      "fields": [
-        {
-          "value": "3",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "94",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "2028",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
-      "level": 36
-    },
-    {
-      "mana_cost": 36,
-      "requirements": {
-        "requires_level": 97,
-        "intelligence": null
-      },
-      "fields": [
-        {
-          "value": "3",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "95",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "2105",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
-      "level": 37
-    },
-    {
       "mana_cost": 37,
-      "requirements": {
-        "requires_level": 98,
-        "intelligence": null
-      },
-      "fields": [
-        {
-          "value": "3",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "96",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "2184",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
-      "level": 38
-    },
-    {
-      "mana_cost": 37,
-      "requirements": {
-        "requires_level": 99,
-        "intelligence": null
-      },
-      "fields": [
-        {
-          "value": "3",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "97",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "2268",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
-      "level": 39
-    },
-    {
-      "mana_cost": 37,
-      "requirements": {
-        "requires_level": 100,
-        "intelligence": null
-      },
-      "fields": [
-        {
-          "value": "3",
-          "name": "maximum__raised_spectre"
-        },
-        {
-          "value": "98",
-          "name": "raised_spectres_are_level_"
-        },
-        {
-          "value": "2352",
-          "name": "minions_have__additional_accuracy_rating"
-        }
-      ],
       "level": 40
     }
   ],
-  "mods": [
-    "Maximum (1\u20132) Raised Spectre",
-    "55% more Minion Movement Speed",
-    "Minion Movement Speed is Capped",
-    "Raised Spectres are Level (31\u201376)",
-    "Minions have (150\u20131109) additional Accuracy Rating",
-    "Minions have +30% to all Elemental Resistances"
-  ],
-  "vaal": false,
-  "target_types": [
-    "corpse"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianRaiseSpectre.png?w=1&h=1&scale=1",
-      "name": "Ebony Raise Spectre Skin",
-      "description": "The standard skin on your Raised spectres are replaced by an Ebony skin."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DemonicRaiseSpectreEffect.png?w=2&h=2&scale=1",
-      "name": "Demonic Raise Spectre Effect",
-      "description": "Your Raised Spectres gain a demonic effect."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialRaiseSpectre.png?w=2&h=2&scale=1",
-      "name": "Celestial Raise Spectre Skin",
-      "description": "Your Raised Spectre's Skins becomes Celestial."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ArcaneRaiseSpectre.png?w=2&h=2&scale=1",
-      "name": "Arcane Raise Spectre Skin",
-      "description": "Your Raise Spectre becomes an Arcane Effect."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianRaiseSpectreEffect.png?w=2&h=2&scale=1",
-      "name": "Stygian Raise Spectre Skin",
-      "description": "The standard skin on your Raised spectres are replaced by a Stygian skin."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DarkwoodRaiseSpectreSkin.png?w=2&h=2&scale=1",
-      "name": "Darkwood Raise Spectre Skin",
-      "description": "Your Spectres have a Darkwood Skin."
-    }
-  ],
   "acquisition": {
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Witch"
-      ],
-      "act": 3
-    },
     "vendor": {
+      "vendor_name": "Clarissa",
       "classes": [
         "Witch",
         "Templar",
         "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Witch"
       ],
-      "vendor_name": "Clarissa"
+      "quest_name": "Sever the Right Hand",
+      "act": 3
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "spell",
     "minion",
@@ -1005,18 +913,16 @@
     "createsminion"
   ],
   "tags": [],
-  "enchants": {
-    "eternal": [
-      "Spectres have 40% increased Damage",
-      "Spectres have 12% increased Attack and Cast Speed",
-      "+36% to Raised Spectre Elemental Resistances"
-    ],
-    "merciless": [
-      "Spectres have 25% increased Damage",
-      "Spectres have 8% increased Attack and Cast Speed",
-      "+24% to Raised Spectre Elemental Resistances"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Maximum (1\u20132) Raised Spectre",
+    "55% more Minion Movement Speed",
+    "Minion Movement Speed is Capped",
+    "Raised Spectres are Level (28\u201372)",
+    "Minions have (105\u2013776) additional Accuracy Rating",
+    "Minions have +30% to all Elemental Resistances"
+  ],
+  "description": "Raises a spectral version of a defeated foe as a minion to fight for you in battle.",
   "support": [
     {
       "name": "Increased Area of Effect Support",
@@ -1171,6 +1077,100 @@
       ]
     }
   ],
-  "name": "Raise Spectre",
-  "description": "Raises a spectral version of a defeated foe as a minion to fight for you in battle."
+  "target_types": [
+    "corpse"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianRaiseSpectre.png?w=1&h=1&scale=1",
+      "name": "Ebony Raise Spectre Skin",
+      "description": "The standard skin on your Raised spectres are replaced by an Ebony skin."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DemonicRaiseSpectreEffect.png?w=2&h=2&scale=1",
+      "name": "Demonic Raise Spectre Effect",
+      "description": "Your Raised Spectres gain a demonic effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialRaiseSpectre.png?w=2&h=2&scale=1",
+      "name": "Celestial Raise Spectre Skin",
+      "description": "Your Raised Spectre's Skins becomes Celestial."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ArcaneRaiseSpectre.png?w=2&h=2&scale=1",
+      "name": "Arcane Raise Spectre Skin",
+      "description": "Your Raise Spectre becomes an Arcane Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianRaiseSpectreEffect.png?w=2&h=2&scale=1",
+      "name": "Stygian Raise Spectre Skin",
+      "description": "The standard skin on your Raised spectres are replaced by a Stygian skin."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DarkwoodRaiseSpectreSkin.png?w=2&h=2&scale=1",
+      "name": "Darkwood Raise Spectre Skin",
+      "description": "Your Spectres have a Darkwood Skin."
+    }
+  ],
+  "enchants": {
+    "eternal": [
+      "Spectres have 40% increased Damage",
+      "Spectres have 12% increased Attack and Cast Speed",
+      "+36% to Raised Spectre Elemental Resistances"
+    ],
+    "merciless": [
+      "Spectres have 25% increased Damage",
+      "Spectres have 8% increased Attack and Cast Speed",
+      "+24% to Raised Spectre Elemental Resistances"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Minions have % reduced Enemy Stun Threshold",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Minion Movement Speed",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Minions deal % increased Melee Damage",
+          "maximum": 20.0,
+          "minimum": 0.0
+        },
+        {
+          "text": "% increased Minion Maximum Life",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "Minions are Created with maximum Frenzy Charges",
+          "maximum": null,
+          "minimum": null
+        }
+      ],
+      "weight": 20.0
+    }
+  },
+  "slug": "raise-spectre",
+  "name": "Raise Spectre"
 }

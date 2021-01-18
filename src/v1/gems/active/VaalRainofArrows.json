@@ -1,19 +1,5 @@
 {
-  "quality": {
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% increased Area of Effect",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 12,
-  "slug": "vaal-rain-of-arrows",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -696,41 +682,8 @@
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (80\u2013100.1)% of Base Attack Damage",
-    "Fires (17\u201321) additional Arrows",
-    "Fires 3 additional sequences of arrows",
-    "150% increased Effect of Maim",
-    "Maim on Hit",
-    "Can't be Evaded"
-  ],
-  "vaal": true,
-  "target_types": [
-    "attack",
-    "projectileattack",
-    "area",
-    "projectiledamage",
-    "type73",
-    "skillcantotem",
-    "skillcantrap",
-    "skillcanmine",
-    "vaal",
-    "type95",
-    "cantusefistofwar"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Green_arrowrain.png?w=1&h=1&scale=1",
-      "name": "Emerald Rain of Arrows Effect",
-      "description": "Your Rain of Arrows glow a ghostly green"
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialRainOfArrows.png?w=2&h=2&scale=1",
-      "name": "Celestial Rain of Arrows Effect",
-      "description": "Your Rain of Arrows becomes a Celestial Effect."
-    }
-  ],
   "acquisition": {},
+  "gem_class": "Active Skill Gems",
   "type": [
     "skill_stat_descriptions"
   ],
@@ -741,10 +694,16 @@
     "cannot_pierce [1]",
     "cannot_cancel_skill_before_contact_point [1]"
   ],
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
+  "vaal": true,
+  "mods": [
+    "Deals (80\u2013100.1)% of Base Attack Damage",
+    "Fires (17\u201321) additional Arrows",
+    "Fires 3 additional sequences of arrows",
+    "150% increased Effect of Maim",
+    "Maim on Hit",
+    "Can't be Evaded"
+  ],
+  "description": "Fires multiple arrows into the air, to land in multiple sequences after a delay, each starting at the targeted location and spreading outwards in all directions. Each arrow deals damage in an area around it. Half of the arrows will land directly on targets if there are targets in their range.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1018,6 +977,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1388,6 +1354,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1418,8 +1391,56 @@
         "attack",
         "causeelementalstatus"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Vaal Rain of Arrows",
-  "description": "Fires multiple arrows into the air, to land in multiple sequences after a delay, each starting at the targeted location and spreading outwards in all directions. Each arrow deals damage in an area around it. Half of the arrows will land directly on targets if there are targets in their range."
+  "target_types": [
+    "attack",
+    "projectileattack",
+    "area",
+    "projectiledamage",
+    "type73",
+    "skillcantotem",
+    "skillcantrap",
+    "skillcanmine",
+    "vaal",
+    "type95",
+    "cantusefistofwar"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Green_arrowrain.png?w=1&h=1&scale=1",
+      "name": "Emerald Rain of Arrows Effect",
+      "description": "Your Rain of Arrows glow a ghostly green"
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CelestialRainOfArrows.png?w=2&h=2&scale=1",
+      "name": "Celestial Rain of Arrows Effect",
+      "description": "Your Rain of Arrows becomes a Celestial Effect."
+    }
+  ],
+  "enchants": {
+    "eternal": [],
+    "merciless": []
+  },
+  "quality": {
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    }
+  },
+  "slug": "vaal-rain-of-arrows",
+  "name": "Vaal Rain of Arrows"
 }

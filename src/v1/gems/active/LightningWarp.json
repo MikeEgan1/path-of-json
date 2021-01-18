@@ -1,747 +1,826 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Area of Effect",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "phantasmal": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% less Duration",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Cast Speed",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Duration",
-          "minimum": 0.0
-        },
-        {
-          "maximum": 60.0,
-          "text": "% increased Damage",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 10,
-  "slug": "lightning-warp",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
-      "mana_cost": 9,
       "maximum_damage": 19.0,
-      "minimum_damage": 1.0,
       "requirements": {
-        "requires_level": 10,
-        "intelligence": 29
+        "intelligence": 29,
+        "requires_level": 10
       },
       "fields": [
         {
           "value": "30",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 9,
+      "minimum_damage": 1.0,
       "level": 1
     },
     {
-      "mana_cost": 10,
       "maximum_damage": 24.0,
-      "minimum_damage": 1.0,
       "requirements": {
-        "requires_level": 13,
-        "intelligence": 35
+        "intelligence": 35,
+        "requires_level": 13
       },
       "fields": [
         {
           "value": "31",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 10,
+      "minimum_damage": 1.0,
       "level": 2
     },
     {
-      "mana_cost": 11,
       "maximum_damage": 33.0,
-      "minimum_damage": 2.0,
       "requirements": {
-        "requires_level": 17,
-        "intelligence": 43
+        "intelligence": 43,
+        "requires_level": 17
       },
       "fields": [
         {
           "value": "32",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "0",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 11,
+      "minimum_damage": 2.0,
       "level": 3
     },
     {
-      "mana_cost": 12,
       "maximum_damage": 44.0,
-      "minimum_damage": 2.0,
       "requirements": {
-        "requires_level": 21,
-        "intelligence": 52
+        "intelligence": 52,
+        "requires_level": 21
       },
       "fields": [
         {
           "value": "33",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 12,
+      "minimum_damage": 2.0,
       "level": 4
     },
     {
-      "mana_cost": 13,
       "maximum_damage": 58.0,
-      "minimum_damage": 3.0,
       "requirements": {
-        "requires_level": 25,
-        "intelligence": 60
+        "intelligence": 60,
+        "requires_level": 25
       },
       "fields": [
         {
           "value": "34",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 13,
+      "minimum_damage": 3.0,
       "level": 5
     },
     {
-      "mana_cost": 14,
       "maximum_damage": 75.0,
-      "minimum_damage": 4.0,
       "requirements": {
-        "requires_level": 29,
-        "intelligence": 69
+        "intelligence": 69,
+        "requires_level": 29
       },
       "fields": [
         {
           "value": "35",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 14,
+      "minimum_damage": 4.0,
       "level": 6
     },
     {
-      "mana_cost": 16,
       "maximum_damage": 96.0,
-      "minimum_damage": 5.0,
       "requirements": {
-        "requires_level": 33,
-        "intelligence": 77
+        "intelligence": 77,
+        "requires_level": 33
       },
       "fields": [
         {
           "value": "36",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "1",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 16,
+      "minimum_damage": 5.0,
       "level": 7
     },
     {
-      "mana_cost": 16,
       "maximum_damage": 115.0,
-      "minimum_damage": 6.0,
       "requirements": {
-        "requires_level": 36,
-        "intelligence": 83
+        "intelligence": 83,
+        "requires_level": 36
       },
       "fields": [
         {
           "value": "37",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 16,
+      "minimum_damage": 6.0,
       "level": 8
     },
     {
-      "mana_cost": 17,
       "maximum_damage": 137.0,
-      "minimum_damage": 7.0,
       "requirements": {
-        "requires_level": 39,
-        "intelligence": 90
+        "intelligence": 90,
+        "requires_level": 39
       },
       "fields": [
         {
           "value": "38",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 17,
+      "minimum_damage": 7.0,
       "level": 9
     },
     {
-      "mana_cost": 18,
       "maximum_damage": 162.0,
-      "minimum_damage": 9.0,
       "requirements": {
-        "requires_level": 42,
-        "intelligence": 96
+        "intelligence": 96,
+        "requires_level": 42
       },
       "fields": [
         {
           "value": "39",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 18,
+      "minimum_damage": 9.0,
       "level": 10
     },
     {
-      "mana_cost": 19,
       "maximum_damage": 192.0,
-      "minimum_damage": 10.0,
       "requirements": {
-        "requires_level": 45,
-        "intelligence": 102
+        "intelligence": 102,
+        "requires_level": 45
       },
       "fields": [
         {
           "value": "40",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 19,
+      "minimum_damage": 10.0,
       "level": 11
     },
     {
-      "mana_cost": 20,
       "maximum_damage": 226.0,
-      "minimum_damage": 12.0,
       "requirements": {
-        "requires_level": 48,
-        "intelligence": 109
+        "intelligence": 109,
+        "requires_level": 48
       },
       "fields": [
         {
           "value": "41",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "2",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 20,
+      "minimum_damage": 12.0,
       "level": 12
     },
     {
-      "mana_cost": 21,
       "maximum_damage": 266.0,
-      "minimum_damage": 14.0,
       "requirements": {
-        "requires_level": 51,
-        "intelligence": 115
+        "intelligence": 115,
+        "requires_level": 51
       },
       "fields": [
         {
           "value": "42",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 21,
+      "minimum_damage": 14.0,
       "level": 13
     },
     {
-      "mana_cost": 22,
       "maximum_damage": 312.0,
-      "minimum_damage": 16.0,
       "requirements": {
-        "requires_level": 54,
-        "intelligence": 121
+        "intelligence": 121,
+        "requires_level": 54
       },
       "fields": [
         {
           "value": "43",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 22,
+      "minimum_damage": 16.0,
       "level": 14
     },
     {
-      "mana_cost": 23,
       "maximum_damage": 365.0,
-      "minimum_damage": 19.0,
       "requirements": {
-        "requires_level": 57,
-        "intelligence": 127
+        "intelligence": 127,
+        "requires_level": 57
       },
       "fields": [
         {
           "value": "44",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 23,
+      "minimum_damage": 19.0,
       "level": 15
     },
     {
-      "mana_cost": 23,
       "maximum_damage": 426.0,
-      "minimum_damage": 22.0,
       "requirements": {
-        "requires_level": 60,
-        "intelligence": 134
+        "intelligence": 134,
+        "requires_level": 60
       },
       "fields": [
         {
           "value": "45",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "3",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 23,
+      "minimum_damage": 22.0,
       "level": 16
     },
     {
-      "mana_cost": 24,
       "maximum_damage": 497.0,
-      "minimum_damage": 26.0,
       "requirements": {
-        "requires_level": 63,
-        "intelligence": 140
+        "intelligence": 140,
+        "requires_level": 63
       },
       "fields": [
         {
           "value": "46",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 24,
+      "minimum_damage": 26.0,
       "level": 17
     },
     {
-      "mana_cost": 25,
       "maximum_damage": 579.0,
-      "minimum_damage": 30.0,
       "requirements": {
-        "requires_level": 66,
-        "intelligence": 146
+        "intelligence": 146,
+        "requires_level": 66
       },
       "fields": [
         {
           "value": "47",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 25,
+      "minimum_damage": 30.0,
       "level": 18
     },
     {
-      "mana_cost": 26,
       "maximum_damage": 640.0,
-      "minimum_damage": 34.0,
       "requirements": {
-        "requires_level": 68,
-        "intelligence": 151
+        "intelligence": 151,
+        "requires_level": 68
       },
       "fields": [
         {
           "value": "48",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 26,
+      "minimum_damage": 34.0,
       "level": 19
     },
     {
-      "mana_cost": 26,
       "maximum_damage": 707.0,
-      "minimum_damage": 37.0,
       "requirements": {
-        "requires_level": 70,
-        "intelligence": 155
+        "intelligence": 155,
+        "requires_level": 70
       },
       "fields": [
         {
           "value": "49",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "4",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 26,
+      "minimum_damage": 37.0,
       "level": 20
     },
     {
-      "mana_cost": 27,
       "maximum_damage": 780.0,
-      "minimum_damage": 41.0,
       "requirements": {
-        "requires_level": 72,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 72
       },
       "fields": [
         {
           "value": "50",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 27,
+      "minimum_damage": 41.0,
       "level": 21
     },
     {
-      "mana_cost": 27,
       "maximum_damage": 861.0,
-      "minimum_damage": 45.0,
       "requirements": {
-        "requires_level": 74,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 74
       },
       "fields": [
         {
           "value": "51",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 27,
+      "minimum_damage": 45.0,
       "level": 22
     },
     {
-      "mana_cost": 28,
       "maximum_damage": 949.0,
-      "minimum_damage": 50.0,
       "requirements": {
-        "requires_level": 76,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 76
       },
       "fields": [
         {
           "value": "52",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 28,
+      "minimum_damage": 50.0,
       "level": 23
     },
     {
-      "mana_cost": 29,
       "maximum_damage": 1046.0,
-      "minimum_damage": 55.0,
       "requirements": {
-        "requires_level": 78,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 78
       },
       "fields": [
         {
           "value": "53",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 29,
+      "minimum_damage": 55.0,
       "level": 24
     },
     {
-      "mana_cost": 29,
       "maximum_damage": 1152.0,
-      "minimum_damage": 61.0,
       "requirements": {
-        "requires_level": 80,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 80
       },
       "fields": [
         {
           "value": "54",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "5",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 29,
+      "minimum_damage": 61.0,
       "level": 25
     },
     {
-      "mana_cost": 30,
       "maximum_damage": 1269.0,
-      "minimum_damage": 67.0,
       "requirements": {
-        "requires_level": 82,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 82
       },
       "fields": [
         {
           "value": "55",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 30,
+      "minimum_damage": 67.0,
       "level": 26
     },
     {
-      "mana_cost": 30,
       "maximum_damage": 1396.0,
-      "minimum_damage": 73.0,
       "requirements": {
-        "requires_level": 84,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 84
       },
       "fields": [
         {
           "value": "56",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 30,
+      "minimum_damage": 73.0,
       "level": 27
     },
     {
-      "mana_cost": 31,
       "maximum_damage": 1536.0,
-      "minimum_damage": 81.0,
       "requirements": {
-        "requires_level": 86,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 86
       },
       "fields": [
         {
           "value": "57",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 31,
+      "minimum_damage": 81.0,
       "level": 28
     },
     {
-      "mana_cost": 32,
       "maximum_damage": 1689.0,
-      "minimum_damage": 89.0,
       "requirements": {
-        "requires_level": 88,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 88
       },
       "fields": [
         {
           "value": "58",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "6",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 32,
+      "minimum_damage": 89.0,
       "level": 29
     },
     {
-      "mana_cost": 32,
       "maximum_damage": 1856.0,
-      "minimum_damage": 98.0,
       "requirements": {
-        "requires_level": 90,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 90
       },
       "fields": [
         {
           "value": "59",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 32,
+      "minimum_damage": 98.0,
       "level": 30
     },
     {
-      "mana_cost": 32,
       "maximum_damage": 1945.0,
-      "minimum_damage": 102.0,
       "requirements": {
-        "requires_level": 91,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 91
       },
       "fields": [
         {
           "value": "60",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 32,
+      "minimum_damage": 102.0,
       "level": 31
     },
     {
-      "mana_cost": 33,
       "maximum_damage": 2039.0,
-      "minimum_damage": 107.0,
       "requirements": {
-        "requires_level": 92,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 92
       },
       "fields": [
         {
           "value": "60",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 33,
+      "minimum_damage": 107.0,
       "level": 32
     },
     {
-      "mana_cost": 33,
       "maximum_damage": 2137.0,
-      "minimum_damage": 112.0,
       "requirements": {
-        "requires_level": 93,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 93
       },
       "fields": [
         {
           "value": "61",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 33,
+      "minimum_damage": 112.0,
       "level": 33
     },
     {
-      "mana_cost": 33,
       "maximum_damage": 2239.0,
-      "minimum_damage": 118.0,
       "requirements": {
-        "requires_level": 94,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 94
       },
       "fields": [
         {
           "value": "61",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 33,
+      "minimum_damage": 118.0,
       "level": 34
     },
     {
-      "mana_cost": 34,
       "maximum_damage": 2346.0,
-      "minimum_damage": 123.0,
       "requirements": {
-        "requires_level": 95,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 95
       },
       "fields": [
         {
           "value": "62",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 34,
+      "minimum_damage": 123.0,
       "level": 35
     },
     {
-      "mana_cost": 34,
       "maximum_damage": 2458.0,
-      "minimum_damage": 129.0,
       "requirements": {
-        "requires_level": 96,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 96
       },
       "fields": [
         {
           "value": "62",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 34,
+      "minimum_damage": 129.0,
       "level": 36
     },
     {
-      "mana_cost": 34,
       "maximum_damage": 2575.0,
-      "minimum_damage": 136.0,
       "requirements": {
-        "requires_level": 97,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 97
       },
       "fields": [
         {
           "value": "63",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 34,
+      "minimum_damage": 136.0,
       "level": 37
     },
     {
-      "mana_cost": 34,
       "maximum_damage": 2697.0,
-      "minimum_damage": 142.0,
       "requirements": {
-        "requires_level": 98,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 98
       },
       "fields": [
         {
           "value": "63",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "7",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 34,
+      "minimum_damage": 142.0,
       "level": 38
     },
     {
-      "mana_cost": 35,
       "maximum_damage": 2825.0,
-      "minimum_damage": 149.0,
       "requirements": {
-        "requires_level": 99,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 99
       },
       "fields": [
         {
           "value": "64",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 35,
+      "minimum_damage": 149.0,
       "level": 39
     },
     {
-      "mana_cost": 35,
       "maximum_damage": 2959.0,
-      "minimum_damage": 156.0,
       "requirements": {
-        "requires_level": 100,
-        "intelligence": null
+        "intelligence": null,
+        "requires_level": 100
       },
       "fields": [
         {
           "value": "64",
           "name": "%_reduced_duration"
+        },
+        {
+          "value": "8",
+          "name": "to_radius"
         }
       ],
+      "mana_cost": 35,
+      "minimum_damage": 156.0,
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (1\u201337) to (19\u2013707) Lightning Damage",
-    "(30\u201349)% reduced Duration ",
-    "Can queue up to 50 uses"
-  ],
-  "vaal": false,
-  "target_types": [
-    "ground",
-    "self",
-    "enemy"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/InnocenceLightningWarp.png?w=2&h=2&scale=1",
-      "name": "Innocence Lightning Warp Effect",
-      "description": "Your Lightning Warp becomes an innocence effect."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/AutomatonLightningWarp.png?w=2&h=2&scale=1",
-      "name": "Automaton Lightning Warp Effect",
-      "description": "Your Lightning Warp becomes an Automaton Effect."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/BloodGuardLightningWarp.png?w=2&h=2&scale=1",
-      "name": "Blood Guard Lightning Warp Effect",
-      "description": "Your Lightning Warp becomes a Blood Guard Effect."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Wings/ArcticWings.png?w=2&h=2&scale=1",
-      "name": "Demonic Lightning Warp Effect",
-      "description": "Your Lightning Warp becomes a Demonic Effect."
-    }
-  ],
   "acquisition": {
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Witch"
-      ],
-      "act": 1
-    },
     "vendor": {
+      "vendor_name": "Nessa",
       "classes": [
         "Witch",
         "Templar",
         "Shadow",
         "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Witch"
       ],
-      "vendor_name": "Nessa"
+      "quest_name": "The Caged Brute",
+      "act": 1
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "spell",
     "hit",
@@ -761,18 +840,14 @@
   "tags": [
     "base_skill_show_average_damage_instead_of_dps [1]"
   ],
-  "enchants": {
-    "eternal": [
-      "40% increased Lightning Warp Damage",
-      "12% increased Lightning Warp Cast Speed",
-      "30% reduced Lightning Warp Duration"
-    ],
-    "merciless": [
-      "25% increased Lightning Warp Damage",
-      "8% increased Lightning Warp Cast Speed",
-      "20% reduced Lightning Warp Duration"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Deals (1\u201337) to (19\u2013707) Lightning Damage",
+    "(30\u201349)% reduced Duration ",
+    "Can queue up to 50 uses",
+    "+(0\u20134) to radius"
+  ],
+  "description": "Waits for a duration before teleporting to a targeted destination, with the duration based on the distance and your movement speed. When the teleport occurs, lightning damage is dealt to the area around both where the player was and where they teleported to. Casting again will queue up multiple teleportations to occur in sequence.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -992,6 +1067,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1309,6 +1391,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1359,8 +1448,101 @@
         "spell",
         "and"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Lightning Warp",
-  "description": "Waits for a duration before teleporting to a targeted destination, with the duration based on the distance and your movement speed. When the teleport occurs, lightning damage is dealt to the area around both where the player was and where they teleported to. Casting again will queue up multiple teleportations to occur in sequence."
+  "target_types": [
+    "ground",
+    "self",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/InnocenceLightningWarp.png?w=2&h=2&scale=1",
+      "name": "Innocence Lightning Warp Effect",
+      "description": "Your Lightning Warp becomes an innocence effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/AutomatonLightningWarp.png?w=2&h=2&scale=1",
+      "name": "Automaton Lightning Warp Effect",
+      "description": "Your Lightning Warp becomes an Automaton Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/BloodGuardLightningWarp.png?w=2&h=2&scale=1",
+      "name": "Blood Guard Lightning Warp Effect",
+      "description": "Your Lightning Warp becomes a Blood Guard Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Wings/ArcticWings.png?w=2&h=2&scale=1",
+      "name": "Demonic Lightning Warp Effect",
+      "description": "Your Lightning Warp becomes a Demonic Effect."
+    }
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Lightning Warp Damage",
+      "12% increased Lightning Warp Cast Speed",
+      "30% reduced Lightning Warp Duration"
+    ],
+    "merciless": [
+      "25% increased Lightning Warp Damage",
+      "8% increased Lightning Warp Cast Speed",
+      "20% reduced Lightning Warp Duration"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Duration",
+          "maximum": 20.0,
+          "minimum": 0.0
+        },
+        {
+          "text": "% increased Damage",
+          "maximum": 60.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Cast Speed",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% less Duration",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    }
+  },
+  "slug": "lightning-warp",
+  "name": "Lightning Warp"
 }

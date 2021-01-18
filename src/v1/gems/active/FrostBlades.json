@@ -1,44 +1,5 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 20.0,
-      "mods": [
-        {
-          "maximum": 2.0,
-          "text": "Fires  additional Projectiles",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Damage",
-          "minimum": 0.0
-        },
-        {
-          "maximum": 20.0,
-          "text": "% increased Projectile Speed",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Duration of Cold Ailments",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": null,
-  "slug": "frost-blades",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -1201,44 +1162,25 @@
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (100\u2013140)% of Base Attack Damage",
-    "Fires (4\u20137) additional Projectiles",
-    "+(18\u201321) to Melee Strike Range",
-    "60% of Physical Damage Converted to Cold Damage",
-    "(0\u201319)% increased Projectile Speed",
-    "(2\u201375) to (3\u2013113) Added Cold Damage"
-  ],
-  "vaal": false,
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianFrostBlades.png?w=2&h=2&scale=1",
-      "name": "Stygian Frost Blades Effect",
-      "description": "Your Frost Blades becomes a Stygian Effect."
-    }
-  ],
   "acquisition": {
-    "quest": {
-      "quest_name": "Enemy at the Gate",
-      "classes": [
-        "Ranger"
-      ],
-      "act": 1
-    },
     "vendor": {
+      "vendor_name": "Nessa",
       "classes": [
         "Duelist",
         "Ranger",
         "Shadow",
         "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Ranger"
       ],
-      "vendor_name": "Nessa"
+      "quest_name": "Enemy at the Gate",
+      "act": 1
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "attack",
     "projectile",
@@ -1252,16 +1194,16 @@
   "tags": [
     "show_number_of_projectiles [1]"
   ],
-  "enchants": {
-    "eternal": [
-      "40% increased Frost Blades Damage",
-      "30% increased Frost Blades Projectile Speed"
-    ],
-    "merciless": [
-      "25% increased Frost Blades Damage",
-      "20% increased Frost Blades Projectile Speed"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Deals (100\u2013140)% of Base Attack Damage",
+    "Fires (4\u20137) additional Projectiles",
+    "+(18\u201321) to Melee Strike Range",
+    "60% of Physical Damage Converted to Cold Damage",
+    "(0\u201319)% increased Projectile Speed",
+    "(2\u201375) to (3\u2013113) Added Cold Damage"
+  ],
+  "description": "Attack enemies with increased range, releasing icy blades from the first enemy hit which fly at other enemies. Requires a Melee Weapon.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1549,6 +1491,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -2009,6 +1958,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -2031,8 +1987,73 @@
         "attack",
         "causeelementalstatus"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Frost Blades",
-  "description": "Attack enemies with increased range, releasing icy blades from the first enemy hit which fly at other enemies. Requires a Melee Weapon."
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/StygianFrostBlades.png?w=2&h=2&scale=1",
+      "name": "Stygian Frost Blades Effect",
+      "description": "Your Frost Blades becomes a Stygian Effect."
+    }
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Frost Blades Damage",
+      "30% increased Frost Blades Projectile Speed"
+    ],
+    "merciless": [
+      "25% increased Frost Blades Damage",
+      "20% increased Frost Blades Projectile Speed"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased Duration of Cold Ailments",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Damage",
+          "maximum": 20.0,
+          "minimum": 0.0
+        },
+        {
+          "text": "% increased Projectile Speed",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Fires  additional Projectiles",
+          "maximum": 2.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 20.0
+    }
+  },
+  "slug": "frost-blades",
+  "name": "Frost Blades"
 }

@@ -1,0 +1,2708 @@
+{
+  "tags": [],
+  "description": "Supports skills that hit enemies, causing them to gain bonuses while you have resonance of all three elements, and to grant resonance of elements other than the highest one in a hit. There is a maximum of 50 Resonance for each Element. Cannot support triggered skills, instant skills, orb skills, brands, skills which reserve mana, or skills used by totems, traps, or mines. Cannot modify the skills of minions.",
+  "acquisition": {
+    "vendor": {
+      "vendor_name": "Yeena",
+      "classes": [
+        "Templar",
+        "Duelist",
+        "Scion"
+      ]
+    },
+    "quest": {
+      "quest_name": "Sharp and Cruel",
+      "act": 2,
+      "classes": [
+        "Witch",
+        "Duelist",
+        "Ranger"
+      ]
+    }
+  },
+  "type": [],
+  "enchants": {
+    "merciless": [],
+    "eternal": []
+  },
+  "gem_class": "Support Skill Gems",
+  "quality": {
+    "superior": {
+      "mods": [
+        {
+          "text": "Supported Skills deal % increased Elemental Damage",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "divergent": {
+      "mods": [
+        {
+          "text": "Supported Skills convert % of Physical Damage to a random Element",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Supported Skills have % increased Attack and Cast Speed while each Resonance is at least 25",
+          "maximum": 15.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    }
+  },
+  "mods": [
+    "Supported Skills deal (3\u20135)% more Elemental Damage per 5 of lowest Resonance",
+    "Supported Skills penetrate (10\u201320)% Elemental Resistances while each Resonance is at least 25",
+    "Hits with Supported Skills for which the highest Damage Type is Elemental cause you to gain 25 Resonance of other Elements per second for 2 secondsLose 5 Resonance per second of each Element you are not gaining"
+  ],
+  "target_types": [],
+  "mtx": [],
+  "name": "Trinity Support",
+  "support": [
+    {
+      "name": "Spectral Shield Throw",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcanvolley",
+        "type71",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Fireball",
+      "types": [
+        "projectile",
+        "skillcanvolley",
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "fireskill",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Ice Nova",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "coldskill",
+        "canrapidfire",
+        "areaspell",
+        "novaspell"
+      ]
+    },
+    {
+      "name": "Leap Slam",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "movementskill",
+        "travelskill",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Charged Dash",
+      "types": [
+        "movementskill",
+        "area",
+        "hit",
+        "channelled",
+        "attack",
+        "melee",
+        "lightningskill"
+      ]
+    },
+    {
+      "name": "Blade Flurry",
+      "types": [
+        "attack",
+        "area",
+        "channelled",
+        "melee",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Sweep",
+      "types": [
+        "attack",
+        "area",
+        "attackcanrepeat",
+        "melee",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Ground Slam",
+      "types": [
+        "attack",
+        "area",
+        "attackcanrepeat",
+        "melee",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Cleave",
+      "types": [
+        "attack",
+        "area",
+        "attackcanrepeat",
+        "melee",
+        "type53",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Shield Charge",
+      "types": [
+        "attack",
+        "shield",
+        "melee",
+        "area",
+        "movementskill",
+        "travelskill"
+      ]
+    },
+    {
+      "name": "Double Strike",
+      "types": [
+        "attack",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Lacerate",
+      "types": [
+        "attack",
+        "area",
+        "attackcanrepeat",
+        "melee",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Elemental Hit",
+      "types": [
+        "attack",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "fireskill",
+        "coldskill",
+        "lightningskill",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "area",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Dual Strike",
+      "types": [
+        "attack",
+        "dualwield",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "type53"
+      ]
+    },
+    {
+      "name": "Whirling Blades",
+      "types": [
+        "attack",
+        "melee",
+        "movementskill",
+        "travelskill"
+      ]
+    },
+    {
+      "name": "Frenzy",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Cold Snap",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "coldskill",
+        "spellcancascade",
+        "duration",
+        "chillingarea",
+        "areaspell",
+        "secondwindsupport"
+      ]
+    },
+    {
+      "name": "Detonate Dead",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "fireskill",
+        "spellcancascade",
+        "destroyscorpse",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Volatile Dead",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "fireskill",
+        "spellcancascade",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Unearth",
+      "types": [
+        "spell",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcanmine",
+        "skillcantrap",
+        "triggerable",
+        "hit",
+        "spellcanrepeat",
+        "canrapidfire",
+        "area",
+        "areaspell",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Caustic Arrow",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "area",
+        "duration",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "damageovertime",
+        "chaosskill",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Creeping Frost",
+      "types": [
+        "spell",
+        "projectile",
+        "skillcanvolley",
+        "hit",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "duration",
+        "area",
+        "spellcanrepeat",
+        "triggerable",
+        "coldskill",
+        "chillingarea",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Ice Shot",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "area",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "coldskill",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Static Strike",
+      "types": [
+        "attack",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "area",
+        "duration",
+        "lightningskill",
+        "chaining"
+      ]
+    },
+    {
+      "name": "Split Arrow",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "triggerable",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Discharge",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "spellcanrepeat",
+        "triggerable",
+        "fireskill",
+        "coldskill",
+        "lightningskill",
+        "canrapidfire",
+        "areaspell",
+        "novaspell",
+        "secondwindsupport"
+      ]
+    },
+    {
+      "name": "Flicker Strike",
+      "types": [
+        "attack",
+        "melee",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "movementskill",
+        "duration",
+        "secondwindsupport"
+      ]
+    },
+    {
+      "name": "Spark",
+      "types": [
+        "spell",
+        "projectile",
+        "skillcanvolley",
+        "hit",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "lightningskill",
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Ice Spear",
+      "types": [
+        "spell",
+        "projectile",
+        "skillcanvolley",
+        "hit",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "coldskill",
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Infernal Blow",
+      "types": [
+        "attack",
+        "area",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "fireskill",
+        "duration"
+      ]
+    },
+    {
+      "name": "Glacial Hammer",
+      "types": [
+        "attack",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "coldskill",
+        "type53"
+      ]
+    },
+    {
+      "name": "Frost Wall",
+      "types": [
+        "spell",
+        "hit",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "coldskill",
+        "spellcancascade",
+        "secondwindsupport"
+      ]
+    },
+    {
+      "name": "Freezing Pulse",
+      "types": [
+        "spell",
+        "projectile",
+        "skillcanvolley",
+        "hit",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "coldskill",
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Shock Nova",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "lightningskill",
+        "canrapidfire",
+        "areaspell",
+        "novaspell"
+      ]
+    },
+    {
+      "name": "Viper Strike",
+      "types": [
+        "attack",
+        "duration",
+        "attackcanrepeat",
+        "melee",
+        "meleesingletarget",
+        "damageovertime",
+        "chaosskill"
+      ]
+    },
+    {
+      "name": "Explosive Arrow",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "hit",
+        "area",
+        "duration",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "fireskill",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Lightning Warp",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "triggerable",
+        "movementskill",
+        "lightningskill",
+        "areaspell",
+        "travelskill",
+        "spellcanrepeat",
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Heavy Strike",
+      "types": [
+        "attack",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee"
+      ]
+    },
+    {
+      "name": "Dominating Blow",
+      "types": [
+        "attack",
+        "minion",
+        "duration",
+        "createminion",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "createsminion"
+      ]
+    },
+    {
+      "name": "Rain of Arrows",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "area",
+        "projectiledamage",
+        "type73",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "triggerable",
+        "type95"
+      ]
+    },
+    {
+      "name": "Firestorm",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "fireskill",
+        "spellcancascade",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Lightning Strike",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "lightningskill",
+        "type83"
+      ]
+    },
+    {
+      "name": "Tempest Shield",
+      "types": [
+        "spell",
+        "hit",
+        "shield",
+        "type27",
+        "lightningskill",
+        "chaining",
+        "triggerable",
+        "duration"
+      ]
+    },
+    {
+      "name": "Power Siphon",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Puncture",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "duration",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "damageovertime",
+        "triggerable",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Lightning Arrow",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "area",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "lightningskill",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Arc",
+      "types": [
+        "spell",
+        "hit",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "chaining",
+        "spellcanrepeat",
+        "triggerable",
+        "lightningskill",
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Burning Arrow",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "fireskill",
+        "type53",
+        "duration",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Ethereal Knives",
+      "types": [
+        "spell",
+        "hit",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "canrapidfire",
+        "physicalskill",
+        "duration"
+      ]
+    },
+    {
+      "name": "Incinerate",
+      "types": [
+        "spell",
+        "hit",
+        "skillcantotem",
+        "fireskill",
+        "channelled",
+        "area",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Cyclone",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "movementskill",
+        "type65",
+        "channelled",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Reave",
+      "types": [
+        "attack",
+        "area",
+        "attackcanrepeat",
+        "melee"
+      ]
+    },
+    {
+      "name": "Spectral Throw",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcanvolley"
+      ]
+    },
+    {
+      "name": "Storm Call",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "triggerable",
+        "spellcanrepeat",
+        "lightningskill",
+        "spellcancascade",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Flameblast",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantotem",
+        "fireskill",
+        "channelled",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Barrage",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Ball Lightning",
+      "types": [
+        "spell",
+        "hit",
+        "projectile",
+        "skillcanvolley",
+        "area",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "lightningskill",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Flame Surge",
+      "types": [
+        "spell",
+        "hit",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "area",
+        "fireskill",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Glacial Cascade",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "coldskill",
+        "physicalskill",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Vaal Fireball",
+      "types": [
+        "projectile",
+        "skillcanvolley",
+        "type70",
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "vaal",
+        "fireskill",
+        "areaspell",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Arc",
+      "types": [
+        "spell",
+        "hit",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "chaining",
+        "vaal",
+        "lightningskill",
+        "duration",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Spark",
+      "types": [
+        "spell",
+        "projectile",
+        "skillcanvolley",
+        "type70",
+        "hit",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "vaal",
+        "lightningskill",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Burning Arrow",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "area",
+        "vaal",
+        "fireskill",
+        "type55",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Lightning Warp",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "vaal",
+        "lightningskill",
+        "areaspell",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Power Siphon",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "vaal",
+        "type83",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Cyclone",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "duration",
+        "vaal",
+        "type65",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Ice Nova",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "vaal",
+        "coldskill",
+        "areaspell",
+        "novaspell",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Detonate Dead",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "vaal",
+        "fireskill",
+        "areaspell",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Ground Slam",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "vaal",
+        "cantusefistofwar",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Vaal Rain of Arrows",
+      "types": [
+        "attack",
+        "projectileattack",
+        "area",
+        "projectiledamage",
+        "type73",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "vaal",
+        "type95",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Cold Snap",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "duration",
+        "vaal",
+        "coldskill",
+        "chillingarea",
+        "areaspell",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Spectral Throw",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcanvolley",
+        "vaal",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Lightning Strike",
+      "types": [
+        "attack",
+        "meleesingletarget",
+        "melee",
+        "duration",
+        "vaal",
+        "lightningskill",
+        "projectile",
+        "projectileattack",
+        "type83",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Double Strike",
+      "types": [
+        "attack",
+        "meleesingletarget",
+        "melee",
+        "duration",
+        "vaal",
+        "physicalskill",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Glacial Hammer",
+      "types": [
+        "attack",
+        "meleesingletarget",
+        "melee",
+        "duration",
+        "area",
+        "vaal",
+        "coldskill",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Storm Call",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "vaal",
+        "lightningskill",
+        "areaspell",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Vaal Reave",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "vaal",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Molten Strike",
+      "types": [
+        "attack",
+        "projectile",
+        "area",
+        "melee",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "fireskill",
+        "projectileattack",
+        "type83",
+        "type97"
+      ]
+    },
+    {
+      "name": "Vaal Flameblast",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantotem",
+        "vaal",
+        "fireskill",
+        "areaspell",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Tornado Shot",
+      "types": [
+        "attack",
+        "projectile",
+        "skillcanvolley",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Lightning Tendrils",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantotem",
+        "lightningskill",
+        "channelled",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Mirror Arrow",
+      "types": [
+        "projectiledamage",
+        "attack",
+        "minion",
+        "projectileattack",
+        "createminion",
+        "duration",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "movementskill",
+        "triggerable",
+        "createsminion",
+        "travelskill",
+        "secondwindsupport",
+        "type95"
+      ]
+    },
+    {
+      "name": "Blink Arrow",
+      "types": [
+        "projectiledamage",
+        "attack",
+        "minion",
+        "projectileattack",
+        "createminion",
+        "duration",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "movementskill",
+        "triggerable",
+        "createsminion",
+        "travelskill",
+        "secondwindsupport",
+        "type95"
+      ]
+    },
+    {
+      "name": "Kinetic Blast",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcanvolley",
+        "area",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem"
+      ]
+    },
+    {
+      "name": "Ice Crash",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "coldskill",
+        "attackcanrepeat",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Infernal Cry",
+      "types": [
+        "area",
+        "duration",
+        "fireskill",
+        "hit",
+        "warcry",
+        "secondwindsupport"
+      ]
+    },
+    {
+      "name": "Flame Dash",
+      "types": [
+        "spell",
+        "movementskill",
+        "hit",
+        "damageovertime",
+        "duration",
+        "skillcantotem",
+        "triggerable",
+        "fireskill",
+        "skillcantrap",
+        "skillcanmine",
+        "travelskill",
+        "blinkskill",
+        "secondwindsupport"
+      ]
+    },
+    {
+      "name": "Frost Blades",
+      "types": [
+        "attack",
+        "projectile",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "coldskill",
+        "projectileattack",
+        "type83"
+      ]
+    },
+    {
+      "name": "Vigilant Strike",
+      "types": [
+        "attack",
+        "buff",
+        "melee",
+        "attackcanrepeat",
+        "meleesingletarget",
+        "type53",
+        "secondwindsupport"
+      ]
+    },
+    {
+      "name": "Rolling Magma",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "triggerable",
+        "fireskill",
+        "projectile",
+        "skillcanvolley",
+        "spellcanrepeat",
+        "chaining",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Wild Strike",
+      "types": [
+        "attack",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "melee",
+        "lightningskill",
+        "coldskill",
+        "fireskill",
+        "projectile",
+        "area",
+        "chaining",
+        "projectileattack",
+        "type83"
+      ]
+    },
+    {
+      "name": "Galvanic Arrow",
+      "types": [
+        "attack",
+        "projectile",
+        "skillcanvolley",
+        "area",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "lightningskill",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Blast Rain",
+      "types": [
+        "attack",
+        "projectileattack",
+        "fireskill",
+        "skillcanmiragearcher",
+        "area",
+        "projectiledamage",
+        "type73",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "triggerable",
+        "type95"
+      ]
+    },
+    {
+      "name": "Bladefall",
+      "types": [
+        "spell",
+        "area",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "hit",
+        "triggerable",
+        "spellcanrepeat",
+        "spellcancascade",
+        "canrapidfire",
+        "areaspell",
+        "physicalskill",
+        "duration"
+      ]
+    },
+    {
+      "name": "Blade Vortex",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "duration",
+        "skillcantotem",
+        "spellcanrepeat",
+        "triggerable",
+        "type27",
+        "canrapidfire",
+        "areaspell",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Vaal Blade Vortex",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "duration",
+        "skillcantotem",
+        "type27",
+        "vaal",
+        "areaspell",
+        "physicalskill",
+        "cantusefistofwar"
+      ]
+    },
+    {
+      "name": "Earthquake",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "attackcanrepeat",
+        "duration",
+        "slamskill",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Essence Drain",
+      "types": [
+        "spell",
+        "projectile",
+        "skillcanvolley",
+        "duration",
+        "skillcantotem",
+        "spellcanrepeat",
+        "damageovertime",
+        "chaosskill",
+        "hit",
+        "triggerable",
+        "canrapidfire",
+        "area",
+        "areaspell",
+        "skillcantrap",
+        "skillcanmine"
+      ]
+    },
+    {
+      "name": "Sunder",
+      "types": [
+        "attack",
+        "area",
+        "attackcanrepeat",
+        "melee",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Frostbolt",
+      "types": [
+        "spell",
+        "projectile",
+        "skillcanvolley",
+        "hit",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "coldskill",
+        "triggerable",
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Dark Pact",
+      "types": [
+        "spell",
+        "hit",
+        "skillcanmine",
+        "skillcantotem",
+        "area",
+        "skillcantrap",
+        "triggerable",
+        "spellcanrepeat",
+        "chaining",
+        "chaosskill",
+        "minion",
+        "canrapidfire",
+        "areaspell",
+        "novaspell"
+      ]
+    },
+    {
+      "name": "Storm Burst",
+      "types": [
+        "spell",
+        "hit",
+        "skillcantotem",
+        "lightningskill",
+        "channelled",
+        "area",
+        "duration",
+        "areaspell",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Cremation",
+      "types": [
+        "spell",
+        "area",
+        "fireskill",
+        "duration",
+        "projectile",
+        "spellcanrepeat",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "triggerable",
+        "hit",
+        "spellcancascade",
+        "projectile",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Bodyswap",
+      "types": [
+        "movementskill",
+        "spell",
+        "hit",
+        "area",
+        "skillcantotem",
+        "skillcanmine",
+        "skillcantrap",
+        "triggerable",
+        "fireskill",
+        "areaspell",
+        "travelskill"
+      ]
+    },
+    {
+      "name": "Tectonic Slam",
+      "types": [
+        "attack",
+        "area",
+        "attackcanrepeat",
+        "melee",
+        "fireskill",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Vaal Earthquake",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "duration",
+        "vaal",
+        "cantusefistofwar",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Consecrated Path",
+      "types": [
+        "melee",
+        "attack",
+        "area",
+        "movementskill",
+        "triggerable",
+        "hit",
+        "duration",
+        "fireskill",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Smite",
+      "types": [
+        "melee",
+        "attack",
+        "area",
+        "duration",
+        "attackcanrepeat",
+        "hit",
+        "meleesingletarget",
+        "aura",
+        "buff",
+        "lightningskill"
+      ]
+    },
+    {
+      "name": "Scourge Arrow",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "skillcantotem",
+        "hit",
+        "channelled",
+        "chaosskill"
+      ]
+    },
+    {
+      "name": "Toxic Rain",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "area",
+        "projectiledamage",
+        "skillcantotem",
+        "skillcantrap",
+        "skillcanmine",
+        "hit",
+        "chaosskill",
+        "duration",
+        "damageovertime",
+        "type73",
+        "chaosskill",
+        "triggerable",
+        "type95"
+      ]
+    },
+    {
+      "name": "Lancing Steel",
+      "types": [
+        "attack",
+        "projectile",
+        "hit",
+        "projectiledamage",
+        "projectileattack",
+        "physicalskill",
+        "type83",
+        "steelskill"
+      ]
+    },
+    {
+      "name": "Shattering Steel",
+      "types": [
+        "attack",
+        "projectile",
+        "hit",
+        "projectiledamage",
+        "projectileattack",
+        "area",
+        "physicalskill",
+        "skillcanvolley",
+        "steelskill"
+      ]
+    },
+    {
+      "name": "Purifying Flame",
+      "types": [
+        "spell",
+        "area",
+        "hit",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "triggerable",
+        "spellcanrepeat",
+        "fireskill",
+        "canrapidfire",
+        "areaspell",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Soulrend",
+      "types": [
+        "spell",
+        "area",
+        "duration",
+        "projectile",
+        "damageovertime",
+        "hit",
+        "chaosskill",
+        "spellcanrepeat",
+        "triggerable",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "canrapidfire",
+        "areaspell",
+        "skillcanvolley"
+      ]
+    },
+    {
+      "name": "Stormbind",
+      "types": [
+        "spell",
+        "area",
+        "hit",
+        "areaspell",
+        "channelled",
+        "lightningskill",
+        "skillcantotem",
+        "duration"
+      ]
+    },
+    {
+      "name": "Divine Ire",
+      "types": [
+        "spell",
+        "area",
+        "hit",
+        "channelled",
+        "lightningskill",
+        "skillcantotem",
+        "areaspell",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Wave of Conviction",
+      "types": [
+        "spell",
+        "area",
+        "hit",
+        "duration",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "triggerable",
+        "fireskill",
+        "lightningskill",
+        "canrapidfire",
+        "spellcanrepeat",
+        "areaspell",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Bladestorm",
+      "types": [
+        "attack",
+        "melee",
+        "area",
+        "duration",
+        "attackcanrepeat"
+      ]
+    },
+    {
+      "name": "Perforate",
+      "types": [
+        "attack",
+        "area",
+        "hit",
+        "melee",
+        "attackcanrepeat",
+        "slamskill"
+      ]
+    },
+    {
+      "name": "Chain Hook",
+      "types": [
+        "attack",
+        "area",
+        "hit",
+        "movementskill",
+        "melee",
+        "attackcanrepeat"
+      ]
+    },
+    {
+      "name": "Cobra Lash",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcanvolley",
+        "hit",
+        "triggerable",
+        "chaosskill"
+      ]
+    },
+    {
+      "name": "Pestilent Strike",
+      "types": [
+        "attack",
+        "melee",
+        "meleesingletarget",
+        "attackcanrepeat",
+        "area",
+        "duration",
+        "chaosskill"
+      ]
+    },
+    {
+      "name": "Venom Gyre",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcanvolley",
+        "chaosskill"
+      ]
+    },
+    {
+      "name": "Ensnaring Arrow",
+      "types": [
+        "attack",
+        "projectileattack",
+        "skillcanmiragearcher",
+        "projectile",
+        "skillcanvolley",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "triggerable",
+        "area"
+      ]
+    },
+    {
+      "name": "Kinetic Bolt",
+      "types": [
+        "attack",
+        "projectile",
+        "skillcanvolley",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "projectileattack",
+        "triggerable"
+      ]
+    },
+    {
+      "name": "Blade Blast",
+      "types": [
+        "spell",
+        "area",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "hit",
+        "triggerable",
+        "spellcanrepeat",
+        "spellcancascade",
+        "canrapidfire",
+        "areaspell",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Earthshatter",
+      "types": [
+        "attack",
+        "area",
+        "melee",
+        "slamskill",
+        "attackcanrepeat",
+        "duration"
+      ]
+    },
+    {
+      "name": "Blazing Salvo",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "triggerable",
+        "fireskill",
+        "projectile",
+        "skillcanvolley",
+        "spellcanrepeat",
+        "canrapidfire",
+        "areaspell"
+      ]
+    },
+    {
+      "name": "Crackling Lance",
+      "types": [
+        "spell",
+        "area",
+        "hit",
+        "lightningskill",
+        "skillcantrap",
+        "skillcanmine",
+        "skillcantotem",
+        "triggerable",
+        "areaspell",
+        "spellcanrepeat",
+        "canrapidfire"
+      ]
+    },
+    {
+      "name": "Splitting Steel",
+      "types": [
+        "attack",
+        "projectileattack",
+        "projectile",
+        "skillcanvolley",
+        "steelskill",
+        "area",
+        "physicalskill"
+      ]
+    },
+    {
+      "name": "Hexblast",
+      "types": [
+        "spell",
+        "hit",
+        "area",
+        "chaosskill",
+        "skillcantrap",
+        "skillcantotem",
+        "skillcanmine",
+        "spellcanrepeat",
+        "triggerable",
+        "canrapidfire",
+        "hex",
+        "areaspell"
+      ]
+    }
+  ],
+  "drop_level": null,
+  "slug": "trinity-support",
+  "vaal": false,
+  "levels": [
+    {
+      "requirements": {
+        "dexterity": 14,
+        "requires_level": 18,
+        "intelligence": 21
+      },
+      "level": 1,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "3"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 17,
+        "requires_level": 22,
+        "intelligence": 24
+      },
+      "level": 2,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "3"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 19,
+        "requires_level": 26,
+        "intelligence": 28
+      },
+      "level": 3,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "3"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 21,
+        "requires_level": 29,
+        "intelligence": 31
+      },
+      "level": 4,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "3"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 23,
+        "requires_level": 32,
+        "intelligence": 34
+      },
+      "level": 5,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "3"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 25,
+        "requires_level": 35,
+        "intelligence": 37
+      },
+      "level": 6,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "3"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 27,
+        "requires_level": 38,
+        "intelligence": 40
+      },
+      "level": 7,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "3"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 29,
+        "requires_level": 41,
+        "intelligence": 42
+      },
+      "level": 8,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "3"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 31,
+        "requires_level": 44,
+        "intelligence": 45
+      },
+      "level": 9,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "4"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 33,
+        "requires_level": 47,
+        "intelligence": 48
+      },
+      "level": 10,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "4"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 35,
+        "requires_level": 50,
+        "intelligence": 51
+      },
+      "level": 11,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "4"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 37,
+        "requires_level": 53,
+        "intelligence": 54
+      },
+      "level": 12,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "4"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 39,
+        "requires_level": 56,
+        "intelligence": 57
+      },
+      "level": 13,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "4"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 40,
+        "requires_level": 58,
+        "intelligence": 58
+      },
+      "level": 14,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "4"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 42,
+        "requires_level": 60,
+        "intelligence": 60
+      },
+      "level": 15,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "4"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 43,
+        "requires_level": 62,
+        "intelligence": 62
+      },
+      "level": 16,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "4"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 44,
+        "requires_level": 64,
+        "intelligence": 64
+      },
+      "level": 17,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "5"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 46,
+        "requires_level": 66,
+        "intelligence": 66
+      },
+      "level": 18,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "5"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 47,
+        "requires_level": 68,
+        "intelligence": 68
+      },
+      "level": 19,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "5"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "19"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": 48,
+        "requires_level": 70,
+        "intelligence": 70
+      },
+      "level": 20,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "5"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 72,
+        "intelligence": null
+      },
+      "level": 21,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "5"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 74,
+        "intelligence": null
+      },
+      "level": 22,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "5"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 76,
+        "intelligence": null
+      },
+      "level": 23,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "5"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 78,
+        "intelligence": null
+      },
+      "level": 24,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "5"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 80,
+        "intelligence": null
+      },
+      "level": 25,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 82,
+        "intelligence": null
+      },
+      "level": 26,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 84,
+        "intelligence": null
+      },
+      "level": 27,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 86,
+        "intelligence": null
+      },
+      "level": 28,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 88,
+        "intelligence": null
+      },
+      "level": 29,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 90,
+        "intelligence": null
+      },
+      "level": 30,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 91,
+        "intelligence": null
+      },
+      "level": 31,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 92,
+        "intelligence": null
+      },
+      "level": 32,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 93,
+        "intelligence": null
+      },
+      "level": 33,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 94,
+        "intelligence": null
+      },
+      "level": 34,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 95,
+        "intelligence": null
+      },
+      "level": 35,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 96,
+        "intelligence": null
+      },
+      "level": 36,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 97,
+        "intelligence": null
+      },
+      "level": 37,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 98,
+        "intelligence": null
+      },
+      "level": 38,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 99,
+        "intelligence": null
+      },
+      "level": 39,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "requirements": {
+        "dexterity": null,
+        "requires_level": 100,
+        "intelligence": null
+      },
+      "level": 40,
+      "fields": [
+        {
+          "name": "supported_skills_deal_%_more_elemental_damage_per__of_lowest_resonance",
+          "value": "6"
+        },
+        {
+          "name": "supported_skills_penetrate_%_elemental_resistances_while_each_resonance_is_at_least_",
+          "value": "27"
+        }
+      ]
+    }
+  ]
+}

@@ -1,39 +1,5 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 40.0,
-          "text": "% increased Elemental Damage",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% increased Attack Speed",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% chance to Maim on Hit",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": null,
-  "slug": "double-strike",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -876,43 +842,26 @@
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (91.3\u2013112)% of Base Attack Damage",
-    "Adds (3\u2013113) to (5\u2013169) Physical Damage against Bleeding Enemies",
-    "+(0\u20132) to Melee Strike Range",
-    "25% chance to cause Bleeding"
-  ],
-  "vaal": true,
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/PrismaticDoubleStrike.png?w=2&h=2&scale=1",
-      "name": "Prismatic Double Strike Effect",
-      "description": "Your Double Strike becomes a Prismatic Effect."
-    }
-  ],
   "acquisition": {
-    "quest": {
-      "quest_name": "The Twilight Strand",
-      "classes": [
-        "Duelist"
-      ],
-      "act": 1
-    },
     "vendor": {
+      "vendor_name": "Nessa",
       "classes": [
         "Marauder",
         "Duelist",
         "Ranger",
         "Shadow",
         "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Duelist"
       ],
-      "vendor_name": "Nessa"
+      "quest_name": "The Twilight Strand",
+      "act": 1
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "attack",
     "meleesingletarget",
@@ -921,20 +870,14 @@
     "physicalskill"
   ],
   "tags": [],
-  "enchants": {
-    "eternal": [
-      "40% increased Double Strike Damage",
-      "15% increased Double Strike Attack Speed",
-      "90% increased Double Strike Critical Strike Chance",
-      "Double Strike has a 15% chance to deal Double Damage to Bleeding Enemies"
-    ],
-    "merciless": [
-      "25% increased Double Strike Damage",
-      "10% increased Double Strike Attack Speed",
-      "60% increased Double Strike Critical Strike Chance",
-      "Double Strike has a 10% chance to deal Double Damage to Bleeding Enemies"
-    ]
-  },
+  "vaal": true,
+  "mods": [
+    "Deals (91.3\u2013112)% of Base Attack Damage",
+    "Adds (3\u2013113) to (5\u2013169) Physical Damage against Bleeding Enemies",
+    "+(0\u20132) to Melee Strike Range",
+    "25% chance to cause Bleeding"
+  ],
+  "description": "Performs two fast strikes with a melee weapon.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1155,6 +1098,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1551,6 +1501,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1573,8 +1530,72 @@
         "attack",
         "causeelementalstatus"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Double Strike",
-  "description": "Performs two fast strikes with a melee weapon."
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/PrismaticDoubleStrike.png?w=2&h=2&scale=1",
+      "name": "Prismatic Double Strike Effect",
+      "description": "Your Double Strike becomes a Prismatic Effect."
+    }
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Double Strike Damage",
+      "15% increased Double Strike Attack Speed",
+      "90% increased Double Strike Critical Strike Chance",
+      "Double Strike has a 15% chance to deal Double Damage to Bleeding Enemies"
+    ],
+    "merciless": [
+      "25% increased Double Strike Damage",
+      "10% increased Double Strike Attack Speed",
+      "60% increased Double Strike Critical Strike Chance",
+      "Double Strike has a 10% chance to deal Double Damage to Bleeding Enemies"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% chance to Maim on Hit",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Attack Speed",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Elemental Damage",
+          "maximum": 40.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    }
+  },
+  "slug": "double-strike",
+  "name": "Double Strike"
 }

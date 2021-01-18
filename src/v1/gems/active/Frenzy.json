@@ -1,49 +1,5 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": null,
-          "text": "Fires an additional Projectile",
-          "minimum": null
-        }
-      ]
-    },
-    "phantasmal": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 5.0,
-          "text": "% increased Damage with Ailments per Frenzy Charge",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% increased Attack Speed",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 20.0,
-      "mods": [
-        {
-          "maximum": 1.0,
-          "text": "Targets  additional nearby Enemy",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 16,
-  "slug": "frenzy",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -726,39 +682,28 @@
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (115\u2013135)% of Base Attack Damage",
-    "5% more Attack Damage per Frenzy Charge",
-    "5% more Attack Speed per Frenzy Charge",
-    "+(0\u20132) to Melee Strike Range"
-  ],
-  "vaal": false,
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
   "acquisition": {
-    "quest": {
-      "quest_name": "Intruders in Black",
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Scion"
-      ],
-      "act": 2
-    },
     "vendor": {
+      "vendor_name": "Yeena",
       "classes": [
         "Marauder",
         "Duelist",
         "Ranger",
         "Shadow",
         "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Scion"
       ],
-      "vendor_name": "Yeena"
+      "quest_name": "Intruders in Black",
+      "act": 2
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "attack",
     "projectileattack",
@@ -777,24 +722,14 @@
     "skill_can_fire_arrows [1]",
     "skill_can_fire_wand_projectiles [1]"
   ],
-  "enchants": {
-    "eternal": [
-      "40% increased Frenzy Damage",
-      "Blood Rage grants additional 30% chance to gain a Frenzy Charge on Kill",
-      "9% increased Flicker Strike Damage per Frenzy Charge",
-      "30% Chance on Frenzy to gain an additional Frenzy Charge",
-      "9% increased Frenzy Damage per Frenzy Charge",
-      "30% chance for Phase Run to increase Duration without removing Frenzy Charges"
-    ],
-    "merciless": [
-      "25% increased Frenzy Damage",
-      "Blood Rage grants additional 20% chance to gain a Frenzy Charge on Kill",
-      "6% increased Flicker Strike Damage per Frenzy Charge",
-      "20% Chance on Frenzy to gain an additional Frenzy Charge",
-      "6% increased Frenzy Damage per Frenzy Charge",
-      "20% chance for Phase Run to increase Duration without removing Frenzy Charges"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Deals (115\u2013135)% of Base Attack Damage",
+    "5% more Attack Damage per Frenzy Charge",
+    "5% more Attack Speed per Frenzy Charge",
+    "+(0\u20132) to Melee Strike Range"
+  ],
+  "description": "Performs an attack that gives the character a frenzy charge if it hits. Frenzy charges increase your attack speed.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1108,6 +1043,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1614,6 +1556,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1636,8 +1585,80 @@
         "attack",
         "causeelementalstatus"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Frenzy",
-  "description": "Performs an attack that gives the character a frenzy charge if it hits. Frenzy charges increase your attack speed."
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "enchants": {
+    "eternal": [
+      "40% increased Frenzy Damage",
+      "Blood Rage grants additional 30% chance to gain a Frenzy Charge on Kill",
+      "9% increased Flicker Strike Damage per Frenzy Charge",
+      "30% Chance on Frenzy to gain an additional Frenzy Charge",
+      "9% increased Frenzy Damage per Frenzy Charge",
+      "30% chance for Phase Run to increase Duration without removing Frenzy Charges"
+    ],
+    "merciless": [
+      "25% increased Frenzy Damage",
+      "Blood Rage grants additional 20% chance to gain a Frenzy Charge on Kill",
+      "6% increased Flicker Strike Damage per Frenzy Charge",
+      "20% Chance on Frenzy to gain an additional Frenzy Charge",
+      "6% increased Frenzy Damage per Frenzy Charge",
+      "20% chance for Phase Run to increase Duration without removing Frenzy Charges"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "Melee Strikes target  additional nearby Enemy",
+          "maximum": 1.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Attack Speed",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "Fires an additional Projectile",
+          "maximum": null,
+          "minimum": null
+        }
+      ],
+      "weight": 100.0
+    },
+    "phantasmal": {
+      "mods": [
+        {
+          "text": "% increased Damage with Ailments per Frenzy Charge",
+          "maximum": 5.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    }
+  },
+  "slug": "frenzy",
+  "name": "Frenzy"
 }

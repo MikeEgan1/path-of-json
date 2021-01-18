@@ -1,19 +1,5 @@
 {
-  "quality": {
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "+% to Fire Damage over Time Multiplier",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": null,
-  "slug": "vaal-burning-arrow",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -696,6 +682,17 @@
       "level": 40
     }
   ],
+  "acquisition": {},
+  "gem_class": "Active Skill Gems",
+  "type": [
+    "2732"
+  ],
+  "tags": [
+    "vaal_burning_arrow_explode_on_hit [1]",
+    "skill_can_fire_arrows [1]",
+    "cannot_cancel_skill_before_contact_point [1]"
+  ],
+  "vaal": true,
   "mods": [
     "Deals (160\u2013198)% of Base Attack Damage",
     "50% chance to Ignite enemies",
@@ -704,35 +701,7 @@
     "Projectiles Pierce 3 additional Targets",
     "Can't be Evaded"
   ],
-  "vaal": true,
-  "target_types": [
-    "attack",
-    "projectileattack",
-    "projectile",
-    "skillcanvolley",
-    "skillcantotem",
-    "skillcantrap",
-    "skillcanmine",
-    "area",
-    "vaal",
-    "fireskill",
-    "type55",
-    "cantusefistofwar"
-  ],
-  "mtx": [],
-  "acquisition": {},
-  "type": [
-    "2711"
-  ],
-  "tags": [
-    "vaal_burning_arrow_explode_on_hit [1]",
-    "skill_can_fire_arrows [1]",
-    "cannot_cancel_skill_before_contact_point [1]"
-  ],
-  "enchants": {
-    "eternal": [],
-    "merciless": []
-  },
+  "description": "Fires an arrow that explodes, dealing fire damage to its target and other nearby enemies, with an increased chance of igniting them.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1045,6 +1014,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1474,6 +1450,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1504,8 +1487,46 @@
         "attack",
         "causeelementalstatus"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Vaal Burning Arrow",
-  "description": "Fires an arrow that explodes, dealing fire damage to its target and other nearby enemies, with an increased chance of igniting them."
+  "target_types": [
+    "attack",
+    "projectileattack",
+    "projectile",
+    "skillcanvolley",
+    "skillcantotem",
+    "skillcantrap",
+    "skillcanmine",
+    "area",
+    "vaal",
+    "fireskill",
+    "type55",
+    "cantusefistofwar"
+  ],
+  "mtx": [],
+  "enchants": {
+    "eternal": [],
+    "merciless": []
+  },
+  "quality": {
+    "superior": {
+      "mods": [
+        {
+          "text": "+% to Fire Damage over Time Multiplier",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    }
+  },
+  "slug": "vaal-burning-arrow",
+  "name": "Vaal Burning Arrow"
 }

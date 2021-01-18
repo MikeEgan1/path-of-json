@@ -1,69 +1,76 @@
 {
-  "name": "Impending Doom Support",
-  "levels": [
-    {
-      "requirements": {},
-      "fields": [
-        {
-          "name": "implicit",
-          "value": "Trigger This Skill when a Hex from Supported Skills endsis_area_damage [1]"
-        }
-      ]
-    },
-    {
-      "requirements": {},
-      "fields": [
-        {
-          "name": "implicit",
-          "value": ":"
-        }
-      ]
-    },
-    {
-      "requirements": {},
-      "fields": [
-        {
-          "name": "implicit",
-          "value": "50% more Damage per 5 Doom on Hex"
-        }
-      ]
-    }
-  ],
-  "vaal": false,
-  "slug": "impending-doom-support",
-  "type": [],
-  "target_types": [],
-  "mods": [
-    "Trigger Doom Blast when a Hex from Supported Curse Skills ends",
-    "Deals (25\u2013216) to (37\u2013325) Chaos Damage"
-  ],
-  "gem_class": "Support Skill Gems",
+  "tags": [],
   "description": "Supports hex curse skills, causing them to trigger Doom Blast when the hex ends. Cannot support curse skills which are triggered or applied as an aura.",
   "acquisition": {
     "vendor": {
+      "vendor_name": "Clarissa",
       "classes": [
         "Witch",
         "Shadow",
         "Scion",
         "Templar"
-      ],
-      "vendor_name": "Clarissa"
+      ]
     },
     "quest": {
+      "quest_name": "A Fixture of Fate",
       "act": 3,
       "classes": [
         "Witch",
         "Shadow",
         "Scion"
-      ],
-      "quest_name": "A Fixture of Fate"
+      ]
     }
   },
+  "type": [],
   "enchants": {
     "merciless": [],
     "eternal": []
   },
+  "gem_class": "Support Skill Gems",
+  "quality": {
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "divergent": {
+      "mods": [
+        {
+          "text": "+ Cooldown Use",
+          "maximum": 1.0,
+          "minimum": 0.0
+        },
+        {
+          "text": "% more Damage per 5 Doom on Hex",
+          "maximum": 0.0,
+          "minimum": 25.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "",
+          "maximum": null,
+          "minimum": null
+        }
+      ],
+      "weight": 100.0
+    }
+  },
+  "mods": [
+    "Trigger Doom Blast when a Hex from Supported Curse Skills ends",
+    "Deals (39\u2013430) to (58\u2013645) Chaos Damage"
+  ],
+  "target_types": [],
   "mtx": [],
+  "name": "Impending Doom Support",
   "support": [
     {
       "name": "Temporal Chains",
@@ -252,43 +259,36 @@
       ]
     }
   ],
-  "quality": {
-    "superior": {
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% increased Area of Effect",
-          "minimum": 0.0
-        }
-      ],
-      "weight": 50.0
-    },
-    "anomalous": {
-      "mods": [
-        {
-          "maximum": null,
-          "text": "",
-          "minimum": null
-        }
-      ],
-      "weight": 100.0
-    },
-    "divergent": {
-      "mods": [
-        {
-          "maximum": 1.0,
-          "text": "+ Cooldown Use",
-          "minimum": 0.0
-        },
-        {
-          "maximum": 0.0,
-          "text": "% more Damage per 5 Doom on Hex",
-          "minimum": 25.0
-        }
-      ],
-      "weight": 20.0
-    }
-  },
   "drop_level": null,
-  "tags": []
+  "slug": "impending-doom-support",
+  "vaal": false,
+  "levels": [
+    {
+      "requirements": {},
+      "fields": [
+        {
+          "name": "implicit",
+          "value": "Trigger This Skill when a Hex from Supported Skills endsis_area_damage [1]"
+        }
+      ]
+    },
+    {
+      "requirements": {},
+      "fields": [
+        {
+          "name": "implicit",
+          "value": ":"
+        }
+      ]
+    },
+    {
+      "requirements": {},
+      "fields": [
+        {
+          "name": "implicit",
+          "value": "60% more Damage per 5 Doom on Hex"
+        }
+      ]
+    }
+  ]
 }

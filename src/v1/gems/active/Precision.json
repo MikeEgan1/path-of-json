@@ -1,44 +1,5 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 10.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% reduced Mana Reserved",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 40.0,
-          "text": "% increased Area of Effect",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "You and nearby Allies deal % increased Damage",
-          "minimum": 0.0
-        },
-        {
-          "maximum": 10.0,
-          "text": "You and nearby Allies have % less Area of Effect",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 10,
-  "slug": "precision",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -1041,12 +1002,110 @@
       "level": 40
     }
   ],
+  "acquisition": {
+    "vendor": {
+      "vendor_name": "Nessa",
+      "classes": [
+        "Marauder",
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Duelist",
+        "Ranger"
+      ],
+      "quest_name": "The Caged Brute",
+      "act": 1
+    }
+  },
+  "gem_class": "Active Skill Gems",
+  "type": [
+    "spell",
+    "area",
+    "buff",
+    "manacostreserved",
+    "type27",
+    "skillcantotem",
+    "aura",
+    "instant",
+    "areaspell",
+    "canhaveblessing",
+    "type91",
+    "type92",
+    "secondwindsupport"
+  ],
+  "tags": [
+    "base_deal_no_damage [1]"
+  ],
+  "vaal": false,
   "mods": [
     "You and nearby allies gain +(93\u2013701) to Accuracy Rating",
     "You and nearby allies gain (20\u201358)% increased Critical Strike Chance",
     "+(0\u201319) to radius"
   ],
-  "vaal": false,
+  "description": "Casts an aura that grants accuracy and critical strike chance to you and your allies.",
+  "support": [
+    {
+      "name": "Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Concentrated Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Spell Totem Support",
+      "types": [
+        "spell",
+        "skillcantotem",
+        "and"
+      ]
+    },
+    {
+      "name": "Generosity Support",
+      "types": [
+        "aura"
+      ]
+    },
+    {
+      "name": "Arcane Surge Support",
+      "types": [
+        "spell"
+      ]
+    },
+    {
+      "name": "Awakened Generosity Support",
+      "types": [
+        "aura"
+      ]
+    },
+    {
+      "name": "Awakened Increased Area of Effect Support",
+      "types": [
+        "area",
+        "createminion",
+        "type53"
+      ]
+    },
+    {
+      "name": "Second Wind Support",
+      "types": [
+        "secondwindsupport"
+      ]
+    }
+  ],
   "target_types": [
     "any"
   ],
@@ -1162,14 +1221,19 @@
       "description": "Your Aura becomes a Zenith Effect."
     },
     {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Portals/AbyssPortal.png?w=2&h=2&scale=1",
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/DragonAuraEffect.png?w=2&h=2&scale=1",
       "name": "Dragon Aura Effect",
       "description": "Your Aura becomes a Dragon Effect."
     },
     {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Portals/AbyssPortal.png?w=2&h=2&scale=1",
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/BlueDragonAuraEffect.png?w=2&h=2&scale=1",
       "name": "Blue Dragon Aura Effect",
-      "description": "Your Dragon Aura becomes a Bue Dragon Effect."
+      "description": "Your Aura becomes a Blue Dragon Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/DualDragonAuraEffect.png?w=2&h=2&scale=1",
+      "name": "Dual Dragon Aura Effect",
+      "description": "Your Aura becomes a Dual Dragon Effect."
     },
     {
       "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/WildAura.png?w=2&h=2&scale=1",
@@ -1257,7 +1321,7 @@
       "description": "Your Aura becomes a Demonic Effect."
     },
     {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/shoes/ArcticBoots.png?w=2&h=2&scale=1",
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Portals/AbyssPortal.png?w=2&h=2&scale=1",
       "name": "Frost Viking Aura Effect",
       "description": "Your Viking Aura becomes a Frost Effect."
     },
@@ -1272,22 +1336,22 @@
       "description": "Your Aura becomes a Nightfall Effect."
     },
     {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Weapon/weapon_arctic.png?w=2&h=2&scale=1",
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/SavageEthercraftAuraEffect.png?w=2&h=2&scale=1",
       "name": "Savage Ethercraft Aura Effect",
       "description": "Your Aura becomes a Savage Ethercraft Effect."
     },
     {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Weapon/weapon_arctic.png?w=2&h=2&scale=1",
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/EnragedEthercraftAuraEffect.png?w=2&h=2&scale=1",
       "name": "Enraged Ethercraft Aura Effect",
       "description": "Your Aura becomes an Enraged Ethercraft Effect."
     },
     {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Weapon/weapon_arctic.png?w=2&h=2&scale=1",
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/TranquilEthercraftAuraEffect.png?w=2&h=2&scale=1",
       "name": "Tranquil Ethercraft Aura Effect",
       "description": "Your Aura becomes a Tranquil Ethercraft Effect."
     },
     {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Weapon/weapon_arctic.png?w=2&h=2&scale=1",
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/ChaoticEthercraftAuraEffect.png?w=2&h=2&scale=1",
       "name": "Chaotic Ethercraft Aura Effect",
       "description": "Your Aura becomes a Chaotic Ethercraft Effect."
     },
@@ -1295,45 +1359,17 @@
       "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/DarkwoodAuraEffect.png?w=2&h=2&scale=1",
       "name": "Darkwood Aura Effect",
       "description": "Your Aura becomes a Darkwood Effect."
-    }
-  ],
-  "acquisition": {
-    "quest": {
-      "quest_name": "The Caged Brute",
-      "classes": [
-        "Duelist",
-        "Ranger"
-      ],
-      "act": 1
     },
-    "vendor": {
-      "classes": [
-        "Marauder",
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "vendor_name": "Nessa"
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/SufferingAuraEffect.png?w=2&h=2&scale=1",
+      "name": "Suffering Aura Effect",
+      "description": "Your Aura becomes a Suffering Effect."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/Auras/MiseryAuraEffect.png?w=2&h=2&scale=1",
+      "name": "Misery Aura Effect",
+      "description": "Your Aura becomes a Misery Effect."
     }
-  },
-  "type": [
-    "spell",
-    "area",
-    "buff",
-    "manacostreserved",
-    "type27",
-    "skillcantotem",
-    "aura",
-    "instant",
-    "areaspell",
-    "canhaveblessing",
-    "type91",
-    "type92",
-    "secondwindsupport"
-  ],
-  "tags": [
-    "base_deal_no_damage [1]"
   ],
   "enchants": {
     "eternal": [
@@ -1343,64 +1379,38 @@
       "Precision has 20% reduced Mana Reservation"
     ]
   },
-  "support": [
-    {
-      "name": "Increased Area of Effect Support",
-      "types": [
-        "area",
-        "createminion",
-        "type53"
-      ]
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "You and nearby Allies deal % increased Damage",
+          "maximum": 2.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
     },
-    {
-      "name": "Concentrated Effect Support",
-      "types": [
-        "area",
-        "createminion",
-        "type53"
-      ]
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Area of Effect",
+          "maximum": 40.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
     },
-    {
-      "name": "Spell Totem Support",
-      "types": [
-        "spell",
-        "skillcantotem",
-        "and"
-      ]
-    },
-    {
-      "name": "Generosity Support",
-      "types": [
-        "aura"
-      ]
-    },
-    {
-      "name": "Arcane Surge Support",
-      "types": [
-        "spell"
-      ]
-    },
-    {
-      "name": "Awakened Generosity Support",
-      "types": [
-        "aura"
-      ]
-    },
-    {
-      "name": "Awakened Increased Area of Effect Support",
-      "types": [
-        "area",
-        "createminion",
-        "type53"
-      ]
-    },
-    {
-      "name": "Second Wind Support",
-      "types": [
-        "secondwindsupport"
-      ]
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% reduced Mana Reserved",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 10.0
     }
-  ],
-  "name": "Precision",
-  "description": "Casts an aura that grants accuracy and critical strike chance to you and your allies."
+  },
+  "slug": "precision",
+  "name": "Precision"
 }

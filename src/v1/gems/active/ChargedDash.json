@@ -1,39 +1,5 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 20.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% more Movement Speed",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 10.0,
-          "text": "% increased Attack Speed",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased travel distance",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 28,
-  "slug": "charged-dash",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -556,36 +522,9 @@
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (95\u2013110)% of Base Attack Damage",
-    "50% of Physical Damage Converted to Lightning Damage",
-    "Final wave deals 75% of Damage per stage",
-    "Deals 150% more Damage while Channelling if Illusion has finished moving",
-    "Illusion moves at 130% of your Movement Speed"
-  ],
-  "vaal": false,
-  "target_types": [
-    "ground"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DesertChargedDash.png?w=2&h=2&scale=1",
-      "name": "Desert Charged Dash Effect",
-      "description": "Your Charged Dash becomes a Desert Effect."
-    }
-  ],
   "acquisition": {
-    "quest": {
-      "quest_name": "Sever the Right Hand",
-      "classes": [
-        "Duelist",
-        "Ranger",
-        "Shadow",
-        "Scion"
-      ],
-      "act": 3
-    },
     "vendor": {
+      "vendor_name": "Clarissa",
       "classes": [
         "Marauder",
         "Templar",
@@ -593,10 +532,20 @@
         "Ranger",
         "Shadow",
         "Scion"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Duelist",
+        "Ranger",
+        "Shadow",
+        "Scion"
       ],
-      "vendor_name": "Clarissa"
+      "quest_name": "Sever the Right Hand",
+      "act": 3
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "ground"
   ],
@@ -605,20 +554,15 @@
     "base_skill_show_average_damage_instead_of_dps [1]",
     "skill_can_add_multiple_charges_per_action [1]"
   ],
-  "enchants": {
-    "eternal": [
-      "40% increased Charged Dash Damage",
-      "6% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently",
-      "Charged Dash has +6 to Radius of each Wave's last damage Area",
-      "Charged Dash has 15% more Movement Speed"
-    ],
-    "merciless": [
-      "25% increased Charged Dash Damage",
-      "4% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently",
-      "Charged Dash has +4 to Radius of each Wave's last damage Area",
-      "Charged Dash has 10% more Movement Speed"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Deals (95\u2013110)% of Base Attack Damage",
+    "50% of Physical Damage Converted to Lightning Damage",
+    "Final wave deals 75% of Damage per stage",
+    "Deals 150% more Damage while Channelling if Illusion has finished moving",
+    "Illusion moves at 130% of your Movement Speed"
+  ],
+  "description": "Channel to project an illusion which you steer. You gain stages while it moves, until it stops at a maximum total distance. Waves of area damage frequently pulse along its path, based on your attack speed. Stop channelling to teleport to the illusion, dealing a final wave of damage.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -857,10 +801,7 @@
       "name": "Hextouch Support",
       "types": [
         "attack",
-        "hit",
-        "appliescurse",
-        "hex",
-        "and"
+        "hit"
       ]
     },
     {
@@ -1248,10 +1189,7 @@
       "name": "Awakened Hextouch Support",
       "types": [
         "attack",
-        "hit",
-        "appliescurse",
-        "hex",
-        "and"
+        "hit"
       ]
     },
     {
@@ -1285,8 +1223,71 @@
         "attack",
         "causeelementalstatus"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Charged Dash",
-  "description": "Channel to project an illusion which you steer. You gain stages while it moves, until it stops at a maximum total distance. Waves of area damage frequently pulse along its path, based on your attack speed. Stop channelling to teleport to the illusion, dealing a final wave of damage."
+  "target_types": [
+    "ground"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/DesertChargedDash.png?w=2&h=2&scale=1",
+      "name": "Desert Charged Dash Effect",
+      "description": "Your Charged Dash becomes a Desert Effect."
+    }
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Charged Dash Damage",
+      "6% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently",
+      "Charged Dash has +6 to Radius of each Wave's last damage Area",
+      "Charged Dash has 15% more Movement Speed"
+    ],
+    "merciless": [
+      "25% increased Charged Dash Damage",
+      "4% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently",
+      "Charged Dash has +4 to Radius of each Wave's last damage Area",
+      "Charged Dash has 10% more Movement Speed"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased travel distance",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Attack Speed",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% more Movement Speed",
+          "maximum": 10.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 20.0
+    }
+  },
+  "slug": "charged-dash",
+  "name": "Charged Dash"
 }

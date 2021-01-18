@@ -1,39 +1,5 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased Damage",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 20.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% chance to gain Onslaught for 4 seconds on Hit",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 4,
-  "slug": "riposte",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -876,38 +842,26 @@
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (160\u2013230)% of Base Attack Damage",
-    "Trigger this Skill when you Block",
-    "+(0\u20132) to Melee Strike Range",
-    "(2\u201356) to (3\u201385) Added Attack Physical Damage",
-    "You cannot use this Attack directly"
-  ],
-  "vaal": false,
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [],
   "acquisition": {
-    "quest": {
-      "quest_name": "Breaking Some Eggs",
-      "classes": [
-        "Ranger",
-        "Shadow"
-      ],
-      "act": 1
-    },
     "vendor": {
+      "vendor_name": "Nessa",
       "classes": [
         "Marauder",
         "Duelist",
         "Ranger",
         "Shadow"
+      ]
+    },
+    "quest": {
+      "classes": [
+        "Ranger",
+        "Shadow"
       ],
-      "vendor_name": "Nessa"
+      "quest_name": "Breaking Some Eggs",
+      "act": 1
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "ground",
     "enemy"
@@ -916,16 +870,15 @@
     "base_skill_show_average_damage_instead_of_dps [1]",
     "skill_double_hits_when_dual_wielding [1]"
   ],
-  "enchants": {
-    "eternal": [
-      "40% increased Riposte Damage",
-      "Riposte has 30% increased Cooldown Recovery Rate"
-    ],
-    "merciless": [
-      "25% increased Riposte Damage",
-      "Riposte has 20% increased Cooldown Recovery Rate"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Deals (160\u2013230)% of Base Attack Damage",
+    "Trigger this Skill when you Block",
+    "+(0\u20132) to Melee Strike Range",
+    "(2\u201356) to (3\u201385) Added Attack Physical Damage",
+    "You cannot use this Attack directly"
+  ],
+  "description": "Perform a deadly counter-attack when you block. Uses both weapons while you're dual wielding.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -1140,6 +1093,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1506,6 +1466,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1530,6 +1497,53 @@
       ]
     }
   ],
-  "name": "Riposte",
-  "description": "Perform a deadly counter-attack when you block. Uses both weapons while you're dual wielding."
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [],
+  "enchants": {
+    "eternal": [
+      "40% increased Riposte Damage",
+      "Riposte has 30% increased Cooldown Recovery Rate"
+    ],
+    "merciless": [
+      "25% increased Riposte Damage",
+      "Riposte has 20% increased Cooldown Recovery Rate"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% chance to gain Onslaught for 4 seconds on Hit",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 20.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% increased Damage",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Cooldown Recovery Rate",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    }
+  },
+  "slug": "riposte",
+  "name": "Riposte"
 }

@@ -1,39 +1,5 @@
 {
-  "quality": {
-    "anomalous": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 60.0,
-          "text": "% increased Cooldown Recovery Rate",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "superior": {
-      "weight": 50.0,
-      "mods": [
-        {
-          "maximum": 5.0,
-          "text": "% chance to gain a Frenzy Charge on Hit",
-          "minimum": 0.0
-        }
-      ]
-    },
-    "divergent": {
-      "weight": 100.0,
-      "mods": [
-        {
-          "maximum": 20.0,
-          "text": "% increased teleport range",
-          "minimum": 0.0
-        }
-      ]
-    }
-  },
   "drop_level": 10,
-  "slug": "flicker-strike",
-  "gem_class": "Active Skill Gems",
   "levels": [
     {
       "requirements": {
@@ -556,47 +522,19 @@
       "level": 40
     }
   ],
-  "mods": [
-    "Deals (142.2\u2013168)% of Base Attack Damage",
-    "10% increased Attack Speed per Frenzy Charge",
-    "15% chance to gain a Frenzy Charge on Hit",
-    "Buff grants 20% increased Movement Speed",
-    "+3 seconds to Base duration"
-  ],
-  "vaal": false,
-  "target_types": [
-    "ground",
-    "enemy"
-  ],
-  "mtx": [
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/VaporFlickerStrike.png?w=1&h=1&scale=1",
-      "name": "Vapour Flicker Strike Effect",
-      "description": "Your Flicker Strike becomes a cloud of vapour."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ghostFlickerStrike.png?w=1&h=1&scale=1",
-      "name": "Ghost Flicker Strike Effect",
-      "description": "Your Flicker Strike becomes a ghostly smoke."
-    },
-    {
-      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CultistFlickerStrike.png?w=2&h=2&scale=1",
-      "name": "Demonic Flicker Strike Effect",
-      "description": "Your Flicker Strike becomes a bloody mist."
-    }
-  ],
   "acquisition": {
     "vendor": {
+      "vendor_name": "Nessa",
       "classes": [
         "Marauder",
         "Duelist",
         "Ranger",
         "Shadow",
         "Scion"
-      ],
-      "vendor_name": "Nessa"
+      ]
     }
   },
+  "gem_class": "Active Skill Gems",
   "type": [
     "ground",
     "enemy"
@@ -606,18 +544,15 @@
     "base_skill_show_average_damage_instead_of_dps [1]",
     "melee_defer_damage_prediction [1]"
   ],
-  "enchants": {
-    "eternal": [
-      "40% increased Flicker Strike Damage",
-      "Flicker Strike has 30% increased Cooldown Recovery Rate",
-      "9% increased Flicker Strike Damage per Frenzy Charge"
-    ],
-    "merciless": [
-      "25% increased Flicker Strike Damage",
-      "Flicker Strike has 20% increased Cooldown Recovery Rate",
-      "6% increased Flicker Strike Damage per Frenzy Charge"
-    ]
-  },
+  "vaal": false,
+  "mods": [
+    "Deals (142.2\u2013168)% of Base Attack Damage",
+    "10% increased Attack Speed per Frenzy Charge",
+    "15% chance to gain a Frenzy Charge on Hit",
+    "Buff grants 20% increased Movement Speed",
+    "+3 seconds to Base duration"
+  ],
+  "description": "Teleports the character to a nearby monster and attacks with a melee weapon. If no specific monster is targeted, one is picked at random. Grants a buff that increases movement speed for a duration. The cooldown can be bypassed by expending a Frenzy Charge.",
   "support": [
     {
       "name": "Added Fire Damage Support",
@@ -845,6 +780,13 @@
         "hit",
         "attack",
         "causesburning"
+      ]
+    },
+    {
+      "name": "Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
       ]
     },
     {
@@ -1248,6 +1190,13 @@
       ]
     },
     {
+      "name": "Awakened Hextouch Support",
+      "types": [
+        "attack",
+        "hit"
+      ]
+    },
+    {
       "name": "Awakened Elemental Focus Support",
       "types": [
         "hit",
@@ -1276,8 +1225,80 @@
       "types": [
         "secondwindsupport"
       ]
+    },
+    {
+      "name": "Trinity Support",
+      "types": [
+        "hit",
+        "attack"
+      ]
     }
   ],
-  "name": "Flicker Strike",
-  "description": "Teleports the character to a nearby monster and attacks with a melee weapon. If no specific monster is targeted, one is picked at random. Grants a buff that increases movement speed for a duration. The cooldown can be bypassed by expending a Frenzy Charge."
+  "target_types": [
+    "ground",
+    "enemy"
+  ],
+  "mtx": [
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/VaporFlickerStrike.png?w=1&h=1&scale=1",
+      "name": "Vapour Flicker Strike Effect",
+      "description": "Your Flicker Strike becomes a cloud of vapour."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/ghostFlickerStrike.png?w=1&h=1&scale=1",
+      "name": "Ghost Flicker Strike Effect",
+      "description": "Your Flicker Strike becomes a ghostly smoke."
+    },
+    {
+      "image": "https://web.poecdn.com/image/Art/2DItems/Effects/CultistFlickerStrike.png?w=2&h=2&scale=1",
+      "name": "Demonic Flicker Strike Effect",
+      "description": "Your Flicker Strike becomes a bloody mist."
+    }
+  ],
+  "enchants": {
+    "eternal": [
+      "40% increased Flicker Strike Damage",
+      "Flicker Strike has 30% increased Cooldown Recovery Rate",
+      "9% increased Flicker Strike Damage per Frenzy Charge"
+    ],
+    "merciless": [
+      "25% increased Flicker Strike Damage",
+      "Flicker Strike has 20% increased Cooldown Recovery Rate",
+      "6% increased Flicker Strike Damage per Frenzy Charge"
+    ]
+  },
+  "quality": {
+    "divergent": {
+      "mods": [
+        {
+          "text": "% increased teleport range",
+          "maximum": 20.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    },
+    "superior": {
+      "mods": [
+        {
+          "text": "% chance to gain a Frenzy Charge on Hit",
+          "maximum": 5.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 50.0
+    },
+    "anomalous": {
+      "mods": [
+        {
+          "text": "% increased Cooldown Recovery Rate",
+          "maximum": 60.0,
+          "minimum": 0.0
+        }
+      ],
+      "weight": 100.0
+    }
+  },
+  "slug": "flicker-strike",
+  "name": "Flicker Strike"
 }
